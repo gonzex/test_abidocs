@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'MolecularDynamics Abinit topic'">
+        <meta name="description" content="MolecularDynamics Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/MolecularDynamics/">
@@ -2964,80 +2964,80 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to perform a molecular dynamics calculation with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>Three molecular dynamics algorithm (Numerov, Verlet, Blanes and Moanes) allow
-to perform simulations in real (simulated) time, see <a class="wikilink codevar-wikilink" href="../../../variables/rlx#ionmov">ionmov</a>. The
+to perform simulations in real (simulated) time, see <a class="wikilink codevar-wikilink" href="../../variables/rlx#ionmov">ionmov</a>. The
 displacement of atoms may be computed according to Newton&rsquo;s law, or by adding
 a friction force to it. Nose-Hoover thermostat is available with Verlet
 algorithm. Langevin dynamics is also available.</p>
 <p>Specified lattice parameters, or angles, or atomic positions, can be kept
 fixed if needed, see <a class="wikilink topic-wikilink" data-content="How to constaint the geometry of the system in geometry optimization, molecular
-dynamics or searches" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/GeoConstraints">GeoConstraints topic</a>.</p>
+dynamics or searches" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../GeoConstraints">GeoConstraints topic</a>.</p>
 <p>The trajectories can be analyzed thanks to the <a class="wikilink topic-wikilink" data-content="How to use the APPA post-processing tool for the analysis of molecular dynamics
-output files (trajectories)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/APPA">APPA
+output files (trajectories)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../APPA">APPA
 postprocessor</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#nnos">nnos</a>  Number of NOSe masses</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#ntime">ntime</a>  Number of TIME steps</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#qmass">qmass</a>  Q thermostat MASS</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#vel">vel</a>  VELocity</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#vis">vis</a>  VIScosity</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#nnos">nnos</a>  Number of NOSe masses</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ntime">ntime</a>  Number of TIME steps</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#qmass">qmass</a>  Q thermostat MASS</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#vel">vel</a>  VELocity</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#vis">vis</a>  VIScosity</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#dtion">dtion</a>  Delta Time for IONs</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#ionmov">ionmov</a>  IONic MOVEs</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#mdtemp">mdtemp</a>  Molecular Dynamics TEMPeratures</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#dtion">dtion</a>  Delta Time for IONs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ionmov">ionmov</a>  IONic MOVEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#mdtemp">mdtemp</a>  Molecular Dynamics TEMPeratures</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#bmass">bmass</a>  Barostat MASS</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#delayperm">delayperm</a>  DELAY between trials to PERMUTE atoms</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#densfor_pred">densfor_pred</a>  DENSity and FORces PREDictor</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#diismemory">diismemory</a>  Direct Inversion in the Iterative Subspace MEMORY</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#extrapwf">extrapwf</a>  flag - EXTRAPolation of the Wave-Functions</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#mdwall">mdwall</a>  Molecular Dynamics WALL location</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#signperm">signperm</a>  SIGN of PERMutation potential</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#bmass">bmass</a>  Barostat MASS</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#delayperm">delayperm</a>  DELAY between trials to PERMUTE atoms</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#densfor_pred">densfor_pred</a>  DENSity and FORces PREDictor</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#diismemory">diismemory</a>  Direct Inversion in the Iterative Subspace MEMORY</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#extrapwf">extrapwf</a>  flag - EXTRAPolation of the Wave-Functions</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#mdwall">mdwall</a>  Molecular Dynamics WALL location</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#signperm">signperm</a>  SIGN of PERMutation potential</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#friction">friction</a>  internal FRICTION coefficient</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#nctime">nctime</a>  NetCdf TIME between output of molecular dynamics informations</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#noseinert">noseinert</a>  NOSE thermostat INERTia factor</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#restartxf">restartxf</a>  RESTART from (X,F) history</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#friction">friction</a>  internal FRICTION coefficient</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#nctime">nctime</a>  NetCdf TIME between output of molecular dynamics informations</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#noseinert">noseinert</a>  NOSE thermostat INERTia factor</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#restartxf">restartxf</a>  RESTART from (X,F) history</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>fast:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="21. Conduct same relaxation but use ionmov=1 (molecular dynamics)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/fast/Input/t21.in" target="_blank">tests/fast/Input/t21.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="move with natfix. Output also GEO files" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/fast/Input/t29.in" target="_blank">tests/fast/Input/t29.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="21. Conduct same relaxation but use ionmov=1 (molecular dynamics)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/fast/Input/t21.in" target="_blank">tests/fast/Input/t21.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="move with natfix. Output also GEO files" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/fast/Input/t29.in" target="_blank">tests/fast/Input/t29.in</a></li>
 </ul>
 <p><em>mpiio:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/mpiio/Input/t21.in" target="_blank">tests/mpiio/Input/t21.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/mpiio/Input/t22.in" target="_blank">tests/mpiio/Input/t22.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t21.in" target="_blank">tests/mpiio/Input/t21.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t22.in" target="_blank">tests/mpiio/Input/t22.in</a></li>
 </ul>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t21.in" target="_blank">tests/paral/Input/t21.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t22.in" target="_blank">tests/paral/Input/t22.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Si,  Bulk,  2 atoms,  paral_kgb. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t21.in" target="_blank">tests/paral/Input/t21.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="C-diamond,  Bulk,  2 atoms,  paral_kgb,  with PAW. Test of ground state with different occs(7 and 0), and also ionmov 2. Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t22.in" target="_blank">tests/paral/Input/t22.in</a></li>
 </ul>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Basic test of geometry optimization for water First computing the ground state of a close configuration Uses 5 different methods to find the relaxed positions" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t88.in" target="_blank">tests/v2/Input/t88.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Basic test of geometry optimization for water First computing the ground state of a close configuration Uses 5 different methods to find the relaxed positions" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t88.in" target="_blank">tests/v2/Input/t88.in</a></li>
 </ul>
 <p><em>v3:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="8 atoms of Si in an elongated box. 4 of them are fixed,  while atoms 5 and 6 and 7 and 8 are grouped by pair,  such as the sum of their relative separations along y is constrained to 8.0 . This is a crazy constraint,  just to show that it can be done !" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v3/Input/t40.in" target="_blank">tests/v3/Input/t40.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="8 atoms of Si in an elongated box. 4 of them are fixed,  while atoms 5 and 6 and 7 and 8 are grouped by pair,  such as the sum of their relative separations along y is constrained to 8.0 . This is a crazy constraint,  just to show that it can be done !" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v3/Input/t40.in" target="_blank">tests/v3/Input/t40.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="This is a test,  in the norm conserving case,  of the Molecular Dynamics flag ionmov==13. With the values of optcell=0,  1,  2 (isothermal (0),  isothermal/isenthalpic with homogeneous cell deformations (1) or full cell deformations (2).) This is the reversible integrator of Martyna,  Tuckerman,  Tobias and Klein. (Mol. Phys.,  1996,  p 1117). XG20090912 : Why is the result of dataset 1 and dataset 4 equivalent,  while the bmass varies by a factor of 2 ?" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t01.in" target="_blank">tests/v5/Input/t01.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="uses ionmov 14 : a 14-step time integration by Blanes and Moan." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t03.in" target="_blank">tests/v5/Input/t03.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="This is a test,  in the norm conserving case,  of the Molecular Dynamics flag ionmov==13. With the values of optcell=0,  1,  2 (isothermal (0),  isothermal/isenthalpic with homogeneous cell deformations (1) or full cell deformations (2).) This is the reversible integrator of Martyna,  Tuckerman,  Tobias and Klein. (Mol. Phys.,  1996,  p 1117). XG20090912 : Why is the result of dataset 1 and dataset 4 equivalent,  while the bmass varies by a factor of 2 ?" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t01.in" target="_blank">tests/v5/Input/t01.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="uses ionmov 14 : a 14-step time integration by Blanes and Moan." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t03.in" target="_blank">tests/v5/Input/t03.in</a></li>
 </ul>
 <p><em>v8:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Simple test of velocity verlet integrator" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v8/Input/t12.in" target="_blank">tests/v8/Input/t12.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Simple test of velocity verlet integrator" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v8/Input/t12.in" target="_blank">tests/v8/Input/t12.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

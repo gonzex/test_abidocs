@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'Recursion Abinit topic'">
+        <meta name="description" content="Recursion Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/Recursion/">
@@ -2953,7 +2953,7 @@ Change the input yaml files or the python code
 the density) or Thomas-Fermi-Weizsacker kinetic functional (with Gradient
 Corrections) instead of Kohn-Sham kinetic energy functional (implicit
 functional of the density through Kohn-Sham wavefunctions).<br />
-See <a class="wikilink citation-wikilink" data-content="Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#perrot1979">[Perrot1979]</a>.<br />
+See <a class="wikilink citation-wikilink" data-content="Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#perrot1979">[Perrot1979]</a>.<br />
 The Recursion Method may be used in order to compute electronic density,
 entropy, Fermi energy and eigenvalues energy. This method computes the density
 without computing any orbital, is efficient at high temperature, with a
@@ -2963,47 +2963,47 @@ use of this method.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#rectolden">rectolden</a>  RECursion - TOLerance on the difference of electronic DENsity</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#rectolden">rectolden</a>  RECursion - TOLerance on the difference of electronic DENsity</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#tfkinfunc">tfkinfunc</a>  Thomas-Fermi KINetic energy FUNCtional</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#tfkinfunc">tfkinfunc</a>  Thomas-Fermi KINetic energy FUNCtional</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#recnpath">recnpath</a>  RECursion - Number of point for PATH integral calculations</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#recnrec">recnrec</a>  RECursion - Number of RECursions</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#recptrott">recptrott</a>  RECursion - TROTTer parameter</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#rectesteg">rectesteg</a>  RECursion - TEST on Electron Gas</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#recnpath">recnpath</a>  RECursion - Number of point for PATH integral calculations</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#recnrec">recnrec</a>  RECursion - Number of RECursions</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#recptrott">recptrott</a>  RECursion - TROTTer parameter</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#rectesteg">rectesteg</a>  RECursion - TEST on Electron Gas</li>
 </ul>
 <p><em>internal:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/internal#userec">%userec</a>  USE RECursion</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/internal#userec">%userec</a>  USE RECursion</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#recefermi">recefermi</a>  RECursion - initial guess  of the FERMI Energy</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#recgratio">recgratio</a>  RECursion - Grid RATIO</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#recrcut">recrcut</a>  RECursion - CUTing Radius</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#tfw_toldfe">tfw_toldfe</a>  Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#recefermi">recefermi</a>  RECursion - initial guess  of the FERMI Energy</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#recgratio">recgratio</a>  RECursion - Grid RATIO</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#recrcut">recrcut</a>  RECursion - CUTing Radius</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#tfw_toldfe">tfw_toldfe</a>  Thomas-Fermi-Weizsacker: TOLerance on the DiFference of total Energy, for initialization steps</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>mpiio:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="He FCC solid in conventional cell (4 atoms). Test the recursion algorithm (for high-temperature calculations). Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/mpiio/Input/t42.in" target="_blank">tests/mpiio/Input/t42.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="He FCC solid in conventional cell (4 atoms). Test the recursion algorithm (for high-temperature calculations). Only with 0 and 4 procs." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/mpiio/Input/t42.in" target="_blank">tests/mpiio/Input/t42.in</a></li>
 </ul>
 <p><em>v4:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Test of molecular dynamics of B atoms,  in the isokinetic ensemble,  based on the Thomas-Fermi functional (very fast,  even with 32 atoms)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v4/Input/t97.in" target="_blank">tests/v4/Input/t97.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test of molecular dynamics of B atoms,  in the isokinetic ensemble,  based on the Thomas-Fermi functional (very fast,  even with 32 atoms)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v4/Input/t97.in" target="_blank">tests/v4/Input/t97.in</a></li>
 </ul>
 <p><em>v5:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Simple test for double grid (fine/coarse) system,  the cutting radius and the initial fermi energy in recursion method Corresponding variables: recgratio,  recrcut, recefermi respectively Corresponding code: 68_recursion Other test: paral/tT, v5/t76" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t75.in" target="_blank">tests/v5/Input/t75.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Test for an electron gas by recursion method (Vtrial is set to zero) Corresponding variable: rectesteg Corresponding code: 68_recursion Other test: paral/tT, v5/t76" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v5/Input/t76.in" target="_blank">tests/v5/Input/t76.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Simple test for double grid (fine/coarse) system,  the cutting radius and the initial fermi energy in recursion method Corresponding variables: recgratio,  recrcut, recefermi respectively Corresponding code: 68_recursion Other test: paral/tT, v5/t76" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t75.in" target="_blank">tests/v5/Input/t75.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test for an electron gas by recursion method (Vtrial is set to zero) Corresponding variable: rectesteg Corresponding code: 68_recursion Other test: paral/tT, v5/t76" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t76.in" target="_blank">tests/v5/Input/t76.in</a></li>
 </ul>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Boron,  32 atoms - Thomas-Fermi method (without orbitals) Test the temperature-dependent XC functional (ixc=50) (Ichimaru et al Phys. Rep. 149,  91-205 (1987) Test the von Weizsacker gradient correction (tfkinfunc=11 or 12)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v7/Input/t11.in" target="_blank">tests/v7/Input/t11.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Boron,  32 atoms - Thomas-Fermi method (without orbitals) Test the temperature-dependent XC functional (ixc=50) (Ichimaru et al Phys. Rep. 149,  91-205 (1987) Test the von Weizsacker gradient correction (tfkinfunc=11 or 12)" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t11.in" target="_blank">tests/v7/Input/t11.in</a></li>
 </ul>
                 
                   

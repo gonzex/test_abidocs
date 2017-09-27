@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'Coulomb Abinit topic'">
+        <meta name="description" content="Coulomb Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/Coulomb/">
@@ -2950,28 +2950,28 @@ Change the input yaml files or the python code
 <p>This page gives hints on how to treat adequately the Coulomb interaction, especially in charged cells, with the ABINIT package.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>ABINIT can treat charged systems (e.g. either for molecules, or for dopants in
-a supercell), using the <a class="wikilink codevar-wikilink" href="../../../variables/gstate#charge">charge</a> input variable. A careful convergence study
+a supercell), using the <a class="wikilink codevar-wikilink" href="../../variables/gstate#charge">charge</a> input variable. A careful convergence study
 with respect to the cell size must however be done.</p>
 <p>Depending on the dimension, different treatment of the Coulomb interaction can
-be enforced, governed by <a class="wikilink codevar-wikilink" href="../../../variables/gstate#icoulomb">icoulomb</a> for grouns-state calculations, and by
-<a class="wikilink codevar-wikilink" href="../../../variables/gw#icutcoul">icutcoul</a> for GW calculations. Some development effort is needed in ABINIT
+be enforced, governed by <a class="wikilink codevar-wikilink" href="../../variables/gstate#icoulomb">icoulomb</a> for grouns-state calculations, and by
+<a class="wikilink codevar-wikilink" href="../../variables/gw#icutcoul">icutcoul</a> for GW calculations. Some development effort is needed in ABINIT
 to rationalize the situation.</p>
-<p>Additional information concerning <a class="wikilink codevar-wikilink" href="../../../variables/paw#usepotzero">usepotzero</a>. It is well known that the
+<p>Additional information concerning <a class="wikilink codevar-wikilink" href="../../variables/paw#usepotzero">usepotzero</a>. It is well known that the
 electrostatic potential (arising from ion-ion, ion-electron, and electron-
 electron interactions) is ill-defined within periodic boundary conditions.
 However, it is less well known that the total energy of a charged cell is also
-ill-defined. In fact, after a careful derivation in <a class="wikilink citation-wikilink" data-content="Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#bruneval2014">[Bruneval2014]</a>, it was
+ill-defined. In fact, after a careful derivation in <a class="wikilink citation-wikilink" data-content="Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#bruneval2014">[Bruneval2014]</a>, it was
 shown that the above two statements are tightly linked: when the number of
 electrons differs from the number of protons in a cell, the necessary
 compensating background that enforces the overall charge neutrality is
 sensitive to the arbitrary average electrostatic potential.</p>
 <p>ABINIT offers the possibility to choose which convention to use for the
-average electrostatic potential with the keyword <a class="wikilink codevar-wikilink" href="../../../variables/paw#usepotzero">usepotzero</a>.</p>
+average electrostatic potential with the keyword <a class="wikilink codevar-wikilink" href="../../variables/paw#usepotzero">usepotzero</a>.</p>
 <p>In PAW, one can choose among 3 options:</p>
 <ul>
 <li>the average of smooth electrostatic potential is set to zero;</li>
 <li>the average of all-electron electrostatic potential is set to zero;</li>
-<li>the average of smooth electrostatic potential is set to a finite value, which follows the Quantum Espresso implementation (see <a class="wikilink citation-wikilink" data-content="{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#giannozzi2009">[Giannozzi2009]</a> for more details).</li>
+<li>the average of smooth electrostatic potential is set to a finite value, which follows the Quantum Espresso implementation (see <a class="wikilink citation-wikilink" data-content="{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#giannozzi2009">[Giannozzi2009]</a> for more details).</li>
 </ul>
 <p>Only options 1 and 3 are valid for the NCPP case.</p>
 <p>None of these conventions is intrinsically more correct than the other ones.
@@ -2980,22 +2980,22 @@ to the other codes.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#charge">charge</a>  CHARGE</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#charge">charge</a>  CHARGE</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#nscforder">nscforder</a>  Nth - SCaling Function ORDER</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#nscforder">nscforder</a>  Nth - SCaling Function ORDER</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#icoulomb">icoulomb</a>  Index for the Coulomb TReaTMenT</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/paw#usepotzero">usepotzero</a>  USE POTential ZERO</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#icoulomb">icoulomb</a>  Index for the Coulomb TReaTMenT</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gw#icutcoul">icutcoul</a>  Integer that governs the CUT-off for COULomb interaction</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/paw#usepotzero">usepotzero</a>  USE POTential ZERO</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v7:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="LiH rocksalt structure with a negative lithium vacancy test thee potential alignement usepotzero=0, 1" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v7/Input/t26.in" target="_blank">tests/v7/Input/t26.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="LiH rocksalt structure with a negative lithium vacancy test thee potential alignement usepotzero=0, 1" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t26.in" target="_blank">tests/v7/Input/t26.in</a></li>
 </ul>
                 
                   

@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'TransPath Abinit topic'">
+        <meta name="description" content="TransPath Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/TransPath/">
@@ -2966,15 +2966,15 @@ Change the input yaml files or the python code
 <p>Similarly to the PIMD, finding minimum energy paths and in particular
 transition states for chemical transformations is of great importance in many
 different fields. In ABINIT we have implemented two different flavours based
-on interpolation methods <a class="wikilink citation-wikilink" data-content="Simplified and improved string method for computing the minimum energy paths in barrier-crossing events" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#weinan2007">[Weinan2007]</a>,<a class="wikilink citation-wikilink" data-content="Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#henkelman2000">[Henkelman2000]</a>, <a class="wikilink citation-wikilink" data-content="Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#mills1994">[Mills1994]</a> and
-controlled by the keyword <a class="wikilink codevar-wikilink" href="../../../variables/rlx#imgmov">imgmov</a>.</p>
+on interpolation methods <a class="wikilink citation-wikilink" data-content="Simplified and improved string method for computing the minimum energy paths in barrier-crossing events" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#weinan2007">[Weinan2007]</a>,<a class="wikilink citation-wikilink" data-content="Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#henkelman2000">[Henkelman2000]</a>, <a class="wikilink citation-wikilink" data-content="Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#mills1994">[Mills1994]</a> and
+controlled by the keyword <a class="wikilink codevar-wikilink" href="../../variables/rlx#imgmov">imgmov</a>.</p>
 <p>The calculation starts with the knowledge of the initial and final state
 (local minima in the configuration space) and an educated guess for the
 reaction pathway.</p>
 <p>If the reaction path is not given, a linear interpolation between the
 reactants and final products is constructed by a series of images
 (configurations) that connect the two states, which are given by the keyword
-<a class="wikilink codevar-wikilink" href="../../../variables/rlx#nimage">nimage</a>.</p>
+<a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>.</p>
 <p>The energy path that joins the series of images is then modified at each step
 to allow the search over the lowest energy path joining the reactants and
 products.</p>
@@ -2984,55 +2984,55 @@ uniformly spaced during the path search. The forces on each image come from
 the potential energy surface of that configuration and a spring force from the
 two closest configurations. The change in images is calculated by projecting
 out the true force perpendicular to the path and the parallel projection of
-the spring force with respect to the path <a class="wikilink citation-wikilink" data-content="Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#henkelman2000">[Henkelman2000]</a>.</p>
-<p>The spring constant is obtained from the keyword <a class="wikilink codevar-wikilink" href="../../../variables/rlx#neb_spring">neb_spring</a> and the number
-of iterations is given by <a class="wikilink codevar-wikilink" href="../../../variables/rlx#ntimimage">ntimimage</a>. In the String method, the system set
+the spring force with respect to the path <a class="wikilink citation-wikilink" data-content="Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#henkelman2000">[Henkelman2000]</a>.</p>
+<p>The spring constant is obtained from the keyword <a class="wikilink codevar-wikilink" href="../../variables/rlx#neb_spring">neb_spring</a> and the number
+of iterations is given by <a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a>. In the String method, the system set
 up is exactly the same as in the NEBM with the difference that no spring
 constant needs to be defined. In this case, the forces are obtained as in the
 NEB method from the true force perpendicular but now the configurations are
-equally redistributed along the path at each iteration <a class="wikilink citation-wikilink" data-content="Simplified and improved string method for computing the minimum energy paths in barrier-crossing events" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../theory/bibliography#weinan2007">[Weinan2007]</a>. In both
+equally redistributed along the path at each iteration <a class="wikilink citation-wikilink" data-content="Simplified and improved string method for computing the minimum energy paths in barrier-crossing events" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../theory/bibliography#weinan2007">[Weinan2007]</a>. In both
 methods, the search stops if the number of predefined iterations
-(<a class="wikilink codevar-wikilink" href="../../../variables/rlx#ntimimage">ntimimage</a>) or the tolerance convergence criteria (<a class="wikilink codevar-wikilink" href="../../../variables/rlx#tolimg">tolimg</a>) is reached.</p>
+(<a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a>) or the tolerance convergence criteria (<a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>) is reached.</p>
 <p>As in the PIMD, each of the images can be treated in parallel and the
-requested parallelization mode is set with the keyword <a class="wikilink codevar-wikilink" href="../../../variables/paral#npimage">npimage</a>.</p>
+requested parallelization mode is set with the keyword <a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a>.</p>
 <p>Specified lattice parameters, or angles, or atomic positions, can be kept
 fixed if needed, see <a class="wikilink topic-wikilink" data-content="How to constaint the geometry of the system in geometry optimization, molecular
-dynamics or searches" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/GeoConstraints">GeoConstraints topic</a>.</p>
+dynamics or searches" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../GeoConstraints">GeoConstraints topic</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#mep_solver">mep_solver</a>  Minimal Energy Path ordinary differential equation SOLVER</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#tolimg">tolimg</a>  TOLerance on the mean total energy for IMaGes</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#mep_solver">mep_solver</a>  Minimal Energy Path ordinary differential equation SOLVER</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#tolimg">tolimg</a>  TOLerance on the mean total energy for IMaGes</li>
 </ul>
 <p><em>compulsory:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#imgmov">imgmov</a>  IMaGe MOVEs</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#nimage">nimage</a>  Number of IMAGEs</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#ntimimage">ntimimage</a>  Number of TIME steps for IMAGE propagation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#imgmov">imgmov</a>  IMaGe MOVEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#nimage">nimage</a>  Number of IMAGEs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#ntimimage">ntimimage</a>  Number of TIME steps for IMAGE propagation</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#cineb_start">cineb_start</a>  Climbing-Image Nudged Elastic Band: STARTing iteration</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#dynimage">dynimage</a>  DYNamics of the IMAGE</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#fxcartfactor">fxcartfactor</a>  Forces to (X) CARTesian coordinates FACTOR</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#cineb_start">cineb_start</a>  Climbing-Image Nudged Elastic Band: STARTing iteration</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#dynimage">dynimage</a>  DYNamics of the IMAGE</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#fxcartfactor">fxcartfactor</a>  Forces to (X) CARTesian coordinates FACTOR</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#mep_mxstep">mep_mxstep</a>  Minimal Energy Path search: MaXimum allowed STEP size</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#neb_algo">neb_algo</a>  Nudged Elastic Band ALGOrithm</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#neb_spring">neb_spring</a>  Nudged Elastic Band: SPRING constant</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/paral#npimage">npimage</a>  Number of Processors at the IMAGE level</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#string_algo">string_algo</a>  STRING method ALGOrithm</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#mep_mxstep">mep_mxstep</a>  Minimal Energy Path search: MaXimum allowed STEP size</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#neb_algo">neb_algo</a>  Nudged Elastic Band ALGOrithm</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#neb_spring">neb_spring</a>  Nudged Elastic Band: SPRING constant</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/paral#npimage">npimage</a>  Number of Processors at the IMAGE level</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#string_algo">string_algo</a>  STRING method ALGOrithm</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>paral:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Test the string method within parallelization over images Inspired by test v6#22. Hydrogen diatomic molecule in a cell,  close to BCC 7 images,  exploring the transition path. Three datasets,  testing each value of prtvolimg. Processors distribution automatically determined:" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/paral/Input/t08.in" target="_blank">tests/paral/Input/t08.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Test the string method within parallelization over images Inspired by test v6#22. Hydrogen diatomic molecule in a cell,  close to BCC 7 images,  exploring the transition path. Three datasets,  testing each value of prtvolimg. Processors distribution automatically determined:" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/paral/Input/t08.in" target="_blank">tests/paral/Input/t08.in</a></li>
 </ul>
 <p><em>v6:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path. Similar to test 22 (but with string)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t24.in" target="_blank">tests/v6/Input/t24.in</a></li>
-<li><a class="wikilink abifile-wikilink" data-content="Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path but keeping X coordinated fixed. Similar to test 24" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v6/Input/t25.in" target="_blank">tests/v6/Input/t25.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path. Similar to test 22 (but with string)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t24.in" target="_blank">tests/v6/Input/t24.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Hydrogen diatomic molecule in a cell,  close to BCC Test the string method : 6 images,  exploring the transition path but keeping X coordinated fixed. Similar to test 24" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v6/Input/t25.in" target="_blank">tests/v6/Input/t25.in</a></li>
 </ul>
 <h2 id="tutorials">Tutorials<a class="headerlink" href="#tutorials" title="Permanent link">&para;</a></h2>
 <ul>

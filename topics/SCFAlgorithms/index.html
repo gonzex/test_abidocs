@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'SCFAlgorithms Abinit topic'">
+        <meta name="description" content="SCFAlgorithms Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/SCFAlgorithms/">
@@ -2953,50 +2953,50 @@ Change the input yaml files or the python code
 Kohn-Sham equations, ending with converged &ldquo;self-consistent&rdquo; wavefunctions,
 density, and Kohn-Sham potentials. Different algorithms can be chosen to
 converge to the solution of this set of equations, governed by the input
-variable <a class="wikilink codevar-wikilink" href="../../../variables/basic#iscf">iscf</a> and <a class="wikilink codevar-wikilink" href="../../../variables/dev#wfoptalg">wfoptalg</a>. <a class="wikilink codevar-wikilink" href="../../../variables/basic#iscf">iscf</a> focuses on the density/potential
-self-consistency algorithms, while <a class="wikilink codevar-wikilink" href="../../../variables/dev#wfoptalg">wfoptalg</a> focuses on the determination
+variable <a class="wikilink codevar-wikilink" href="../../variables/basic#iscf">iscf</a> and <a class="wikilink codevar-wikilink" href="../../variables/dev#wfoptalg">wfoptalg</a>. <a class="wikilink codevar-wikilink" href="../../variables/basic#iscf">iscf</a> focuses on the density/potential
+self-consistency algorithms, while <a class="wikilink codevar-wikilink" href="../../variables/dev#wfoptalg">wfoptalg</a> focuses on the determination
 of the wavefunction through the solution of the Shrodinger equation with fixed
 Kohn-Sham potential.</p>
-<p>The algorithm selected by <a class="wikilink codevar-wikilink" href="../../../variables/basic#iscf">iscf</a> are the iterative kind, among which Pulay
+<p>The algorithm selected by <a class="wikilink codevar-wikilink" href="../../variables/basic#iscf">iscf</a> are the iterative kind, among which Pulay
 mixing is one of the most efficient. Also, an efficient preconditioner will
 speed up the convergence. Among different choices, a generalized Kerker
-preconditioner is implemented, see <a class="wikilink codevar-wikilink" href="../../../variables/gstate#diemac">diemac</a>, <a class="wikilink codevar-wikilink" href="../../../variables/gstate#diemix">diemix</a> and <a class="wikilink codevar-wikilink" href="../../../variables/gstate#dielng">dielng</a>.<br />
+preconditioner is implemented, see <a class="wikilink codevar-wikilink" href="../../variables/gstate#diemac">diemac</a>, <a class="wikilink codevar-wikilink" href="../../variables/gstate#diemix">diemix</a> and <a class="wikilink codevar-wikilink" href="../../variables/gstate#dielng">dielng</a>.<br />
 In order to perform a non-self-consistent calculations of wavefunctions and
 corresponding eigenvalues in a fixed potential, as for representing a full
 band structure, the loop over density/potentials self-consistency must be
-disabled, for which <a class="wikilink codevar-wikilink" href="../../../variables/basic#iscf">iscf</a>=-2 must be chosen.</p>
-<p>Among the algorithms to find the wavefunctions, selected by <a class="wikilink codevar-wikilink" href="../../../variables/dev#wfoptalg">wfoptalg</a>, the
+disabled, for which <a class="wikilink codevar-wikilink" href="../../variables/basic#iscf">iscf</a>=-2 must be chosen.</p>
+<p>Among the algorithms to find the wavefunctions, selected by <a class="wikilink codevar-wikilink" href="../../variables/dev#wfoptalg">wfoptalg</a>, the
 conjugate-gradient and the LOBPCG ones are the favourite. Use the Chebyshev
 filtering for massive parallel runs.</p>
 <p>Inner electronic eigenvalues can be computed thanks to the minimisation of the
-residual with respect to a target energy value, see <a class="wikilink codevar-wikilink" href="../../../variables/dev#eshift">eshift</a>.</p>
+residual with respect to a target energy value, see <a class="wikilink codevar-wikilink" href="../../variables/dev#eshift">eshift</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/basic#iscf">iscf</a>  Integer for Self-Consistent-Field cycles</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#wfoptalg">wfoptalg</a>  WaveFunction OPTimisation ALGorithm</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/basic#iscf">iscf</a>  Integer for Self-Consistent-Field cycles</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#wfoptalg">wfoptalg</a>  WaveFunction OPTimisation ALGorithm</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#densfor_pred">densfor_pred</a>  DENSity and FORces PREDictor</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#diecut">diecut</a>  DIElectric matrix energy CUToff</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#diegap">diegap</a>  DIElectric matrix GAP</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#dielam">dielam</a>  DIElectric matrix LAMbda</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#eshift">eshift</a>  Energy SHIFT</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#iprcel">iprcel</a>  Integer for PReConditioning of ELectron response</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#isecur">isecur</a>  Integer for level of SECURity choice</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#densfor_pred">densfor_pred</a>  DENSity and FORces PREDictor</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#diecut">diecut</a>  DIElectric matrix energy CUToff</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#diegap">diegap</a>  DIElectric matrix GAP</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#dielam">dielam</a>  DIElectric matrix LAMbda</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#eshift">eshift</a>  Energy SHIFT</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#iprcel">iprcel</a>  Integer for PReConditioning of ELectron response</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#isecur">isecur</a>  Integer for level of SECURity choice</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#dielng">dielng</a>  model DIElectric screening LeNGth</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#diemac">diemac</a>  model DIElectric MACroscopic constant</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#diemix">diemix</a>  model DIElectric MIXing factor</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#npulayit">npulayit</a>  Number of PULAY ITerations for SC mixing</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#dielng">dielng</a>  model DIElectric screening LeNGth</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#diemac">diemac</a>  model DIElectric MACroscopic constant</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#diemix">diemix</a>  model DIElectric MIXing factor</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#npulayit">npulayit</a>  Number of PULAY ITerations for SC mixing</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v2:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="O2 (nsppol=2,  non-linear XC core correction,  GGA) Similar to test50,  except use iscf=6 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v2/Input/t51.in" target="_blank">tests/v2/Input/t51.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="O2 (nsppol=2,  non-linear XC core correction,  GGA) Similar to test50,  except use iscf=6 ." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v2/Input/t51.in" target="_blank">tests/v2/Input/t51.in</a></li>
 </ul>
                 
                   

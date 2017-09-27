@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'q-points Abinit topic'">
+        <meta name="description" content="q-points Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/q-points/">
@@ -2955,43 +2955,43 @@ are eigenmodes of the corresponding periodic Hamiltonian can be characterized
 by a wavevector, denoted q-point.</p>
 <p>In ABINIT, DFPT calculations for one dataset are done for one specific
 q-point, that must be specified. In the simplest case, the user gives the
-corresponding q-point for each dataset, setting <a class="wikilink codevar-wikilink" href="../../../variables/gstate#nqpt">nqpt</a>=1 and specifying the
-corresponding single <a class="wikilink codevar-wikilink" href="../../../variables/gstate#qpt">qpt</a>. However, very often, it is needed to run
+corresponding q-point for each dataset, setting <a class="wikilink codevar-wikilink" href="../../variables/gstate#nqpt">nqpt</a>=1 and specifying the
+corresponding single <a class="wikilink codevar-wikilink" href="../../variables/gstate#qpt">qpt</a>. However, very often, it is needed to run
 calculations for dozens or hundreds of q-points. Hence, the following
 mechanism has been set: the use can specify a set of q points, using input
 variables similar to the k-points, and then, for each dataset, the number of
-the q-point in the set is indicated thanks to <a class="wikilink codevar-wikilink" href="../../../variables/gstate#iqpt">iqpt</a>. This applies to the
+the q-point in the set is indicated thanks to <a class="wikilink codevar-wikilink" href="../../variables/gstate#iqpt">iqpt</a>. This applies to the
 generation of q-point grids as well as to q-point paths to produce phonon band
 structures.</p>
 <p>The input variables for specifying q-points in ANADDB are specified in
 <a class="wikilink topic-wikilink" data-content="How to compute phonon frequencies and modes, IR and Raman spectra, Born effective
-charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/Phonons">Phonons topic</a> and <a class="wikilink topic-wikilink" data-content="How to compute phonon bands, density of states, interatomic force constants, sound
-velocity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../topics/PhononBands">PhononBands topic</a>.</p>
+charges, IR reflectivity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../Phonons">Phonons topic</a> and <a class="wikilink topic-wikilink" data-content="How to compute phonon bands, density of states, interatomic force constants, sound
+velocity ..." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../PhononBands">PhononBands topic</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#iqpt">iqpt</a>  Index for QPoinT generation</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#ngqpt">ngqpt</a>  Number of Grid pointsfor Q PoinTs generation</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#nqpt">nqpt</a>  Number of Q - POINTs</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#qptopt">qptopt</a>  QPoinTs OPTion</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#iqpt">iqpt</a>  Index for QPoinT generation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#ngqpt">ngqpt</a>  Number of Grid pointsfor Q PoinTs generation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#nqpt">nqpt</a>  Number of Q - POINTs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#qptopt">qptopt</a>  QPoinTs OPTion</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#nshiftq">nshiftq</a>  Number of SHIFTs for Q point grids</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_intmeth">ph_intmeth</a>  PHonons: INTegration METHod</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_ndivsm">ph_ndivsm</a>  PHonons: Number of DIVisions for sampling the SMallest segment</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#ph_ngqpt">ph_ngqpt</a>  PHonons: Number of Grid points for Q-PoinT mesh.</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_nqpath">ph_nqpath</a>  PHonons: Number of Q-points defining the PATH</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_nqshift">ph_nqshift</a>  PHonons: Number of Q-SHIFTs</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dfpt#ph_qpath">ph_qpath</a>  Phonons: Q-PATH</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_qshift">ph_qshift</a>  PHonons: Q-SHIFTs for mesh.</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_smear">ph_smear</a>  PHonons: SMEARing factor</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/eph#ph_wstep">ph_wstep</a>  PHonons: frequency(W)  STEP.</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#qpt">qpt</a>  Q PoinT</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#qptnrm">qptnrm</a>  Q PoinTs NoRMalization</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#qptrlatt">qptrlatt</a>  Q - PoinTs grid : Real space LATTice</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#shiftq">shiftq</a>  SHIFT for Q points</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#wtq">wtq</a>  WeighTs for the current Q-points</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#nshiftq">nshiftq</a>  Number of SHIFTs for Q point grids</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_intmeth">ph_intmeth</a>  PHonons: INTegration METHod</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_ndivsm">ph_ndivsm</a>  PHonons: Number of DIVisions for sampling the SMallest segment</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#ph_ngqpt">ph_ngqpt</a>  PHonons: Number of Grid points for Q-PoinT mesh.</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_nqpath">ph_nqpath</a>  PHonons: Number of Q-points defining the PATH</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_nqshift">ph_nqshift</a>  PHonons: Number of Q-SHIFTs</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dfpt#ph_qpath">ph_qpath</a>  Phonons: Q-PATH</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_qshift">ph_qshift</a>  PHonons: Q-SHIFTs for mesh.</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_smear">ph_smear</a>  PHonons: SMEARing factor</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/eph#ph_wstep">ph_wstep</a>  PHonons: frequency(W)  STEP.</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#qpt">qpt</a>  Q PoinT</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#qptnrm">qptnrm</a>  Q PoinTs NoRMalization</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#qptrlatt">qptrlatt</a>  Q - PoinTs grid : Real space LATTice</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#shiftq">shiftq</a>  SHIFT for Q points</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#wtq">wtq</a>  WeighTs for the current Q-points</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p>No input file associated to this topic.</p>

@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="'Artificial Abinit topic'">
+        <meta name="description" content="Artificial Abinit topic">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/Artificial/">
@@ -2952,34 +2952,34 @@ Change the input yaml files or the python code
 <p>With a computer, one can consider non-physical modifications of the system to
 help the understanding the physics &hellip;</p>
 <p>The nuclear masses and free electron mass can be modified. A fake space
-dependent chemical potenial can be added, see <a class="wikilink codevar-wikilink" href="../../../variables/geo#chempot">chempot</a>, as well as the
-electrostatic potential of a slab, <a class="wikilink codevar-wikilink" href="../../../variables/gstate#jellslab">jellslab</a>. A simple sine/cosine
+dependent chemical potenial can be added, see <a class="wikilink codevar-wikilink" href="../../variables/geo#chempot">chempot</a>, as well as the
+electrostatic potential of a slab, <a class="wikilink codevar-wikilink" href="../../variables/gstate#jellslab">jellslab</a>. A simple sine/cosine
 potential with a wavevector compatible with the (super)call can also be added,
-see <a class="wikilink codevar-wikilink" href="../../../variables/ffield#qprtrb">qprtrb</a>.</p>
+see <a class="wikilink codevar-wikilink" href="../../variables/ffield#qprtrb">qprtrb</a>.</p>
 <h2 id="related-input-variables">Related Input Variables<a class="headerlink" href="#related-input-variables" title="Permanent link">&para;</a></h2>
 <p><em>basic:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/rlx#amu">amu</a>  Atomic Mass Units</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/rlx#amu">amu</a>  Atomic Mass Units</li>
 </ul>
 <p><em>expert:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/geo#chempot">chempot</a>  spatially varying CHEMical POTential</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/dev#effmass_free">effmass_free</a>  EFFective MASS for the FREE electron</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#jellslab">jellslab</a>  include a JELLium SLAB in the cell</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/geo#nzchempot">nzchempot</a>  Number of Z reduced coordinates that define the spatial CHEMical POTential</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#slabwsrad">slabwsrad</a>  jellium SLAB Wigner-Seitz RADius</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#slabzbeg">slabzbeg</a>  jellium SLAB BEGinning edge along the Z direction</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/gstate#slabzend">slabzend</a>  jellium SLAB ENDing edge along the Z direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/geo#chempot">chempot</a>  spatially varying CHEMical POTential</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/dev#effmass_free">effmass_free</a>  EFFective MASS for the FREE electron</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#jellslab">jellslab</a>  include a JELLium SLAB in the cell</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/geo#nzchempot">nzchempot</a>  Number of Z reduced coordinates that define the spatial CHEMical POTential</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#slabwsrad">slabwsrad</a>  jellium SLAB Wigner-Seitz RADius</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#slabzbeg">slabzbeg</a>  jellium SLAB BEGinning edge along the Z direction</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/gstate#slabzend">slabzend</a>  jellium SLAB ENDing edge along the Z direction</li>
 </ul>
 <p><em>useful:</em></p>
 <ul>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/ffield#qprtrb">qprtrb</a>  Q-wavevector of the PERTurbation</li>
-<li><a class="wikilink codevar-wikilink" href="../../../variables/ffield#vprtrb">vprtrb</a>  potential -V- for the PeRTuRBation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/ffield#qprtrb">qprtrb</a>  Q-wavevector of the PERTurbation</li>
+<li><a class="wikilink codevar-wikilink" href="../../variables/ffield#vprtrb">vprtrb</a>  potential -V- for the PeRTuRBation</li>
 </ul>
 <h2 id="selected-input-files">Selected Input Files<a class="headerlink" href="#selected-input-files" title="Permanent link">&para;</a></h2>
 <p><em>v1:</em></p>
 <ul>
-<li><a class="wikilink abifile-wikilink" data-content="Isolated Hydrogen atom. Treated with the Fermi-Amaldi correction (ixc=20),  so that this corresponds to exact cancellation of the Hartree and XC contributions, as it should for Hydrogen atom. Examine the 1s-2s splitting,  that should be equal to 0.375 Ha, and is obtained at 0.368 Ha (so within 2%),  with the chosen ecut and acell. This quantity converges much faster to the correct value than either the total energy or the 1s eigenenergy. Also test effmass_free. A value 10 times bigger than the usual electron mass leads to a 10-fold contraction of the system. The 1s-2s splitting is multiplied by 10 exactly,  provided ecut,  acell and the smearing of the potential at origin are scaled appropriately." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../../tests/v1/Input/t25.in" target="_blank">tests/v1/Input/t25.in</a></li>
+<li><a class="wikilink abifile-wikilink" data-content="Isolated Hydrogen atom. Treated with the Fermi-Amaldi correction (ixc=20),  so that this corresponds to exact cancellation of the Hartree and XC contributions, as it should for Hydrogen atom. Examine the 1s-2s splitting,  that should be equal to 0.375 Ha, and is obtained at 0.368 Ha (so within 2%),  with the chosen ecut and acell. This quantity converges much faster to the correct value than either the total energy or the 1s eigenenergy. Also test effmass_free. A value 10 times bigger than the usual electron mass leads to a 10-fold contraction of the system. The 1s-2s splitting is multiplied by 10 exactly,  provided ecut,  acell and the smearing of the potential at origin are scaled appropriately." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v1/Input/t25.in" target="_blank">tests/v1/Input/t25.in</a></li>
 </ul>
                 
                   
