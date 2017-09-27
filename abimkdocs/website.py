@@ -495,7 +495,7 @@ Change the input yaml files or the python code
        data-pagination="true"
        data-query-params="{type: 'owner', sort: 'updated', direction: 'desc', per_page: 20, page: 1}"
        data-show-pagination-switch="false"
-       data-url="../data/allvars.json">
+       data-url="../../data/allvars.json">
     <thead>
     <tr>
         <th data-field="abivarname">Name</th>
