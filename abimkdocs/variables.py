@@ -257,14 +257,13 @@ class Variable(yaml.YAMLObject):
 
         return set(parents)
 
-    def internal_link(self, website, page_rpath, label=None):
+    def internal_link(self, website, page_rpath, label=None, cls=None):
         """String with the website internal URL."""
         label = self.name if label is None else str(label)
-        #url = "/variables/%s#%s" % (self.varset, self.name)
-        #return '<a href="%s">%s</a>' % (url, label)
         token = "%s:%s" % (self.executable, self.name)
         a = website.get_wikilink(token, page_rpath)
-        return '<a href="%s" class="%s">%s</a>' % (a.get("href"), a.get("class"), a.text)
+        cls = a.get("class") if cls is None else cls
+        return '<a href="%s" class="%s">%s</a>' % (a.get("href"), cls, a.text)
 
     def to_markdown(self, with_hr=True):
         lines = []; app = lines.append

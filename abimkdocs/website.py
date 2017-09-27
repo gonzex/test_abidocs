@@ -470,9 +470,42 @@ Change the input yaml files or the python code
         with self.new_mdfile("variables", "index.md", meta=meta) as mdf:
             for code, vd in self.variables_code.items():
                 mdf.write("## %s variables   \n\n" % code)
-                page_rpath = mdf.rpath
-                mdf.write(vd.get_vartabs_html(self, page_rpath))
+                mdf.write(vd.get_vartabs_html(self, mdf.rpath))
                 #mdf.write(2*"\n" + "* * *\n")
+
+            mdf.write(2*"\n" + "* * *\n")
+            # This to reproduce the table of variables as implemented by Jordan
+            #mdf.write(self.get_varsearch(mdf.rpath))
+            def to_dict(var):
+                return {aname: my_unicode(getattr(var, aname)) for aname in ["abivarname", "vartype", "mnemonics"]}
+            data = [to_dict(var) for var in self.variables_code.iter_allvars()]
+            with io.open(os.path.join(self.root, "data", "allvars.json"), "wt", encoding="utf-8") as fh:
+                import json
+                json.dump(data, fh) #, ensure_ascii=False)
+
+            mdf.write("""
+<div class="md-container">
+<div id="toolbar" class="btn-group"></div>
+<table data-toggle="table"
+       data-search="true"
+       data-show-refresh="true"
+       data-show-toggle="true"
+       data-show-columns="true"
+       data-toolbar="#toolbar"
+       data-pagination="true"
+       data-query-params="{type: 'owner', sort: 'updated', direction: 'desc', per_page: 20, page: 1}"
+       data-show-pagination-switch="false"
+       data-url="/data/allvars.json">
+    <thead>
+    <tr>
+        <th data-field="abivarname">Name</th>
+        <th data-field="vartype">Type</th>
+        <th data-field="mnemonics">Mnemonic</th>
+    </tr>
+    </thead>
+</table>
+</div>
+""")
 
         # Build markdown page with external parameters.
         with self.new_mdfile("variables", "external_parameters.md") as mdf:
@@ -1148,6 +1181,41 @@ The bibtex file is available [here](../abiref.bib).
         a.set('href', url)
         if target: a.set('target', target)
         return a
+
+    def get_varsearch(self, page_rpath):
+        # Build single dictionary mapping varname --> var. Add @code if not abinit.
+        allvars = {}
+        for code, vd in self.variables_code.items():
+            allvars.update({v.abivarname: v for v in vd.values()})
+        allvars = list(allvars.items())
+
+        import string
+        tabs = "\n".join("""
+<a class="TabLetterLink" href="#{cap_char}" onClick="openLetter(event,'{cap_char}')" id="click{cap_char}">{cap_char}</a>""".format(cap_char=cap_char) for cap_char in string.ascii_uppercase)
+
+        all_vars = ""
+        for char, group in sort_and_groupby(allvars, key=lambda t: t[0][0].upper()):
+            lis = "\n".join("""<li class="col-s-6 col-m-3 col-l-2 col-xl-2 col-xxl-1">{link}</li>""".
+                    format(link=item[1].internal_link(self, page_rpath, cls="")) for item in group)
+
+            all_vars += """<ul id="{char}" class="TabContentLetter">
+<li class="HeaderLetter col-s-6 col-m-3 col-l-2 col-xl-2 col-xxl-1">{char}</li> {lis} </ul></li></ul>""".format(char=char, lis=lis)
+
+        return """\
+# Alphabetical list of all input variables for ABINIT, AIM, ANADDB and OPTICS.
+
+See aim, anaddb or optic for the subset of input variables for the executables AIM(Bader), ANADDB and OPTIC.
+Such input variables are specifically labelled @aim, @anaddb, or @optic in the input variable database.
+Enter any string to search in the database. Clicking without any request will give all variables.
+
+<input type="text" id="InputSearch" onkeyup="searchInput()" onClick="searchInput()" placeholder="Search">
+<div class="TabsLetter">
+{tabs}
+</div>
+
+<ul id="Letters"><li>
+{all_vars}
+</li></ul>""".format(**locals())
 
     def validate_html_build(self):
         cprint("Validating website build", "green")
