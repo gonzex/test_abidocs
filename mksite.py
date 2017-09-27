@@ -115,7 +115,7 @@ def main():
 
     from abimkdocs.website import Website
     if len(sys.argv) > 1 and ("--help" not in sys.argv or "-h" not in sys.argv):
-        deploy = True
+        deploy = False
         website = Website.build("./doc", deploy=deploy, verbose=verbose)
 
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
