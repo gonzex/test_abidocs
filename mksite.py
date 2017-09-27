@@ -7,11 +7,16 @@ import os
 import mkdocs.__main__
 
 # We don't install with setup.py hence we have to add the directory [...]/abinit/tests to $PYTHONPATH
-pack_dir = os.path.dirname(__file__)
+pack_dir = os.path.dirname(os.path.abspath(__file__))
+#print(pack_dir)
 sys.path.insert(0, pack_dir)
 
 # This needed to import doc.tests
 sys.path.insert(0, os.path.join(pack_dir, "doc"))
+
+#pack_dir = os.path.dirname(pack_dir)
+#print(pack_dir)
+#sys.path.insert(0, pack_dir)
 
 def prof_main(main):
     """
@@ -120,7 +125,7 @@ def main():
 
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
         website.generate_markdown_files()
-        print(website)
+        #print(website)
 
     if len(sys.argv) > 1 and sys.argv[1] == "validate":
         return website.validate_html_build()

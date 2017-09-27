@@ -25,7 +25,8 @@ from .variables import Variable
 
 ABINIT_REPO = "/Users/gmatteo/git_repos/abinit_quick_prs/"
 if not os.path.exists(ABINIT_REPO):
-    raise ValueError("ABINIT_REPO: %s does not exist\n. Please change the global variable in the python module")
+    raise ValueError("ABINIT_REPO: %s does not exist\n. Please change the global variable in the python module." %
+            ABINIT_REPO)
 
 
 class lazy_property(object):
@@ -275,7 +276,38 @@ class Website(object):
         # Read mkdocs configuration file.
         # TODO: Should read Abinit version from a centralized file.
         with io.open(os.path.join(self.root, "..", "mkdocs.yml"), "rt", encoding="utf-8") as fh:
-            self.config = yaml.load(fh)
+            self.mkdocs_config = yaml.load(fh)
+
+        # Build parser to convert Markdown to HTML.
+        # The parser must support the same extensions as those used by mkdocs
+        # so we initialize it from the options specified in mkdocs.yml
+        #   * extensions: A list of extensions, which can either
+        #       be strings or objects.  See the docstring on Markdown.
+        #   * configs: A dictionary mapping module names to config options
+
+        #extensions, extension_configs = [], {}
+        #for item in self.mkdocs_config["markdown_extensions"]:
+        #    print(item, type(item))
+        #    if isinstance(item, dict):
+        #        assert len(item) == 1 and len(item.values()) == 1
+        #        modname = str(list(item.keys())[0])
+        #        extensions.append(modname)
+        #        v = list(item.values())[0]
+        #        print(v)
+        #        if v is not None:
+        #            extension_configs[modname] =  v
+        #    else:
+        #        extensions.append(str(item))
+        #'./doc', '.', '/Users/gmatteo/git_repos/abidocs'
+        #print("sys.path:", sys.path)
+        #print("extensions", extensions)
+        #for i, ext in enumerate(extensions):
+        #    if ext.startswith("abimkdocs"):
+        #        new_ext = "." + ext
+        #        extensions[i] = new_ext
+        #        if ext in extension_configs:
+        #            extension_configs[new_ext] = extension_configs[ext]
+        #self.markdown = markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
 
         # Build database with all input variables indexed by code name.
         from .variables import get_variables_code
@@ -556,7 +588,8 @@ in order of number of occurrence in the input files provided with the package.
                                 "prpot": 5, "prfermi": 6, "prden": 7, "prgeo": 8, "prdos": 9, "prgs": 10,
                                 "prngs": 11, "prmisc": 12}[t[0]]
                     except KeyError:
-                        raise KeyError("Cannot find tribe %s in dict. Add it to sort_tribes with the proper rank" % str(t))
+                        raise KeyError("Cannot find tribe %s in dict. Add it to sort_tribes with the proper rank"
+                                % str(t))
 
                 items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: sort_tribes(t))
 
@@ -751,7 +784,7 @@ The bibtex file is available [here](../abiref.bib).
             return md_files
 
         pages_in_toolbar = []
-        for entry in self.config["pages"]:
+        for entry in self.mkdocs_config["pages"]:
             pages_in_toolbar.extend(find_mds(entry))
         #for p in pages_in_toolbar: print(p)
 
@@ -841,6 +874,7 @@ The bibtex file is available [here](../abiref.bib).
         Return:
             :class:`etree.Element` instance represent the HTML anchor.
         """
+        # TODO: Fix portability problem under py2.7: different relative urls!
         token = token.strip()
         if not token:
             self.warn("Empty wikilink in %s" % page_rpath)
@@ -1109,7 +1143,8 @@ The bibtex file is available [here](../abiref.bib).
             url = os.path.relpath(url, page_rpath)
             if end: url = "%s#%s" % (url, end)
 
-        #print("token", token, "page_rpath", page_rpath, "url", url)
+        if self.verbose:
+            print("token", token, "page_rpath", page_rpath, "url", url)
         a.set('href', url)
         if target: a.set('target', target)
         return a

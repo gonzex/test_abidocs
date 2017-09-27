@@ -75,7 +75,8 @@ class WikiLinks(Pattern):
         #page_rpath = "??"
         #if hasattr(self.md, 'Meta') and "rpath" in self.md.Meta:
         #    page_rpath = self.md.Meta["rpath"][0]
-        page_rpath = self.md.Meta["rpath"][0]
+        # Remove quotes (neeeded in py2.7 because mkdocs does not use pyyaml to parse meta).
+        page_rpath = self.md.Meta["rpath"][0].replace("'", "").replace('"', "")
         try:
             return website.get_wikilink(token, page_rpath)
         except Exception as exc:
