@@ -476,3 +476,78 @@ details.no-details:not([open]) summary {
 }
 */
 
+/* This for the table of variables implemented by Jordan */
+
+/* Style the tab */
+div.TabsLetter {
+    overflow: hidden !important;
+    border: 1px solid #ccc !important;
+    background-color: #f1f1f1 !important;
+}
+
+/* Style the buttons inside the tab */
+div.TabsLetter a {
+  background-color: inherit !important;
+  float: left !important;
+  border: none !important;
+  outline: none !important;
+  cursor: pointer !important;
+  padding: 14px 16px !important;
+  transition: 0.3s !important;
+  text-decoration: none !important; /* Remove default text underline */
+  color: #999 !important;
+}
+
+/* Change background color of buttons on hover */
+div.TabsLetter a:hover {
+  background-color: #ddd !important;
+  color: #111 !important;
+}
+
+/* Create an active/current tablink class */
+div.TabsLetter a.active {
+  background-color: #ccc !important;
+  color: #111 !important;
+}
+
+/* Style the tab content */
+.TabContentLetter {
+  display: none;
+  padding: 6px 12px !important;
+  /* border: 1px solid #ccc; */
+  border-top: none !important;
+} 
+
+ul#Letters, ul.TabContentLetter {
+  list-style: none !important;
+  overflow: hidden !important;
+}
+
+ul#Letters {
+  padding: 0px !important;
+  margin: 0px !important;
+  border: 1px solid #ccc !important;
+  border-top: none !important;
+}
+
+.TabContentLetter li {
+  /* display: inline; */
+  float: left !important;
+}
+
+.TabContentLetter li a {
+  text-decoration: none; /* Remove default text underline */
+  font-size: 14px; /**/
+  color: #666 !important; /* Add a hover effect to all links, except for headers */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+li.HeaderLetter {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.TabContentLetter li a:hover:not(.header) {
+  color: #111; /* Add a hover effect to all links, except for headers */
+  background-color: #ccc;
+}

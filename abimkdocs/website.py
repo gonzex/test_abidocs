@@ -472,40 +472,69 @@ Change the input yaml files or the python code
                 mdf.write("## %s variables   \n\n" % code)
                 mdf.write(vd.get_vartabs_html(self, mdf.rpath))
                 #mdf.write(2*"\n" + "* * *\n")
+            #mdf.write(2*"\n" + "* * *\n")
 
-            mdf.write(2*"\n" + "* * *\n")
-            # This to reproduce the table of variables as implemented by Jordan
-            #mdf.write(self.get_varsearch(mdf.rpath))
-            def to_dict(var):
-                return {aname: my_unicode(getattr(var, aname)) for aname in ["abivarname", "vartype", "mnemonics"]}
-            data = [to_dict(var) for var in self.variables_code.iter_allvars()]
-            with io.open(os.path.join(self.root, "data", "allvars.json"), "wt", encoding="utf-8") as fh:
-                import json
-                json.dump(data, fh) #, ensure_ascii=False)
+            # This for the table of variables implemented by Jordan
+            mdf.write(self.get_varsearch(mdf.rpath))
+
+            anames = ["abivarname", "vartype", "topics", "mnemonics"]
+            anames = ["abivarname", "vartype", "mnemonics"]
+            #def to_dict(var):
+            #    return {aname: my_unicode(getattr(var, aname)) for aname in anames}
+            #data = [to_dict(var) for var in self.variables_code.iter_allvars()]
+            #with io.open(os.path.join(self.root, "data", "allvars.json"), "wt", encoding="utf-8") as fh:
+            #    import json
+            #    json.dump(data, fh) #, ensure_ascii=False)
+
+            def to_list(var):
+                l = []
+                app = l.append
+                for i, aname in enumerate(anames):
+                    if aname == "abivarname":
+                        app(var.internal_link(self, mdf.rpath))
+                    elif aname == "topics":
+                        s = " ".join(a2s(self.get_wikilink("topic:%s" % topic, mdf.rpath))
+                            for topic in var.topic_tribes)
+                        app(s)
+                    else:
+                        app(my_unicode(getattr(var, aname)))
+                return l
+
+            data = [to_list(var) for var in self.variables_code.iter_allvars()]
+            def html_row(row):
+                return " ".join("<td>%s</td>" % r for r in row)
+            body = "\n".join("<tr>%s</tr>" % html_row(row) for row in data)
+            #data-url="../data/allvars.json"
 
             mdf.write("""
 <div class="md-container">
 <div id="toolbar" class="btn-group"></div>
 <table data-toggle="table"
+       data-sort-name="abivarname"
        data-search="true"
+       data-search-on-enter-key="false"
        data-show-refresh="true"
        data-show-toggle="true"
        data-show-columns="true"
        data-toolbar="#toolbar"
        data-pagination="true"
-       data-query-params="{type: 'owner', sort: 'updated', direction: 'desc', per_page: 20, page: 1}"
+       data-query-params="{type: 'owner', sort: 'updated', direction: 'desc', per_page: 50, page: 1}"
        data-show-pagination-switch="false"
-       data-url="../../data/allvars.json">
+       >
     <thead>
-    <tr>
-        <th data-field="abivarname">Name</th>
-        <th data-field="vartype">Type</th>
-        <th data-field="mnemonics">Mnemonic</th>
-    </tr>
+      <tr>
+        <th data-field="abivarname" data-sortable="true" data-searchable="true">Name</th>
+        <th data-field="vartype" data-sortable="true" data-searchable="false">Type</th>
+        <th data-field="mnemonics" data-sortable="false" data-searchable="false">Mnemonic</th>
+        <th data-field="topics" data-sortable="true", data-searchable="false">Topics</th>
+      </tr>
     </thead>
+    <tbody>
+      %s
+    </tbody>
 </table>
 </div>
-""")
+""" % body)
 
         # Build markdown page with external parameters.
         with self.new_mdfile("variables", "external_parameters.md") as mdf:
@@ -1187,35 +1216,50 @@ The bibtex file is available [here](../abiref.bib).
         allvars = {}
         for code, vd in self.variables_code.items():
             allvars.update({v.abivarname: v for v in vd.values()})
-        allvars = list(allvars.items())
 
-        import string
-        tabs = "\n".join("""
-<a class="TabLetterLink" href="#{cap_char}" onClick="openLetter(event,'{cap_char}')" id="click{cap_char}">{cap_char}</a>""".format(cap_char=cap_char) for cap_char in string.ascii_uppercase)
+        tabs = "\n".join("""\
+<a class="TabLetterLink" href="#{cap_char}" onClick="openLetter(event,'{cap_char}')" id="click{cap_char}">{cap_char}</a>""".format(cap_char=cap_char) for cap_char in sorted(set([k[0].upper() for k in allvars])))
 
-        all_vars = ""
-        for char, group in sort_and_groupby(allvars, key=lambda t: t[0][0].upper()):
-            lis = "\n".join("""<li class="col-s-6 col-m-3 col-l-2 col-xl-2 col-xxl-1">{link}</li>""".
-                    format(link=item[1].internal_link(self, page_rpath, cls="")) for item in group)
+        html_vars = ""
+        for char, group in sort_and_groupby(list(allvars.items()), key=lambda t: t[0][0].upper()):
+            lis = "\n".join("<li>{link}</li>".format(
+                link=var.internal_link(self, page_rpath, label=var.abivarname, cls="")) for _, var in group)
 
-            all_vars += """<ul id="{char}" class="TabContentLetter">
-<li class="HeaderLetter col-s-6 col-m-3 col-l-2 col-xl-2 col-xxl-1">{char}</li> {lis} </ul></li></ul>""".format(char=char, lis=lis)
+        #for char, group in sort_and_groupby(allvars, key=lambda t: t[0][0].upper()):
+        #    group = list(group)
+        #    lis = []
+        #    for i, (abivarname, var) in enumerate(group):
+        #        if (i % 4) == 0 and i != 0: lis.append('</div>')
+        #        if (i % 4) == 0 and i != len(group) - 1 : lis.append('<div class="row">')
+        #        lis.append("""<li class="{col_cls}">{link}</li>""".format(
+        #            col_cls="col-md-3",
+        #            link=var.internal_link(self, page_rpath, label=abivarname, cls="")))
+        #    if lis[-1] != '</div>': lis.append('</div>')
+        #    lis = "\n".join(lis)
 
-        return """\
-# Alphabetical list of all input variables for ABINIT, AIM, ANADDB and OPTICS.
+            html_vars += """
+<li><ul id="{char}" class="TabContentLetter">
+<li class="HeaderLetter">{char}</li> {lis} </ul></li>""".format(char=char, lis=lis)
+
+        return """
+
+## All variables
 
 See aim, anaddb or optic for the subset of input variables for the executables AIM(Bader), ANADDB and OPTIC.
 Such input variables are specifically labelled @aim, @anaddb, or @optic in the input variable database.
 Enter any string to search in the database. Clicking without any request will give all variables.
 
+<form>
 <input type="text" id="InputSearch" onkeyup="searchInput()" onClick="searchInput()" placeholder="Search">
+</form>
+
 <div class="TabsLetter">
 {tabs}
 </div>
 
-<ul id="Letters"><li>
-{all_vars}
-</li></ul>""".format(**locals())
+<ul id="Letters">
+{html_vars}
+</ul>""".format(**locals())
 
     def validate_html_build(self):
         cprint("Validating website build", "green")
@@ -1407,6 +1451,11 @@ def add_popover(element, title=None, content=None, html=False):
     element.set("data-trigger", "hover focus")
     if content: element.set("data-content", tos(content))
     if html: element.set("data-html", "true")
+
+
+def a2s(element, cls=None):
+    cls = element.get("class") if cls is None else cls
+    return '<a href="%s" class="%s">%s</a>' % (element.get("href"), cls, element.text)
 
 
 class MarkdownPage(Page):

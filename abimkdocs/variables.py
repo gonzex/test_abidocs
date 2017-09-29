@@ -259,11 +259,10 @@ class Variable(yaml.YAMLObject):
 
     def internal_link(self, website, page_rpath, label=None, cls=None):
         """String with the website internal URL."""
-        label = self.name if label is None else str(label)
         token = "%s:%s" % (self.executable, self.name)
         a = website.get_wikilink(token, page_rpath)
         cls = a.get("class") if cls is None else cls
-        return '<a href="%s" class="%s">%s</a>' % (a.get("href"), cls, a.text)
+        return '<a href="%s" class="%s">%s</a>' % (a.get("href"), cls, a.text if label is None else label)
 
     def to_markdown(self, with_hr=True):
         lines = []; app = lines.append
@@ -510,9 +509,9 @@ class VarDatabase(OrderedDict):
 class InputVariables(OrderedDict):
 
     def groupby_first_letter(self):
-        keys = sorted(self.keys(), key=lambda n: n[0].lower())
+        keys = sorted(self.keys(), key=lambda n: n[0].upper())
         od = OrderedDict()
-        for char, group in groupby(keys, key=lambda n: n[0].lower()):
+        for char, group in groupby(keys, key=lambda n: n[0].upper()):
             od[char] = [self[name] for name in group]
         return od
 
@@ -539,7 +538,6 @@ class InputVariables(OrderedDict):
 <!-- Tab panes -->
 <div class="tab-content">
         """
-
         for i, (char, vlist) in enumerate(ch2vars.items()):
             id_char = "%s-%s" % (idname, char)
             p = " ".join(v.internal_link(website, page_rpath) for v in vlist)
