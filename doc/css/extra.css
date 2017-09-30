@@ -4,6 +4,7 @@ body {
     background-image: url("../images/pw_maze_white.png");
 }
 
+
 /* Increase logo width because mkdocs material enforces 48 x 48 */
 .md-logo img {
     width: 48px;

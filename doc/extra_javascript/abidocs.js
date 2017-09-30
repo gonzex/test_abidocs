@@ -226,7 +226,3 @@ $(function() {
     defaultClick(true);
 });
 
-$("#InputSearch").keydown(function() {
-  //alert( "Handler for .keydown() called." );
-});
-
