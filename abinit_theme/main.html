@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block libs %}
-
     {{ super() }}
 
     <!-- Jquery from Google CDN -->
@@ -21,11 +20,13 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
 
-    <!-- Support for bootstrap table http://bootstrap-table.wenzhixin.net.cn/ -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    {% if page.meta and page.meta.bootstrap_table %}
+        <!-- Support for bootstrap table http://bootstrap-table.wenzhixin.net.cn/ -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    {% endif %}
 
     <!--Pace support. http://github.hubspot.com/pace/ -->
     <script>
@@ -113,21 +114,10 @@
             integrity="sha256-n9ZE2vNe6Iv4S6dUXnzuvvt2yLWOZPJqD787TC7S4W4=" crossorigin="anonymous"></script>
     {% endif %}
 
-    <!-- Load Ubuntu fonts used for input variables -->
+    <!-- Load fonts used for input variables
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
-    <!-- 
-    https://github.com/daneden/animate.css
-    <link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    -->
-
-    <!-- 
-    https://github.com/IanLunn/Hover
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" />
-    -->
-
+     -->
 
 {% endblock %}
 

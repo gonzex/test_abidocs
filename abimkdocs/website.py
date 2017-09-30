@@ -475,7 +475,7 @@ Change the input yaml files or the python code
             #mdf.write(2*"\n" + "* * *\n")
 
             # This for the table of variables implemented by Jordan
-            mdf.write(self.get_varsearch(mdf.rpath))
+            mdf.write(self.build_varsearch_html(mdf.rpath))
 
             anames = ["abivarname", "vartype", "topics", "mnemonics"]
             anames = ["abivarname", "vartype", "mnemonics"]
@@ -506,7 +506,7 @@ Change the input yaml files or the python code
             body = "\n".join("<tr>%s</tr>" % html_row(row) for row in data)
             #data-url="../data/allvars.json"
 
-            mdf.write("""
+            html_table = """
 <div class="md-container">
 <div id="toolbar" class="btn-group"></div>
 <table data-toggle="table"
@@ -533,8 +533,8 @@ Change the input yaml files or the python code
       %s
     </tbody>
 </table>
-</div>
-""" % body)
+</div>""" % body
+        #mdf.write(html_table)
 
         # Build markdown page with external parameters.
         with self.new_mdfile("variables", "external_parameters.md") as mdf:
@@ -1211,7 +1211,7 @@ The bibtex file is available [here](../abiref.bib).
         if target: a.set('target', target)
         return a
 
-    def get_varsearch(self, page_rpath):
+    def build_varsearch_html(self, page_rpath):
         # Build single dictionary mapping varname --> var. Add @code if not abinit.
         allvars = {}
         for code, vd in self.variables_code.items():
@@ -1250,12 +1250,14 @@ The bibtex file is available [here](../abiref.bib).
 	onClick="searchInput()" placeholder="Search">
     </form>
     <span class="input-group-btn">
-      <button class="btn btn-primary" type="button" onClick="searchInput()">
-	<span class="glyphicon glyphicon-search"></span>
+      <button class="btn btn-primary" type="submit" onClick="searchInput()">
+        <span class="glyphicon glyphicon-search"></span>
       </button>
     </span>
   </div>
 </div>
+
+<script> $(function() {defaultClick(true);}); </script>
 """
         #<form><input type="text" id="InputSearch" onkeyup="searchInput()" onClick="searchInput()" placeholder="Search"></form>
         return """

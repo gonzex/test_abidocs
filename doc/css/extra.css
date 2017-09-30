@@ -4,16 +4,13 @@ body {
     background-image: url("../images/pw_maze_white.png");
 }
 
-
 /* Increase logo width because mkdocs material enforces 48 x 48 */
 .md-logo img {
     width: 48px;
     height: auto;
 }
 
-
 /* https://codemyui.com/expand-on-hover-link-style/ */
-
 a.wikilink {
   text-decoration: none;
   margin: 0 2px;
@@ -64,7 +61,6 @@ a:link {
     font-style: italic;
     text-decoration: none;
 }
-
 
 a:link {
     font-style: italic;
@@ -296,7 +292,8 @@ details.no-details:not([open]) summary {
     right: 20px;
 }
 
-#inbox .btn-io{
+
+#inbox .btn-io {
     border-radius: 50%;
     height: 54px;
     width: 54px;
@@ -324,7 +321,7 @@ details.no-details:not([open]) summary {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 50px;
+    min-width: 65px;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;
@@ -351,7 +348,7 @@ details.no-details:not([open]) summary {
     clear: both;
     font-weight: normal;
     line-height: 1.42857143;
-    color: #333;
+    color: #333 !important;
     background: #fff;
     white-space: nowrap;
     width: 40px;
@@ -363,7 +360,7 @@ details.no-details:not([open]) summary {
 }
 
 #inbox .dropdown-menu > li:first-child>a {
-    background: black !important;
+    background: black;
     color: #fff !important;
 }
 
