@@ -3301,9 +3301,19 @@ Change the input yaml files or the python code
 <p>See aim, anaddb or optic for the subset of input variables for the executables AIM(Bader), ANADDB and OPTIC.
 Such input variables are specifically labelled @aim, @anaddb, or @optic in the input variable database.
 Enter any string to search in the database. Clicking without any request will give all variables.</p>
-<form>
-<input type="text" id="InputSearch" onkeyup="searchInput()" onClick="searchInput()" placeholder="Search">
-</form>
+<div class="md-container">
+  <div class="input-group custom-search-form">
+    <form>
+      <input type="text" class="form-control" id="InputSearch" onkeyup="searchInput()"
+    onClick="searchInput()" placeholder="Search">
+    </form>
+    <span class="input-group-btn">
+      <button class="btn btn-primary" type="button" onClick="searchInput()">
+    <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</div>
 
 <div class="TabsLetter">
 <a class="TabLetterLink" href="#A" onClick="openLetter(event,'A')" id="clickA">A</a>
