@@ -220,9 +220,3 @@ function defaultClick(first) {
     document.getElementById("clickA").click();
   }
 }
-
-
-$(function() {
-    defaultClick(true);
-});
-

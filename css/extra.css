@@ -1,9 +1,7 @@
-/*
-*/
+/* Page background */
 body {
     background-image: url("../images/pw_maze_white.png");
 }
-
 
 /* Increase logo width because mkdocs material enforces 48 x 48 */
 .md-logo img {
@@ -11,9 +9,7 @@ body {
     height: auto;
 }
 
-
 /* https://codemyui.com/expand-on-hover-link-style/ */
-
 a.wikilink {
   text-decoration: none;
   margin: 0 2px;
@@ -57,38 +53,8 @@ a.wikilink:hover:before {
    background-color: #f0ac00;
 }
 
-a:link {
-    color: black !important;
-    border-bottom: 1px solid #000;
-    padding-bottom: 1px;
-    font-style: italic;
-    text-decoration: none;
-}
-
-
-a:link {
-    font-style: italic;
-}
-*/
-
-/*
-a:visited {
-    color: purple;
-}
-*/
-
-/* link style
-a.link:hover {
-    text-decoration: underline;
-}
-
-a.link:active {
-    text-decoration: underline;
-}
-*/
 
 /* wikilink style 
-
 a.wikilink:link {
     color: black !important;
     border-bottom: 1px solid #000;
@@ -149,6 +115,7 @@ a[href="https://github.com/abinit/abinit/"]:after {
   padding-left: 0;
 }
 
+/* Center figure and img elements */
 figure {
     text-align: center;
 }
@@ -157,6 +124,28 @@ img {
     display: block;
     margin: auto;
 }
+
+/* Table style */
+table {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Change color background of code examples */
+.md-typeset .codehilite code, 
+.md-typeset .codehilite pre, 
+.md-typeset .highlight code, 
+.md-typeset .highlight pre {
+    background-color: #dfe2f1;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    background-color: #eee;
+}
+
 
 /* Setting height is also important, otherwise editor wont showup 
 http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html */
@@ -172,7 +161,8 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     */
 }
 
-/* return to top arrow. https://codepen.io/rdallaire/pen/apoyx 
+/* 
+ * return to top arrow. https://codepen.io/rdallaire/pen/apoyx 
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -216,46 +206,7 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     color: #fff;
     top: 5px;
 }
- */
-
-/* https://facelessuser.github.io/pymdown-extensions/extensions/details/ */
-details {
-  display: block;
-}
-
-details[open] > summary::before {
-  content: "\f150";
-  font-family: FontAwesome;
-}
-
-details summary {
-  display: block;
-  cursor: pointer;
-}
-
-details summary:focus {
-  outline: none;
-}
-
-details summary::before {
-  content: "\f152";
-  font-family: FontAwesome;
-  padding-right: 0.5em;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-/* Attach the "no-details" class to details tags
-   in browsers that do not support them to get open/show functionality. */
-details.no-details:not([open]) > * {
-  display: none;
-}
-
-details.no-details:not([open]) summary {
-  display: block;
-}
+*/
 
 /* CSS for https://bootsnipp.com/snippets/featured/inbox-by-gmail */
 .fab {
@@ -296,7 +247,7 @@ details.no-details:not([open]) summary {
     right: 20px;
 }
 
-#inbox .btn-io{
+#inbox .btn-io {
     border-radius: 50%;
     height: 54px;
     width: 54px;
@@ -324,7 +275,7 @@ details.no-details:not([open]) summary {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 50px;
+    min-width: 65px;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;
@@ -351,7 +302,7 @@ details.no-details:not([open]) summary {
     clear: both;
     font-weight: normal;
     line-height: 1.42857143;
-    color: #333;
+    color: #333 !important;
     background: #fff;
     white-space: nowrap;
     width: 40px;
@@ -363,38 +314,38 @@ details.no-details:not([open]) summary {
 }
 
 #inbox .dropdown-menu > li:first-child>a {
-    background: black !important;
+    background: black;
     color: #fff !important;
 }
 
 #inbox .dropdown-menu > li:last-child>a {
     background: #D3A516;
-    color: #fff; !important;
+    color: #fff !important; 
 }
 
 #inbox .dropdown-menu > li:nth-child(6)>a {
     background: magenta;
-    color: #fff; !important;
+    color: #fff !important; 
 }
 
 #inbox .dropdown-menu > li:nth-child(5)>a {
     background: #3C80F6;
-    color: #fff; !important;
+    color: #fff !important; 
 }
 
 #inbox .dropdown-menu > li:nth-child(4)>a {
     background: DARKTURQUOISE;
-    color: #fff; !important;
+    color: #fff !important; 
 }
 
 #inbox .dropdown-menu > li:nth-child(3)>a {
     background: DARKORANGE;
-    color: #fff; !important;
+    color: #fff !important;
 }
 
 #inbox .dropdown-menu > li:nth-child(2)>a {
     background: #2CAC26;
-    color: #fff; !important;
+    color: #fff !important;
 }
 
 #inbox .fa-iosm{
@@ -404,9 +355,7 @@ details.no-details:not([open]) summary {
 
 /* 
  * Based on example 5 of https://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/ 
-.md-main {
-	counter-reset: section-1, section-2, section-3, section-4;
-}
+.md-main {counter-reset: section-1, section-2, section-3, section-4;}
  * */
 
 .md-main h1 {
@@ -456,25 +405,12 @@ details.no-details:not([open]) summary {
     line-height: 20px;
     /* counter-increment: section-4; */
 }
-/*
-*/
 
 /*
 .md-main h1:before { content: counter(section-1) ". "; }
 .md-main h2:before { content: counter(section-1) "." counter(section-2) " "; }
 .md-main h3:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
 .md-main h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
-*/
-
-
-/* CUSTOM POPOVERS 
-.popover {background-color: #bfd8ea;}
-.popover-content {background-color: #bfd8ea;}
-.popover.right .arrow:after {
-  border-top-color: #bfd8ea;
-  border-bottom-color: #bfd8ea;
-  background-color: #bfd8ea;
-}
 */
 
 /* This for the table of variables implemented by Jordan */
@@ -488,67 +424,67 @@ div.TabsLetter {
 
 /* Style the buttons inside the tab */
 div.TabsLetter a {
-  background-color: inherit !important;
-  float: left !important;
-  border: none !important;
-  outline: none !important;
-  cursor: pointer !important;
-  padding: 14px 16px !important;
-  transition: 0.3s !important;
-  text-decoration: none !important; /* Remove default text underline */
-  color: #999 !important;
+    background-color: inherit !important;
+    float: left !important;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer !important;
+    padding: 14px 16px !important;
+    transition: 0.3s !important;
+    text-decoration: none !important; /* Remove default text underline */
+    color: #999 !important;
 }
 
 /* Change background color of buttons on hover */
 div.TabsLetter a:hover {
-  background-color: #ddd !important;
-  color: #111 !important;
+    background-color: #ddd !important;
+    color: #111 !important;
 }
 
 /* Create an active/current tablink class */
 div.TabsLetter a.active {
-  background-color: #ccc !important;
-  color: #111 !important;
+    background-color: #ccc !important;
+    color: #111 !important;
 }
 
 /* Style the tab content */
 .TabContentLetter {
-  display: none;
-  padding: 6px 12px !important;
-  /* border: 1px solid #ccc; */
-  border-top: none !important;
+    display: none;
+    padding: 6px 12px !important;
+    /* border: 1px solid #ccc; */
+    border-top: none !important;
 } 
 
 ul#Letters, ul.TabContentLetter {
-  list-style: none !important;
-  overflow: hidden !important;
+    list-style: none !important;
+    overflow: hidden !important;
 }
 
 ul#Letters {
-  padding: 0px !important;
-  margin: 0px !important;
-  border: 1px solid #ccc !important;
-  border-top: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border: 1px solid #ccc !important;
+    border-top: none !important;
 }
 
 .TabContentLetter li {
-  /* display: inline; */
-  float: left !important;
+    /* display: inline; */
+    float: left !important;
 }
 
-.TabContentLetter li a {
-  text-decoration: none; /* Remove default text underline */
-  font-size: 14px; /**/
-  color: #666 !important; /* Add a hover effect to all links, except for headers */
-  display: block; /* Make it into a block element to fill the whole list */
+a.small-grey-link {
+    text-decoration: none; /* Remove default text underline */
+    font-size: 16px; 
+    color: #666 !important; 
+    /* display: block; Make it into a block element to fill the whole list */
+}
+
+a.small-grey-link:hover {
+    color: #111; /* Add a hover effect to all links, except for headers */
+    background-color: #ccc; 
 }
 
 li.HeaderLetter {
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-}
-
-.TabContentLetter li a:hover:not(.header) {
-  color: #111; /* Add a hover effect to all links, except for headers */
-  background-color: #ccc;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
