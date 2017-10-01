@@ -42,79 +42,79 @@ Change the input yaml files or the python code
 <!-- Tab panes -->
 <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="abinit-tabs-A">
-<a href="basic#accuracy" class="wikilink codevar-wikilink">accuracy</a> <a href="basic#acell" class="wikilink codevar-wikilink">acell</a> <a href="rlx#adpimd" class="wikilink codevar-wikilink">adpimd</a> <a href="rlx#adpimd_gamma" class="wikilink codevar-wikilink">adpimd_gamma</a> <a href="gstate#algalch" class="wikilink codevar-wikilink">algalch</a> <a href="rlx#amu" class="wikilink codevar-wikilink">amu</a> <a href="basic#angdeg" class="wikilink codevar-wikilink">angdeg</a> <a href="eph#asr" class="wikilink codevar-wikilink">asr</a> <a href="ffield#atvshift" class="wikilink codevar-wikilink">atvshift</a> <a href="paral#autoparal" class="wikilink codevar-wikilink">autoparal</a> <a href="gw#awtr" class="wikilink codevar-wikilink">awtr</a>
+<a href="basic#accuracy" class="small-grey-link">accuracy</a> <a href="basic#acell" class="small-grey-link">acell</a> <a href="rlx#adpimd" class="small-grey-link">adpimd</a> <a href="rlx#adpimd_gamma" class="small-grey-link">adpimd_gamma</a> <a href="gstate#algalch" class="small-grey-link">algalch</a> <a href="rlx#amu" class="small-grey-link">amu</a> <a href="basic#angdeg" class="small-grey-link">angdeg</a> <a href="eph#asr" class="small-grey-link">asr</a> <a href="ffield#atvshift" class="small-grey-link">atvshift</a> <a href="paral#autoparal" class="small-grey-link">autoparal</a> <a href="gw#awtr" class="small-grey-link">awtr</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-B">
-<a href="paral#bandpp" class="wikilink codevar-wikilink">bandpp</a> <a href="ffield#bdberry" class="wikilink codevar-wikilink">bdberry</a> <a href="dfpt#bdeigrf" class="wikilink codevar-wikilink">bdeigrf</a> <a href="gw#bdgw" class="wikilink codevar-wikilink">bdgw</a> <a href="ffield#berryopt" class="wikilink codevar-wikilink">berryopt</a> <a href="ffield#berrysav" class="wikilink codevar-wikilink">berrysav</a> <a href="ffield#berrystep" class="wikilink codevar-wikilink">berrystep</a> <a href="ffield#bfield" class="wikilink codevar-wikilink">bfield</a> <a href="rlx#bmass" class="wikilink codevar-wikilink">bmass</a> <a href="gstate#boxcenter" class="wikilink codevar-wikilink">boxcenter</a> <a href="gstate#boxcutmin" class="wikilink codevar-wikilink">boxcutmin</a> <a href="geo#brvltt" class="wikilink codevar-wikilink">brvltt</a> <a href="bse#bs_algorithm" class="wikilink codevar-wikilink">bs_algorithm</a> <a href="bse#bs_calctype" class="wikilink codevar-wikilink">bs_calctype</a> <a href="bse#bs_coulomb_term" class="wikilink codevar-wikilink">bs_coulomb_term</a> <a href="bse#bs_coupling" class="wikilink codevar-wikilink">bs_coupling</a> <a href="bse#bs_eh_cutoff" class="wikilink codevar-wikilink">bs_eh_cutoff</a> <a href="bse#bs_exchange_term" class="wikilink codevar-wikilink">bs_exchange_term</a> <a href="bse#bs_freq_mesh" class="wikilink codevar-wikilink">bs_freq_mesh</a> <a href="bse#bs_hayd_term" class="wikilink codevar-wikilink">bs_hayd_term</a> <a href="bse#bs_haydock_niter" class="wikilink codevar-wikilink">bs_haydock_niter</a> <a href="bse#bs_haydock_tol" class="wikilink codevar-wikilink">bs_haydock_tol</a> <a href="bse#bs_interp_kmult" class="wikilink codevar-wikilink">bs_interp_kmult</a> <a href="bse#bs_interp_m3_width" class="wikilink codevar-wikilink">bs_interp_m3_width</a> <a href="bse#bs_interp_method" class="wikilink codevar-wikilink">bs_interp_method</a> <a href="bse#bs_interp_mode" class="wikilink codevar-wikilink">bs_interp_mode</a> <a href="bse#bs_interp_prep" class="wikilink codevar-wikilink">bs_interp_prep</a> <a href="bse#bs_interp_rl_nb" class="wikilink codevar-wikilink">bs_interp_rl_nb</a> <a href="bse#bs_loband" class="wikilink codevar-wikilink">bs_loband</a> <a href="bse#bs_nstates" class="wikilink codevar-wikilink">bs_nstates</a> <a href="dev#builtintest" class="wikilink codevar-wikilink">builtintest</a> <a href="paw#bxctmindg" class="wikilink codevar-wikilink">bxctmindg</a>
+<a href="paral#bandpp" class="small-grey-link">bandpp</a> <a href="ffield#bdberry" class="small-grey-link">bdberry</a> <a href="dfpt#bdeigrf" class="small-grey-link">bdeigrf</a> <a href="gw#bdgw" class="small-grey-link">bdgw</a> <a href="ffield#berryopt" class="small-grey-link">berryopt</a> <a href="ffield#berrysav" class="small-grey-link">berrysav</a> <a href="ffield#berrystep" class="small-grey-link">berrystep</a> <a href="ffield#bfield" class="small-grey-link">bfield</a> <a href="rlx#bmass" class="small-grey-link">bmass</a> <a href="gstate#boxcenter" class="small-grey-link">boxcenter</a> <a href="gstate#boxcutmin" class="small-grey-link">boxcutmin</a> <a href="geo#brvltt" class="small-grey-link">brvltt</a> <a href="bse#bs_algorithm" class="small-grey-link">bs_algorithm</a> <a href="bse#bs_calctype" class="small-grey-link">bs_calctype</a> <a href="bse#bs_coulomb_term" class="small-grey-link">bs_coulomb_term</a> <a href="bse#bs_coupling" class="small-grey-link">bs_coupling</a> <a href="bse#bs_eh_cutoff" class="small-grey-link">bs_eh_cutoff</a> <a href="bse#bs_exchange_term" class="small-grey-link">bs_exchange_term</a> <a href="bse#bs_freq_mesh" class="small-grey-link">bs_freq_mesh</a> <a href="bse#bs_hayd_term" class="small-grey-link">bs_hayd_term</a> <a href="bse#bs_haydock_niter" class="small-grey-link">bs_haydock_niter</a> <a href="bse#bs_haydock_tol" class="small-grey-link">bs_haydock_tol</a> <a href="bse#bs_interp_kmult" class="small-grey-link">bs_interp_kmult</a> <a href="bse#bs_interp_m3_width" class="small-grey-link">bs_interp_m3_width</a> <a href="bse#bs_interp_method" class="small-grey-link">bs_interp_method</a> <a href="bse#bs_interp_mode" class="small-grey-link">bs_interp_mode</a> <a href="bse#bs_interp_prep" class="small-grey-link">bs_interp_prep</a> <a href="bse#bs_interp_rl_nb" class="small-grey-link">bs_interp_rl_nb</a> <a href="bse#bs_loband" class="small-grey-link">bs_loband</a> <a href="bse#bs_nstates" class="small-grey-link">bs_nstates</a> <a href="dev#builtintest" class="small-grey-link">builtintest</a> <a href="paw#bxctmindg" class="small-grey-link">bxctmindg</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-C">
-<a href="gw#cd_customnimfrqs" class="wikilink codevar-wikilink">cd_customnimfrqs</a> <a href="gw#cd_frqim_method" class="wikilink codevar-wikilink">cd_frqim_method</a> <a href="gw#cd_full_grid" class="wikilink codevar-wikilink">cd_full_grid</a> <a href="gw#cd_halfway_freq" class="wikilink codevar-wikilink">cd_halfway_freq</a> <a href="gw#cd_imfrqs" class="wikilink codevar-wikilink">cd_imfrqs</a> <a href="gw#cd_max_freq" class="wikilink codevar-wikilink">cd_max_freq</a> <a href="gw#cd_subset_freq" class="wikilink codevar-wikilink">cd_subset_freq</a> <a href="dev#cgtyphf" class="wikilink codevar-wikilink">cgtyphf</a> <a href="gstate#charge" class="wikilink codevar-wikilink">charge</a> <a href="geo#chempot" class="wikilink codevar-wikilink">chempot</a> <a href="gstate#chkexit" class="wikilink codevar-wikilink">chkexit</a> <a href="gstate#chkprim" class="wikilink codevar-wikilink">chkprim</a> <a href="gstate#chksymbreak" class="wikilink codevar-wikilink">chksymbreak</a> <a href="eph#chneut" class="wikilink codevar-wikilink">chneut</a> <a href="rlx#cineb_start" class="wikilink codevar-wikilink">cineb_start</a> <a href="gstate#cpuh" class="wikilink codevar-wikilink">cpuh</a> <a href="gstate#cpum" class="wikilink codevar-wikilink">cpum</a> <a href="gstate#cpus" class="wikilink codevar-wikilink">cpus</a>
+<a href="gw#cd_customnimfrqs" class="small-grey-link">cd_customnimfrqs</a> <a href="gw#cd_frqim_method" class="small-grey-link">cd_frqim_method</a> <a href="gw#cd_full_grid" class="small-grey-link">cd_full_grid</a> <a href="gw#cd_halfway_freq" class="small-grey-link">cd_halfway_freq</a> <a href="gw#cd_imfrqs" class="small-grey-link">cd_imfrqs</a> <a href="gw#cd_max_freq" class="small-grey-link">cd_max_freq</a> <a href="gw#cd_subset_freq" class="small-grey-link">cd_subset_freq</a> <a href="dev#cgtyphf" class="small-grey-link">cgtyphf</a> <a href="gstate#charge" class="small-grey-link">charge</a> <a href="geo#chempot" class="small-grey-link">chempot</a> <a href="gstate#chkexit" class="small-grey-link">chkexit</a> <a href="gstate#chkprim" class="small-grey-link">chkprim</a> <a href="gstate#chksymbreak" class="small-grey-link">chksymbreak</a> <a href="eph#chneut" class="small-grey-link">chneut</a> <a href="rlx#cineb_start" class="small-grey-link">cineb_start</a> <a href="gstate#cpuh" class="small-grey-link">cpuh</a> <a href="gstate#cpum" class="small-grey-link">cpum</a> <a href="gstate#cpus" class="small-grey-link">cpus</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-D">
-<a href="dfpt#d3e_pert1_atpol" class="wikilink codevar-wikilink">d3e_pert1_atpol</a> <a href="dfpt#d3e_pert1_dir" class="wikilink codevar-wikilink">d3e_pert1_dir</a> <a href="dfpt#d3e_pert1_elfd" class="wikilink codevar-wikilink">d3e_pert1_elfd</a> <a href="dfpt#d3e_pert1_phon" class="wikilink codevar-wikilink">d3e_pert1_phon</a> <a href="dfpt#d3e_pert2_atpol" class="wikilink codevar-wikilink">d3e_pert2_atpol</a> <a href="dfpt#d3e_pert2_dir" class="wikilink codevar-wikilink">d3e_pert2_dir</a> <a href="dfpt#d3e_pert2_elfd" class="wikilink codevar-wikilink">d3e_pert2_elfd</a> <a href="dfpt#d3e_pert2_phon" class="wikilink codevar-wikilink">d3e_pert2_phon</a> <a href="dfpt#d3e_pert3_atpol" class="wikilink codevar-wikilink">d3e_pert3_atpol</a> <a href="dfpt#d3e_pert3_dir" class="wikilink codevar-wikilink">d3e_pert3_dir</a> <a href="dfpt#d3e_pert3_elfd" class="wikilink codevar-wikilink">d3e_pert3_elfd</a> <a href="dfpt#d3e_pert3_phon" class="wikilink codevar-wikilink">d3e_pert3_phon</a> <a href="ffield#ddamp" class="wikilink codevar-wikilink">ddamp</a> <a href="eph#ddb_ngqpt" class="wikilink codevar-wikilink">ddb_ngqpt</a> <a href="eph#ddb_shiftq" class="wikilink codevar-wikilink">ddb_shiftq</a> <a href="rlx#delayperm" class="wikilink codevar-wikilink">delayperm</a> <a href="dev#densfor_pred" class="wikilink codevar-wikilink">densfor_pred</a> <a href="dev#densty" class="wikilink codevar-wikilink">densty</a> <a href="ffield#dfield" class="wikilink codevar-wikilink">dfield</a> <a href="dfpt#dfpt_sciss" class="wikilink codevar-wikilink">dfpt_sciss</a> <a href="gstate#diecut" class="wikilink codevar-wikilink">diecut</a> <a href="gstate#diegap" class="wikilink codevar-wikilink">diegap</a> <a href="gstate#dielam" class="wikilink codevar-wikilink">dielam</a> <a href="gstate#dielng" class="wikilink codevar-wikilink">dielng</a> <a href="gstate#diemac" class="wikilink codevar-wikilink">diemac</a> <a href="gstate#diemix" class="wikilink codevar-wikilink">diemix</a> <a href="gstate#diemixmag" class="wikilink codevar-wikilink">diemixmag</a> <a href="rlx#diismemory" class="wikilink codevar-wikilink">diismemory</a> <a href="rlx#dilatmx" class="wikilink codevar-wikilink">dilatmx</a> <a href="eph#dipdip" class="wikilink codevar-wikilink">dipdip</a> <a href="paw#dmatpawu" class="wikilink codevar-wikilink">dmatpawu</a> <a href="paw#dmatpuopt" class="wikilink codevar-wikilink">dmatpuopt</a> <a href="paw#dmatudiag" class="wikilink codevar-wikilink">dmatudiag</a> <a href="dmft#dmft_dc" class="wikilink codevar-wikilink">dmft_dc</a> <a href="dmft#dmft_entropy" class="wikilink codevar-wikilink">dmft_entropy</a> <a href="dmft#dmft_iter" class="wikilink codevar-wikilink">dmft_iter</a> <a href="dmft#dmft_mxsf" class="wikilink codevar-wikilink">dmft_mxsf</a> <a href="dmft#dmft_nlambda" class="wikilink codevar-wikilink">dmft_nlambda</a> <a href="dmft#dmft_nwli" class="wikilink codevar-wikilink">dmft_nwli</a> <a href="dmft#dmft_nwlo" class="wikilink codevar-wikilink">dmft_nwlo</a> <a href="dev#dmft_read_occnd" class="wikilink codevar-wikilink">dmft_read_occnd</a> <a href="dmft#dmft_rslf" class="wikilink codevar-wikilink">dmft_rslf</a> <a href="dmft#dmft_solv" class="wikilink codevar-wikilink">dmft_solv</a> <a href="dmft#dmft_t2g" class="wikilink codevar-wikilink">dmft_t2g</a> <a href="dmft#dmft_tolfreq" class="wikilink codevar-wikilink">dmft_tolfreq</a> <a href="dmft#dmft_tollc" class="wikilink codevar-wikilink">dmft_tollc</a> <a href="dmft#dmftbandf" class="wikilink codevar-wikilink">dmftbandf</a> <a href="dmft#dmftbandi" class="wikilink codevar-wikilink">dmftbandi</a> <a href="dmft#dmftcheck" class="wikilink codevar-wikilink">dmftcheck</a> <a href="dev#dmftctqmc_basis" class="wikilink codevar-wikilink">dmftctqmc_basis</a> <a href="dmft#dmftctqmc_check" class="wikilink codevar-wikilink">dmftctqmc_check</a> <a href="dmft#dmftctqmc_correl" class="wikilink codevar-wikilink">dmftctqmc_correl</a> <a href="dmft#dmftctqmc_gmove" class="wikilink codevar-wikilink">dmftctqmc_gmove</a> <a href="dmft#dmftctqmc_grnns" class="wikilink codevar-wikilink">dmftctqmc_grnns</a> <a href="dmft#dmftctqmc_meas" class="wikilink codevar-wikilink">dmftctqmc_meas</a> <a href="dmft#dmftctqmc_mov" class="wikilink codevar-wikilink">dmftctqmc_mov</a> <a href="dmft#dmftctqmc_mrka" class="wikilink codevar-wikilink">dmftctqmc_mrka</a> <a href="dmft#dmftctqmc_order" class="wikilink codevar-wikilink">dmftctqmc_order</a> <a href="dmft#dmftctqmc_triqs_nleg" class="wikilink codevar-wikilink">dmftctqmc_triqs_nleg</a> <a href="dmft#dmftqmc_l" class="wikilink codevar-wikilink">dmftqmc_l</a> <a href="dmft#dmftqmc_n" class="wikilink codevar-wikilink">dmftqmc_n</a> <a href="dmft#dmftqmc_seed" class="wikilink codevar-wikilink">dmftqmc_seed</a> <a href="dmft#dmftqmc_therm" class="wikilink codevar-wikilink">dmftqmc_therm</a> <a href="gstate#dosdeltae" class="wikilink codevar-wikilink">dosdeltae</a> <a href="rlx#dtion" class="wikilink codevar-wikilink">dtion</a> <a href="rlx#dynimage" class="wikilink codevar-wikilink">dynimage</a>
+<a href="dfpt#d3e_pert1_atpol" class="small-grey-link">d3e_pert1_atpol</a> <a href="dfpt#d3e_pert1_dir" class="small-grey-link">d3e_pert1_dir</a> <a href="dfpt#d3e_pert1_elfd" class="small-grey-link">d3e_pert1_elfd</a> <a href="dfpt#d3e_pert1_phon" class="small-grey-link">d3e_pert1_phon</a> <a href="dfpt#d3e_pert2_atpol" class="small-grey-link">d3e_pert2_atpol</a> <a href="dfpt#d3e_pert2_dir" class="small-grey-link">d3e_pert2_dir</a> <a href="dfpt#d3e_pert2_elfd" class="small-grey-link">d3e_pert2_elfd</a> <a href="dfpt#d3e_pert2_phon" class="small-grey-link">d3e_pert2_phon</a> <a href="dfpt#d3e_pert3_atpol" class="small-grey-link">d3e_pert3_atpol</a> <a href="dfpt#d3e_pert3_dir" class="small-grey-link">d3e_pert3_dir</a> <a href="dfpt#d3e_pert3_elfd" class="small-grey-link">d3e_pert3_elfd</a> <a href="dfpt#d3e_pert3_phon" class="small-grey-link">d3e_pert3_phon</a> <a href="ffield#ddamp" class="small-grey-link">ddamp</a> <a href="eph#ddb_ngqpt" class="small-grey-link">ddb_ngqpt</a> <a href="eph#ddb_shiftq" class="small-grey-link">ddb_shiftq</a> <a href="rlx#delayperm" class="small-grey-link">delayperm</a> <a href="dev#densfor_pred" class="small-grey-link">densfor_pred</a> <a href="dev#densty" class="small-grey-link">densty</a> <a href="ffield#dfield" class="small-grey-link">dfield</a> <a href="dfpt#dfpt_sciss" class="small-grey-link">dfpt_sciss</a> <a href="gstate#diecut" class="small-grey-link">diecut</a> <a href="gstate#diegap" class="small-grey-link">diegap</a> <a href="gstate#dielam" class="small-grey-link">dielam</a> <a href="gstate#dielng" class="small-grey-link">dielng</a> <a href="gstate#diemac" class="small-grey-link">diemac</a> <a href="gstate#diemix" class="small-grey-link">diemix</a> <a href="gstate#diemixmag" class="small-grey-link">diemixmag</a> <a href="rlx#diismemory" class="small-grey-link">diismemory</a> <a href="rlx#dilatmx" class="small-grey-link">dilatmx</a> <a href="eph#dipdip" class="small-grey-link">dipdip</a> <a href="paw#dmatpawu" class="small-grey-link">dmatpawu</a> <a href="paw#dmatpuopt" class="small-grey-link">dmatpuopt</a> <a href="paw#dmatudiag" class="small-grey-link">dmatudiag</a> <a href="dmft#dmft_dc" class="small-grey-link">dmft_dc</a> <a href="dmft#dmft_entropy" class="small-grey-link">dmft_entropy</a> <a href="dmft#dmft_iter" class="small-grey-link">dmft_iter</a> <a href="dmft#dmft_mxsf" class="small-grey-link">dmft_mxsf</a> <a href="dmft#dmft_nlambda" class="small-grey-link">dmft_nlambda</a> <a href="dmft#dmft_nwli" class="small-grey-link">dmft_nwli</a> <a href="dmft#dmft_nwlo" class="small-grey-link">dmft_nwlo</a> <a href="dev#dmft_read_occnd" class="small-grey-link">dmft_read_occnd</a> <a href="dmft#dmft_rslf" class="small-grey-link">dmft_rslf</a> <a href="dmft#dmft_solv" class="small-grey-link">dmft_solv</a> <a href="dmft#dmft_t2g" class="small-grey-link">dmft_t2g</a> <a href="dmft#dmft_tolfreq" class="small-grey-link">dmft_tolfreq</a> <a href="dmft#dmft_tollc" class="small-grey-link">dmft_tollc</a> <a href="dmft#dmftbandf" class="small-grey-link">dmftbandf</a> <a href="dmft#dmftbandi" class="small-grey-link">dmftbandi</a> <a href="dmft#dmftcheck" class="small-grey-link">dmftcheck</a> <a href="dev#dmftctqmc_basis" class="small-grey-link">dmftctqmc_basis</a> <a href="dmft#dmftctqmc_check" class="small-grey-link">dmftctqmc_check</a> <a href="dmft#dmftctqmc_correl" class="small-grey-link">dmftctqmc_correl</a> <a href="dmft#dmftctqmc_gmove" class="small-grey-link">dmftctqmc_gmove</a> <a href="dmft#dmftctqmc_grnns" class="small-grey-link">dmftctqmc_grnns</a> <a href="dmft#dmftctqmc_meas" class="small-grey-link">dmftctqmc_meas</a> <a href="dmft#dmftctqmc_mov" class="small-grey-link">dmftctqmc_mov</a> <a href="dmft#dmftctqmc_mrka" class="small-grey-link">dmftctqmc_mrka</a> <a href="dmft#dmftctqmc_order" class="small-grey-link">dmftctqmc_order</a> <a href="dmft#dmftctqmc_triqs_nleg" class="small-grey-link">dmftctqmc_triqs_nleg</a> <a href="dmft#dmftqmc_l" class="small-grey-link">dmftqmc_l</a> <a href="dmft#dmftqmc_n" class="small-grey-link">dmftqmc_n</a> <a href="dmft#dmftqmc_seed" class="small-grey-link">dmftqmc_seed</a> <a href="dmft#dmftqmc_therm" class="small-grey-link">dmftqmc_therm</a> <a href="gstate#dosdeltae" class="small-grey-link">dosdeltae</a> <a href="rlx#dtion" class="small-grey-link">dtion</a> <a href="rlx#dynimage" class="small-grey-link">dynimage</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-E">
-<a href="basic#ecut" class="wikilink codevar-wikilink">ecut</a> <a href="gw#ecuteps" class="wikilink codevar-wikilink">ecuteps</a> <a href="gw#ecutsigx" class="wikilink codevar-wikilink">ecutsigx</a> <a href="rlx#ecutsm" class="wikilink codevar-wikilink">ecutsm</a> <a href="gw#ecutwfn" class="wikilink codevar-wikilink">ecutwfn</a> <a href="dev#effmass_free" class="wikilink codevar-wikilink">effmass_free</a> <a href="ffield#efield" class="wikilink codevar-wikilink">efield</a> <a href="dfpt#efmas" class="wikilink codevar-wikilink">efmas</a> <a href="dfpt#efmas_bands" class="wikilink codevar-wikilink">efmas_bands</a> <a href="dfpt#efmas_calc_dirs" class="wikilink codevar-wikilink">efmas_calc_dirs</a> <a href="dfpt#efmas_deg" class="wikilink codevar-wikilink">efmas_deg</a> <a href="dfpt#efmas_deg_tol" class="wikilink codevar-wikilink">efmas_deg_tol</a> <a href="dfpt#efmas_dim" class="wikilink codevar-wikilink">efmas_dim</a> <a href="dfpt#efmas_dirs" class="wikilink codevar-wikilink">efmas_dirs</a> <a href="dfpt#efmas_n_dirs" class="wikilink codevar-wikilink">efmas_n_dirs</a> <a href="dfpt#efmas_ntheta" class="wikilink codevar-wikilink">efmas_ntheta</a> <a href="basic#einterp" class="wikilink codevar-wikilink">einterp</a> <a href="dfpt#elph2_imagden" class="wikilink codevar-wikilink">elph2_imagden</a> <a href="gstate#enunit" class="wikilink codevar-wikilink">enunit</a> <a href="eph#eph_extrael" class="wikilink codevar-wikilink">eph_extrael</a> <a href="eph#eph_fermie" class="wikilink codevar-wikilink">eph_fermie</a> <a href="eph#eph_fsewin" class="wikilink codevar-wikilink">eph_fsewin</a> <a href="eph#eph_fsmear" class="wikilink codevar-wikilink">eph_fsmear</a> <a href="eph#eph_intmeth" class="wikilink codevar-wikilink">eph_intmeth</a> <a href="eph#eph_mustar" class="wikilink codevar-wikilink">eph_mustar</a> <a href="eph#eph_ngqpt_fine" class="wikilink codevar-wikilink">eph_ngqpt_fine</a> <a href="dfpt#eph_task" class="wikilink codevar-wikilink">eph_task</a> <a href="eph#eph_transport" class="wikilink codevar-wikilink">eph_transport</a> <a href="dev#eshift" class="wikilink codevar-wikilink">eshift</a> <a href="dfpt#esmear" class="wikilink codevar-wikilink">esmear</a> <a href="dev#exchmix" class="wikilink codevar-wikilink">exchmix</a> <a href="dev#exchn2n3d" class="wikilink codevar-wikilink">exchn2n3d</a> <a href="dev#extrapwf" class="wikilink codevar-wikilink">extrapwf</a>
+<a href="basic#ecut" class="small-grey-link">ecut</a> <a href="gw#ecuteps" class="small-grey-link">ecuteps</a> <a href="gw#ecutsigx" class="small-grey-link">ecutsigx</a> <a href="rlx#ecutsm" class="small-grey-link">ecutsm</a> <a href="gw#ecutwfn" class="small-grey-link">ecutwfn</a> <a href="dev#effmass_free" class="small-grey-link">effmass_free</a> <a href="ffield#efield" class="small-grey-link">efield</a> <a href="dfpt#efmas" class="small-grey-link">efmas</a> <a href="dfpt#efmas_bands" class="small-grey-link">efmas_bands</a> <a href="dfpt#efmas_calc_dirs" class="small-grey-link">efmas_calc_dirs</a> <a href="dfpt#efmas_deg" class="small-grey-link">efmas_deg</a> <a href="dfpt#efmas_deg_tol" class="small-grey-link">efmas_deg_tol</a> <a href="dfpt#efmas_dim" class="small-grey-link">efmas_dim</a> <a href="dfpt#efmas_dirs" class="small-grey-link">efmas_dirs</a> <a href="dfpt#efmas_n_dirs" class="small-grey-link">efmas_n_dirs</a> <a href="dfpt#efmas_ntheta" class="small-grey-link">efmas_ntheta</a> <a href="basic#einterp" class="small-grey-link">einterp</a> <a href="dfpt#elph2_imagden" class="small-grey-link">elph2_imagden</a> <a href="gstate#enunit" class="small-grey-link">enunit</a> <a href="eph#eph_extrael" class="small-grey-link">eph_extrael</a> <a href="eph#eph_fermie" class="small-grey-link">eph_fermie</a> <a href="eph#eph_fsewin" class="small-grey-link">eph_fsewin</a> <a href="eph#eph_fsmear" class="small-grey-link">eph_fsmear</a> <a href="eph#eph_intmeth" class="small-grey-link">eph_intmeth</a> <a href="eph#eph_mustar" class="small-grey-link">eph_mustar</a> <a href="eph#eph_ngqpt_fine" class="small-grey-link">eph_ngqpt_fine</a> <a href="dfpt#eph_task" class="small-grey-link">eph_task</a> <a href="eph#eph_transport" class="small-grey-link">eph_transport</a> <a href="dev#eshift" class="small-grey-link">eshift</a> <a href="dfpt#esmear" class="small-grey-link">esmear</a> <a href="dev#exchmix" class="small-grey-link">exchmix</a> <a href="dev#exchn2n3d" class="small-grey-link">exchn2n3d</a> <a href="dev#extrapwf" class="small-grey-link">extrapwf</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-F">
-<a href="paw#f4of2_sla" class="wikilink codevar-wikilink">f4of2_sla</a> <a href="paw#f6of2_sla" class="wikilink codevar-wikilink">f6of2_sla</a> <a href="gstate#fband" class="wikilink codevar-wikilink">fband</a> <a href="dev#fermie_nest" class="wikilink codevar-wikilink">fermie_nest</a> <a href="dev#fftalg" class="wikilink codevar-wikilink">fftalg</a> <a href="dev#fftcache" class="wikilink codevar-wikilink">fftcache</a> <a href="gw#fftgw" class="wikilink codevar-wikilink">fftgw</a> <a href="gw#freqim_alpha" class="wikilink codevar-wikilink">freqim_alpha</a> <a href="gw#freqremax" class="wikilink codevar-wikilink">freqremax</a> <a href="gw#freqremin" class="wikilink codevar-wikilink">freqremin</a> <a href="gw#freqspmax" class="wikilink codevar-wikilink">freqspmax</a> <a href="gw#freqspmin" class="wikilink codevar-wikilink">freqspmin</a> <a href="rlx#friction" class="wikilink codevar-wikilink">friction</a> <a href="dfpt#frzfermi" class="wikilink codevar-wikilink">frzfermi</a> <a href="rlx#fxcartfactor" class="wikilink codevar-wikilink">fxcartfactor</a>
+<a href="paw#f4of2_sla" class="small-grey-link">f4of2_sla</a> <a href="paw#f6of2_sla" class="small-grey-link">f6of2_sla</a> <a href="gstate#fband" class="small-grey-link">fband</a> <a href="dev#fermie_nest" class="small-grey-link">fermie_nest</a> <a href="dev#fftalg" class="small-grey-link">fftalg</a> <a href="dev#fftcache" class="small-grey-link">fftcache</a> <a href="gw#fftgw" class="small-grey-link">fftgw</a> <a href="gw#freqim_alpha" class="small-grey-link">freqim_alpha</a> <a href="gw#freqremax" class="small-grey-link">freqremax</a> <a href="gw#freqremin" class="small-grey-link">freqremin</a> <a href="gw#freqspmax" class="small-grey-link">freqspmax</a> <a href="gw#freqspmin" class="small-grey-link">freqspmin</a> <a href="rlx#friction" class="small-grey-link">friction</a> <a href="dfpt#frzfermi" class="small-grey-link">frzfermi</a> <a href="rlx#fxcartfactor" class="small-grey-link">fxcartfactor</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-G">
-<a href="rlx#ga_algor" class="wikilink codevar-wikilink">ga_algor</a> <a href="rlx#ga_fitness" class="wikilink codevar-wikilink">ga_fitness</a> <a href="rlx#ga_n_rules" class="wikilink codevar-wikilink">ga_n_rules</a> <a href="rlx#ga_opt_percent" class="wikilink codevar-wikilink">ga_opt_percent</a> <a href="rlx#ga_rules" class="wikilink codevar-wikilink">ga_rules</a> <a href="geo#genafm" class="wikilink codevar-wikilink">genafm</a> <a href="files#get1den" class="wikilink codevar-wikilink">get1den</a> <a href="files#get1wf" class="wikilink codevar-wikilink">get1wf</a> <a href="files#getbscoup" class="wikilink codevar-wikilink">getbscoup</a> <a href="files#getbseig" class="wikilink codevar-wikilink">getbseig</a> <a href="files#getbsreso" class="wikilink codevar-wikilink">getbsreso</a> <a href="rlx#getcell" class="wikilink codevar-wikilink">getcell</a> <a href="files#getddb" class="wikilink codevar-wikilink">getddb</a> <a href="files#getddk" class="wikilink codevar-wikilink">getddk</a> <a href="files#getden" class="wikilink codevar-wikilink">getden</a> <a href="dev#getgam_eig2nkq" class="wikilink codevar-wikilink">getgam_eig2nkq</a> <a href="files#gethaydock" class="wikilink codevar-wikilink">gethaydock</a> <a href="files#getocc" class="wikilink codevar-wikilink">getocc</a> <a href="files#getqps" class="wikilink codevar-wikilink">getqps</a> <a href="files#getscr" class="wikilink codevar-wikilink">getscr</a> <a href="files#getsuscep" class="wikilink codevar-wikilink">getsuscep</a> <a href="rlx#getvel" class="wikilink codevar-wikilink">getvel</a> <a href="files#getwfk" class="wikilink codevar-wikilink">getwfk</a> <a href="dev#getwfkfine" class="wikilink codevar-wikilink">getwfkfine</a> <a href="files#getwfq" class="wikilink codevar-wikilink">getwfq</a> <a href="rlx#getxcart" class="wikilink codevar-wikilink">getxcart</a> <a href="rlx#getxred" class="wikilink codevar-wikilink">getxred</a> <a href="rlx#goprecon" class="wikilink codevar-wikilink">goprecon</a> <a href="rlx#goprecprm" class="wikilink codevar-wikilink">goprecprm</a> <a href="paral#gpu_devices" class="wikilink codevar-wikilink">gpu_devices</a> <a href="paral#gpu_linalg_limit" class="wikilink codevar-wikilink">gpu_linalg_limit</a> <a href="gw#gw_customnfreqsp" class="wikilink codevar-wikilink">gw_customnfreqsp</a> <a href="gw#gw_freqsp" class="wikilink codevar-wikilink">gw_freqsp</a> <a href="gw#gw_frqim_inzgrid" class="wikilink codevar-wikilink">gw_frqim_inzgrid</a> <a href="gw#gw_frqre_inzgrid" class="wikilink codevar-wikilink">gw_frqre_inzgrid</a> <a href="gw#gw_frqre_tangrid" class="wikilink codevar-wikilink">gw_frqre_tangrid</a> <a href="gw#gw_invalid_freq" class="wikilink codevar-wikilink">gw_invalid_freq</a> <a href="gw#gw_nqlwl" class="wikilink codevar-wikilink">gw_nqlwl</a> <a href="gw#gw_nstep" class="wikilink codevar-wikilink">gw_nstep</a> <a href="gw#gw_qlwl" class="wikilink codevar-wikilink">gw_qlwl</a> <a href="gw#gw_qprange" class="wikilink codevar-wikilink">gw_qprange</a> <a href="gw#gw_sctype" class="wikilink codevar-wikilink">gw_sctype</a> <a href="gw#gw_sigxcore" class="wikilink codevar-wikilink">gw_sigxcore</a> <a href="gw#gw_toldfeig" class="wikilink codevar-wikilink">gw_toldfeig</a> <a href="gw#gwcalctyp" class="wikilink codevar-wikilink">gwcalctyp</a> <a href="gw#gwcomp" class="wikilink codevar-wikilink">gwcomp</a> <a href="gw#gwencomp" class="wikilink codevar-wikilink">gwencomp</a> <a href="gw#gwfockmix" class="wikilink codevar-wikilink">gwfockmix</a> <a href="gw#gwgamma" class="wikilink codevar-wikilink">gwgamma</a> <a href="gw#gwls_band_index" class="wikilink codevar-wikilink">gwls_band_index</a> <a href="gw#gwls_correlation" class="wikilink codevar-wikilink">gwls_correlation</a> <a href="gw#gwls_diel_model" class="wikilink codevar-wikilink">gwls_diel_model</a> <a href="gw#gwls_exchange" class="wikilink codevar-wikilink">gwls_exchange</a> <a href="gw#gwls_first_seed" class="wikilink codevar-wikilink">gwls_first_seed</a> <a href="gw#gwls_kmax_analytic" class="wikilink codevar-wikilink">gwls_kmax_analytic</a> <a href="gw#gwls_kmax_complement" class="wikilink codevar-wikilink">gwls_kmax_complement</a> <a href="gw#gwls_kmax_numeric" class="wikilink codevar-wikilink">gwls_kmax_numeric</a> <a href="gw#gwls_kmax_poles" class="wikilink codevar-wikilink">gwls_kmax_poles</a> <a href="gw#gwls_list_proj_freq" class="wikilink codevar-wikilink">gwls_list_proj_freq</a> <a href="gw#gwls_model_parameter" class="wikilink codevar-wikilink">gwls_model_parameter</a> <a href="gw#gwls_n_proj_freq" class="wikilink codevar-wikilink">gwls_n_proj_freq</a> <a href="gw#gwls_npt_gauss_quad" class="wikilink codevar-wikilink">gwls_npt_gauss_quad</a> <a href="gw#gwls_nseeds" class="wikilink codevar-wikilink">gwls_nseeds</a> <a href="gw#gwls_print_debug" class="wikilink codevar-wikilink">gwls_print_debug</a> <a href="gw#gwls_recycle" class="wikilink codevar-wikilink">gwls_recycle</a> <a href="gw#gwls_stern_kmax" class="wikilink codevar-wikilink">gwls_stern_kmax</a> <a href="gw#gwmem" class="wikilink codevar-wikilink">gwmem</a> <a href="paral#gwpara" class="wikilink codevar-wikilink">gwpara</a> <a href="gw#gwrpacorr" class="wikilink codevar-wikilink">gwrpacorr</a>
+<a href="rlx#ga_algor" class="small-grey-link">ga_algor</a> <a href="rlx#ga_fitness" class="small-grey-link">ga_fitness</a> <a href="rlx#ga_n_rules" class="small-grey-link">ga_n_rules</a> <a href="rlx#ga_opt_percent" class="small-grey-link">ga_opt_percent</a> <a href="rlx#ga_rules" class="small-grey-link">ga_rules</a> <a href="geo#genafm" class="small-grey-link">genafm</a> <a href="files#get1den" class="small-grey-link">get1den</a> <a href="files#get1wf" class="small-grey-link">get1wf</a> <a href="files#getbscoup" class="small-grey-link">getbscoup</a> <a href="files#getbseig" class="small-grey-link">getbseig</a> <a href="files#getbsreso" class="small-grey-link">getbsreso</a> <a href="rlx#getcell" class="small-grey-link">getcell</a> <a href="files#getddb" class="small-grey-link">getddb</a> <a href="files#getddk" class="small-grey-link">getddk</a> <a href="files#getden" class="small-grey-link">getden</a> <a href="dev#getgam_eig2nkq" class="small-grey-link">getgam_eig2nkq</a> <a href="files#gethaydock" class="small-grey-link">gethaydock</a> <a href="files#getocc" class="small-grey-link">getocc</a> <a href="files#getqps" class="small-grey-link">getqps</a> <a href="files#getscr" class="small-grey-link">getscr</a> <a href="files#getsuscep" class="small-grey-link">getsuscep</a> <a href="rlx#getvel" class="small-grey-link">getvel</a> <a href="files#getwfk" class="small-grey-link">getwfk</a> <a href="dev#getwfkfine" class="small-grey-link">getwfkfine</a> <a href="files#getwfq" class="small-grey-link">getwfq</a> <a href="rlx#getxcart" class="small-grey-link">getxcart</a> <a href="rlx#getxred" class="small-grey-link">getxred</a> <a href="rlx#goprecon" class="small-grey-link">goprecon</a> <a href="rlx#goprecprm" class="small-grey-link">goprecprm</a> <a href="paral#gpu_devices" class="small-grey-link">gpu_devices</a> <a href="paral#gpu_linalg_limit" class="small-grey-link">gpu_linalg_limit</a> <a href="gw#gw_customnfreqsp" class="small-grey-link">gw_customnfreqsp</a> <a href="gw#gw_freqsp" class="small-grey-link">gw_freqsp</a> <a href="gw#gw_frqim_inzgrid" class="small-grey-link">gw_frqim_inzgrid</a> <a href="gw#gw_frqre_inzgrid" class="small-grey-link">gw_frqre_inzgrid</a> <a href="gw#gw_frqre_tangrid" class="small-grey-link">gw_frqre_tangrid</a> <a href="gw#gw_invalid_freq" class="small-grey-link">gw_invalid_freq</a> <a href="gw#gw_nqlwl" class="small-grey-link">gw_nqlwl</a> <a href="gw#gw_nstep" class="small-grey-link">gw_nstep</a> <a href="gw#gw_qlwl" class="small-grey-link">gw_qlwl</a> <a href="gw#gw_qprange" class="small-grey-link">gw_qprange</a> <a href="gw#gw_sctype" class="small-grey-link">gw_sctype</a> <a href="gw#gw_sigxcore" class="small-grey-link">gw_sigxcore</a> <a href="gw#gw_toldfeig" class="small-grey-link">gw_toldfeig</a> <a href="gw#gwcalctyp" class="small-grey-link">gwcalctyp</a> <a href="gw#gwcomp" class="small-grey-link">gwcomp</a> <a href="gw#gwencomp" class="small-grey-link">gwencomp</a> <a href="gw#gwfockmix" class="small-grey-link">gwfockmix</a> <a href="gw#gwgamma" class="small-grey-link">gwgamma</a> <a href="gw#gwls_band_index" class="small-grey-link">gwls_band_index</a> <a href="gw#gwls_correlation" class="small-grey-link">gwls_correlation</a> <a href="gw#gwls_diel_model" class="small-grey-link">gwls_diel_model</a> <a href="gw#gwls_exchange" class="small-grey-link">gwls_exchange</a> <a href="gw#gwls_first_seed" class="small-grey-link">gwls_first_seed</a> <a href="gw#gwls_kmax_analytic" class="small-grey-link">gwls_kmax_analytic</a> <a href="gw#gwls_kmax_complement" class="small-grey-link">gwls_kmax_complement</a> <a href="gw#gwls_kmax_numeric" class="small-grey-link">gwls_kmax_numeric</a> <a href="gw#gwls_kmax_poles" class="small-grey-link">gwls_kmax_poles</a> <a href="gw#gwls_list_proj_freq" class="small-grey-link">gwls_list_proj_freq</a> <a href="gw#gwls_model_parameter" class="small-grey-link">gwls_model_parameter</a> <a href="gw#gwls_n_proj_freq" class="small-grey-link">gwls_n_proj_freq</a> <a href="gw#gwls_npt_gauss_quad" class="small-grey-link">gwls_npt_gauss_quad</a> <a href="gw#gwls_nseeds" class="small-grey-link">gwls_nseeds</a> <a href="gw#gwls_print_debug" class="small-grey-link">gwls_print_debug</a> <a href="gw#gwls_recycle" class="small-grey-link">gwls_recycle</a> <a href="gw#gwls_stern_kmax" class="small-grey-link">gwls_stern_kmax</a> <a href="gw#gwmem" class="small-grey-link">gwmem</a> <a href="paral#gwpara" class="small-grey-link">gwpara</a> <a href="gw#gwrpacorr" class="small-grey-link">gwrpacorr</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-I">
-<a href="rlx#iatcon" class="wikilink codevar-wikilink">iatcon</a> <a href="rlx#iatfix" class="wikilink codevar-wikilink">iatfix</a> <a href="rlx#iatfixx" class="wikilink codevar-wikilink">iatfixx</a> <a href="rlx#iatfixy" class="wikilink codevar-wikilink">iatfixy</a> <a href="rlx#iatfixz" class="wikilink codevar-wikilink">iatfixz</a> <a href="gstate#iatsph" class="wikilink codevar-wikilink">iatsph</a> <a href="paw#iboxcut" class="wikilink codevar-wikilink">iboxcut</a> <a href="gstate#icoulomb" class="wikilink codevar-wikilink">icoulomb</a> <a href="gw#icutcoul" class="wikilink codevar-wikilink">icutcoul</a> <a href="dfpt#ieig2rf" class="wikilink codevar-wikilink">ieig2rf</a> <a href="rlx#imgmov" class="wikilink codevar-wikilink">imgmov</a> <a href="gw#inclvkb" class="wikilink codevar-wikilink">inclvkb</a> <a href="dev#intxc" class="wikilink codevar-wikilink">intxc</a> <a href="dev#iomode" class="wikilink codevar-wikilink">iomode</a> <a href="rlx#ionmov" class="wikilink codevar-wikilink">ionmov</a> <a href="gstate#iprcel" class="wikilink codevar-wikilink">iprcel</a> <a href="dev#iprcfc" class="wikilink codevar-wikilink">iprcfc</a> <a href="gstate#iqpt" class="wikilink codevar-wikilink">iqpt</a> <a href="dev#irandom" class="wikilink codevar-wikilink">irandom</a> <a href="files#ird1den" class="wikilink codevar-wikilink">ird1den</a> <a href="files#ird1wf" class="wikilink codevar-wikilink">ird1wf</a> <a href="files#irdbscoup" class="wikilink codevar-wikilink">irdbscoup</a> <a href="files#irdbseig" class="wikilink codevar-wikilink">irdbseig</a> <a href="files#irdbsreso" class="wikilink codevar-wikilink">irdbsreso</a> <a href="files#irdddb" class="wikilink codevar-wikilink">irdddb</a> <a href="files#irdddk" class="wikilink codevar-wikilink">irdddk</a> <a href="files#irdden" class="wikilink codevar-wikilink">irdden</a> <a href="files#irdhaydock" class="wikilink codevar-wikilink">irdhaydock</a> <a href="files#irdqps" class="wikilink codevar-wikilink">irdqps</a> <a href="files#irdscr" class="wikilink codevar-wikilink">irdscr</a> <a href="files#irdsuscep" class="wikilink codevar-wikilink">irdsuscep</a> <a href="vdw#irdvdw" class="wikilink codevar-wikilink">irdvdw</a> <a href="files#irdwfk" class="wikilink codevar-wikilink">irdwfk</a> <a href="dev#irdwfkfine" class="wikilink codevar-wikilink">irdwfkfine</a> <a href="files#irdwfq" class="wikilink codevar-wikilink">irdwfq</a> <a href="basic#iscf" class="wikilink codevar-wikilink">iscf</a> <a href="dev#isecur" class="wikilink codevar-wikilink">isecur</a> <a href="rlx#istatimg" class="wikilink codevar-wikilink">istatimg</a> <a href="dev#istatr" class="wikilink codevar-wikilink">istatr</a> <a href="dev#istatshft" class="wikilink codevar-wikilink">istatshft</a> <a href="dev#istwfk" class="wikilink codevar-wikilink">istwfk</a> <a href="basic#ixc" class="wikilink codevar-wikilink">ixc</a> <a href="gstate#ixcpositron" class="wikilink codevar-wikilink">ixcpositron</a>
+<a href="rlx#iatcon" class="small-grey-link">iatcon</a> <a href="rlx#iatfix" class="small-grey-link">iatfix</a> <a href="rlx#iatfixx" class="small-grey-link">iatfixx</a> <a href="rlx#iatfixy" class="small-grey-link">iatfixy</a> <a href="rlx#iatfixz" class="small-grey-link">iatfixz</a> <a href="gstate#iatsph" class="small-grey-link">iatsph</a> <a href="paw#iboxcut" class="small-grey-link">iboxcut</a> <a href="gstate#icoulomb" class="small-grey-link">icoulomb</a> <a href="gw#icutcoul" class="small-grey-link">icutcoul</a> <a href="dfpt#ieig2rf" class="small-grey-link">ieig2rf</a> <a href="rlx#imgmov" class="small-grey-link">imgmov</a> <a href="gw#inclvkb" class="small-grey-link">inclvkb</a> <a href="dev#intxc" class="small-grey-link">intxc</a> <a href="dev#iomode" class="small-grey-link">iomode</a> <a href="rlx#ionmov" class="small-grey-link">ionmov</a> <a href="gstate#iprcel" class="small-grey-link">iprcel</a> <a href="dev#iprcfc" class="small-grey-link">iprcfc</a> <a href="gstate#iqpt" class="small-grey-link">iqpt</a> <a href="dev#irandom" class="small-grey-link">irandom</a> <a href="files#ird1den" class="small-grey-link">ird1den</a> <a href="files#ird1wf" class="small-grey-link">ird1wf</a> <a href="files#irdbscoup" class="small-grey-link">irdbscoup</a> <a href="files#irdbseig" class="small-grey-link">irdbseig</a> <a href="files#irdbsreso" class="small-grey-link">irdbsreso</a> <a href="files#irdddb" class="small-grey-link">irdddb</a> <a href="files#irdddk" class="small-grey-link">irdddk</a> <a href="files#irdden" class="small-grey-link">irdden</a> <a href="files#irdhaydock" class="small-grey-link">irdhaydock</a> <a href="files#irdqps" class="small-grey-link">irdqps</a> <a href="files#irdscr" class="small-grey-link">irdscr</a> <a href="files#irdsuscep" class="small-grey-link">irdsuscep</a> <a href="vdw#irdvdw" class="small-grey-link">irdvdw</a> <a href="files#irdwfk" class="small-grey-link">irdwfk</a> <a href="dev#irdwfkfine" class="small-grey-link">irdwfkfine</a> <a href="files#irdwfq" class="small-grey-link">irdwfq</a> <a href="basic#iscf" class="small-grey-link">iscf</a> <a href="dev#isecur" class="small-grey-link">isecur</a> <a href="rlx#istatimg" class="small-grey-link">istatimg</a> <a href="dev#istatr" class="small-grey-link">istatr</a> <a href="dev#istatshft" class="small-grey-link">istatshft</a> <a href="dev#istwfk" class="small-grey-link">istwfk</a> <a href="basic#ixc" class="small-grey-link">ixc</a> <a href="gstate#ixcpositron" class="small-grey-link">ixcpositron</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-J">
-<a href="basic#jdtset" class="wikilink codevar-wikilink">jdtset</a> <a href="gstate#jellslab" class="wikilink codevar-wikilink">jellslab</a> <a href="ffield#jfielddir" class="wikilink codevar-wikilink">jfielddir</a> <a href="paw#jpawu" class="wikilink codevar-wikilink">jpawu</a>
+<a href="basic#jdtset" class="small-grey-link">jdtset</a> <a href="gstate#jellslab" class="small-grey-link">jellslab</a> <a href="ffield#jfielddir" class="small-grey-link">jfielddir</a> <a href="paw#jpawu" class="small-grey-link">jpawu</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-K">
-<a href="ffield#kberry" class="wikilink codevar-wikilink">kberry</a> <a href="basic#kpt" class="wikilink codevar-wikilink">kpt</a> <a href="gstate#kptbounds" class="wikilink codevar-wikilink">kptbounds</a> <a href="gw#kptgw" class="wikilink codevar-wikilink">kptgw</a> <a href="basic#kptnrm" class="wikilink codevar-wikilink">kptnrm</a> <a href="internal#kptns" class="wikilink codevar-wikilink">%kptns</a> <a href="basic#kptopt" class="wikilink codevar-wikilink">kptopt</a> <a href="gstate#kptrlatt" class="wikilink codevar-wikilink">kptrlatt</a> <a href="gstate#kptrlen" class="wikilink codevar-wikilink">kptrlen</a> <a href="files#kssform" class="wikilink codevar-wikilink">kssform</a>
+<a href="ffield#kberry" class="small-grey-link">kberry</a> <a href="basic#kpt" class="small-grey-link">kpt</a> <a href="gstate#kptbounds" class="small-grey-link">kptbounds</a> <a href="gw#kptgw" class="small-grey-link">kptgw</a> <a href="basic#kptnrm" class="small-grey-link">kptnrm</a> <a href="internal#kptns" class="small-grey-link">%kptns</a> <a href="basic#kptopt" class="small-grey-link">kptopt</a> <a href="gstate#kptrlatt" class="small-grey-link">kptrlatt</a> <a href="gstate#kptrlen" class="small-grey-link">kptrlen</a> <a href="files#kssform" class="small-grey-link">kssform</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-L">
-<a href="paw#lexexch" class="wikilink codevar-wikilink">lexexch</a> <a href="paral#localrdwf" class="wikilink codevar-wikilink">localrdwf</a> <a href="dev#lotf_classic" class="wikilink codevar-wikilink">lotf_classic</a> <a href="dev#lotf_nitex" class="wikilink codevar-wikilink">lotf_nitex</a> <a href="dev#lotf_nneigx" class="wikilink codevar-wikilink">lotf_nneigx</a> <a href="dev#lotf_version" class="wikilink codevar-wikilink">lotf_version</a> <a href="paw#lpawu" class="wikilink codevar-wikilink">lpawu</a>
+<a href="paw#lexexch" class="small-grey-link">lexexch</a> <a href="paral#localrdwf" class="small-grey-link">localrdwf</a> <a href="dev#lotf_classic" class="small-grey-link">lotf_classic</a> <a href="dev#lotf_nitex" class="small-grey-link">lotf_nitex</a> <a href="dev#lotf_nneigx" class="small-grey-link">lotf_nneigx</a> <a href="dev#lotf_version" class="small-grey-link">lotf_version</a> <a href="paw#lpawu" class="small-grey-link">lpawu</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-M">
-<a href="dev#macro_uj" class="wikilink codevar-wikilink">macro_uj</a> <a href="gstate#magcon_lambda" class="wikilink codevar-wikilink">magcon_lambda</a> <a href="gstate#magconon" class="wikilink codevar-wikilink">magconon</a> <a href="paral#max_ncpus" class="wikilink codevar-wikilink">max_ncpus</a> <a href="ffield#maxestep" class="wikilink codevar-wikilink">maxestep</a> <a href="dev#maxnsym" class="wikilink codevar-wikilink">maxnsym</a> <a href="internal#mband" class="wikilink codevar-wikilink">%mband</a> <a href="gw#mbpt_sciss" class="wikilink codevar-wikilink">mbpt_sciss</a> <a href="gw#mdf_epsinf" class="wikilink codevar-wikilink">mdf_epsinf</a> <a href="rlx#mdtemp" class="wikilink codevar-wikilink">mdtemp</a> <a href="rlx#mdwall" class="wikilink codevar-wikilink">mdwall</a> <a href="dev#mem_test" class="wikilink codevar-wikilink">mem_test</a> <a href="rlx#mep_mxstep" class="wikilink codevar-wikilink">mep_mxstep</a> <a href="rlx#mep_solver" class="wikilink codevar-wikilink">mep_solver</a> <a href="internal#mgfft" class="wikilink codevar-wikilink">%mgfft</a> <a href="internal#mgfftdg" class="wikilink codevar-wikilink">%mgfftdg</a> <a href="gstate#mixalch" class="wikilink codevar-wikilink">mixalch</a> <a href="internal#mpw" class="wikilink codevar-wikilink">%mpw</a> <a href="dev#mqgrid" class="wikilink codevar-wikilink">mqgrid</a> <a href="paw#mqgriddg" class="wikilink codevar-wikilink">mqgriddg</a>
+<a href="dev#macro_uj" class="small-grey-link">macro_uj</a> <a href="gstate#magcon_lambda" class="small-grey-link">magcon_lambda</a> <a href="gstate#magconon" class="small-grey-link">magconon</a> <a href="paral#max_ncpus" class="small-grey-link">max_ncpus</a> <a href="ffield#maxestep" class="small-grey-link">maxestep</a> <a href="dev#maxnsym" class="small-grey-link">maxnsym</a> <a href="internal#mband" class="small-grey-link">%mband</a> <a href="gw#mbpt_sciss" class="small-grey-link">mbpt_sciss</a> <a href="gw#mdf_epsinf" class="small-grey-link">mdf_epsinf</a> <a href="rlx#mdtemp" class="small-grey-link">mdtemp</a> <a href="rlx#mdwall" class="small-grey-link">mdwall</a> <a href="dev#mem_test" class="small-grey-link">mem_test</a> <a href="rlx#mep_mxstep" class="small-grey-link">mep_mxstep</a> <a href="rlx#mep_solver" class="small-grey-link">mep_solver</a> <a href="internal#mgfft" class="small-grey-link">%mgfft</a> <a href="internal#mgfftdg" class="small-grey-link">%mgfftdg</a> <a href="gstate#mixalch" class="small-grey-link">mixalch</a> <a href="internal#mpw" class="small-grey-link">%mpw</a> <a href="dev#mqgrid" class="small-grey-link">mqgrid</a> <a href="paw#mqgriddg" class="small-grey-link">mqgriddg</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-N">
-<a href="rlx#natcon" class="wikilink codevar-wikilink">natcon</a> <a href="rlx#natfix" class="wikilink codevar-wikilink">natfix</a> <a href="rlx#natfixx" class="wikilink codevar-wikilink">natfixx</a> <a href="rlx#natfixy" class="wikilink codevar-wikilink">natfixy</a> <a href="rlx#natfixz" class="wikilink codevar-wikilink">natfixz</a> <a href="basic#natom" class="wikilink codevar-wikilink">natom</a> <a href="internal#natpawu" class="wikilink codevar-wikilink">%natpawu</a> <a href="geo#natrd" class="wikilink codevar-wikilink">natrd</a> <a href="gstate#natsph" class="wikilink codevar-wikilink">natsph</a> <a href="gstate#natsph_extra" class="wikilink codevar-wikilink">natsph_extra</a> <a href="ffield#natvshift" class="wikilink codevar-wikilink">natvshift</a> <a href="basic#nband" class="wikilink codevar-wikilink">nband</a> <a href="basic#nbandhf" class="wikilink codevar-wikilink">nbandhf</a> <a href="gw#nbandkss" class="wikilink codevar-wikilink">nbandkss</a> <a href="dev#nbdblock" class="wikilink codevar-wikilink">nbdblock</a> <a href="gstate#nbdbuf" class="wikilink codevar-wikilink">nbdbuf</a> <a href="ffield#nberry" class="wikilink codevar-wikilink">nberry</a> <a href="dev#nc_xccc_gspace" class="wikilink codevar-wikilink">nc_xccc_gspace</a> <a href="rlx#nconeq" class="wikilink codevar-wikilink">nconeq</a> <a href="dev#nctime" class="wikilink codevar-wikilink">nctime</a> <a href="gstate#ndivk" class="wikilink codevar-wikilink">ndivk</a> <a href="gstate#ndivsm" class="wikilink codevar-wikilink">ndivsm</a> <a href="basic#ndtset" class="wikilink codevar-wikilink">ndtset</a> <a href="internal#ndynimage" class="wikilink codevar-wikilink">%ndynimage</a> <a href="rlx#neb_algo" class="wikilink codevar-wikilink">neb_algo</a> <a href="rlx#neb_spring" class="wikilink codevar-wikilink">neb_spring</a> <a href="internal#nelect" class="wikilink codevar-wikilink">%nelect</a> <a href="internal#nfft" class="wikilink codevar-wikilink">%nfft</a> <a href="internal#nfftdg" class="wikilink codevar-wikilink">%nfftdg</a> <a href="gw#nfreqim" class="wikilink codevar-wikilink">nfreqim</a> <a href="gw#nfreqmidm" class="wikilink codevar-wikilink">nfreqmidm</a> <a href="gw#nfreqre" class="wikilink codevar-wikilink">nfreqre</a> <a href="gw#nfreqsp" class="wikilink codevar-wikilink">nfreqsp</a> <a href="gstate#ngfft" class="wikilink codevar-wikilink">ngfft</a> <a href="paw#ngfftdg" class="wikilink codevar-wikilink">ngfftdg</a> <a href="basic#ngkpt" class="wikilink codevar-wikilink">ngkpt</a> <a href="gstate#ngqpt" class="wikilink codevar-wikilink">ngqpt</a> <a href="rlx#nimage" class="wikilink codevar-wikilink">nimage</a> <a href="basic#nkpath" class="wikilink codevar-wikilink">nkpath</a> <a href="basic#nkpt" class="wikilink codevar-wikilink">nkpt</a> <a href="gw#nkptgw" class="wikilink codevar-wikilink">nkptgw</a> <a href="basic#nkpthf" class="wikilink codevar-wikilink">nkpthf</a> <a href="gstate#nline" class="wikilink codevar-wikilink">nline</a> <a href="dev#nloc_alg" class="wikilink codevar-wikilink">nloc_alg</a> <a href="dev#nloc_mem" class="wikilink codevar-wikilink">nloc_mem</a> <a href="rlx#nnos" class="wikilink codevar-wikilink">nnos</a> <a href="dev#nnsclo" class="wikilink codevar-wikilink">nnsclo</a> <a href="dev#nnsclohf" class="wikilink codevar-wikilink">nnsclohf</a> <a href="geo#nobj" class="wikilink codevar-wikilink">nobj</a> <a href="gw#nomegasf" class="wikilink codevar-wikilink">nomegasf</a> <a href="gw#nomegasi" class="wikilink codevar-wikilink">nomegasi</a> <a href="gw#nomegasrd" class="wikilink codevar-wikilink">nomegasrd</a> <a href="dev#normpawu" class="wikilink codevar-wikilink">normpawu</a> <a href="rlx#noseinert" class="wikilink codevar-wikilink">noseinert</a> <a href="paral#np_slk" class="wikilink codevar-wikilink">np_slk</a> <a href="paral#npband" class="wikilink codevar-wikilink">npband</a> <a href="paral#npfft" class="wikilink codevar-wikilink">npfft</a> <a href="paral#nphf" class="wikilink codevar-wikilink">nphf</a> <a href="paral#npimage" class="wikilink codevar-wikilink">npimage</a> <a href="paral#npkpt" class="wikilink codevar-wikilink">npkpt</a> <a href="paral#nppert" class="wikilink codevar-wikilink">nppert</a> <a href="gstate#npsp" class="wikilink codevar-wikilink">npsp</a> <a href="gstate#npspalch" class="wikilink codevar-wikilink">%npspalch</a> <a href="paral#npspinor" class="wikilink codevar-wikilink">npspinor</a> <a href="dev#npulayit" class="wikilink codevar-wikilink">npulayit</a> <a href="gw#npvel" class="wikilink codevar-wikilink">npvel</a> <a href="internal#npweps" class="wikilink codevar-wikilink">%npweps</a> <a href="gw#npwkss" class="wikilink codevar-wikilink">npwkss</a> <a href="internal#npwsigx" class="wikilink codevar-wikilink">%npwsigx</a> <a href="internal#npwwfn" class="wikilink codevar-wikilink">%npwwfn</a> <a href="gstate#nqpt" class="wikilink codevar-wikilink">nqpt</a> <a href="gw#nqptdm" class="wikilink codevar-wikilink">nqptdm</a> <a href="dev#nscforder" class="wikilink codevar-wikilink">nscforder</a> <a href="basic#nshiftk" class="wikilink codevar-wikilink">nshiftk</a> <a href="gstate#nshiftq" class="wikilink codevar-wikilink">nshiftq</a> <a href="gstate#nspden" class="wikilink codevar-wikilink">nspden</a> <a href="gstate#nspinor" class="wikilink codevar-wikilink">nspinor</a> <a href="basic#nsppol" class="wikilink codevar-wikilink">nsppol</a> <a href="basic#nstep" class="wikilink codevar-wikilink">nstep</a> <a href="basic#nsym" class="wikilink codevar-wikilink">nsym</a> <a href="rlx#ntime" class="wikilink codevar-wikilink">ntime</a> <a href="rlx#ntimimage" class="wikilink codevar-wikilink">ntimimage</a> <a href="gstate#ntypalch" class="wikilink codevar-wikilink">ntypalch</a> <a href="basic#ntypat" class="wikilink codevar-wikilink">ntypat</a> <a href="gstate#ntyppure" class="wikilink codevar-wikilink">%ntyppure</a> <a href="gstate#nucdipmom" class="wikilink codevar-wikilink">nucdipmom</a> <a href="gstate#nwfshist" class="wikilink codevar-wikilink">nwfshist</a> <a href="geo#nzchempot" class="wikilink codevar-wikilink">nzchempot</a>
+<a href="rlx#natcon" class="small-grey-link">natcon</a> <a href="rlx#natfix" class="small-grey-link">natfix</a> <a href="rlx#natfixx" class="small-grey-link">natfixx</a> <a href="rlx#natfixy" class="small-grey-link">natfixy</a> <a href="rlx#natfixz" class="small-grey-link">natfixz</a> <a href="basic#natom" class="small-grey-link">natom</a> <a href="internal#natpawu" class="small-grey-link">%natpawu</a> <a href="geo#natrd" class="small-grey-link">natrd</a> <a href="gstate#natsph" class="small-grey-link">natsph</a> <a href="gstate#natsph_extra" class="small-grey-link">natsph_extra</a> <a href="ffield#natvshift" class="small-grey-link">natvshift</a> <a href="basic#nband" class="small-grey-link">nband</a> <a href="basic#nbandhf" class="small-grey-link">nbandhf</a> <a href="gw#nbandkss" class="small-grey-link">nbandkss</a> <a href="dev#nbdblock" class="small-grey-link">nbdblock</a> <a href="gstate#nbdbuf" class="small-grey-link">nbdbuf</a> <a href="ffield#nberry" class="small-grey-link">nberry</a> <a href="dev#nc_xccc_gspace" class="small-grey-link">nc_xccc_gspace</a> <a href="rlx#nconeq" class="small-grey-link">nconeq</a> <a href="dev#nctime" class="small-grey-link">nctime</a> <a href="gstate#ndivk" class="small-grey-link">ndivk</a> <a href="gstate#ndivsm" class="small-grey-link">ndivsm</a> <a href="basic#ndtset" class="small-grey-link">ndtset</a> <a href="internal#ndynimage" class="small-grey-link">%ndynimage</a> <a href="rlx#neb_algo" class="small-grey-link">neb_algo</a> <a href="rlx#neb_spring" class="small-grey-link">neb_spring</a> <a href="internal#nelect" class="small-grey-link">%nelect</a> <a href="internal#nfft" class="small-grey-link">%nfft</a> <a href="internal#nfftdg" class="small-grey-link">%nfftdg</a> <a href="gw#nfreqim" class="small-grey-link">nfreqim</a> <a href="gw#nfreqmidm" class="small-grey-link">nfreqmidm</a> <a href="gw#nfreqre" class="small-grey-link">nfreqre</a> <a href="gw#nfreqsp" class="small-grey-link">nfreqsp</a> <a href="gstate#ngfft" class="small-grey-link">ngfft</a> <a href="paw#ngfftdg" class="small-grey-link">ngfftdg</a> <a href="basic#ngkpt" class="small-grey-link">ngkpt</a> <a href="gstate#ngqpt" class="small-grey-link">ngqpt</a> <a href="rlx#nimage" class="small-grey-link">nimage</a> <a href="basic#nkpath" class="small-grey-link">nkpath</a> <a href="basic#nkpt" class="small-grey-link">nkpt</a> <a href="gw#nkptgw" class="small-grey-link">nkptgw</a> <a href="basic#nkpthf" class="small-grey-link">nkpthf</a> <a href="gstate#nline" class="small-grey-link">nline</a> <a href="dev#nloc_alg" class="small-grey-link">nloc_alg</a> <a href="dev#nloc_mem" class="small-grey-link">nloc_mem</a> <a href="rlx#nnos" class="small-grey-link">nnos</a> <a href="dev#nnsclo" class="small-grey-link">nnsclo</a> <a href="dev#nnsclohf" class="small-grey-link">nnsclohf</a> <a href="geo#nobj" class="small-grey-link">nobj</a> <a href="gw#nomegasf" class="small-grey-link">nomegasf</a> <a href="gw#nomegasi" class="small-grey-link">nomegasi</a> <a href="gw#nomegasrd" class="small-grey-link">nomegasrd</a> <a href="dev#normpawu" class="small-grey-link">normpawu</a> <a href="rlx#noseinert" class="small-grey-link">noseinert</a> <a href="paral#np_slk" class="small-grey-link">np_slk</a> <a href="paral#npband" class="small-grey-link">npband</a> <a href="paral#npfft" class="small-grey-link">npfft</a> <a href="paral#nphf" class="small-grey-link">nphf</a> <a href="paral#npimage" class="small-grey-link">npimage</a> <a href="paral#npkpt" class="small-grey-link">npkpt</a> <a href="paral#nppert" class="small-grey-link">nppert</a> <a href="gstate#npsp" class="small-grey-link">npsp</a> <a href="gstate#npspalch" class="small-grey-link">%npspalch</a> <a href="paral#npspinor" class="small-grey-link">npspinor</a> <a href="dev#npulayit" class="small-grey-link">npulayit</a> <a href="gw#npvel" class="small-grey-link">npvel</a> <a href="internal#npweps" class="small-grey-link">%npweps</a> <a href="gw#npwkss" class="small-grey-link">npwkss</a> <a href="internal#npwsigx" class="small-grey-link">%npwsigx</a> <a href="internal#npwwfn" class="small-grey-link">%npwwfn</a> <a href="gstate#nqpt" class="small-grey-link">nqpt</a> <a href="gw#nqptdm" class="small-grey-link">nqptdm</a> <a href="dev#nscforder" class="small-grey-link">nscforder</a> <a href="basic#nshiftk" class="small-grey-link">nshiftk</a> <a href="gstate#nshiftq" class="small-grey-link">nshiftq</a> <a href="gstate#nspden" class="small-grey-link">nspden</a> <a href="gstate#nspinor" class="small-grey-link">nspinor</a> <a href="basic#nsppol" class="small-grey-link">nsppol</a> <a href="basic#nstep" class="small-grey-link">nstep</a> <a href="basic#nsym" class="small-grey-link">nsym</a> <a href="rlx#ntime" class="small-grey-link">ntime</a> <a href="rlx#ntimimage" class="small-grey-link">ntimimage</a> <a href="gstate#ntypalch" class="small-grey-link">ntypalch</a> <a href="basic#ntypat" class="small-grey-link">ntypat</a> <a href="gstate#ntyppure" class="small-grey-link">%ntyppure</a> <a href="gstate#nucdipmom" class="small-grey-link">nucdipmom</a> <a href="gstate#nwfshist" class="small-grey-link">nwfshist</a> <a href="geo#nzchempot" class="small-grey-link">nzchempot</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-O">
-<a href="geo#objaat" class="wikilink codevar-wikilink">objaat</a> <a href="geo#objaax" class="wikilink codevar-wikilink">objaax</a> <a href="geo#objan" class="wikilink codevar-wikilink">objan</a> <a href="geo#objarf" class="wikilink codevar-wikilink">objarf</a> <a href="geo#objaro" class="wikilink codevar-wikilink">objaro</a> <a href="geo#objatr" class="wikilink codevar-wikilink">objatr</a> <a href="geo#objbat" class="wikilink codevar-wikilink">objbat</a> <a href="geo#objbax" class="wikilink codevar-wikilink">objbax</a> <a href="geo#objbn" class="wikilink codevar-wikilink">objbn</a> <a href="geo#objbrf" class="wikilink codevar-wikilink">objbrf</a> <a href="geo#objbro" class="wikilink codevar-wikilink">objbro</a> <a href="geo#objbtr" class="wikilink codevar-wikilink">objbtr</a> <a href="gstate#occ" class="wikilink codevar-wikilink">occ</a> <a href="basic#occopt" class="wikilink codevar-wikilink">occopt</a> <a href="gw#omegasimax" class="wikilink codevar-wikilink">omegasimax</a> <a href="gw#omegasrdmax" class="wikilink codevar-wikilink">omegasrdmax</a> <a href="rlx#optcell" class="wikilink codevar-wikilink">optcell</a> <a href="gstate#optdriver" class="wikilink codevar-wikilink">optdriver</a> <a href="dev#optforces" class="wikilink codevar-wikilink">optforces</a> <a href="dev#optnlxccc" class="wikilink codevar-wikilink">optnlxccc</a> <a href="gstate#optstress" class="wikilink codevar-wikilink">optstress</a> <a href="dev#ortalg" class="wikilink codevar-wikilink">ortalg</a>
+<a href="geo#objaat" class="small-grey-link">objaat</a> <a href="geo#objaax" class="small-grey-link">objaax</a> <a href="geo#objan" class="small-grey-link">objan</a> <a href="geo#objarf" class="small-grey-link">objarf</a> <a href="geo#objaro" class="small-grey-link">objaro</a> <a href="geo#objatr" class="small-grey-link">objatr</a> <a href="geo#objbat" class="small-grey-link">objbat</a> <a href="geo#objbax" class="small-grey-link">objbax</a> <a href="geo#objbn" class="small-grey-link">objbn</a> <a href="geo#objbrf" class="small-grey-link">objbrf</a> <a href="geo#objbro" class="small-grey-link">objbro</a> <a href="geo#objbtr" class="small-grey-link">objbtr</a> <a href="gstate#occ" class="small-grey-link">occ</a> <a href="basic#occopt" class="small-grey-link">occopt</a> <a href="gw#omegasimax" class="small-grey-link">omegasimax</a> <a href="gw#omegasrdmax" class="small-grey-link">omegasrdmax</a> <a href="rlx#optcell" class="small-grey-link">optcell</a> <a href="gstate#optdriver" class="small-grey-link">optdriver</a> <a href="dev#optforces" class="small-grey-link">optforces</a> <a href="dev#optnlxccc" class="small-grey-link">optnlxccc</a> <a href="gstate#optstress" class="small-grey-link">optstress</a> <a href="dev#ortalg" class="small-grey-link">ortalg</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-P">
-<a href="dev#papiopt" class="wikilink codevar-wikilink">papiopt</a> <a href="paral#paral_atom" class="wikilink codevar-wikilink">paral_atom</a> <a href="paral#paral_kgb" class="wikilink codevar-wikilink">paral_kgb</a> <a href="paral#paral_rf" class="wikilink codevar-wikilink">paral_rf</a> <a href="paw#pawcpxocc" class="wikilink codevar-wikilink">pawcpxocc</a> <a href="paw#pawcross" class="wikilink codevar-wikilink">pawcross</a> <a href="paw#pawecutdg" class="wikilink codevar-wikilink">pawecutdg</a> <a href="paw#pawfatbnd" class="wikilink codevar-wikilink">pawfatbnd</a> <a href="paw#pawlcutd" class="wikilink codevar-wikilink">pawlcutd</a> <a href="paw#pawlmix" class="wikilink codevar-wikilink">pawlmix</a> <a href="paw#pawmixdg" class="wikilink codevar-wikilink">pawmixdg</a> <a href="paw#pawnhatxc" class="wikilink codevar-wikilink">pawnhatxc</a> <a href="paw#pawnphi" class="wikilink codevar-wikilink">pawnphi</a> <a href="paw#pawntheta" class="wikilink codevar-wikilink">pawntheta</a> <a href="paw#pawnzlm" class="wikilink codevar-wikilink">pawnzlm</a> <a href="paw#pawoptmix" class="wikilink codevar-wikilink">pawoptmix</a> <a href="paw#pawoptosc" class="wikilink codevar-wikilink">pawoptosc</a> <a href="paw#pawovlp" class="wikilink codevar-wikilink">pawovlp</a> <a href="dev#pawprt_b" class="wikilink codevar-wikilink">pawprt_b</a> <a href="dev#pawprt_k" class="wikilink codevar-wikilink">pawprt_k</a> <a href="paw#pawprtden" class="wikilink codevar-wikilink">pawprtden</a> <a href="paw#pawprtdos" class="wikilink codevar-wikilink">pawprtdos</a> <a href="paw#pawprtvol" class="wikilink codevar-wikilink">pawprtvol</a> <a href="paw#pawprtwf" class="wikilink codevar-wikilink">pawprtwf</a> <a href="paw#pawspnorb" class="wikilink codevar-wikilink">pawspnorb</a> <a href="paw#pawstgylm" class="wikilink codevar-wikilink">pawstgylm</a> <a href="paw#pawsushat" class="wikilink codevar-wikilink">pawsushat</a> <a href="dev#pawujat" class="wikilink codevar-wikilink">pawujat</a> <a href="dev#pawujrad" class="wikilink codevar-wikilink">pawujrad</a> <a href="dev#pawujv" class="wikilink codevar-wikilink">pawujv</a> <a href="paw#pawusecp" class="wikilink codevar-wikilink">pawusecp</a> <a href="paw#pawxcdev" class="wikilink codevar-wikilink">pawxcdev</a> <a href="eph#ph_intmeth" class="wikilink codevar-wikilink">ph_intmeth</a> <a href="eph#ph_ndivsm" class="wikilink codevar-wikilink">ph_ndivsm</a> <a href="dfpt#ph_ngqpt" class="wikilink codevar-wikilink">ph_ngqpt</a> <a href="eph#ph_nqpath" class="wikilink codevar-wikilink">ph_nqpath</a> <a href="eph#ph_nqshift" class="wikilink codevar-wikilink">ph_nqshift</a> <a href="dfpt#ph_qpath" class="wikilink codevar-wikilink">ph_qpath</a> <a href="eph#ph_qshift" class="wikilink codevar-wikilink">ph_qshift</a> <a href="eph#ph_smear" class="wikilink codevar-wikilink">ph_smear</a> <a href="eph#ph_wstep" class="wikilink codevar-wikilink">ph_wstep</a> <a href="rlx#pimass" class="wikilink codevar-wikilink">pimass</a> <a href="rlx#pimd_constraint" class="wikilink codevar-wikilink">pimd_constraint</a> <a href="rlx#pitransform" class="wikilink codevar-wikilink">pitransform</a> <a href="dev#plowan_bandf" class="wikilink codevar-wikilink">plowan_bandf</a> <a href="dev#plowan_bandi" class="wikilink codevar-wikilink">plowan_bandi</a> <a href="dev#plowan_compute" class="wikilink codevar-wikilink">plowan_compute</a> <a href="dev#plowan_iatom" class="wikilink codevar-wikilink">plowan_iatom</a> <a href="dev#plowan_it" class="wikilink codevar-wikilink">plowan_it</a> <a href="dev#plowan_lcalc" class="wikilink codevar-wikilink">plowan_lcalc</a> <a href="dev#plowan_natom" class="wikilink codevar-wikilink">plowan_natom</a> <a href="dev#plowan_nbl" class="wikilink codevar-wikilink">plowan_nbl</a> <a href="dev#plowan_nt" class="wikilink codevar-wikilink">plowan_nt</a> <a href="dev#plowan_projcalc" class="wikilink codevar-wikilink">plowan_projcalc</a> <a href="dev#plowan_realspace" class="wikilink codevar-wikilink">plowan_realspace</a> <a href="ffield#polcen" class="wikilink codevar-wikilink">polcen</a> <a href="gstate#posdoppler" class="wikilink codevar-wikilink">posdoppler</a> <a href="gstate#positron" class="wikilink codevar-wikilink">positron</a> <a href="gstate#posnstep" class="wikilink codevar-wikilink">posnstep</a> <a href="gstate#posocc" class="wikilink codevar-wikilink">posocc</a> <a href="gstate#postoldfe" class="wikilink codevar-wikilink">postoldfe</a> <a href="gstate#postoldff" class="wikilink codevar-wikilink">postoldff</a> <a href="gw#ppmfrq" class="wikilink codevar-wikilink">ppmfrq</a> <a href="gw#ppmodel" class="wikilink codevar-wikilink">ppmodel</a> <a href="dfpt#prepanl" class="wikilink codevar-wikilink">prepanl</a> <a href="dfpt#prepgkk" class="wikilink codevar-wikilink">prepgkk</a> <a href="dev#prepscphon" class="wikilink codevar-wikilink">prepscphon</a> <a href="files#prt1dm" class="wikilink codevar-wikilink">prt1dm</a> <a href="rlx#prtatlist" class="wikilink codevar-wikilink">prtatlist</a> <a href="dfpt#prtbbb" class="wikilink codevar-wikilink">prtbbb</a> <a href="dev#prtbltztrp" class="wikilink codevar-wikilink">prtbltztrp</a> <a href="dev#prtcif" class="wikilink codevar-wikilink">prtcif</a> <a href="files#prtden" class="wikilink codevar-wikilink">prtden</a> <a href="gstate#prtdensph" class="wikilink codevar-wikilink">prtdensph</a> <a href="dev#prtdipole" class="wikilink codevar-wikilink">prtdipole</a> <a href="files#prtdos" class="wikilink codevar-wikilink">prtdos</a> <a href="files#prtdosm" class="wikilink codevar-wikilink">prtdosm</a> <a href="gstate#prtebands" class="wikilink codevar-wikilink">prtebands</a> <a href="paw#prtefg" class="wikilink codevar-wikilink">prtefg</a> <a href="files#prteig" class="wikilink codevar-wikilink">prteig</a> <a href="files#prtelf" class="wikilink codevar-wikilink">prtelf</a> <a href="paw#prtfc" class="wikilink codevar-wikilink">prtfc</a> <a href="files#prtfsurf" class="wikilink codevar-wikilink">prtfsurf</a> <a href="files#prtgden" class="wikilink codevar-wikilink">prtgden</a> <a href="files#prtgeo" class="wikilink codevar-wikilink">prtgeo</a> <a href="files#prtgkk" class="wikilink codevar-wikilink">prtgkk</a> <a href="files#prtgsr" class="wikilink codevar-wikilink">prtgsr</a> <a href="files#prtkden" class="wikilink codevar-wikilink">prtkden</a> <a href="files#prtkpt" class="wikilink codevar-wikilink">prtkpt</a> <a href="files#prtlden" class="wikilink codevar-wikilink">prtlden</a> <a href="paw#prtnabla" class="wikilink codevar-wikilink">prtnabla</a> <a href="dev#prtnest" class="wikilink codevar-wikilink">prtnest</a> <a href="eph#prtphbands" class="wikilink codevar-wikilink">prtphbands</a> <a href="eph#prtphdos" class="wikilink codevar-wikilink">prtphdos</a> <a href="eph#prtphsurf" class="wikilink codevar-wikilink">prtphsurf</a> <a href="dev#prtposcar" class="wikilink codevar-wikilink">prtposcar</a> <a href="files#prtpot" class="wikilink codevar-wikilink">prtpot</a> <a href="files#prtpsps" class="wikilink codevar-wikilink">prtpsps</a> <a href="files#prtspcur" class="wikilink codevar-wikilink">prtspcur</a> <a href="files#prtstm" class="wikilink codevar-wikilink">prtstm</a> <a href="files#prtsuscep" class="wikilink codevar-wikilink">prtsuscep</a> <a href="files#prtvclmb" class="wikilink codevar-wikilink">prtvclmb</a> <a href="vdw#prtvdw" class="wikilink codevar-wikilink">prtvdw</a> <a href="files#prtvha" class="wikilink codevar-wikilink">prtvha</a> <a href="files#prtvhxc" class="wikilink codevar-wikilink">prtvhxc</a> <a href="files#prtvol" class="wikilink codevar-wikilink">prtvol</a> <a href="files#prtvolimg" class="wikilink codevar-wikilink">prtvolimg</a> <a href="files#prtvpsp" class="wikilink codevar-wikilink">prtvpsp</a> <a href="files#prtvxc" class="wikilink codevar-wikilink">prtvxc</a> <a href="files#prtwant" class="wikilink codevar-wikilink">prtwant</a> <a href="files#prtwf" class="wikilink codevar-wikilink">prtwf</a> <a href="files#prtwf_full" class="wikilink codevar-wikilink">prtwf_full</a> <a href="files#prtxml" class="wikilink codevar-wikilink">prtxml</a> <a href="paw#ptcharge" class="wikilink codevar-wikilink">ptcharge</a> <a href="geo#ptgroupma" class="wikilink codevar-wikilink">%ptgroupma</a> <a href="gw#pvelmax" class="wikilink codevar-wikilink">pvelmax</a> <a href="paral#pw_unbal_thresh" class="wikilink codevar-wikilink">pw_unbal_thresh</a>
+<a href="dev#papiopt" class="small-grey-link">papiopt</a> <a href="paral#paral_atom" class="small-grey-link">paral_atom</a> <a href="paral#paral_kgb" class="small-grey-link">paral_kgb</a> <a href="paral#paral_rf" class="small-grey-link">paral_rf</a> <a href="paw#pawcpxocc" class="small-grey-link">pawcpxocc</a> <a href="paw#pawcross" class="small-grey-link">pawcross</a> <a href="paw#pawecutdg" class="small-grey-link">pawecutdg</a> <a href="paw#pawfatbnd" class="small-grey-link">pawfatbnd</a> <a href="paw#pawlcutd" class="small-grey-link">pawlcutd</a> <a href="paw#pawlmix" class="small-grey-link">pawlmix</a> <a href="paw#pawmixdg" class="small-grey-link">pawmixdg</a> <a href="paw#pawnhatxc" class="small-grey-link">pawnhatxc</a> <a href="paw#pawnphi" class="small-grey-link">pawnphi</a> <a href="paw#pawntheta" class="small-grey-link">pawntheta</a> <a href="paw#pawnzlm" class="small-grey-link">pawnzlm</a> <a href="paw#pawoptmix" class="small-grey-link">pawoptmix</a> <a href="paw#pawoptosc" class="small-grey-link">pawoptosc</a> <a href="paw#pawovlp" class="small-grey-link">pawovlp</a> <a href="dev#pawprt_b" class="small-grey-link">pawprt_b</a> <a href="dev#pawprt_k" class="small-grey-link">pawprt_k</a> <a href="paw#pawprtden" class="small-grey-link">pawprtden</a> <a href="paw#pawprtdos" class="small-grey-link">pawprtdos</a> <a href="paw#pawprtvol" class="small-grey-link">pawprtvol</a> <a href="paw#pawprtwf" class="small-grey-link">pawprtwf</a> <a href="paw#pawspnorb" class="small-grey-link">pawspnorb</a> <a href="paw#pawstgylm" class="small-grey-link">pawstgylm</a> <a href="paw#pawsushat" class="small-grey-link">pawsushat</a> <a href="dev#pawujat" class="small-grey-link">pawujat</a> <a href="dev#pawujrad" class="small-grey-link">pawujrad</a> <a href="dev#pawujv" class="small-grey-link">pawujv</a> <a href="paw#pawusecp" class="small-grey-link">pawusecp</a> <a href="paw#pawxcdev" class="small-grey-link">pawxcdev</a> <a href="eph#ph_intmeth" class="small-grey-link">ph_intmeth</a> <a href="eph#ph_ndivsm" class="small-grey-link">ph_ndivsm</a> <a href="dfpt#ph_ngqpt" class="small-grey-link">ph_ngqpt</a> <a href="eph#ph_nqpath" class="small-grey-link">ph_nqpath</a> <a href="eph#ph_nqshift" class="small-grey-link">ph_nqshift</a> <a href="dfpt#ph_qpath" class="small-grey-link">ph_qpath</a> <a href="eph#ph_qshift" class="small-grey-link">ph_qshift</a> <a href="eph#ph_smear" class="small-grey-link">ph_smear</a> <a href="eph#ph_wstep" class="small-grey-link">ph_wstep</a> <a href="rlx#pimass" class="small-grey-link">pimass</a> <a href="rlx#pimd_constraint" class="small-grey-link">pimd_constraint</a> <a href="rlx#pitransform" class="small-grey-link">pitransform</a> <a href="dev#plowan_bandf" class="small-grey-link">plowan_bandf</a> <a href="dev#plowan_bandi" class="small-grey-link">plowan_bandi</a> <a href="dev#plowan_compute" class="small-grey-link">plowan_compute</a> <a href="dev#plowan_iatom" class="small-grey-link">plowan_iatom</a> <a href="dev#plowan_it" class="small-grey-link">plowan_it</a> <a href="dev#plowan_lcalc" class="small-grey-link">plowan_lcalc</a> <a href="dev#plowan_natom" class="small-grey-link">plowan_natom</a> <a href="dev#plowan_nbl" class="small-grey-link">plowan_nbl</a> <a href="dev#plowan_nt" class="small-grey-link">plowan_nt</a> <a href="dev#plowan_projcalc" class="small-grey-link">plowan_projcalc</a> <a href="dev#plowan_realspace" class="small-grey-link">plowan_realspace</a> <a href="ffield#polcen" class="small-grey-link">polcen</a> <a href="gstate#posdoppler" class="small-grey-link">posdoppler</a> <a href="gstate#positron" class="small-grey-link">positron</a> <a href="gstate#posnstep" class="small-grey-link">posnstep</a> <a href="gstate#posocc" class="small-grey-link">posocc</a> <a href="gstate#postoldfe" class="small-grey-link">postoldfe</a> <a href="gstate#postoldff" class="small-grey-link">postoldff</a> <a href="gw#ppmfrq" class="small-grey-link">ppmfrq</a> <a href="gw#ppmodel" class="small-grey-link">ppmodel</a> <a href="dfpt#prepanl" class="small-grey-link">prepanl</a> <a href="dfpt#prepgkk" class="small-grey-link">prepgkk</a> <a href="dev#prepscphon" class="small-grey-link">prepscphon</a> <a href="files#prt1dm" class="small-grey-link">prt1dm</a> <a href="rlx#prtatlist" class="small-grey-link">prtatlist</a> <a href="dfpt#prtbbb" class="small-grey-link">prtbbb</a> <a href="dev#prtbltztrp" class="small-grey-link">prtbltztrp</a> <a href="dev#prtcif" class="small-grey-link">prtcif</a> <a href="files#prtden" class="small-grey-link">prtden</a> <a href="gstate#prtdensph" class="small-grey-link">prtdensph</a> <a href="dev#prtdipole" class="small-grey-link">prtdipole</a> <a href="files#prtdos" class="small-grey-link">prtdos</a> <a href="files#prtdosm" class="small-grey-link">prtdosm</a> <a href="gstate#prtebands" class="small-grey-link">prtebands</a> <a href="paw#prtefg" class="small-grey-link">prtefg</a> <a href="files#prteig" class="small-grey-link">prteig</a> <a href="files#prtelf" class="small-grey-link">prtelf</a> <a href="paw#prtfc" class="small-grey-link">prtfc</a> <a href="files#prtfsurf" class="small-grey-link">prtfsurf</a> <a href="files#prtgden" class="small-grey-link">prtgden</a> <a href="files#prtgeo" class="small-grey-link">prtgeo</a> <a href="files#prtgkk" class="small-grey-link">prtgkk</a> <a href="files#prtgsr" class="small-grey-link">prtgsr</a> <a href="files#prtkden" class="small-grey-link">prtkden</a> <a href="files#prtkpt" class="small-grey-link">prtkpt</a> <a href="files#prtlden" class="small-grey-link">prtlden</a> <a href="paw#prtnabla" class="small-grey-link">prtnabla</a> <a href="dev#prtnest" class="small-grey-link">prtnest</a> <a href="eph#prtphbands" class="small-grey-link">prtphbands</a> <a href="eph#prtphdos" class="small-grey-link">prtphdos</a> <a href="eph#prtphsurf" class="small-grey-link">prtphsurf</a> <a href="dev#prtposcar" class="small-grey-link">prtposcar</a> <a href="files#prtpot" class="small-grey-link">prtpot</a> <a href="files#prtpsps" class="small-grey-link">prtpsps</a> <a href="files#prtspcur" class="small-grey-link">prtspcur</a> <a href="files#prtstm" class="small-grey-link">prtstm</a> <a href="files#prtsuscep" class="small-grey-link">prtsuscep</a> <a href="files#prtvclmb" class="small-grey-link">prtvclmb</a> <a href="vdw#prtvdw" class="small-grey-link">prtvdw</a> <a href="files#prtvha" class="small-grey-link">prtvha</a> <a href="files#prtvhxc" class="small-grey-link">prtvhxc</a> <a href="files#prtvol" class="small-grey-link">prtvol</a> <a href="files#prtvolimg" class="small-grey-link">prtvolimg</a> <a href="files#prtvpsp" class="small-grey-link">prtvpsp</a> <a href="files#prtvxc" class="small-grey-link">prtvxc</a> <a href="files#prtwant" class="small-grey-link">prtwant</a> <a href="files#prtwf" class="small-grey-link">prtwf</a> <a href="files#prtwf_full" class="small-grey-link">prtwf_full</a> <a href="files#prtxml" class="small-grey-link">prtxml</a> <a href="paw#ptcharge" class="small-grey-link">ptcharge</a> <a href="geo#ptgroupma" class="small-grey-link">%ptgroupma</a> <a href="gw#pvelmax" class="small-grey-link">pvelmax</a> <a href="paral#pw_unbal_thresh" class="small-grey-link">pw_unbal_thresh</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-Q">
-<a href="rlx#qmass" class="wikilink codevar-wikilink">qmass</a> <a href="ffield#qprtrb" class="wikilink codevar-wikilink">qprtrb</a> <a href="gstate#qpt" class="wikilink codevar-wikilink">qpt</a> <a href="gw#qptdm" class="wikilink codevar-wikilink">qptdm</a> <a href="internal#qptn" class="wikilink codevar-wikilink">%qptn</a> <a href="gstate#qptnrm" class="wikilink codevar-wikilink">qptnrm</a> <a href="gstate#qptopt" class="wikilink codevar-wikilink">qptopt</a> <a href="gstate#qptrlatt" class="wikilink codevar-wikilink">qptrlatt</a> <a href="paw#quadmom" class="wikilink codevar-wikilink">quadmom</a>
+<a href="rlx#qmass" class="small-grey-link">qmass</a> <a href="ffield#qprtrb" class="small-grey-link">qprtrb</a> <a href="gstate#qpt" class="small-grey-link">qpt</a> <a href="gw#qptdm" class="small-grey-link">qptdm</a> <a href="internal#qptn" class="small-grey-link">%qptn</a> <a href="gstate#qptnrm" class="small-grey-link">qptnrm</a> <a href="gstate#qptopt" class="small-grey-link">qptopt</a> <a href="gstate#qptrlatt" class="small-grey-link">qptrlatt</a> <a href="paw#quadmom" class="small-grey-link">quadmom</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-R">
-<a href="rlx#random_atpos" class="wikilink codevar-wikilink">random_atpos</a> <a href="gstate#ratsph" class="wikilink codevar-wikilink">ratsph</a> <a href="gstate#ratsph_extra" class="wikilink codevar-wikilink">ratsph_extra</a> <a href="gw#rcut" class="wikilink codevar-wikilink">rcut</a> <a href="dev#recefermi" class="wikilink codevar-wikilink">recefermi</a> <a href="dev#recgratio" class="wikilink codevar-wikilink">recgratio</a> <a href="dev#recnpath" class="wikilink codevar-wikilink">recnpath</a> <a href="dev#recnrec" class="wikilink codevar-wikilink">recnrec</a> <a href="dev#recptrott" class="wikilink codevar-wikilink">recptrott</a> <a href="dev#recrcut" class="wikilink codevar-wikilink">recrcut</a> <a href="dev#rectesteg" class="wikilink codevar-wikilink">rectesteg</a> <a href="dev#rectolden" class="wikilink codevar-wikilink">rectolden</a> <a href="ffield#red_dfield" class="wikilink codevar-wikilink">red_dfield</a> <a href="ffield#red_efield" class="wikilink codevar-wikilink">red_efield</a> <a href="ffield#red_efieldbar" class="wikilink codevar-wikilink">red_efieldbar</a> <a href="rlx#restartxf" class="wikilink codevar-wikilink">restartxf</a> <a href="dfpt#rf2_dkdk" class="wikilink codevar-wikilink">rf2_dkdk</a> <a href="dfpt#rfasr" class="wikilink codevar-wikilink">rfasr</a> <a href="dfpt#rfatpol" class="wikilink codevar-wikilink">rfatpol</a> <a href="dfpt#rfddk" class="wikilink codevar-wikilink">rfddk</a> <a href="dfpt#rfdir" class="wikilink codevar-wikilink">rfdir</a> <a href="dfpt#rfelfd" class="wikilink codevar-wikilink">rfelfd</a> <a href="dfpt#rfmagn" class="wikilink codevar-wikilink">rfmagn</a> <a href="dfpt#rfmeth" class="wikilink codevar-wikilink">rfmeth</a> <a href="dfpt#rfphon" class="wikilink codevar-wikilink">rfphon</a> <a href="dfpt#rfstrs" class="wikilink codevar-wikilink">rfstrs</a> <a href="dfpt#rfuser" class="wikilink codevar-wikilink">rfuser</a> <a href="gw#rhoqpmix" class="wikilink codevar-wikilink">rhoqpmix</a> <a href="basic#rprim" class="wikilink codevar-wikilink">rprim</a> <a href="basic#rprimd" class="wikilink codevar-wikilink">%rprimd</a>
+<a href="rlx#random_atpos" class="small-grey-link">random_atpos</a> <a href="gstate#ratsph" class="small-grey-link">ratsph</a> <a href="gstate#ratsph_extra" class="small-grey-link">ratsph_extra</a> <a href="gw#rcut" class="small-grey-link">rcut</a> <a href="dev#recefermi" class="small-grey-link">recefermi</a> <a href="dev#recgratio" class="small-grey-link">recgratio</a> <a href="dev#recnpath" class="small-grey-link">recnpath</a> <a href="dev#recnrec" class="small-grey-link">recnrec</a> <a href="dev#recptrott" class="small-grey-link">recptrott</a> <a href="dev#recrcut" class="small-grey-link">recrcut</a> <a href="dev#rectesteg" class="small-grey-link">rectesteg</a> <a href="dev#rectolden" class="small-grey-link">rectolden</a> <a href="ffield#red_dfield" class="small-grey-link">red_dfield</a> <a href="ffield#red_efield" class="small-grey-link">red_efield</a> <a href="ffield#red_efieldbar" class="small-grey-link">red_efieldbar</a> <a href="rlx#restartxf" class="small-grey-link">restartxf</a> <a href="dfpt#rf2_dkdk" class="small-grey-link">rf2_dkdk</a> <a href="dfpt#rfasr" class="small-grey-link">rfasr</a> <a href="dfpt#rfatpol" class="small-grey-link">rfatpol</a> <a href="dfpt#rfddk" class="small-grey-link">rfddk</a> <a href="dfpt#rfdir" class="small-grey-link">rfdir</a> <a href="dfpt#rfelfd" class="small-grey-link">rfelfd</a> <a href="dfpt#rfmagn" class="small-grey-link">rfmagn</a> <a href="dfpt#rfmeth" class="small-grey-link">rfmeth</a> <a href="dfpt#rfphon" class="small-grey-link">rfphon</a> <a href="dfpt#rfstrs" class="small-grey-link">rfstrs</a> <a href="dfpt#rfuser" class="small-grey-link">rfuser</a> <a href="gw#rhoqpmix" class="small-grey-link">rhoqpmix</a> <a href="basic#rprim" class="small-grey-link">rprim</a> <a href="basic#rprimd" class="small-grey-link">%rprimd</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-S">
-<a href="basic#scalecart" class="wikilink codevar-wikilink">scalecart</a> <a href="gstate#scphon_supercell" class="wikilink codevar-wikilink">scphon_supercell</a> <a href="gstate#scphon_temp" class="wikilink codevar-wikilink">scphon_temp</a> <a href="basic#shiftk" class="wikilink codevar-wikilink">shiftk</a> <a href="gstate#shiftq" class="wikilink codevar-wikilink">shiftq</a> <a href="rlx#signperm" class="wikilink codevar-wikilink">signperm</a> <a href="gstate#slabwsrad" class="wikilink codevar-wikilink">slabwsrad</a> <a href="gstate#slabzbeg" class="wikilink codevar-wikilink">slabzbeg</a> <a href="gstate#slabzend" class="wikilink codevar-wikilink">slabzend</a> <a href="dfpt#smdelta" class="wikilink codevar-wikilink">smdelta</a> <a href="gstate#so_psp" class="wikilink codevar-wikilink">so_psp</a> <a href="gw#spbroad" class="wikilink codevar-wikilink">spbroad</a> <a href="geo#spgaxor" class="wikilink codevar-wikilink">spgaxor</a> <a href="geo#spgorig" class="wikilink codevar-wikilink">spgorig</a> <a href="geo#spgroup" class="wikilink codevar-wikilink">spgroup</a> <a href="geo#spgroupma" class="wikilink codevar-wikilink">spgroupma</a> <a href="gstate#spinat" class="wikilink codevar-wikilink">spinat</a> <a href="ffield#spinmagntarget" class="wikilink codevar-wikilink">spinmagntarget</a> <a href="gw#spmeth" class="wikilink codevar-wikilink">spmeth</a> <a href="paw#spnorbscl" class="wikilink codevar-wikilink">spnorbscl</a> <a href="gstate#stmbias" class="wikilink codevar-wikilink">stmbias</a> <a href="rlx#strfact" class="wikilink codevar-wikilink">strfact</a> <a href="rlx#string_algo" class="wikilink codevar-wikilink">string_algo</a> <a href="rlx#strprecon" class="wikilink codevar-wikilink">strprecon</a> <a href="rlx#strtarget" class="wikilink codevar-wikilink">strtarget</a> <a href="gstate#symafm" class="wikilink codevar-wikilink">symafm</a> <a href="gw#symchi" class="wikilink codevar-wikilink">symchi</a> <a href="eph#symdynmat" class="wikilink codevar-wikilink">symdynmat</a> <a href="dev#symmorphi" class="wikilink codevar-wikilink">symmorphi</a> <a href="basic#symrel" class="wikilink codevar-wikilink">symrel</a> <a href="gw#symsigma" class="wikilink codevar-wikilink">symsigma</a>
+<a href="basic#scalecart" class="small-grey-link">scalecart</a> <a href="gstate#scphon_supercell" class="small-grey-link">scphon_supercell</a> <a href="gstate#scphon_temp" class="small-grey-link">scphon_temp</a> <a href="basic#shiftk" class="small-grey-link">shiftk</a> <a href="gstate#shiftq" class="small-grey-link">shiftq</a> <a href="rlx#signperm" class="small-grey-link">signperm</a> <a href="gstate#slabwsrad" class="small-grey-link">slabwsrad</a> <a href="gstate#slabzbeg" class="small-grey-link">slabzbeg</a> <a href="gstate#slabzend" class="small-grey-link">slabzend</a> <a href="dfpt#smdelta" class="small-grey-link">smdelta</a> <a href="gstate#so_psp" class="small-grey-link">so_psp</a> <a href="gw#spbroad" class="small-grey-link">spbroad</a> <a href="geo#spgaxor" class="small-grey-link">spgaxor</a> <a href="geo#spgorig" class="small-grey-link">spgorig</a> <a href="geo#spgroup" class="small-grey-link">spgroup</a> <a href="geo#spgroupma" class="small-grey-link">spgroupma</a> <a href="gstate#spinat" class="small-grey-link">spinat</a> <a href="ffield#spinmagntarget" class="small-grey-link">spinmagntarget</a> <a href="gw#spmeth" class="small-grey-link">spmeth</a> <a href="paw#spnorbscl" class="small-grey-link">spnorbscl</a> <a href="gstate#stmbias" class="small-grey-link">stmbias</a> <a href="rlx#strfact" class="small-grey-link">strfact</a> <a href="rlx#string_algo" class="small-grey-link">string_algo</a> <a href="rlx#strprecon" class="small-grey-link">strprecon</a> <a href="rlx#strtarget" class="small-grey-link">strtarget</a> <a href="gstate#symafm" class="small-grey-link">symafm</a> <a href="gw#symchi" class="small-grey-link">symchi</a> <a href="eph#symdynmat" class="small-grey-link">symdynmat</a> <a href="dev#symmorphi" class="small-grey-link">symmorphi</a> <a href="basic#symrel" class="small-grey-link">symrel</a> <a href="gw#symsigma" class="small-grey-link">symsigma</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-T">
-<a href="dfpt#td_maxene" class="wikilink codevar-wikilink">td_maxene</a> <a href="dfpt#td_mexcit" class="wikilink codevar-wikilink">td_mexcit</a> <a href="dev#tfkinfunc" class="wikilink codevar-wikilink">tfkinfunc</a> <a href="dev#tfw_toldfe" class="wikilink codevar-wikilink">tfw_toldfe</a> <a href="gstate#timopt" class="wikilink codevar-wikilink">timopt</a> <a href="gstate#tl_nprccg" class="wikilink codevar-wikilink">tl_nprccg</a> <a href="gstate#tl_radius" class="wikilink codevar-wikilink">tl_radius</a> <a href="basic#tnons" class="wikilink codevar-wikilink">tnons</a> <a href="basic#toldfe" class="wikilink codevar-wikilink">toldfe</a> <a href="basic#toldff" class="wikilink codevar-wikilink">toldff</a> <a href="rlx#tolimg" class="wikilink codevar-wikilink">tolimg</a> <a href="rlx#tolmxde" class="wikilink codevar-wikilink">tolmxde</a> <a href="rlx#tolmxf" class="wikilink codevar-wikilink">tolmxf</a> <a href="dev#tolrde" class="wikilink codevar-wikilink">tolrde</a> <a href="basic#tolrff" class="wikilink codevar-wikilink">tolrff</a> <a href="geo#tolsym" class="wikilink codevar-wikilink">tolsym</a> <a href="basic#tolvrs" class="wikilink codevar-wikilink">tolvrs</a> <a href="basic#tolwfr" class="wikilink codevar-wikilink">tolwfr</a> <a href="gstate#tphysel" class="wikilink codevar-wikilink">tphysel</a> <a href="gstate#tsmear" class="wikilink codevar-wikilink">tsmear</a> <a href="basic#typat" class="wikilink codevar-wikilink">typat</a>
+<a href="dfpt#td_maxene" class="small-grey-link">td_maxene</a> <a href="dfpt#td_mexcit" class="small-grey-link">td_mexcit</a> <a href="dev#tfkinfunc" class="small-grey-link">tfkinfunc</a> <a href="dev#tfw_toldfe" class="small-grey-link">tfw_toldfe</a> <a href="gstate#timopt" class="small-grey-link">timopt</a> <a href="gstate#tl_nprccg" class="small-grey-link">tl_nprccg</a> <a href="gstate#tl_radius" class="small-grey-link">tl_radius</a> <a href="basic#tnons" class="small-grey-link">tnons</a> <a href="basic#toldfe" class="small-grey-link">toldfe</a> <a href="basic#toldff" class="small-grey-link">toldff</a> <a href="rlx#tolimg" class="small-grey-link">tolimg</a> <a href="rlx#tolmxde" class="small-grey-link">tolmxde</a> <a href="rlx#tolmxf" class="small-grey-link">tolmxf</a> <a href="dev#tolrde" class="small-grey-link">tolrde</a> <a href="basic#tolrff" class="small-grey-link">tolrff</a> <a href="geo#tolsym" class="small-grey-link">tolsym</a> <a href="basic#tolvrs" class="small-grey-link">tolvrs</a> <a href="basic#tolwfr" class="small-grey-link">tolwfr</a> <a href="gstate#tphysel" class="small-grey-link">tphysel</a> <a href="gstate#tsmear" class="small-grey-link">tsmear</a> <a href="basic#typat" class="small-grey-link">typat</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-U">
-<a href="gw#ucrpa" class="wikilink codevar-wikilink">ucrpa</a> <a href="gw#ucrpa_bands" class="wikilink codevar-wikilink">ucrpa_bands</a> <a href="gw#ucrpa_window" class="wikilink codevar-wikilink">ucrpa_window</a> <a href="basic#udtset" class="wikilink codevar-wikilink">udtset</a> <a href="paw#upawu" class="wikilink codevar-wikilink">upawu</a> <a href="dev#use_gemm_nonlop" class="wikilink codevar-wikilink">use_gemm_nonlop</a> <a href="paral#use_gpu_cuda" class="wikilink codevar-wikilink">use_gpu_cuda</a> <a href="dev#use_nonscf_gkk" class="wikilink codevar-wikilink">use_nonscf_gkk</a> <a href="paral#use_slk" class="wikilink codevar-wikilink">use_slk</a> <a href="paw#usedmatpu" class="wikilink codevar-wikilink">usedmatpu</a> <a href="dev#usedmft" class="wikilink codevar-wikilink">usedmft</a> <a href="paw#useexexch" class="wikilink codevar-wikilink">useexexch</a> <a href="internal#usefock" class="wikilink codevar-wikilink">%usefock</a> <a href="gstate#usekden" class="wikilink codevar-wikilink">usekden</a> <a href="internal#usepaw" class="wikilink codevar-wikilink">%usepaw</a> <a href="paw#usepawu" class="wikilink codevar-wikilink">usepawu</a> <a href="paw#usepotzero" class="wikilink codevar-wikilink">usepotzero</a> <a href="internal#userec" class="wikilink codevar-wikilink">%userec</a> <a href="dev#useria" class="wikilink codevar-wikilink">useria</a> <a href="dev#userib" class="wikilink codevar-wikilink">userib</a> <a href="dev#useric" class="wikilink codevar-wikilink">useric</a> <a href="dev#userid" class="wikilink codevar-wikilink">userid</a> <a href="dev#userie" class="wikilink codevar-wikilink">userie</a> <a href="dev#userra" class="wikilink codevar-wikilink">userra</a> <a href="dev#userrb" class="wikilink codevar-wikilink">userrb</a> <a href="dev#userrc" class="wikilink codevar-wikilink">userrc</a> <a href="dev#userrd" class="wikilink codevar-wikilink">userrd</a> <a href="dev#userre" class="wikilink codevar-wikilink">userre</a> <a href="basic#usewvl" class="wikilink codevar-wikilink">usewvl</a> <a href="paw#usexcnhat" class="wikilink codevar-wikilink">usexcnhat</a> <a href="dev#useylm" class="wikilink codevar-wikilink">useylm</a>
+<a href="gw#ucrpa" class="small-grey-link">ucrpa</a> <a href="gw#ucrpa_bands" class="small-grey-link">ucrpa_bands</a> <a href="gw#ucrpa_window" class="small-grey-link">ucrpa_window</a> <a href="basic#udtset" class="small-grey-link">udtset</a> <a href="paw#upawu" class="small-grey-link">upawu</a> <a href="dev#use_gemm_nonlop" class="small-grey-link">use_gemm_nonlop</a> <a href="paral#use_gpu_cuda" class="small-grey-link">use_gpu_cuda</a> <a href="dev#use_nonscf_gkk" class="small-grey-link">use_nonscf_gkk</a> <a href="paral#use_slk" class="small-grey-link">use_slk</a> <a href="paw#usedmatpu" class="small-grey-link">usedmatpu</a> <a href="dev#usedmft" class="small-grey-link">usedmft</a> <a href="paw#useexexch" class="small-grey-link">useexexch</a> <a href="internal#usefock" class="small-grey-link">%usefock</a> <a href="gstate#usekden" class="small-grey-link">usekden</a> <a href="internal#usepaw" class="small-grey-link">%usepaw</a> <a href="paw#usepawu" class="small-grey-link">usepawu</a> <a href="paw#usepotzero" class="small-grey-link">usepotzero</a> <a href="internal#userec" class="small-grey-link">%userec</a> <a href="dev#useria" class="small-grey-link">useria</a> <a href="dev#userib" class="small-grey-link">userib</a> <a href="dev#useric" class="small-grey-link">useric</a> <a href="dev#userid" class="small-grey-link">userid</a> <a href="dev#userie" class="small-grey-link">userie</a> <a href="dev#userra" class="small-grey-link">userra</a> <a href="dev#userrb" class="small-grey-link">userrb</a> <a href="dev#userrc" class="small-grey-link">userrc</a> <a href="dev#userrd" class="small-grey-link">userrd</a> <a href="dev#userre" class="small-grey-link">userre</a> <a href="basic#usewvl" class="small-grey-link">usewvl</a> <a href="paw#usexcnhat" class="small-grey-link">usexcnhat</a> <a href="dev#useylm" class="small-grey-link">useylm</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-V">
-<a href="geo#vaclst" class="wikilink codevar-wikilink">vaclst</a> <a href="geo#vacnum" class="wikilink codevar-wikilink">vacnum</a> <a href="gstate#vacuum" class="wikilink codevar-wikilink">vacuum</a> <a href="gstate#vacwidth" class="wikilink codevar-wikilink">vacwidth</a> <a href="gw#vcutgeo" class="wikilink codevar-wikilink">vcutgeo</a> <a href="vdw#vdw_df_acutmin" class="wikilink codevar-wikilink">vdw_df_acutmin</a> <a href="vdw#vdw_df_aratio" class="wikilink codevar-wikilink">vdw_df_aratio</a> <a href="vdw#vdw_df_damax" class="wikilink codevar-wikilink">vdw_df_damax</a> <a href="vdw#vdw_df_damin" class="wikilink codevar-wikilink">vdw_df_damin</a> <a href="vdw#vdw_df_dcut" class="wikilink codevar-wikilink">vdw_df_dcut</a> <a href="vdw#vdw_df_dratio" class="wikilink codevar-wikilink">vdw_df_dratio</a> <a href="vdw#vdw_df_dsoft" class="wikilink codevar-wikilink">vdw_df_dsoft</a> <a href="vdw#vdw_df_gcut" class="wikilink codevar-wikilink">vdw_df_gcut</a> <a href="vdw#vdw_df_ndpts" class="wikilink codevar-wikilink">vdw_df_ndpts</a> <a href="vdw#vdw_df_ngpts" class="wikilink codevar-wikilink">vdw_df_ngpts</a> <a href="vdw#vdw_df_nqpts" class="wikilink codevar-wikilink">vdw_df_nqpts</a> <a href="vdw#vdw_df_nrpts" class="wikilink codevar-wikilink">vdw_df_nrpts</a> <a href="vdw#vdw_df_nsmooth" class="wikilink codevar-wikilink">vdw_df_nsmooth</a> <a href="vdw#vdw_df_phisoft" class="wikilink codevar-wikilink">vdw_df_phisoft</a> <a href="vdw#vdw_df_qcut" class="wikilink codevar-wikilink">vdw_df_qcut</a> <a href="vdw#vdw_df_qratio" class="wikilink codevar-wikilink">vdw_df_qratio</a> <a href="vdw#vdw_df_rcut" class="wikilink codevar-wikilink">vdw_df_rcut</a> <a href="vdw#vdw_df_rsoft" class="wikilink codevar-wikilink">vdw_df_rsoft</a> <a href="vdw#vdw_df_threshold" class="wikilink codevar-wikilink">vdw_df_threshold</a> <a href="vdw#vdw_df_tolerance" class="wikilink codevar-wikilink">vdw_df_tolerance</a> <a href="vdw#vdw_df_tweaks" class="wikilink codevar-wikilink">vdw_df_tweaks</a> <a href="vdw#vdw_df_zab" class="wikilink codevar-wikilink">vdw_df_zab</a> <a href="vdw#vdw_nfrag" class="wikilink codevar-wikilink">vdw_nfrag</a> <a href="vdw#vdw_supercell" class="wikilink codevar-wikilink">vdw_supercell</a> <a href="vdw#vdw_tol" class="wikilink codevar-wikilink">vdw_tol</a> <a href="vdw#vdw_tol_3bt" class="wikilink codevar-wikilink">vdw_tol_3bt</a> <a href="vdw#vdw_typfrag" class="wikilink codevar-wikilink">vdw_typfrag</a> <a href="vdw#vdw_xc" class="wikilink codevar-wikilink">vdw_xc</a> <a href="rlx#vel" class="wikilink codevar-wikilink">vel</a> <a href="rlx#vel_cell" class="wikilink codevar-wikilink">vel_cell</a> <a href="rlx#vis" class="wikilink codevar-wikilink">vis</a> <a href="ffield#vprtrb" class="wikilink codevar-wikilink">vprtrb</a>
+<a href="geo#vaclst" class="small-grey-link">vaclst</a> <a href="geo#vacnum" class="small-grey-link">vacnum</a> <a href="gstate#vacuum" class="small-grey-link">vacuum</a> <a href="gstate#vacwidth" class="small-grey-link">vacwidth</a> <a href="gw#vcutgeo" class="small-grey-link">vcutgeo</a> <a href="vdw#vdw_df_acutmin" class="small-grey-link">vdw_df_acutmin</a> <a href="vdw#vdw_df_aratio" class="small-grey-link">vdw_df_aratio</a> <a href="vdw#vdw_df_damax" class="small-grey-link">vdw_df_damax</a> <a href="vdw#vdw_df_damin" class="small-grey-link">vdw_df_damin</a> <a href="vdw#vdw_df_dcut" class="small-grey-link">vdw_df_dcut</a> <a href="vdw#vdw_df_dratio" class="small-grey-link">vdw_df_dratio</a> <a href="vdw#vdw_df_dsoft" class="small-grey-link">vdw_df_dsoft</a> <a href="vdw#vdw_df_gcut" class="small-grey-link">vdw_df_gcut</a> <a href="vdw#vdw_df_ndpts" class="small-grey-link">vdw_df_ndpts</a> <a href="vdw#vdw_df_ngpts" class="small-grey-link">vdw_df_ngpts</a> <a href="vdw#vdw_df_nqpts" class="small-grey-link">vdw_df_nqpts</a> <a href="vdw#vdw_df_nrpts" class="small-grey-link">vdw_df_nrpts</a> <a href="vdw#vdw_df_nsmooth" class="small-grey-link">vdw_df_nsmooth</a> <a href="vdw#vdw_df_phisoft" class="small-grey-link">vdw_df_phisoft</a> <a href="vdw#vdw_df_qcut" class="small-grey-link">vdw_df_qcut</a> <a href="vdw#vdw_df_qratio" class="small-grey-link">vdw_df_qratio</a> <a href="vdw#vdw_df_rcut" class="small-grey-link">vdw_df_rcut</a> <a href="vdw#vdw_df_rsoft" class="small-grey-link">vdw_df_rsoft</a> <a href="vdw#vdw_df_threshold" class="small-grey-link">vdw_df_threshold</a> <a href="vdw#vdw_df_tolerance" class="small-grey-link">vdw_df_tolerance</a> <a href="vdw#vdw_df_tweaks" class="small-grey-link">vdw_df_tweaks</a> <a href="vdw#vdw_df_zab" class="small-grey-link">vdw_df_zab</a> <a href="vdw#vdw_nfrag" class="small-grey-link">vdw_nfrag</a> <a href="vdw#vdw_supercell" class="small-grey-link">vdw_supercell</a> <a href="vdw#vdw_tol" class="small-grey-link">vdw_tol</a> <a href="vdw#vdw_tol_3bt" class="small-grey-link">vdw_tol_3bt</a> <a href="vdw#vdw_typfrag" class="small-grey-link">vdw_typfrag</a> <a href="vdw#vdw_xc" class="small-grey-link">vdw_xc</a> <a href="rlx#vel" class="small-grey-link">vel</a> <a href="rlx#vel_cell" class="small-grey-link">vel_cell</a> <a href="rlx#vis" class="small-grey-link">vis</a> <a href="ffield#vprtrb" class="small-grey-link">vprtrb</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-W">
-<a href="w90#w90iniprj" class="wikilink codevar-wikilink">w90iniprj</a> <a href="w90#w90prtunk" class="wikilink codevar-wikilink">w90prtunk</a> <a href="dev#wfoptalg" class="wikilink codevar-wikilink">wfoptalg</a> <a href="rlx#wtatcon" class="wikilink codevar-wikilink">wtatcon</a> <a href="basic#wtk" class="wikilink codevar-wikilink">wtk</a> <a href="gstate#wtq" class="wikilink codevar-wikilink">wtq</a> <a href="gstate#wvl_bigdft_comp" class="wikilink codevar-wikilink">wvl_bigdft_comp</a> <a href="gstate#wvl_crmult" class="wikilink codevar-wikilink">wvl_crmult</a> <a href="gstate#wvl_frmult" class="wikilink codevar-wikilink">wvl_frmult</a> <a href="basic#wvl_hgrid" class="wikilink codevar-wikilink">wvl_hgrid</a> <a href="gstate#wvl_ngauss" class="wikilink codevar-wikilink">wvl_ngauss</a> <a href="gstate#wvl_nprccg" class="wikilink codevar-wikilink">wvl_nprccg</a>
+<a href="w90#w90iniprj" class="small-grey-link">w90iniprj</a> <a href="w90#w90prtunk" class="small-grey-link">w90prtunk</a> <a href="dev#wfoptalg" class="small-grey-link">wfoptalg</a> <a href="rlx#wtatcon" class="small-grey-link">wtatcon</a> <a href="basic#wtk" class="small-grey-link">wtk</a> <a href="gstate#wtq" class="small-grey-link">wtq</a> <a href="gstate#wvl_bigdft_comp" class="small-grey-link">wvl_bigdft_comp</a> <a href="gstate#wvl_crmult" class="small-grey-link">wvl_crmult</a> <a href="gstate#wvl_frmult" class="small-grey-link">wvl_frmult</a> <a href="basic#wvl_hgrid" class="small-grey-link">wvl_hgrid</a> <a href="gstate#wvl_ngauss" class="small-grey-link">wvl_ngauss</a> <a href="gstate#wvl_nprccg" class="small-grey-link">wvl_nprccg</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-X">
-<a href="basic#xangst" class="wikilink codevar-wikilink">xangst</a> <a href="dev#xc_denpos" class="wikilink codevar-wikilink">xc_denpos</a> <a href="dev#xc_tb09_c" class="wikilink codevar-wikilink">xc_tb09_c</a> <a href="basic#xcart" class="wikilink codevar-wikilink">xcart</a> <a href="internal#xclevel" class="wikilink codevar-wikilink">%xclevel</a> <a href="basic#xred" class="wikilink codevar-wikilink">xred</a> <a href="gstate#xredsph_extra" class="wikilink codevar-wikilink">xredsph_extra</a> <a href="geo#xyzfile" class="wikilink codevar-wikilink">xyzfile</a>
+<a href="basic#xangst" class="small-grey-link">xangst</a> <a href="dev#xc_denpos" class="small-grey-link">xc_denpos</a> <a href="dev#xc_tb09_c" class="small-grey-link">xc_tb09_c</a> <a href="basic#xcart" class="small-grey-link">xcart</a> <a href="internal#xclevel" class="small-grey-link">%xclevel</a> <a href="basic#xred" class="small-grey-link">xred</a> <a href="gstate#xredsph_extra" class="small-grey-link">xredsph_extra</a> <a href="geo#xyzfile" class="small-grey-link">xyzfile</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-Z">
-<a href="gw#zcut" class="wikilink codevar-wikilink">zcut</a> <a href="ffield#zeemanfield" class="wikilink codevar-wikilink">zeemanfield</a> <a href="internal#ziontypat" class="wikilink codevar-wikilink">%ziontypat</a> <a href="basic#znucl" class="wikilink codevar-wikilink">znucl</a>
+<a href="gw#zcut" class="small-grey-link">zcut</a> <a href="ffield#zeemanfield" class="small-grey-link">zeemanfield</a> <a href="internal#ziontypat" class="small-grey-link">%ziontypat</a> <a href="basic#znucl" class="small-grey-link">znucl</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="abinit-tabs-All">
-<a href="basic#accuracy" class="wikilink codevar-wikilink">accuracy</a> <a href="basic#acell" class="wikilink codevar-wikilink">acell</a> <a href="rlx#adpimd" class="wikilink codevar-wikilink">adpimd</a> <a href="rlx#adpimd_gamma" class="wikilink codevar-wikilink">adpimd_gamma</a> <a href="gstate#algalch" class="wikilink codevar-wikilink">algalch</a> <a href="rlx#amu" class="wikilink codevar-wikilink">amu</a> <a href="basic#angdeg" class="wikilink codevar-wikilink">angdeg</a> <a href="eph#asr" class="wikilink codevar-wikilink">asr</a> <a href="ffield#atvshift" class="wikilink codevar-wikilink">atvshift</a> <a href="paral#autoparal" class="wikilink codevar-wikilink">autoparal</a> <a href="gw#awtr" class="wikilink codevar-wikilink">awtr</a> <a href="paral#bandpp" class="wikilink codevar-wikilink">bandpp</a> <a href="ffield#bdberry" class="wikilink codevar-wikilink">bdberry</a> <a href="dfpt#bdeigrf" class="wikilink codevar-wikilink">bdeigrf</a> <a href="gw#bdgw" class="wikilink codevar-wikilink">bdgw</a> <a href="ffield#berryopt" class="wikilink codevar-wikilink">berryopt</a> <a href="ffield#berrysav" class="wikilink codevar-wikilink">berrysav</a> <a href="ffield#berrystep" class="wikilink codevar-wikilink">berrystep</a> <a href="ffield#bfield" class="wikilink codevar-wikilink">bfield</a> <a href="rlx#bmass" class="wikilink codevar-wikilink">bmass</a> <a href="gstate#boxcenter" class="wikilink codevar-wikilink">boxcenter</a> <a href="gstate#boxcutmin" class="wikilink codevar-wikilink">boxcutmin</a> <a href="geo#brvltt" class="wikilink codevar-wikilink">brvltt</a> <a href="bse#bs_algorithm" class="wikilink codevar-wikilink">bs_algorithm</a> <a href="bse#bs_calctype" class="wikilink codevar-wikilink">bs_calctype</a> <a href="bse#bs_coulomb_term" class="wikilink codevar-wikilink">bs_coulomb_term</a> <a href="bse#bs_coupling" class="wikilink codevar-wikilink">bs_coupling</a> <a href="bse#bs_eh_cutoff" class="wikilink codevar-wikilink">bs_eh_cutoff</a> <a href="bse#bs_exchange_term" class="wikilink codevar-wikilink">bs_exchange_term</a> <a href="bse#bs_freq_mesh" class="wikilink codevar-wikilink">bs_freq_mesh</a> <a href="bse#bs_hayd_term" class="wikilink codevar-wikilink">bs_hayd_term</a> <a href="bse#bs_haydock_niter" class="wikilink codevar-wikilink">bs_haydock_niter</a> <a href="bse#bs_haydock_tol" class="wikilink codevar-wikilink">bs_haydock_tol</a> <a href="bse#bs_interp_kmult" class="wikilink codevar-wikilink">bs_interp_kmult</a> <a href="bse#bs_interp_m3_width" class="wikilink codevar-wikilink">bs_interp_m3_width</a> <a href="bse#bs_interp_method" class="wikilink codevar-wikilink">bs_interp_method</a> <a href="bse#bs_interp_mode" class="wikilink codevar-wikilink">bs_interp_mode</a> <a href="bse#bs_interp_prep" class="wikilink codevar-wikilink">bs_interp_prep</a> <a href="bse#bs_interp_rl_nb" class="wikilink codevar-wikilink">bs_interp_rl_nb</a> <a href="bse#bs_loband" class="wikilink codevar-wikilink">bs_loband</a> <a href="bse#bs_nstates" class="wikilink codevar-wikilink">bs_nstates</a> <a href="dev#builtintest" class="wikilink codevar-wikilink">builtintest</a> <a href="paw#bxctmindg" class="wikilink codevar-wikilink">bxctmindg</a> <a href="gw#cd_customnimfrqs" class="wikilink codevar-wikilink">cd_customnimfrqs</a> <a href="gw#cd_frqim_method" class="wikilink codevar-wikilink">cd_frqim_method</a> <a href="gw#cd_full_grid" class="wikilink codevar-wikilink">cd_full_grid</a> <a href="gw#cd_halfway_freq" class="wikilink codevar-wikilink">cd_halfway_freq</a> <a href="gw#cd_imfrqs" class="wikilink codevar-wikilink">cd_imfrqs</a> <a href="gw#cd_max_freq" class="wikilink codevar-wikilink">cd_max_freq</a> <a href="gw#cd_subset_freq" class="wikilink codevar-wikilink">cd_subset_freq</a> <a href="dev#cgtyphf" class="wikilink codevar-wikilink">cgtyphf</a> <a href="gstate#charge" class="wikilink codevar-wikilink">charge</a> <a href="geo#chempot" class="wikilink codevar-wikilink">chempot</a> <a href="gstate#chkexit" class="wikilink codevar-wikilink">chkexit</a> <a href="gstate#chkprim" class="wikilink codevar-wikilink">chkprim</a> <a href="gstate#chksymbreak" class="wikilink codevar-wikilink">chksymbreak</a> <a href="eph#chneut" class="wikilink codevar-wikilink">chneut</a> <a href="rlx#cineb_start" class="wikilink codevar-wikilink">cineb_start</a> <a href="gstate#cpuh" class="wikilink codevar-wikilink">cpuh</a> <a href="gstate#cpum" class="wikilink codevar-wikilink">cpum</a> <a href="gstate#cpus" class="wikilink codevar-wikilink">cpus</a> <a href="dfpt#d3e_pert1_atpol" class="wikilink codevar-wikilink">d3e_pert1_atpol</a> <a href="dfpt#d3e_pert1_dir" class="wikilink codevar-wikilink">d3e_pert1_dir</a> <a href="dfpt#d3e_pert1_elfd" class="wikilink codevar-wikilink">d3e_pert1_elfd</a> <a href="dfpt#d3e_pert1_phon" class="wikilink codevar-wikilink">d3e_pert1_phon</a> <a href="dfpt#d3e_pert2_atpol" class="wikilink codevar-wikilink">d3e_pert2_atpol</a> <a href="dfpt#d3e_pert2_dir" class="wikilink codevar-wikilink">d3e_pert2_dir</a> <a href="dfpt#d3e_pert2_elfd" class="wikilink codevar-wikilink">d3e_pert2_elfd</a> <a href="dfpt#d3e_pert2_phon" class="wikilink codevar-wikilink">d3e_pert2_phon</a> <a href="dfpt#d3e_pert3_atpol" class="wikilink codevar-wikilink">d3e_pert3_atpol</a> <a href="dfpt#d3e_pert3_dir" class="wikilink codevar-wikilink">d3e_pert3_dir</a> <a href="dfpt#d3e_pert3_elfd" class="wikilink codevar-wikilink">d3e_pert3_elfd</a> <a href="dfpt#d3e_pert3_phon" class="wikilink codevar-wikilink">d3e_pert3_phon</a> <a href="ffield#ddamp" class="wikilink codevar-wikilink">ddamp</a> <a href="eph#ddb_ngqpt" class="wikilink codevar-wikilink">ddb_ngqpt</a> <a href="eph#ddb_shiftq" class="wikilink codevar-wikilink">ddb_shiftq</a> <a href="rlx#delayperm" class="wikilink codevar-wikilink">delayperm</a> <a href="dev#densfor_pred" class="wikilink codevar-wikilink">densfor_pred</a> <a href="dev#densty" class="wikilink codevar-wikilink">densty</a> <a href="ffield#dfield" class="wikilink codevar-wikilink">dfield</a> <a href="dfpt#dfpt_sciss" class="wikilink codevar-wikilink">dfpt_sciss</a> <a href="gstate#diecut" class="wikilink codevar-wikilink">diecut</a> <a href="gstate#diegap" class="wikilink codevar-wikilink">diegap</a> <a href="gstate#dielam" class="wikilink codevar-wikilink">dielam</a> <a href="gstate#dielng" class="wikilink codevar-wikilink">dielng</a> <a href="gstate#diemac" class="wikilink codevar-wikilink">diemac</a> <a href="gstate#diemix" class="wikilink codevar-wikilink">diemix</a> <a href="gstate#diemixmag" class="wikilink codevar-wikilink">diemixmag</a> <a href="rlx#diismemory" class="wikilink codevar-wikilink">diismemory</a> <a href="rlx#dilatmx" class="wikilink codevar-wikilink">dilatmx</a> <a href="eph#dipdip" class="wikilink codevar-wikilink">dipdip</a> <a href="paw#dmatpawu" class="wikilink codevar-wikilink">dmatpawu</a> <a href="paw#dmatpuopt" class="wikilink codevar-wikilink">dmatpuopt</a> <a href="paw#dmatudiag" class="wikilink codevar-wikilink">dmatudiag</a> <a href="dmft#dmft_dc" class="wikilink codevar-wikilink">dmft_dc</a> <a href="dmft#dmft_entropy" class="wikilink codevar-wikilink">dmft_entropy</a> <a href="dmft#dmft_iter" class="wikilink codevar-wikilink">dmft_iter</a> <a href="dmft#dmft_mxsf" class="wikilink codevar-wikilink">dmft_mxsf</a> <a href="dmft#dmft_nlambda" class="wikilink codevar-wikilink">dmft_nlambda</a> <a href="dmft#dmft_nwli" class="wikilink codevar-wikilink">dmft_nwli</a> <a href="dmft#dmft_nwlo" class="wikilink codevar-wikilink">dmft_nwlo</a> <a href="dev#dmft_read_occnd" class="wikilink codevar-wikilink">dmft_read_occnd</a> <a href="dmft#dmft_rslf" class="wikilink codevar-wikilink">dmft_rslf</a> <a href="dmft#dmft_solv" class="wikilink codevar-wikilink">dmft_solv</a> <a href="dmft#dmft_t2g" class="wikilink codevar-wikilink">dmft_t2g</a> <a href="dmft#dmft_tolfreq" class="wikilink codevar-wikilink">dmft_tolfreq</a> <a href="dmft#dmft_tollc" class="wikilink codevar-wikilink">dmft_tollc</a> <a href="dmft#dmftbandf" class="wikilink codevar-wikilink">dmftbandf</a> <a href="dmft#dmftbandi" class="wikilink codevar-wikilink">dmftbandi</a> <a href="dmft#dmftcheck" class="wikilink codevar-wikilink">dmftcheck</a> <a href="dev#dmftctqmc_basis" class="wikilink codevar-wikilink">dmftctqmc_basis</a> <a href="dmft#dmftctqmc_check" class="wikilink codevar-wikilink">dmftctqmc_check</a> <a href="dmft#dmftctqmc_correl" class="wikilink codevar-wikilink">dmftctqmc_correl</a> <a href="dmft#dmftctqmc_gmove" class="wikilink codevar-wikilink">dmftctqmc_gmove</a> <a href="dmft#dmftctqmc_grnns" class="wikilink codevar-wikilink">dmftctqmc_grnns</a> <a href="dmft#dmftctqmc_meas" class="wikilink codevar-wikilink">dmftctqmc_meas</a> <a href="dmft#dmftctqmc_mov" class="wikilink codevar-wikilink">dmftctqmc_mov</a> <a href="dmft#dmftctqmc_mrka" class="wikilink codevar-wikilink">dmftctqmc_mrka</a> <a href="dmft#dmftctqmc_order" class="wikilink codevar-wikilink">dmftctqmc_order</a> <a href="dmft#dmftctqmc_triqs_nleg" class="wikilink codevar-wikilink">dmftctqmc_triqs_nleg</a> <a href="dmft#dmftqmc_l" class="wikilink codevar-wikilink">dmftqmc_l</a> <a href="dmft#dmftqmc_n" class="wikilink codevar-wikilink">dmftqmc_n</a> <a href="dmft#dmftqmc_seed" class="wikilink codevar-wikilink">dmftqmc_seed</a> <a href="dmft#dmftqmc_therm" class="wikilink codevar-wikilink">dmftqmc_therm</a> <a href="gstate#dosdeltae" class="wikilink codevar-wikilink">dosdeltae</a> <a href="rlx#dtion" class="wikilink codevar-wikilink">dtion</a> <a href="rlx#dynimage" class="wikilink codevar-wikilink">dynimage</a> <a href="basic#ecut" class="wikilink codevar-wikilink">ecut</a> <a href="gw#ecuteps" class="wikilink codevar-wikilink">ecuteps</a> <a href="gw#ecutsigx" class="wikilink codevar-wikilink">ecutsigx</a> <a href="rlx#ecutsm" class="wikilink codevar-wikilink">ecutsm</a> <a href="gw#ecutwfn" class="wikilink codevar-wikilink">ecutwfn</a> <a href="dev#effmass_free" class="wikilink codevar-wikilink">effmass_free</a> <a href="ffield#efield" class="wikilink codevar-wikilink">efield</a> <a href="dfpt#efmas" class="wikilink codevar-wikilink">efmas</a> <a href="dfpt#efmas_bands" class="wikilink codevar-wikilink">efmas_bands</a> <a href="dfpt#efmas_calc_dirs" class="wikilink codevar-wikilink">efmas_calc_dirs</a> <a href="dfpt#efmas_deg" class="wikilink codevar-wikilink">efmas_deg</a> <a href="dfpt#efmas_deg_tol" class="wikilink codevar-wikilink">efmas_deg_tol</a> <a href="dfpt#efmas_dim" class="wikilink codevar-wikilink">efmas_dim</a> <a href="dfpt#efmas_dirs" class="wikilink codevar-wikilink">efmas_dirs</a> <a href="dfpt#efmas_n_dirs" class="wikilink codevar-wikilink">efmas_n_dirs</a> <a href="dfpt#efmas_ntheta" class="wikilink codevar-wikilink">efmas_ntheta</a> <a href="basic#einterp" class="wikilink codevar-wikilink">einterp</a> <a href="dfpt#elph2_imagden" class="wikilink codevar-wikilink">elph2_imagden</a> <a href="gstate#enunit" class="wikilink codevar-wikilink">enunit</a> <a href="eph#eph_extrael" class="wikilink codevar-wikilink">eph_extrael</a> <a href="eph#eph_fermie" class="wikilink codevar-wikilink">eph_fermie</a> <a href="eph#eph_fsewin" class="wikilink codevar-wikilink">eph_fsewin</a> <a href="eph#eph_fsmear" class="wikilink codevar-wikilink">eph_fsmear</a> <a href="eph#eph_intmeth" class="wikilink codevar-wikilink">eph_intmeth</a> <a href="eph#eph_mustar" class="wikilink codevar-wikilink">eph_mustar</a> <a href="eph#eph_ngqpt_fine" class="wikilink codevar-wikilink">eph_ngqpt_fine</a> <a href="dfpt#eph_task" class="wikilink codevar-wikilink">eph_task</a> <a href="eph#eph_transport" class="wikilink codevar-wikilink">eph_transport</a> <a href="dev#eshift" class="wikilink codevar-wikilink">eshift</a> <a href="dfpt#esmear" class="wikilink codevar-wikilink">esmear</a> <a href="dev#exchmix" class="wikilink codevar-wikilink">exchmix</a> <a href="dev#exchn2n3d" class="wikilink codevar-wikilink">exchn2n3d</a> <a href="dev#extrapwf" class="wikilink codevar-wikilink">extrapwf</a> <a href="paw#f4of2_sla" class="wikilink codevar-wikilink">f4of2_sla</a> <a href="paw#f6of2_sla" class="wikilink codevar-wikilink">f6of2_sla</a> <a href="gstate#fband" class="wikilink codevar-wikilink">fband</a> <a href="dev#fermie_nest" class="wikilink codevar-wikilink">fermie_nest</a> <a href="dev#fftalg" class="wikilink codevar-wikilink">fftalg</a> <a href="dev#fftcache" class="wikilink codevar-wikilink">fftcache</a> <a href="gw#fftgw" class="wikilink codevar-wikilink">fftgw</a> <a href="gw#freqim_alpha" class="wikilink codevar-wikilink">freqim_alpha</a> <a href="gw#freqremax" class="wikilink codevar-wikilink">freqremax</a> <a href="gw#freqremin" class="wikilink codevar-wikilink">freqremin</a> <a href="gw#freqspmax" class="wikilink codevar-wikilink">freqspmax</a> <a href="gw#freqspmin" class="wikilink codevar-wikilink">freqspmin</a> <a href="rlx#friction" class="wikilink codevar-wikilink">friction</a> <a href="dfpt#frzfermi" class="wikilink codevar-wikilink">frzfermi</a> <a href="rlx#fxcartfactor" class="wikilink codevar-wikilink">fxcartfactor</a> <a href="rlx#ga_algor" class="wikilink codevar-wikilink">ga_algor</a> <a href="rlx#ga_fitness" class="wikilink codevar-wikilink">ga_fitness</a> <a href="rlx#ga_n_rules" class="wikilink codevar-wikilink">ga_n_rules</a> <a href="rlx#ga_opt_percent" class="wikilink codevar-wikilink">ga_opt_percent</a> <a href="rlx#ga_rules" class="wikilink codevar-wikilink">ga_rules</a> <a href="geo#genafm" class="wikilink codevar-wikilink">genafm</a> <a href="files#get1den" class="wikilink codevar-wikilink">get1den</a> <a href="files#get1wf" class="wikilink codevar-wikilink">get1wf</a> <a href="files#getbscoup" class="wikilink codevar-wikilink">getbscoup</a> <a href="files#getbseig" class="wikilink codevar-wikilink">getbseig</a> <a href="files#getbsreso" class="wikilink codevar-wikilink">getbsreso</a> <a href="rlx#getcell" class="wikilink codevar-wikilink">getcell</a> <a href="files#getddb" class="wikilink codevar-wikilink">getddb</a> <a href="files#getddk" class="wikilink codevar-wikilink">getddk</a> <a href="files#getden" class="wikilink codevar-wikilink">getden</a> <a href="dev#getgam_eig2nkq" class="wikilink codevar-wikilink">getgam_eig2nkq</a> <a href="files#gethaydock" class="wikilink codevar-wikilink">gethaydock</a> <a href="files#getocc" class="wikilink codevar-wikilink">getocc</a> <a href="files#getqps" class="wikilink codevar-wikilink">getqps</a> <a href="files#getscr" class="wikilink codevar-wikilink">getscr</a> <a href="files#getsuscep" class="wikilink codevar-wikilink">getsuscep</a> <a href="rlx#getvel" class="wikilink codevar-wikilink">getvel</a> <a href="files#getwfk" class="wikilink codevar-wikilink">getwfk</a> <a href="dev#getwfkfine" class="wikilink codevar-wikilink">getwfkfine</a> <a href="files#getwfq" class="wikilink codevar-wikilink">getwfq</a> <a href="rlx#getxcart" class="wikilink codevar-wikilink">getxcart</a> <a href="rlx#getxred" class="wikilink codevar-wikilink">getxred</a> <a href="rlx#goprecon" class="wikilink codevar-wikilink">goprecon</a> <a href="rlx#goprecprm" class="wikilink codevar-wikilink">goprecprm</a> <a href="paral#gpu_devices" class="wikilink codevar-wikilink">gpu_devices</a> <a href="paral#gpu_linalg_limit" class="wikilink codevar-wikilink">gpu_linalg_limit</a> <a href="gw#gw_customnfreqsp" class="wikilink codevar-wikilink">gw_customnfreqsp</a> <a href="gw#gw_freqsp" class="wikilink codevar-wikilink">gw_freqsp</a> <a href="gw#gw_frqim_inzgrid" class="wikilink codevar-wikilink">gw_frqim_inzgrid</a> <a href="gw#gw_frqre_inzgrid" class="wikilink codevar-wikilink">gw_frqre_inzgrid</a> <a href="gw#gw_frqre_tangrid" class="wikilink codevar-wikilink">gw_frqre_tangrid</a> <a href="gw#gw_invalid_freq" class="wikilink codevar-wikilink">gw_invalid_freq</a> <a href="gw#gw_nqlwl" class="wikilink codevar-wikilink">gw_nqlwl</a> <a href="gw#gw_nstep" class="wikilink codevar-wikilink">gw_nstep</a> <a href="gw#gw_qlwl" class="wikilink codevar-wikilink">gw_qlwl</a> <a href="gw#gw_qprange" class="wikilink codevar-wikilink">gw_qprange</a> <a href="gw#gw_sctype" class="wikilink codevar-wikilink">gw_sctype</a> <a href="gw#gw_sigxcore" class="wikilink codevar-wikilink">gw_sigxcore</a> <a href="gw#gw_toldfeig" class="wikilink codevar-wikilink">gw_toldfeig</a> <a href="gw#gwcalctyp" class="wikilink codevar-wikilink">gwcalctyp</a> <a href="gw#gwcomp" class="wikilink codevar-wikilink">gwcomp</a> <a href="gw#gwencomp" class="wikilink codevar-wikilink">gwencomp</a> <a href="gw#gwfockmix" class="wikilink codevar-wikilink">gwfockmix</a> <a href="gw#gwgamma" class="wikilink codevar-wikilink">gwgamma</a> <a href="gw#gwls_band_index" class="wikilink codevar-wikilink">gwls_band_index</a> <a href="gw#gwls_correlation" class="wikilink codevar-wikilink">gwls_correlation</a> <a href="gw#gwls_diel_model" class="wikilink codevar-wikilink">gwls_diel_model</a> <a href="gw#gwls_exchange" class="wikilink codevar-wikilink">gwls_exchange</a> <a href="gw#gwls_first_seed" class="wikilink codevar-wikilink">gwls_first_seed</a> <a href="gw#gwls_kmax_analytic" class="wikilink codevar-wikilink">gwls_kmax_analytic</a> <a href="gw#gwls_kmax_complement" class="wikilink codevar-wikilink">gwls_kmax_complement</a> <a href="gw#gwls_kmax_numeric" class="wikilink codevar-wikilink">gwls_kmax_numeric</a> <a href="gw#gwls_kmax_poles" class="wikilink codevar-wikilink">gwls_kmax_poles</a> <a href="gw#gwls_list_proj_freq" class="wikilink codevar-wikilink">gwls_list_proj_freq</a> <a href="gw#gwls_model_parameter" class="wikilink codevar-wikilink">gwls_model_parameter</a> <a href="gw#gwls_n_proj_freq" class="wikilink codevar-wikilink">gwls_n_proj_freq</a> <a href="gw#gwls_npt_gauss_quad" class="wikilink codevar-wikilink">gwls_npt_gauss_quad</a> <a href="gw#gwls_nseeds" class="wikilink codevar-wikilink">gwls_nseeds</a> <a href="gw#gwls_print_debug" class="wikilink codevar-wikilink">gwls_print_debug</a> <a href="gw#gwls_recycle" class="wikilink codevar-wikilink">gwls_recycle</a> <a href="gw#gwls_stern_kmax" class="wikilink codevar-wikilink">gwls_stern_kmax</a> <a href="gw#gwmem" class="wikilink codevar-wikilink">gwmem</a> <a href="paral#gwpara" class="wikilink codevar-wikilink">gwpara</a> <a href="gw#gwrpacorr" class="wikilink codevar-wikilink">gwrpacorr</a> <a href="rlx#iatcon" class="wikilink codevar-wikilink">iatcon</a> <a href="rlx#iatfix" class="wikilink codevar-wikilink">iatfix</a> <a href="rlx#iatfixx" class="wikilink codevar-wikilink">iatfixx</a> <a href="rlx#iatfixy" class="wikilink codevar-wikilink">iatfixy</a> <a href="rlx#iatfixz" class="wikilink codevar-wikilink">iatfixz</a> <a href="gstate#iatsph" class="wikilink codevar-wikilink">iatsph</a> <a href="paw#iboxcut" class="wikilink codevar-wikilink">iboxcut</a> <a href="gstate#icoulomb" class="wikilink codevar-wikilink">icoulomb</a> <a href="gw#icutcoul" class="wikilink codevar-wikilink">icutcoul</a> <a href="dfpt#ieig2rf" class="wikilink codevar-wikilink">ieig2rf</a> <a href="rlx#imgmov" class="wikilink codevar-wikilink">imgmov</a> <a href="gw#inclvkb" class="wikilink codevar-wikilink">inclvkb</a> <a href="dev#intxc" class="wikilink codevar-wikilink">intxc</a> <a href="dev#iomode" class="wikilink codevar-wikilink">iomode</a> <a href="rlx#ionmov" class="wikilink codevar-wikilink">ionmov</a> <a href="gstate#iprcel" class="wikilink codevar-wikilink">iprcel</a> <a href="dev#iprcfc" class="wikilink codevar-wikilink">iprcfc</a> <a href="gstate#iqpt" class="wikilink codevar-wikilink">iqpt</a> <a href="dev#irandom" class="wikilink codevar-wikilink">irandom</a> <a href="files#ird1den" class="wikilink codevar-wikilink">ird1den</a> <a href="files#ird1wf" class="wikilink codevar-wikilink">ird1wf</a> <a href="files#irdbscoup" class="wikilink codevar-wikilink">irdbscoup</a> <a href="files#irdbseig" class="wikilink codevar-wikilink">irdbseig</a> <a href="files#irdbsreso" class="wikilink codevar-wikilink">irdbsreso</a> <a href="files#irdddb" class="wikilink codevar-wikilink">irdddb</a> <a href="files#irdddk" class="wikilink codevar-wikilink">irdddk</a> <a href="files#irdden" class="wikilink codevar-wikilink">irdden</a> <a href="files#irdhaydock" class="wikilink codevar-wikilink">irdhaydock</a> <a href="files#irdqps" class="wikilink codevar-wikilink">irdqps</a> <a href="files#irdscr" class="wikilink codevar-wikilink">irdscr</a> <a href="files#irdsuscep" class="wikilink codevar-wikilink">irdsuscep</a> <a href="vdw#irdvdw" class="wikilink codevar-wikilink">irdvdw</a> <a href="files#irdwfk" class="wikilink codevar-wikilink">irdwfk</a> <a href="dev#irdwfkfine" class="wikilink codevar-wikilink">irdwfkfine</a> <a href="files#irdwfq" class="wikilink codevar-wikilink">irdwfq</a> <a href="basic#iscf" class="wikilink codevar-wikilink">iscf</a> <a href="dev#isecur" class="wikilink codevar-wikilink">isecur</a> <a href="rlx#istatimg" class="wikilink codevar-wikilink">istatimg</a> <a href="dev#istatr" class="wikilink codevar-wikilink">istatr</a> <a href="dev#istatshft" class="wikilink codevar-wikilink">istatshft</a> <a href="dev#istwfk" class="wikilink codevar-wikilink">istwfk</a> <a href="basic#ixc" class="wikilink codevar-wikilink">ixc</a> <a href="gstate#ixcpositron" class="wikilink codevar-wikilink">ixcpositron</a> <a href="basic#jdtset" class="wikilink codevar-wikilink">jdtset</a> <a href="gstate#jellslab" class="wikilink codevar-wikilink">jellslab</a> <a href="ffield#jfielddir" class="wikilink codevar-wikilink">jfielddir</a> <a href="paw#jpawu" class="wikilink codevar-wikilink">jpawu</a> <a href="ffield#kberry" class="wikilink codevar-wikilink">kberry</a> <a href="basic#kpt" class="wikilink codevar-wikilink">kpt</a> <a href="gstate#kptbounds" class="wikilink codevar-wikilink">kptbounds</a> <a href="gw#kptgw" class="wikilink codevar-wikilink">kptgw</a> <a href="basic#kptnrm" class="wikilink codevar-wikilink">kptnrm</a> <a href="internal#kptns" class="wikilink codevar-wikilink">%kptns</a> <a href="basic#kptopt" class="wikilink codevar-wikilink">kptopt</a> <a href="gstate#kptrlatt" class="wikilink codevar-wikilink">kptrlatt</a> <a href="gstate#kptrlen" class="wikilink codevar-wikilink">kptrlen</a> <a href="files#kssform" class="wikilink codevar-wikilink">kssform</a> <a href="paw#lexexch" class="wikilink codevar-wikilink">lexexch</a> <a href="paral#localrdwf" class="wikilink codevar-wikilink">localrdwf</a> <a href="dev#lotf_classic" class="wikilink codevar-wikilink">lotf_classic</a> <a href="dev#lotf_nitex" class="wikilink codevar-wikilink">lotf_nitex</a> <a href="dev#lotf_nneigx" class="wikilink codevar-wikilink">lotf_nneigx</a> <a href="dev#lotf_version" class="wikilink codevar-wikilink">lotf_version</a> <a href="paw#lpawu" class="wikilink codevar-wikilink">lpawu</a> <a href="dev#macro_uj" class="wikilink codevar-wikilink">macro_uj</a> <a href="gstate#magcon_lambda" class="wikilink codevar-wikilink">magcon_lambda</a> <a href="gstate#magconon" class="wikilink codevar-wikilink">magconon</a> <a href="paral#max_ncpus" class="wikilink codevar-wikilink">max_ncpus</a> <a href="ffield#maxestep" class="wikilink codevar-wikilink">maxestep</a> <a href="dev#maxnsym" class="wikilink codevar-wikilink">maxnsym</a> <a href="internal#mband" class="wikilink codevar-wikilink">%mband</a> <a href="gw#mbpt_sciss" class="wikilink codevar-wikilink">mbpt_sciss</a> <a href="gw#mdf_epsinf" class="wikilink codevar-wikilink">mdf_epsinf</a> <a href="rlx#mdtemp" class="wikilink codevar-wikilink">mdtemp</a> <a href="rlx#mdwall" class="wikilink codevar-wikilink">mdwall</a> <a href="dev#mem_test" class="wikilink codevar-wikilink">mem_test</a> <a href="rlx#mep_mxstep" class="wikilink codevar-wikilink">mep_mxstep</a> <a href="rlx#mep_solver" class="wikilink codevar-wikilink">mep_solver</a> <a href="internal#mgfft" class="wikilink codevar-wikilink">%mgfft</a> <a href="internal#mgfftdg" class="wikilink codevar-wikilink">%mgfftdg</a> <a href="gstate#mixalch" class="wikilink codevar-wikilink">mixalch</a> <a href="internal#mpw" class="wikilink codevar-wikilink">%mpw</a> <a href="dev#mqgrid" class="wikilink codevar-wikilink">mqgrid</a> <a href="paw#mqgriddg" class="wikilink codevar-wikilink">mqgriddg</a> <a href="rlx#natcon" class="wikilink codevar-wikilink">natcon</a> <a href="rlx#natfix" class="wikilink codevar-wikilink">natfix</a> <a href="rlx#natfixx" class="wikilink codevar-wikilink">natfixx</a> <a href="rlx#natfixy" class="wikilink codevar-wikilink">natfixy</a> <a href="rlx#natfixz" class="wikilink codevar-wikilink">natfixz</a> <a href="basic#natom" class="wikilink codevar-wikilink">natom</a> <a href="internal#natpawu" class="wikilink codevar-wikilink">%natpawu</a> <a href="geo#natrd" class="wikilink codevar-wikilink">natrd</a> <a href="gstate#natsph" class="wikilink codevar-wikilink">natsph</a> <a href="gstate#natsph_extra" class="wikilink codevar-wikilink">natsph_extra</a> <a href="ffield#natvshift" class="wikilink codevar-wikilink">natvshift</a> <a href="basic#nband" class="wikilink codevar-wikilink">nband</a> <a href="basic#nbandhf" class="wikilink codevar-wikilink">nbandhf</a> <a href="gw#nbandkss" class="wikilink codevar-wikilink">nbandkss</a> <a href="dev#nbdblock" class="wikilink codevar-wikilink">nbdblock</a> <a href="gstate#nbdbuf" class="wikilink codevar-wikilink">nbdbuf</a> <a href="ffield#nberry" class="wikilink codevar-wikilink">nberry</a> <a href="dev#nc_xccc_gspace" class="wikilink codevar-wikilink">nc_xccc_gspace</a> <a href="rlx#nconeq" class="wikilink codevar-wikilink">nconeq</a> <a href="dev#nctime" class="wikilink codevar-wikilink">nctime</a> <a href="gstate#ndivk" class="wikilink codevar-wikilink">ndivk</a> <a href="gstate#ndivsm" class="wikilink codevar-wikilink">ndivsm</a> <a href="basic#ndtset" class="wikilink codevar-wikilink">ndtset</a> <a href="internal#ndynimage" class="wikilink codevar-wikilink">%ndynimage</a> <a href="rlx#neb_algo" class="wikilink codevar-wikilink">neb_algo</a> <a href="rlx#neb_spring" class="wikilink codevar-wikilink">neb_spring</a> <a href="internal#nelect" class="wikilink codevar-wikilink">%nelect</a> <a href="internal#nfft" class="wikilink codevar-wikilink">%nfft</a> <a href="internal#nfftdg" class="wikilink codevar-wikilink">%nfftdg</a> <a href="gw#nfreqim" class="wikilink codevar-wikilink">nfreqim</a> <a href="gw#nfreqmidm" class="wikilink codevar-wikilink">nfreqmidm</a> <a href="gw#nfreqre" class="wikilink codevar-wikilink">nfreqre</a> <a href="gw#nfreqsp" class="wikilink codevar-wikilink">nfreqsp</a> <a href="gstate#ngfft" class="wikilink codevar-wikilink">ngfft</a> <a href="paw#ngfftdg" class="wikilink codevar-wikilink">ngfftdg</a> <a href="basic#ngkpt" class="wikilink codevar-wikilink">ngkpt</a> <a href="gstate#ngqpt" class="wikilink codevar-wikilink">ngqpt</a> <a href="rlx#nimage" class="wikilink codevar-wikilink">nimage</a> <a href="basic#nkpath" class="wikilink codevar-wikilink">nkpath</a> <a href="basic#nkpt" class="wikilink codevar-wikilink">nkpt</a> <a href="gw#nkptgw" class="wikilink codevar-wikilink">nkptgw</a> <a href="basic#nkpthf" class="wikilink codevar-wikilink">nkpthf</a> <a href="gstate#nline" class="wikilink codevar-wikilink">nline</a> <a href="dev#nloc_alg" class="wikilink codevar-wikilink">nloc_alg</a> <a href="dev#nloc_mem" class="wikilink codevar-wikilink">nloc_mem</a> <a href="rlx#nnos" class="wikilink codevar-wikilink">nnos</a> <a href="dev#nnsclo" class="wikilink codevar-wikilink">nnsclo</a> <a href="dev#nnsclohf" class="wikilink codevar-wikilink">nnsclohf</a> <a href="geo#nobj" class="wikilink codevar-wikilink">nobj</a> <a href="gw#nomegasf" class="wikilink codevar-wikilink">nomegasf</a> <a href="gw#nomegasi" class="wikilink codevar-wikilink">nomegasi</a> <a href="gw#nomegasrd" class="wikilink codevar-wikilink">nomegasrd</a> <a href="dev#normpawu" class="wikilink codevar-wikilink">normpawu</a> <a href="rlx#noseinert" class="wikilink codevar-wikilink">noseinert</a> <a href="paral#np_slk" class="wikilink codevar-wikilink">np_slk</a> <a href="paral#npband" class="wikilink codevar-wikilink">npband</a> <a href="paral#npfft" class="wikilink codevar-wikilink">npfft</a> <a href="paral#nphf" class="wikilink codevar-wikilink">nphf</a> <a href="paral#npimage" class="wikilink codevar-wikilink">npimage</a> <a href="paral#npkpt" class="wikilink codevar-wikilink">npkpt</a> <a href="paral#nppert" class="wikilink codevar-wikilink">nppert</a> <a href="gstate#npsp" class="wikilink codevar-wikilink">npsp</a> <a href="gstate#npspalch" class="wikilink codevar-wikilink">%npspalch</a> <a href="paral#npspinor" class="wikilink codevar-wikilink">npspinor</a> <a href="dev#npulayit" class="wikilink codevar-wikilink">npulayit</a> <a href="gw#npvel" class="wikilink codevar-wikilink">npvel</a> <a href="internal#npweps" class="wikilink codevar-wikilink">%npweps</a> <a href="gw#npwkss" class="wikilink codevar-wikilink">npwkss</a> <a href="internal#npwsigx" class="wikilink codevar-wikilink">%npwsigx</a> <a href="internal#npwwfn" class="wikilink codevar-wikilink">%npwwfn</a> <a href="gstate#nqpt" class="wikilink codevar-wikilink">nqpt</a> <a href="gw#nqptdm" class="wikilink codevar-wikilink">nqptdm</a> <a href="dev#nscforder" class="wikilink codevar-wikilink">nscforder</a> <a href="basic#nshiftk" class="wikilink codevar-wikilink">nshiftk</a> <a href="gstate#nshiftq" class="wikilink codevar-wikilink">nshiftq</a> <a href="gstate#nspden" class="wikilink codevar-wikilink">nspden</a> <a href="gstate#nspinor" class="wikilink codevar-wikilink">nspinor</a> <a href="basic#nsppol" class="wikilink codevar-wikilink">nsppol</a> <a href="basic#nstep" class="wikilink codevar-wikilink">nstep</a> <a href="basic#nsym" class="wikilink codevar-wikilink">nsym</a> <a href="rlx#ntime" class="wikilink codevar-wikilink">ntime</a> <a href="rlx#ntimimage" class="wikilink codevar-wikilink">ntimimage</a> <a href="gstate#ntypalch" class="wikilink codevar-wikilink">ntypalch</a> <a href="basic#ntypat" class="wikilink codevar-wikilink">ntypat</a> <a href="gstate#ntyppure" class="wikilink codevar-wikilink">%ntyppure</a> <a href="gstate#nucdipmom" class="wikilink codevar-wikilink">nucdipmom</a> <a href="gstate#nwfshist" class="wikilink codevar-wikilink">nwfshist</a> <a href="geo#nzchempot" class="wikilink codevar-wikilink">nzchempot</a> <a href="geo#objaat" class="wikilink codevar-wikilink">objaat</a> <a href="geo#objaax" class="wikilink codevar-wikilink">objaax</a> <a href="geo#objan" class="wikilink codevar-wikilink">objan</a> <a href="geo#objarf" class="wikilink codevar-wikilink">objarf</a> <a href="geo#objaro" class="wikilink codevar-wikilink">objaro</a> <a href="geo#objatr" class="wikilink codevar-wikilink">objatr</a> <a href="geo#objbat" class="wikilink codevar-wikilink">objbat</a> <a href="geo#objbax" class="wikilink codevar-wikilink">objbax</a> <a href="geo#objbn" class="wikilink codevar-wikilink">objbn</a> <a href="geo#objbrf" class="wikilink codevar-wikilink">objbrf</a> <a href="geo#objbro" class="wikilink codevar-wikilink">objbro</a> <a href="geo#objbtr" class="wikilink codevar-wikilink">objbtr</a> <a href="gstate#occ" class="wikilink codevar-wikilink">occ</a> <a href="basic#occopt" class="wikilink codevar-wikilink">occopt</a> <a href="gw#omegasimax" class="wikilink codevar-wikilink">omegasimax</a> <a href="gw#omegasrdmax" class="wikilink codevar-wikilink">omegasrdmax</a> <a href="rlx#optcell" class="wikilink codevar-wikilink">optcell</a> <a href="gstate#optdriver" class="wikilink codevar-wikilink">optdriver</a> <a href="dev#optforces" class="wikilink codevar-wikilink">optforces</a> <a href="dev#optnlxccc" class="wikilink codevar-wikilink">optnlxccc</a> <a href="gstate#optstress" class="wikilink codevar-wikilink">optstress</a> <a href="dev#ortalg" class="wikilink codevar-wikilink">ortalg</a> <a href="dev#papiopt" class="wikilink codevar-wikilink">papiopt</a> <a href="paral#paral_atom" class="wikilink codevar-wikilink">paral_atom</a> <a href="paral#paral_kgb" class="wikilink codevar-wikilink">paral_kgb</a> <a href="paral#paral_rf" class="wikilink codevar-wikilink">paral_rf</a> <a href="paw#pawcpxocc" class="wikilink codevar-wikilink">pawcpxocc</a> <a href="paw#pawcross" class="wikilink codevar-wikilink">pawcross</a> <a href="paw#pawecutdg" class="wikilink codevar-wikilink">pawecutdg</a> <a href="paw#pawfatbnd" class="wikilink codevar-wikilink">pawfatbnd</a> <a href="paw#pawlcutd" class="wikilink codevar-wikilink">pawlcutd</a> <a href="paw#pawlmix" class="wikilink codevar-wikilink">pawlmix</a> <a href="paw#pawmixdg" class="wikilink codevar-wikilink">pawmixdg</a> <a href="paw#pawnhatxc" class="wikilink codevar-wikilink">pawnhatxc</a> <a href="paw#pawnphi" class="wikilink codevar-wikilink">pawnphi</a> <a href="paw#pawntheta" class="wikilink codevar-wikilink">pawntheta</a> <a href="paw#pawnzlm" class="wikilink codevar-wikilink">pawnzlm</a> <a href="paw#pawoptmix" class="wikilink codevar-wikilink">pawoptmix</a> <a href="paw#pawoptosc" class="wikilink codevar-wikilink">pawoptosc</a> <a href="paw#pawovlp" class="wikilink codevar-wikilink">pawovlp</a> <a href="dev#pawprt_b" class="wikilink codevar-wikilink">pawprt_b</a> <a href="dev#pawprt_k" class="wikilink codevar-wikilink">pawprt_k</a> <a href="paw#pawprtden" class="wikilink codevar-wikilink">pawprtden</a> <a href="paw#pawprtdos" class="wikilink codevar-wikilink">pawprtdos</a> <a href="paw#pawprtvol" class="wikilink codevar-wikilink">pawprtvol</a> <a href="paw#pawprtwf" class="wikilink codevar-wikilink">pawprtwf</a> <a href="paw#pawspnorb" class="wikilink codevar-wikilink">pawspnorb</a> <a href="paw#pawstgylm" class="wikilink codevar-wikilink">pawstgylm</a> <a href="paw#pawsushat" class="wikilink codevar-wikilink">pawsushat</a> <a href="dev#pawujat" class="wikilink codevar-wikilink">pawujat</a> <a href="dev#pawujrad" class="wikilink codevar-wikilink">pawujrad</a> <a href="dev#pawujv" class="wikilink codevar-wikilink">pawujv</a> <a href="paw#pawusecp" class="wikilink codevar-wikilink">pawusecp</a> <a href="paw#pawxcdev" class="wikilink codevar-wikilink">pawxcdev</a> <a href="eph#ph_intmeth" class="wikilink codevar-wikilink">ph_intmeth</a> <a href="eph#ph_ndivsm" class="wikilink codevar-wikilink">ph_ndivsm</a> <a href="dfpt#ph_ngqpt" class="wikilink codevar-wikilink">ph_ngqpt</a> <a href="eph#ph_nqpath" class="wikilink codevar-wikilink">ph_nqpath</a> <a href="eph#ph_nqshift" class="wikilink codevar-wikilink">ph_nqshift</a> <a href="dfpt#ph_qpath" class="wikilink codevar-wikilink">ph_qpath</a> <a href="eph#ph_qshift" class="wikilink codevar-wikilink">ph_qshift</a> <a href="eph#ph_smear" class="wikilink codevar-wikilink">ph_smear</a> <a href="eph#ph_wstep" class="wikilink codevar-wikilink">ph_wstep</a> <a href="rlx#pimass" class="wikilink codevar-wikilink">pimass</a> <a href="rlx#pimd_constraint" class="wikilink codevar-wikilink">pimd_constraint</a> <a href="rlx#pitransform" class="wikilink codevar-wikilink">pitransform</a> <a href="dev#plowan_bandf" class="wikilink codevar-wikilink">plowan_bandf</a> <a href="dev#plowan_bandi" class="wikilink codevar-wikilink">plowan_bandi</a> <a href="dev#plowan_compute" class="wikilink codevar-wikilink">plowan_compute</a> <a href="dev#plowan_iatom" class="wikilink codevar-wikilink">plowan_iatom</a> <a href="dev#plowan_it" class="wikilink codevar-wikilink">plowan_it</a> <a href="dev#plowan_lcalc" class="wikilink codevar-wikilink">plowan_lcalc</a> <a href="dev#plowan_natom" class="wikilink codevar-wikilink">plowan_natom</a> <a href="dev#plowan_nbl" class="wikilink codevar-wikilink">plowan_nbl</a> <a href="dev#plowan_nt" class="wikilink codevar-wikilink">plowan_nt</a> <a href="dev#plowan_projcalc" class="wikilink codevar-wikilink">plowan_projcalc</a> <a href="dev#plowan_realspace" class="wikilink codevar-wikilink">plowan_realspace</a> <a href="ffield#polcen" class="wikilink codevar-wikilink">polcen</a> <a href="gstate#posdoppler" class="wikilink codevar-wikilink">posdoppler</a> <a href="gstate#positron" class="wikilink codevar-wikilink">positron</a> <a href="gstate#posnstep" class="wikilink codevar-wikilink">posnstep</a> <a href="gstate#posocc" class="wikilink codevar-wikilink">posocc</a> <a href="gstate#postoldfe" class="wikilink codevar-wikilink">postoldfe</a> <a href="gstate#postoldff" class="wikilink codevar-wikilink">postoldff</a> <a href="gw#ppmfrq" class="wikilink codevar-wikilink">ppmfrq</a> <a href="gw#ppmodel" class="wikilink codevar-wikilink">ppmodel</a> <a href="dfpt#prepanl" class="wikilink codevar-wikilink">prepanl</a> <a href="dfpt#prepgkk" class="wikilink codevar-wikilink">prepgkk</a> <a href="dev#prepscphon" class="wikilink codevar-wikilink">prepscphon</a> <a href="files#prt1dm" class="wikilink codevar-wikilink">prt1dm</a> <a href="rlx#prtatlist" class="wikilink codevar-wikilink">prtatlist</a> <a href="dfpt#prtbbb" class="wikilink codevar-wikilink">prtbbb</a> <a href="dev#prtbltztrp" class="wikilink codevar-wikilink">prtbltztrp</a> <a href="dev#prtcif" class="wikilink codevar-wikilink">prtcif</a> <a href="files#prtden" class="wikilink codevar-wikilink">prtden</a> <a href="gstate#prtdensph" class="wikilink codevar-wikilink">prtdensph</a> <a href="dev#prtdipole" class="wikilink codevar-wikilink">prtdipole</a> <a href="files#prtdos" class="wikilink codevar-wikilink">prtdos</a> <a href="files#prtdosm" class="wikilink codevar-wikilink">prtdosm</a> <a href="gstate#prtebands" class="wikilink codevar-wikilink">prtebands</a> <a href="paw#prtefg" class="wikilink codevar-wikilink">prtefg</a> <a href="files#prteig" class="wikilink codevar-wikilink">prteig</a> <a href="files#prtelf" class="wikilink codevar-wikilink">prtelf</a> <a href="paw#prtfc" class="wikilink codevar-wikilink">prtfc</a> <a href="files#prtfsurf" class="wikilink codevar-wikilink">prtfsurf</a> <a href="files#prtgden" class="wikilink codevar-wikilink">prtgden</a> <a href="files#prtgeo" class="wikilink codevar-wikilink">prtgeo</a> <a href="files#prtgkk" class="wikilink codevar-wikilink">prtgkk</a> <a href="files#prtgsr" class="wikilink codevar-wikilink">prtgsr</a> <a href="files#prtkden" class="wikilink codevar-wikilink">prtkden</a> <a href="files#prtkpt" class="wikilink codevar-wikilink">prtkpt</a> <a href="files#prtlden" class="wikilink codevar-wikilink">prtlden</a> <a href="paw#prtnabla" class="wikilink codevar-wikilink">prtnabla</a> <a href="dev#prtnest" class="wikilink codevar-wikilink">prtnest</a> <a href="eph#prtphbands" class="wikilink codevar-wikilink">prtphbands</a> <a href="eph#prtphdos" class="wikilink codevar-wikilink">prtphdos</a> <a href="eph#prtphsurf" class="wikilink codevar-wikilink">prtphsurf</a> <a href="dev#prtposcar" class="wikilink codevar-wikilink">prtposcar</a> <a href="files#prtpot" class="wikilink codevar-wikilink">prtpot</a> <a href="files#prtpsps" class="wikilink codevar-wikilink">prtpsps</a> <a href="files#prtspcur" class="wikilink codevar-wikilink">prtspcur</a> <a href="files#prtstm" class="wikilink codevar-wikilink">prtstm</a> <a href="files#prtsuscep" class="wikilink codevar-wikilink">prtsuscep</a> <a href="files#prtvclmb" class="wikilink codevar-wikilink">prtvclmb</a> <a href="vdw#prtvdw" class="wikilink codevar-wikilink">prtvdw</a> <a href="files#prtvha" class="wikilink codevar-wikilink">prtvha</a> <a href="files#prtvhxc" class="wikilink codevar-wikilink">prtvhxc</a> <a href="files#prtvol" class="wikilink codevar-wikilink">prtvol</a> <a href="files#prtvolimg" class="wikilink codevar-wikilink">prtvolimg</a> <a href="files#prtvpsp" class="wikilink codevar-wikilink">prtvpsp</a> <a href="files#prtvxc" class="wikilink codevar-wikilink">prtvxc</a> <a href="files#prtwant" class="wikilink codevar-wikilink">prtwant</a> <a href="files#prtwf" class="wikilink codevar-wikilink">prtwf</a> <a href="files#prtwf_full" class="wikilink codevar-wikilink">prtwf_full</a> <a href="files#prtxml" class="wikilink codevar-wikilink">prtxml</a> <a href="paw#ptcharge" class="wikilink codevar-wikilink">ptcharge</a> <a href="geo#ptgroupma" class="wikilink codevar-wikilink">%ptgroupma</a> <a href="gw#pvelmax" class="wikilink codevar-wikilink">pvelmax</a> <a href="paral#pw_unbal_thresh" class="wikilink codevar-wikilink">pw_unbal_thresh</a> <a href="rlx#qmass" class="wikilink codevar-wikilink">qmass</a> <a href="ffield#qprtrb" class="wikilink codevar-wikilink">qprtrb</a> <a href="gstate#qpt" class="wikilink codevar-wikilink">qpt</a> <a href="gw#qptdm" class="wikilink codevar-wikilink">qptdm</a> <a href="internal#qptn" class="wikilink codevar-wikilink">%qptn</a> <a href="gstate#qptnrm" class="wikilink codevar-wikilink">qptnrm</a> <a href="gstate#qptopt" class="wikilink codevar-wikilink">qptopt</a> <a href="gstate#qptrlatt" class="wikilink codevar-wikilink">qptrlatt</a> <a href="paw#quadmom" class="wikilink codevar-wikilink">quadmom</a> <a href="rlx#random_atpos" class="wikilink codevar-wikilink">random_atpos</a> <a href="gstate#ratsph" class="wikilink codevar-wikilink">ratsph</a> <a href="gstate#ratsph_extra" class="wikilink codevar-wikilink">ratsph_extra</a> <a href="gw#rcut" class="wikilink codevar-wikilink">rcut</a> <a href="dev#recefermi" class="wikilink codevar-wikilink">recefermi</a> <a href="dev#recgratio" class="wikilink codevar-wikilink">recgratio</a> <a href="dev#recnpath" class="wikilink codevar-wikilink">recnpath</a> <a href="dev#recnrec" class="wikilink codevar-wikilink">recnrec</a> <a href="dev#recptrott" class="wikilink codevar-wikilink">recptrott</a> <a href="dev#recrcut" class="wikilink codevar-wikilink">recrcut</a> <a href="dev#rectesteg" class="wikilink codevar-wikilink">rectesteg</a> <a href="dev#rectolden" class="wikilink codevar-wikilink">rectolden</a> <a href="ffield#red_dfield" class="wikilink codevar-wikilink">red_dfield</a> <a href="ffield#red_efield" class="wikilink codevar-wikilink">red_efield</a> <a href="ffield#red_efieldbar" class="wikilink codevar-wikilink">red_efieldbar</a> <a href="rlx#restartxf" class="wikilink codevar-wikilink">restartxf</a> <a href="dfpt#rf2_dkdk" class="wikilink codevar-wikilink">rf2_dkdk</a> <a href="dfpt#rfasr" class="wikilink codevar-wikilink">rfasr</a> <a href="dfpt#rfatpol" class="wikilink codevar-wikilink">rfatpol</a> <a href="dfpt#rfddk" class="wikilink codevar-wikilink">rfddk</a> <a href="dfpt#rfdir" class="wikilink codevar-wikilink">rfdir</a> <a href="dfpt#rfelfd" class="wikilink codevar-wikilink">rfelfd</a> <a href="dfpt#rfmagn" class="wikilink codevar-wikilink">rfmagn</a> <a href="dfpt#rfmeth" class="wikilink codevar-wikilink">rfmeth</a> <a href="dfpt#rfphon" class="wikilink codevar-wikilink">rfphon</a> <a href="dfpt#rfstrs" class="wikilink codevar-wikilink">rfstrs</a> <a href="dfpt#rfuser" class="wikilink codevar-wikilink">rfuser</a> <a href="gw#rhoqpmix" class="wikilink codevar-wikilink">rhoqpmix</a> <a href="basic#rprim" class="wikilink codevar-wikilink">rprim</a> <a href="basic#rprimd" class="wikilink codevar-wikilink">%rprimd</a> <a href="basic#scalecart" class="wikilink codevar-wikilink">scalecart</a> <a href="gstate#scphon_supercell" class="wikilink codevar-wikilink">scphon_supercell</a> <a href="gstate#scphon_temp" class="wikilink codevar-wikilink">scphon_temp</a> <a href="basic#shiftk" class="wikilink codevar-wikilink">shiftk</a> <a href="gstate#shiftq" class="wikilink codevar-wikilink">shiftq</a> <a href="rlx#signperm" class="wikilink codevar-wikilink">signperm</a> <a href="gstate#slabwsrad" class="wikilink codevar-wikilink">slabwsrad</a> <a href="gstate#slabzbeg" class="wikilink codevar-wikilink">slabzbeg</a> <a href="gstate#slabzend" class="wikilink codevar-wikilink">slabzend</a> <a href="dfpt#smdelta" class="wikilink codevar-wikilink">smdelta</a> <a href="gstate#so_psp" class="wikilink codevar-wikilink">so_psp</a> <a href="gw#spbroad" class="wikilink codevar-wikilink">spbroad</a> <a href="geo#spgaxor" class="wikilink codevar-wikilink">spgaxor</a> <a href="geo#spgorig" class="wikilink codevar-wikilink">spgorig</a> <a href="geo#spgroup" class="wikilink codevar-wikilink">spgroup</a> <a href="geo#spgroupma" class="wikilink codevar-wikilink">spgroupma</a> <a href="gstate#spinat" class="wikilink codevar-wikilink">spinat</a> <a href="ffield#spinmagntarget" class="wikilink codevar-wikilink">spinmagntarget</a> <a href="gw#spmeth" class="wikilink codevar-wikilink">spmeth</a> <a href="paw#spnorbscl" class="wikilink codevar-wikilink">spnorbscl</a> <a href="gstate#stmbias" class="wikilink codevar-wikilink">stmbias</a> <a href="rlx#strfact" class="wikilink codevar-wikilink">strfact</a> <a href="rlx#string_algo" class="wikilink codevar-wikilink">string_algo</a> <a href="rlx#strprecon" class="wikilink codevar-wikilink">strprecon</a> <a href="rlx#strtarget" class="wikilink codevar-wikilink">strtarget</a> <a href="gstate#symafm" class="wikilink codevar-wikilink">symafm</a> <a href="gw#symchi" class="wikilink codevar-wikilink">symchi</a> <a href="eph#symdynmat" class="wikilink codevar-wikilink">symdynmat</a> <a href="dev#symmorphi" class="wikilink codevar-wikilink">symmorphi</a> <a href="basic#symrel" class="wikilink codevar-wikilink">symrel</a> <a href="gw#symsigma" class="wikilink codevar-wikilink">symsigma</a> <a href="dfpt#td_maxene" class="wikilink codevar-wikilink">td_maxene</a> <a href="dfpt#td_mexcit" class="wikilink codevar-wikilink">td_mexcit</a> <a href="dev#tfkinfunc" class="wikilink codevar-wikilink">tfkinfunc</a> <a href="dev#tfw_toldfe" class="wikilink codevar-wikilink">tfw_toldfe</a> <a href="gstate#timopt" class="wikilink codevar-wikilink">timopt</a> <a href="gstate#tl_nprccg" class="wikilink codevar-wikilink">tl_nprccg</a> <a href="gstate#tl_radius" class="wikilink codevar-wikilink">tl_radius</a> <a href="basic#tnons" class="wikilink codevar-wikilink">tnons</a> <a href="basic#toldfe" class="wikilink codevar-wikilink">toldfe</a> <a href="basic#toldff" class="wikilink codevar-wikilink">toldff</a> <a href="rlx#tolimg" class="wikilink codevar-wikilink">tolimg</a> <a href="rlx#tolmxde" class="wikilink codevar-wikilink">tolmxde</a> <a href="rlx#tolmxf" class="wikilink codevar-wikilink">tolmxf</a> <a href="dev#tolrde" class="wikilink codevar-wikilink">tolrde</a> <a href="basic#tolrff" class="wikilink codevar-wikilink">tolrff</a> <a href="geo#tolsym" class="wikilink codevar-wikilink">tolsym</a> <a href="basic#tolvrs" class="wikilink codevar-wikilink">tolvrs</a> <a href="basic#tolwfr" class="wikilink codevar-wikilink">tolwfr</a> <a href="gstate#tphysel" class="wikilink codevar-wikilink">tphysel</a> <a href="gstate#tsmear" class="wikilink codevar-wikilink">tsmear</a> <a href="basic#typat" class="wikilink codevar-wikilink">typat</a> <a href="gw#ucrpa" class="wikilink codevar-wikilink">ucrpa</a> <a href="gw#ucrpa_bands" class="wikilink codevar-wikilink">ucrpa_bands</a> <a href="gw#ucrpa_window" class="wikilink codevar-wikilink">ucrpa_window</a> <a href="basic#udtset" class="wikilink codevar-wikilink">udtset</a> <a href="paw#upawu" class="wikilink codevar-wikilink">upawu</a> <a href="dev#use_gemm_nonlop" class="wikilink codevar-wikilink">use_gemm_nonlop</a> <a href="paral#use_gpu_cuda" class="wikilink codevar-wikilink">use_gpu_cuda</a> <a href="dev#use_nonscf_gkk" class="wikilink codevar-wikilink">use_nonscf_gkk</a> <a href="paral#use_slk" class="wikilink codevar-wikilink">use_slk</a> <a href="paw#usedmatpu" class="wikilink codevar-wikilink">usedmatpu</a> <a href="dev#usedmft" class="wikilink codevar-wikilink">usedmft</a> <a href="paw#useexexch" class="wikilink codevar-wikilink">useexexch</a> <a href="internal#usefock" class="wikilink codevar-wikilink">%usefock</a> <a href="gstate#usekden" class="wikilink codevar-wikilink">usekden</a> <a href="internal#usepaw" class="wikilink codevar-wikilink">%usepaw</a> <a href="paw#usepawu" class="wikilink codevar-wikilink">usepawu</a> <a href="paw#usepotzero" class="wikilink codevar-wikilink">usepotzero</a> <a href="internal#userec" class="wikilink codevar-wikilink">%userec</a> <a href="dev#useria" class="wikilink codevar-wikilink">useria</a> <a href="dev#userib" class="wikilink codevar-wikilink">userib</a> <a href="dev#useric" class="wikilink codevar-wikilink">useric</a> <a href="dev#userid" class="wikilink codevar-wikilink">userid</a> <a href="dev#userie" class="wikilink codevar-wikilink">userie</a> <a href="dev#userra" class="wikilink codevar-wikilink">userra</a> <a href="dev#userrb" class="wikilink codevar-wikilink">userrb</a> <a href="dev#userrc" class="wikilink codevar-wikilink">userrc</a> <a href="dev#userrd" class="wikilink codevar-wikilink">userrd</a> <a href="dev#userre" class="wikilink codevar-wikilink">userre</a> <a href="basic#usewvl" class="wikilink codevar-wikilink">usewvl</a> <a href="paw#usexcnhat" class="wikilink codevar-wikilink">usexcnhat</a> <a href="dev#useylm" class="wikilink codevar-wikilink">useylm</a> <a href="geo#vaclst" class="wikilink codevar-wikilink">vaclst</a> <a href="geo#vacnum" class="wikilink codevar-wikilink">vacnum</a> <a href="gstate#vacuum" class="wikilink codevar-wikilink">vacuum</a> <a href="gstate#vacwidth" class="wikilink codevar-wikilink">vacwidth</a> <a href="gw#vcutgeo" class="wikilink codevar-wikilink">vcutgeo</a> <a href="vdw#vdw_df_acutmin" class="wikilink codevar-wikilink">vdw_df_acutmin</a> <a href="vdw#vdw_df_aratio" class="wikilink codevar-wikilink">vdw_df_aratio</a> <a href="vdw#vdw_df_damax" class="wikilink codevar-wikilink">vdw_df_damax</a> <a href="vdw#vdw_df_damin" class="wikilink codevar-wikilink">vdw_df_damin</a> <a href="vdw#vdw_df_dcut" class="wikilink codevar-wikilink">vdw_df_dcut</a> <a href="vdw#vdw_df_dratio" class="wikilink codevar-wikilink">vdw_df_dratio</a> <a href="vdw#vdw_df_dsoft" class="wikilink codevar-wikilink">vdw_df_dsoft</a> <a href="vdw#vdw_df_gcut" class="wikilink codevar-wikilink">vdw_df_gcut</a> <a href="vdw#vdw_df_ndpts" class="wikilink codevar-wikilink">vdw_df_ndpts</a> <a href="vdw#vdw_df_ngpts" class="wikilink codevar-wikilink">vdw_df_ngpts</a> <a href="vdw#vdw_df_nqpts" class="wikilink codevar-wikilink">vdw_df_nqpts</a> <a href="vdw#vdw_df_nrpts" class="wikilink codevar-wikilink">vdw_df_nrpts</a> <a href="vdw#vdw_df_nsmooth" class="wikilink codevar-wikilink">vdw_df_nsmooth</a> <a href="vdw#vdw_df_phisoft" class="wikilink codevar-wikilink">vdw_df_phisoft</a> <a href="vdw#vdw_df_qcut" class="wikilink codevar-wikilink">vdw_df_qcut</a> <a href="vdw#vdw_df_qratio" class="wikilink codevar-wikilink">vdw_df_qratio</a> <a href="vdw#vdw_df_rcut" class="wikilink codevar-wikilink">vdw_df_rcut</a> <a href="vdw#vdw_df_rsoft" class="wikilink codevar-wikilink">vdw_df_rsoft</a> <a href="vdw#vdw_df_threshold" class="wikilink codevar-wikilink">vdw_df_threshold</a> <a href="vdw#vdw_df_tolerance" class="wikilink codevar-wikilink">vdw_df_tolerance</a> <a href="vdw#vdw_df_tweaks" class="wikilink codevar-wikilink">vdw_df_tweaks</a> <a href="vdw#vdw_df_zab" class="wikilink codevar-wikilink">vdw_df_zab</a> <a href="vdw#vdw_nfrag" class="wikilink codevar-wikilink">vdw_nfrag</a> <a href="vdw#vdw_supercell" class="wikilink codevar-wikilink">vdw_supercell</a> <a href="vdw#vdw_tol" class="wikilink codevar-wikilink">vdw_tol</a> <a href="vdw#vdw_tol_3bt" class="wikilink codevar-wikilink">vdw_tol_3bt</a> <a href="vdw#vdw_typfrag" class="wikilink codevar-wikilink">vdw_typfrag</a> <a href="vdw#vdw_xc" class="wikilink codevar-wikilink">vdw_xc</a> <a href="rlx#vel" class="wikilink codevar-wikilink">vel</a> <a href="rlx#vel_cell" class="wikilink codevar-wikilink">vel_cell</a> <a href="rlx#vis" class="wikilink codevar-wikilink">vis</a> <a href="ffield#vprtrb" class="wikilink codevar-wikilink">vprtrb</a> <a href="w90#w90iniprj" class="wikilink codevar-wikilink">w90iniprj</a> <a href="w90#w90prtunk" class="wikilink codevar-wikilink">w90prtunk</a> <a href="dev#wfoptalg" class="wikilink codevar-wikilink">wfoptalg</a> <a href="rlx#wtatcon" class="wikilink codevar-wikilink">wtatcon</a> <a href="basic#wtk" class="wikilink codevar-wikilink">wtk</a> <a href="gstate#wtq" class="wikilink codevar-wikilink">wtq</a> <a href="gstate#wvl_bigdft_comp" class="wikilink codevar-wikilink">wvl_bigdft_comp</a> <a href="gstate#wvl_crmult" class="wikilink codevar-wikilink">wvl_crmult</a> <a href="gstate#wvl_frmult" class="wikilink codevar-wikilink">wvl_frmult</a> <a href="basic#wvl_hgrid" class="wikilink codevar-wikilink">wvl_hgrid</a> <a href="gstate#wvl_ngauss" class="wikilink codevar-wikilink">wvl_ngauss</a> <a href="gstate#wvl_nprccg" class="wikilink codevar-wikilink">wvl_nprccg</a> <a href="basic#xangst" class="wikilink codevar-wikilink">xangst</a> <a href="dev#xc_denpos" class="wikilink codevar-wikilink">xc_denpos</a> <a href="dev#xc_tb09_c" class="wikilink codevar-wikilink">xc_tb09_c</a> <a href="basic#xcart" class="wikilink codevar-wikilink">xcart</a> <a href="internal#xclevel" class="wikilink codevar-wikilink">%xclevel</a> <a href="basic#xred" class="wikilink codevar-wikilink">xred</a> <a href="gstate#xredsph_extra" class="wikilink codevar-wikilink">xredsph_extra</a> <a href="geo#xyzfile" class="wikilink codevar-wikilink">xyzfile</a> <a href="gw#zcut" class="wikilink codevar-wikilink">zcut</a> <a href="ffield#zeemanfield" class="wikilink codevar-wikilink">zeemanfield</a> <a href="internal#ziontypat" class="wikilink codevar-wikilink">%ziontypat</a> <a href="basic#znucl" class="wikilink codevar-wikilink">znucl</a>
+<a href="basic#accuracy" class="small-grey-link">accuracy</a> <a href="basic#acell" class="small-grey-link">acell</a> <a href="rlx#adpimd" class="small-grey-link">adpimd</a> <a href="rlx#adpimd_gamma" class="small-grey-link">adpimd_gamma</a> <a href="gstate#algalch" class="small-grey-link">algalch</a> <a href="rlx#amu" class="small-grey-link">amu</a> <a href="basic#angdeg" class="small-grey-link">angdeg</a> <a href="eph#asr" class="small-grey-link">asr</a> <a href="ffield#atvshift" class="small-grey-link">atvshift</a> <a href="paral#autoparal" class="small-grey-link">autoparal</a> <a href="gw#awtr" class="small-grey-link">awtr</a> <a href="paral#bandpp" class="small-grey-link">bandpp</a> <a href="ffield#bdberry" class="small-grey-link">bdberry</a> <a href="dfpt#bdeigrf" class="small-grey-link">bdeigrf</a> <a href="gw#bdgw" class="small-grey-link">bdgw</a> <a href="ffield#berryopt" class="small-grey-link">berryopt</a> <a href="ffield#berrysav" class="small-grey-link">berrysav</a> <a href="ffield#berrystep" class="small-grey-link">berrystep</a> <a href="ffield#bfield" class="small-grey-link">bfield</a> <a href="rlx#bmass" class="small-grey-link">bmass</a> <a href="gstate#boxcenter" class="small-grey-link">boxcenter</a> <a href="gstate#boxcutmin" class="small-grey-link">boxcutmin</a> <a href="geo#brvltt" class="small-grey-link">brvltt</a> <a href="bse#bs_algorithm" class="small-grey-link">bs_algorithm</a> <a href="bse#bs_calctype" class="small-grey-link">bs_calctype</a> <a href="bse#bs_coulomb_term" class="small-grey-link">bs_coulomb_term</a> <a href="bse#bs_coupling" class="small-grey-link">bs_coupling</a> <a href="bse#bs_eh_cutoff" class="small-grey-link">bs_eh_cutoff</a> <a href="bse#bs_exchange_term" class="small-grey-link">bs_exchange_term</a> <a href="bse#bs_freq_mesh" class="small-grey-link">bs_freq_mesh</a> <a href="bse#bs_hayd_term" class="small-grey-link">bs_hayd_term</a> <a href="bse#bs_haydock_niter" class="small-grey-link">bs_haydock_niter</a> <a href="bse#bs_haydock_tol" class="small-grey-link">bs_haydock_tol</a> <a href="bse#bs_interp_kmult" class="small-grey-link">bs_interp_kmult</a> <a href="bse#bs_interp_m3_width" class="small-grey-link">bs_interp_m3_width</a> <a href="bse#bs_interp_method" class="small-grey-link">bs_interp_method</a> <a href="bse#bs_interp_mode" class="small-grey-link">bs_interp_mode</a> <a href="bse#bs_interp_prep" class="small-grey-link">bs_interp_prep</a> <a href="bse#bs_interp_rl_nb" class="small-grey-link">bs_interp_rl_nb</a> <a href="bse#bs_loband" class="small-grey-link">bs_loband</a> <a href="bse#bs_nstates" class="small-grey-link">bs_nstates</a> <a href="dev#builtintest" class="small-grey-link">builtintest</a> <a href="paw#bxctmindg" class="small-grey-link">bxctmindg</a> <a href="gw#cd_customnimfrqs" class="small-grey-link">cd_customnimfrqs</a> <a href="gw#cd_frqim_method" class="small-grey-link">cd_frqim_method</a> <a href="gw#cd_full_grid" class="small-grey-link">cd_full_grid</a> <a href="gw#cd_halfway_freq" class="small-grey-link">cd_halfway_freq</a> <a href="gw#cd_imfrqs" class="small-grey-link">cd_imfrqs</a> <a href="gw#cd_max_freq" class="small-grey-link">cd_max_freq</a> <a href="gw#cd_subset_freq" class="small-grey-link">cd_subset_freq</a> <a href="dev#cgtyphf" class="small-grey-link">cgtyphf</a> <a href="gstate#charge" class="small-grey-link">charge</a> <a href="geo#chempot" class="small-grey-link">chempot</a> <a href="gstate#chkexit" class="small-grey-link">chkexit</a> <a href="gstate#chkprim" class="small-grey-link">chkprim</a> <a href="gstate#chksymbreak" class="small-grey-link">chksymbreak</a> <a href="eph#chneut" class="small-grey-link">chneut</a> <a href="rlx#cineb_start" class="small-grey-link">cineb_start</a> <a href="gstate#cpuh" class="small-grey-link">cpuh</a> <a href="gstate#cpum" class="small-grey-link">cpum</a> <a href="gstate#cpus" class="small-grey-link">cpus</a> <a href="dfpt#d3e_pert1_atpol" class="small-grey-link">d3e_pert1_atpol</a> <a href="dfpt#d3e_pert1_dir" class="small-grey-link">d3e_pert1_dir</a> <a href="dfpt#d3e_pert1_elfd" class="small-grey-link">d3e_pert1_elfd</a> <a href="dfpt#d3e_pert1_phon" class="small-grey-link">d3e_pert1_phon</a> <a href="dfpt#d3e_pert2_atpol" class="small-grey-link">d3e_pert2_atpol</a> <a href="dfpt#d3e_pert2_dir" class="small-grey-link">d3e_pert2_dir</a> <a href="dfpt#d3e_pert2_elfd" class="small-grey-link">d3e_pert2_elfd</a> <a href="dfpt#d3e_pert2_phon" class="small-grey-link">d3e_pert2_phon</a> <a href="dfpt#d3e_pert3_atpol" class="small-grey-link">d3e_pert3_atpol</a> <a href="dfpt#d3e_pert3_dir" class="small-grey-link">d3e_pert3_dir</a> <a href="dfpt#d3e_pert3_elfd" class="small-grey-link">d3e_pert3_elfd</a> <a href="dfpt#d3e_pert3_phon" class="small-grey-link">d3e_pert3_phon</a> <a href="ffield#ddamp" class="small-grey-link">ddamp</a> <a href="eph#ddb_ngqpt" class="small-grey-link">ddb_ngqpt</a> <a href="eph#ddb_shiftq" class="small-grey-link">ddb_shiftq</a> <a href="rlx#delayperm" class="small-grey-link">delayperm</a> <a href="dev#densfor_pred" class="small-grey-link">densfor_pred</a> <a href="dev#densty" class="small-grey-link">densty</a> <a href="ffield#dfield" class="small-grey-link">dfield</a> <a href="dfpt#dfpt_sciss" class="small-grey-link">dfpt_sciss</a> <a href="gstate#diecut" class="small-grey-link">diecut</a> <a href="gstate#diegap" class="small-grey-link">diegap</a> <a href="gstate#dielam" class="small-grey-link">dielam</a> <a href="gstate#dielng" class="small-grey-link">dielng</a> <a href="gstate#diemac" class="small-grey-link">diemac</a> <a href="gstate#diemix" class="small-grey-link">diemix</a> <a href="gstate#diemixmag" class="small-grey-link">diemixmag</a> <a href="rlx#diismemory" class="small-grey-link">diismemory</a> <a href="rlx#dilatmx" class="small-grey-link">dilatmx</a> <a href="eph#dipdip" class="small-grey-link">dipdip</a> <a href="paw#dmatpawu" class="small-grey-link">dmatpawu</a> <a href="paw#dmatpuopt" class="small-grey-link">dmatpuopt</a> <a href="paw#dmatudiag" class="small-grey-link">dmatudiag</a> <a href="dmft#dmft_dc" class="small-grey-link">dmft_dc</a> <a href="dmft#dmft_entropy" class="small-grey-link">dmft_entropy</a> <a href="dmft#dmft_iter" class="small-grey-link">dmft_iter</a> <a href="dmft#dmft_mxsf" class="small-grey-link">dmft_mxsf</a> <a href="dmft#dmft_nlambda" class="small-grey-link">dmft_nlambda</a> <a href="dmft#dmft_nwli" class="small-grey-link">dmft_nwli</a> <a href="dmft#dmft_nwlo" class="small-grey-link">dmft_nwlo</a> <a href="dev#dmft_read_occnd" class="small-grey-link">dmft_read_occnd</a> <a href="dmft#dmft_rslf" class="small-grey-link">dmft_rslf</a> <a href="dmft#dmft_solv" class="small-grey-link">dmft_solv</a> <a href="dmft#dmft_t2g" class="small-grey-link">dmft_t2g</a> <a href="dmft#dmft_tolfreq" class="small-grey-link">dmft_tolfreq</a> <a href="dmft#dmft_tollc" class="small-grey-link">dmft_tollc</a> <a href="dmft#dmftbandf" class="small-grey-link">dmftbandf</a> <a href="dmft#dmftbandi" class="small-grey-link">dmftbandi</a> <a href="dmft#dmftcheck" class="small-grey-link">dmftcheck</a> <a href="dev#dmftctqmc_basis" class="small-grey-link">dmftctqmc_basis</a> <a href="dmft#dmftctqmc_check" class="small-grey-link">dmftctqmc_check</a> <a href="dmft#dmftctqmc_correl" class="small-grey-link">dmftctqmc_correl</a> <a href="dmft#dmftctqmc_gmove" class="small-grey-link">dmftctqmc_gmove</a> <a href="dmft#dmftctqmc_grnns" class="small-grey-link">dmftctqmc_grnns</a> <a href="dmft#dmftctqmc_meas" class="small-grey-link">dmftctqmc_meas</a> <a href="dmft#dmftctqmc_mov" class="small-grey-link">dmftctqmc_mov</a> <a href="dmft#dmftctqmc_mrka" class="small-grey-link">dmftctqmc_mrka</a> <a href="dmft#dmftctqmc_order" class="small-grey-link">dmftctqmc_order</a> <a href="dmft#dmftctqmc_triqs_nleg" class="small-grey-link">dmftctqmc_triqs_nleg</a> <a href="dmft#dmftqmc_l" class="small-grey-link">dmftqmc_l</a> <a href="dmft#dmftqmc_n" class="small-grey-link">dmftqmc_n</a> <a href="dmft#dmftqmc_seed" class="small-grey-link">dmftqmc_seed</a> <a href="dmft#dmftqmc_therm" class="small-grey-link">dmftqmc_therm</a> <a href="gstate#dosdeltae" class="small-grey-link">dosdeltae</a> <a href="rlx#dtion" class="small-grey-link">dtion</a> <a href="rlx#dynimage" class="small-grey-link">dynimage</a> <a href="basic#ecut" class="small-grey-link">ecut</a> <a href="gw#ecuteps" class="small-grey-link">ecuteps</a> <a href="gw#ecutsigx" class="small-grey-link">ecutsigx</a> <a href="rlx#ecutsm" class="small-grey-link">ecutsm</a> <a href="gw#ecutwfn" class="small-grey-link">ecutwfn</a> <a href="dev#effmass_free" class="small-grey-link">effmass_free</a> <a href="ffield#efield" class="small-grey-link">efield</a> <a href="dfpt#efmas" class="small-grey-link">efmas</a> <a href="dfpt#efmas_bands" class="small-grey-link">efmas_bands</a> <a href="dfpt#efmas_calc_dirs" class="small-grey-link">efmas_calc_dirs</a> <a href="dfpt#efmas_deg" class="small-grey-link">efmas_deg</a> <a href="dfpt#efmas_deg_tol" class="small-grey-link">efmas_deg_tol</a> <a href="dfpt#efmas_dim" class="small-grey-link">efmas_dim</a> <a href="dfpt#efmas_dirs" class="small-grey-link">efmas_dirs</a> <a href="dfpt#efmas_n_dirs" class="small-grey-link">efmas_n_dirs</a> <a href="dfpt#efmas_ntheta" class="small-grey-link">efmas_ntheta</a> <a href="basic#einterp" class="small-grey-link">einterp</a> <a href="dfpt#elph2_imagden" class="small-grey-link">elph2_imagden</a> <a href="gstate#enunit" class="small-grey-link">enunit</a> <a href="eph#eph_extrael" class="small-grey-link">eph_extrael</a> <a href="eph#eph_fermie" class="small-grey-link">eph_fermie</a> <a href="eph#eph_fsewin" class="small-grey-link">eph_fsewin</a> <a href="eph#eph_fsmear" class="small-grey-link">eph_fsmear</a> <a href="eph#eph_intmeth" class="small-grey-link">eph_intmeth</a> <a href="eph#eph_mustar" class="small-grey-link">eph_mustar</a> <a href="eph#eph_ngqpt_fine" class="small-grey-link">eph_ngqpt_fine</a> <a href="dfpt#eph_task" class="small-grey-link">eph_task</a> <a href="eph#eph_transport" class="small-grey-link">eph_transport</a> <a href="dev#eshift" class="small-grey-link">eshift</a> <a href="dfpt#esmear" class="small-grey-link">esmear</a> <a href="dev#exchmix" class="small-grey-link">exchmix</a> <a href="dev#exchn2n3d" class="small-grey-link">exchn2n3d</a> <a href="dev#extrapwf" class="small-grey-link">extrapwf</a> <a href="paw#f4of2_sla" class="small-grey-link">f4of2_sla</a> <a href="paw#f6of2_sla" class="small-grey-link">f6of2_sla</a> <a href="gstate#fband" class="small-grey-link">fband</a> <a href="dev#fermie_nest" class="small-grey-link">fermie_nest</a> <a href="dev#fftalg" class="small-grey-link">fftalg</a> <a href="dev#fftcache" class="small-grey-link">fftcache</a> <a href="gw#fftgw" class="small-grey-link">fftgw</a> <a href="gw#freqim_alpha" class="small-grey-link">freqim_alpha</a> <a href="gw#freqremax" class="small-grey-link">freqremax</a> <a href="gw#freqremin" class="small-grey-link">freqremin</a> <a href="gw#freqspmax" class="small-grey-link">freqspmax</a> <a href="gw#freqspmin" class="small-grey-link">freqspmin</a> <a href="rlx#friction" class="small-grey-link">friction</a> <a href="dfpt#frzfermi" class="small-grey-link">frzfermi</a> <a href="rlx#fxcartfactor" class="small-grey-link">fxcartfactor</a> <a href="rlx#ga_algor" class="small-grey-link">ga_algor</a> <a href="rlx#ga_fitness" class="small-grey-link">ga_fitness</a> <a href="rlx#ga_n_rules" class="small-grey-link">ga_n_rules</a> <a href="rlx#ga_opt_percent" class="small-grey-link">ga_opt_percent</a> <a href="rlx#ga_rules" class="small-grey-link">ga_rules</a> <a href="geo#genafm" class="small-grey-link">genafm</a> <a href="files#get1den" class="small-grey-link">get1den</a> <a href="files#get1wf" class="small-grey-link">get1wf</a> <a href="files#getbscoup" class="small-grey-link">getbscoup</a> <a href="files#getbseig" class="small-grey-link">getbseig</a> <a href="files#getbsreso" class="small-grey-link">getbsreso</a> <a href="rlx#getcell" class="small-grey-link">getcell</a> <a href="files#getddb" class="small-grey-link">getddb</a> <a href="files#getddk" class="small-grey-link">getddk</a> <a href="files#getden" class="small-grey-link">getden</a> <a href="dev#getgam_eig2nkq" class="small-grey-link">getgam_eig2nkq</a> <a href="files#gethaydock" class="small-grey-link">gethaydock</a> <a href="files#getocc" class="small-grey-link">getocc</a> <a href="files#getqps" class="small-grey-link">getqps</a> <a href="files#getscr" class="small-grey-link">getscr</a> <a href="files#getsuscep" class="small-grey-link">getsuscep</a> <a href="rlx#getvel" class="small-grey-link">getvel</a> <a href="files#getwfk" class="small-grey-link">getwfk</a> <a href="dev#getwfkfine" class="small-grey-link">getwfkfine</a> <a href="files#getwfq" class="small-grey-link">getwfq</a> <a href="rlx#getxcart" class="small-grey-link">getxcart</a> <a href="rlx#getxred" class="small-grey-link">getxred</a> <a href="rlx#goprecon" class="small-grey-link">goprecon</a> <a href="rlx#goprecprm" class="small-grey-link">goprecprm</a> <a href="paral#gpu_devices" class="small-grey-link">gpu_devices</a> <a href="paral#gpu_linalg_limit" class="small-grey-link">gpu_linalg_limit</a> <a href="gw#gw_customnfreqsp" class="small-grey-link">gw_customnfreqsp</a> <a href="gw#gw_freqsp" class="small-grey-link">gw_freqsp</a> <a href="gw#gw_frqim_inzgrid" class="small-grey-link">gw_frqim_inzgrid</a> <a href="gw#gw_frqre_inzgrid" class="small-grey-link">gw_frqre_inzgrid</a> <a href="gw#gw_frqre_tangrid" class="small-grey-link">gw_frqre_tangrid</a> <a href="gw#gw_invalid_freq" class="small-grey-link">gw_invalid_freq</a> <a href="gw#gw_nqlwl" class="small-grey-link">gw_nqlwl</a> <a href="gw#gw_nstep" class="small-grey-link">gw_nstep</a> <a href="gw#gw_qlwl" class="small-grey-link">gw_qlwl</a> <a href="gw#gw_qprange" class="small-grey-link">gw_qprange</a> <a href="gw#gw_sctype" class="small-grey-link">gw_sctype</a> <a href="gw#gw_sigxcore" class="small-grey-link">gw_sigxcore</a> <a href="gw#gw_toldfeig" class="small-grey-link">gw_toldfeig</a> <a href="gw#gwcalctyp" class="small-grey-link">gwcalctyp</a> <a href="gw#gwcomp" class="small-grey-link">gwcomp</a> <a href="gw#gwencomp" class="small-grey-link">gwencomp</a> <a href="gw#gwfockmix" class="small-grey-link">gwfockmix</a> <a href="gw#gwgamma" class="small-grey-link">gwgamma</a> <a href="gw#gwls_band_index" class="small-grey-link">gwls_band_index</a> <a href="gw#gwls_correlation" class="small-grey-link">gwls_correlation</a> <a href="gw#gwls_diel_model" class="small-grey-link">gwls_diel_model</a> <a href="gw#gwls_exchange" class="small-grey-link">gwls_exchange</a> <a href="gw#gwls_first_seed" class="small-grey-link">gwls_first_seed</a> <a href="gw#gwls_kmax_analytic" class="small-grey-link">gwls_kmax_analytic</a> <a href="gw#gwls_kmax_complement" class="small-grey-link">gwls_kmax_complement</a> <a href="gw#gwls_kmax_numeric" class="small-grey-link">gwls_kmax_numeric</a> <a href="gw#gwls_kmax_poles" class="small-grey-link">gwls_kmax_poles</a> <a href="gw#gwls_list_proj_freq" class="small-grey-link">gwls_list_proj_freq</a> <a href="gw#gwls_model_parameter" class="small-grey-link">gwls_model_parameter</a> <a href="gw#gwls_n_proj_freq" class="small-grey-link">gwls_n_proj_freq</a> <a href="gw#gwls_npt_gauss_quad" class="small-grey-link">gwls_npt_gauss_quad</a> <a href="gw#gwls_nseeds" class="small-grey-link">gwls_nseeds</a> <a href="gw#gwls_print_debug" class="small-grey-link">gwls_print_debug</a> <a href="gw#gwls_recycle" class="small-grey-link">gwls_recycle</a> <a href="gw#gwls_stern_kmax" class="small-grey-link">gwls_stern_kmax</a> <a href="gw#gwmem" class="small-grey-link">gwmem</a> <a href="paral#gwpara" class="small-grey-link">gwpara</a> <a href="gw#gwrpacorr" class="small-grey-link">gwrpacorr</a> <a href="rlx#iatcon" class="small-grey-link">iatcon</a> <a href="rlx#iatfix" class="small-grey-link">iatfix</a> <a href="rlx#iatfixx" class="small-grey-link">iatfixx</a> <a href="rlx#iatfixy" class="small-grey-link">iatfixy</a> <a href="rlx#iatfixz" class="small-grey-link">iatfixz</a> <a href="gstate#iatsph" class="small-grey-link">iatsph</a> <a href="paw#iboxcut" class="small-grey-link">iboxcut</a> <a href="gstate#icoulomb" class="small-grey-link">icoulomb</a> <a href="gw#icutcoul" class="small-grey-link">icutcoul</a> <a href="dfpt#ieig2rf" class="small-grey-link">ieig2rf</a> <a href="rlx#imgmov" class="small-grey-link">imgmov</a> <a href="gw#inclvkb" class="small-grey-link">inclvkb</a> <a href="dev#intxc" class="small-grey-link">intxc</a> <a href="dev#iomode" class="small-grey-link">iomode</a> <a href="rlx#ionmov" class="small-grey-link">ionmov</a> <a href="gstate#iprcel" class="small-grey-link">iprcel</a> <a href="dev#iprcfc" class="small-grey-link">iprcfc</a> <a href="gstate#iqpt" class="small-grey-link">iqpt</a> <a href="dev#irandom" class="small-grey-link">irandom</a> <a href="files#ird1den" class="small-grey-link">ird1den</a> <a href="files#ird1wf" class="small-grey-link">ird1wf</a> <a href="files#irdbscoup" class="small-grey-link">irdbscoup</a> <a href="files#irdbseig" class="small-grey-link">irdbseig</a> <a href="files#irdbsreso" class="small-grey-link">irdbsreso</a> <a href="files#irdddb" class="small-grey-link">irdddb</a> <a href="files#irdddk" class="small-grey-link">irdddk</a> <a href="files#irdden" class="small-grey-link">irdden</a> <a href="files#irdhaydock" class="small-grey-link">irdhaydock</a> <a href="files#irdqps" class="small-grey-link">irdqps</a> <a href="files#irdscr" class="small-grey-link">irdscr</a> <a href="files#irdsuscep" class="small-grey-link">irdsuscep</a> <a href="vdw#irdvdw" class="small-grey-link">irdvdw</a> <a href="files#irdwfk" class="small-grey-link">irdwfk</a> <a href="dev#irdwfkfine" class="small-grey-link">irdwfkfine</a> <a href="files#irdwfq" class="small-grey-link">irdwfq</a> <a href="basic#iscf" class="small-grey-link">iscf</a> <a href="dev#isecur" class="small-grey-link">isecur</a> <a href="rlx#istatimg" class="small-grey-link">istatimg</a> <a href="dev#istatr" class="small-grey-link">istatr</a> <a href="dev#istatshft" class="small-grey-link">istatshft</a> <a href="dev#istwfk" class="small-grey-link">istwfk</a> <a href="basic#ixc" class="small-grey-link">ixc</a> <a href="gstate#ixcpositron" class="small-grey-link">ixcpositron</a> <a href="basic#jdtset" class="small-grey-link">jdtset</a> <a href="gstate#jellslab" class="small-grey-link">jellslab</a> <a href="ffield#jfielddir" class="small-grey-link">jfielddir</a> <a href="paw#jpawu" class="small-grey-link">jpawu</a> <a href="ffield#kberry" class="small-grey-link">kberry</a> <a href="basic#kpt" class="small-grey-link">kpt</a> <a href="gstate#kptbounds" class="small-grey-link">kptbounds</a> <a href="gw#kptgw" class="small-grey-link">kptgw</a> <a href="basic#kptnrm" class="small-grey-link">kptnrm</a> <a href="internal#kptns" class="small-grey-link">%kptns</a> <a href="basic#kptopt" class="small-grey-link">kptopt</a> <a href="gstate#kptrlatt" class="small-grey-link">kptrlatt</a> <a href="gstate#kptrlen" class="small-grey-link">kptrlen</a> <a href="files#kssform" class="small-grey-link">kssform</a> <a href="paw#lexexch" class="small-grey-link">lexexch</a> <a href="paral#localrdwf" class="small-grey-link">localrdwf</a> <a href="dev#lotf_classic" class="small-grey-link">lotf_classic</a> <a href="dev#lotf_nitex" class="small-grey-link">lotf_nitex</a> <a href="dev#lotf_nneigx" class="small-grey-link">lotf_nneigx</a> <a href="dev#lotf_version" class="small-grey-link">lotf_version</a> <a href="paw#lpawu" class="small-grey-link">lpawu</a> <a href="dev#macro_uj" class="small-grey-link">macro_uj</a> <a href="gstate#magcon_lambda" class="small-grey-link">magcon_lambda</a> <a href="gstate#magconon" class="small-grey-link">magconon</a> <a href="paral#max_ncpus" class="small-grey-link">max_ncpus</a> <a href="ffield#maxestep" class="small-grey-link">maxestep</a> <a href="dev#maxnsym" class="small-grey-link">maxnsym</a> <a href="internal#mband" class="small-grey-link">%mband</a> <a href="gw#mbpt_sciss" class="small-grey-link">mbpt_sciss</a> <a href="gw#mdf_epsinf" class="small-grey-link">mdf_epsinf</a> <a href="rlx#mdtemp" class="small-grey-link">mdtemp</a> <a href="rlx#mdwall" class="small-grey-link">mdwall</a> <a href="dev#mem_test" class="small-grey-link">mem_test</a> <a href="rlx#mep_mxstep" class="small-grey-link">mep_mxstep</a> <a href="rlx#mep_solver" class="small-grey-link">mep_solver</a> <a href="internal#mgfft" class="small-grey-link">%mgfft</a> <a href="internal#mgfftdg" class="small-grey-link">%mgfftdg</a> <a href="gstate#mixalch" class="small-grey-link">mixalch</a> <a href="internal#mpw" class="small-grey-link">%mpw</a> <a href="dev#mqgrid" class="small-grey-link">mqgrid</a> <a href="paw#mqgriddg" class="small-grey-link">mqgriddg</a> <a href="rlx#natcon" class="small-grey-link">natcon</a> <a href="rlx#natfix" class="small-grey-link">natfix</a> <a href="rlx#natfixx" class="small-grey-link">natfixx</a> <a href="rlx#natfixy" class="small-grey-link">natfixy</a> <a href="rlx#natfixz" class="small-grey-link">natfixz</a> <a href="basic#natom" class="small-grey-link">natom</a> <a href="internal#natpawu" class="small-grey-link">%natpawu</a> <a href="geo#natrd" class="small-grey-link">natrd</a> <a href="gstate#natsph" class="small-grey-link">natsph</a> <a href="gstate#natsph_extra" class="small-grey-link">natsph_extra</a> <a href="ffield#natvshift" class="small-grey-link">natvshift</a> <a href="basic#nband" class="small-grey-link">nband</a> <a href="basic#nbandhf" class="small-grey-link">nbandhf</a> <a href="gw#nbandkss" class="small-grey-link">nbandkss</a> <a href="dev#nbdblock" class="small-grey-link">nbdblock</a> <a href="gstate#nbdbuf" class="small-grey-link">nbdbuf</a> <a href="ffield#nberry" class="small-grey-link">nberry</a> <a href="dev#nc_xccc_gspace" class="small-grey-link">nc_xccc_gspace</a> <a href="rlx#nconeq" class="small-grey-link">nconeq</a> <a href="dev#nctime" class="small-grey-link">nctime</a> <a href="gstate#ndivk" class="small-grey-link">ndivk</a> <a href="gstate#ndivsm" class="small-grey-link">ndivsm</a> <a href="basic#ndtset" class="small-grey-link">ndtset</a> <a href="internal#ndynimage" class="small-grey-link">%ndynimage</a> <a href="rlx#neb_algo" class="small-grey-link">neb_algo</a> <a href="rlx#neb_spring" class="small-grey-link">neb_spring</a> <a href="internal#nelect" class="small-grey-link">%nelect</a> <a href="internal#nfft" class="small-grey-link">%nfft</a> <a href="internal#nfftdg" class="small-grey-link">%nfftdg</a> <a href="gw#nfreqim" class="small-grey-link">nfreqim</a> <a href="gw#nfreqmidm" class="small-grey-link">nfreqmidm</a> <a href="gw#nfreqre" class="small-grey-link">nfreqre</a> <a href="gw#nfreqsp" class="small-grey-link">nfreqsp</a> <a href="gstate#ngfft" class="small-grey-link">ngfft</a> <a href="paw#ngfftdg" class="small-grey-link">ngfftdg</a> <a href="basic#ngkpt" class="small-grey-link">ngkpt</a> <a href="gstate#ngqpt" class="small-grey-link">ngqpt</a> <a href="rlx#nimage" class="small-grey-link">nimage</a> <a href="basic#nkpath" class="small-grey-link">nkpath</a> <a href="basic#nkpt" class="small-grey-link">nkpt</a> <a href="gw#nkptgw" class="small-grey-link">nkptgw</a> <a href="basic#nkpthf" class="small-grey-link">nkpthf</a> <a href="gstate#nline" class="small-grey-link">nline</a> <a href="dev#nloc_alg" class="small-grey-link">nloc_alg</a> <a href="dev#nloc_mem" class="small-grey-link">nloc_mem</a> <a href="rlx#nnos" class="small-grey-link">nnos</a> <a href="dev#nnsclo" class="small-grey-link">nnsclo</a> <a href="dev#nnsclohf" class="small-grey-link">nnsclohf</a> <a href="geo#nobj" class="small-grey-link">nobj</a> <a href="gw#nomegasf" class="small-grey-link">nomegasf</a> <a href="gw#nomegasi" class="small-grey-link">nomegasi</a> <a href="gw#nomegasrd" class="small-grey-link">nomegasrd</a> <a href="dev#normpawu" class="small-grey-link">normpawu</a> <a href="rlx#noseinert" class="small-grey-link">noseinert</a> <a href="paral#np_slk" class="small-grey-link">np_slk</a> <a href="paral#npband" class="small-grey-link">npband</a> <a href="paral#npfft" class="small-grey-link">npfft</a> <a href="paral#nphf" class="small-grey-link">nphf</a> <a href="paral#npimage" class="small-grey-link">npimage</a> <a href="paral#npkpt" class="small-grey-link">npkpt</a> <a href="paral#nppert" class="small-grey-link">nppert</a> <a href="gstate#npsp" class="small-grey-link">npsp</a> <a href="gstate#npspalch" class="small-grey-link">%npspalch</a> <a href="paral#npspinor" class="small-grey-link">npspinor</a> <a href="dev#npulayit" class="small-grey-link">npulayit</a> <a href="gw#npvel" class="small-grey-link">npvel</a> <a href="internal#npweps" class="small-grey-link">%npweps</a> <a href="gw#npwkss" class="small-grey-link">npwkss</a> <a href="internal#npwsigx" class="small-grey-link">%npwsigx</a> <a href="internal#npwwfn" class="small-grey-link">%npwwfn</a> <a href="gstate#nqpt" class="small-grey-link">nqpt</a> <a href="gw#nqptdm" class="small-grey-link">nqptdm</a> <a href="dev#nscforder" class="small-grey-link">nscforder</a> <a href="basic#nshiftk" class="small-grey-link">nshiftk</a> <a href="gstate#nshiftq" class="small-grey-link">nshiftq</a> <a href="gstate#nspden" class="small-grey-link">nspden</a> <a href="gstate#nspinor" class="small-grey-link">nspinor</a> <a href="basic#nsppol" class="small-grey-link">nsppol</a> <a href="basic#nstep" class="small-grey-link">nstep</a> <a href="basic#nsym" class="small-grey-link">nsym</a> <a href="rlx#ntime" class="small-grey-link">ntime</a> <a href="rlx#ntimimage" class="small-grey-link">ntimimage</a> <a href="gstate#ntypalch" class="small-grey-link">ntypalch</a> <a href="basic#ntypat" class="small-grey-link">ntypat</a> <a href="gstate#ntyppure" class="small-grey-link">%ntyppure</a> <a href="gstate#nucdipmom" class="small-grey-link">nucdipmom</a> <a href="gstate#nwfshist" class="small-grey-link">nwfshist</a> <a href="geo#nzchempot" class="small-grey-link">nzchempot</a> <a href="geo#objaat" class="small-grey-link">objaat</a> <a href="geo#objaax" class="small-grey-link">objaax</a> <a href="geo#objan" class="small-grey-link">objan</a> <a href="geo#objarf" class="small-grey-link">objarf</a> <a href="geo#objaro" class="small-grey-link">objaro</a> <a href="geo#objatr" class="small-grey-link">objatr</a> <a href="geo#objbat" class="small-grey-link">objbat</a> <a href="geo#objbax" class="small-grey-link">objbax</a> <a href="geo#objbn" class="small-grey-link">objbn</a> <a href="geo#objbrf" class="small-grey-link">objbrf</a> <a href="geo#objbro" class="small-grey-link">objbro</a> <a href="geo#objbtr" class="small-grey-link">objbtr</a> <a href="gstate#occ" class="small-grey-link">occ</a> <a href="basic#occopt" class="small-grey-link">occopt</a> <a href="gw#omegasimax" class="small-grey-link">omegasimax</a> <a href="gw#omegasrdmax" class="small-grey-link">omegasrdmax</a> <a href="rlx#optcell" class="small-grey-link">optcell</a> <a href="gstate#optdriver" class="small-grey-link">optdriver</a> <a href="dev#optforces" class="small-grey-link">optforces</a> <a href="dev#optnlxccc" class="small-grey-link">optnlxccc</a> <a href="gstate#optstress" class="small-grey-link">optstress</a> <a href="dev#ortalg" class="small-grey-link">ortalg</a> <a href="dev#papiopt" class="small-grey-link">papiopt</a> <a href="paral#paral_atom" class="small-grey-link">paral_atom</a> <a href="paral#paral_kgb" class="small-grey-link">paral_kgb</a> <a href="paral#paral_rf" class="small-grey-link">paral_rf</a> <a href="paw#pawcpxocc" class="small-grey-link">pawcpxocc</a> <a href="paw#pawcross" class="small-grey-link">pawcross</a> <a href="paw#pawecutdg" class="small-grey-link">pawecutdg</a> <a href="paw#pawfatbnd" class="small-grey-link">pawfatbnd</a> <a href="paw#pawlcutd" class="small-grey-link">pawlcutd</a> <a href="paw#pawlmix" class="small-grey-link">pawlmix</a> <a href="paw#pawmixdg" class="small-grey-link">pawmixdg</a> <a href="paw#pawnhatxc" class="small-grey-link">pawnhatxc</a> <a href="paw#pawnphi" class="small-grey-link">pawnphi</a> <a href="paw#pawntheta" class="small-grey-link">pawntheta</a> <a href="paw#pawnzlm" class="small-grey-link">pawnzlm</a> <a href="paw#pawoptmix" class="small-grey-link">pawoptmix</a> <a href="paw#pawoptosc" class="small-grey-link">pawoptosc</a> <a href="paw#pawovlp" class="small-grey-link">pawovlp</a> <a href="dev#pawprt_b" class="small-grey-link">pawprt_b</a> <a href="dev#pawprt_k" class="small-grey-link">pawprt_k</a> <a href="paw#pawprtden" class="small-grey-link">pawprtden</a> <a href="paw#pawprtdos" class="small-grey-link">pawprtdos</a> <a href="paw#pawprtvol" class="small-grey-link">pawprtvol</a> <a href="paw#pawprtwf" class="small-grey-link">pawprtwf</a> <a href="paw#pawspnorb" class="small-grey-link">pawspnorb</a> <a href="paw#pawstgylm" class="small-grey-link">pawstgylm</a> <a href="paw#pawsushat" class="small-grey-link">pawsushat</a> <a href="dev#pawujat" class="small-grey-link">pawujat</a> <a href="dev#pawujrad" class="small-grey-link">pawujrad</a> <a href="dev#pawujv" class="small-grey-link">pawujv</a> <a href="paw#pawusecp" class="small-grey-link">pawusecp</a> <a href="paw#pawxcdev" class="small-grey-link">pawxcdev</a> <a href="eph#ph_intmeth" class="small-grey-link">ph_intmeth</a> <a href="eph#ph_ndivsm" class="small-grey-link">ph_ndivsm</a> <a href="dfpt#ph_ngqpt" class="small-grey-link">ph_ngqpt</a> <a href="eph#ph_nqpath" class="small-grey-link">ph_nqpath</a> <a href="eph#ph_nqshift" class="small-grey-link">ph_nqshift</a> <a href="dfpt#ph_qpath" class="small-grey-link">ph_qpath</a> <a href="eph#ph_qshift" class="small-grey-link">ph_qshift</a> <a href="eph#ph_smear" class="small-grey-link">ph_smear</a> <a href="eph#ph_wstep" class="small-grey-link">ph_wstep</a> <a href="rlx#pimass" class="small-grey-link">pimass</a> <a href="rlx#pimd_constraint" class="small-grey-link">pimd_constraint</a> <a href="rlx#pitransform" class="small-grey-link">pitransform</a> <a href="dev#plowan_bandf" class="small-grey-link">plowan_bandf</a> <a href="dev#plowan_bandi" class="small-grey-link">plowan_bandi</a> <a href="dev#plowan_compute" class="small-grey-link">plowan_compute</a> <a href="dev#plowan_iatom" class="small-grey-link">plowan_iatom</a> <a href="dev#plowan_it" class="small-grey-link">plowan_it</a> <a href="dev#plowan_lcalc" class="small-grey-link">plowan_lcalc</a> <a href="dev#plowan_natom" class="small-grey-link">plowan_natom</a> <a href="dev#plowan_nbl" class="small-grey-link">plowan_nbl</a> <a href="dev#plowan_nt" class="small-grey-link">plowan_nt</a> <a href="dev#plowan_projcalc" class="small-grey-link">plowan_projcalc</a> <a href="dev#plowan_realspace" class="small-grey-link">plowan_realspace</a> <a href="ffield#polcen" class="small-grey-link">polcen</a> <a href="gstate#posdoppler" class="small-grey-link">posdoppler</a> <a href="gstate#positron" class="small-grey-link">positron</a> <a href="gstate#posnstep" class="small-grey-link">posnstep</a> <a href="gstate#posocc" class="small-grey-link">posocc</a> <a href="gstate#postoldfe" class="small-grey-link">postoldfe</a> <a href="gstate#postoldff" class="small-grey-link">postoldff</a> <a href="gw#ppmfrq" class="small-grey-link">ppmfrq</a> <a href="gw#ppmodel" class="small-grey-link">ppmodel</a> <a href="dfpt#prepanl" class="small-grey-link">prepanl</a> <a href="dfpt#prepgkk" class="small-grey-link">prepgkk</a> <a href="dev#prepscphon" class="small-grey-link">prepscphon</a> <a href="files#prt1dm" class="small-grey-link">prt1dm</a> <a href="rlx#prtatlist" class="small-grey-link">prtatlist</a> <a href="dfpt#prtbbb" class="small-grey-link">prtbbb</a> <a href="dev#prtbltztrp" class="small-grey-link">prtbltztrp</a> <a href="dev#prtcif" class="small-grey-link">prtcif</a> <a href="files#prtden" class="small-grey-link">prtden</a> <a href="gstate#prtdensph" class="small-grey-link">prtdensph</a> <a href="dev#prtdipole" class="small-grey-link">prtdipole</a> <a href="files#prtdos" class="small-grey-link">prtdos</a> <a href="files#prtdosm" class="small-grey-link">prtdosm</a> <a href="gstate#prtebands" class="small-grey-link">prtebands</a> <a href="paw#prtefg" class="small-grey-link">prtefg</a> <a href="files#prteig" class="small-grey-link">prteig</a> <a href="files#prtelf" class="small-grey-link">prtelf</a> <a href="paw#prtfc" class="small-grey-link">prtfc</a> <a href="files#prtfsurf" class="small-grey-link">prtfsurf</a> <a href="files#prtgden" class="small-grey-link">prtgden</a> <a href="files#prtgeo" class="small-grey-link">prtgeo</a> <a href="files#prtgkk" class="small-grey-link">prtgkk</a> <a href="files#prtgsr" class="small-grey-link">prtgsr</a> <a href="files#prtkden" class="small-grey-link">prtkden</a> <a href="files#prtkpt" class="small-grey-link">prtkpt</a> <a href="files#prtlden" class="small-grey-link">prtlden</a> <a href="paw#prtnabla" class="small-grey-link">prtnabla</a> <a href="dev#prtnest" class="small-grey-link">prtnest</a> <a href="eph#prtphbands" class="small-grey-link">prtphbands</a> <a href="eph#prtphdos" class="small-grey-link">prtphdos</a> <a href="eph#prtphsurf" class="small-grey-link">prtphsurf</a> <a href="dev#prtposcar" class="small-grey-link">prtposcar</a> <a href="files#prtpot" class="small-grey-link">prtpot</a> <a href="files#prtpsps" class="small-grey-link">prtpsps</a> <a href="files#prtspcur" class="small-grey-link">prtspcur</a> <a href="files#prtstm" class="small-grey-link">prtstm</a> <a href="files#prtsuscep" class="small-grey-link">prtsuscep</a> <a href="files#prtvclmb" class="small-grey-link">prtvclmb</a> <a href="vdw#prtvdw" class="small-grey-link">prtvdw</a> <a href="files#prtvha" class="small-grey-link">prtvha</a> <a href="files#prtvhxc" class="small-grey-link">prtvhxc</a> <a href="files#prtvol" class="small-grey-link">prtvol</a> <a href="files#prtvolimg" class="small-grey-link">prtvolimg</a> <a href="files#prtvpsp" class="small-grey-link">prtvpsp</a> <a href="files#prtvxc" class="small-grey-link">prtvxc</a> <a href="files#prtwant" class="small-grey-link">prtwant</a> <a href="files#prtwf" class="small-grey-link">prtwf</a> <a href="files#prtwf_full" class="small-grey-link">prtwf_full</a> <a href="files#prtxml" class="small-grey-link">prtxml</a> <a href="paw#ptcharge" class="small-grey-link">ptcharge</a> <a href="geo#ptgroupma" class="small-grey-link">%ptgroupma</a> <a href="gw#pvelmax" class="small-grey-link">pvelmax</a> <a href="paral#pw_unbal_thresh" class="small-grey-link">pw_unbal_thresh</a> <a href="rlx#qmass" class="small-grey-link">qmass</a> <a href="ffield#qprtrb" class="small-grey-link">qprtrb</a> <a href="gstate#qpt" class="small-grey-link">qpt</a> <a href="gw#qptdm" class="small-grey-link">qptdm</a> <a href="internal#qptn" class="small-grey-link">%qptn</a> <a href="gstate#qptnrm" class="small-grey-link">qptnrm</a> <a href="gstate#qptopt" class="small-grey-link">qptopt</a> <a href="gstate#qptrlatt" class="small-grey-link">qptrlatt</a> <a href="paw#quadmom" class="small-grey-link">quadmom</a> <a href="rlx#random_atpos" class="small-grey-link">random_atpos</a> <a href="gstate#ratsph" class="small-grey-link">ratsph</a> <a href="gstate#ratsph_extra" class="small-grey-link">ratsph_extra</a> <a href="gw#rcut" class="small-grey-link">rcut</a> <a href="dev#recefermi" class="small-grey-link">recefermi</a> <a href="dev#recgratio" class="small-grey-link">recgratio</a> <a href="dev#recnpath" class="small-grey-link">recnpath</a> <a href="dev#recnrec" class="small-grey-link">recnrec</a> <a href="dev#recptrott" class="small-grey-link">recptrott</a> <a href="dev#recrcut" class="small-grey-link">recrcut</a> <a href="dev#rectesteg" class="small-grey-link">rectesteg</a> <a href="dev#rectolden" class="small-grey-link">rectolden</a> <a href="ffield#red_dfield" class="small-grey-link">red_dfield</a> <a href="ffield#red_efield" class="small-grey-link">red_efield</a> <a href="ffield#red_efieldbar" class="small-grey-link">red_efieldbar</a> <a href="rlx#restartxf" class="small-grey-link">restartxf</a> <a href="dfpt#rf2_dkdk" class="small-grey-link">rf2_dkdk</a> <a href="dfpt#rfasr" class="small-grey-link">rfasr</a> <a href="dfpt#rfatpol" class="small-grey-link">rfatpol</a> <a href="dfpt#rfddk" class="small-grey-link">rfddk</a> <a href="dfpt#rfdir" class="small-grey-link">rfdir</a> <a href="dfpt#rfelfd" class="small-grey-link">rfelfd</a> <a href="dfpt#rfmagn" class="small-grey-link">rfmagn</a> <a href="dfpt#rfmeth" class="small-grey-link">rfmeth</a> <a href="dfpt#rfphon" class="small-grey-link">rfphon</a> <a href="dfpt#rfstrs" class="small-grey-link">rfstrs</a> <a href="dfpt#rfuser" class="small-grey-link">rfuser</a> <a href="gw#rhoqpmix" class="small-grey-link">rhoqpmix</a> <a href="basic#rprim" class="small-grey-link">rprim</a> <a href="basic#rprimd" class="small-grey-link">%rprimd</a> <a href="basic#scalecart" class="small-grey-link">scalecart</a> <a href="gstate#scphon_supercell" class="small-grey-link">scphon_supercell</a> <a href="gstate#scphon_temp" class="small-grey-link">scphon_temp</a> <a href="basic#shiftk" class="small-grey-link">shiftk</a> <a href="gstate#shiftq" class="small-grey-link">shiftq</a> <a href="rlx#signperm" class="small-grey-link">signperm</a> <a href="gstate#slabwsrad" class="small-grey-link">slabwsrad</a> <a href="gstate#slabzbeg" class="small-grey-link">slabzbeg</a> <a href="gstate#slabzend" class="small-grey-link">slabzend</a> <a href="dfpt#smdelta" class="small-grey-link">smdelta</a> <a href="gstate#so_psp" class="small-grey-link">so_psp</a> <a href="gw#spbroad" class="small-grey-link">spbroad</a> <a href="geo#spgaxor" class="small-grey-link">spgaxor</a> <a href="geo#spgorig" class="small-grey-link">spgorig</a> <a href="geo#spgroup" class="small-grey-link">spgroup</a> <a href="geo#spgroupma" class="small-grey-link">spgroupma</a> <a href="gstate#spinat" class="small-grey-link">spinat</a> <a href="ffield#spinmagntarget" class="small-grey-link">spinmagntarget</a> <a href="gw#spmeth" class="small-grey-link">spmeth</a> <a href="paw#spnorbscl" class="small-grey-link">spnorbscl</a> <a href="gstate#stmbias" class="small-grey-link">stmbias</a> <a href="rlx#strfact" class="small-grey-link">strfact</a> <a href="rlx#string_algo" class="small-grey-link">string_algo</a> <a href="rlx#strprecon" class="small-grey-link">strprecon</a> <a href="rlx#strtarget" class="small-grey-link">strtarget</a> <a href="gstate#symafm" class="small-grey-link">symafm</a> <a href="gw#symchi" class="small-grey-link">symchi</a> <a href="eph#symdynmat" class="small-grey-link">symdynmat</a> <a href="dev#symmorphi" class="small-grey-link">symmorphi</a> <a href="basic#symrel" class="small-grey-link">symrel</a> <a href="gw#symsigma" class="small-grey-link">symsigma</a> <a href="dfpt#td_maxene" class="small-grey-link">td_maxene</a> <a href="dfpt#td_mexcit" class="small-grey-link">td_mexcit</a> <a href="dev#tfkinfunc" class="small-grey-link">tfkinfunc</a> <a href="dev#tfw_toldfe" class="small-grey-link">tfw_toldfe</a> <a href="gstate#timopt" class="small-grey-link">timopt</a> <a href="gstate#tl_nprccg" class="small-grey-link">tl_nprccg</a> <a href="gstate#tl_radius" class="small-grey-link">tl_radius</a> <a href="basic#tnons" class="small-grey-link">tnons</a> <a href="basic#toldfe" class="small-grey-link">toldfe</a> <a href="basic#toldff" class="small-grey-link">toldff</a> <a href="rlx#tolimg" class="small-grey-link">tolimg</a> <a href="rlx#tolmxde" class="small-grey-link">tolmxde</a> <a href="rlx#tolmxf" class="small-grey-link">tolmxf</a> <a href="dev#tolrde" class="small-grey-link">tolrde</a> <a href="basic#tolrff" class="small-grey-link">tolrff</a> <a href="geo#tolsym" class="small-grey-link">tolsym</a> <a href="basic#tolvrs" class="small-grey-link">tolvrs</a> <a href="basic#tolwfr" class="small-grey-link">tolwfr</a> <a href="gstate#tphysel" class="small-grey-link">tphysel</a> <a href="gstate#tsmear" class="small-grey-link">tsmear</a> <a href="basic#typat" class="small-grey-link">typat</a> <a href="gw#ucrpa" class="small-grey-link">ucrpa</a> <a href="gw#ucrpa_bands" class="small-grey-link">ucrpa_bands</a> <a href="gw#ucrpa_window" class="small-grey-link">ucrpa_window</a> <a href="basic#udtset" class="small-grey-link">udtset</a> <a href="paw#upawu" class="small-grey-link">upawu</a> <a href="dev#use_gemm_nonlop" class="small-grey-link">use_gemm_nonlop</a> <a href="paral#use_gpu_cuda" class="small-grey-link">use_gpu_cuda</a> <a href="dev#use_nonscf_gkk" class="small-grey-link">use_nonscf_gkk</a> <a href="paral#use_slk" class="small-grey-link">use_slk</a> <a href="paw#usedmatpu" class="small-grey-link">usedmatpu</a> <a href="dev#usedmft" class="small-grey-link">usedmft</a> <a href="paw#useexexch" class="small-grey-link">useexexch</a> <a href="internal#usefock" class="small-grey-link">%usefock</a> <a href="gstate#usekden" class="small-grey-link">usekden</a> <a href="internal#usepaw" class="small-grey-link">%usepaw</a> <a href="paw#usepawu" class="small-grey-link">usepawu</a> <a href="paw#usepotzero" class="small-grey-link">usepotzero</a> <a href="internal#userec" class="small-grey-link">%userec</a> <a href="dev#useria" class="small-grey-link">useria</a> <a href="dev#userib" class="small-grey-link">userib</a> <a href="dev#useric" class="small-grey-link">useric</a> <a href="dev#userid" class="small-grey-link">userid</a> <a href="dev#userie" class="small-grey-link">userie</a> <a href="dev#userra" class="small-grey-link">userra</a> <a href="dev#userrb" class="small-grey-link">userrb</a> <a href="dev#userrc" class="small-grey-link">userrc</a> <a href="dev#userrd" class="small-grey-link">userrd</a> <a href="dev#userre" class="small-grey-link">userre</a> <a href="basic#usewvl" class="small-grey-link">usewvl</a> <a href="paw#usexcnhat" class="small-grey-link">usexcnhat</a> <a href="dev#useylm" class="small-grey-link">useylm</a> <a href="geo#vaclst" class="small-grey-link">vaclst</a> <a href="geo#vacnum" class="small-grey-link">vacnum</a> <a href="gstate#vacuum" class="small-grey-link">vacuum</a> <a href="gstate#vacwidth" class="small-grey-link">vacwidth</a> <a href="gw#vcutgeo" class="small-grey-link">vcutgeo</a> <a href="vdw#vdw_df_acutmin" class="small-grey-link">vdw_df_acutmin</a> <a href="vdw#vdw_df_aratio" class="small-grey-link">vdw_df_aratio</a> <a href="vdw#vdw_df_damax" class="small-grey-link">vdw_df_damax</a> <a href="vdw#vdw_df_damin" class="small-grey-link">vdw_df_damin</a> <a href="vdw#vdw_df_dcut" class="small-grey-link">vdw_df_dcut</a> <a href="vdw#vdw_df_dratio" class="small-grey-link">vdw_df_dratio</a> <a href="vdw#vdw_df_dsoft" class="small-grey-link">vdw_df_dsoft</a> <a href="vdw#vdw_df_gcut" class="small-grey-link">vdw_df_gcut</a> <a href="vdw#vdw_df_ndpts" class="small-grey-link">vdw_df_ndpts</a> <a href="vdw#vdw_df_ngpts" class="small-grey-link">vdw_df_ngpts</a> <a href="vdw#vdw_df_nqpts" class="small-grey-link">vdw_df_nqpts</a> <a href="vdw#vdw_df_nrpts" class="small-grey-link">vdw_df_nrpts</a> <a href="vdw#vdw_df_nsmooth" class="small-grey-link">vdw_df_nsmooth</a> <a href="vdw#vdw_df_phisoft" class="small-grey-link">vdw_df_phisoft</a> <a href="vdw#vdw_df_qcut" class="small-grey-link">vdw_df_qcut</a> <a href="vdw#vdw_df_qratio" class="small-grey-link">vdw_df_qratio</a> <a href="vdw#vdw_df_rcut" class="small-grey-link">vdw_df_rcut</a> <a href="vdw#vdw_df_rsoft" class="small-grey-link">vdw_df_rsoft</a> <a href="vdw#vdw_df_threshold" class="small-grey-link">vdw_df_threshold</a> <a href="vdw#vdw_df_tolerance" class="small-grey-link">vdw_df_tolerance</a> <a href="vdw#vdw_df_tweaks" class="small-grey-link">vdw_df_tweaks</a> <a href="vdw#vdw_df_zab" class="small-grey-link">vdw_df_zab</a> <a href="vdw#vdw_nfrag" class="small-grey-link">vdw_nfrag</a> <a href="vdw#vdw_supercell" class="small-grey-link">vdw_supercell</a> <a href="vdw#vdw_tol" class="small-grey-link">vdw_tol</a> <a href="vdw#vdw_tol_3bt" class="small-grey-link">vdw_tol_3bt</a> <a href="vdw#vdw_typfrag" class="small-grey-link">vdw_typfrag</a> <a href="vdw#vdw_xc" class="small-grey-link">vdw_xc</a> <a href="rlx#vel" class="small-grey-link">vel</a> <a href="rlx#vel_cell" class="small-grey-link">vel_cell</a> <a href="rlx#vis" class="small-grey-link">vis</a> <a href="ffield#vprtrb" class="small-grey-link">vprtrb</a> <a href="w90#w90iniprj" class="small-grey-link">w90iniprj</a> <a href="w90#w90prtunk" class="small-grey-link">w90prtunk</a> <a href="dev#wfoptalg" class="small-grey-link">wfoptalg</a> <a href="rlx#wtatcon" class="small-grey-link">wtatcon</a> <a href="basic#wtk" class="small-grey-link">wtk</a> <a href="gstate#wtq" class="small-grey-link">wtq</a> <a href="gstate#wvl_bigdft_comp" class="small-grey-link">wvl_bigdft_comp</a> <a href="gstate#wvl_crmult" class="small-grey-link">wvl_crmult</a> <a href="gstate#wvl_frmult" class="small-grey-link">wvl_frmult</a> <a href="basic#wvl_hgrid" class="small-grey-link">wvl_hgrid</a> <a href="gstate#wvl_ngauss" class="small-grey-link">wvl_ngauss</a> <a href="gstate#wvl_nprccg" class="small-grey-link">wvl_nprccg</a> <a href="basic#xangst" class="small-grey-link">xangst</a> <a href="dev#xc_denpos" class="small-grey-link">xc_denpos</a> <a href="dev#xc_tb09_c" class="small-grey-link">xc_tb09_c</a> <a href="basic#xcart" class="small-grey-link">xcart</a> <a href="internal#xclevel" class="small-grey-link">%xclevel</a> <a href="basic#xred" class="small-grey-link">xred</a> <a href="gstate#xredsph_extra" class="small-grey-link">xredsph_extra</a> <a href="geo#xyzfile" class="small-grey-link">xyzfile</a> <a href="gw#zcut" class="small-grey-link">zcut</a> <a href="ffield#zeemanfield" class="small-grey-link">zeemanfield</a> <a href="internal#ziontypat" class="small-grey-link">%ziontypat</a> <a href="basic#znucl" class="small-grey-link">znucl</a>
 </div>
 </div></div>## aim variables   
 
@@ -142,49 +142,49 @@ Change the input yaml files or the python code
 <!-- Tab panes -->
 <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="aim-tabs-A">
-<a href="aim#atom" class="wikilink codevar-wikilink">atom</a> <a href="aim#atrad" class="wikilink codevar-wikilink">atrad</a>
+<a href="aim#atom" class="small-grey-link">atom</a> <a href="aim#atrad" class="small-grey-link">atrad</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-C">
-<a href="aim#coff1" class="wikilink codevar-wikilink">coff1</a> <a href="aim#coff2" class="wikilink codevar-wikilink">coff2</a> <a href="aim#crit" class="wikilink codevar-wikilink">crit</a>
+<a href="aim#coff1" class="small-grey-link">coff1</a> <a href="aim#coff2" class="small-grey-link">coff2</a> <a href="aim#crit" class="small-grey-link">crit</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-D">
-<a href="aim#denout" class="wikilink codevar-wikilink">denout</a> <a href="aim#dltyp" class="wikilink codevar-wikilink">dltyp</a> <a href="aim#dpclim" class="wikilink codevar-wikilink">dpclim</a>
+<a href="aim#denout" class="small-grey-link">denout</a> <a href="aim#dltyp" class="small-grey-link">dltyp</a> <a href="aim#dpclim" class="small-grey-link">dpclim</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-F">
-<a href="aim#foldep" class="wikilink codevar-wikilink">foldep</a> <a href="aim#follow" class="wikilink codevar-wikilink">follow</a> <a href="aim#folstp" class="wikilink codevar-wikilink">folstp</a>
+<a href="aim#foldep" class="small-grey-link">foldep</a> <a href="aim#follow" class="small-grey-link">follow</a> <a href="aim#folstp" class="small-grey-link">folstp</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-G">
-<a href="aim#gpsurf" class="wikilink codevar-wikilink">gpsurf</a>
+<a href="aim#gpsurf" class="small-grey-link">gpsurf</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-I">
-<a href="aim#inpt" class="wikilink codevar-wikilink">inpt</a> <a href="aim#irho" class="wikilink codevar-wikilink">irho</a> <a href="aim#ivol" class="wikilink codevar-wikilink">ivol</a>
+<a href="aim#inpt" class="small-grey-link">inpt</a> <a href="aim#irho" class="small-grey-link">irho</a> <a href="aim#ivol" class="small-grey-link">ivol</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-L">
-<a href="aim#lapout" class="wikilink codevar-wikilink">lapout</a> <a href="aim#lgrad" class="wikilink codevar-wikilink">lgrad</a> <a href="aim#lgrad2" class="wikilink codevar-wikilink">lgrad2</a> <a href="aim#lstep" class="wikilink codevar-wikilink">lstep</a> <a href="aim#lstep2" class="wikilink codevar-wikilink">lstep2</a>
+<a href="aim#lapout" class="small-grey-link">lapout</a> <a href="aim#lgrad" class="small-grey-link">lgrad</a> <a href="aim#lgrad2" class="small-grey-link">lgrad2</a> <a href="aim#lstep" class="small-grey-link">lstep</a> <a href="aim#lstep2" class="small-grey-link">lstep2</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-M">
-<a href="aim#maxatd" class="wikilink codevar-wikilink">maxatd</a> <a href="aim#maxcpd" class="wikilink codevar-wikilink">maxcpd</a>
+<a href="aim#maxatd" class="small-grey-link">maxatd</a> <a href="aim#maxcpd" class="small-grey-link">maxcpd</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-N">
-<a href="aim#ngrid" class="wikilink codevar-wikilink">ngrid</a> <a href="aim#nphi" class="wikilink codevar-wikilink">nphi</a> <a href="aim#nsa" class="wikilink codevar-wikilink">nsa</a> <a href="aim#nsb" class="wikilink codevar-wikilink">nsb</a> <a href="aim#nsc" class="wikilink codevar-wikilink">nsc</a> <a href="aim#ntheta" class="wikilink codevar-wikilink">ntheta</a>
+<a href="aim#ngrid" class="small-grey-link">ngrid</a> <a href="aim#nphi" class="small-grey-link">nphi</a> <a href="aim#nsa" class="small-grey-link">nsa</a> <a href="aim#nsb" class="small-grey-link">nsb</a> <a href="aim#nsc" class="small-grey-link">nsc</a> <a href="aim#ntheta" class="small-grey-link">ntheta</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-P">
-<a href="aim#phimax" class="wikilink codevar-wikilink">phimax</a> <a href="aim#phimin" class="wikilink codevar-wikilink">phimin</a>
+<a href="aim#phimax" class="small-grey-link">phimax</a> <a href="aim#phimin" class="small-grey-link">phimin</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-R">
-<a href="aim#radstp" class="wikilink codevar-wikilink">radstp</a> <a href="aim#ratmin" class="wikilink codevar-wikilink">ratmin</a> <a href="aim#rsurdir" class="wikilink codevar-wikilink">rsurdir</a> <a href="aim#rsurf" class="wikilink codevar-wikilink">rsurf</a>
+<a href="aim#radstp" class="small-grey-link">radstp</a> <a href="aim#ratmin" class="small-grey-link">ratmin</a> <a href="aim#rsurdir" class="small-grey-link">rsurdir</a> <a href="aim#rsurf" class="small-grey-link">rsurf</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-S">
-<a href="aim#scal" class="wikilink codevar-wikilink">scal</a> <a href="aim#surf" class="wikilink codevar-wikilink">surf</a>
+<a href="aim#scal" class="small-grey-link">scal</a> <a href="aim#surf" class="small-grey-link">surf</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-T">
-<a href="aim#thetamax" class="wikilink codevar-wikilink">thetamax</a> <a href="aim#thetamin" class="wikilink codevar-wikilink">thetamin</a>
+<a href="aim#thetamax" class="small-grey-link">thetamax</a> <a href="aim#thetamin" class="small-grey-link">thetamin</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-V">
-<a href="aim#vpts" class="wikilink codevar-wikilink">vpts</a>
+<a href="aim#vpts" class="small-grey-link">vpts</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="aim-tabs-All">
-<a href="aim#atom" class="wikilink codevar-wikilink">atom</a> <a href="aim#atrad" class="wikilink codevar-wikilink">atrad</a> <a href="aim#coff1" class="wikilink codevar-wikilink">coff1</a> <a href="aim#coff2" class="wikilink codevar-wikilink">coff2</a> <a href="aim#crit" class="wikilink codevar-wikilink">crit</a> <a href="aim#denout" class="wikilink codevar-wikilink">denout</a> <a href="aim#dltyp" class="wikilink codevar-wikilink">dltyp</a> <a href="aim#dpclim" class="wikilink codevar-wikilink">dpclim</a> <a href="aim#foldep" class="wikilink codevar-wikilink">foldep</a> <a href="aim#follow" class="wikilink codevar-wikilink">follow</a> <a href="aim#folstp" class="wikilink codevar-wikilink">folstp</a> <a href="aim#gpsurf" class="wikilink codevar-wikilink">gpsurf</a> <a href="aim#inpt" class="wikilink codevar-wikilink">inpt</a> <a href="aim#irho" class="wikilink codevar-wikilink">irho</a> <a href="aim#ivol" class="wikilink codevar-wikilink">ivol</a> <a href="aim#lapout" class="wikilink codevar-wikilink">lapout</a> <a href="aim#lgrad" class="wikilink codevar-wikilink">lgrad</a> <a href="aim#lgrad2" class="wikilink codevar-wikilink">lgrad2</a> <a href="aim#lstep" class="wikilink codevar-wikilink">lstep</a> <a href="aim#lstep2" class="wikilink codevar-wikilink">lstep2</a> <a href="aim#maxatd" class="wikilink codevar-wikilink">maxatd</a> <a href="aim#maxcpd" class="wikilink codevar-wikilink">maxcpd</a> <a href="aim#ngrid" class="wikilink codevar-wikilink">ngrid</a> <a href="aim#nphi" class="wikilink codevar-wikilink">nphi</a> <a href="aim#nsa" class="wikilink codevar-wikilink">nsa</a> <a href="aim#nsb" class="wikilink codevar-wikilink">nsb</a> <a href="aim#nsc" class="wikilink codevar-wikilink">nsc</a> <a href="aim#ntheta" class="wikilink codevar-wikilink">ntheta</a> <a href="aim#phimax" class="wikilink codevar-wikilink">phimax</a> <a href="aim#phimin" class="wikilink codevar-wikilink">phimin</a> <a href="aim#radstp" class="wikilink codevar-wikilink">radstp</a> <a href="aim#ratmin" class="wikilink codevar-wikilink">ratmin</a> <a href="aim#rsurdir" class="wikilink codevar-wikilink">rsurdir</a> <a href="aim#rsurf" class="wikilink codevar-wikilink">rsurf</a> <a href="aim#scal" class="wikilink codevar-wikilink">scal</a> <a href="aim#surf" class="wikilink codevar-wikilink">surf</a> <a href="aim#thetamax" class="wikilink codevar-wikilink">thetamax</a> <a href="aim#thetamin" class="wikilink codevar-wikilink">thetamin</a> <a href="aim#vpts" class="wikilink codevar-wikilink">vpts</a>
+<a href="aim#atom" class="small-grey-link">atom</a> <a href="aim#atrad" class="small-grey-link">atrad</a> <a href="aim#coff1" class="small-grey-link">coff1</a> <a href="aim#coff2" class="small-grey-link">coff2</a> <a href="aim#crit" class="small-grey-link">crit</a> <a href="aim#denout" class="small-grey-link">denout</a> <a href="aim#dltyp" class="small-grey-link">dltyp</a> <a href="aim#dpclim" class="small-grey-link">dpclim</a> <a href="aim#foldep" class="small-grey-link">foldep</a> <a href="aim#follow" class="small-grey-link">follow</a> <a href="aim#folstp" class="small-grey-link">folstp</a> <a href="aim#gpsurf" class="small-grey-link">gpsurf</a> <a href="aim#inpt" class="small-grey-link">inpt</a> <a href="aim#irho" class="small-grey-link">irho</a> <a href="aim#ivol" class="small-grey-link">ivol</a> <a href="aim#lapout" class="small-grey-link">lapout</a> <a href="aim#lgrad" class="small-grey-link">lgrad</a> <a href="aim#lgrad2" class="small-grey-link">lgrad2</a> <a href="aim#lstep" class="small-grey-link">lstep</a> <a href="aim#lstep2" class="small-grey-link">lstep2</a> <a href="aim#maxatd" class="small-grey-link">maxatd</a> <a href="aim#maxcpd" class="small-grey-link">maxcpd</a> <a href="aim#ngrid" class="small-grey-link">ngrid</a> <a href="aim#nphi" class="small-grey-link">nphi</a> <a href="aim#nsa" class="small-grey-link">nsa</a> <a href="aim#nsb" class="small-grey-link">nsb</a> <a href="aim#nsc" class="small-grey-link">nsc</a> <a href="aim#ntheta" class="small-grey-link">ntheta</a> <a href="aim#phimax" class="small-grey-link">phimax</a> <a href="aim#phimin" class="small-grey-link">phimin</a> <a href="aim#radstp" class="small-grey-link">radstp</a> <a href="aim#ratmin" class="small-grey-link">ratmin</a> <a href="aim#rsurdir" class="small-grey-link">rsurdir</a> <a href="aim#rsurf" class="small-grey-link">rsurf</a> <a href="aim#scal" class="small-grey-link">scal</a> <a href="aim#surf" class="small-grey-link">surf</a> <a href="aim#thetamax" class="small-grey-link">thetamax</a> <a href="aim#thetamin" class="small-grey-link">thetamin</a> <a href="aim#vpts" class="small-grey-link">vpts</a>
 </div>
 </div></div>## anaddb variables   
 
@@ -217,64 +217,64 @@ Change the input yaml files or the python code
 <!-- Tab panes -->
 <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="anaddb-tabs-A">
-<a href="anaddb#a2fsmear" class="wikilink codevar-wikilink">a2fsmear</a> <a href="anaddb#alphon" class="wikilink codevar-wikilink">alphon</a> <a href="anaddb#asr" class="wikilink codevar-wikilink">asr</a> <a href="anaddb#atftol" class="wikilink codevar-wikilink">atftol</a> <a href="anaddb#atifc" class="wikilink codevar-wikilink">atifc</a>
+<a href="anaddb#a2fsmear" class="small-grey-link">a2fsmear</a> <a href="anaddb#alphon" class="small-grey-link">alphon</a> <a href="anaddb#asr" class="small-grey-link">asr</a> <a href="anaddb#atftol" class="small-grey-link">atftol</a> <a href="anaddb#atifc" class="small-grey-link">atifc</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-B">
-<a href="anaddb#band_gap" class="wikilink codevar-wikilink">band_gap</a> <a href="anaddb#brav" class="wikilink codevar-wikilink">brav</a>
+<a href="anaddb#band_gap" class="small-grey-link">band_gap</a> <a href="anaddb#brav" class="small-grey-link">brav</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-C">
-<a href="anaddb#chneut" class="wikilink codevar-wikilink">chneut</a>
+<a href="anaddb#chneut" class="small-grey-link">chneut</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-D">
-<a href="anaddb#dieflag" class="wikilink codevar-wikilink">dieflag</a> <a href="anaddb#dipdip" class="wikilink codevar-wikilink">dipdip</a> <a href="anaddb#dosdeltae" class="wikilink codevar-wikilink">dosdeltae</a> <a href="anaddb#dossmear" class="wikilink codevar-wikilink">dossmear</a> <a href="anaddb#dossum" class="wikilink codevar-wikilink">dossum</a> <a href="anaddb#dostol" class="wikilink codevar-wikilink">dostol</a>
+<a href="anaddb#dieflag" class="small-grey-link">dieflag</a> <a href="anaddb#dipdip" class="small-grey-link">dipdip</a> <a href="anaddb#dosdeltae" class="small-grey-link">dosdeltae</a> <a href="anaddb#dossmear" class="small-grey-link">dossmear</a> <a href="anaddb#dossum" class="small-grey-link">dossum</a> <a href="anaddb#dostol" class="small-grey-link">dostol</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-E">
-<a href="anaddb#eivec" class="wikilink codevar-wikilink">eivec</a> <a href="anaddb#elaflag" class="wikilink codevar-wikilink">elaflag</a> <a href="anaddb#elph_fermie" class="wikilink codevar-wikilink">elph_fermie</a> <a href="anaddb#elphflag" class="wikilink codevar-wikilink">elphflag</a> <a href="anaddb#elphsmear" class="wikilink codevar-wikilink">elphsmear</a> <a href="anaddb#enunit" class="wikilink codevar-wikilink">enunit</a> <a href="anaddb#ep_b_max" class="wikilink codevar-wikilink">ep_b_max</a> <a href="anaddb#ep_b_min" class="wikilink codevar-wikilink">ep_b_min</a> <a href="anaddb#ep_extrael" class="wikilink codevar-wikilink">ep_extrael</a> <a href="anaddb#ep_int_gkk" class="wikilink codevar-wikilink">ep_int_gkk</a> <a href="anaddb#ep_keepbands" class="wikilink codevar-wikilink">ep_keepbands</a> <a href="anaddb#ep_nqpt" class="wikilink codevar-wikilink">ep_nqpt</a> <a href="anaddb#ep_nspline" class="wikilink codevar-wikilink">ep_nspline</a> <a href="anaddb#ep_prt_yambo" class="wikilink codevar-wikilink">ep_prt_yambo</a> <a href="anaddb#ep_qptlist" class="wikilink codevar-wikilink">ep_qptlist</a> <a href="anaddb#ep_scalprod" class="wikilink codevar-wikilink">ep_scalprod</a>
+<a href="anaddb#eivec" class="small-grey-link">eivec</a> <a href="anaddb#elaflag" class="small-grey-link">elaflag</a> <a href="anaddb#elph_fermie" class="small-grey-link">elph_fermie</a> <a href="anaddb#elphflag" class="small-grey-link">elphflag</a> <a href="anaddb#elphsmear" class="small-grey-link">elphsmear</a> <a href="anaddb#enunit" class="small-grey-link">enunit</a> <a href="anaddb#ep_b_max" class="small-grey-link">ep_b_max</a> <a href="anaddb#ep_b_min" class="small-grey-link">ep_b_min</a> <a href="anaddb#ep_extrael" class="small-grey-link">ep_extrael</a> <a href="anaddb#ep_int_gkk" class="small-grey-link">ep_int_gkk</a> <a href="anaddb#ep_keepbands" class="small-grey-link">ep_keepbands</a> <a href="anaddb#ep_nqpt" class="small-grey-link">ep_nqpt</a> <a href="anaddb#ep_nspline" class="small-grey-link">ep_nspline</a> <a href="anaddb#ep_prt_yambo" class="small-grey-link">ep_prt_yambo</a> <a href="anaddb#ep_qptlist" class="small-grey-link">ep_qptlist</a> <a href="anaddb#ep_scalprod" class="small-grey-link">ep_scalprod</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-F">
-<a href="anaddb#freeze_displ" class="wikilink codevar-wikilink">freeze_displ</a> <a href="anaddb#frmax" class="wikilink codevar-wikilink">frmax</a> <a href="anaddb#frmin" class="wikilink codevar-wikilink">frmin</a>
+<a href="anaddb#freeze_displ" class="small-grey-link">freeze_displ</a> <a href="anaddb#frmax" class="small-grey-link">frmax</a> <a href="anaddb#frmin" class="small-grey-link">frmin</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-G">
-<a href="anaddb#gkqwrite" class="wikilink codevar-wikilink">gkqwrite</a> <a href="anaddb#gruns_ddbs" class="wikilink codevar-wikilink">gruns_ddbs</a> <a href="anaddb#gruns_nddbs" class="wikilink codevar-wikilink">gruns_nddbs</a>
+<a href="anaddb#gkqwrite" class="small-grey-link">gkqwrite</a> <a href="anaddb#gruns_ddbs" class="small-grey-link">gruns_ddbs</a> <a href="anaddb#gruns_nddbs" class="small-grey-link">gruns_nddbs</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-I">
-<a href="anaddb#iatfix" class="wikilink codevar-wikilink">iatfix</a> <a href="anaddb#iatprj_bs" class="wikilink codevar-wikilink">iatprj_bs</a> <a href="anaddb#ifcana" class="wikilink codevar-wikilink">ifcana</a> <a href="anaddb#ifcflag" class="wikilink codevar-wikilink">ifcflag</a> <a href="anaddb#ifcout" class="wikilink codevar-wikilink">ifcout</a> <a href="anaddb#ifltransport" class="wikilink codevar-wikilink">ifltransport</a> <a href="anaddb#instrflag" class="wikilink codevar-wikilink">instrflag</a> <a href="anaddb#istrfix" class="wikilink codevar-wikilink">istrfix</a>
+<a href="anaddb#iatfix" class="small-grey-link">iatfix</a> <a href="anaddb#iatprj_bs" class="small-grey-link">iatprj_bs</a> <a href="anaddb#ifcana" class="small-grey-link">ifcana</a> <a href="anaddb#ifcflag" class="small-grey-link">ifcflag</a> <a href="anaddb#ifcout" class="small-grey-link">ifcout</a> <a href="anaddb#ifltransport" class="small-grey-link">ifltransport</a> <a href="anaddb#instrflag" class="small-grey-link">instrflag</a> <a href="anaddb#istrfix" class="small-grey-link">istrfix</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-K">
-<a href="anaddb#kptrlatt" class="wikilink codevar-wikilink">kptrlatt</a> <a href="anaddb#kptrlatt_fine" class="wikilink codevar-wikilink">kptrlatt_fine</a>
+<a href="anaddb#kptrlatt" class="small-grey-link">kptrlatt</a> <a href="anaddb#kptrlatt_fine" class="small-grey-link">kptrlatt_fine</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-M">
-<a href="anaddb#mustar" class="wikilink codevar-wikilink">mustar</a>
+<a href="anaddb#mustar" class="small-grey-link">mustar</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-N">
-<a href="anaddb#natfix" class="wikilink codevar-wikilink">natfix</a> <a href="anaddb#natifc" class="wikilink codevar-wikilink">natifc</a> <a href="anaddb#natprj_bs" class="wikilink codevar-wikilink">natprj_bs</a> <a href="anaddb#nchan" class="wikilink codevar-wikilink">nchan</a> <a href="anaddb#ndivsm" class="wikilink codevar-wikilink">ndivsm</a> <a href="anaddb#nfreq" class="wikilink codevar-wikilink">nfreq</a> <a href="anaddb#ng2qpt" class="wikilink codevar-wikilink">ng2qpt</a> <a href="anaddb#ngqpt" class="wikilink codevar-wikilink">ngqpt</a> <a href="anaddb#ngrids" class="wikilink codevar-wikilink">ngrids</a> <a href="anaddb#nlflag" class="wikilink codevar-wikilink">nlflag</a> <a href="anaddb#nph1l" class="wikilink codevar-wikilink">nph1l</a> <a href="anaddb#nph2l" class="wikilink codevar-wikilink">nph2l</a> <a href="anaddb#nqpath" class="wikilink codevar-wikilink">nqpath</a> <a href="anaddb#nqshft" class="wikilink codevar-wikilink">nqshft</a> <a href="anaddb#nsphere" class="wikilink codevar-wikilink">nsphere</a> <a href="anaddb#nstrfix" class="wikilink codevar-wikilink">nstrfix</a> <a href="anaddb#ntemper" class="wikilink codevar-wikilink">ntemper</a> <a href="anaddb#nwchan" class="wikilink codevar-wikilink">nwchan</a>
+<a href="anaddb#natfix" class="small-grey-link">natfix</a> <a href="anaddb#natifc" class="small-grey-link">natifc</a> <a href="anaddb#natprj_bs" class="small-grey-link">natprj_bs</a> <a href="anaddb#nchan" class="small-grey-link">nchan</a> <a href="anaddb#ndivsm" class="small-grey-link">ndivsm</a> <a href="anaddb#nfreq" class="small-grey-link">nfreq</a> <a href="anaddb#ng2qpt" class="small-grey-link">ng2qpt</a> <a href="anaddb#ngqpt" class="small-grey-link">ngqpt</a> <a href="anaddb#ngrids" class="small-grey-link">ngrids</a> <a href="anaddb#nlflag" class="small-grey-link">nlflag</a> <a href="anaddb#nph1l" class="small-grey-link">nph1l</a> <a href="anaddb#nph2l" class="small-grey-link">nph2l</a> <a href="anaddb#nqpath" class="small-grey-link">nqpath</a> <a href="anaddb#nqshft" class="small-grey-link">nqshft</a> <a href="anaddb#nsphere" class="small-grey-link">nsphere</a> <a href="anaddb#nstrfix" class="small-grey-link">nstrfix</a> <a href="anaddb#ntemper" class="small-grey-link">ntemper</a> <a href="anaddb#nwchan" class="small-grey-link">nwchan</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-O">
-<a href="anaddb#outboltztrap" class="wikilink codevar-wikilink">outboltztrap</a> <a href="anaddb#outscphon" class="wikilink codevar-wikilink">outscphon</a>
+<a href="anaddb#outboltztrap" class="small-grey-link">outboltztrap</a> <a href="anaddb#outscphon" class="small-grey-link">outscphon</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-P">
-<a href="anaddb#piezoflag" class="wikilink codevar-wikilink">piezoflag</a> <a href="anaddb#polflag" class="wikilink codevar-wikilink">polflag</a> <a href="anaddb#prt_ifc" class="wikilink codevar-wikilink">prt_ifc</a> <a href="anaddb#prtbltztrp" class="wikilink codevar-wikilink">prtbltztrp</a> <a href="anaddb#prtddb" class="wikilink codevar-wikilink">prtddb</a> <a href="anaddb#prtdos" class="wikilink codevar-wikilink">prtdos</a> <a href="anaddb#prtfsurf" class="wikilink codevar-wikilink">prtfsurf</a> <a href="anaddb#prtmbm" class="wikilink codevar-wikilink">prtmbm</a> <a href="anaddb#prtnest" class="wikilink codevar-wikilink">prtnest</a> <a href="anaddb#prtphbands" class="wikilink codevar-wikilink">prtphbands</a> <a href="anaddb#prtsrlr" class="wikilink codevar-wikilink">prtsrlr</a> <a href="anaddb#prtvol" class="wikilink codevar-wikilink">prtvol</a>
+<a href="anaddb#piezoflag" class="small-grey-link">piezoflag</a> <a href="anaddb#polflag" class="small-grey-link">polflag</a> <a href="anaddb#prt_ifc" class="small-grey-link">prt_ifc</a> <a href="anaddb#prtbltztrp" class="small-grey-link">prtbltztrp</a> <a href="anaddb#prtddb" class="small-grey-link">prtddb</a> <a href="anaddb#prtdos" class="small-grey-link">prtdos</a> <a href="anaddb#prtfsurf" class="small-grey-link">prtfsurf</a> <a href="anaddb#prtmbm" class="small-grey-link">prtmbm</a> <a href="anaddb#prtnest" class="small-grey-link">prtnest</a> <a href="anaddb#prtphbands" class="small-grey-link">prtphbands</a> <a href="anaddb#prtsrlr" class="small-grey-link">prtsrlr</a> <a href="anaddb#prtvol" class="small-grey-link">prtvol</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-Q">
-<a href="anaddb#q1shft" class="wikilink codevar-wikilink">q1shft</a> <a href="anaddb#q2shft" class="wikilink codevar-wikilink">q2shft</a> <a href="anaddb#qgrid_type" class="wikilink codevar-wikilink">qgrid_type</a> <a href="anaddb#qpath" class="wikilink codevar-wikilink">qpath</a> <a href="anaddb#qph1l" class="wikilink codevar-wikilink">qph1l</a> <a href="anaddb#qph2l" class="wikilink codevar-wikilink">qph2l</a> <a href="anaddb#qrefine" class="wikilink codevar-wikilink">qrefine</a>
+<a href="anaddb#q1shft" class="small-grey-link">q1shft</a> <a href="anaddb#q2shft" class="small-grey-link">q2shft</a> <a href="anaddb#qgrid_type" class="small-grey-link">qgrid_type</a> <a href="anaddb#qpath" class="small-grey-link">qpath</a> <a href="anaddb#qph1l" class="small-grey-link">qph1l</a> <a href="anaddb#qph2l" class="small-grey-link">qph2l</a> <a href="anaddb#qrefine" class="small-grey-link">qrefine</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-R">
-<a href="anaddb#ramansr" class="wikilink codevar-wikilink">ramansr</a> <a href="anaddb#relaxat" class="wikilink codevar-wikilink">relaxat</a> <a href="anaddb#relaxstr" class="wikilink codevar-wikilink">relaxstr</a> <a href="anaddb#rfmeth" class="wikilink codevar-wikilink">rfmeth</a> <a href="anaddb#rifcsph" class="wikilink codevar-wikilink">rifcsph</a>
+<a href="anaddb#ramansr" class="small-grey-link">ramansr</a> <a href="anaddb#relaxat" class="small-grey-link">relaxat</a> <a href="anaddb#relaxstr" class="small-grey-link">relaxstr</a> <a href="anaddb#rfmeth" class="small-grey-link">rfmeth</a> <a href="anaddb#rifcsph" class="small-grey-link">rifcsph</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-S">
-<a href="anaddb#selectz" class="wikilink codevar-wikilink">selectz</a> <a href="anaddb#symdynmat" class="wikilink codevar-wikilink">symdynmat</a> <a href="anaddb#symgkq" class="wikilink codevar-wikilink">symgkq</a>
+<a href="anaddb#selectz" class="small-grey-link">selectz</a> <a href="anaddb#symdynmat" class="small-grey-link">symdynmat</a> <a href="anaddb#symgkq" class="small-grey-link">symgkq</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-T">
-<a href="anaddb#targetpol" class="wikilink codevar-wikilink">targetpol</a> <a href="anaddb#telphint" class="wikilink codevar-wikilink">telphint</a> <a href="anaddb#temperinc" class="wikilink codevar-wikilink">temperinc</a> <a href="anaddb#tempermin" class="wikilink codevar-wikilink">tempermin</a> <a href="anaddb#thmflag" class="wikilink codevar-wikilink">thmflag</a> <a href="anaddb#thmtol" class="wikilink codevar-wikilink">thmtol</a>
+<a href="anaddb#targetpol" class="small-grey-link">targetpol</a> <a href="anaddb#telphint" class="small-grey-link">telphint</a> <a href="anaddb#temperinc" class="small-grey-link">temperinc</a> <a href="anaddb#tempermin" class="small-grey-link">tempermin</a> <a href="anaddb#thmflag" class="small-grey-link">thmflag</a> <a href="anaddb#thmtol" class="small-grey-link">thmtol</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-U">
-<a href="anaddb#use_k_fine" class="wikilink codevar-wikilink">use_k_fine</a>
+<a href="anaddb#use_k_fine" class="small-grey-link">use_k_fine</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-V">
-<a href="anaddb#vs_qrad_tolkms" class="wikilink codevar-wikilink">vs_qrad_tolkms</a>
+<a href="anaddb#vs_qrad_tolkms" class="small-grey-link">vs_qrad_tolkms</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="anaddb-tabs-All">
-<a href="anaddb#a2fsmear" class="wikilink codevar-wikilink">a2fsmear</a> <a href="anaddb#alphon" class="wikilink codevar-wikilink">alphon</a> <a href="anaddb#asr" class="wikilink codevar-wikilink">asr</a> <a href="anaddb#atftol" class="wikilink codevar-wikilink">atftol</a> <a href="anaddb#atifc" class="wikilink codevar-wikilink">atifc</a> <a href="anaddb#band_gap" class="wikilink codevar-wikilink">band_gap</a> <a href="anaddb#brav" class="wikilink codevar-wikilink">brav</a> <a href="anaddb#chneut" class="wikilink codevar-wikilink">chneut</a> <a href="anaddb#dieflag" class="wikilink codevar-wikilink">dieflag</a> <a href="anaddb#dipdip" class="wikilink codevar-wikilink">dipdip</a> <a href="anaddb#dosdeltae" class="wikilink codevar-wikilink">dosdeltae</a> <a href="anaddb#dossmear" class="wikilink codevar-wikilink">dossmear</a> <a href="anaddb#dossum" class="wikilink codevar-wikilink">dossum</a> <a href="anaddb#dostol" class="wikilink codevar-wikilink">dostol</a> <a href="anaddb#eivec" class="wikilink codevar-wikilink">eivec</a> <a href="anaddb#elaflag" class="wikilink codevar-wikilink">elaflag</a> <a href="anaddb#elph_fermie" class="wikilink codevar-wikilink">elph_fermie</a> <a href="anaddb#elphflag" class="wikilink codevar-wikilink">elphflag</a> <a href="anaddb#elphsmear" class="wikilink codevar-wikilink">elphsmear</a> <a href="anaddb#enunit" class="wikilink codevar-wikilink">enunit</a> <a href="anaddb#ep_b_max" class="wikilink codevar-wikilink">ep_b_max</a> <a href="anaddb#ep_b_min" class="wikilink codevar-wikilink">ep_b_min</a> <a href="anaddb#ep_extrael" class="wikilink codevar-wikilink">ep_extrael</a> <a href="anaddb#ep_int_gkk" class="wikilink codevar-wikilink">ep_int_gkk</a> <a href="anaddb#ep_keepbands" class="wikilink codevar-wikilink">ep_keepbands</a> <a href="anaddb#ep_nqpt" class="wikilink codevar-wikilink">ep_nqpt</a> <a href="anaddb#ep_nspline" class="wikilink codevar-wikilink">ep_nspline</a> <a href="anaddb#ep_prt_yambo" class="wikilink codevar-wikilink">ep_prt_yambo</a> <a href="anaddb#ep_qptlist" class="wikilink codevar-wikilink">ep_qptlist</a> <a href="anaddb#ep_scalprod" class="wikilink codevar-wikilink">ep_scalprod</a> <a href="anaddb#freeze_displ" class="wikilink codevar-wikilink">freeze_displ</a> <a href="anaddb#frmax" class="wikilink codevar-wikilink">frmax</a> <a href="anaddb#frmin" class="wikilink codevar-wikilink">frmin</a> <a href="anaddb#gkqwrite" class="wikilink codevar-wikilink">gkqwrite</a> <a href="anaddb#gruns_ddbs" class="wikilink codevar-wikilink">gruns_ddbs</a> <a href="anaddb#gruns_nddbs" class="wikilink codevar-wikilink">gruns_nddbs</a> <a href="anaddb#iatfix" class="wikilink codevar-wikilink">iatfix</a> <a href="anaddb#iatprj_bs" class="wikilink codevar-wikilink">iatprj_bs</a> <a href="anaddb#ifcana" class="wikilink codevar-wikilink">ifcana</a> <a href="anaddb#ifcflag" class="wikilink codevar-wikilink">ifcflag</a> <a href="anaddb#ifcout" class="wikilink codevar-wikilink">ifcout</a> <a href="anaddb#ifltransport" class="wikilink codevar-wikilink">ifltransport</a> <a href="anaddb#instrflag" class="wikilink codevar-wikilink">instrflag</a> <a href="anaddb#istrfix" class="wikilink codevar-wikilink">istrfix</a> <a href="anaddb#kptrlatt" class="wikilink codevar-wikilink">kptrlatt</a> <a href="anaddb#kptrlatt_fine" class="wikilink codevar-wikilink">kptrlatt_fine</a> <a href="anaddb#mustar" class="wikilink codevar-wikilink">mustar</a> <a href="anaddb#natfix" class="wikilink codevar-wikilink">natfix</a> <a href="anaddb#natifc" class="wikilink codevar-wikilink">natifc</a> <a href="anaddb#natprj_bs" class="wikilink codevar-wikilink">natprj_bs</a> <a href="anaddb#nchan" class="wikilink codevar-wikilink">nchan</a> <a href="anaddb#ndivsm" class="wikilink codevar-wikilink">ndivsm</a> <a href="anaddb#nfreq" class="wikilink codevar-wikilink">nfreq</a> <a href="anaddb#ng2qpt" class="wikilink codevar-wikilink">ng2qpt</a> <a href="anaddb#ngqpt" class="wikilink codevar-wikilink">ngqpt</a> <a href="anaddb#ngrids" class="wikilink codevar-wikilink">ngrids</a> <a href="anaddb#nlflag" class="wikilink codevar-wikilink">nlflag</a> <a href="anaddb#nph1l" class="wikilink codevar-wikilink">nph1l</a> <a href="anaddb#nph2l" class="wikilink codevar-wikilink">nph2l</a> <a href="anaddb#nqpath" class="wikilink codevar-wikilink">nqpath</a> <a href="anaddb#nqshft" class="wikilink codevar-wikilink">nqshft</a> <a href="anaddb#nsphere" class="wikilink codevar-wikilink">nsphere</a> <a href="anaddb#nstrfix" class="wikilink codevar-wikilink">nstrfix</a> <a href="anaddb#ntemper" class="wikilink codevar-wikilink">ntemper</a> <a href="anaddb#nwchan" class="wikilink codevar-wikilink">nwchan</a> <a href="anaddb#outboltztrap" class="wikilink codevar-wikilink">outboltztrap</a> <a href="anaddb#outscphon" class="wikilink codevar-wikilink">outscphon</a> <a href="anaddb#piezoflag" class="wikilink codevar-wikilink">piezoflag</a> <a href="anaddb#polflag" class="wikilink codevar-wikilink">polflag</a> <a href="anaddb#prt_ifc" class="wikilink codevar-wikilink">prt_ifc</a> <a href="anaddb#prtbltztrp" class="wikilink codevar-wikilink">prtbltztrp</a> <a href="anaddb#prtddb" class="wikilink codevar-wikilink">prtddb</a> <a href="anaddb#prtdos" class="wikilink codevar-wikilink">prtdos</a> <a href="anaddb#prtfsurf" class="wikilink codevar-wikilink">prtfsurf</a> <a href="anaddb#prtmbm" class="wikilink codevar-wikilink">prtmbm</a> <a href="anaddb#prtnest" class="wikilink codevar-wikilink">prtnest</a> <a href="anaddb#prtphbands" class="wikilink codevar-wikilink">prtphbands</a> <a href="anaddb#prtsrlr" class="wikilink codevar-wikilink">prtsrlr</a> <a href="anaddb#prtvol" class="wikilink codevar-wikilink">prtvol</a> <a href="anaddb#q1shft" class="wikilink codevar-wikilink">q1shft</a> <a href="anaddb#q2shft" class="wikilink codevar-wikilink">q2shft</a> <a href="anaddb#qgrid_type" class="wikilink codevar-wikilink">qgrid_type</a> <a href="anaddb#qpath" class="wikilink codevar-wikilink">qpath</a> <a href="anaddb#qph1l" class="wikilink codevar-wikilink">qph1l</a> <a href="anaddb#qph2l" class="wikilink codevar-wikilink">qph2l</a> <a href="anaddb#qrefine" class="wikilink codevar-wikilink">qrefine</a> <a href="anaddb#ramansr" class="wikilink codevar-wikilink">ramansr</a> <a href="anaddb#relaxat" class="wikilink codevar-wikilink">relaxat</a> <a href="anaddb#relaxstr" class="wikilink codevar-wikilink">relaxstr</a> <a href="anaddb#rfmeth" class="wikilink codevar-wikilink">rfmeth</a> <a href="anaddb#rifcsph" class="wikilink codevar-wikilink">rifcsph</a> <a href="anaddb#selectz" class="wikilink codevar-wikilink">selectz</a> <a href="anaddb#symdynmat" class="wikilink codevar-wikilink">symdynmat</a> <a href="anaddb#symgkq" class="wikilink codevar-wikilink">symgkq</a> <a href="anaddb#targetpol" class="wikilink codevar-wikilink">targetpol</a> <a href="anaddb#telphint" class="wikilink codevar-wikilink">telphint</a> <a href="anaddb#temperinc" class="wikilink codevar-wikilink">temperinc</a> <a href="anaddb#tempermin" class="wikilink codevar-wikilink">tempermin</a> <a href="anaddb#thmflag" class="wikilink codevar-wikilink">thmflag</a> <a href="anaddb#thmtol" class="wikilink codevar-wikilink">thmtol</a> <a href="anaddb#use_k_fine" class="wikilink codevar-wikilink">use_k_fine</a> <a href="anaddb#vs_qrad_tolkms" class="wikilink codevar-wikilink">vs_qrad_tolkms</a>
+<a href="anaddb#a2fsmear" class="small-grey-link">a2fsmear</a> <a href="anaddb#alphon" class="small-grey-link">alphon</a> <a href="anaddb#asr" class="small-grey-link">asr</a> <a href="anaddb#atftol" class="small-grey-link">atftol</a> <a href="anaddb#atifc" class="small-grey-link">atifc</a> <a href="anaddb#band_gap" class="small-grey-link">band_gap</a> <a href="anaddb#brav" class="small-grey-link">brav</a> <a href="anaddb#chneut" class="small-grey-link">chneut</a> <a href="anaddb#dieflag" class="small-grey-link">dieflag</a> <a href="anaddb#dipdip" class="small-grey-link">dipdip</a> <a href="anaddb#dosdeltae" class="small-grey-link">dosdeltae</a> <a href="anaddb#dossmear" class="small-grey-link">dossmear</a> <a href="anaddb#dossum" class="small-grey-link">dossum</a> <a href="anaddb#dostol" class="small-grey-link">dostol</a> <a href="anaddb#eivec" class="small-grey-link">eivec</a> <a href="anaddb#elaflag" class="small-grey-link">elaflag</a> <a href="anaddb#elph_fermie" class="small-grey-link">elph_fermie</a> <a href="anaddb#elphflag" class="small-grey-link">elphflag</a> <a href="anaddb#elphsmear" class="small-grey-link">elphsmear</a> <a href="anaddb#enunit" class="small-grey-link">enunit</a> <a href="anaddb#ep_b_max" class="small-grey-link">ep_b_max</a> <a href="anaddb#ep_b_min" class="small-grey-link">ep_b_min</a> <a href="anaddb#ep_extrael" class="small-grey-link">ep_extrael</a> <a href="anaddb#ep_int_gkk" class="small-grey-link">ep_int_gkk</a> <a href="anaddb#ep_keepbands" class="small-grey-link">ep_keepbands</a> <a href="anaddb#ep_nqpt" class="small-grey-link">ep_nqpt</a> <a href="anaddb#ep_nspline" class="small-grey-link">ep_nspline</a> <a href="anaddb#ep_prt_yambo" class="small-grey-link">ep_prt_yambo</a> <a href="anaddb#ep_qptlist" class="small-grey-link">ep_qptlist</a> <a href="anaddb#ep_scalprod" class="small-grey-link">ep_scalprod</a> <a href="anaddb#freeze_displ" class="small-grey-link">freeze_displ</a> <a href="anaddb#frmax" class="small-grey-link">frmax</a> <a href="anaddb#frmin" class="small-grey-link">frmin</a> <a href="anaddb#gkqwrite" class="small-grey-link">gkqwrite</a> <a href="anaddb#gruns_ddbs" class="small-grey-link">gruns_ddbs</a> <a href="anaddb#gruns_nddbs" class="small-grey-link">gruns_nddbs</a> <a href="anaddb#iatfix" class="small-grey-link">iatfix</a> <a href="anaddb#iatprj_bs" class="small-grey-link">iatprj_bs</a> <a href="anaddb#ifcana" class="small-grey-link">ifcana</a> <a href="anaddb#ifcflag" class="small-grey-link">ifcflag</a> <a href="anaddb#ifcout" class="small-grey-link">ifcout</a> <a href="anaddb#ifltransport" class="small-grey-link">ifltransport</a> <a href="anaddb#instrflag" class="small-grey-link">instrflag</a> <a href="anaddb#istrfix" class="small-grey-link">istrfix</a> <a href="anaddb#kptrlatt" class="small-grey-link">kptrlatt</a> <a href="anaddb#kptrlatt_fine" class="small-grey-link">kptrlatt_fine</a> <a href="anaddb#mustar" class="small-grey-link">mustar</a> <a href="anaddb#natfix" class="small-grey-link">natfix</a> <a href="anaddb#natifc" class="small-grey-link">natifc</a> <a href="anaddb#natprj_bs" class="small-grey-link">natprj_bs</a> <a href="anaddb#nchan" class="small-grey-link">nchan</a> <a href="anaddb#ndivsm" class="small-grey-link">ndivsm</a> <a href="anaddb#nfreq" class="small-grey-link">nfreq</a> <a href="anaddb#ng2qpt" class="small-grey-link">ng2qpt</a> <a href="anaddb#ngqpt" class="small-grey-link">ngqpt</a> <a href="anaddb#ngrids" class="small-grey-link">ngrids</a> <a href="anaddb#nlflag" class="small-grey-link">nlflag</a> <a href="anaddb#nph1l" class="small-grey-link">nph1l</a> <a href="anaddb#nph2l" class="small-grey-link">nph2l</a> <a href="anaddb#nqpath" class="small-grey-link">nqpath</a> <a href="anaddb#nqshft" class="small-grey-link">nqshft</a> <a href="anaddb#nsphere" class="small-grey-link">nsphere</a> <a href="anaddb#nstrfix" class="small-grey-link">nstrfix</a> <a href="anaddb#ntemper" class="small-grey-link">ntemper</a> <a href="anaddb#nwchan" class="small-grey-link">nwchan</a> <a href="anaddb#outboltztrap" class="small-grey-link">outboltztrap</a> <a href="anaddb#outscphon" class="small-grey-link">outscphon</a> <a href="anaddb#piezoflag" class="small-grey-link">piezoflag</a> <a href="anaddb#polflag" class="small-grey-link">polflag</a> <a href="anaddb#prt_ifc" class="small-grey-link">prt_ifc</a> <a href="anaddb#prtbltztrp" class="small-grey-link">prtbltztrp</a> <a href="anaddb#prtddb" class="small-grey-link">prtddb</a> <a href="anaddb#prtdos" class="small-grey-link">prtdos</a> <a href="anaddb#prtfsurf" class="small-grey-link">prtfsurf</a> <a href="anaddb#prtmbm" class="small-grey-link">prtmbm</a> <a href="anaddb#prtnest" class="small-grey-link">prtnest</a> <a href="anaddb#prtphbands" class="small-grey-link">prtphbands</a> <a href="anaddb#prtsrlr" class="small-grey-link">prtsrlr</a> <a href="anaddb#prtvol" class="small-grey-link">prtvol</a> <a href="anaddb#q1shft" class="small-grey-link">q1shft</a> <a href="anaddb#q2shft" class="small-grey-link">q2shft</a> <a href="anaddb#qgrid_type" class="small-grey-link">qgrid_type</a> <a href="anaddb#qpath" class="small-grey-link">qpath</a> <a href="anaddb#qph1l" class="small-grey-link">qph1l</a> <a href="anaddb#qph2l" class="small-grey-link">qph2l</a> <a href="anaddb#qrefine" class="small-grey-link">qrefine</a> <a href="anaddb#ramansr" class="small-grey-link">ramansr</a> <a href="anaddb#relaxat" class="small-grey-link">relaxat</a> <a href="anaddb#relaxstr" class="small-grey-link">relaxstr</a> <a href="anaddb#rfmeth" class="small-grey-link">rfmeth</a> <a href="anaddb#rifcsph" class="small-grey-link">rifcsph</a> <a href="anaddb#selectz" class="small-grey-link">selectz</a> <a href="anaddb#symdynmat" class="small-grey-link">symdynmat</a> <a href="anaddb#symgkq" class="small-grey-link">symgkq</a> <a href="anaddb#targetpol" class="small-grey-link">targetpol</a> <a href="anaddb#telphint" class="small-grey-link">telphint</a> <a href="anaddb#temperinc" class="small-grey-link">temperinc</a> <a href="anaddb#tempermin" class="small-grey-link">tempermin</a> <a href="anaddb#thmflag" class="small-grey-link">thmflag</a> <a href="anaddb#thmtol" class="small-grey-link">thmtol</a> <a href="anaddb#use_k_fine" class="small-grey-link">use_k_fine</a> <a href="anaddb#vs_qrad_tolkms" class="small-grey-link">vs_qrad_tolkms</a>
 </div>
 </div></div>## optic variables   
 
@@ -296,31 +296,31 @@ Change the input yaml files or the python code
 <!-- Tab panes -->
 <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="optic-tabs-B">
-<a href="optic#broadening" class="wikilink codevar-wikilink">broadening</a>
+<a href="optic#broadening" class="small-grey-link">broadening</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-D">
-<a href="optic#ddkfile" class="wikilink codevar-wikilink">ddkfile</a> <a href="optic#domega" class="wikilink codevar-wikilink">domega</a>
+<a href="optic#ddkfile" class="small-grey-link">ddkfile</a> <a href="optic#domega" class="small-grey-link">domega</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-L">
-<a href="optic#lin_comp" class="wikilink codevar-wikilink">lin_comp</a>
+<a href="optic#lin_comp" class="small-grey-link">lin_comp</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-M">
-<a href="optic#maxomega" class="wikilink codevar-wikilink">maxomega</a>
+<a href="optic#maxomega" class="small-grey-link">maxomega</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-N">
-<a href="optic#nonlin_comp" class="wikilink codevar-wikilink">nonlin_comp</a> <a href="optic#num_lin_comp" class="wikilink codevar-wikilink">num_lin_comp</a> <a href="optic#num_nonlin_comp" class="wikilink codevar-wikilink">num_nonlin_comp</a>
+<a href="optic#nonlin_comp" class="small-grey-link">nonlin_comp</a> <a href="optic#num_lin_comp" class="small-grey-link">num_lin_comp</a> <a href="optic#num_nonlin_comp" class="small-grey-link">num_nonlin_comp</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-S">
-<a href="optic#scissor" class="wikilink codevar-wikilink">scissor</a>
+<a href="optic#scissor" class="small-grey-link">scissor</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-T">
-<a href="optic#tolerance" class="wikilink codevar-wikilink">tolerance</a>
+<a href="optic#tolerance" class="small-grey-link">tolerance</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-W">
-<a href="optic#wfkfile" class="wikilink codevar-wikilink">wfkfile</a>
+<a href="optic#wfkfile" class="small-grey-link">wfkfile</a>
 </div>
 <div role="tabpanel" class="tab-pane" id="optic-tabs-All">
-<a href="optic#broadening" class="wikilink codevar-wikilink">broadening</a> <a href="optic#ddkfile" class="wikilink codevar-wikilink">ddkfile</a> <a href="optic#domega" class="wikilink codevar-wikilink">domega</a> <a href="optic#lin_comp" class="wikilink codevar-wikilink">lin_comp</a> <a href="optic#maxomega" class="wikilink codevar-wikilink">maxomega</a> <a href="optic#nonlin_comp" class="wikilink codevar-wikilink">nonlin_comp</a> <a href="optic#num_lin_comp" class="wikilink codevar-wikilink">num_lin_comp</a> <a href="optic#num_nonlin_comp" class="wikilink codevar-wikilink">num_nonlin_comp</a> <a href="optic#scissor" class="wikilink codevar-wikilink">scissor</a> <a href="optic#tolerance" class="wikilink codevar-wikilink">tolerance</a> <a href="optic#wfkfile" class="wikilink codevar-wikilink">wfkfile</a>
+<a href="optic#broadening" class="small-grey-link">broadening</a> <a href="optic#ddkfile" class="small-grey-link">ddkfile</a> <a href="optic#domega" class="small-grey-link">domega</a> <a href="optic#lin_comp" class="small-grey-link">lin_comp</a> <a href="optic#maxomega" class="small-grey-link">maxomega</a> <a href="optic#nonlin_comp" class="small-grey-link">nonlin_comp</a> <a href="optic#num_lin_comp" class="small-grey-link">num_lin_comp</a> <a href="optic#num_nonlin_comp" class="small-grey-link">num_nonlin_comp</a> <a href="optic#scissor" class="small-grey-link">scissor</a> <a href="optic#tolerance" class="small-grey-link">tolerance</a> <a href="optic#wfkfile" class="small-grey-link">wfkfile</a>
 </div>
 </div></div>
 
@@ -378,917 +378,917 @@ Enter any string to search in the database. Clicking without any request will gi
 <ul id="Letters">
 
 <li><ul id="A" class="TabContentLetter">
-<li class="HeaderLetter">A</li> <li><a href="basic#accuracy" class="">accuracy</a></li>
-<li><a href="basic#acell" class="">acell</a></li>
-<li><a href="rlx#adpimd" class="">adpimd</a></li>
-<li><a href="rlx#adpimd_gamma" class="">adpimd_gamma</a></li>
-<li><a href="gstate#algalch" class="">algalch</a></li>
-<li><a href="rlx#amu" class="">amu</a></li>
-<li><a href="basic#angdeg" class="">angdeg</a></li>
-<li><a href="eph#asr" class="">asr</a></li>
-<li><a href="ffield#atvshift" class="">atvshift</a></li>
-<li><a href="paral#autoparal" class="">autoparal</a></li>
-<li><a href="gw#awtr" class="">awtr</a></li>
-<li><a href="aim#atom" class="">atom@aim</a></li>
-<li><a href="aim#atrad" class="">atrad@aim</a></li>
-<li><a href="anaddb#a2fsmear" class="">a2fsmear@anaddb</a></li>
-<li><a href="anaddb#alphon" class="">alphon@anaddb</a></li>
-<li><a href="anaddb#asr" class="">asr@anaddb</a></li>
-<li><a href="anaddb#atftol" class="">atftol@anaddb</a></li>
-<li><a href="anaddb#atifc" class="">atifc@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">A</li> <li><a href="basic#accuracy" class="small-grey-link">accuracy</a></li>
+<li><a href="basic#acell" class="small-grey-link">acell</a></li>
+<li><a href="rlx#adpimd" class="small-grey-link">adpimd</a></li>
+<li><a href="rlx#adpimd_gamma" class="small-grey-link">adpimd_gamma</a></li>
+<li><a href="gstate#algalch" class="small-grey-link">algalch</a></li>
+<li><a href="rlx#amu" class="small-grey-link">amu</a></li>
+<li><a href="basic#angdeg" class="small-grey-link">angdeg</a></li>
+<li><a href="eph#asr" class="small-grey-link">asr</a></li>
+<li><a href="ffield#atvshift" class="small-grey-link">atvshift</a></li>
+<li><a href="paral#autoparal" class="small-grey-link">autoparal</a></li>
+<li><a href="gw#awtr" class="small-grey-link">awtr</a></li>
+<li><a href="aim#atom" class="small-grey-link">atom@aim</a></li>
+<li><a href="aim#atrad" class="small-grey-link">atrad@aim</a></li>
+<li><a href="anaddb#a2fsmear" class="small-grey-link">a2fsmear@anaddb</a></li>
+<li><a href="anaddb#alphon" class="small-grey-link">alphon@anaddb</a></li>
+<li><a href="anaddb#asr" class="small-grey-link">asr@anaddb</a></li>
+<li><a href="anaddb#atftol" class="small-grey-link">atftol@anaddb</a></li>
+<li><a href="anaddb#atifc" class="small-grey-link">atifc@anaddb</a></li> </ul></li>
 <li><ul id="B" class="TabContentLetter">
-<li class="HeaderLetter">B</li> <li><a href="paral#bandpp" class="">bandpp</a></li>
-<li><a href="ffield#bdberry" class="">bdberry</a></li>
-<li><a href="dfpt#bdeigrf" class="">bdeigrf</a></li>
-<li><a href="gw#bdgw" class="">bdgw</a></li>
-<li><a href="ffield#berryopt" class="">berryopt</a></li>
-<li><a href="ffield#berrysav" class="">berrysav</a></li>
-<li><a href="ffield#berrystep" class="">berrystep</a></li>
-<li><a href="ffield#bfield" class="">bfield</a></li>
-<li><a href="rlx#bmass" class="">bmass</a></li>
-<li><a href="gstate#boxcenter" class="">boxcenter</a></li>
-<li><a href="gstate#boxcutmin" class="">boxcutmin</a></li>
-<li><a href="geo#brvltt" class="">brvltt</a></li>
-<li><a href="bse#bs_algorithm" class="">bs_algorithm</a></li>
-<li><a href="bse#bs_calctype" class="">bs_calctype</a></li>
-<li><a href="bse#bs_coulomb_term" class="">bs_coulomb_term</a></li>
-<li><a href="bse#bs_coupling" class="">bs_coupling</a></li>
-<li><a href="bse#bs_eh_cutoff" class="">bs_eh_cutoff</a></li>
-<li><a href="bse#bs_exchange_term" class="">bs_exchange_term</a></li>
-<li><a href="bse#bs_freq_mesh" class="">bs_freq_mesh</a></li>
-<li><a href="bse#bs_hayd_term" class="">bs_hayd_term</a></li>
-<li><a href="bse#bs_haydock_niter" class="">bs_haydock_niter</a></li>
-<li><a href="bse#bs_haydock_tol" class="">bs_haydock_tol</a></li>
-<li><a href="bse#bs_interp_kmult" class="">bs_interp_kmult</a></li>
-<li><a href="bse#bs_interp_m3_width" class="">bs_interp_m3_width</a></li>
-<li><a href="bse#bs_interp_method" class="">bs_interp_method</a></li>
-<li><a href="bse#bs_interp_mode" class="">bs_interp_mode</a></li>
-<li><a href="bse#bs_interp_prep" class="">bs_interp_prep</a></li>
-<li><a href="bse#bs_interp_rl_nb" class="">bs_interp_rl_nb</a></li>
-<li><a href="bse#bs_loband" class="">bs_loband</a></li>
-<li><a href="bse#bs_nstates" class="">bs_nstates</a></li>
-<li><a href="dev#builtintest" class="">builtintest</a></li>
-<li><a href="paw#bxctmindg" class="">bxctmindg</a></li>
-<li><a href="anaddb#band_gap" class="">band_gap@anaddb</a></li>
-<li><a href="anaddb#brav" class="">brav@anaddb</a></li>
-<li><a href="optic#broadening" class="">broadening@optic</a></li> </ul></li>
+<li class="HeaderLetter">B</li> <li><a href="paral#bandpp" class="small-grey-link">bandpp</a></li>
+<li><a href="ffield#bdberry" class="small-grey-link">bdberry</a></li>
+<li><a href="dfpt#bdeigrf" class="small-grey-link">bdeigrf</a></li>
+<li><a href="gw#bdgw" class="small-grey-link">bdgw</a></li>
+<li><a href="ffield#berryopt" class="small-grey-link">berryopt</a></li>
+<li><a href="ffield#berrysav" class="small-grey-link">berrysav</a></li>
+<li><a href="ffield#berrystep" class="small-grey-link">berrystep</a></li>
+<li><a href="ffield#bfield" class="small-grey-link">bfield</a></li>
+<li><a href="rlx#bmass" class="small-grey-link">bmass</a></li>
+<li><a href="gstate#boxcenter" class="small-grey-link">boxcenter</a></li>
+<li><a href="gstate#boxcutmin" class="small-grey-link">boxcutmin</a></li>
+<li><a href="geo#brvltt" class="small-grey-link">brvltt</a></li>
+<li><a href="bse#bs_algorithm" class="small-grey-link">bs_algorithm</a></li>
+<li><a href="bse#bs_calctype" class="small-grey-link">bs_calctype</a></li>
+<li><a href="bse#bs_coulomb_term" class="small-grey-link">bs_coulomb_term</a></li>
+<li><a href="bse#bs_coupling" class="small-grey-link">bs_coupling</a></li>
+<li><a href="bse#bs_eh_cutoff" class="small-grey-link">bs_eh_cutoff</a></li>
+<li><a href="bse#bs_exchange_term" class="small-grey-link">bs_exchange_term</a></li>
+<li><a href="bse#bs_freq_mesh" class="small-grey-link">bs_freq_mesh</a></li>
+<li><a href="bse#bs_hayd_term" class="small-grey-link">bs_hayd_term</a></li>
+<li><a href="bse#bs_haydock_niter" class="small-grey-link">bs_haydock_niter</a></li>
+<li><a href="bse#bs_haydock_tol" class="small-grey-link">bs_haydock_tol</a></li>
+<li><a href="bse#bs_interp_kmult" class="small-grey-link">bs_interp_kmult</a></li>
+<li><a href="bse#bs_interp_m3_width" class="small-grey-link">bs_interp_m3_width</a></li>
+<li><a href="bse#bs_interp_method" class="small-grey-link">bs_interp_method</a></li>
+<li><a href="bse#bs_interp_mode" class="small-grey-link">bs_interp_mode</a></li>
+<li><a href="bse#bs_interp_prep" class="small-grey-link">bs_interp_prep</a></li>
+<li><a href="bse#bs_interp_rl_nb" class="small-grey-link">bs_interp_rl_nb</a></li>
+<li><a href="bse#bs_loband" class="small-grey-link">bs_loband</a></li>
+<li><a href="bse#bs_nstates" class="small-grey-link">bs_nstates</a></li>
+<li><a href="dev#builtintest" class="small-grey-link">builtintest</a></li>
+<li><a href="paw#bxctmindg" class="small-grey-link">bxctmindg</a></li>
+<li><a href="anaddb#band_gap" class="small-grey-link">band_gap@anaddb</a></li>
+<li><a href="anaddb#brav" class="small-grey-link">brav@anaddb</a></li>
+<li><a href="optic#broadening" class="small-grey-link">broadening@optic</a></li> </ul></li>
 <li><ul id="C" class="TabContentLetter">
-<li class="HeaderLetter">C</li> <li><a href="gw#cd_customnimfrqs" class="">cd_customnimfrqs</a></li>
-<li><a href="gw#cd_frqim_method" class="">cd_frqim_method</a></li>
-<li><a href="gw#cd_full_grid" class="">cd_full_grid</a></li>
-<li><a href="gw#cd_halfway_freq" class="">cd_halfway_freq</a></li>
-<li><a href="gw#cd_imfrqs" class="">cd_imfrqs</a></li>
-<li><a href="gw#cd_max_freq" class="">cd_max_freq</a></li>
-<li><a href="gw#cd_subset_freq" class="">cd_subset_freq</a></li>
-<li><a href="dev#cgtyphf" class="">cgtyphf</a></li>
-<li><a href="gstate#charge" class="">charge</a></li>
-<li><a href="geo#chempot" class="">chempot</a></li>
-<li><a href="gstate#chkexit" class="">chkexit</a></li>
-<li><a href="gstate#chkprim" class="">chkprim</a></li>
-<li><a href="gstate#chksymbreak" class="">chksymbreak</a></li>
-<li><a href="eph#chneut" class="">chneut</a></li>
-<li><a href="rlx#cineb_start" class="">cineb_start</a></li>
-<li><a href="gstate#cpuh" class="">cpuh</a></li>
-<li><a href="gstate#cpum" class="">cpum</a></li>
-<li><a href="gstate#cpus" class="">cpus</a></li>
-<li><a href="aim#coff1" class="">coff1@aim</a></li>
-<li><a href="aim#coff2" class="">coff2@aim</a></li>
-<li><a href="aim#crit" class="">crit@aim</a></li>
-<li><a href="anaddb#chneut" class="">chneut@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">C</li> <li><a href="gw#cd_customnimfrqs" class="small-grey-link">cd_customnimfrqs</a></li>
+<li><a href="gw#cd_frqim_method" class="small-grey-link">cd_frqim_method</a></li>
+<li><a href="gw#cd_full_grid" class="small-grey-link">cd_full_grid</a></li>
+<li><a href="gw#cd_halfway_freq" class="small-grey-link">cd_halfway_freq</a></li>
+<li><a href="gw#cd_imfrqs" class="small-grey-link">cd_imfrqs</a></li>
+<li><a href="gw#cd_max_freq" class="small-grey-link">cd_max_freq</a></li>
+<li><a href="gw#cd_subset_freq" class="small-grey-link">cd_subset_freq</a></li>
+<li><a href="dev#cgtyphf" class="small-grey-link">cgtyphf</a></li>
+<li><a href="gstate#charge" class="small-grey-link">charge</a></li>
+<li><a href="geo#chempot" class="small-grey-link">chempot</a></li>
+<li><a href="gstate#chkexit" class="small-grey-link">chkexit</a></li>
+<li><a href="gstate#chkprim" class="small-grey-link">chkprim</a></li>
+<li><a href="gstate#chksymbreak" class="small-grey-link">chksymbreak</a></li>
+<li><a href="eph#chneut" class="small-grey-link">chneut</a></li>
+<li><a href="rlx#cineb_start" class="small-grey-link">cineb_start</a></li>
+<li><a href="gstate#cpuh" class="small-grey-link">cpuh</a></li>
+<li><a href="gstate#cpum" class="small-grey-link">cpum</a></li>
+<li><a href="gstate#cpus" class="small-grey-link">cpus</a></li>
+<li><a href="aim#coff1" class="small-grey-link">coff1@aim</a></li>
+<li><a href="aim#coff2" class="small-grey-link">coff2@aim</a></li>
+<li><a href="aim#crit" class="small-grey-link">crit@aim</a></li>
+<li><a href="anaddb#chneut" class="small-grey-link">chneut@anaddb</a></li> </ul></li>
 <li><ul id="D" class="TabContentLetter">
-<li class="HeaderLetter">D</li> <li><a href="dfpt#d3e_pert1_atpol" class="">d3e_pert1_atpol</a></li>
-<li><a href="dfpt#d3e_pert1_dir" class="">d3e_pert1_dir</a></li>
-<li><a href="dfpt#d3e_pert1_elfd" class="">d3e_pert1_elfd</a></li>
-<li><a href="dfpt#d3e_pert1_phon" class="">d3e_pert1_phon</a></li>
-<li><a href="dfpt#d3e_pert2_atpol" class="">d3e_pert2_atpol</a></li>
-<li><a href="dfpt#d3e_pert2_dir" class="">d3e_pert2_dir</a></li>
-<li><a href="dfpt#d3e_pert2_elfd" class="">d3e_pert2_elfd</a></li>
-<li><a href="dfpt#d3e_pert2_phon" class="">d3e_pert2_phon</a></li>
-<li><a href="dfpt#d3e_pert3_atpol" class="">d3e_pert3_atpol</a></li>
-<li><a href="dfpt#d3e_pert3_dir" class="">d3e_pert3_dir</a></li>
-<li><a href="dfpt#d3e_pert3_elfd" class="">d3e_pert3_elfd</a></li>
-<li><a href="dfpt#d3e_pert3_phon" class="">d3e_pert3_phon</a></li>
-<li><a href="ffield#ddamp" class="">ddamp</a></li>
-<li><a href="eph#ddb_ngqpt" class="">ddb_ngqpt</a></li>
-<li><a href="eph#ddb_shiftq" class="">ddb_shiftq</a></li>
-<li><a href="rlx#delayperm" class="">delayperm</a></li>
-<li><a href="dev#densfor_pred" class="">densfor_pred</a></li>
-<li><a href="dev#densty" class="">densty</a></li>
-<li><a href="ffield#dfield" class="">dfield</a></li>
-<li><a href="dfpt#dfpt_sciss" class="">dfpt_sciss</a></li>
-<li><a href="gstate#diecut" class="">diecut</a></li>
-<li><a href="gstate#diegap" class="">diegap</a></li>
-<li><a href="gstate#dielam" class="">dielam</a></li>
-<li><a href="gstate#dielng" class="">dielng</a></li>
-<li><a href="gstate#diemac" class="">diemac</a></li>
-<li><a href="gstate#diemix" class="">diemix</a></li>
-<li><a href="gstate#diemixmag" class="">diemixmag</a></li>
-<li><a href="rlx#diismemory" class="">diismemory</a></li>
-<li><a href="rlx#dilatmx" class="">dilatmx</a></li>
-<li><a href="eph#dipdip" class="">dipdip</a></li>
-<li><a href="paw#dmatpawu" class="">dmatpawu</a></li>
-<li><a href="paw#dmatpuopt" class="">dmatpuopt</a></li>
-<li><a href="paw#dmatudiag" class="">dmatudiag</a></li>
-<li><a href="dmft#dmft_dc" class="">dmft_dc</a></li>
-<li><a href="dmft#dmft_entropy" class="">dmft_entropy</a></li>
-<li><a href="dmft#dmft_iter" class="">dmft_iter</a></li>
-<li><a href="dmft#dmft_mxsf" class="">dmft_mxsf</a></li>
-<li><a href="dmft#dmft_nlambda" class="">dmft_nlambda</a></li>
-<li><a href="dmft#dmft_nwli" class="">dmft_nwli</a></li>
-<li><a href="dmft#dmft_nwlo" class="">dmft_nwlo</a></li>
-<li><a href="dev#dmft_read_occnd" class="">dmft_read_occnd</a></li>
-<li><a href="dmft#dmft_rslf" class="">dmft_rslf</a></li>
-<li><a href="dmft#dmft_solv" class="">dmft_solv</a></li>
-<li><a href="dmft#dmft_t2g" class="">dmft_t2g</a></li>
-<li><a href="dmft#dmft_tolfreq" class="">dmft_tolfreq</a></li>
-<li><a href="dmft#dmft_tollc" class="">dmft_tollc</a></li>
-<li><a href="dmft#dmftbandf" class="">dmftbandf</a></li>
-<li><a href="dmft#dmftbandi" class="">dmftbandi</a></li>
-<li><a href="dmft#dmftcheck" class="">dmftcheck</a></li>
-<li><a href="dev#dmftctqmc_basis" class="">dmftctqmc_basis</a></li>
-<li><a href="dmft#dmftctqmc_check" class="">dmftctqmc_check</a></li>
-<li><a href="dmft#dmftctqmc_correl" class="">dmftctqmc_correl</a></li>
-<li><a href="dmft#dmftctqmc_gmove" class="">dmftctqmc_gmove</a></li>
-<li><a href="dmft#dmftctqmc_grnns" class="">dmftctqmc_grnns</a></li>
-<li><a href="dmft#dmftctqmc_meas" class="">dmftctqmc_meas</a></li>
-<li><a href="dmft#dmftctqmc_mov" class="">dmftctqmc_mov</a></li>
-<li><a href="dmft#dmftctqmc_mrka" class="">dmftctqmc_mrka</a></li>
-<li><a href="dmft#dmftctqmc_order" class="">dmftctqmc_order</a></li>
-<li><a href="dmft#dmftctqmc_triqs_nleg" class="">dmftctqmc_triqs_nleg</a></li>
-<li><a href="dmft#dmftqmc_l" class="">dmftqmc_l</a></li>
-<li><a href="dmft#dmftqmc_n" class="">dmftqmc_n</a></li>
-<li><a href="dmft#dmftqmc_seed" class="">dmftqmc_seed</a></li>
-<li><a href="dmft#dmftqmc_therm" class="">dmftqmc_therm</a></li>
-<li><a href="gstate#dosdeltae" class="">dosdeltae</a></li>
-<li><a href="rlx#dtion" class="">dtion</a></li>
-<li><a href="rlx#dynimage" class="">dynimage</a></li>
-<li><a href="aim#denout" class="">denout@aim</a></li>
-<li><a href="aim#dltyp" class="">dltyp@aim</a></li>
-<li><a href="aim#dpclim" class="">dpclim@aim</a></li>
-<li><a href="anaddb#dieflag" class="">dieflag@anaddb</a></li>
-<li><a href="anaddb#dipdip" class="">dipdip@anaddb</a></li>
-<li><a href="anaddb#dosdeltae" class="">dosdeltae@anaddb</a></li>
-<li><a href="anaddb#dossmear" class="">dossmear@anaddb</a></li>
-<li><a href="anaddb#dossum" class="">dossum@anaddb</a></li>
-<li><a href="anaddb#dostol" class="">dostol@anaddb</a></li>
-<li><a href="optic#ddkfile" class="">ddkfile@optic</a></li>
-<li><a href="optic#domega" class="">domega@optic</a></li> </ul></li>
+<li class="HeaderLetter">D</li> <li><a href="dfpt#d3e_pert1_atpol" class="small-grey-link">d3e_pert1_atpol</a></li>
+<li><a href="dfpt#d3e_pert1_dir" class="small-grey-link">d3e_pert1_dir</a></li>
+<li><a href="dfpt#d3e_pert1_elfd" class="small-grey-link">d3e_pert1_elfd</a></li>
+<li><a href="dfpt#d3e_pert1_phon" class="small-grey-link">d3e_pert1_phon</a></li>
+<li><a href="dfpt#d3e_pert2_atpol" class="small-grey-link">d3e_pert2_atpol</a></li>
+<li><a href="dfpt#d3e_pert2_dir" class="small-grey-link">d3e_pert2_dir</a></li>
+<li><a href="dfpt#d3e_pert2_elfd" class="small-grey-link">d3e_pert2_elfd</a></li>
+<li><a href="dfpt#d3e_pert2_phon" class="small-grey-link">d3e_pert2_phon</a></li>
+<li><a href="dfpt#d3e_pert3_atpol" class="small-grey-link">d3e_pert3_atpol</a></li>
+<li><a href="dfpt#d3e_pert3_dir" class="small-grey-link">d3e_pert3_dir</a></li>
+<li><a href="dfpt#d3e_pert3_elfd" class="small-grey-link">d3e_pert3_elfd</a></li>
+<li><a href="dfpt#d3e_pert3_phon" class="small-grey-link">d3e_pert3_phon</a></li>
+<li><a href="ffield#ddamp" class="small-grey-link">ddamp</a></li>
+<li><a href="eph#ddb_ngqpt" class="small-grey-link">ddb_ngqpt</a></li>
+<li><a href="eph#ddb_shiftq" class="small-grey-link">ddb_shiftq</a></li>
+<li><a href="rlx#delayperm" class="small-grey-link">delayperm</a></li>
+<li><a href="dev#densfor_pred" class="small-grey-link">densfor_pred</a></li>
+<li><a href="dev#densty" class="small-grey-link">densty</a></li>
+<li><a href="ffield#dfield" class="small-grey-link">dfield</a></li>
+<li><a href="dfpt#dfpt_sciss" class="small-grey-link">dfpt_sciss</a></li>
+<li><a href="gstate#diecut" class="small-grey-link">diecut</a></li>
+<li><a href="gstate#diegap" class="small-grey-link">diegap</a></li>
+<li><a href="gstate#dielam" class="small-grey-link">dielam</a></li>
+<li><a href="gstate#dielng" class="small-grey-link">dielng</a></li>
+<li><a href="gstate#diemac" class="small-grey-link">diemac</a></li>
+<li><a href="gstate#diemix" class="small-grey-link">diemix</a></li>
+<li><a href="gstate#diemixmag" class="small-grey-link">diemixmag</a></li>
+<li><a href="rlx#diismemory" class="small-grey-link">diismemory</a></li>
+<li><a href="rlx#dilatmx" class="small-grey-link">dilatmx</a></li>
+<li><a href="eph#dipdip" class="small-grey-link">dipdip</a></li>
+<li><a href="paw#dmatpawu" class="small-grey-link">dmatpawu</a></li>
+<li><a href="paw#dmatpuopt" class="small-grey-link">dmatpuopt</a></li>
+<li><a href="paw#dmatudiag" class="small-grey-link">dmatudiag</a></li>
+<li><a href="dmft#dmft_dc" class="small-grey-link">dmft_dc</a></li>
+<li><a href="dmft#dmft_entropy" class="small-grey-link">dmft_entropy</a></li>
+<li><a href="dmft#dmft_iter" class="small-grey-link">dmft_iter</a></li>
+<li><a href="dmft#dmft_mxsf" class="small-grey-link">dmft_mxsf</a></li>
+<li><a href="dmft#dmft_nlambda" class="small-grey-link">dmft_nlambda</a></li>
+<li><a href="dmft#dmft_nwli" class="small-grey-link">dmft_nwli</a></li>
+<li><a href="dmft#dmft_nwlo" class="small-grey-link">dmft_nwlo</a></li>
+<li><a href="dev#dmft_read_occnd" class="small-grey-link">dmft_read_occnd</a></li>
+<li><a href="dmft#dmft_rslf" class="small-grey-link">dmft_rslf</a></li>
+<li><a href="dmft#dmft_solv" class="small-grey-link">dmft_solv</a></li>
+<li><a href="dmft#dmft_t2g" class="small-grey-link">dmft_t2g</a></li>
+<li><a href="dmft#dmft_tolfreq" class="small-grey-link">dmft_tolfreq</a></li>
+<li><a href="dmft#dmft_tollc" class="small-grey-link">dmft_tollc</a></li>
+<li><a href="dmft#dmftbandf" class="small-grey-link">dmftbandf</a></li>
+<li><a href="dmft#dmftbandi" class="small-grey-link">dmftbandi</a></li>
+<li><a href="dmft#dmftcheck" class="small-grey-link">dmftcheck</a></li>
+<li><a href="dev#dmftctqmc_basis" class="small-grey-link">dmftctqmc_basis</a></li>
+<li><a href="dmft#dmftctqmc_check" class="small-grey-link">dmftctqmc_check</a></li>
+<li><a href="dmft#dmftctqmc_correl" class="small-grey-link">dmftctqmc_correl</a></li>
+<li><a href="dmft#dmftctqmc_gmove" class="small-grey-link">dmftctqmc_gmove</a></li>
+<li><a href="dmft#dmftctqmc_grnns" class="small-grey-link">dmftctqmc_grnns</a></li>
+<li><a href="dmft#dmftctqmc_meas" class="small-grey-link">dmftctqmc_meas</a></li>
+<li><a href="dmft#dmftctqmc_mov" class="small-grey-link">dmftctqmc_mov</a></li>
+<li><a href="dmft#dmftctqmc_mrka" class="small-grey-link">dmftctqmc_mrka</a></li>
+<li><a href="dmft#dmftctqmc_order" class="small-grey-link">dmftctqmc_order</a></li>
+<li><a href="dmft#dmftctqmc_triqs_nleg" class="small-grey-link">dmftctqmc_triqs_nleg</a></li>
+<li><a href="dmft#dmftqmc_l" class="small-grey-link">dmftqmc_l</a></li>
+<li><a href="dmft#dmftqmc_n" class="small-grey-link">dmftqmc_n</a></li>
+<li><a href="dmft#dmftqmc_seed" class="small-grey-link">dmftqmc_seed</a></li>
+<li><a href="dmft#dmftqmc_therm" class="small-grey-link">dmftqmc_therm</a></li>
+<li><a href="gstate#dosdeltae" class="small-grey-link">dosdeltae</a></li>
+<li><a href="rlx#dtion" class="small-grey-link">dtion</a></li>
+<li><a href="rlx#dynimage" class="small-grey-link">dynimage</a></li>
+<li><a href="aim#denout" class="small-grey-link">denout@aim</a></li>
+<li><a href="aim#dltyp" class="small-grey-link">dltyp@aim</a></li>
+<li><a href="aim#dpclim" class="small-grey-link">dpclim@aim</a></li>
+<li><a href="anaddb#dieflag" class="small-grey-link">dieflag@anaddb</a></li>
+<li><a href="anaddb#dipdip" class="small-grey-link">dipdip@anaddb</a></li>
+<li><a href="anaddb#dosdeltae" class="small-grey-link">dosdeltae@anaddb</a></li>
+<li><a href="anaddb#dossmear" class="small-grey-link">dossmear@anaddb</a></li>
+<li><a href="anaddb#dossum" class="small-grey-link">dossum@anaddb</a></li>
+<li><a href="anaddb#dostol" class="small-grey-link">dostol@anaddb</a></li>
+<li><a href="optic#ddkfile" class="small-grey-link">ddkfile@optic</a></li>
+<li><a href="optic#domega" class="small-grey-link">domega@optic</a></li> </ul></li>
 <li><ul id="E" class="TabContentLetter">
-<li class="HeaderLetter">E</li> <li><a href="basic#ecut" class="">ecut</a></li>
-<li><a href="gw#ecuteps" class="">ecuteps</a></li>
-<li><a href="gw#ecutsigx" class="">ecutsigx</a></li>
-<li><a href="rlx#ecutsm" class="">ecutsm</a></li>
-<li><a href="gw#ecutwfn" class="">ecutwfn</a></li>
-<li><a href="dev#effmass_free" class="">effmass_free</a></li>
-<li><a href="ffield#efield" class="">efield</a></li>
-<li><a href="dfpt#efmas" class="">efmas</a></li>
-<li><a href="dfpt#efmas_bands" class="">efmas_bands</a></li>
-<li><a href="dfpt#efmas_calc_dirs" class="">efmas_calc_dirs</a></li>
-<li><a href="dfpt#efmas_deg" class="">efmas_deg</a></li>
-<li><a href="dfpt#efmas_deg_tol" class="">efmas_deg_tol</a></li>
-<li><a href="dfpt#efmas_dim" class="">efmas_dim</a></li>
-<li><a href="dfpt#efmas_dirs" class="">efmas_dirs</a></li>
-<li><a href="dfpt#efmas_n_dirs" class="">efmas_n_dirs</a></li>
-<li><a href="dfpt#efmas_ntheta" class="">efmas_ntheta</a></li>
-<li><a href="basic#einterp" class="">einterp</a></li>
-<li><a href="dfpt#elph2_imagden" class="">elph2_imagden</a></li>
-<li><a href="gstate#enunit" class="">enunit</a></li>
-<li><a href="eph#eph_extrael" class="">eph_extrael</a></li>
-<li><a href="eph#eph_fermie" class="">eph_fermie</a></li>
-<li><a href="eph#eph_fsewin" class="">eph_fsewin</a></li>
-<li><a href="eph#eph_fsmear" class="">eph_fsmear</a></li>
-<li><a href="eph#eph_intmeth" class="">eph_intmeth</a></li>
-<li><a href="eph#eph_mustar" class="">eph_mustar</a></li>
-<li><a href="eph#eph_ngqpt_fine" class="">eph_ngqpt_fine</a></li>
-<li><a href="dfpt#eph_task" class="">eph_task</a></li>
-<li><a href="eph#eph_transport" class="">eph_transport</a></li>
-<li><a href="dev#eshift" class="">eshift</a></li>
-<li><a href="dfpt#esmear" class="">esmear</a></li>
-<li><a href="dev#exchmix" class="">exchmix</a></li>
-<li><a href="dev#exchn2n3d" class="">exchn2n3d</a></li>
-<li><a href="dev#extrapwf" class="">extrapwf</a></li>
-<li><a href="anaddb#eivec" class="">eivec@anaddb</a></li>
-<li><a href="anaddb#elaflag" class="">elaflag@anaddb</a></li>
-<li><a href="anaddb#elph_fermie" class="">elph_fermie@anaddb</a></li>
-<li><a href="anaddb#elphflag" class="">elphflag@anaddb</a></li>
-<li><a href="anaddb#elphsmear" class="">elphsmear@anaddb</a></li>
-<li><a href="anaddb#enunit" class="">enunit@anaddb</a></li>
-<li><a href="anaddb#ep_b_max" class="">ep_b_max@anaddb</a></li>
-<li><a href="anaddb#ep_b_min" class="">ep_b_min@anaddb</a></li>
-<li><a href="anaddb#ep_extrael" class="">ep_extrael@anaddb</a></li>
-<li><a href="anaddb#ep_int_gkk" class="">ep_int_gkk@anaddb</a></li>
-<li><a href="anaddb#ep_keepbands" class="">ep_keepbands@anaddb</a></li>
-<li><a href="anaddb#ep_nqpt" class="">ep_nqpt@anaddb</a></li>
-<li><a href="anaddb#ep_nspline" class="">ep_nspline@anaddb</a></li>
-<li><a href="anaddb#ep_prt_yambo" class="">ep_prt_yambo@anaddb</a></li>
-<li><a href="anaddb#ep_qptlist" class="">ep_qptlist@anaddb</a></li>
-<li><a href="anaddb#ep_scalprod" class="">ep_scalprod@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">E</li> <li><a href="basic#ecut" class="small-grey-link">ecut</a></li>
+<li><a href="gw#ecuteps" class="small-grey-link">ecuteps</a></li>
+<li><a href="gw#ecutsigx" class="small-grey-link">ecutsigx</a></li>
+<li><a href="rlx#ecutsm" class="small-grey-link">ecutsm</a></li>
+<li><a href="gw#ecutwfn" class="small-grey-link">ecutwfn</a></li>
+<li><a href="dev#effmass_free" class="small-grey-link">effmass_free</a></li>
+<li><a href="ffield#efield" class="small-grey-link">efield</a></li>
+<li><a href="dfpt#efmas" class="small-grey-link">efmas</a></li>
+<li><a href="dfpt#efmas_bands" class="small-grey-link">efmas_bands</a></li>
+<li><a href="dfpt#efmas_calc_dirs" class="small-grey-link">efmas_calc_dirs</a></li>
+<li><a href="dfpt#efmas_deg" class="small-grey-link">efmas_deg</a></li>
+<li><a href="dfpt#efmas_deg_tol" class="small-grey-link">efmas_deg_tol</a></li>
+<li><a href="dfpt#efmas_dim" class="small-grey-link">efmas_dim</a></li>
+<li><a href="dfpt#efmas_dirs" class="small-grey-link">efmas_dirs</a></li>
+<li><a href="dfpt#efmas_n_dirs" class="small-grey-link">efmas_n_dirs</a></li>
+<li><a href="dfpt#efmas_ntheta" class="small-grey-link">efmas_ntheta</a></li>
+<li><a href="basic#einterp" class="small-grey-link">einterp</a></li>
+<li><a href="dfpt#elph2_imagden" class="small-grey-link">elph2_imagden</a></li>
+<li><a href="gstate#enunit" class="small-grey-link">enunit</a></li>
+<li><a href="eph#eph_extrael" class="small-grey-link">eph_extrael</a></li>
+<li><a href="eph#eph_fermie" class="small-grey-link">eph_fermie</a></li>
+<li><a href="eph#eph_fsewin" class="small-grey-link">eph_fsewin</a></li>
+<li><a href="eph#eph_fsmear" class="small-grey-link">eph_fsmear</a></li>
+<li><a href="eph#eph_intmeth" class="small-grey-link">eph_intmeth</a></li>
+<li><a href="eph#eph_mustar" class="small-grey-link">eph_mustar</a></li>
+<li><a href="eph#eph_ngqpt_fine" class="small-grey-link">eph_ngqpt_fine</a></li>
+<li><a href="dfpt#eph_task" class="small-grey-link">eph_task</a></li>
+<li><a href="eph#eph_transport" class="small-grey-link">eph_transport</a></li>
+<li><a href="dev#eshift" class="small-grey-link">eshift</a></li>
+<li><a href="dfpt#esmear" class="small-grey-link">esmear</a></li>
+<li><a href="dev#exchmix" class="small-grey-link">exchmix</a></li>
+<li><a href="dev#exchn2n3d" class="small-grey-link">exchn2n3d</a></li>
+<li><a href="dev#extrapwf" class="small-grey-link">extrapwf</a></li>
+<li><a href="anaddb#eivec" class="small-grey-link">eivec@anaddb</a></li>
+<li><a href="anaddb#elaflag" class="small-grey-link">elaflag@anaddb</a></li>
+<li><a href="anaddb#elph_fermie" class="small-grey-link">elph_fermie@anaddb</a></li>
+<li><a href="anaddb#elphflag" class="small-grey-link">elphflag@anaddb</a></li>
+<li><a href="anaddb#elphsmear" class="small-grey-link">elphsmear@anaddb</a></li>
+<li><a href="anaddb#enunit" class="small-grey-link">enunit@anaddb</a></li>
+<li><a href="anaddb#ep_b_max" class="small-grey-link">ep_b_max@anaddb</a></li>
+<li><a href="anaddb#ep_b_min" class="small-grey-link">ep_b_min@anaddb</a></li>
+<li><a href="anaddb#ep_extrael" class="small-grey-link">ep_extrael@anaddb</a></li>
+<li><a href="anaddb#ep_int_gkk" class="small-grey-link">ep_int_gkk@anaddb</a></li>
+<li><a href="anaddb#ep_keepbands" class="small-grey-link">ep_keepbands@anaddb</a></li>
+<li><a href="anaddb#ep_nqpt" class="small-grey-link">ep_nqpt@anaddb</a></li>
+<li><a href="anaddb#ep_nspline" class="small-grey-link">ep_nspline@anaddb</a></li>
+<li><a href="anaddb#ep_prt_yambo" class="small-grey-link">ep_prt_yambo@anaddb</a></li>
+<li><a href="anaddb#ep_qptlist" class="small-grey-link">ep_qptlist@anaddb</a></li>
+<li><a href="anaddb#ep_scalprod" class="small-grey-link">ep_scalprod@anaddb</a></li> </ul></li>
 <li><ul id="F" class="TabContentLetter">
-<li class="HeaderLetter">F</li> <li><a href="paw#f4of2_sla" class="">f4of2_sla</a></li>
-<li><a href="paw#f6of2_sla" class="">f6of2_sla</a></li>
-<li><a href="gstate#fband" class="">fband</a></li>
-<li><a href="dev#fermie_nest" class="">fermie_nest</a></li>
-<li><a href="dev#fftalg" class="">fftalg</a></li>
-<li><a href="dev#fftcache" class="">fftcache</a></li>
-<li><a href="gw#fftgw" class="">fftgw</a></li>
-<li><a href="gw#freqim_alpha" class="">freqim_alpha</a></li>
-<li><a href="gw#freqremax" class="">freqremax</a></li>
-<li><a href="gw#freqremin" class="">freqremin</a></li>
-<li><a href="gw#freqspmax" class="">freqspmax</a></li>
-<li><a href="gw#freqspmin" class="">freqspmin</a></li>
-<li><a href="rlx#friction" class="">friction</a></li>
-<li><a href="dfpt#frzfermi" class="">frzfermi</a></li>
-<li><a href="rlx#fxcartfactor" class="">fxcartfactor</a></li>
-<li><a href="aim#foldep" class="">foldep@aim</a></li>
-<li><a href="aim#follow" class="">follow@aim</a></li>
-<li><a href="aim#folstp" class="">folstp@aim</a></li>
-<li><a href="anaddb#freeze_displ" class="">freeze_displ@anaddb</a></li>
-<li><a href="anaddb#frmax" class="">frmax@anaddb</a></li>
-<li><a href="anaddb#frmin" class="">frmin@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">F</li> <li><a href="paw#f4of2_sla" class="small-grey-link">f4of2_sla</a></li>
+<li><a href="paw#f6of2_sla" class="small-grey-link">f6of2_sla</a></li>
+<li><a href="gstate#fband" class="small-grey-link">fband</a></li>
+<li><a href="dev#fermie_nest" class="small-grey-link">fermie_nest</a></li>
+<li><a href="dev#fftalg" class="small-grey-link">fftalg</a></li>
+<li><a href="dev#fftcache" class="small-grey-link">fftcache</a></li>
+<li><a href="gw#fftgw" class="small-grey-link">fftgw</a></li>
+<li><a href="gw#freqim_alpha" class="small-grey-link">freqim_alpha</a></li>
+<li><a href="gw#freqremax" class="small-grey-link">freqremax</a></li>
+<li><a href="gw#freqremin" class="small-grey-link">freqremin</a></li>
+<li><a href="gw#freqspmax" class="small-grey-link">freqspmax</a></li>
+<li><a href="gw#freqspmin" class="small-grey-link">freqspmin</a></li>
+<li><a href="rlx#friction" class="small-grey-link">friction</a></li>
+<li><a href="dfpt#frzfermi" class="small-grey-link">frzfermi</a></li>
+<li><a href="rlx#fxcartfactor" class="small-grey-link">fxcartfactor</a></li>
+<li><a href="aim#foldep" class="small-grey-link">foldep@aim</a></li>
+<li><a href="aim#follow" class="small-grey-link">follow@aim</a></li>
+<li><a href="aim#folstp" class="small-grey-link">folstp@aim</a></li>
+<li><a href="anaddb#freeze_displ" class="small-grey-link">freeze_displ@anaddb</a></li>
+<li><a href="anaddb#frmax" class="small-grey-link">frmax@anaddb</a></li>
+<li><a href="anaddb#frmin" class="small-grey-link">frmin@anaddb</a></li> </ul></li>
 <li><ul id="G" class="TabContentLetter">
-<li class="HeaderLetter">G</li> <li><a href="rlx#ga_algor" class="">ga_algor</a></li>
-<li><a href="rlx#ga_fitness" class="">ga_fitness</a></li>
-<li><a href="rlx#ga_n_rules" class="">ga_n_rules</a></li>
-<li><a href="rlx#ga_opt_percent" class="">ga_opt_percent</a></li>
-<li><a href="rlx#ga_rules" class="">ga_rules</a></li>
-<li><a href="geo#genafm" class="">genafm</a></li>
-<li><a href="files#get1den" class="">get1den</a></li>
-<li><a href="files#get1wf" class="">get1wf</a></li>
-<li><a href="files#getbscoup" class="">getbscoup</a></li>
-<li><a href="files#getbseig" class="">getbseig</a></li>
-<li><a href="files#getbsreso" class="">getbsreso</a></li>
-<li><a href="rlx#getcell" class="">getcell</a></li>
-<li><a href="files#getddb" class="">getddb</a></li>
-<li><a href="files#getddk" class="">getddk</a></li>
-<li><a href="files#getden" class="">getden</a></li>
-<li><a href="dev#getgam_eig2nkq" class="">getgam_eig2nkq</a></li>
-<li><a href="files#gethaydock" class="">gethaydock</a></li>
-<li><a href="files#getocc" class="">getocc</a></li>
-<li><a href="files#getqps" class="">getqps</a></li>
-<li><a href="files#getscr" class="">getscr</a></li>
-<li><a href="files#getsuscep" class="">getsuscep</a></li>
-<li><a href="rlx#getvel" class="">getvel</a></li>
-<li><a href="files#getwfk" class="">getwfk</a></li>
-<li><a href="dev#getwfkfine" class="">getwfkfine</a></li>
-<li><a href="files#getwfq" class="">getwfq</a></li>
-<li><a href="rlx#getxcart" class="">getxcart</a></li>
-<li><a href="rlx#getxred" class="">getxred</a></li>
-<li><a href="rlx#goprecon" class="">goprecon</a></li>
-<li><a href="rlx#goprecprm" class="">goprecprm</a></li>
-<li><a href="paral#gpu_devices" class="">gpu_devices</a></li>
-<li><a href="paral#gpu_linalg_limit" class="">gpu_linalg_limit</a></li>
-<li><a href="gw#gw_customnfreqsp" class="">gw_customnfreqsp</a></li>
-<li><a href="gw#gw_freqsp" class="">gw_freqsp</a></li>
-<li><a href="gw#gw_frqim_inzgrid" class="">gw_frqim_inzgrid</a></li>
-<li><a href="gw#gw_frqre_inzgrid" class="">gw_frqre_inzgrid</a></li>
-<li><a href="gw#gw_frqre_tangrid" class="">gw_frqre_tangrid</a></li>
-<li><a href="gw#gw_invalid_freq" class="">gw_invalid_freq</a></li>
-<li><a href="gw#gw_nqlwl" class="">gw_nqlwl</a></li>
-<li><a href="gw#gw_nstep" class="">gw_nstep</a></li>
-<li><a href="gw#gw_qlwl" class="">gw_qlwl</a></li>
-<li><a href="gw#gw_qprange" class="">gw_qprange</a></li>
-<li><a href="gw#gw_sctype" class="">gw_sctype</a></li>
-<li><a href="gw#gw_sigxcore" class="">gw_sigxcore</a></li>
-<li><a href="gw#gw_toldfeig" class="">gw_toldfeig</a></li>
-<li><a href="gw#gwcalctyp" class="">gwcalctyp</a></li>
-<li><a href="gw#gwcomp" class="">gwcomp</a></li>
-<li><a href="gw#gwencomp" class="">gwencomp</a></li>
-<li><a href="gw#gwfockmix" class="">gwfockmix</a></li>
-<li><a href="gw#gwgamma" class="">gwgamma</a></li>
-<li><a href="gw#gwls_band_index" class="">gwls_band_index</a></li>
-<li><a href="gw#gwls_correlation" class="">gwls_correlation</a></li>
-<li><a href="gw#gwls_diel_model" class="">gwls_diel_model</a></li>
-<li><a href="gw#gwls_exchange" class="">gwls_exchange</a></li>
-<li><a href="gw#gwls_first_seed" class="">gwls_first_seed</a></li>
-<li><a href="gw#gwls_kmax_analytic" class="">gwls_kmax_analytic</a></li>
-<li><a href="gw#gwls_kmax_complement" class="">gwls_kmax_complement</a></li>
-<li><a href="gw#gwls_kmax_numeric" class="">gwls_kmax_numeric</a></li>
-<li><a href="gw#gwls_kmax_poles" class="">gwls_kmax_poles</a></li>
-<li><a href="gw#gwls_list_proj_freq" class="">gwls_list_proj_freq</a></li>
-<li><a href="gw#gwls_model_parameter" class="">gwls_model_parameter</a></li>
-<li><a href="gw#gwls_n_proj_freq" class="">gwls_n_proj_freq</a></li>
-<li><a href="gw#gwls_npt_gauss_quad" class="">gwls_npt_gauss_quad</a></li>
-<li><a href="gw#gwls_nseeds" class="">gwls_nseeds</a></li>
-<li><a href="gw#gwls_print_debug" class="">gwls_print_debug</a></li>
-<li><a href="gw#gwls_recycle" class="">gwls_recycle</a></li>
-<li><a href="gw#gwls_stern_kmax" class="">gwls_stern_kmax</a></li>
-<li><a href="gw#gwmem" class="">gwmem</a></li>
-<li><a href="paral#gwpara" class="">gwpara</a></li>
-<li><a href="gw#gwrpacorr" class="">gwrpacorr</a></li>
-<li><a href="aim#gpsurf" class="">gpsurf@aim</a></li>
-<li><a href="anaddb#gkqwrite" class="">gkqwrite@anaddb</a></li>
-<li><a href="anaddb#gruns_ddbs" class="">gruns_ddbs@anaddb</a></li>
-<li><a href="anaddb#gruns_nddbs" class="">gruns_nddbs@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">G</li> <li><a href="rlx#ga_algor" class="small-grey-link">ga_algor</a></li>
+<li><a href="rlx#ga_fitness" class="small-grey-link">ga_fitness</a></li>
+<li><a href="rlx#ga_n_rules" class="small-grey-link">ga_n_rules</a></li>
+<li><a href="rlx#ga_opt_percent" class="small-grey-link">ga_opt_percent</a></li>
+<li><a href="rlx#ga_rules" class="small-grey-link">ga_rules</a></li>
+<li><a href="geo#genafm" class="small-grey-link">genafm</a></li>
+<li><a href="files#get1den" class="small-grey-link">get1den</a></li>
+<li><a href="files#get1wf" class="small-grey-link">get1wf</a></li>
+<li><a href="files#getbscoup" class="small-grey-link">getbscoup</a></li>
+<li><a href="files#getbseig" class="small-grey-link">getbseig</a></li>
+<li><a href="files#getbsreso" class="small-grey-link">getbsreso</a></li>
+<li><a href="rlx#getcell" class="small-grey-link">getcell</a></li>
+<li><a href="files#getddb" class="small-grey-link">getddb</a></li>
+<li><a href="files#getddk" class="small-grey-link">getddk</a></li>
+<li><a href="files#getden" class="small-grey-link">getden</a></li>
+<li><a href="dev#getgam_eig2nkq" class="small-grey-link">getgam_eig2nkq</a></li>
+<li><a href="files#gethaydock" class="small-grey-link">gethaydock</a></li>
+<li><a href="files#getocc" class="small-grey-link">getocc</a></li>
+<li><a href="files#getqps" class="small-grey-link">getqps</a></li>
+<li><a href="files#getscr" class="small-grey-link">getscr</a></li>
+<li><a href="files#getsuscep" class="small-grey-link">getsuscep</a></li>
+<li><a href="rlx#getvel" class="small-grey-link">getvel</a></li>
+<li><a href="files#getwfk" class="small-grey-link">getwfk</a></li>
+<li><a href="dev#getwfkfine" class="small-grey-link">getwfkfine</a></li>
+<li><a href="files#getwfq" class="small-grey-link">getwfq</a></li>
+<li><a href="rlx#getxcart" class="small-grey-link">getxcart</a></li>
+<li><a href="rlx#getxred" class="small-grey-link">getxred</a></li>
+<li><a href="rlx#goprecon" class="small-grey-link">goprecon</a></li>
+<li><a href="rlx#goprecprm" class="small-grey-link">goprecprm</a></li>
+<li><a href="paral#gpu_devices" class="small-grey-link">gpu_devices</a></li>
+<li><a href="paral#gpu_linalg_limit" class="small-grey-link">gpu_linalg_limit</a></li>
+<li><a href="gw#gw_customnfreqsp" class="small-grey-link">gw_customnfreqsp</a></li>
+<li><a href="gw#gw_freqsp" class="small-grey-link">gw_freqsp</a></li>
+<li><a href="gw#gw_frqim_inzgrid" class="small-grey-link">gw_frqim_inzgrid</a></li>
+<li><a href="gw#gw_frqre_inzgrid" class="small-grey-link">gw_frqre_inzgrid</a></li>
+<li><a href="gw#gw_frqre_tangrid" class="small-grey-link">gw_frqre_tangrid</a></li>
+<li><a href="gw#gw_invalid_freq" class="small-grey-link">gw_invalid_freq</a></li>
+<li><a href="gw#gw_nqlwl" class="small-grey-link">gw_nqlwl</a></li>
+<li><a href="gw#gw_nstep" class="small-grey-link">gw_nstep</a></li>
+<li><a href="gw#gw_qlwl" class="small-grey-link">gw_qlwl</a></li>
+<li><a href="gw#gw_qprange" class="small-grey-link">gw_qprange</a></li>
+<li><a href="gw#gw_sctype" class="small-grey-link">gw_sctype</a></li>
+<li><a href="gw#gw_sigxcore" class="small-grey-link">gw_sigxcore</a></li>
+<li><a href="gw#gw_toldfeig" class="small-grey-link">gw_toldfeig</a></li>
+<li><a href="gw#gwcalctyp" class="small-grey-link">gwcalctyp</a></li>
+<li><a href="gw#gwcomp" class="small-grey-link">gwcomp</a></li>
+<li><a href="gw#gwencomp" class="small-grey-link">gwencomp</a></li>
+<li><a href="gw#gwfockmix" class="small-grey-link">gwfockmix</a></li>
+<li><a href="gw#gwgamma" class="small-grey-link">gwgamma</a></li>
+<li><a href="gw#gwls_band_index" class="small-grey-link">gwls_band_index</a></li>
+<li><a href="gw#gwls_correlation" class="small-grey-link">gwls_correlation</a></li>
+<li><a href="gw#gwls_diel_model" class="small-grey-link">gwls_diel_model</a></li>
+<li><a href="gw#gwls_exchange" class="small-grey-link">gwls_exchange</a></li>
+<li><a href="gw#gwls_first_seed" class="small-grey-link">gwls_first_seed</a></li>
+<li><a href="gw#gwls_kmax_analytic" class="small-grey-link">gwls_kmax_analytic</a></li>
+<li><a href="gw#gwls_kmax_complement" class="small-grey-link">gwls_kmax_complement</a></li>
+<li><a href="gw#gwls_kmax_numeric" class="small-grey-link">gwls_kmax_numeric</a></li>
+<li><a href="gw#gwls_kmax_poles" class="small-grey-link">gwls_kmax_poles</a></li>
+<li><a href="gw#gwls_list_proj_freq" class="small-grey-link">gwls_list_proj_freq</a></li>
+<li><a href="gw#gwls_model_parameter" class="small-grey-link">gwls_model_parameter</a></li>
+<li><a href="gw#gwls_n_proj_freq" class="small-grey-link">gwls_n_proj_freq</a></li>
+<li><a href="gw#gwls_npt_gauss_quad" class="small-grey-link">gwls_npt_gauss_quad</a></li>
+<li><a href="gw#gwls_nseeds" class="small-grey-link">gwls_nseeds</a></li>
+<li><a href="gw#gwls_print_debug" class="small-grey-link">gwls_print_debug</a></li>
+<li><a href="gw#gwls_recycle" class="small-grey-link">gwls_recycle</a></li>
+<li><a href="gw#gwls_stern_kmax" class="small-grey-link">gwls_stern_kmax</a></li>
+<li><a href="gw#gwmem" class="small-grey-link">gwmem</a></li>
+<li><a href="paral#gwpara" class="small-grey-link">gwpara</a></li>
+<li><a href="gw#gwrpacorr" class="small-grey-link">gwrpacorr</a></li>
+<li><a href="aim#gpsurf" class="small-grey-link">gpsurf@aim</a></li>
+<li><a href="anaddb#gkqwrite" class="small-grey-link">gkqwrite@anaddb</a></li>
+<li><a href="anaddb#gruns_ddbs" class="small-grey-link">gruns_ddbs@anaddb</a></li>
+<li><a href="anaddb#gruns_nddbs" class="small-grey-link">gruns_nddbs@anaddb</a></li> </ul></li>
 <li><ul id="I" class="TabContentLetter">
-<li class="HeaderLetter">I</li> <li><a href="rlx#iatcon" class="">iatcon</a></li>
-<li><a href="rlx#iatfix" class="">iatfix</a></li>
-<li><a href="rlx#iatfixx" class="">iatfixx</a></li>
-<li><a href="rlx#iatfixy" class="">iatfixy</a></li>
-<li><a href="rlx#iatfixz" class="">iatfixz</a></li>
-<li><a href="gstate#iatsph" class="">iatsph</a></li>
-<li><a href="paw#iboxcut" class="">iboxcut</a></li>
-<li><a href="gstate#icoulomb" class="">icoulomb</a></li>
-<li><a href="gw#icutcoul" class="">icutcoul</a></li>
-<li><a href="dfpt#ieig2rf" class="">ieig2rf</a></li>
-<li><a href="rlx#imgmov" class="">imgmov</a></li>
-<li><a href="gw#inclvkb" class="">inclvkb</a></li>
-<li><a href="dev#intxc" class="">intxc</a></li>
-<li><a href="dev#iomode" class="">iomode</a></li>
-<li><a href="rlx#ionmov" class="">ionmov</a></li>
-<li><a href="gstate#iprcel" class="">iprcel</a></li>
-<li><a href="dev#iprcfc" class="">iprcfc</a></li>
-<li><a href="gstate#iqpt" class="">iqpt</a></li>
-<li><a href="dev#irandom" class="">irandom</a></li>
-<li><a href="files#ird1den" class="">ird1den</a></li>
-<li><a href="files#ird1wf" class="">ird1wf</a></li>
-<li><a href="files#irdbscoup" class="">irdbscoup</a></li>
-<li><a href="files#irdbseig" class="">irdbseig</a></li>
-<li><a href="files#irdbsreso" class="">irdbsreso</a></li>
-<li><a href="files#irdddb" class="">irdddb</a></li>
-<li><a href="files#irdddk" class="">irdddk</a></li>
-<li><a href="files#irdden" class="">irdden</a></li>
-<li><a href="files#irdhaydock" class="">irdhaydock</a></li>
-<li><a href="files#irdqps" class="">irdqps</a></li>
-<li><a href="files#irdscr" class="">irdscr</a></li>
-<li><a href="files#irdsuscep" class="">irdsuscep</a></li>
-<li><a href="vdw#irdvdw" class="">irdvdw</a></li>
-<li><a href="files#irdwfk" class="">irdwfk</a></li>
-<li><a href="dev#irdwfkfine" class="">irdwfkfine</a></li>
-<li><a href="files#irdwfq" class="">irdwfq</a></li>
-<li><a href="basic#iscf" class="">iscf</a></li>
-<li><a href="dev#isecur" class="">isecur</a></li>
-<li><a href="rlx#istatimg" class="">istatimg</a></li>
-<li><a href="dev#istatr" class="">istatr</a></li>
-<li><a href="dev#istatshft" class="">istatshft</a></li>
-<li><a href="dev#istwfk" class="">istwfk</a></li>
-<li><a href="basic#ixc" class="">ixc</a></li>
-<li><a href="gstate#ixcpositron" class="">ixcpositron</a></li>
-<li><a href="aim#inpt" class="">inpt@aim</a></li>
-<li><a href="aim#irho" class="">irho@aim</a></li>
-<li><a href="aim#ivol" class="">ivol@aim</a></li>
-<li><a href="anaddb#iatfix" class="">iatfix@anaddb</a></li>
-<li><a href="anaddb#iatprj_bs" class="">iatprj_bs@anaddb</a></li>
-<li><a href="anaddb#ifcana" class="">ifcana@anaddb</a></li>
-<li><a href="anaddb#ifcflag" class="">ifcflag@anaddb</a></li>
-<li><a href="anaddb#ifcout" class="">ifcout@anaddb</a></li>
-<li><a href="anaddb#ifltransport" class="">ifltransport@anaddb</a></li>
-<li><a href="anaddb#instrflag" class="">instrflag@anaddb</a></li>
-<li><a href="anaddb#istrfix" class="">istrfix@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">I</li> <li><a href="rlx#iatcon" class="small-grey-link">iatcon</a></li>
+<li><a href="rlx#iatfix" class="small-grey-link">iatfix</a></li>
+<li><a href="rlx#iatfixx" class="small-grey-link">iatfixx</a></li>
+<li><a href="rlx#iatfixy" class="small-grey-link">iatfixy</a></li>
+<li><a href="rlx#iatfixz" class="small-grey-link">iatfixz</a></li>
+<li><a href="gstate#iatsph" class="small-grey-link">iatsph</a></li>
+<li><a href="paw#iboxcut" class="small-grey-link">iboxcut</a></li>
+<li><a href="gstate#icoulomb" class="small-grey-link">icoulomb</a></li>
+<li><a href="gw#icutcoul" class="small-grey-link">icutcoul</a></li>
+<li><a href="dfpt#ieig2rf" class="small-grey-link">ieig2rf</a></li>
+<li><a href="rlx#imgmov" class="small-grey-link">imgmov</a></li>
+<li><a href="gw#inclvkb" class="small-grey-link">inclvkb</a></li>
+<li><a href="dev#intxc" class="small-grey-link">intxc</a></li>
+<li><a href="dev#iomode" class="small-grey-link">iomode</a></li>
+<li><a href="rlx#ionmov" class="small-grey-link">ionmov</a></li>
+<li><a href="gstate#iprcel" class="small-grey-link">iprcel</a></li>
+<li><a href="dev#iprcfc" class="small-grey-link">iprcfc</a></li>
+<li><a href="gstate#iqpt" class="small-grey-link">iqpt</a></li>
+<li><a href="dev#irandom" class="small-grey-link">irandom</a></li>
+<li><a href="files#ird1den" class="small-grey-link">ird1den</a></li>
+<li><a href="files#ird1wf" class="small-grey-link">ird1wf</a></li>
+<li><a href="files#irdbscoup" class="small-grey-link">irdbscoup</a></li>
+<li><a href="files#irdbseig" class="small-grey-link">irdbseig</a></li>
+<li><a href="files#irdbsreso" class="small-grey-link">irdbsreso</a></li>
+<li><a href="files#irdddb" class="small-grey-link">irdddb</a></li>
+<li><a href="files#irdddk" class="small-grey-link">irdddk</a></li>
+<li><a href="files#irdden" class="small-grey-link">irdden</a></li>
+<li><a href="files#irdhaydock" class="small-grey-link">irdhaydock</a></li>
+<li><a href="files#irdqps" class="small-grey-link">irdqps</a></li>
+<li><a href="files#irdscr" class="small-grey-link">irdscr</a></li>
+<li><a href="files#irdsuscep" class="small-grey-link">irdsuscep</a></li>
+<li><a href="vdw#irdvdw" class="small-grey-link">irdvdw</a></li>
+<li><a href="files#irdwfk" class="small-grey-link">irdwfk</a></li>
+<li><a href="dev#irdwfkfine" class="small-grey-link">irdwfkfine</a></li>
+<li><a href="files#irdwfq" class="small-grey-link">irdwfq</a></li>
+<li><a href="basic#iscf" class="small-grey-link">iscf</a></li>
+<li><a href="dev#isecur" class="small-grey-link">isecur</a></li>
+<li><a href="rlx#istatimg" class="small-grey-link">istatimg</a></li>
+<li><a href="dev#istatr" class="small-grey-link">istatr</a></li>
+<li><a href="dev#istatshft" class="small-grey-link">istatshft</a></li>
+<li><a href="dev#istwfk" class="small-grey-link">istwfk</a></li>
+<li><a href="basic#ixc" class="small-grey-link">ixc</a></li>
+<li><a href="gstate#ixcpositron" class="small-grey-link">ixcpositron</a></li>
+<li><a href="aim#inpt" class="small-grey-link">inpt@aim</a></li>
+<li><a href="aim#irho" class="small-grey-link">irho@aim</a></li>
+<li><a href="aim#ivol" class="small-grey-link">ivol@aim</a></li>
+<li><a href="anaddb#iatfix" class="small-grey-link">iatfix@anaddb</a></li>
+<li><a href="anaddb#iatprj_bs" class="small-grey-link">iatprj_bs@anaddb</a></li>
+<li><a href="anaddb#ifcana" class="small-grey-link">ifcana@anaddb</a></li>
+<li><a href="anaddb#ifcflag" class="small-grey-link">ifcflag@anaddb</a></li>
+<li><a href="anaddb#ifcout" class="small-grey-link">ifcout@anaddb</a></li>
+<li><a href="anaddb#ifltransport" class="small-grey-link">ifltransport@anaddb</a></li>
+<li><a href="anaddb#instrflag" class="small-grey-link">instrflag@anaddb</a></li>
+<li><a href="anaddb#istrfix" class="small-grey-link">istrfix@anaddb</a></li> </ul></li>
 <li><ul id="J" class="TabContentLetter">
-<li class="HeaderLetter">J</li> <li><a href="basic#jdtset" class="">jdtset</a></li>
-<li><a href="gstate#jellslab" class="">jellslab</a></li>
-<li><a href="ffield#jfielddir" class="">jfielddir</a></li>
-<li><a href="paw#jpawu" class="">jpawu</a></li> </ul></li>
+<li class="HeaderLetter">J</li> <li><a href="basic#jdtset" class="small-grey-link">jdtset</a></li>
+<li><a href="gstate#jellslab" class="small-grey-link">jellslab</a></li>
+<li><a href="ffield#jfielddir" class="small-grey-link">jfielddir</a></li>
+<li><a href="paw#jpawu" class="small-grey-link">jpawu</a></li> </ul></li>
 <li><ul id="K" class="TabContentLetter">
-<li class="HeaderLetter">K</li> <li><a href="ffield#kberry" class="">kberry</a></li>
-<li><a href="basic#kpt" class="">kpt</a></li>
-<li><a href="gstate#kptbounds" class="">kptbounds</a></li>
-<li><a href="gw#kptgw" class="">kptgw</a></li>
-<li><a href="basic#kptnrm" class="">kptnrm</a></li>
-<li><a href="internal#kptns" class="">kptns</a></li>
-<li><a href="basic#kptopt" class="">kptopt</a></li>
-<li><a href="gstate#kptrlatt" class="">kptrlatt</a></li>
-<li><a href="gstate#kptrlen" class="">kptrlen</a></li>
-<li><a href="files#kssform" class="">kssform</a></li>
-<li><a href="anaddb#kptrlatt" class="">kptrlatt@anaddb</a></li>
-<li><a href="anaddb#kptrlatt_fine" class="">kptrlatt_fine@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">K</li> <li><a href="ffield#kberry" class="small-grey-link">kberry</a></li>
+<li><a href="basic#kpt" class="small-grey-link">kpt</a></li>
+<li><a href="gstate#kptbounds" class="small-grey-link">kptbounds</a></li>
+<li><a href="gw#kptgw" class="small-grey-link">kptgw</a></li>
+<li><a href="basic#kptnrm" class="small-grey-link">kptnrm</a></li>
+<li><a href="internal#kptns" class="small-grey-link">kptns</a></li>
+<li><a href="basic#kptopt" class="small-grey-link">kptopt</a></li>
+<li><a href="gstate#kptrlatt" class="small-grey-link">kptrlatt</a></li>
+<li><a href="gstate#kptrlen" class="small-grey-link">kptrlen</a></li>
+<li><a href="files#kssform" class="small-grey-link">kssform</a></li>
+<li><a href="anaddb#kptrlatt" class="small-grey-link">kptrlatt@anaddb</a></li>
+<li><a href="anaddb#kptrlatt_fine" class="small-grey-link">kptrlatt_fine@anaddb</a></li> </ul></li>
 <li><ul id="L" class="TabContentLetter">
-<li class="HeaderLetter">L</li> <li><a href="paw#lexexch" class="">lexexch</a></li>
-<li><a href="paral#localrdwf" class="">localrdwf</a></li>
-<li><a href="dev#lotf_classic" class="">lotf_classic</a></li>
-<li><a href="dev#lotf_nitex" class="">lotf_nitex</a></li>
-<li><a href="dev#lotf_nneigx" class="">lotf_nneigx</a></li>
-<li><a href="dev#lotf_version" class="">lotf_version</a></li>
-<li><a href="paw#lpawu" class="">lpawu</a></li>
-<li><a href="aim#lapout" class="">lapout@aim</a></li>
-<li><a href="aim#lgrad" class="">lgrad@aim</a></li>
-<li><a href="aim#lgrad2" class="">lgrad2@aim</a></li>
-<li><a href="aim#lstep" class="">lstep@aim</a></li>
-<li><a href="aim#lstep2" class="">lstep2@aim</a></li>
-<li><a href="optic#lin_comp" class="">lin_comp@optic</a></li> </ul></li>
+<li class="HeaderLetter">L</li> <li><a href="paw#lexexch" class="small-grey-link">lexexch</a></li>
+<li><a href="paral#localrdwf" class="small-grey-link">localrdwf</a></li>
+<li><a href="dev#lotf_classic" class="small-grey-link">lotf_classic</a></li>
+<li><a href="dev#lotf_nitex" class="small-grey-link">lotf_nitex</a></li>
+<li><a href="dev#lotf_nneigx" class="small-grey-link">lotf_nneigx</a></li>
+<li><a href="dev#lotf_version" class="small-grey-link">lotf_version</a></li>
+<li><a href="paw#lpawu" class="small-grey-link">lpawu</a></li>
+<li><a href="aim#lapout" class="small-grey-link">lapout@aim</a></li>
+<li><a href="aim#lgrad" class="small-grey-link">lgrad@aim</a></li>
+<li><a href="aim#lgrad2" class="small-grey-link">lgrad2@aim</a></li>
+<li><a href="aim#lstep" class="small-grey-link">lstep@aim</a></li>
+<li><a href="aim#lstep2" class="small-grey-link">lstep2@aim</a></li>
+<li><a href="optic#lin_comp" class="small-grey-link">lin_comp@optic</a></li> </ul></li>
 <li><ul id="M" class="TabContentLetter">
-<li class="HeaderLetter">M</li> <li><a href="dev#macro_uj" class="">macro_uj</a></li>
-<li><a href="gstate#magcon_lambda" class="">magcon_lambda</a></li>
-<li><a href="gstate#magconon" class="">magconon</a></li>
-<li><a href="paral#max_ncpus" class="">max_ncpus</a></li>
-<li><a href="ffield#maxestep" class="">maxestep</a></li>
-<li><a href="dev#maxnsym" class="">maxnsym</a></li>
-<li><a href="internal#mband" class="">mband</a></li>
-<li><a href="gw#mbpt_sciss" class="">mbpt_sciss</a></li>
-<li><a href="gw#mdf_epsinf" class="">mdf_epsinf</a></li>
-<li><a href="rlx#mdtemp" class="">mdtemp</a></li>
-<li><a href="rlx#mdwall" class="">mdwall</a></li>
-<li><a href="dev#mem_test" class="">mem_test</a></li>
-<li><a href="rlx#mep_mxstep" class="">mep_mxstep</a></li>
-<li><a href="rlx#mep_solver" class="">mep_solver</a></li>
-<li><a href="internal#mgfft" class="">mgfft</a></li>
-<li><a href="internal#mgfftdg" class="">mgfftdg</a></li>
-<li><a href="gstate#mixalch" class="">mixalch</a></li>
-<li><a href="internal#mpw" class="">mpw</a></li>
-<li><a href="dev#mqgrid" class="">mqgrid</a></li>
-<li><a href="paw#mqgriddg" class="">mqgriddg</a></li>
-<li><a href="aim#maxatd" class="">maxatd@aim</a></li>
-<li><a href="aim#maxcpd" class="">maxcpd@aim</a></li>
-<li><a href="anaddb#mustar" class="">mustar@anaddb</a></li>
-<li><a href="optic#maxomega" class="">maxomega@optic</a></li> </ul></li>
+<li class="HeaderLetter">M</li> <li><a href="dev#macro_uj" class="small-grey-link">macro_uj</a></li>
+<li><a href="gstate#magcon_lambda" class="small-grey-link">magcon_lambda</a></li>
+<li><a href="gstate#magconon" class="small-grey-link">magconon</a></li>
+<li><a href="paral#max_ncpus" class="small-grey-link">max_ncpus</a></li>
+<li><a href="ffield#maxestep" class="small-grey-link">maxestep</a></li>
+<li><a href="dev#maxnsym" class="small-grey-link">maxnsym</a></li>
+<li><a href="internal#mband" class="small-grey-link">mband</a></li>
+<li><a href="gw#mbpt_sciss" class="small-grey-link">mbpt_sciss</a></li>
+<li><a href="gw#mdf_epsinf" class="small-grey-link">mdf_epsinf</a></li>
+<li><a href="rlx#mdtemp" class="small-grey-link">mdtemp</a></li>
+<li><a href="rlx#mdwall" class="small-grey-link">mdwall</a></li>
+<li><a href="dev#mem_test" class="small-grey-link">mem_test</a></li>
+<li><a href="rlx#mep_mxstep" class="small-grey-link">mep_mxstep</a></li>
+<li><a href="rlx#mep_solver" class="small-grey-link">mep_solver</a></li>
+<li><a href="internal#mgfft" class="small-grey-link">mgfft</a></li>
+<li><a href="internal#mgfftdg" class="small-grey-link">mgfftdg</a></li>
+<li><a href="gstate#mixalch" class="small-grey-link">mixalch</a></li>
+<li><a href="internal#mpw" class="small-grey-link">mpw</a></li>
+<li><a href="dev#mqgrid" class="small-grey-link">mqgrid</a></li>
+<li><a href="paw#mqgriddg" class="small-grey-link">mqgriddg</a></li>
+<li><a href="aim#maxatd" class="small-grey-link">maxatd@aim</a></li>
+<li><a href="aim#maxcpd" class="small-grey-link">maxcpd@aim</a></li>
+<li><a href="anaddb#mustar" class="small-grey-link">mustar@anaddb</a></li>
+<li><a href="optic#maxomega" class="small-grey-link">maxomega@optic</a></li> </ul></li>
 <li><ul id="N" class="TabContentLetter">
-<li class="HeaderLetter">N</li> <li><a href="rlx#natcon" class="">natcon</a></li>
-<li><a href="rlx#natfix" class="">natfix</a></li>
-<li><a href="rlx#natfixx" class="">natfixx</a></li>
-<li><a href="rlx#natfixy" class="">natfixy</a></li>
-<li><a href="rlx#natfixz" class="">natfixz</a></li>
-<li><a href="basic#natom" class="">natom</a></li>
-<li><a href="internal#natpawu" class="">natpawu</a></li>
-<li><a href="geo#natrd" class="">natrd</a></li>
-<li><a href="gstate#natsph" class="">natsph</a></li>
-<li><a href="gstate#natsph_extra" class="">natsph_extra</a></li>
-<li><a href="ffield#natvshift" class="">natvshift</a></li>
-<li><a href="basic#nband" class="">nband</a></li>
-<li><a href="basic#nbandhf" class="">nbandhf</a></li>
-<li><a href="gw#nbandkss" class="">nbandkss</a></li>
-<li><a href="dev#nbdblock" class="">nbdblock</a></li>
-<li><a href="gstate#nbdbuf" class="">nbdbuf</a></li>
-<li><a href="ffield#nberry" class="">nberry</a></li>
-<li><a href="dev#nc_xccc_gspace" class="">nc_xccc_gspace</a></li>
-<li><a href="rlx#nconeq" class="">nconeq</a></li>
-<li><a href="dev#nctime" class="">nctime</a></li>
-<li><a href="gstate#ndivk" class="">ndivk</a></li>
-<li><a href="gstate#ndivsm" class="">ndivsm</a></li>
-<li><a href="basic#ndtset" class="">ndtset</a></li>
-<li><a href="internal#ndynimage" class="">ndynimage</a></li>
-<li><a href="rlx#neb_algo" class="">neb_algo</a></li>
-<li><a href="rlx#neb_spring" class="">neb_spring</a></li>
-<li><a href="internal#nelect" class="">nelect</a></li>
-<li><a href="internal#nfft" class="">nfft</a></li>
-<li><a href="internal#nfftdg" class="">nfftdg</a></li>
-<li><a href="gw#nfreqim" class="">nfreqim</a></li>
-<li><a href="gw#nfreqmidm" class="">nfreqmidm</a></li>
-<li><a href="gw#nfreqre" class="">nfreqre</a></li>
-<li><a href="gw#nfreqsp" class="">nfreqsp</a></li>
-<li><a href="gstate#ngfft" class="">ngfft</a></li>
-<li><a href="paw#ngfftdg" class="">ngfftdg</a></li>
-<li><a href="basic#ngkpt" class="">ngkpt</a></li>
-<li><a href="gstate#ngqpt" class="">ngqpt</a></li>
-<li><a href="rlx#nimage" class="">nimage</a></li>
-<li><a href="basic#nkpath" class="">nkpath</a></li>
-<li><a href="basic#nkpt" class="">nkpt</a></li>
-<li><a href="gw#nkptgw" class="">nkptgw</a></li>
-<li><a href="basic#nkpthf" class="">nkpthf</a></li>
-<li><a href="gstate#nline" class="">nline</a></li>
-<li><a href="dev#nloc_alg" class="">nloc_alg</a></li>
-<li><a href="dev#nloc_mem" class="">nloc_mem</a></li>
-<li><a href="rlx#nnos" class="">nnos</a></li>
-<li><a href="dev#nnsclo" class="">nnsclo</a></li>
-<li><a href="dev#nnsclohf" class="">nnsclohf</a></li>
-<li><a href="geo#nobj" class="">nobj</a></li>
-<li><a href="gw#nomegasf" class="">nomegasf</a></li>
-<li><a href="gw#nomegasi" class="">nomegasi</a></li>
-<li><a href="gw#nomegasrd" class="">nomegasrd</a></li>
-<li><a href="dev#normpawu" class="">normpawu</a></li>
-<li><a href="rlx#noseinert" class="">noseinert</a></li>
-<li><a href="paral#np_slk" class="">np_slk</a></li>
-<li><a href="paral#npband" class="">npband</a></li>
-<li><a href="paral#npfft" class="">npfft</a></li>
-<li><a href="paral#nphf" class="">nphf</a></li>
-<li><a href="paral#npimage" class="">npimage</a></li>
-<li><a href="paral#npkpt" class="">npkpt</a></li>
-<li><a href="paral#nppert" class="">nppert</a></li>
-<li><a href="gstate#npsp" class="">npsp</a></li>
-<li><a href="gstate#npspalch" class="">npspalch</a></li>
-<li><a href="paral#npspinor" class="">npspinor</a></li>
-<li><a href="dev#npulayit" class="">npulayit</a></li>
-<li><a href="gw#npvel" class="">npvel</a></li>
-<li><a href="internal#npweps" class="">npweps</a></li>
-<li><a href="gw#npwkss" class="">npwkss</a></li>
-<li><a href="internal#npwsigx" class="">npwsigx</a></li>
-<li><a href="internal#npwwfn" class="">npwwfn</a></li>
-<li><a href="gstate#nqpt" class="">nqpt</a></li>
-<li><a href="gw#nqptdm" class="">nqptdm</a></li>
-<li><a href="dev#nscforder" class="">nscforder</a></li>
-<li><a href="basic#nshiftk" class="">nshiftk</a></li>
-<li><a href="gstate#nshiftq" class="">nshiftq</a></li>
-<li><a href="gstate#nspden" class="">nspden</a></li>
-<li><a href="gstate#nspinor" class="">nspinor</a></li>
-<li><a href="basic#nsppol" class="">nsppol</a></li>
-<li><a href="basic#nstep" class="">nstep</a></li>
-<li><a href="basic#nsym" class="">nsym</a></li>
-<li><a href="rlx#ntime" class="">ntime</a></li>
-<li><a href="rlx#ntimimage" class="">ntimimage</a></li>
-<li><a href="gstate#ntypalch" class="">ntypalch</a></li>
-<li><a href="basic#ntypat" class="">ntypat</a></li>
-<li><a href="gstate#ntyppure" class="">ntyppure</a></li>
-<li><a href="gstate#nucdipmom" class="">nucdipmom</a></li>
-<li><a href="gstate#nwfshist" class="">nwfshist</a></li>
-<li><a href="geo#nzchempot" class="">nzchempot</a></li>
-<li><a href="aim#ngrid" class="">ngrid@aim</a></li>
-<li><a href="aim#nphi" class="">nphi@aim</a></li>
-<li><a href="aim#nsa" class="">nsa@aim</a></li>
-<li><a href="aim#nsb" class="">nsb@aim</a></li>
-<li><a href="aim#nsc" class="">nsc@aim</a></li>
-<li><a href="aim#ntheta" class="">ntheta@aim</a></li>
-<li><a href="anaddb#natfix" class="">natfix@anaddb</a></li>
-<li><a href="anaddb#natifc" class="">natifc@anaddb</a></li>
-<li><a href="anaddb#natprj_bs" class="">natprj_bs@anaddb</a></li>
-<li><a href="anaddb#nchan" class="">nchan@anaddb</a></li>
-<li><a href="anaddb#ndivsm" class="">ndivsm@anaddb</a></li>
-<li><a href="anaddb#nfreq" class="">nfreq@anaddb</a></li>
-<li><a href="anaddb#ng2qpt" class="">ng2qpt@anaddb</a></li>
-<li><a href="anaddb#ngqpt" class="">ngqpt@anaddb</a></li>
-<li><a href="anaddb#ngrids" class="">ngrids@anaddb</a></li>
-<li><a href="anaddb#nlflag" class="">nlflag@anaddb</a></li>
-<li><a href="anaddb#nph1l" class="">nph1l@anaddb</a></li>
-<li><a href="anaddb#nph2l" class="">nph2l@anaddb</a></li>
-<li><a href="anaddb#nqpath" class="">nqpath@anaddb</a></li>
-<li><a href="anaddb#nqshft" class="">nqshft@anaddb</a></li>
-<li><a href="anaddb#nsphere" class="">nsphere@anaddb</a></li>
-<li><a href="anaddb#nstrfix" class="">nstrfix@anaddb</a></li>
-<li><a href="anaddb#ntemper" class="">ntemper@anaddb</a></li>
-<li><a href="anaddb#nwchan" class="">nwchan@anaddb</a></li>
-<li><a href="optic#nonlin_comp" class="">nonlin_comp@optic</a></li>
-<li><a href="optic#num_lin_comp" class="">num_lin_comp@optic</a></li>
-<li><a href="optic#num_nonlin_comp" class="">num_nonlin_comp@optic</a></li> </ul></li>
+<li class="HeaderLetter">N</li> <li><a href="rlx#natcon" class="small-grey-link">natcon</a></li>
+<li><a href="rlx#natfix" class="small-grey-link">natfix</a></li>
+<li><a href="rlx#natfixx" class="small-grey-link">natfixx</a></li>
+<li><a href="rlx#natfixy" class="small-grey-link">natfixy</a></li>
+<li><a href="rlx#natfixz" class="small-grey-link">natfixz</a></li>
+<li><a href="basic#natom" class="small-grey-link">natom</a></li>
+<li><a href="internal#natpawu" class="small-grey-link">natpawu</a></li>
+<li><a href="geo#natrd" class="small-grey-link">natrd</a></li>
+<li><a href="gstate#natsph" class="small-grey-link">natsph</a></li>
+<li><a href="gstate#natsph_extra" class="small-grey-link">natsph_extra</a></li>
+<li><a href="ffield#natvshift" class="small-grey-link">natvshift</a></li>
+<li><a href="basic#nband" class="small-grey-link">nband</a></li>
+<li><a href="basic#nbandhf" class="small-grey-link">nbandhf</a></li>
+<li><a href="gw#nbandkss" class="small-grey-link">nbandkss</a></li>
+<li><a href="dev#nbdblock" class="small-grey-link">nbdblock</a></li>
+<li><a href="gstate#nbdbuf" class="small-grey-link">nbdbuf</a></li>
+<li><a href="ffield#nberry" class="small-grey-link">nberry</a></li>
+<li><a href="dev#nc_xccc_gspace" class="small-grey-link">nc_xccc_gspace</a></li>
+<li><a href="rlx#nconeq" class="small-grey-link">nconeq</a></li>
+<li><a href="dev#nctime" class="small-grey-link">nctime</a></li>
+<li><a href="gstate#ndivk" class="small-grey-link">ndivk</a></li>
+<li><a href="gstate#ndivsm" class="small-grey-link">ndivsm</a></li>
+<li><a href="basic#ndtset" class="small-grey-link">ndtset</a></li>
+<li><a href="internal#ndynimage" class="small-grey-link">ndynimage</a></li>
+<li><a href="rlx#neb_algo" class="small-grey-link">neb_algo</a></li>
+<li><a href="rlx#neb_spring" class="small-grey-link">neb_spring</a></li>
+<li><a href="internal#nelect" class="small-grey-link">nelect</a></li>
+<li><a href="internal#nfft" class="small-grey-link">nfft</a></li>
+<li><a href="internal#nfftdg" class="small-grey-link">nfftdg</a></li>
+<li><a href="gw#nfreqim" class="small-grey-link">nfreqim</a></li>
+<li><a href="gw#nfreqmidm" class="small-grey-link">nfreqmidm</a></li>
+<li><a href="gw#nfreqre" class="small-grey-link">nfreqre</a></li>
+<li><a href="gw#nfreqsp" class="small-grey-link">nfreqsp</a></li>
+<li><a href="gstate#ngfft" class="small-grey-link">ngfft</a></li>
+<li><a href="paw#ngfftdg" class="small-grey-link">ngfftdg</a></li>
+<li><a href="basic#ngkpt" class="small-grey-link">ngkpt</a></li>
+<li><a href="gstate#ngqpt" class="small-grey-link">ngqpt</a></li>
+<li><a href="rlx#nimage" class="small-grey-link">nimage</a></li>
+<li><a href="basic#nkpath" class="small-grey-link">nkpath</a></li>
+<li><a href="basic#nkpt" class="small-grey-link">nkpt</a></li>
+<li><a href="gw#nkptgw" class="small-grey-link">nkptgw</a></li>
+<li><a href="basic#nkpthf" class="small-grey-link">nkpthf</a></li>
+<li><a href="gstate#nline" class="small-grey-link">nline</a></li>
+<li><a href="dev#nloc_alg" class="small-grey-link">nloc_alg</a></li>
+<li><a href="dev#nloc_mem" class="small-grey-link">nloc_mem</a></li>
+<li><a href="rlx#nnos" class="small-grey-link">nnos</a></li>
+<li><a href="dev#nnsclo" class="small-grey-link">nnsclo</a></li>
+<li><a href="dev#nnsclohf" class="small-grey-link">nnsclohf</a></li>
+<li><a href="geo#nobj" class="small-grey-link">nobj</a></li>
+<li><a href="gw#nomegasf" class="small-grey-link">nomegasf</a></li>
+<li><a href="gw#nomegasi" class="small-grey-link">nomegasi</a></li>
+<li><a href="gw#nomegasrd" class="small-grey-link">nomegasrd</a></li>
+<li><a href="dev#normpawu" class="small-grey-link">normpawu</a></li>
+<li><a href="rlx#noseinert" class="small-grey-link">noseinert</a></li>
+<li><a href="paral#np_slk" class="small-grey-link">np_slk</a></li>
+<li><a href="paral#npband" class="small-grey-link">npband</a></li>
+<li><a href="paral#npfft" class="small-grey-link">npfft</a></li>
+<li><a href="paral#nphf" class="small-grey-link">nphf</a></li>
+<li><a href="paral#npimage" class="small-grey-link">npimage</a></li>
+<li><a href="paral#npkpt" class="small-grey-link">npkpt</a></li>
+<li><a href="paral#nppert" class="small-grey-link">nppert</a></li>
+<li><a href="gstate#npsp" class="small-grey-link">npsp</a></li>
+<li><a href="gstate#npspalch" class="small-grey-link">npspalch</a></li>
+<li><a href="paral#npspinor" class="small-grey-link">npspinor</a></li>
+<li><a href="dev#npulayit" class="small-grey-link">npulayit</a></li>
+<li><a href="gw#npvel" class="small-grey-link">npvel</a></li>
+<li><a href="internal#npweps" class="small-grey-link">npweps</a></li>
+<li><a href="gw#npwkss" class="small-grey-link">npwkss</a></li>
+<li><a href="internal#npwsigx" class="small-grey-link">npwsigx</a></li>
+<li><a href="internal#npwwfn" class="small-grey-link">npwwfn</a></li>
+<li><a href="gstate#nqpt" class="small-grey-link">nqpt</a></li>
+<li><a href="gw#nqptdm" class="small-grey-link">nqptdm</a></li>
+<li><a href="dev#nscforder" class="small-grey-link">nscforder</a></li>
+<li><a href="basic#nshiftk" class="small-grey-link">nshiftk</a></li>
+<li><a href="gstate#nshiftq" class="small-grey-link">nshiftq</a></li>
+<li><a href="gstate#nspden" class="small-grey-link">nspden</a></li>
+<li><a href="gstate#nspinor" class="small-grey-link">nspinor</a></li>
+<li><a href="basic#nsppol" class="small-grey-link">nsppol</a></li>
+<li><a href="basic#nstep" class="small-grey-link">nstep</a></li>
+<li><a href="basic#nsym" class="small-grey-link">nsym</a></li>
+<li><a href="rlx#ntime" class="small-grey-link">ntime</a></li>
+<li><a href="rlx#ntimimage" class="small-grey-link">ntimimage</a></li>
+<li><a href="gstate#ntypalch" class="small-grey-link">ntypalch</a></li>
+<li><a href="basic#ntypat" class="small-grey-link">ntypat</a></li>
+<li><a href="gstate#ntyppure" class="small-grey-link">ntyppure</a></li>
+<li><a href="gstate#nucdipmom" class="small-grey-link">nucdipmom</a></li>
+<li><a href="gstate#nwfshist" class="small-grey-link">nwfshist</a></li>
+<li><a href="geo#nzchempot" class="small-grey-link">nzchempot</a></li>
+<li><a href="aim#ngrid" class="small-grey-link">ngrid@aim</a></li>
+<li><a href="aim#nphi" class="small-grey-link">nphi@aim</a></li>
+<li><a href="aim#nsa" class="small-grey-link">nsa@aim</a></li>
+<li><a href="aim#nsb" class="small-grey-link">nsb@aim</a></li>
+<li><a href="aim#nsc" class="small-grey-link">nsc@aim</a></li>
+<li><a href="aim#ntheta" class="small-grey-link">ntheta@aim</a></li>
+<li><a href="anaddb#natfix" class="small-grey-link">natfix@anaddb</a></li>
+<li><a href="anaddb#natifc" class="small-grey-link">natifc@anaddb</a></li>
+<li><a href="anaddb#natprj_bs" class="small-grey-link">natprj_bs@anaddb</a></li>
+<li><a href="anaddb#nchan" class="small-grey-link">nchan@anaddb</a></li>
+<li><a href="anaddb#ndivsm" class="small-grey-link">ndivsm@anaddb</a></li>
+<li><a href="anaddb#nfreq" class="small-grey-link">nfreq@anaddb</a></li>
+<li><a href="anaddb#ng2qpt" class="small-grey-link">ng2qpt@anaddb</a></li>
+<li><a href="anaddb#ngqpt" class="small-grey-link">ngqpt@anaddb</a></li>
+<li><a href="anaddb#ngrids" class="small-grey-link">ngrids@anaddb</a></li>
+<li><a href="anaddb#nlflag" class="small-grey-link">nlflag@anaddb</a></li>
+<li><a href="anaddb#nph1l" class="small-grey-link">nph1l@anaddb</a></li>
+<li><a href="anaddb#nph2l" class="small-grey-link">nph2l@anaddb</a></li>
+<li><a href="anaddb#nqpath" class="small-grey-link">nqpath@anaddb</a></li>
+<li><a href="anaddb#nqshft" class="small-grey-link">nqshft@anaddb</a></li>
+<li><a href="anaddb#nsphere" class="small-grey-link">nsphere@anaddb</a></li>
+<li><a href="anaddb#nstrfix" class="small-grey-link">nstrfix@anaddb</a></li>
+<li><a href="anaddb#ntemper" class="small-grey-link">ntemper@anaddb</a></li>
+<li><a href="anaddb#nwchan" class="small-grey-link">nwchan@anaddb</a></li>
+<li><a href="optic#nonlin_comp" class="small-grey-link">nonlin_comp@optic</a></li>
+<li><a href="optic#num_lin_comp" class="small-grey-link">num_lin_comp@optic</a></li>
+<li><a href="optic#num_nonlin_comp" class="small-grey-link">num_nonlin_comp@optic</a></li> </ul></li>
 <li><ul id="O" class="TabContentLetter">
-<li class="HeaderLetter">O</li> <li><a href="geo#objaat" class="">objaat</a></li>
-<li><a href="geo#objaax" class="">objaax</a></li>
-<li><a href="geo#objan" class="">objan</a></li>
-<li><a href="geo#objarf" class="">objarf</a></li>
-<li><a href="geo#objaro" class="">objaro</a></li>
-<li><a href="geo#objatr" class="">objatr</a></li>
-<li><a href="geo#objbat" class="">objbat</a></li>
-<li><a href="geo#objbax" class="">objbax</a></li>
-<li><a href="geo#objbn" class="">objbn</a></li>
-<li><a href="geo#objbrf" class="">objbrf</a></li>
-<li><a href="geo#objbro" class="">objbro</a></li>
-<li><a href="geo#objbtr" class="">objbtr</a></li>
-<li><a href="gstate#occ" class="">occ</a></li>
-<li><a href="basic#occopt" class="">occopt</a></li>
-<li><a href="gw#omegasimax" class="">omegasimax</a></li>
-<li><a href="gw#omegasrdmax" class="">omegasrdmax</a></li>
-<li><a href="rlx#optcell" class="">optcell</a></li>
-<li><a href="gstate#optdriver" class="">optdriver</a></li>
-<li><a href="dev#optforces" class="">optforces</a></li>
-<li><a href="dev#optnlxccc" class="">optnlxccc</a></li>
-<li><a href="gstate#optstress" class="">optstress</a></li>
-<li><a href="dev#ortalg" class="">ortalg</a></li>
-<li><a href="anaddb#outboltztrap" class="">outboltztrap@anaddb</a></li>
-<li><a href="anaddb#outscphon" class="">outscphon@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">O</li> <li><a href="geo#objaat" class="small-grey-link">objaat</a></li>
+<li><a href="geo#objaax" class="small-grey-link">objaax</a></li>
+<li><a href="geo#objan" class="small-grey-link">objan</a></li>
+<li><a href="geo#objarf" class="small-grey-link">objarf</a></li>
+<li><a href="geo#objaro" class="small-grey-link">objaro</a></li>
+<li><a href="geo#objatr" class="small-grey-link">objatr</a></li>
+<li><a href="geo#objbat" class="small-grey-link">objbat</a></li>
+<li><a href="geo#objbax" class="small-grey-link">objbax</a></li>
+<li><a href="geo#objbn" class="small-grey-link">objbn</a></li>
+<li><a href="geo#objbrf" class="small-grey-link">objbrf</a></li>
+<li><a href="geo#objbro" class="small-grey-link">objbro</a></li>
+<li><a href="geo#objbtr" class="small-grey-link">objbtr</a></li>
+<li><a href="gstate#occ" class="small-grey-link">occ</a></li>
+<li><a href="basic#occopt" class="small-grey-link">occopt</a></li>
+<li><a href="gw#omegasimax" class="small-grey-link">omegasimax</a></li>
+<li><a href="gw#omegasrdmax" class="small-grey-link">omegasrdmax</a></li>
+<li><a href="rlx#optcell" class="small-grey-link">optcell</a></li>
+<li><a href="gstate#optdriver" class="small-grey-link">optdriver</a></li>
+<li><a href="dev#optforces" class="small-grey-link">optforces</a></li>
+<li><a href="dev#optnlxccc" class="small-grey-link">optnlxccc</a></li>
+<li><a href="gstate#optstress" class="small-grey-link">optstress</a></li>
+<li><a href="dev#ortalg" class="small-grey-link">ortalg</a></li>
+<li><a href="anaddb#outboltztrap" class="small-grey-link">outboltztrap@anaddb</a></li>
+<li><a href="anaddb#outscphon" class="small-grey-link">outscphon@anaddb</a></li> </ul></li>
 <li><ul id="P" class="TabContentLetter">
-<li class="HeaderLetter">P</li> <li><a href="dev#papiopt" class="">papiopt</a></li>
-<li><a href="paral#paral_atom" class="">paral_atom</a></li>
-<li><a href="paral#paral_kgb" class="">paral_kgb</a></li>
-<li><a href="paral#paral_rf" class="">paral_rf</a></li>
-<li><a href="paw#pawcpxocc" class="">pawcpxocc</a></li>
-<li><a href="paw#pawcross" class="">pawcross</a></li>
-<li><a href="paw#pawecutdg" class="">pawecutdg</a></li>
-<li><a href="paw#pawfatbnd" class="">pawfatbnd</a></li>
-<li><a href="paw#pawlcutd" class="">pawlcutd</a></li>
-<li><a href="paw#pawlmix" class="">pawlmix</a></li>
-<li><a href="paw#pawmixdg" class="">pawmixdg</a></li>
-<li><a href="paw#pawnhatxc" class="">pawnhatxc</a></li>
-<li><a href="paw#pawnphi" class="">pawnphi</a></li>
-<li><a href="paw#pawntheta" class="">pawntheta</a></li>
-<li><a href="paw#pawnzlm" class="">pawnzlm</a></li>
-<li><a href="paw#pawoptmix" class="">pawoptmix</a></li>
-<li><a href="paw#pawoptosc" class="">pawoptosc</a></li>
-<li><a href="paw#pawovlp" class="">pawovlp</a></li>
-<li><a href="dev#pawprt_b" class="">pawprt_b</a></li>
-<li><a href="dev#pawprt_k" class="">pawprt_k</a></li>
-<li><a href="paw#pawprtden" class="">pawprtden</a></li>
-<li><a href="paw#pawprtdos" class="">pawprtdos</a></li>
-<li><a href="paw#pawprtvol" class="">pawprtvol</a></li>
-<li><a href="paw#pawprtwf" class="">pawprtwf</a></li>
-<li><a href="paw#pawspnorb" class="">pawspnorb</a></li>
-<li><a href="paw#pawstgylm" class="">pawstgylm</a></li>
-<li><a href="paw#pawsushat" class="">pawsushat</a></li>
-<li><a href="dev#pawujat" class="">pawujat</a></li>
-<li><a href="dev#pawujrad" class="">pawujrad</a></li>
-<li><a href="dev#pawujv" class="">pawujv</a></li>
-<li><a href="paw#pawusecp" class="">pawusecp</a></li>
-<li><a href="paw#pawxcdev" class="">pawxcdev</a></li>
-<li><a href="eph#ph_intmeth" class="">ph_intmeth</a></li>
-<li><a href="eph#ph_ndivsm" class="">ph_ndivsm</a></li>
-<li><a href="dfpt#ph_ngqpt" class="">ph_ngqpt</a></li>
-<li><a href="eph#ph_nqpath" class="">ph_nqpath</a></li>
-<li><a href="eph#ph_nqshift" class="">ph_nqshift</a></li>
-<li><a href="dfpt#ph_qpath" class="">ph_qpath</a></li>
-<li><a href="eph#ph_qshift" class="">ph_qshift</a></li>
-<li><a href="eph#ph_smear" class="">ph_smear</a></li>
-<li><a href="eph#ph_wstep" class="">ph_wstep</a></li>
-<li><a href="rlx#pimass" class="">pimass</a></li>
-<li><a href="rlx#pimd_constraint" class="">pimd_constraint</a></li>
-<li><a href="rlx#pitransform" class="">pitransform</a></li>
-<li><a href="dev#plowan_bandf" class="">plowan_bandf</a></li>
-<li><a href="dev#plowan_bandi" class="">plowan_bandi</a></li>
-<li><a href="dev#plowan_compute" class="">plowan_compute</a></li>
-<li><a href="dev#plowan_iatom" class="">plowan_iatom</a></li>
-<li><a href="dev#plowan_it" class="">plowan_it</a></li>
-<li><a href="dev#plowan_lcalc" class="">plowan_lcalc</a></li>
-<li><a href="dev#plowan_natom" class="">plowan_natom</a></li>
-<li><a href="dev#plowan_nbl" class="">plowan_nbl</a></li>
-<li><a href="dev#plowan_nt" class="">plowan_nt</a></li>
-<li><a href="dev#plowan_projcalc" class="">plowan_projcalc</a></li>
-<li><a href="dev#plowan_realspace" class="">plowan_realspace</a></li>
-<li><a href="ffield#polcen" class="">polcen</a></li>
-<li><a href="gstate#posdoppler" class="">posdoppler</a></li>
-<li><a href="gstate#positron" class="">positron</a></li>
-<li><a href="gstate#posnstep" class="">posnstep</a></li>
-<li><a href="gstate#posocc" class="">posocc</a></li>
-<li><a href="gstate#postoldfe" class="">postoldfe</a></li>
-<li><a href="gstate#postoldff" class="">postoldff</a></li>
-<li><a href="gw#ppmfrq" class="">ppmfrq</a></li>
-<li><a href="gw#ppmodel" class="">ppmodel</a></li>
-<li><a href="dfpt#prepanl" class="">prepanl</a></li>
-<li><a href="dfpt#prepgkk" class="">prepgkk</a></li>
-<li><a href="dev#prepscphon" class="">prepscphon</a></li>
-<li><a href="files#prt1dm" class="">prt1dm</a></li>
-<li><a href="rlx#prtatlist" class="">prtatlist</a></li>
-<li><a href="dfpt#prtbbb" class="">prtbbb</a></li>
-<li><a href="dev#prtbltztrp" class="">prtbltztrp</a></li>
-<li><a href="dev#prtcif" class="">prtcif</a></li>
-<li><a href="files#prtden" class="">prtden</a></li>
-<li><a href="gstate#prtdensph" class="">prtdensph</a></li>
-<li><a href="dev#prtdipole" class="">prtdipole</a></li>
-<li><a href="files#prtdos" class="">prtdos</a></li>
-<li><a href="files#prtdosm" class="">prtdosm</a></li>
-<li><a href="gstate#prtebands" class="">prtebands</a></li>
-<li><a href="paw#prtefg" class="">prtefg</a></li>
-<li><a href="files#prteig" class="">prteig</a></li>
-<li><a href="files#prtelf" class="">prtelf</a></li>
-<li><a href="paw#prtfc" class="">prtfc</a></li>
-<li><a href="files#prtfsurf" class="">prtfsurf</a></li>
-<li><a href="files#prtgden" class="">prtgden</a></li>
-<li><a href="files#prtgeo" class="">prtgeo</a></li>
-<li><a href="files#prtgkk" class="">prtgkk</a></li>
-<li><a href="files#prtgsr" class="">prtgsr</a></li>
-<li><a href="files#prtkden" class="">prtkden</a></li>
-<li><a href="files#prtkpt" class="">prtkpt</a></li>
-<li><a href="files#prtlden" class="">prtlden</a></li>
-<li><a href="paw#prtnabla" class="">prtnabla</a></li>
-<li><a href="dev#prtnest" class="">prtnest</a></li>
-<li><a href="eph#prtphbands" class="">prtphbands</a></li>
-<li><a href="eph#prtphdos" class="">prtphdos</a></li>
-<li><a href="eph#prtphsurf" class="">prtphsurf</a></li>
-<li><a href="dev#prtposcar" class="">prtposcar</a></li>
-<li><a href="files#prtpot" class="">prtpot</a></li>
-<li><a href="files#prtpsps" class="">prtpsps</a></li>
-<li><a href="files#prtspcur" class="">prtspcur</a></li>
-<li><a href="files#prtstm" class="">prtstm</a></li>
-<li><a href="files#prtsuscep" class="">prtsuscep</a></li>
-<li><a href="files#prtvclmb" class="">prtvclmb</a></li>
-<li><a href="vdw#prtvdw" class="">prtvdw</a></li>
-<li><a href="files#prtvha" class="">prtvha</a></li>
-<li><a href="files#prtvhxc" class="">prtvhxc</a></li>
-<li><a href="files#prtvol" class="">prtvol</a></li>
-<li><a href="files#prtvolimg" class="">prtvolimg</a></li>
-<li><a href="files#prtvpsp" class="">prtvpsp</a></li>
-<li><a href="files#prtvxc" class="">prtvxc</a></li>
-<li><a href="files#prtwant" class="">prtwant</a></li>
-<li><a href="files#prtwf" class="">prtwf</a></li>
-<li><a href="files#prtwf_full" class="">prtwf_full</a></li>
-<li><a href="files#prtxml" class="">prtxml</a></li>
-<li><a href="paw#ptcharge" class="">ptcharge</a></li>
-<li><a href="geo#ptgroupma" class="">ptgroupma</a></li>
-<li><a href="gw#pvelmax" class="">pvelmax</a></li>
-<li><a href="paral#pw_unbal_thresh" class="">pw_unbal_thresh</a></li>
-<li><a href="aim#phimax" class="">phimax@aim</a></li>
-<li><a href="aim#phimin" class="">phimin@aim</a></li>
-<li><a href="anaddb#piezoflag" class="">piezoflag@anaddb</a></li>
-<li><a href="anaddb#polflag" class="">polflag@anaddb</a></li>
-<li><a href="anaddb#prt_ifc" class="">prt_ifc@anaddb</a></li>
-<li><a href="anaddb#prtbltztrp" class="">prtbltztrp@anaddb</a></li>
-<li><a href="anaddb#prtddb" class="">prtddb@anaddb</a></li>
-<li><a href="anaddb#prtdos" class="">prtdos@anaddb</a></li>
-<li><a href="anaddb#prtfsurf" class="">prtfsurf@anaddb</a></li>
-<li><a href="anaddb#prtmbm" class="">prtmbm@anaddb</a></li>
-<li><a href="anaddb#prtnest" class="">prtnest@anaddb</a></li>
-<li><a href="anaddb#prtphbands" class="">prtphbands@anaddb</a></li>
-<li><a href="anaddb#prtsrlr" class="">prtsrlr@anaddb</a></li>
-<li><a href="anaddb#prtvol" class="">prtvol@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">P</li> <li><a href="dev#papiopt" class="small-grey-link">papiopt</a></li>
+<li><a href="paral#paral_atom" class="small-grey-link">paral_atom</a></li>
+<li><a href="paral#paral_kgb" class="small-grey-link">paral_kgb</a></li>
+<li><a href="paral#paral_rf" class="small-grey-link">paral_rf</a></li>
+<li><a href="paw#pawcpxocc" class="small-grey-link">pawcpxocc</a></li>
+<li><a href="paw#pawcross" class="small-grey-link">pawcross</a></li>
+<li><a href="paw#pawecutdg" class="small-grey-link">pawecutdg</a></li>
+<li><a href="paw#pawfatbnd" class="small-grey-link">pawfatbnd</a></li>
+<li><a href="paw#pawlcutd" class="small-grey-link">pawlcutd</a></li>
+<li><a href="paw#pawlmix" class="small-grey-link">pawlmix</a></li>
+<li><a href="paw#pawmixdg" class="small-grey-link">pawmixdg</a></li>
+<li><a href="paw#pawnhatxc" class="small-grey-link">pawnhatxc</a></li>
+<li><a href="paw#pawnphi" class="small-grey-link">pawnphi</a></li>
+<li><a href="paw#pawntheta" class="small-grey-link">pawntheta</a></li>
+<li><a href="paw#pawnzlm" class="small-grey-link">pawnzlm</a></li>
+<li><a href="paw#pawoptmix" class="small-grey-link">pawoptmix</a></li>
+<li><a href="paw#pawoptosc" class="small-grey-link">pawoptosc</a></li>
+<li><a href="paw#pawovlp" class="small-grey-link">pawovlp</a></li>
+<li><a href="dev#pawprt_b" class="small-grey-link">pawprt_b</a></li>
+<li><a href="dev#pawprt_k" class="small-grey-link">pawprt_k</a></li>
+<li><a href="paw#pawprtden" class="small-grey-link">pawprtden</a></li>
+<li><a href="paw#pawprtdos" class="small-grey-link">pawprtdos</a></li>
+<li><a href="paw#pawprtvol" class="small-grey-link">pawprtvol</a></li>
+<li><a href="paw#pawprtwf" class="small-grey-link">pawprtwf</a></li>
+<li><a href="paw#pawspnorb" class="small-grey-link">pawspnorb</a></li>
+<li><a href="paw#pawstgylm" class="small-grey-link">pawstgylm</a></li>
+<li><a href="paw#pawsushat" class="small-grey-link">pawsushat</a></li>
+<li><a href="dev#pawujat" class="small-grey-link">pawujat</a></li>
+<li><a href="dev#pawujrad" class="small-grey-link">pawujrad</a></li>
+<li><a href="dev#pawujv" class="small-grey-link">pawujv</a></li>
+<li><a href="paw#pawusecp" class="small-grey-link">pawusecp</a></li>
+<li><a href="paw#pawxcdev" class="small-grey-link">pawxcdev</a></li>
+<li><a href="eph#ph_intmeth" class="small-grey-link">ph_intmeth</a></li>
+<li><a href="eph#ph_ndivsm" class="small-grey-link">ph_ndivsm</a></li>
+<li><a href="dfpt#ph_ngqpt" class="small-grey-link">ph_ngqpt</a></li>
+<li><a href="eph#ph_nqpath" class="small-grey-link">ph_nqpath</a></li>
+<li><a href="eph#ph_nqshift" class="small-grey-link">ph_nqshift</a></li>
+<li><a href="dfpt#ph_qpath" class="small-grey-link">ph_qpath</a></li>
+<li><a href="eph#ph_qshift" class="small-grey-link">ph_qshift</a></li>
+<li><a href="eph#ph_smear" class="small-grey-link">ph_smear</a></li>
+<li><a href="eph#ph_wstep" class="small-grey-link">ph_wstep</a></li>
+<li><a href="rlx#pimass" class="small-grey-link">pimass</a></li>
+<li><a href="rlx#pimd_constraint" class="small-grey-link">pimd_constraint</a></li>
+<li><a href="rlx#pitransform" class="small-grey-link">pitransform</a></li>
+<li><a href="dev#plowan_bandf" class="small-grey-link">plowan_bandf</a></li>
+<li><a href="dev#plowan_bandi" class="small-grey-link">plowan_bandi</a></li>
+<li><a href="dev#plowan_compute" class="small-grey-link">plowan_compute</a></li>
+<li><a href="dev#plowan_iatom" class="small-grey-link">plowan_iatom</a></li>
+<li><a href="dev#plowan_it" class="small-grey-link">plowan_it</a></li>
+<li><a href="dev#plowan_lcalc" class="small-grey-link">plowan_lcalc</a></li>
+<li><a href="dev#plowan_natom" class="small-grey-link">plowan_natom</a></li>
+<li><a href="dev#plowan_nbl" class="small-grey-link">plowan_nbl</a></li>
+<li><a href="dev#plowan_nt" class="small-grey-link">plowan_nt</a></li>
+<li><a href="dev#plowan_projcalc" class="small-grey-link">plowan_projcalc</a></li>
+<li><a href="dev#plowan_realspace" class="small-grey-link">plowan_realspace</a></li>
+<li><a href="ffield#polcen" class="small-grey-link">polcen</a></li>
+<li><a href="gstate#posdoppler" class="small-grey-link">posdoppler</a></li>
+<li><a href="gstate#positron" class="small-grey-link">positron</a></li>
+<li><a href="gstate#posnstep" class="small-grey-link">posnstep</a></li>
+<li><a href="gstate#posocc" class="small-grey-link">posocc</a></li>
+<li><a href="gstate#postoldfe" class="small-grey-link">postoldfe</a></li>
+<li><a href="gstate#postoldff" class="small-grey-link">postoldff</a></li>
+<li><a href="gw#ppmfrq" class="small-grey-link">ppmfrq</a></li>
+<li><a href="gw#ppmodel" class="small-grey-link">ppmodel</a></li>
+<li><a href="dfpt#prepanl" class="small-grey-link">prepanl</a></li>
+<li><a href="dfpt#prepgkk" class="small-grey-link">prepgkk</a></li>
+<li><a href="dev#prepscphon" class="small-grey-link">prepscphon</a></li>
+<li><a href="files#prt1dm" class="small-grey-link">prt1dm</a></li>
+<li><a href="rlx#prtatlist" class="small-grey-link">prtatlist</a></li>
+<li><a href="dfpt#prtbbb" class="small-grey-link">prtbbb</a></li>
+<li><a href="dev#prtbltztrp" class="small-grey-link">prtbltztrp</a></li>
+<li><a href="dev#prtcif" class="small-grey-link">prtcif</a></li>
+<li><a href="files#prtden" class="small-grey-link">prtden</a></li>
+<li><a href="gstate#prtdensph" class="small-grey-link">prtdensph</a></li>
+<li><a href="dev#prtdipole" class="small-grey-link">prtdipole</a></li>
+<li><a href="files#prtdos" class="small-grey-link">prtdos</a></li>
+<li><a href="files#prtdosm" class="small-grey-link">prtdosm</a></li>
+<li><a href="gstate#prtebands" class="small-grey-link">prtebands</a></li>
+<li><a href="paw#prtefg" class="small-grey-link">prtefg</a></li>
+<li><a href="files#prteig" class="small-grey-link">prteig</a></li>
+<li><a href="files#prtelf" class="small-grey-link">prtelf</a></li>
+<li><a href="paw#prtfc" class="small-grey-link">prtfc</a></li>
+<li><a href="files#prtfsurf" class="small-grey-link">prtfsurf</a></li>
+<li><a href="files#prtgden" class="small-grey-link">prtgden</a></li>
+<li><a href="files#prtgeo" class="small-grey-link">prtgeo</a></li>
+<li><a href="files#prtgkk" class="small-grey-link">prtgkk</a></li>
+<li><a href="files#prtgsr" class="small-grey-link">prtgsr</a></li>
+<li><a href="files#prtkden" class="small-grey-link">prtkden</a></li>
+<li><a href="files#prtkpt" class="small-grey-link">prtkpt</a></li>
+<li><a href="files#prtlden" class="small-grey-link">prtlden</a></li>
+<li><a href="paw#prtnabla" class="small-grey-link">prtnabla</a></li>
+<li><a href="dev#prtnest" class="small-grey-link">prtnest</a></li>
+<li><a href="eph#prtphbands" class="small-grey-link">prtphbands</a></li>
+<li><a href="eph#prtphdos" class="small-grey-link">prtphdos</a></li>
+<li><a href="eph#prtphsurf" class="small-grey-link">prtphsurf</a></li>
+<li><a href="dev#prtposcar" class="small-grey-link">prtposcar</a></li>
+<li><a href="files#prtpot" class="small-grey-link">prtpot</a></li>
+<li><a href="files#prtpsps" class="small-grey-link">prtpsps</a></li>
+<li><a href="files#prtspcur" class="small-grey-link">prtspcur</a></li>
+<li><a href="files#prtstm" class="small-grey-link">prtstm</a></li>
+<li><a href="files#prtsuscep" class="small-grey-link">prtsuscep</a></li>
+<li><a href="files#prtvclmb" class="small-grey-link">prtvclmb</a></li>
+<li><a href="vdw#prtvdw" class="small-grey-link">prtvdw</a></li>
+<li><a href="files#prtvha" class="small-grey-link">prtvha</a></li>
+<li><a href="files#prtvhxc" class="small-grey-link">prtvhxc</a></li>
+<li><a href="files#prtvol" class="small-grey-link">prtvol</a></li>
+<li><a href="files#prtvolimg" class="small-grey-link">prtvolimg</a></li>
+<li><a href="files#prtvpsp" class="small-grey-link">prtvpsp</a></li>
+<li><a href="files#prtvxc" class="small-grey-link">prtvxc</a></li>
+<li><a href="files#prtwant" class="small-grey-link">prtwant</a></li>
+<li><a href="files#prtwf" class="small-grey-link">prtwf</a></li>
+<li><a href="files#prtwf_full" class="small-grey-link">prtwf_full</a></li>
+<li><a href="files#prtxml" class="small-grey-link">prtxml</a></li>
+<li><a href="paw#ptcharge" class="small-grey-link">ptcharge</a></li>
+<li><a href="geo#ptgroupma" class="small-grey-link">ptgroupma</a></li>
+<li><a href="gw#pvelmax" class="small-grey-link">pvelmax</a></li>
+<li><a href="paral#pw_unbal_thresh" class="small-grey-link">pw_unbal_thresh</a></li>
+<li><a href="aim#phimax" class="small-grey-link">phimax@aim</a></li>
+<li><a href="aim#phimin" class="small-grey-link">phimin@aim</a></li>
+<li><a href="anaddb#piezoflag" class="small-grey-link">piezoflag@anaddb</a></li>
+<li><a href="anaddb#polflag" class="small-grey-link">polflag@anaddb</a></li>
+<li><a href="anaddb#prt_ifc" class="small-grey-link">prt_ifc@anaddb</a></li>
+<li><a href="anaddb#prtbltztrp" class="small-grey-link">prtbltztrp@anaddb</a></li>
+<li><a href="anaddb#prtddb" class="small-grey-link">prtddb@anaddb</a></li>
+<li><a href="anaddb#prtdos" class="small-grey-link">prtdos@anaddb</a></li>
+<li><a href="anaddb#prtfsurf" class="small-grey-link">prtfsurf@anaddb</a></li>
+<li><a href="anaddb#prtmbm" class="small-grey-link">prtmbm@anaddb</a></li>
+<li><a href="anaddb#prtnest" class="small-grey-link">prtnest@anaddb</a></li>
+<li><a href="anaddb#prtphbands" class="small-grey-link">prtphbands@anaddb</a></li>
+<li><a href="anaddb#prtsrlr" class="small-grey-link">prtsrlr@anaddb</a></li>
+<li><a href="anaddb#prtvol" class="small-grey-link">prtvol@anaddb</a></li> </ul></li>
 <li><ul id="Q" class="TabContentLetter">
-<li class="HeaderLetter">Q</li> <li><a href="rlx#qmass" class="">qmass</a></li>
-<li><a href="ffield#qprtrb" class="">qprtrb</a></li>
-<li><a href="gstate#qpt" class="">qpt</a></li>
-<li><a href="gw#qptdm" class="">qptdm</a></li>
-<li><a href="internal#qptn" class="">qptn</a></li>
-<li><a href="gstate#qptnrm" class="">qptnrm</a></li>
-<li><a href="gstate#qptopt" class="">qptopt</a></li>
-<li><a href="gstate#qptrlatt" class="">qptrlatt</a></li>
-<li><a href="paw#quadmom" class="">quadmom</a></li>
-<li><a href="anaddb#q1shft" class="">q1shft@anaddb</a></li>
-<li><a href="anaddb#q2shft" class="">q2shft@anaddb</a></li>
-<li><a href="anaddb#qgrid_type" class="">qgrid_type@anaddb</a></li>
-<li><a href="anaddb#qpath" class="">qpath@anaddb</a></li>
-<li><a href="anaddb#qph1l" class="">qph1l@anaddb</a></li>
-<li><a href="anaddb#qph2l" class="">qph2l@anaddb</a></li>
-<li><a href="anaddb#qrefine" class="">qrefine@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">Q</li> <li><a href="rlx#qmass" class="small-grey-link">qmass</a></li>
+<li><a href="ffield#qprtrb" class="small-grey-link">qprtrb</a></li>
+<li><a href="gstate#qpt" class="small-grey-link">qpt</a></li>
+<li><a href="gw#qptdm" class="small-grey-link">qptdm</a></li>
+<li><a href="internal#qptn" class="small-grey-link">qptn</a></li>
+<li><a href="gstate#qptnrm" class="small-grey-link">qptnrm</a></li>
+<li><a href="gstate#qptopt" class="small-grey-link">qptopt</a></li>
+<li><a href="gstate#qptrlatt" class="small-grey-link">qptrlatt</a></li>
+<li><a href="paw#quadmom" class="small-grey-link">quadmom</a></li>
+<li><a href="anaddb#q1shft" class="small-grey-link">q1shft@anaddb</a></li>
+<li><a href="anaddb#q2shft" class="small-grey-link">q2shft@anaddb</a></li>
+<li><a href="anaddb#qgrid_type" class="small-grey-link">qgrid_type@anaddb</a></li>
+<li><a href="anaddb#qpath" class="small-grey-link">qpath@anaddb</a></li>
+<li><a href="anaddb#qph1l" class="small-grey-link">qph1l@anaddb</a></li>
+<li><a href="anaddb#qph2l" class="small-grey-link">qph2l@anaddb</a></li>
+<li><a href="anaddb#qrefine" class="small-grey-link">qrefine@anaddb</a></li> </ul></li>
 <li><ul id="R" class="TabContentLetter">
-<li class="HeaderLetter">R</li> <li><a href="rlx#random_atpos" class="">random_atpos</a></li>
-<li><a href="gstate#ratsph" class="">ratsph</a></li>
-<li><a href="gstate#ratsph_extra" class="">ratsph_extra</a></li>
-<li><a href="gw#rcut" class="">rcut</a></li>
-<li><a href="dev#recefermi" class="">recefermi</a></li>
-<li><a href="dev#recgratio" class="">recgratio</a></li>
-<li><a href="dev#recnpath" class="">recnpath</a></li>
-<li><a href="dev#recnrec" class="">recnrec</a></li>
-<li><a href="dev#recptrott" class="">recptrott</a></li>
-<li><a href="dev#recrcut" class="">recrcut</a></li>
-<li><a href="dev#rectesteg" class="">rectesteg</a></li>
-<li><a href="dev#rectolden" class="">rectolden</a></li>
-<li><a href="ffield#red_dfield" class="">red_dfield</a></li>
-<li><a href="ffield#red_efield" class="">red_efield</a></li>
-<li><a href="ffield#red_efieldbar" class="">red_efieldbar</a></li>
-<li><a href="rlx#restartxf" class="">restartxf</a></li>
-<li><a href="dfpt#rf2_dkdk" class="">rf2_dkdk</a></li>
-<li><a href="dfpt#rfasr" class="">rfasr</a></li>
-<li><a href="dfpt#rfatpol" class="">rfatpol</a></li>
-<li><a href="dfpt#rfddk" class="">rfddk</a></li>
-<li><a href="dfpt#rfdir" class="">rfdir</a></li>
-<li><a href="dfpt#rfelfd" class="">rfelfd</a></li>
-<li><a href="dfpt#rfmagn" class="">rfmagn</a></li>
-<li><a href="dfpt#rfmeth" class="">rfmeth</a></li>
-<li><a href="dfpt#rfphon" class="">rfphon</a></li>
-<li><a href="dfpt#rfstrs" class="">rfstrs</a></li>
-<li><a href="dfpt#rfuser" class="">rfuser</a></li>
-<li><a href="gw#rhoqpmix" class="">rhoqpmix</a></li>
-<li><a href="basic#rprim" class="">rprim</a></li>
-<li><a href="basic#rprimd" class="">rprimd</a></li>
-<li><a href="aim#radstp" class="">radstp@aim</a></li>
-<li><a href="aim#ratmin" class="">ratmin@aim</a></li>
-<li><a href="aim#rsurdir" class="">rsurdir@aim</a></li>
-<li><a href="aim#rsurf" class="">rsurf@aim</a></li>
-<li><a href="anaddb#ramansr" class="">ramansr@anaddb</a></li>
-<li><a href="anaddb#relaxat" class="">relaxat@anaddb</a></li>
-<li><a href="anaddb#relaxstr" class="">relaxstr@anaddb</a></li>
-<li><a href="anaddb#rfmeth" class="">rfmeth@anaddb</a></li>
-<li><a href="anaddb#rifcsph" class="">rifcsph@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">R</li> <li><a href="rlx#random_atpos" class="small-grey-link">random_atpos</a></li>
+<li><a href="gstate#ratsph" class="small-grey-link">ratsph</a></li>
+<li><a href="gstate#ratsph_extra" class="small-grey-link">ratsph_extra</a></li>
+<li><a href="gw#rcut" class="small-grey-link">rcut</a></li>
+<li><a href="dev#recefermi" class="small-grey-link">recefermi</a></li>
+<li><a href="dev#recgratio" class="small-grey-link">recgratio</a></li>
+<li><a href="dev#recnpath" class="small-grey-link">recnpath</a></li>
+<li><a href="dev#recnrec" class="small-grey-link">recnrec</a></li>
+<li><a href="dev#recptrott" class="small-grey-link">recptrott</a></li>
+<li><a href="dev#recrcut" class="small-grey-link">recrcut</a></li>
+<li><a href="dev#rectesteg" class="small-grey-link">rectesteg</a></li>
+<li><a href="dev#rectolden" class="small-grey-link">rectolden</a></li>
+<li><a href="ffield#red_dfield" class="small-grey-link">red_dfield</a></li>
+<li><a href="ffield#red_efield" class="small-grey-link">red_efield</a></li>
+<li><a href="ffield#red_efieldbar" class="small-grey-link">red_efieldbar</a></li>
+<li><a href="rlx#restartxf" class="small-grey-link">restartxf</a></li>
+<li><a href="dfpt#rf2_dkdk" class="small-grey-link">rf2_dkdk</a></li>
+<li><a href="dfpt#rfasr" class="small-grey-link">rfasr</a></li>
+<li><a href="dfpt#rfatpol" class="small-grey-link">rfatpol</a></li>
+<li><a href="dfpt#rfddk" class="small-grey-link">rfddk</a></li>
+<li><a href="dfpt#rfdir" class="small-grey-link">rfdir</a></li>
+<li><a href="dfpt#rfelfd" class="small-grey-link">rfelfd</a></li>
+<li><a href="dfpt#rfmagn" class="small-grey-link">rfmagn</a></li>
+<li><a href="dfpt#rfmeth" class="small-grey-link">rfmeth</a></li>
+<li><a href="dfpt#rfphon" class="small-grey-link">rfphon</a></li>
+<li><a href="dfpt#rfstrs" class="small-grey-link">rfstrs</a></li>
+<li><a href="dfpt#rfuser" class="small-grey-link">rfuser</a></li>
+<li><a href="gw#rhoqpmix" class="small-grey-link">rhoqpmix</a></li>
+<li><a href="basic#rprim" class="small-grey-link">rprim</a></li>
+<li><a href="basic#rprimd" class="small-grey-link">rprimd</a></li>
+<li><a href="aim#radstp" class="small-grey-link">radstp@aim</a></li>
+<li><a href="aim#ratmin" class="small-grey-link">ratmin@aim</a></li>
+<li><a href="aim#rsurdir" class="small-grey-link">rsurdir@aim</a></li>
+<li><a href="aim#rsurf" class="small-grey-link">rsurf@aim</a></li>
+<li><a href="anaddb#ramansr" class="small-grey-link">ramansr@anaddb</a></li>
+<li><a href="anaddb#relaxat" class="small-grey-link">relaxat@anaddb</a></li>
+<li><a href="anaddb#relaxstr" class="small-grey-link">relaxstr@anaddb</a></li>
+<li><a href="anaddb#rfmeth" class="small-grey-link">rfmeth@anaddb</a></li>
+<li><a href="anaddb#rifcsph" class="small-grey-link">rifcsph@anaddb</a></li> </ul></li>
 <li><ul id="S" class="TabContentLetter">
-<li class="HeaderLetter">S</li> <li><a href="basic#scalecart" class="">scalecart</a></li>
-<li><a href="gstate#scphon_supercell" class="">scphon_supercell</a></li>
-<li><a href="gstate#scphon_temp" class="">scphon_temp</a></li>
-<li><a href="basic#shiftk" class="">shiftk</a></li>
-<li><a href="gstate#shiftq" class="">shiftq</a></li>
-<li><a href="rlx#signperm" class="">signperm</a></li>
-<li><a href="gstate#slabwsrad" class="">slabwsrad</a></li>
-<li><a href="gstate#slabzbeg" class="">slabzbeg</a></li>
-<li><a href="gstate#slabzend" class="">slabzend</a></li>
-<li><a href="dfpt#smdelta" class="">smdelta</a></li>
-<li><a href="gstate#so_psp" class="">so_psp</a></li>
-<li><a href="gw#spbroad" class="">spbroad</a></li>
-<li><a href="geo#spgaxor" class="">spgaxor</a></li>
-<li><a href="geo#spgorig" class="">spgorig</a></li>
-<li><a href="geo#spgroup" class="">spgroup</a></li>
-<li><a href="geo#spgroupma" class="">spgroupma</a></li>
-<li><a href="gstate#spinat" class="">spinat</a></li>
-<li><a href="ffield#spinmagntarget" class="">spinmagntarget</a></li>
-<li><a href="gw#spmeth" class="">spmeth</a></li>
-<li><a href="paw#spnorbscl" class="">spnorbscl</a></li>
-<li><a href="gstate#stmbias" class="">stmbias</a></li>
-<li><a href="rlx#strfact" class="">strfact</a></li>
-<li><a href="rlx#string_algo" class="">string_algo</a></li>
-<li><a href="rlx#strprecon" class="">strprecon</a></li>
-<li><a href="rlx#strtarget" class="">strtarget</a></li>
-<li><a href="gstate#symafm" class="">symafm</a></li>
-<li><a href="gw#symchi" class="">symchi</a></li>
-<li><a href="eph#symdynmat" class="">symdynmat</a></li>
-<li><a href="dev#symmorphi" class="">symmorphi</a></li>
-<li><a href="basic#symrel" class="">symrel</a></li>
-<li><a href="gw#symsigma" class="">symsigma</a></li>
-<li><a href="aim#scal" class="">scal@aim</a></li>
-<li><a href="aim#surf" class="">surf@aim</a></li>
-<li><a href="anaddb#selectz" class="">selectz@anaddb</a></li>
-<li><a href="anaddb#symdynmat" class="">symdynmat@anaddb</a></li>
-<li><a href="anaddb#symgkq" class="">symgkq@anaddb</a></li>
-<li><a href="optic#scissor" class="">scissor@optic</a></li> </ul></li>
+<li class="HeaderLetter">S</li> <li><a href="basic#scalecart" class="small-grey-link">scalecart</a></li>
+<li><a href="gstate#scphon_supercell" class="small-grey-link">scphon_supercell</a></li>
+<li><a href="gstate#scphon_temp" class="small-grey-link">scphon_temp</a></li>
+<li><a href="basic#shiftk" class="small-grey-link">shiftk</a></li>
+<li><a href="gstate#shiftq" class="small-grey-link">shiftq</a></li>
+<li><a href="rlx#signperm" class="small-grey-link">signperm</a></li>
+<li><a href="gstate#slabwsrad" class="small-grey-link">slabwsrad</a></li>
+<li><a href="gstate#slabzbeg" class="small-grey-link">slabzbeg</a></li>
+<li><a href="gstate#slabzend" class="small-grey-link">slabzend</a></li>
+<li><a href="dfpt#smdelta" class="small-grey-link">smdelta</a></li>
+<li><a href="gstate#so_psp" class="small-grey-link">so_psp</a></li>
+<li><a href="gw#spbroad" class="small-grey-link">spbroad</a></li>
+<li><a href="geo#spgaxor" class="small-grey-link">spgaxor</a></li>
+<li><a href="geo#spgorig" class="small-grey-link">spgorig</a></li>
+<li><a href="geo#spgroup" class="small-grey-link">spgroup</a></li>
+<li><a href="geo#spgroupma" class="small-grey-link">spgroupma</a></li>
+<li><a href="gstate#spinat" class="small-grey-link">spinat</a></li>
+<li><a href="ffield#spinmagntarget" class="small-grey-link">spinmagntarget</a></li>
+<li><a href="gw#spmeth" class="small-grey-link">spmeth</a></li>
+<li><a href="paw#spnorbscl" class="small-grey-link">spnorbscl</a></li>
+<li><a href="gstate#stmbias" class="small-grey-link">stmbias</a></li>
+<li><a href="rlx#strfact" class="small-grey-link">strfact</a></li>
+<li><a href="rlx#string_algo" class="small-grey-link">string_algo</a></li>
+<li><a href="rlx#strprecon" class="small-grey-link">strprecon</a></li>
+<li><a href="rlx#strtarget" class="small-grey-link">strtarget</a></li>
+<li><a href="gstate#symafm" class="small-grey-link">symafm</a></li>
+<li><a href="gw#symchi" class="small-grey-link">symchi</a></li>
+<li><a href="eph#symdynmat" class="small-grey-link">symdynmat</a></li>
+<li><a href="dev#symmorphi" class="small-grey-link">symmorphi</a></li>
+<li><a href="basic#symrel" class="small-grey-link">symrel</a></li>
+<li><a href="gw#symsigma" class="small-grey-link">symsigma</a></li>
+<li><a href="aim#scal" class="small-grey-link">scal@aim</a></li>
+<li><a href="aim#surf" class="small-grey-link">surf@aim</a></li>
+<li><a href="anaddb#selectz" class="small-grey-link">selectz@anaddb</a></li>
+<li><a href="anaddb#symdynmat" class="small-grey-link">symdynmat@anaddb</a></li>
+<li><a href="anaddb#symgkq" class="small-grey-link">symgkq@anaddb</a></li>
+<li><a href="optic#scissor" class="small-grey-link">scissor@optic</a></li> </ul></li>
 <li><ul id="T" class="TabContentLetter">
-<li class="HeaderLetter">T</li> <li><a href="dfpt#td_maxene" class="">td_maxene</a></li>
-<li><a href="dfpt#td_mexcit" class="">td_mexcit</a></li>
-<li><a href="dev#tfkinfunc" class="">tfkinfunc</a></li>
-<li><a href="dev#tfw_toldfe" class="">tfw_toldfe</a></li>
-<li><a href="gstate#timopt" class="">timopt</a></li>
-<li><a href="gstate#tl_nprccg" class="">tl_nprccg</a></li>
-<li><a href="gstate#tl_radius" class="">tl_radius</a></li>
-<li><a href="basic#tnons" class="">tnons</a></li>
-<li><a href="basic#toldfe" class="">toldfe</a></li>
-<li><a href="basic#toldff" class="">toldff</a></li>
-<li><a href="rlx#tolimg" class="">tolimg</a></li>
-<li><a href="rlx#tolmxde" class="">tolmxde</a></li>
-<li><a href="rlx#tolmxf" class="">tolmxf</a></li>
-<li><a href="dev#tolrde" class="">tolrde</a></li>
-<li><a href="basic#tolrff" class="">tolrff</a></li>
-<li><a href="geo#tolsym" class="">tolsym</a></li>
-<li><a href="basic#tolvrs" class="">tolvrs</a></li>
-<li><a href="basic#tolwfr" class="">tolwfr</a></li>
-<li><a href="gstate#tphysel" class="">tphysel</a></li>
-<li><a href="gstate#tsmear" class="">tsmear</a></li>
-<li><a href="basic#typat" class="">typat</a></li>
-<li><a href="aim#thetamax" class="">thetamax@aim</a></li>
-<li><a href="aim#thetamin" class="">thetamin@aim</a></li>
-<li><a href="anaddb#targetpol" class="">targetpol@anaddb</a></li>
-<li><a href="anaddb#telphint" class="">telphint@anaddb</a></li>
-<li><a href="anaddb#temperinc" class="">temperinc@anaddb</a></li>
-<li><a href="anaddb#tempermin" class="">tempermin@anaddb</a></li>
-<li><a href="anaddb#thmflag" class="">thmflag@anaddb</a></li>
-<li><a href="anaddb#thmtol" class="">thmtol@anaddb</a></li>
-<li><a href="optic#tolerance" class="">tolerance@optic</a></li> </ul></li>
+<li class="HeaderLetter">T</li> <li><a href="dfpt#td_maxene" class="small-grey-link">td_maxene</a></li>
+<li><a href="dfpt#td_mexcit" class="small-grey-link">td_mexcit</a></li>
+<li><a href="dev#tfkinfunc" class="small-grey-link">tfkinfunc</a></li>
+<li><a href="dev#tfw_toldfe" class="small-grey-link">tfw_toldfe</a></li>
+<li><a href="gstate#timopt" class="small-grey-link">timopt</a></li>
+<li><a href="gstate#tl_nprccg" class="small-grey-link">tl_nprccg</a></li>
+<li><a href="gstate#tl_radius" class="small-grey-link">tl_radius</a></li>
+<li><a href="basic#tnons" class="small-grey-link">tnons</a></li>
+<li><a href="basic#toldfe" class="small-grey-link">toldfe</a></li>
+<li><a href="basic#toldff" class="small-grey-link">toldff</a></li>
+<li><a href="rlx#tolimg" class="small-grey-link">tolimg</a></li>
+<li><a href="rlx#tolmxde" class="small-grey-link">tolmxde</a></li>
+<li><a href="rlx#tolmxf" class="small-grey-link">tolmxf</a></li>
+<li><a href="dev#tolrde" class="small-grey-link">tolrde</a></li>
+<li><a href="basic#tolrff" class="small-grey-link">tolrff</a></li>
+<li><a href="geo#tolsym" class="small-grey-link">tolsym</a></li>
+<li><a href="basic#tolvrs" class="small-grey-link">tolvrs</a></li>
+<li><a href="basic#tolwfr" class="small-grey-link">tolwfr</a></li>
+<li><a href="gstate#tphysel" class="small-grey-link">tphysel</a></li>
+<li><a href="gstate#tsmear" class="small-grey-link">tsmear</a></li>
+<li><a href="basic#typat" class="small-grey-link">typat</a></li>
+<li><a href="aim#thetamax" class="small-grey-link">thetamax@aim</a></li>
+<li><a href="aim#thetamin" class="small-grey-link">thetamin@aim</a></li>
+<li><a href="anaddb#targetpol" class="small-grey-link">targetpol@anaddb</a></li>
+<li><a href="anaddb#telphint" class="small-grey-link">telphint@anaddb</a></li>
+<li><a href="anaddb#temperinc" class="small-grey-link">temperinc@anaddb</a></li>
+<li><a href="anaddb#tempermin" class="small-grey-link">tempermin@anaddb</a></li>
+<li><a href="anaddb#thmflag" class="small-grey-link">thmflag@anaddb</a></li>
+<li><a href="anaddb#thmtol" class="small-grey-link">thmtol@anaddb</a></li>
+<li><a href="optic#tolerance" class="small-grey-link">tolerance@optic</a></li> </ul></li>
 <li><ul id="U" class="TabContentLetter">
-<li class="HeaderLetter">U</li> <li><a href="gw#ucrpa" class="">ucrpa</a></li>
-<li><a href="gw#ucrpa_bands" class="">ucrpa_bands</a></li>
-<li><a href="gw#ucrpa_window" class="">ucrpa_window</a></li>
-<li><a href="basic#udtset" class="">udtset</a></li>
-<li><a href="paw#upawu" class="">upawu</a></li>
-<li><a href="dev#use_gemm_nonlop" class="">use_gemm_nonlop</a></li>
-<li><a href="paral#use_gpu_cuda" class="">use_gpu_cuda</a></li>
-<li><a href="dev#use_nonscf_gkk" class="">use_nonscf_gkk</a></li>
-<li><a href="paral#use_slk" class="">use_slk</a></li>
-<li><a href="paw#usedmatpu" class="">usedmatpu</a></li>
-<li><a href="dev#usedmft" class="">usedmft</a></li>
-<li><a href="paw#useexexch" class="">useexexch</a></li>
-<li><a href="internal#usefock" class="">usefock</a></li>
-<li><a href="gstate#usekden" class="">usekden</a></li>
-<li><a href="internal#usepaw" class="">usepaw</a></li>
-<li><a href="paw#usepawu" class="">usepawu</a></li>
-<li><a href="paw#usepotzero" class="">usepotzero</a></li>
-<li><a href="internal#userec" class="">userec</a></li>
-<li><a href="dev#useria" class="">useria</a></li>
-<li><a href="dev#userib" class="">userib</a></li>
-<li><a href="dev#useric" class="">useric</a></li>
-<li><a href="dev#userid" class="">userid</a></li>
-<li><a href="dev#userie" class="">userie</a></li>
-<li><a href="dev#userra" class="">userra</a></li>
-<li><a href="dev#userrb" class="">userrb</a></li>
-<li><a href="dev#userrc" class="">userrc</a></li>
-<li><a href="dev#userrd" class="">userrd</a></li>
-<li><a href="dev#userre" class="">userre</a></li>
-<li><a href="basic#usewvl" class="">usewvl</a></li>
-<li><a href="paw#usexcnhat" class="">usexcnhat</a></li>
-<li><a href="dev#useylm" class="">useylm</a></li>
-<li><a href="anaddb#use_k_fine" class="">use_k_fine@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">U</li> <li><a href="gw#ucrpa" class="small-grey-link">ucrpa</a></li>
+<li><a href="gw#ucrpa_bands" class="small-grey-link">ucrpa_bands</a></li>
+<li><a href="gw#ucrpa_window" class="small-grey-link">ucrpa_window</a></li>
+<li><a href="basic#udtset" class="small-grey-link">udtset</a></li>
+<li><a href="paw#upawu" class="small-grey-link">upawu</a></li>
+<li><a href="dev#use_gemm_nonlop" class="small-grey-link">use_gemm_nonlop</a></li>
+<li><a href="paral#use_gpu_cuda" class="small-grey-link">use_gpu_cuda</a></li>
+<li><a href="dev#use_nonscf_gkk" class="small-grey-link">use_nonscf_gkk</a></li>
+<li><a href="paral#use_slk" class="small-grey-link">use_slk</a></li>
+<li><a href="paw#usedmatpu" class="small-grey-link">usedmatpu</a></li>
+<li><a href="dev#usedmft" class="small-grey-link">usedmft</a></li>
+<li><a href="paw#useexexch" class="small-grey-link">useexexch</a></li>
+<li><a href="internal#usefock" class="small-grey-link">usefock</a></li>
+<li><a href="gstate#usekden" class="small-grey-link">usekden</a></li>
+<li><a href="internal#usepaw" class="small-grey-link">usepaw</a></li>
+<li><a href="paw#usepawu" class="small-grey-link">usepawu</a></li>
+<li><a href="paw#usepotzero" class="small-grey-link">usepotzero</a></li>
+<li><a href="internal#userec" class="small-grey-link">userec</a></li>
+<li><a href="dev#useria" class="small-grey-link">useria</a></li>
+<li><a href="dev#userib" class="small-grey-link">userib</a></li>
+<li><a href="dev#useric" class="small-grey-link">useric</a></li>
+<li><a href="dev#userid" class="small-grey-link">userid</a></li>
+<li><a href="dev#userie" class="small-grey-link">userie</a></li>
+<li><a href="dev#userra" class="small-grey-link">userra</a></li>
+<li><a href="dev#userrb" class="small-grey-link">userrb</a></li>
+<li><a href="dev#userrc" class="small-grey-link">userrc</a></li>
+<li><a href="dev#userrd" class="small-grey-link">userrd</a></li>
+<li><a href="dev#userre" class="small-grey-link">userre</a></li>
+<li><a href="basic#usewvl" class="small-grey-link">usewvl</a></li>
+<li><a href="paw#usexcnhat" class="small-grey-link">usexcnhat</a></li>
+<li><a href="dev#useylm" class="small-grey-link">useylm</a></li>
+<li><a href="anaddb#use_k_fine" class="small-grey-link">use_k_fine@anaddb</a></li> </ul></li>
 <li><ul id="V" class="TabContentLetter">
-<li class="HeaderLetter">V</li> <li><a href="geo#vaclst" class="">vaclst</a></li>
-<li><a href="geo#vacnum" class="">vacnum</a></li>
-<li><a href="gstate#vacuum" class="">vacuum</a></li>
-<li><a href="gstate#vacwidth" class="">vacwidth</a></li>
-<li><a href="gw#vcutgeo" class="">vcutgeo</a></li>
-<li><a href="vdw#vdw_df_acutmin" class="">vdw_df_acutmin</a></li>
-<li><a href="vdw#vdw_df_aratio" class="">vdw_df_aratio</a></li>
-<li><a href="vdw#vdw_df_damax" class="">vdw_df_damax</a></li>
-<li><a href="vdw#vdw_df_damin" class="">vdw_df_damin</a></li>
-<li><a href="vdw#vdw_df_dcut" class="">vdw_df_dcut</a></li>
-<li><a href="vdw#vdw_df_dratio" class="">vdw_df_dratio</a></li>
-<li><a href="vdw#vdw_df_dsoft" class="">vdw_df_dsoft</a></li>
-<li><a href="vdw#vdw_df_gcut" class="">vdw_df_gcut</a></li>
-<li><a href="vdw#vdw_df_ndpts" class="">vdw_df_ndpts</a></li>
-<li><a href="vdw#vdw_df_ngpts" class="">vdw_df_ngpts</a></li>
-<li><a href="vdw#vdw_df_nqpts" class="">vdw_df_nqpts</a></li>
-<li><a href="vdw#vdw_df_nrpts" class="">vdw_df_nrpts</a></li>
-<li><a href="vdw#vdw_df_nsmooth" class="">vdw_df_nsmooth</a></li>
-<li><a href="vdw#vdw_df_phisoft" class="">vdw_df_phisoft</a></li>
-<li><a href="vdw#vdw_df_qcut" class="">vdw_df_qcut</a></li>
-<li><a href="vdw#vdw_df_qratio" class="">vdw_df_qratio</a></li>
-<li><a href="vdw#vdw_df_rcut" class="">vdw_df_rcut</a></li>
-<li><a href="vdw#vdw_df_rsoft" class="">vdw_df_rsoft</a></li>
-<li><a href="vdw#vdw_df_threshold" class="">vdw_df_threshold</a></li>
-<li><a href="vdw#vdw_df_tolerance" class="">vdw_df_tolerance</a></li>
-<li><a href="vdw#vdw_df_tweaks" class="">vdw_df_tweaks</a></li>
-<li><a href="vdw#vdw_df_zab" class="">vdw_df_zab</a></li>
-<li><a href="vdw#vdw_nfrag" class="">vdw_nfrag</a></li>
-<li><a href="vdw#vdw_supercell" class="">vdw_supercell</a></li>
-<li><a href="vdw#vdw_tol" class="">vdw_tol</a></li>
-<li><a href="vdw#vdw_tol_3bt" class="">vdw_tol_3bt</a></li>
-<li><a href="vdw#vdw_typfrag" class="">vdw_typfrag</a></li>
-<li><a href="vdw#vdw_xc" class="">vdw_xc</a></li>
-<li><a href="rlx#vel" class="">vel</a></li>
-<li><a href="rlx#vel_cell" class="">vel_cell</a></li>
-<li><a href="rlx#vis" class="">vis</a></li>
-<li><a href="ffield#vprtrb" class="">vprtrb</a></li>
-<li><a href="aim#vpts" class="">vpts@aim</a></li>
-<li><a href="anaddb#vs_qrad_tolkms" class="">vs_qrad_tolkms@anaddb</a></li> </ul></li>
+<li class="HeaderLetter">V</li> <li><a href="geo#vaclst" class="small-grey-link">vaclst</a></li>
+<li><a href="geo#vacnum" class="small-grey-link">vacnum</a></li>
+<li><a href="gstate#vacuum" class="small-grey-link">vacuum</a></li>
+<li><a href="gstate#vacwidth" class="small-grey-link">vacwidth</a></li>
+<li><a href="gw#vcutgeo" class="small-grey-link">vcutgeo</a></li>
+<li><a href="vdw#vdw_df_acutmin" class="small-grey-link">vdw_df_acutmin</a></li>
+<li><a href="vdw#vdw_df_aratio" class="small-grey-link">vdw_df_aratio</a></li>
+<li><a href="vdw#vdw_df_damax" class="small-grey-link">vdw_df_damax</a></li>
+<li><a href="vdw#vdw_df_damin" class="small-grey-link">vdw_df_damin</a></li>
+<li><a href="vdw#vdw_df_dcut" class="small-grey-link">vdw_df_dcut</a></li>
+<li><a href="vdw#vdw_df_dratio" class="small-grey-link">vdw_df_dratio</a></li>
+<li><a href="vdw#vdw_df_dsoft" class="small-grey-link">vdw_df_dsoft</a></li>
+<li><a href="vdw#vdw_df_gcut" class="small-grey-link">vdw_df_gcut</a></li>
+<li><a href="vdw#vdw_df_ndpts" class="small-grey-link">vdw_df_ndpts</a></li>
+<li><a href="vdw#vdw_df_ngpts" class="small-grey-link">vdw_df_ngpts</a></li>
+<li><a href="vdw#vdw_df_nqpts" class="small-grey-link">vdw_df_nqpts</a></li>
+<li><a href="vdw#vdw_df_nrpts" class="small-grey-link">vdw_df_nrpts</a></li>
+<li><a href="vdw#vdw_df_nsmooth" class="small-grey-link">vdw_df_nsmooth</a></li>
+<li><a href="vdw#vdw_df_phisoft" class="small-grey-link">vdw_df_phisoft</a></li>
+<li><a href="vdw#vdw_df_qcut" class="small-grey-link">vdw_df_qcut</a></li>
+<li><a href="vdw#vdw_df_qratio" class="small-grey-link">vdw_df_qratio</a></li>
+<li><a href="vdw#vdw_df_rcut" class="small-grey-link">vdw_df_rcut</a></li>
+<li><a href="vdw#vdw_df_rsoft" class="small-grey-link">vdw_df_rsoft</a></li>
+<li><a href="vdw#vdw_df_threshold" class="small-grey-link">vdw_df_threshold</a></li>
+<li><a href="vdw#vdw_df_tolerance" class="small-grey-link">vdw_df_tolerance</a></li>
+<li><a href="vdw#vdw_df_tweaks" class="small-grey-link">vdw_df_tweaks</a></li>
+<li><a href="vdw#vdw_df_zab" class="small-grey-link">vdw_df_zab</a></li>
+<li><a href="vdw#vdw_nfrag" class="small-grey-link">vdw_nfrag</a></li>
+<li><a href="vdw#vdw_supercell" class="small-grey-link">vdw_supercell</a></li>
+<li><a href="vdw#vdw_tol" class="small-grey-link">vdw_tol</a></li>
+<li><a href="vdw#vdw_tol_3bt" class="small-grey-link">vdw_tol_3bt</a></li>
+<li><a href="vdw#vdw_typfrag" class="small-grey-link">vdw_typfrag</a></li>
+<li><a href="vdw#vdw_xc" class="small-grey-link">vdw_xc</a></li>
+<li><a href="rlx#vel" class="small-grey-link">vel</a></li>
+<li><a href="rlx#vel_cell" class="small-grey-link">vel_cell</a></li>
+<li><a href="rlx#vis" class="small-grey-link">vis</a></li>
+<li><a href="ffield#vprtrb" class="small-grey-link">vprtrb</a></li>
+<li><a href="aim#vpts" class="small-grey-link">vpts@aim</a></li>
+<li><a href="anaddb#vs_qrad_tolkms" class="small-grey-link">vs_qrad_tolkms@anaddb</a></li> </ul></li>
 <li><ul id="W" class="TabContentLetter">
-<li class="HeaderLetter">W</li> <li><a href="w90#w90iniprj" class="">w90iniprj</a></li>
-<li><a href="w90#w90prtunk" class="">w90prtunk</a></li>
-<li><a href="dev#wfoptalg" class="">wfoptalg</a></li>
-<li><a href="rlx#wtatcon" class="">wtatcon</a></li>
-<li><a href="basic#wtk" class="">wtk</a></li>
-<li><a href="gstate#wtq" class="">wtq</a></li>
-<li><a href="gstate#wvl_bigdft_comp" class="">wvl_bigdft_comp</a></li>
-<li><a href="gstate#wvl_crmult" class="">wvl_crmult</a></li>
-<li><a href="gstate#wvl_frmult" class="">wvl_frmult</a></li>
-<li><a href="basic#wvl_hgrid" class="">wvl_hgrid</a></li>
-<li><a href="gstate#wvl_ngauss" class="">wvl_ngauss</a></li>
-<li><a href="gstate#wvl_nprccg" class="">wvl_nprccg</a></li>
-<li><a href="optic#wfkfile" class="">wfkfile@optic</a></li> </ul></li>
+<li class="HeaderLetter">W</li> <li><a href="w90#w90iniprj" class="small-grey-link">w90iniprj</a></li>
+<li><a href="w90#w90prtunk" class="small-grey-link">w90prtunk</a></li>
+<li><a href="dev#wfoptalg" class="small-grey-link">wfoptalg</a></li>
+<li><a href="rlx#wtatcon" class="small-grey-link">wtatcon</a></li>
+<li><a href="basic#wtk" class="small-grey-link">wtk</a></li>
+<li><a href="gstate#wtq" class="small-grey-link">wtq</a></li>
+<li><a href="gstate#wvl_bigdft_comp" class="small-grey-link">wvl_bigdft_comp</a></li>
+<li><a href="gstate#wvl_crmult" class="small-grey-link">wvl_crmult</a></li>
+<li><a href="gstate#wvl_frmult" class="small-grey-link">wvl_frmult</a></li>
+<li><a href="basic#wvl_hgrid" class="small-grey-link">wvl_hgrid</a></li>
+<li><a href="gstate#wvl_ngauss" class="small-grey-link">wvl_ngauss</a></li>
+<li><a href="gstate#wvl_nprccg" class="small-grey-link">wvl_nprccg</a></li>
+<li><a href="optic#wfkfile" class="small-grey-link">wfkfile@optic</a></li> </ul></li>
 <li><ul id="X" class="TabContentLetter">
-<li class="HeaderLetter">X</li> <li><a href="basic#xangst" class="">xangst</a></li>
-<li><a href="dev#xc_denpos" class="">xc_denpos</a></li>
-<li><a href="dev#xc_tb09_c" class="">xc_tb09_c</a></li>
-<li><a href="basic#xcart" class="">xcart</a></li>
-<li><a href="internal#xclevel" class="">xclevel</a></li>
-<li><a href="basic#xred" class="">xred</a></li>
-<li><a href="gstate#xredsph_extra" class="">xredsph_extra</a></li>
-<li><a href="geo#xyzfile" class="">xyzfile</a></li> </ul></li>
+<li class="HeaderLetter">X</li> <li><a href="basic#xangst" class="small-grey-link">xangst</a></li>
+<li><a href="dev#xc_denpos" class="small-grey-link">xc_denpos</a></li>
+<li><a href="dev#xc_tb09_c" class="small-grey-link">xc_tb09_c</a></li>
+<li><a href="basic#xcart" class="small-grey-link">xcart</a></li>
+<li><a href="internal#xclevel" class="small-grey-link">xclevel</a></li>
+<li><a href="basic#xred" class="small-grey-link">xred</a></li>
+<li><a href="gstate#xredsph_extra" class="small-grey-link">xredsph_extra</a></li>
+<li><a href="geo#xyzfile" class="small-grey-link">xyzfile</a></li> </ul></li>
 <li><ul id="Z" class="TabContentLetter">
-<li class="HeaderLetter">Z</li> <li><a href="gw#zcut" class="">zcut</a></li>
-<li><a href="ffield#zeemanfield" class="">zeemanfield</a></li>
-<li><a href="internal#ziontypat" class="">ziontypat</a></li>
-<li><a href="basic#znucl" class="">znucl</a></li> </ul></li>
+<li class="HeaderLetter">Z</li> <li><a href="gw#zcut" class="small-grey-link">zcut</a></li>
+<li><a href="ffield#zeemanfield" class="small-grey-link">zeemanfield</a></li>
+<li><a href="internal#ziontypat" class="small-grey-link">ziontypat</a></li>
+<li><a href="basic#znucl" class="small-grey-link">znucl</a></li> </ul></li>
 </ul>

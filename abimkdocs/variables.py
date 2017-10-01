@@ -540,7 +540,7 @@ class InputVariables(OrderedDict):
         """
         for i, (char, vlist) in enumerate(ch2vars.items()):
             id_char = "%s-%s" % (idname, char)
-            p = " ".join(v.internal_link(website, page_rpath) for v in vlist)
+            p = " ".join(v.internal_link(website, page_rpath, cls="small-grey-link") for v in vlist)
             if i == 0:
                 html += '<div role="tabpanel" class="tab-pane active" id="%s">\n%s\n</div>\n' % (id_char, p)
             else:

@@ -1223,7 +1223,7 @@ The bibtex file is available [here](../abiref.bib).
         html_vars = ""
         for char, group in sort_and_groupby(list(allvars.items()), key=lambda t: t[0][0].upper()):
             lis = "\n".join("<li>{link}</li>".format(
-                link=var.internal_link(self, page_rpath, label=var.abivarname, cls="")) for _, var in group)
+                link=var.internal_link(self, page_rpath, label=var.abivarname, cls="small-grey-link")) for _, var in group)
 
         #for char, group in sort_and_groupby(allvars, key=lambda t: t[0][0].upper()):
         #    group = list(group)
@@ -1259,7 +1259,6 @@ The bibtex file is available [here](../abiref.bib).
 
 <script> $(function() {defaultClick(true);}); </script>
 """
-        #<form><input type="text" id="InputSearch" onkeyup="searchInput()" onClick="searchInput()" placeholder="Search"></form>
         return """
 
 ## All variables
