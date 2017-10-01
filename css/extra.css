@@ -9,11 +9,72 @@ body {
     height: auto;
 }
 
+/* Add vertical rhythm
+ * Based on example 5 of https://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/ 
+.md-main {counter-reset: section-1, section-2, section-3, section-4;}
+*/
+
+.md-main h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    /*
+    counter-increment: section-1;
+    counter-reset: section-2 section-3 section-4;
+    */
+}
+
+.md-main h2 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    /*
+    counter-increment: section-2;
+    counter-reset: section-3 section-4;
+    */
+}
+
+.md-main h3 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    /*
+    counter-increment: section-3;
+    counter-reset: section-4;
+    */
+}
+
+.md-main h4 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    /* counter-increment: section-4; */
+}
+
+/*
+.md-main h1:before { content: counter(section-1) ". "; }
+.md-main h2:before { content: counter(section-1) "." counter(section-2) " "; }
+.md-main h3:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
+.md-main h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
+*/
+
 /* https://codemyui.com/expand-on-hover-link-style/ */
 a.wikilink {
   text-decoration: none;
   margin: 0 2px;
-  color: black !important;
+  /* color: black !important; */
+  color: #3f51b5 !important;
   position: relative;
 }
 
@@ -23,8 +84,9 @@ a.wikilink:before {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #E65100;
+  /* background-color: #3f51b5; */
   content: '';
   opacity: .3;
   -webkit-transform: scaleX(.9);
@@ -65,24 +127,27 @@ a.wikilink:link {
 }
 */
 
-
-/*
-a.codevar-wikilink, a.abifile-wikilink {
+a.codevar-wikilink, 
+a.abifile-wikilink {
     font-family: Inconsolata, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+/*
+    text-decoration: underline !important;
     color: #279fcd !important;
     color: black !important;
     color: #DA621E !important;
-    text-decoration: underline !important;
     color: #EF6C00 ! important;
     color: #FF6600 !important;
     color: #E65100 !important;
-}
 */
+}
+
+a.citation-wikilink {
+    font-style: italic;
+}
+
 
 /*
-a.citation-wikilink {
-    font-family: 'Ubuntu Mono', monospace;
-}
+font-family: 'Ubuntu Mono', monospace;
 */
 
 /* Add fa icon to external links a la wikipedia.
@@ -134,7 +199,7 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
-/* Change color background of code examples */
+/* Change color background of code examples and admonitions */
 .md-typeset .codehilite code, 
 .md-typeset .codehilite pre, 
 .md-typeset .highlight code, 
@@ -142,8 +207,14 @@ tr:hover {
     background-color: #dfe2f1;
 }
 
-.md-typeset .admonition, .md-typeset details {
+.md-typeset .admonition, 
+.md-typeset details {
     background-color: #eee;
+}
+
+/* Change color background of `monospace` elements used in markdown pages */
+.md-typeset .codehilite, .md-typeset .highlight {
+    background-color: rgba(144, 144, 144, 0.10);
 }
 
 
@@ -217,7 +288,8 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     color: rgba(255, 255, 255, 0);
 }
 
-.fab-primary, .fab-secondary {
+.fab-primary, 
+.fab-secondary {
     transition: all 0.35s ease-in-out;
 }
 
@@ -255,7 +327,8 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     box-shadow: 0px 3px 7px 0px rgba(202, 124, 124, 0.72);
 }
 
-#inbox .dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+#inbox .dropup .dropdown-menu, 
+.navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
     margin-bottom: 1px;
@@ -352,69 +425,7 @@ http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.h
     margin-top: 7px;
 }
 
-
-/* 
- * Based on example 5 of https://tympanus.net/codrops/2012/11/02/heading-set-styling-with-css/ 
-.md-main {counter-reset: section-1, section-2, section-3, section-4;}
- * */
-
-.md-main h1 {
-    margin: 0.8em 0 0.5em 0;
-    color: #333;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 40px;
-    /*
-    counter-increment: section-1;
-    counter-reset: section-2 section-3 section-4;
-    */
-}
-
-.md-main h2 {
-    margin: 0.8em 0 0.5em 0;
-    color: #333;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 40px;
-    border-bottom: 1px solid #fff;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.1);
-    padding-bottom: 10px;
-    /*
-    counter-increment: section-2;
-    counter-reset: section-3 section-4;
-    */
-}
-
-.md-main h3 {
-    margin: 0.8em 0 0.5em 0;
-    color: #333;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 40px;
-    /*
-    counter-increment: section-3;
-    counter-reset: section-4;
-    */
-}
-
-.md-main h4 {
-    margin: 0.8em 0 0.5em 0;
-    color: #333;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 20px;
-    /* counter-increment: section-4; */
-}
-
-/*
-.md-main h1:before { content: counter(section-1) ". "; }
-.md-main h2:before { content: counter(section-1) "." counter(section-2) " "; }
-.md-main h3:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) " "; }
-.md-main h4:before { content: counter(section-1) "." counter(section-2) "." counter(section-3) "." counter(section-4) " "; }
-*/
-
 /* This for the table of variables implemented by Jordan */
-
 /* Style the tab */
 div.TabsLetter {
     overflow: hidden !important;
