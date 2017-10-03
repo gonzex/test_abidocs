@@ -3547,7 +3547,7 @@ workshop 2007 </a></p>
 <p>Suggested acknowledgments :<br />
 F. Bottin, S. Leroux, A. Knyazev and G. Zerah, _ Large scale ab initio
 calculations based on three levels of parallelization _ , Comput. Mat. Science
-** 42 ** , 329 (2008), also available on arXiv, <a href="http://arxiv.org/abs/0707.3405">http://arxiv.org/abs/0707.3405</a>
+** 42 ** , 329 (2008), also available on arXiv, http://arxiv.org/abs/0707.3405
 .</p>
 <p>If the total number of processors used is compatible with the four levels of
 parallelization, the values for <a class="wikilink codevar-wikilink" href="../paral#npkpt">npkpt</a>, <a class="wikilink codevar-wikilink" href="../paral#npspinor">npspinor</a>, <a class="wikilink codevar-wikilink" href="../paral#npfft">npfft</a>, <a class="wikilink codevar-wikilink" href="../paral#npband">npband</a>
@@ -3589,7 +3589,7 @@ waves treated by a processor and the ideal one is higher than
 <em>Default value:</em> 1 if <a class="wikilink codevar-wikilink" href="../gstate#optdriver">optdriver</a>==0 and <a class="wikilink" data-content="This is an external parameter
 typically compilation parameters, available libraries, or number of processors.
 You can change these parameters at compile or runtime usually.
-" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#%s" title="True if CUDA is enabled (compilation)">CUDA</a>,
+" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../external_parameters#cuda" title="True if CUDA is enabled (compilation)">CUDA</a>,
 0 otherwise.</p>
 <details class="note"><summary>Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials</summary><ul><li>gpu:  <a class="wikilink abifile-wikilink" data-content="GaAs phonons calculation - norm-conserving psp Test the automatic detection of the GPU and the automatic setting of use_gpu_cuda keyword according to the requested calculation. Ground-states calculations should be run with use_gpu_cuda activated (except if set to 0 in input file) while response fonction calculations should be run with use_gpu_cuda deactivated (at present : ABINIT v7.0)." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t01.in" target="_blank">t01.in</a>, <a class="wikilink abifile-wikilink" data-content="hcp iron - non magnetic - 2 atoms (metal) Test the use of GPU within Norm-Conserving PseupoPotential formalism. Test multidataset mode with different use_gpu_cuda values. paral_kgb is activated." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t02.in" target="_blank">t02.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure Test the use of GPU within Projector Augmented-Wave formalism. Test ferromagnetic and non-collinear magnetism. ABINIT v7.0: GPU is not used when nspinor=2" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t03.in" target="_blank">t03.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t05.in" target="_blank">t05.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t05.in" target="_blank">t05.in</a>, <a class="wikilink abifile-wikilink" data-content="NiO - LDA+U - fcc structure - anitferro - PAW Test the use of MPI+GPU" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/gpu/Input/t05.in" target="_blank">t05.in</a></li><li>v5:  <a class="wikilink abifile-wikilink" data-content="Simple test for double grid (fine/coarse) system,  the cutting radius and the initial fermi energy in recursion method Corresponding variables: recgratio,  recrcut, recefermi respectively Corresponding code: 68_recursion Other test: paral/tT, v5/t76" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v5/Input/t75.in" target="_blank">t75.in</a></li></ul></details><p>Only available if ABINIT executable has been compiled with cuda nvcc compiler.<br />
 This parameter activates the use of NVidia graphic accelerators (GPU) if
@@ -3635,25 +3635,25 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
         
         
           <li><a href="../../about/release-notes/" data-toggle="tooltip" data-placement="left" 
-                  title=About><i class="fa fa-info-circle"></i></a></li>
+                  title="About"><i class="fa fa-info-circle"></i></a></li>
         
           <li><a href="../../developers/abimkdocs/" data-toggle="tooltip" data-placement="left" 
-                  title=Developers><i class="fa fa-terminal"></i></a></li>
+                  title="Developers"><i class="fa fa-terminal"></i></a></li>
         
           <li><a href="../../theory/wavefunctions/" data-toggle="tooltip" data-placement="left" 
-                  title=Theory><i class="fa fa-book"></i></a></li>
+                  title="Theory"><i class="fa fa-book"></i></a></li>
         
           <li><a href="../../tutorials/welcome/" data-toggle="tooltip" data-placement="left" 
-                  title=Lessons><i class="fa fa-graduation-cap"></i></a></li>
+                  title="Lessons"><i class="fa fa-graduation-cap"></i></a></li>
         
           <li><a href="../" data-toggle="tooltip" data-placement="left" 
-                  title=Variables><i class="fa fa-file-text-o"></i></a></li>
+                  title="Variables"><i class="fa fa-file-text-o"></i></a></li>
         
           <li><a href="../../user-guide/features/" data-toggle="tooltip" data-placement="left" 
-                  title=Topics><i class="fa fa-question"></i></a></li>
+                  title="Topics"><i class="fa fa-question"></i></a></li>
         
           <li><a href="../.." data-toggle="tooltip" data-placement="left" 
-                  title=User Guide><i class="fa fa-user-circle-o"></i></a></li>
+                  title="User Guide"><i class="fa fa-user-circle-o"></i></a></li>
         
         <!--
         Example: 

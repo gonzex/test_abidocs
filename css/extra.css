@@ -3,6 +3,11 @@ body {
     background-image: url("../images/pw_maze_white.png");
 }
 
+/* A better looking default horizontal rule */
+.md-typeset hr {
+    border-bottom: .1rem solid rgba(0,0,0,.26);
+} 
+
 /* Increase logo width because mkdocs material enforces 48 x 48 */
 .md-logo img {
     width: 48px;
@@ -30,7 +35,7 @@ body {
     margin: 0.8em 0 0.5em 0;
     color: #333;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
     border-bottom: 1px solid #fff;
     box-shadow: 0 1px 0 rgba(0,0,0,0.1);
@@ -45,7 +50,7 @@ body {
     margin: 0.8em 0 0.5em 0;
     color: #333;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 40px;
     /*
     counter-increment: section-3;
@@ -57,7 +62,7 @@ body {
     margin: 0.8em 0 0.5em 0;
     color: #333;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     /* counter-increment: section-4; */
 }
@@ -129,7 +134,7 @@ a.wikilink:link {
 
 a.codevar-wikilink, 
 a.abifile-wikilink {
-    font-family: Inconsolata, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-family: "Inconsolata", "Consolas", "Menlo", Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
 /*
     text-decoration: underline !important;
     color: #279fcd !important;
@@ -217,11 +222,17 @@ tr:hover {
     background-color: rgba(144, 144, 144, 0.10);
 }
 
+/* Set z-index to 0 to elements that otherwise would appear above the menu bar upon scrolling. */
+.custom-search-form {
+    z-index: 0;
+}
+
 
 /* Setting height is also important, otherwise editor wont showup 
 http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html */
 .editor { 
     height: 480px; 
+    z-index: 0;
     /*
     height: 520px; 
     position: absolute;
