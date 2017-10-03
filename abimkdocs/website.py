@@ -1587,7 +1587,7 @@ $(function() {
     #mdf.write("""### <a href="{rpath}" data-toggle="modal" data-target="#myModal" data-remote="false"> {rpath} </a>  \n\n""".format(rpath=rpath))
 
 
-class WebsiteValidator(object):
+class HTMLValidator(object):
     """
     This object checks HTML validity by sending requests to https://validator.w3.org/
 
