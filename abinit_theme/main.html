@@ -153,7 +153,7 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
           ] %}
         {% for nav_item in nav | reverse %}
           <li><a href="{{ (nav_item.children | first).url }}" data-toggle="tooltip" data-placement="left" 
-                  title={{ nav_item.title }}><i class="fa {{ icons[loop.index0] }}"></i></a></li>
+                  title="{{ nav_item.title }}"><i class="fa {{ icons[loop.index0] }}"></i></a></li>
         {% endfor %}
         <!--
         Example: 

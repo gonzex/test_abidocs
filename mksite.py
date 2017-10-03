@@ -8,15 +8,13 @@ import mkdocs.__main__
 
 # We don't install with setup.py hence we have to add the directory [...]/abinit/tests to $PYTHONPATH
 pack_dir = os.path.dirname(os.path.abspath(__file__))
-#print(pack_dir)
 sys.path.insert(0, pack_dir)
 
 # This needed to import doc.tests
 sys.path.insert(0, os.path.join(pack_dir, "doc"))
 
-#pack_dir = os.path.dirname(pack_dir)
-#print(pack_dir)
-#sys.path.insert(0, pack_dir)
+from abimkdocs.website import Website, HTMLValidator
+
 
 def prof_main(main):
     """
@@ -115,20 +113,30 @@ def main():
     verbose = 1 if "-v" in sys.argv or "--verbose" in sys.argv else 0
     strict = "-s" in sys.argv or "--strict" in sys.argv
 
+    if "--no-colors" in sys.argv:
+        from tests.pymods import termcolor
+        termcolor.enable(False)
+        sys.argv.remove("--no-colors")
+
+    if len(sys.argv) > 1 and sys.argv[1] == "validate":
+        if len(sys.argv) == 2:
+            return HTMLValidator(verbose).validate_website("./site")
+        else:
+            validator = HTMLValidator(verbose)
+            retcode = 0
+            for page in sys.argv[2:]:
+                retcode += validator.validate_htmlpage(page)
+            return retcode
+
     if "--help" in sys.argv or "-h" in sys.argv:
         return mkdocs.__main__.cli()
 
-    from abimkdocs.website import Website
     if len(sys.argv) > 1 and ("--help" not in sys.argv or "-h" not in sys.argv):
         deploy = False
         website = Website.build("./doc", deploy=deploy, verbose=verbose)
 
     if len(sys.argv) > 1 and sys.argv[1] in ("build", "serve", "gh-deploy"):
         website.generate_markdown_files()
-        #print(website)
-
-    if len(sys.argv) > 1 and sys.argv[1] == "validate":
-        return website.validate_html_build()
 
     if "--dry-run" in sys.argv: return 0
     mkdocs_retcode = mkdocs.__main__.cli()

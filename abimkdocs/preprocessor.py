@@ -3,9 +3,6 @@ from __future__ import absolute_import, unicode_literals, print_function
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 
-from abimkdocs.website import Website
-website = Website.get()
-
 
 class MarkdownInclude(Extension):
     def __init__(self, configs={}):
@@ -37,8 +34,10 @@ class IncludePreprocessor(Preprocessor):
         self.encoding = config['encoding']
 
     def run(self, lines):
+        from abimkdocs.website import Website
+        website = Website.get()
         return website.preprocess_mdlines(lines)
 
 
 def makeExtension(*args,**kwargs):
-    return MarkdownInclude(kwargs)
+    return MarkdownInclude(*args, **kwargs)

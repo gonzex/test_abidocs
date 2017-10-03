@@ -254,7 +254,8 @@ class Website(object):
         Main entry point for client code.
         """
         global _WEBSITE
-        assert _WEBSITE is None
+        if _WEBSITE is not None:
+            raise RuntimeError("website has been already costructed")
         _WEBSITE = cls(root, deploy, verbose=verbose)
         return _WEBSITE
 
@@ -262,7 +263,8 @@ class Website(object):
     def get(cls):
         """Return Website instance. Assume object already initialized with build_website."""
         global _WEBSITE
-        assert _WEBSITE is not None
+        if _WEBSITE is None:
+            raise RuntimeError("website must be constructuted by calling `Website.build`")
         return _WEBSITE
 
     def __init__(self, root, deploy, verbose=0):
@@ -281,33 +283,25 @@ class Website(object):
         # Build parser to convert Markdown to HTML.
         # The parser must support the same extensions as those used by mkdocs
         # so we initialize it from the options specified in mkdocs.yml
+        # This implies that all extensions requirining the website singlecto must post-pone the import.
         #   * extensions: A list of extensions, which can either
         #       be strings or objects.  See the docstring on Markdown.
         #   * configs: A dictionary mapping module names to config options
 
-        #extensions, extension_configs = [], {}
-        #for item in self.mkdocs_config["markdown_extensions"]:
-        #    print(item, type(item))
-        #    if isinstance(item, dict):
-        #        assert len(item) == 1 and len(item.values()) == 1
-        #        modname = str(list(item.keys())[0])
-        #        extensions.append(modname)
-        #        v = list(item.values())[0]
-        #        print(v)
-        #        if v is not None:
-        #            extension_configs[modname] =  v
-        #    else:
-        #        extensions.append(str(item))
-        #'./doc', '.', '/Users/gmatteo/git_repos/abidocs'
-        #print("sys.path:", sys.path)
-        #print("extensions", extensions)
-        #for i, ext in enumerate(extensions):
-        #    if ext.startswith("abimkdocs"):
-        #        new_ext = "." + ext
-        #        extensions[i] = new_ext
-        #        if ext in extension_configs:
-        #            extension_configs[new_ext] = extension_configs[ext]
-        #self.markdown = markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
+        extensions, extension_configs = [], {}
+        for item in self.mkdocs_config["markdown_extensions"]:
+            #print(item, type(item))
+            if isinstance(item, dict):
+                assert len(item) == 1 and len(item.values()) == 1
+                modname = str(list(item.keys())[0])
+                extensions.append(modname)
+                v = list(item.values())[0]
+                #print(v)
+                if v is not None:
+                    extension_configs[modname] =  v
+            else:
+                extensions.append(str(item))
+        self.markdown = markdown.Markdown(extensions=extensions, extension_configs=extension_configs)
 
         # Build database with all input variables indexed by code name.
         from .variables import get_variables_code
@@ -334,13 +328,11 @@ class Website(object):
                 #print(type(t))
                 tests.append(t)
 
-        #self.rpath2test = {os.path.relpath(t.inp_fname, self.root): t for t in tests}
-        #self.rpath2test = {t.inp_fname: t for t in tests}
+        # Construct dictionary rpath --> test. Use OrderedDict to have deterministic behaviour.
         self.rpath2test = {}
         for t in tests:
             key = os.path.join(*splitall(t.inp_fname)[-4:])
             self.rpath2test[key] = t
-        # Build OrderedDict to have deterministic behaviour.
         self.rpath2test = OrderedDict([(k, self.rpath2test[k]) for k in sorted(self.rpath2test.keys())])
         #print(self.rpath2test.keys())
 
@@ -407,6 +399,16 @@ Change the input yaml files or the python code
         self.warnings.append(msg)
         cprint(msg, color="yellow")
 
+    def convert_markdown(self, source):
+        """"
+        Convert markdown to serialized HTML.
+
+        Args:
+            source: Source text as a Unicode string
+        """
+        self.markdown.reset()
+        return my_unicode(self.markdown.convert(source))
+
     def new_mdfile(self, dirname, mdname, meta=None):
         """
         Create new markdown file with name `mdname` in directory `dirname`.
@@ -465,6 +467,10 @@ Change the input yaml files or the python code
         """Generate markdown files using the data stored in the bibtex file, the abivars file ..."""
         start = time.time()
 
+        # Convert test description from markdown to HTML
+        #for t in self.rpath2test.values():
+        #    t.description = self.convert_markdown(t.description)
+
         # Write index.md with the description of the input variables.
         meta = {"description": "Complete list of Abinit input variables"}
         with self.new_mdfile("variables", "index.md", meta=meta) as mdf:
@@ -477,65 +483,6 @@ Change the input yaml files or the python code
             # This for the table of variables implemented by Jordan
             mdf.write(self.build_varsearch_html(mdf.rpath))
 
-            anames = ["abivarname", "vartype", "topics", "mnemonics"]
-            anames = ["abivarname", "vartype", "mnemonics"]
-            #def to_dict(var):
-            #    return {aname: my_unicode(getattr(var, aname)) for aname in anames}
-            #data = [to_dict(var) for var in self.variables_code.iter_allvars()]
-            #with io.open(os.path.join(self.root, "data", "allvars.json"), "wt", encoding="utf-8") as fh:
-            #    import json
-            #    json.dump(data, fh) #, ensure_ascii=False)
-
-            def to_list(var):
-                l = []
-                app = l.append
-                for i, aname in enumerate(anames):
-                    if aname == "abivarname":
-                        app(var.internal_link(self, mdf.rpath))
-                    elif aname == "topics":
-                        s = " ".join(a2s(self.get_wikilink("topic:%s" % topic, mdf.rpath))
-                            for topic in var.topic_tribes)
-                        app(s)
-                    else:
-                        app(my_unicode(getattr(var, aname)))
-                return l
-
-            data = [to_list(var) for var in self.variables_code.iter_allvars()]
-            def html_row(row):
-                return " ".join("<td>%s</td>" % r for r in row)
-            body = "\n".join("<tr>%s</tr>" % html_row(row) for row in data)
-            #data-url="../data/allvars.json"
-
-            html_table = """
-<div class="md-container">
-<div id="toolbar" class="btn-group"></div>
-<table data-toggle="table"
-       data-sort-name="abivarname"
-       data-search="true"
-       data-search-on-enter-key="false"
-       data-show-refresh="true"
-       data-show-toggle="true"
-       data-show-columns="true"
-       data-toolbar="#toolbar"
-       data-pagination="true"
-       data-query-params="{type: 'owner', sort: 'updated', direction: 'desc', per_page: 50, page: 1}"
-       data-show-pagination-switch="false"
-       >
-    <thead>
-      <tr>
-        <th data-field="abivarname" data-sortable="true" data-searchable="true">Name</th>
-        <th data-field="vartype" data-sortable="true" data-searchable="false">Type</th>
-        <th data-field="mnemonics" data-sortable="false" data-searchable="false">Mnemonic</th>
-        <th data-field="topics" data-sortable="true", data-searchable="false">Topics</th>
-      </tr>
-    </thead>
-    <tbody>
-      %s
-    </tbody>
-</table>
-</div>""" % body
-        #mdf.write(html_table)
-
         # Build markdown page with external parameters.
         with self.new_mdfile("variables", "external_parameters.md") as mdf:
             mdf.write("""\
@@ -546,7 +493,7 @@ You can change these parameters at compile or run time usually.
 
 """)
             for pname, info in self.variables_code.external_params.items():
-                mdf.write("## %s  \n%s  \n" % (pname, info))
+                mdf.write("## %s  \n%s  \n\n" % (pname, info))
                 #mdf.write("* * *\n")
 
         # Build markdown pages for the different sets of variables.
@@ -714,12 +661,14 @@ This page gives hints on how to {howto} with the ABINIT package.
         cprint("Generating Markdown file with tests ...", "green")
         meta = {"description": "List of Abinit tests"}
         items = [(rpath, test) for (rpath, test) in self.rpath2test.items()]
+
         with self.new_mdfile("developers", "testsuite.md", meta=meta) as mdf:
             for suite_name, group in sort_and_groupby(items, key=lambda t: t[1].suite_name):
                 group = list(group)
                 mdf.write('## %s  \n\n' % suite_name)
                 for i, (rpath, test) in enumerate(group):
                     mdf.write('### [[%s]]   \n\n' % rpath)
+                    #mdf.write('### <a href="{rpath}"> {rpath} </a> \n\n'.format(rpath=rpath))
                     mdf.write(my_unicode(test.description))
                     mdf.write("\n\n")
                     mdf.write("Executable: %s   \n" % test.executable)
@@ -807,12 +756,18 @@ The bibtex file is available [here](../abiref.bib).
                 fh.write(os.path.relpath(p, self.root) + "\n")
 
     def analyze_pages(self):
-        """Analyze all markdown pages, find wiklinks in pages required to generate backlinks in docs."""
+        """
+        Analyze all markdown pages, find wiklinks in pages required to generate backlinks in docs.
+        """
         cprint("Analyzing markdown pages ...", "green")
         start = time.time()
+
+        #ignored = set(["doc/developers/markdown.md"])
+
         self.md_pages, self.html_pages = [], []
         for f, path in self.walk_filepath():
             if f.startswith("_"): continue
+            #if os.path.relpath(path, self.root) in ignored: continue
             #if f == "README.md": continue
             if f.endswith(".md"):
                 self.md_pages.append(MarkdownPage(path, self))
@@ -878,8 +833,7 @@ The bibtex file is available [here](../abiref.bib).
             else:
                 args = m.group(1).split()
                 action = args.pop(0)
-                if self.verbose:
-                    print("Triggering action:", action, "with args:", str(args))
+                if self.verbose: print("Triggering action:", action, "with args:", str(args))
                 if action == "editor":
                     if len(args) > 1:
                         new_lines.extend(self.editor_tabs(args, title=None).splitlines())
@@ -899,12 +853,16 @@ The bibtex file is available [here](../abiref.bib).
     @staticmethod
     def parse_wikilink_token(token):
         """
-        Parse wikilink token of the form `namespace:name#fragment|text`
+        Parse wikilink token of the form `namespace:name#fragment|text||args`
         where namespace, fragment and text are optional
 
         Return: (namespace, name, fragment, text)
             Individual entries are set to None if non present in token.
         """
+        #args = ""
+        #if "||" in token:
+        #    token, args = token.split("||")
+
         text = None
         if "|" in token:
             token, text = token.split("|")
@@ -927,16 +885,16 @@ The bibtex file is available [here](../abiref.bib).
 
     def get_wikilink(self, token, page_rpath):
         """
-        Involked by the wikilink extension to implement the wikilink syntax [`namespace:name#fragment|text`]
+        Involked by the wikilink extension to implement the wikilink syntax: [namespace:name#fragment|text]
 
         Args:
             token: The string enclosed between square brackets.
             page_rpath: The root-relative path of the markdown file (needed to generate relative links).
 
         Return:
-            :class:`etree.Element` instance represent the HTML anchor.
+            :class:`etree.Element` instance representing the HTML anchor. classes are automatically
+                addeded to the link so that we can style them with CSS.
         """
-        # TODO: Fix portability problem under py2.7: different relative urls!
         token = token.strip()
         if not token:
             self.warn("Empty wikilink in %s" % page_rpath)
@@ -951,17 +909,13 @@ The bibtex file is available [here](../abiref.bib).
         #        return token
 
         html_classes = ["wikilink"]
-        #html_classes = ["wikilink animated pulse"]
-        #html_classes = ["wikilink hvr-underline-from-center"]
         target = ""
-
         a = etree.Element("a")
 
         if any(token.startswith(prefix) for prefix in ("www.", "http:", "https:", "ftp:", "file:")):
             # Handle [[www.google.com|text]]
             url, a.text = token, token
-            if "|" in token:
-                url, a.text = token.split("|")
+            if "|" in token: url, a.text = token.split("|")
             a.set('href', url)
             a.set('target', "_blank")
             return a
@@ -1062,7 +1016,7 @@ The bibtex file is available [here](../abiref.bib).
                     content = ("This is an external parameter\n"
                                "typically compilation parameters, available libraries, or number of processors.\n"
                                "You can change these parameters at compile or runtime usually.\n")
-                    url = "/variables/external_parameters#%s"
+                    url = "/variables/external_parameters#%s" % self.slugify(name)
                     if a.text is None: a.text = name
                     add_popover(a, title=self.variables_code.external_params[name], content=content)
 
@@ -1201,12 +1155,10 @@ The bibtex file is available [here](../abiref.bib).
         else:
             if not page_rpath.startswith("/"): page_rpath = "/" + page_rpath
             page_rpath = os.path.dirname(page_rpath.replace(".md", ""))
-            #page_rpath = page_rpath.replace(".md", "")
             url = os.path.relpath(url, page_rpath)
             if end: url = "%s#%s" % (url, end)
 
-        if self.verbose:
-            print("token", token, "page_rpath", page_rpath, "url", url)
+        if self.verbose: print("token", token, "page_rpath", page_rpath, "url", url)
         a.set('href', url)
         if target: a.set('target', target)
         return a
@@ -1241,7 +1193,7 @@ The bibtex file is available [here](../abiref.bib).
 <li><ul id="{char}" class="TabContentLetter">
 <li class="HeaderLetter">{char}</li> {lis} </ul></li>""".format(char=char, lis=lis)
 
-        # NB: <form> is needed in order not to trigger the f/s event on key down implemented by mkdocs-material.
+        # NB: <form> is needed in order not to trigger the f/s keydown event registered by mkdocs-material.
         search_form = """
 <div class="md-container">
   <div class="input-group custom-search-form">
@@ -1276,32 +1228,6 @@ Enter any string to search in the database. Clicking without any request will gi
 <ul id="Letters">
 {html_vars}
 </ul>""".format(**locals())
-
-    def validate_html_build(self):
-        cprint("Validating website build", "green")
-        # https://bitbucket.org/nmb10/py_w3c
-        # import HTML validator and create validator instance
-        from py_w3c.validators.html.validator import HTMLValidator
-        vld = HTMLValidator()
-
-        from tidylib import tidy_document
-        from pprint import pprint
-        for f, path in self.walk_filepath():
-            if not (f.endswith(".html") or f.endswith(".htm")): continue
-            print("Validating", path)
-            # validate file (Accept both - filename or file pointer.)
-            vld.validate_file(path)
-            # look for warnings
-            #print(vld.warnings)
-            # look for errors
-            for e in vld.errors:
-                if e["message"] == "The “center” element is obsolete. Use CSS instead.":
-                    continue
-                pprint(e)  # list with dicts
-
-            #with io.open(path, "rt", encoding="utf-8") as fh:
-            #    document, errors = tidy_document(fh.read())
-            #    #print(errors)
 
     def modal_from_filename(self, path, title=None):
         """Return HTML string with bootstrap modal and content taken from file `path`."""
@@ -1407,7 +1333,7 @@ Enter any string to search in the database. Clicking without any request will gi
         # https://codepen.io/wizly/pen/BlKxo?editors=1000
         s = """\
 <div class="md-container">
-  <div><{title}</div>
+  <div>{title}</div>
     <div id="exTab1">
       <!-- Nav tabs -->
         <ul class="nav nav-pills nav-justified">""".format(title=title)
@@ -1470,6 +1396,7 @@ def add_popover(element, title=None, content=None, html=False):
 
 
 def a2s(element, cls=None):
+    """Convert element tree element into HTML string."""
     cls = element.get("class") if cls is None else cls
     return '<a href="%s" class="%s">%s</a>' % (element.get("href"), cls, element.text)
 
@@ -1624,31 +1551,113 @@ class AbinitStats(object):
             fh.write(my_unicode(json.dumps(self.data, ensure_ascii=False)))
 
 
-def build_search_form():
+def build_modal_with_ajax():
+    # https://stackoverflow.com/questions/19663555/bootstrap-3-how-to-load-content-in-modal-body-via-ajax#answer-27718674
+    modal = """
 
-    return """
-div class="md-flex__cell md-flex__cell--shrink">
-  <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-  <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="search"></label>
-  <div class="md-search__inner">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required="" placeholder="Search"
-        autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
-      <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix="">
-        <div class="md-search-result" data-md-component="result"
-          data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
-        <div class="md-search-result__meta" data-md-lang-result-none="No matching documents"
-          data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
-          Type to start searching
-        </div>
-      <ol class="md-search-result__list"></ol>
+<!-- Default bootstrap modal example -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
       </div>
     </div>
   </div>
 </div>
+
+<script>
+// Fill modal with content from link href
+$(function() {
+    $("#myModal").on("show.bs.modal", function(e) {
+        var link = $(e.relatedTarget);
+        $(this).find(".modal-body").load(link.attr("href"));
+    });
+});
+</script>
+
 """
+    return modal
+    #mdf.write("""### <a href="{rpath}" data-toggle="modal" data-target="#myModal" data-remote="false"> {rpath} </a>  \n\n""".format(rpath=rpath))
+
+
+class WebsiteValidator(object):
+    """
+    This object checks HTML validity by sending requests to https://validator.w3.org/
+
+    Arg:
+        verbose: Verbosity level
+    """
+
+    def __init__(self, verbose):
+        self.verbose = bool(verbose)
+
+    def validate_website(self, dirpath):
+        """Validate all html pages inside directory `dirpath`. Return exit status."""
+        print("Validating website in", dirpath)
+        retcode = 0
+        for top, dirs, files in os.walk(dirpath):
+            for f in files:
+                if not (f.endswith(".html") or f.endswith(".htm")): continue
+                retcode += self.validate_htmlpage(os.path.join(top, f))
+        return retcode
+
+    def validate_htmlpage(self, path):
+        """Validate html page. Return exit status."""
+        # https://bitbucket.org/nmb10/py_w3c
+        # import HTML validator and create validator instance
+        from py_w3c.validators.html.validator import HTMLValidator
+        vld = HTMLValidator()
+        import urllib
+        from pprint import pprint
+        num_err, num_ignored, num_warn = 0, 0, 0
+
+        # Ignore error messages containing the following substrings.
+        exclude_substrings = [
+            "element is obsolete. Use CSS",
+            "An “img” element must have an “alt” attribute",
+            "query: “|” is not allowed.",
+            "Element “div” not allowed as child of element “label” in this",
+        ]
+
+        # Also, ignore messages of the form:
+        #   'Attribute “autocorrect” not allowed on element “input” at this '
+        element2attrs = {
+            "input": ["autocorrect", "autocapitalize"],
+        }
+        for element, attrs in element2attrs.items():
+            exclude_substrings.extend('Attribute “%s” not allowed on element “%s”' % (attr, element) for attr in attrs)
+
+        try:
+            vld.validate_file(path)
+        except urllib.error.URLError as exc:
+            cprint("Exception while validating %s.\n%s\nWill try again...\n" % (path, str(exc)), "magenta")
+            vld.validate_file(path)
+
+        # errors and warnings are list of dicts
+        num_warn += len(vld.warnings)
+        if self.verbose:
+            for warn in vld.warnings:
+                warn["File"] = path
+                pprint(warn, indent=4)
+                print(80 * "=")
+
+        for err in vld.errors:
+            if any(s in err["message"] for s in exclude_substrings):
+                num_ignored += 1
+                continue
+            err["File"] = path
+            pprint(err, indent=4)
+            print(80 * "=")
+            num_err += 1
+
+        cprint("Errors %s, Ignored Errors %s, Warnings: %s in file: %s" % (num_err, num_ignored, num_warn, path),
+               color="red" if num_err else "green")
+
+        return num_err

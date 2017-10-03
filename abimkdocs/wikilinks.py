@@ -21,7 +21,7 @@ from markdown.inlinepatterns import Pattern
 import re
 
 from abimkdocs.website import Website
-website = Website.get()
+
 
 
 def build_url(label, base, end):
@@ -56,7 +56,7 @@ class WikiLinkExtension(Extension):
         self.md = md
 
         # append to end of inline patterns
-        wikilinkPattern = WikiLinks(website.WIKILINK_RE, self.getConfigs())
+        wikilinkPattern = WikiLinks(Website.WIKILINK_RE, self.getConfigs())
         wikilinkPattern.md = md
         #md.inlinePatterns.add('wikilink', wikilinkPattern, "<not_strong")
         # This needed to treat [[ngfft]](1:3) before []() markdown syntax
@@ -77,6 +77,7 @@ class WikiLinks(Pattern):
         #    page_rpath = self.md.Meta["rpath"][0]
         # Remove quotes (neeeded in py2.7 because mkdocs does not use pyyaml to parse meta).
         page_rpath = self.md.Meta["rpath"][0].replace("'", "").replace('"', "")
+        website = Website.get()
         try:
             return website.get_wikilink(token, page_rpath)
         except Exception as exc:

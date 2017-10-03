@@ -861,7 +861,7 @@ won't work (but this situation only occurs if you are trying to write some advan
 
 Another thing worth noticing is that Mkdocs (by default)
 generates a directory with an `index.html` file for every markdown page declared in `mkdocs.yml`
-(see also [the official documentation](http://www.mkdocs.org/user-guide/configuration/#preview-controls])).
+(see also [the official documentation](http://www.mkdocs.org/user-guide/configuration/#preview-controls)).
 This means that a local webserver will serve this page at `http://127.0.0.1:8000/developers/markdown/index.html`
 that can be equivalently reached from the more user friendly URL `http://127.0.0.1:8000/developers/markdown/`.
 

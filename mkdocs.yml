@@ -220,9 +220,7 @@ markdown_extensions:
   - markdown.extensions.smarty
   - markdown.extensions.tables
   - markdown.extensions.def_list
-  #- markdown.extensions.nl2br
   - markdown.extensions.sane_lists
-  #- markdown_newtab
   - mdx_math:
         enable_dollar_delimiter: True
   #- pymdownx.arithmatex:
@@ -235,21 +233,20 @@ markdown_extensions:
   #- pymdownx.critic
   - pymdownx.details
   - pymdownx.inlinehilite
-  - pymdownx.magiclink:
-        base_repo_url: https://github.com/abinit/abinit
-        repo_url_shortener: true
+  #- pymdownx.magiclink:
+  #-     base_repo_url: https://github.com/abinit/abinit
+  #-     repo_url_shortener: true
   - pymdownx.mark
   - pymdownx.smartsymbols:
         registered: false
         copyright: false
         care_of: false
   - pymdownx.superfences
-  #- pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
   # Abinit extensions.
-  - abimkdocs.wikilinks:
-  - abimkdocs.preprocessor:
-  - abimkdocs.mdx_figcaption:
+  - abimkdocs.wikilinks
+  - abimkdocs.preprocessor
+  - abimkdocs.mdx_figcaption
         
 #strict: true
 
@@ -257,17 +254,7 @@ markdown_extensions:
 #theme: readthedocs
 theme: material   # Nice
 #theme: windmill  # Nice nav-bar
-#theme: bootstrap
-#theme: flatly
 #theme: cinder
-#theme: psinder
-#theme: docSkimmer
-#theme: journal
-#theme: united
-#theme: simplex
-#theme: yeti
-#theme: spacelab
-#theme: docSkimmer
 theme_dir: abinit_theme
 
 extra_css:
@@ -284,10 +271,7 @@ extra:
     version: 8.5.4
     previous_published_versions: [8.2.0, 8.1.0] 
     # Logo for Material theme
-    #logo: images/abidev.png
-    #logo: images/logo-abinit-2015.svg
     logo: images/logo-abinit-2015.svg
-    #logo: images/abinit_logo.png
     feature:
         tabs: true
     palette:
