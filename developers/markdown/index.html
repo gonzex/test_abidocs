@@ -33,14 +33,6 @@
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Jquery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!--
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
-
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
@@ -54,6 +46,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+
+    <!-- Jquery UI NOTE: Load first bootstrap and then jqueryUI to avoid conflicts -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!--
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
 
     
 
@@ -3957,9 +3957,13 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 
 <p>that produces:</p>
-<div class="text-center"><button class="btn btn-primary" id="uuid-2ab9eafe-0a93-452a-8ee7-dddf8d130f72">View tests/v1/Input/t01.in</button></div>
+<div class="text-center">
+<button id="uuid-aa8b48e0-56e6-49bb-9772-692ded68539a" class="ui-state-default ui-corner-all">
+<span class="ui-icon ui-icon-newwin"></span>View tests/v1/Input/t01.in
+</button>
+</div>
 
-<div class="my-dialog" id="uuid-16b914b0-c47b-4024-afc8-a87b439ac2b5" title="tests/v1/Input/t01.in"><div><pre class="small-text">
+<div class="my-dialog" id="uuid-2dc83fe6-f66e-41f3-a224-c3e9c18255c6" title="tests/v1/Input/t01.in"><div><pre class="small-text">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4035,15 +4039,16 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 
 <script>
 $(function() {
-    var e = $("#uuid-16b914b0-c47b-4024-afc8-a87b439ac2b5");
+    var e = $("#uuid-2dc83fe6-f66e-41f3-a224-c3e9c18255c6");
 
     e.dialog({
-        //width: 500,
+        width: 400,
+        height: 300,
         //minWidth: 600,
         //minHeight: 200,
-        width: "auto",
+        //width: "auto",
         autoOpen: false,
-        show: {effect: "blind", duration: 800},
+        show: {effect: "blind", duration: 400},
         //hide: {effect: "explode", duration: 1000},
         position: {my: 'center', at: 'center', of: window},
         buttons: [
@@ -4052,7 +4057,10 @@ $(function() {
              click: function(){ $(this).dialog("close"); }
              //showText: false
             }
-        ]
+        ],
+       create: function () {
+         e.parent().children('.ui-dialog-titlebar').prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="Pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+        }
    });
 
    e.dialogExtend({
@@ -4077,13 +4085,17 @@ $(function() {
        //}
    });
 
-   $("#uuid-2ab9eafe-0a93-452a-8ee7-dddf8d130f72").click(function() { e.dialog('open'); });
+   $("#uuid-aa8b48e0-56e6-49bb-9772-692ded68539a").click(function() { e.dialog('open'); });
 });
 </script>
 
-<div class="text-center"><button class="btn btn-primary" id="uuid-1291fdd8-8bae-485d-93ba-32622d36f47a">View tests/v1/Input/t02.in</button></div>
+<div class="text-center">
+<button id="uuid-0ffa8416-5abf-40d6-a9da-96230ac3ca0e" class="ui-state-default ui-corner-all">
+<span class="ui-icon ui-icon-newwin"></span>View tests/v1/Input/t02.in
+</button>
+</div>
 
-<div class="my-dialog" id="uuid-82dc23af-1f93-4391-8c81-fae37422289d" title="tests/v1/Input/t02.in"><div><pre class="small-text">
+<div class="my-dialog" id="uuid-0989ef84-85ce-4fd3-9920-a8ec3afcf93d" title="tests/v1/Input/t02.in"><div><pre class="small-text">
 #   FCC Al; 2 special points
 
  acell 3*7.60
@@ -4155,15 +4167,16 @@ $(function() {
 
 <script>
 $(function() {
-    var e = $("#uuid-82dc23af-1f93-4391-8c81-fae37422289d");
+    var e = $("#uuid-0989ef84-85ce-4fd3-9920-a8ec3afcf93d");
 
     e.dialog({
-        //width: 500,
+        width: 400,
+        height: 300,
         //minWidth: 600,
         //minHeight: 200,
-        width: "auto",
+        //width: "auto",
         autoOpen: false,
-        show: {effect: "blind", duration: 800},
+        show: {effect: "blind", duration: 400},
         //hide: {effect: "explode", duration: 1000},
         position: {my: 'center', at: 'center', of: window},
         buttons: [
@@ -4172,7 +4185,10 @@ $(function() {
              click: function(){ $(this).dialog("close"); }
              //showText: false
             }
-        ]
+        ],
+       create: function () {
+         e.parent().children('.ui-dialog-titlebar').prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="Pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+        }
    });
 
    e.dialogExtend({
@@ -4197,7 +4213,7 @@ $(function() {
        //}
    });
 
-   $("#uuid-1291fdd8-8bae-485d-93ba-32622d36f47a").click(function() { e.dialog('open'); });
+   $("#uuid-0ffa8416-5abf-40d6-a9da-96230ac3ca0e").click(function() { e.dialog('open'); });
 });
 </script>
 
@@ -4209,19 +4225,19 @@ $(function() {
 <!-- Button trigger modal -->
 
 <div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-04c8e07d-5be2-44ab-82bc-ff9b61f55cb6">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-965d1806-7ec5-4753-862c-064d68638f96">
     View tests/v1/Input/t01.in
   </button>
 </div>
 
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-04c8e07d-5be2-44ab-82bc-ff9b61f55cb6" tabindex="-1" role="dialog" aria-labelledby="uuid-352784be-dea0-4938-89cf-96834403911e">
+<div class="modal fade" id="uuid-965d1806-7ec5-4753-862c-064d68638f96" tabindex="-1" role="dialog" aria-labelledby="uuid-8443bb11-2105-425d-a0de-9c6635480428">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-352784be-dea0-4938-89cf-96834403911e">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-8443bb11-2105-425d-a0de-9c6635480428">tests/v1/Input/t01.in</h4>
       </div>
       <div class="modal-body"><pre class="">
 #   FCC Al; 2 special points
@@ -4309,28 +4325,28 @@ If multiple files are used such as in:</p>
 <!-- Button trigger modal -->
 
 <div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-68278d94-a37d-4417-bd7a-79909444a365">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-65de897d-3e0e-4523-b1de-dabb7f77030c">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
 </div>
 
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-68278d94-a37d-4417-bd7a-79909444a365" tabindex="-1" role="dialog" aria-labelledby="uuid-a26622a4-0ccd-42ab-b104-5abb0dd4a79d" aria-hidden="true">
+<div class="modal fade" id="uuid-65de897d-3e0e-4523-b1de-dabb7f77030c" tabindex="-1" role="dialog" aria-labelledby="uuid-49d289f3-96d0-4ec8-9b3e-35dae92d9db0" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a26622a4-0ccd-42ab-b104-5abb0dd4a79d"></h4>
+        <h4 class="modal-title" id="uuid-49d289f3-96d0-4ec8-9b3e-35dae92d9db0"></h4>
       </div>
       <div class="modal-body">
         <div role="tabpanel">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">          <li role="presentation" class="active">
-          <a href="#uuid-79ae15d6-5bdf-45b5-abc1-e29416e46d5f" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+          <a href="#uuid-9a383048-fc2e-4560-a9fa-b80eb710a105" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
           </li>           <li role="presentation" class=" ">
-          <a href="#uuid-4769cb57-5293-4319-88ac-d11de2859c65" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+          <a href="#uuid-2340792b-771c-4571-b5d6-179b33daf918" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
           </li>           </ul>
           <!-- Tab panes -->
-          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-79ae15d6-5bdf-45b5-abc1-e29416e46d5f"><pre class="">
+          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-9a383048-fc2e-4560-a9fa-b80eb710a105"><pre class="">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4402,7 +4418,7 @@ If multiple files are used such as in:</p>
 #%%&lt;END TEST_INFO&gt;
 
 </pre>
-</div><div role="tabpanel" class="tab-pane  " id="uuid-4769cb57-5293-4319-88ac-d11de2859c65"><pre class="">
+</div><div role="tabpanel" class="tab-pane  " id="uuid-2340792b-771c-4571-b5d6-179b33daf918"><pre class="">
 #   FCC Al; 2 special points
 
  acell 3*7.60
@@ -4480,7 +4496,7 @@ If multiple files are used such as in:</p>
 <div class="md-container">
   <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-3d6da67e-5418-4115-838e-bf826b928f86"><pre class="">
+    <div class="panel-body"><div class="editor" hidden id="uuid-8009eac8-111b-4908-995d-2431e3313f42"><pre class="">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5046,10 +5062,10 @@ P           mkmem           2
   <div>EditorTabs</div>
     <div>
       <!-- Nav tabs -->
-      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-05e2632f-51d2-40d1-b1a1-5d613b8e5711" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-9a4df893-d30a-4602-b0a3-754e14ae3ee8" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
+      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-26f183ce-53b1-4a02-9a54-dbf328822fa2" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-70b74ae7-f56d-4442-9454-1680e9e67493" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
         <!-- Tab panes -->
-        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-05e2632f-51d2-40d1-b1a1-5d613b8e5711">
-<div id="uuid-91ccb1fd-001b-456f-85b1-a85f64394e7c" class="editor" hidden><pre class="">
+        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-26f183ce-53b1-4a02-9a54-dbf328822fa2">
+<div id="uuid-4e11cc46-ceca-4f2b-911e-a94c0af3df4b" class="editor" hidden><pre class="">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5604,8 +5620,8 @@ P           mkmem           2
 
 </pre>
 </div></div>
-<div class="tab-pane fade" id="uuid-9a4df893-d30a-4602-b0a3-754e14ae3ee8">
-<div id="uuid-259f51fb-7ab8-4ca6-9c83-10b1dc0a511b" class="editor" hidden><pre class="">
+<div class="tab-pane fade" id="uuid-70b74ae7-f56d-4442-9454-1680e9e67493">
+<div id="uuid-4eb3177c-e20b-4bed-b6e0-42e052738880" class="editor" hidden><pre class="">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
