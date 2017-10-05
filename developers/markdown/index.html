@@ -33,6 +33,14 @@
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!--
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
@@ -2885,13 +2893,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#magiclink" title="MagicLink" class="md-nav__link">
-    MagicLink
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3194,13 +3195,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#magiclink" title="MagicLink" class="md-nav__link">
-    MagicLink
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3489,11 +3483,6 @@ built with <a href="http://sachinchoolur.github.io/lightGallery/">lightGallery</
 <td align="left"><a href="https://www.abinit.org">https://www.abinit.org</a></td>
 <td align="left">&ndash;</td>
 </tr>
-<tr>
-<td align="left"><code class="codehilite">https://www.abinit.org</code></td>
-<td align="left">https://www.abinit.org</td>
-<td align="left"><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">MagicLink</a></td>
-</tr>
 </tbody>
 </table>
 <p>This is the <strong>recommended</strong> approach to create links to external resources or internal links to other pages 
@@ -3708,6 +3697,24 @@ The problem is easily solved by inserting whitespaces in the expression:</p>
 
 <p>This version if much more readable and it also avoids possible problems with the <code class="codehilite">**</code> that
 has a special meaning in Markdown.</p>
+<p>To refer to a particular git commit inside a Markdown document use:</p>
+<div class="codehilite"><pre><span></span>Solved in [[gitsha:f74dba1ed8346ca586dc95fd10fe4b8ced108d5e]]
+</pre></div>
+
+
+<p>that produces: <a class="wikilink abigit-wikilink" href="https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e">f74dba1</a></p>
+<!--
+It's also possible to mention a particular github issue with the syntax:
+
+    Fix https://github.com/abinit/abinit/issues/1
+
+that produces: Fix https://github.com/abinit/abinit/issues/1
+-->
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This extension is useful to generate nice changelogs and <a href="../../about/release-notes">release notes</a>.</p>
+</div>
 <p>For compatibility reasons, <code class="codehilite">mksite.py</code> supports the following features provided by <code class="codehilite">generate_doc.py</code>
 although I would prefer to encourange the use of namespaces:</p>
 <p>Actually, using the real name of the file without suffix, e.g. <code class="codehilite">lesson_gw1</code> will also be recognized,
@@ -3944,36 +3951,256 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 
 <p>creates a <em>closed</em> element:</p>
-<details class="note"><summary>Click to open!</summary><p><a class="wikilink codevar-wikilink" href="../../variables/basic#ecut">ecut</a> <a class="wikilink codevar-wikilink" href="../../variables/anaddb#asr">asr@anaddb</a></p></details><h3 id="magiclink">MagicLink<a class="headerlink" href="#magiclink" title="Permanent link">&para;</a></h3>
-<p><a href="https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/">MagicLink</a>
-scans for URLs and emails and generates proper HTML links for them.<br />
-No special syntax is required, you just type or paste the links and they get converted.<br />
-MagicLink auto-links HTML, FTP, and email links.
-If you happen to have some conflicts with syntax for a specific case, you can always revert
-to the old auto-link format as well: <code class="codehilite">&lt;https://www.link.com&gt;</code>.  </p>
-<p>For even more magic, enable <code class="codehilite">repo_url_shortener</code> for shorter concise links for popular source code hosts.<br />
-Issue, pull request, and commit links will be shortened in the style of GFM.
-Issues are shortened to <code class="codehilite">user/repo#1</code> for repositories external to <code class="codehilite">base_repo_url</code> and <code class="codehilite">#1</code> for internal links.<br />
-For commit links, external commits will show as <code class="codehilite">user/repo@`abc1234`</code> and internal commits
-will show as <code class="codehilite">`abc1234`</code>. Currently supports GitHub, GitLab, and Bitbucket.
-Links require no special syntax.</p>
-<p>To refer to a particular git commit inside a Markdown document use:</p>
-<div class="codehilite"><pre><span></span>Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
+<details class="note"><summary>Click to open!</summary><p><a class="wikilink codevar-wikilink" href="../../variables/basic#ecut">ecut</a> <a class="wikilink codevar-wikilink" href="../../variables/anaddb#asr">asr@anaddb</a></p></details><h2 id="abinit-extensions">Abinit extensions<a class="headerlink" href="#abinit-extensions" title="Permanent link">&para;</a></h2>
+<p>To create a button that opens a dialog containing the input file, use:</p>
+<div class="codehilite"><pre><span></span>    {% dialog tests/v1/Input/t01.in %}
 </pre></div>
 
+<p>that produces:</p>
+<div class="text-center"><button class="btn btn-primary" id="uuid-2ab9eafe-0a93-452a-8ee7-dddf8d130f72">View tests/v1/Input/t01.in</button></div>
 
-<p>that produces: Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e</p>
-<p>It&rsquo;s also possible to mention a particular github issue with the syntax:</p>
-<div class="codehilite"><pre><span></span>Fix https://github.com/abinit/abinit/issues/1
-</pre></div>
+<div class="my-dialog" id="uuid-16b914b0-c47b-4024-afc8-a87b439ac2b5" title="tests/v1/Input/t01.in"><div><pre class="small-text">
+#   FCC Al; 2 special points
+
+#nband 8
+#nspinor 2
+
+ acell 3*7.60
+ ecut 10
+ enunit 2
+ intxc 1
+ kptopt 0
+ kpt   1 1 1     1 2 2   kptnrm 4
+ natom  1
+ nband 4
+ nkpt  2
+ nline 3
+ nstep 8
+ nsym  24 ntypat  1
+ occopt  4  prtvol 10
+ rprim   0 .5 .5  .5 0 .5  .5 .5 0
+ symrel
+       1  0  0    0  1  0    0  0  1
+       0  1 -1    1  0 -1    0  0 -1
+      -1  0  0   -1  0  1   -1  1  0
+       0 -1  1    0 -1  0    1 -1  0
+      -1  0  1   -1  0  0   -1  1  0
+       0 -1  0    0 -1  1    1 -1  0
+       0 -1  1    1 -1  0    0 -1  0
+       0  1 -1    0  0 -1    1  0 -1
+       0  0 -1    1  0 -1    0  1 -1
+      -1  1  0   -1  0  1   -1  0  0
+       1  0 -1    0  1 -1    0  0 -1
+       1 -1  0    0 -1  0    0 -1  1
+      -1  0  0   -1  1  0   -1  0  1
+       0  1  0    1  0  0    0  0  1
+       0  0  1    0  1  0    1  0  0
+       1  0  0    0  0  1    0  1  0
+       0  0  1    1  0  0    0  1  0
+       0  1  0    0  0  1    1  0  0
+      -1  0  1   -1  1  0   -1  0  0
+       0  0 -1    0  1 -1    1  0 -1
+       1  0 -1    0  0 -1    0  1 -1
+       1 -1  0    0 -1  1    0 -1  0
+       0 -1  0    1 -1  0    0 -1  1
+      -1  1  0   -1  0  0   -1  0  1
+ tnons   72*0.0d0
+ tolwfr 1.0d-16
+ tsmear 0.05
+ typat  1
+ wtk   1 3
+ xred  0.0 0.0 0.0
+ znucl 13.0
 
 
-<p>that produces: Fix https://github.com/abinit/abinit/issues/1</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This extension is useful to generate nice changelogs and <a href="../../about/release-notes">release notes</a>.</p>
-</div>
-<h2 id="abinit-extensions">Abinit extensions<a class="headerlink" href="#abinit-extensions" title="Permanent link">&para;</a></h2>
+## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
+#%%&lt;BEGIN TEST_INFO&gt;
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0
+#%% psp_files=13al.pspgth
+#%% [paral_info]
+#%% max_nprocs = 2
+#%% [extra_info]
+#%% keywords = NC
+#%% description = 
+#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .
+#%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;
+#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   
+#%%&lt;END TEST_INFO&gt;
+
+</pre>
+</div></div>
+
+<script>
+$(function() {
+    var e = $("#uuid-16b914b0-c47b-4024-afc8-a87b439ac2b5");
+
+    e.dialog({
+        //width: 500,
+        //minWidth: 600,
+        //minHeight: 200,
+        width: "auto",
+        autoOpen: false,
+        show: {effect: "blind", duration: 800},
+        //hide: {effect: "explode", duration: 1000},
+        position: {my: 'center', at: 'center', of: window},
+        buttons: [
+            {text: "Close",
+             icon: "ui-icon-heart",
+             click: function(){ $(this).dialog("close"); }
+             //showText: false
+            }
+        ]
+   });
+
+   e.dialogExtend({
+       "maximizable": true,
+       "minimizable": true,
+       "collapsable": true,
+       "minimizeLocation": "right",
+       "dblclick": "collapse",
+       "icons": {
+            "close" : "ui-icon-circle-closethick", // new in v1.0.1
+            "maximize" : "ui-icon-extlink",
+            "minimize" : "ui-icon-minus",
+            "restore" : "ui-icon-newwin",
+            "collapse": "ui-icon-triangle-1-s"
+       }
+       //"icons": {
+       //  "close": "ui-icon-circle-close",
+       //  "maximize": "ui-icon-circle-plus",
+       //  "minimize": "ui-icon-circle-minus",
+       //  "collapse": "ui-icon-triangle-1-s",
+       //  "restore": "ui-icon-bullet"
+       //}
+   });
+
+   $("#uuid-2ab9eafe-0a93-452a-8ee7-dddf8d130f72").click(function() { e.dialog('open'); });
+});
+</script>
+
+<div class="text-center"><button class="btn btn-primary" id="uuid-1291fdd8-8bae-485d-93ba-32622d36f47a">View tests/v1/Input/t02.in</button></div>
+
+<div class="my-dialog" id="uuid-82dc23af-1f93-4391-8c81-fae37422289d" title="tests/v1/Input/t02.in"><div><pre class="small-text">
+#   FCC Al; 2 special points
+
+ acell 3*7.60
+ ecut 10
+ enunit 2
+ intxc 1
+ kptopt 0
+ kpt   1 1 1     1 2 2   kptnrm 4
+ natom  1 nband 4
+ nkpt  2
+ nline 3  nstep 8
+ nsym  24 ntypat  1
+ occopt  5  prtvol 10
+ rprim   0 .5 .5  .5 0 .5  .5 .5 0
+ symrel
+       1  0  0    0  1  0    0  0  1
+       0  1 -1    1  0 -1    0  0 -1
+      -1  0  0   -1  0  1   -1  1  0
+       0 -1  1    0 -1  0    1 -1  0
+      -1  0  1   -1  0  0   -1  1  0
+       0 -1  0    0 -1  1    1 -1  0
+       0 -1  1    1 -1  0    0 -1  0
+       0  1 -1    0  0 -1    1  0 -1
+       0  0 -1    1  0 -1    0  1 -1
+      -1  1  0   -1  0  1   -1  0  0
+       1  0 -1    0  1 -1    0  0 -1
+       1 -1  0    0 -1  0    0 -1  1
+      -1  0  0   -1  1  0   -1  0  1
+       0  1  0    1  0  0    0  0  1
+       0  0  1    0  1  0    1  0  0
+       1  0  0    0  0  1    0  1  0
+       0  0  1    1  0  0    0  1  0
+       0  1  0    0  0  1    1  0  0
+      -1  0  1   -1  1  0   -1  0  0
+       0  0 -1    0  1 -1    1  0 -1
+       1  0 -1    0  0 -1    0  1 -1
+       1 -1  0    0 -1  1    0 -1  0
+       0 -1  0    1 -1  0    0 -1  1
+      -1  1  0   -1  0  0   -1  0  1
+ tnons   72*0.0d0
+ tolwfr 1.0d-16
+ tsmear 0.05
+ typat  1
+ wtk   1 3
+ xred  0.0 0.0 0.0
+ znucl 13.0
+
+
+## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
+#%%&lt;BEGIN TEST_INFO&gt;
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% psp_files=13al.pspgth
+#%% files_to_test = t02.out, tolnlines=  1, tolabs=  1.001e-09, tolrel=  1.100e-04
+#%% [paral_info]
+#%% max_nprocs = 2
+#%% [extra_info]
+#%% keywords = NC
+#%% description = 
+#%%   Bulk Aluminium, FCC, with 2 special points, occopt=5 and tsmear=0.05.
+#%%   Designed to test the treatment of metals, using the &quot;cold smearing&quot;
+#%%   of N. Marzari , with a=-.8165 (monotonic function in the tail).
+#%% topics = BandOcc
+#%%&lt;END TEST_INFO&gt;
+
+</pre>
+</div></div>
+
+<script>
+$(function() {
+    var e = $("#uuid-82dc23af-1f93-4391-8c81-fae37422289d");
+
+    e.dialog({
+        //width: 500,
+        //minWidth: 600,
+        //minHeight: 200,
+        width: "auto",
+        autoOpen: false,
+        show: {effect: "blind", duration: 800},
+        //hide: {effect: "explode", duration: 1000},
+        position: {my: 'center', at: 'center', of: window},
+        buttons: [
+            {text: "Close",
+             icon: "ui-icon-heart",
+             click: function(){ $(this).dialog("close"); }
+             //showText: false
+            }
+        ]
+   });
+
+   e.dialogExtend({
+       "maximizable": true,
+       "minimizable": true,
+       "collapsable": true,
+       "minimizeLocation": "right",
+       "dblclick": "collapse",
+       "icons": {
+            "close" : "ui-icon-circle-closethick", // new in v1.0.1
+            "maximize" : "ui-icon-extlink",
+            "minimize" : "ui-icon-minus",
+            "restore" : "ui-icon-newwin",
+            "collapse": "ui-icon-triangle-1-s"
+       }
+       //"icons": {
+       //  "close": "ui-icon-circle-close",
+       //  "maximize": "ui-icon-circle-plus",
+       //  "minimize": "ui-icon-circle-minus",
+       //  "collapse": "ui-icon-triangle-1-s",
+       //  "restore": "ui-icon-bullet"
+       //}
+   });
+
+   $("#uuid-1291fdd8-8bae-485d-93ba-32622d36f47a").click(function() { e.dialog('open'); });
+});
+</script>
+
 <p>To create a button that opens a modal window containing the input file, use:</p>
 <div class="codehilite"><pre><span></span>    {% modal tests/v1/Input/t01.in %}
 </pre></div>
@@ -3981,19 +4208,22 @@ Links require no special syntax.</p>
 <p>that produces:</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-9a0dfc56-5be3-40bf-aaf4-f8355d7d8ed2">
-  View tests/v1/Input/t01.in
-</button></p>
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-04c8e07d-5be2-44ab-82bc-ff9b61f55cb6">
+    View tests/v1/Input/t01.in
+  </button>
+</div>
+
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-9a0dfc56-5be3-40bf-aaf4-f8355d7d8ed2" tabindex="-1" role="dialog" aria-labelledby="uuid-8d12bb5c-2158-40c2-b8eb-802b174c520c">
+<div class="modal fade" id="uuid-04c8e07d-5be2-44ab-82bc-ff9b61f55cb6" tabindex="-1" role="dialog" aria-labelledby="uuid-352784be-dea0-4938-89cf-96834403911e">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-8d12bb5c-2158-40c2-b8eb-802b174c520c">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-352784be-dea0-4938-89cf-96834403911e">tests/v1/Input/t01.in</h4>
       </div>
-      <div class="modal-body"><pre>
+      <div class="modal-body"><pre class="">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4078,26 +4308,29 @@ If multiple files are used such as in:</p>
 <p>a modal window with tabs is produced</p>
 <!-- Button trigger modal -->
 
-<p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-5f2e85b7-a3dd-4338-997c-4936e965bac0">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button></p>
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-68278d94-a37d-4417-bd7a-79909444a365">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
+</div>
+
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-5f2e85b7-a3dd-4338-997c-4936e965bac0" tabindex="-1" role="dialog" aria-labelledby="uuid-ee02530f-3b6a-4b46-bb49-65a17ae550dc" aria-hidden="true">
+<div class="modal fade" id="uuid-68278d94-a37d-4417-bd7a-79909444a365" tabindex="-1" role="dialog" aria-labelledby="uuid-a26622a4-0ccd-42ab-b104-5abb0dd4a79d" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-ee02530f-3b6a-4b46-bb49-65a17ae550dc"></h4>
+        <h4 class="modal-title" id="uuid-a26622a4-0ccd-42ab-b104-5abb0dd4a79d"></h4>
       </div>
       <div class="modal-body">
         <div role="tabpanel">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">          <li role="presentation" class="active">
-          <a href="#uuid-16124817-f70d-490a-a4c1-6b5022065f8f" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+          <a href="#uuid-79ae15d6-5bdf-45b5-abc1-e29416e46d5f" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
           </li>           <li role="presentation" class=" ">
-          <a href="#uuid-bdd27bfc-d6ac-4de5-b94e-b24a9d9853a9" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+          <a href="#uuid-4769cb57-5293-4319-88ac-d11de2859c65" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
           </li>           </ul>
           <!-- Tab panes -->
-          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-16124817-f70d-490a-a4c1-6b5022065f8f"><pre>
+          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-79ae15d6-5bdf-45b5-abc1-e29416e46d5f"><pre class="">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4169,7 +4402,7 @@ If multiple files are used such as in:</p>
 #%%&lt;END TEST_INFO&gt;
 
 </pre>
-</div><div role="tabpanel" class="tab-pane  " id="uuid-bdd27bfc-d6ac-4de5-b94e-b24a9d9853a9"><pre>
+</div><div role="tabpanel" class="tab-pane  " id="uuid-4769cb57-5293-4319-88ac-d11de2859c65"><pre class="">
 #   FCC Al; 2 special points
 
  acell 3*7.60
@@ -4247,7 +4480,7 @@ If multiple files are used such as in:</p>
 <div class="md-container">
   <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-4fbb852b-76dc-402b-8fb1-847b07484745"><pre>
+    <div class="panel-body"><div class="editor" hidden id="uuid-3d6da67e-5418-4115-838e-bf826b928f86"><pre class="">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -4811,12 +5044,12 @@ P           mkmem           2
 <p>that produces:</p>
 <div class="md-container">
   <div>EditorTabs</div>
-    <div id="exTab1">
+    <div>
       <!-- Nav tabs -->
-        <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-b4ae8cf4-d2f0-4351-aaf4-63f71335f177" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-621871ef-dbee-4e32-b986-94a02509ebed" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
+      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-05e2632f-51d2-40d1-b1a1-5d613b8e5711" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-9a4df893-d30a-4602-b0a3-754e14ae3ee8" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
         <!-- Tab panes -->
-        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-b4ae8cf4-d2f0-4351-aaf4-63f71335f177">
-<div id="uuid-d60d0cfb-dabb-48fc-a3a2-cddaf22bd8b7" class="editor" hidden><pre>
+        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-05e2632f-51d2-40d1-b1a1-5d613b8e5711">
+<div id="uuid-91ccb1fd-001b-456f-85b1-a85f64394e7c" class="editor" hidden><pre class="">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5371,8 +5604,8 @@ P           mkmem           2
 
 </pre>
 </div></div>
-<div class="tab-pane fade" id="uuid-621871ef-dbee-4e32-b986-94a02509ebed">
-<div id="uuid-5ff19cd4-e4c3-401d-af13-525148edfa4d" class="editor" hidden><pre>
+<div class="tab-pane fade" id="uuid-9a4df893-d30a-4602-b0a3-754e14ae3ee8">
+<div id="uuid-259f51fb-7ab8-4ca6-9c83-10b1dc0a511b" class="editor" hidden><pre class="">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -6781,6 +7014,8 @@ and return to Top button (based on https://codepen.io/rdallaire/pen/apoyx)
       <script>app.initialize({url:{base:"../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js"></script>
+      
+        <script src="../../extra_javascript/jquery.dialogextend.min.js"></script>
       
         <script src="../../extra_javascript/abidocs.js"></script>
       
