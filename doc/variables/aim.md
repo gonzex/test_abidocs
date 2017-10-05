@@ -914,7 +914,7 @@ integration can be decreased if there are symmetry reasons for doing this.
 *Mentioned in topic(s):* [[topic:Bader]]  
 *Variable type:* real  
 *Dimensions:* (6)  
-*commentdims:* 6 for 1D, 9 for 2D  
+*Commentdims:* 6 for 1D, 9 for 2D  
 *Default value:* 6*0.0  
 
 ??? note "Test list (click to open). Rarely used, [0/5] in all aim tests, [0/0] in aim tutorials"

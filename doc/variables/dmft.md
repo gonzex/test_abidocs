@@ -70,11 +70,11 @@ Quantum Monte Carlo). See also the input variable [[dmft_nlambda]].
 *Default value:* 0  
 
 ??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
-    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
-    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
-    - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
-    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
-    - v8:  [[tests/v8/Input/t01.in|t01.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]] ...
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]] ...
+    - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]] ...
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]] ...
+    - v8:  [[tests/v8/Input/t01.in|t01.in]] ...
 
 
 
@@ -143,11 +143,11 @@ Its value must be greater or equal to 3.
 *Default value:* 0  
 
 ??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
-    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
-    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
-    - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
-    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
-    - v8:  [[tests/v8/Input/t01.in|t01.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]] ...
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]] ...
+    - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]] ...
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]] ...
+    - v8:  [[tests/v8/Input/t01.in|t01.in]] ...
 
 
 
@@ -168,11 +168,11 @@ Number of Matsubara frequencies (linear mesh)
 *Default value:* 0  
 
 ??? note "Test list (click to open). Moderately used, [22/920] in all abinit tests, [0/116] in abinit tutorials"
-    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
-    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
-    - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
-    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
-    - v8:  [[tests/v8/Input/t01.in|t01.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]] ...
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]] ...
+    - v6:  [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]] ...
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]] ...
+    - v8:  [[tests/v8/Input/t01.in|t01.in]] ...
 
 
 
@@ -218,11 +218,11 @@ at each DFT iteration.
 *Default value:* 5  
 
 ??? note "Test list (click to open). Moderately used, [21/920] in all abinit tests, [0/116] in abinit tutorials"
-    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
-    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
-    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
-    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
-    - v8:  [[tests/v8/Input/t01.in|t01.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]] ...
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]] ...
+    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]] ...
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t27.in|t27.in]] ...
+    - v8:  [[tests/v8/Input/t01.in|t01.in]] ...
 
 
 
@@ -346,11 +346,11 @@ criterion.
 *Default value:* 0  
 
 ??? note "Test list (click to open). Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials"
-    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
-    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
-    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
-    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
-    - v8:  [[tests/v8/Input/t01.in|t01.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]] ...
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]] ...
+    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]] ...
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]] ...
+    - v8:  [[tests/v8/Input/t01.in|t01.in]] ...
 
 
 
@@ -374,11 +374,11 @@ A., Jollet, F., Wehling, T. O., and Lichtenstein, A. I. Phys. Rev. B 77(20),
 *Default value:* 0  
 
 ??? note "Test list (click to open). Moderately used, [23/920] in all abinit tests, [0/116] in abinit tutorials"
-    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]]
-    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t92.in|t92.in]], [[tests/paral/Input/t99.in|t99.in]]
-    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]], [[tests/v6/Input/t47.in|t47.in]]
-    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]], [[tests/v7/Input/t25.in|t25.in]], [[tests/v7/Input/t27.in|t27.in]], [[tests/v7/Input/t28.in|t28.in]], [[tests/v7/Input/t29.in|t29.in]], [[tests/v7/Input/t30.in|t30.in]], [[tests/v7/Input/t31.in|t31.in]], [[tests/v7/Input/t78.in|t78.in]], [[tests/v7/Input/t79.in|t79.in]]
-    - v8:  [[tests/v8/Input/t01.in|t01.in]]
+    - mpiio:  [[tests/mpiio/Input/t99.in|t99.in]] ...
+    - paral:  [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]], [[tests/paral/Input/t91.in|t91.in]] ...
+    - v6:  [[tests/v6/Input/t07.in|t07.in]], [[tests/v6/Input/t45.in|t45.in]], [[tests/v6/Input/t46.in|t46.in]] ...
+    - v7:  [[tests/v7/Input/t21.in|t21.in]], [[tests/v7/Input/t23.in|t23.in]], [[tests/v7/Input/t24.in|t24.in]] ...
+    - v8:  [[tests/v8/Input/t01.in|t01.in]] ...
 
 
 

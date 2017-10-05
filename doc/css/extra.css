@@ -222,6 +222,10 @@ tr:hover {
     background-color: rgba(144, 144, 144, 0.10);
 }
 
+pre.small-text {
+    font-size: 10px;
+}
+
 /* Set z-index to 0 to elements that otherwise would appear above the menu bar upon scrolling. */
 .custom-search-form {
     z-index: 0;

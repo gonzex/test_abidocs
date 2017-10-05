@@ -1,7 +1,7 @@
 # coding: utf-8
 """
 Classes and functions used to generate the (static) website with the Abinit documentation
-and the tutorials from markdown files and mkdocs.
+from markdown files and the mkdocs static website generator.
 """
 from __future__ import print_function, division, unicode_literals, absolute_import
 
@@ -87,12 +87,12 @@ def my_unicode(s):
     return unicode(s) if sys.version_info[0] <= 2 else str(s)
 
 
-def escape(text, tag=None):
-    """Escape HTML entities in `text` string. Enclose new text in tag if tag."""
+def escape(text, tag=None, cls=None):
+    """Escape HTML entities in `text` string. Enclose new text in `tag` if tag with class `cls`."""
     import cgi
     text = cgi.escape(text, quote=True)
     if tag:
-        text = "<{tag}>\n{text}\n</{tag}>\n".format(tag=tag, text=text)
+        text = '<{tag} class="{cls}">\n{text}\n</{tag}>\n'.format(tag=tag, text=text, cls=cls if cls else "")
     return text
 
 
@@ -136,7 +136,7 @@ def sort_and_groupby(items, key, reverse=False):
 
 class MyEntry(Entry):
     """
-    Extends pybtex Entry with useful methods.
+    Extends pybtex Entry with useful methods for generating HTML output.
     See https://bitbucket.org/pybtex-devs/pybtex/
     """
     @lazy_property
@@ -236,10 +236,10 @@ _WEBSITE = None
 
 class Website(object):
     """
-    This object is a singleton and stores all the information required to generated the HTML documentation
+    This object is a singleton. It stores all the information required to generated the HTML documentation
     (input variables, test suite, bibtex entries).
-    It also provides methods such as get_wikilink that will be invoked by the python markdown
-    parser to implement extensions to the markdown syntax.
+    It also provides methods such as `get_wikilink` that will be invoked by the python markdown parser
+    to implement extensions to the standard markdown syntax.
     """
     # Regular expression for wikilinks.
     #WIKILINK_RE = r'\[\[([\w0-9_ -]+)\]\]'
@@ -318,14 +318,14 @@ class Website(object):
 
         # Build AbinitTestSuite object.
         from doc import tests as tmod
-        from doc.tests.pymods.testsuite import ChainOfTests
         tests = []
         for t in tmod.abitests.select_tests(suite_args=[], regenerate=True):
-            #if isinstance(t, ChainOfTests):  # FIXME?
+            # DO NOT use isinstance to check if ChainOfTests but rely on duck typing.
+            # See https://stackoverflow.com/questions/9006740/isinstance-and-type-equivelence-failure-due-to-import-mechanism-python-djan
+            #if isinstance(t, ChainOfTests):
             if hasattr(t, "tests"):
                 tests.extend(t.tests)
             else:
-                #print(type(t))
                 tests.append(t)
 
         # Construct dictionary rpath --> test. Use OrderedDict to have deterministic behaviour.
@@ -343,15 +343,38 @@ class Website(object):
             var.tests_info = {}
 
         def test_get_varnames(test, varnames):
-            # TODO: This should become a method of BaseTest.
+            # TODO: This should become a method of BaseTest and must be improved.
             with io.open(test.inp_fname, "rt", encoding="utf-8") as fh:
                 s = fh.read()
-            vused = [v for v in varnames if v in s] # TODO This can be improved.
+            vused = [v for v in varnames if v in s]
             return vused
+
+        codes_without_vars = set()
+        white_list = set([
+            "atompaw",
+            "cut3d",
+            #"multibinit",
+            "mrgddb",
+            "mrggkk",
+            "band2eps",
+            #"ujdet",
+            "fold2Bloch",
+            "fftprof",
+            #"conducti",
+            "mrgscr",
+            #"macroave",
+            "mrgdv",
+        ])
 
         for test in tests:
             vd = self.variables_code.get(test.executable, None)
-            if vd is None: continue  # TODO Multibinit, conducti?
+            # Not all codes have variables documented in the database e.g. multibinit
+            if vd is None:
+                if test.executable not in codes_without_vars:
+                    codes_without_vars.add(test.executable)
+                    if test.executable not in white_list:
+                        cprint("Cannot find variables associated to code: `%s`" % test.executable, "yellow")
+                continue
             for vname in test_get_varnames(test, list(vd.keys())):
                 var = vd[vname]
                 var.tests.append(test)
@@ -384,9 +407,10 @@ Change the input yaml files or the python code
         """
         excludes = [os.path.join(self.root, f) for f in ("site", os.path.join("doc", "tests"))]
         for root, dirs, files in os.walk(self.root, topdown=True):
-            #if any(root.startswith(e) for e in excludes):
-            #    dirs[:] = []
-            #    continue
+            if any(root.startswith(e) for e in excludes):
+                print("Excluding root", root)
+                dirs[:] = []
+                continue
             #print(root)
             for f in files:
                 if f.startswith("_"): continue
@@ -573,7 +597,6 @@ in order of number of occurrence in the input files provided with the package.
         # datastructures needed for topics index.md
         index_md = ["# Alphabetical list of topics\n"]
         self.howto_topic = {}
-
         for topic in self.all_topics:
             # Read data from yaml file and generate markdown string.
             with io.open(os.path.join(repo_path, "topic_" + topic + ".yml"), "rt", encoding="utf-8") as fh:
@@ -597,11 +620,10 @@ in order of number of occurrence in the input files provided with the package.
                                 "prpot": 5, "prfermi": 6, "prden": 7, "prgeo": 8, "prdos": 9, "prgs": 10,
                                 "prngs": 11, "prmisc": 12}[t[0]]
                     except KeyError:
-                        raise KeyError("Cannot find tribe %s in dict. Add it to sort_tribes with the proper rank"
+                        raise KeyError("Cannot find tribe `%s` in dict. Add it to sort_tribes with the proper rank."
                                 % str(t))
 
                 items = sorted([(v.topic_tribes[topic][0], v) for v in vlist], key=lambda t: sort_tribes(t))
-
                 for tribe, group in sort_and_groupby(items, key=lambda t: t[0]):
                     lines.append("*%s:*\n" % tribe)
                     lines.extend("- %s  %s" % (v.mdlink, v.mnemonics) for (_, v) in group)
@@ -751,7 +773,7 @@ The bibtex file is available [here](../abiref.bib).
         cprint("Markdown files generation completed in %.2f [s]" % (time.time() - start), "green")
 
         with open(os.path.join(self.root, ".gitignore"), "wt") as fh:
-            fh.write("The following md files have been automatically generated and should be `git ignored`\n")
+            fh.write("# The following md files have been automatically generated and should be `git ignored`\n")
             for p in self.md_generated:
                 fh.write(os.path.relpath(p, self.root) + "\n")
 
@@ -834,6 +856,7 @@ The bibtex file is available [here](../abiref.bib).
                 args = m.group(1).split()
                 action = args.pop(0)
                 if self.verbose: print("Triggering action:", action, "with args:", str(args))
+
                 if action == "editor":
                     if len(args) > 1:
                         new_lines.extend(self.editor_tabs(args, title=None).splitlines())
@@ -843,7 +866,11 @@ The bibtex file is available [here](../abiref.bib).
                     if len(args) > 1:
                         new_lines.extend(self.modal_with_tabs(args).splitlines())
                     else:
+
                         new_lines.extend(self.modal_from_filename(args[0]).splitlines())
+                elif action == "dialog":
+                    assert len(args) == 1
+                    new_lines.extend(self.dialog_from_filename(args[0]).splitlines())
 
                 else:
                     raise ValueError("Don't know how to handle action: `%s` in token: `%s`" % (action, m.group(1)))
@@ -1127,6 +1154,16 @@ The bibtex file is available [here](../abiref.bib).
                 target = "_blank"
                 html_classes.append("abifile-wikilink")
 
+            elif namespace == "gitsha":
+                # Handle [gitsha:f74dba1ed8346ca586dc95fd10fe4b8ced108d5e]
+                url = "https://github.com/abinit/abinit/commit/%s" % name
+                if a.text is None: a.text = name[:7]
+                target = "_blank"
+                html_classes.append("abigit-wikilink")
+
+            # TODO? Issue
+            #Fix issue https://github.com/abinit/abinit/issues/1
+
             else:
                 self.warn("Don't know how to handle wikilink token `%s` in `%s`" % (token, page_rpath))
                 url, a.text = "FAKE_URL", "FAKE_URL"
@@ -1229,6 +1266,64 @@ Enter any string to search in the database. Clicking without any request will gi
 {html_vars}
 </ul>""".format(**locals())
 
+    def dialog_from_filename(self, path, title=None):
+        title = path if title is None else title
+        with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
+            text = escape(fh.read(), tag="pre", cls="small-text")
+
+        return """
+<div class="text-center"><button class="btn btn-primary" id="{btn_id}">View {path}</button></div>
+<div class="my-dialog" id="{dialog_id}" title="{title}"><div>{text}</div></div>
+
+<script>
+$(function() {{
+    var e = $("#{dialog_id}");
+
+    e.dialog({{
+        //width: 500,
+        //minWidth: 600,
+        //minHeight: 200,
+        width: "auto",
+        autoOpen: false,
+        show: {{effect: "blind", duration: 800}},
+        //hide: {{effect: "explode", duration: 1000}},
+        position: {{my: 'center', at: 'center', of: window}},
+        buttons: [
+            {{text: "Close",
+             icon: "ui-icon-heart",
+             click: function(){{ $(this).dialog("close"); }}
+             //showText: false
+            }}
+        ]
+   }});
+
+   e.dialogExtend({{
+       "maximizable": true,
+       "minimizable": true,
+       "collapsable": true,
+       "minimizeLocation": "right",
+       "dblclick": "collapse",
+       "icons": {{
+            "close" : "ui-icon-circle-closethick", // new in v1.0.1
+            "maximize" : "ui-icon-extlink",
+            "minimize" : "ui-icon-minus",
+            "restore" : "ui-icon-newwin",
+            "collapse": "ui-icon-triangle-1-s"
+       }}
+       //"icons": {{
+       //  "close": "ui-icon-circle-close",
+       //  "maximize": "ui-icon-circle-plus",
+       //  "minimize": "ui-icon-circle-minus",
+       //  "collapse": "ui-icon-triangle-1-s",
+       //  "restore": "ui-icon-bullet"
+       //}}
+   }});
+
+   $("#{btn_id}").click(function() {{ e.dialog('open'); }});
+}});
+</script>
+""".format(path=path, title=title, text=text, btn_id=gen_id(), dialog_id=gen_id())
+
     def modal_from_filename(self, path, title=None):
         """Return HTML string with bootstrap modal and content taken from file `path`."""
         # Based on https://v4-alpha.getbootstrap.com/components/modal/#examples
@@ -1239,9 +1334,11 @@ Enter any string to search in the database. Clicking without any request will gi
 
         return """\
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">
-  View {path}
-</button>
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">
+    View {path}
+  </button>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}">
@@ -1271,7 +1368,9 @@ Enter any string to search in the database. Clicking without any request will gi
 
         s = """\
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}" aria-hidden="true">
@@ -1284,8 +1383,7 @@ Enter any string to search in the database. Clicking without any request will gi
       <div class="modal-body">
         <div role="tabpanel">
           <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">""".format(
-              modal_id=gen_id(), modal_label_id=gen_id(), **locals())
+          <ul class="nav nav-tabs" role="tablist">""".format(modal_id=gen_id(), modal_label_id=gen_id(), **locals())
 
         for i, (path, tid) in enumerate(zip(paths, tab_ids)):
             s += """\
@@ -1334,9 +1432,9 @@ Enter any string to search in the database. Clicking without any request will gi
         s = """\
 <div class="md-container">
   <div>{title}</div>
-    <div id="exTab1">
+    <div>
       <!-- Nav tabs -->
-        <ul class="nav nav-pills nav-justified">""".format(title=title)
+      <ul class="nav nav-pills nav-justified">""".format(title=title)
 
         for i, (path, tid) in enumerate(zip(paths, tab_ids)):
             s += """<li class="{li_class}"><a href="{href}" data-toggle="pill">{path}</a></li>""".format(
@@ -1353,8 +1451,7 @@ Enter any string to search in the database. Clicking without any request will gi
 <div id="{editor_id}" class="editor" hidden>{text}</div></div>
 """.format(active="fade in active" if i == 0 else "fade", tid=tid, editor_id=editor_id, text=text)
 
-        s +=  3 * "</div>"
-        return s
+        return s + 3 * "</div>"
 
 
 class Page(object):
@@ -1637,7 +1734,9 @@ class HTMLValidator(object):
         try:
             vld.validate_file(path)
         except urllib.error.URLError as exc:
-            cprint("Exception while validating %s.\n%s\nWill try again...\n" % (path, str(exc)), "magenta")
+            cprint("Exception while validating %s.\n%s\nWill try again after 2 sec...\n" % (path, str(exc)), "magenta")
+            import time
+            time.sleep(2)
             vld.validate_file(path)
 
         # errors and warnings are list of dicts

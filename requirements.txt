@@ -7,3 +7,4 @@ pyyaml>=3.11
 pygments
 pybtex
 #pytest
+#py_w3c

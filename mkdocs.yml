@@ -247,6 +247,7 @@ markdown_extensions:
   - abimkdocs.wikilinks
   - abimkdocs.preprocessor
   - abimkdocs.mdx_figcaption
+  #- abimkdocs.treepreprocessor
         
 #strict: true
 
@@ -265,6 +266,7 @@ extra_css:
 
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js
+    - extra_javascript/jquery.dialogextend.min.js
     - extra_javascript/abidocs.js
 
 extra:

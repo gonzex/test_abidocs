@@ -226,8 +226,8 @@ class Variable(yaml.YAMLObject):
         return "Variable " + str(self.abivarname) + " (default = " + str(self.defaultval) + ")"
 
     # MG
-   # TODO: assume abivarname is unique
     def __hash__(self):
+        # abivarname is unique
         return hash(self.abivarname)
 
     def __eq__(self, other):
@@ -277,7 +277,7 @@ class Variable(yaml.YAMLObject):
         if self.dimensions:
            app("*Dimensions:* %s  " % format_dimensions(self.dimensions))
         if self.commentdims:
-            app("*commentdims:* %s  " % self.commentdims)
+            app("*Commentdims:* %s  " % self.commentdims)
         app("*Default value:* %s  " % self.defaultval)
         if self.commentdefault:
             app("*Comment:* %s  " % self.commentdefault)
@@ -304,14 +304,20 @@ class Variable(yaml.YAMLObject):
                 tests_info["num_tests_in_tutorial"], tests_info["num_all_tutorial_tests"], self.executable)
 
             # Use https://facelessuser.github.io/pymdown-extensions/extensions/details/
-            # TODO?
-            #if len(self.tests) <= 10:
+            # Truncate list of tests if we have more that `max_ntests` entries.
+            count, max_ntests = 0, 20
             app('\n??? note "Test list (click to open). %s"' % info)
             tlist = sorted(self.tests, key=lambda t: t.suite_name)
+            d = {}
             for suite_name, tests_in_suite in groupby(tlist, key=lambda t: t.suite_name):
                 ipaths = [os.path.join(*splitall(t.inp_fname)[-4:]) for t in tests_in_suite]
+                count += len(ipaths)
+                d[suite_name] = ipaths
+
+            for suite_name, ipaths in d.items():
+                if count > max_ntests: ipaths = ipaths[:min(3, len(ipaths))]
                 s = "- " + suite_name + ":  " + ", ".join("[[%s|%s]]" % (p, os.path.basename(p)) for p in ipaths)
-                #s = "- " + suite_name + ":  " + ", ".join("[[%s]]" % p for p in ipaths)
+                if count > max_ntests: s += " ..."
                 app("    " + s)
             app("\n\n")
 
@@ -321,7 +327,7 @@ class Variable(yaml.YAMLObject):
             app(2 * "\n")
             app(md_text)
         else:
-            print("WARNING: Variable:", self.name, "with None text")
+            raise ValueError("Variable `%s` does not have description text!" % self.name)
 
         if with_hr:
             app("* * *" + 2*"\n")

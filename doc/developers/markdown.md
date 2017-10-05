@@ -219,7 +219,6 @@ The Markdown syntax for links is:
 | :-- | :-- | :--
 | `[The Abinit website](https://www.abinit.org)` | [The Abinit website](https://www.abinit.org)  | --
 | `<https://www.abinit.org>` | <https://www.abinit.org> | --
-| `https://www.abinit.org` | https://www.abinit.org | [MagicLink](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
 
 
 This is the **recommended** approach to create links to external resources or internal links to other pages 
@@ -361,6 +360,27 @@ The problem is easily solved by inserting whitespaces in the expression:
 
 This version if much more readable and it also avoids possible problems with the `**` that
 has a special meaning in Markdown.
+
+To refer to a particular git commit inside a Markdown document use:
+
+    Solved in [[gitsha:f74dba1ed8346ca586dc95fd10fe4b8ced108d5e]]
+
+that produces: [[gitsha:f74dba1ed8346ca586dc95fd10fe4b8ced108d5e]]
+
+<!--
+It's also possible to mention a particular github issue with the syntax:
+
+    Fix https://github.com/abinit/abinit/issues/1
+
+that produces: Fix https://github.com/abinit/abinit/issues/1
+-->
+
+!!! note
+    This extension is useful to generate nice changelogs and [release notes](/about/release-notes).
+
+
+
+
 
 For compatibility reasons, `mksite.py` supports the following features provided by `generate_doc.py`
 although I would prefer to encourange the use of namespaces:
@@ -587,38 +607,20 @@ creates a *closed* element:
      [[ecut]] [[asr@anaddb]]
 
 
-### MagicLink
-
-[MagicLink](https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/)
-scans for URLs and emails and generates proper HTML links for them.  
-No special syntax is required, you just type or paste the links and they get converted.  
-MagicLink auto-links HTML, FTP, and email links.
-If you happen to have some conflicts with syntax for a specific case, you can always revert
-to the old auto-link format as well: `<https://www.link.com>`.  
-
-For even more magic, enable `repo_url_shortener` for shorter concise links for popular source code hosts.  
-Issue, pull request, and commit links will be shortened in the style of GFM.
-Issues are shortened to `user/repo#1` for repositories external to `base_repo_url` and `#1` for internal links.  
-For commit links, external commits will show as `` user/repo@`abc1234` `` and internal commits
-will show as `` `abc1234` ``. Currently supports GitHub, GitLab, and Bitbucket.
-Links require no special syntax.
-
-To refer to a particular git commit inside a Markdown document use:
-
-    Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
-
-that produces: Solved in https://github.com/abinit/abinit/commit/f74dba1ed8346ca586dc95fd10fe4b8ced108d5e
-
-It's also possible to mention a particular github issue with the syntax:
-
-    Fix https://github.com/abinit/abinit/issues/1
-
-that produces: Fix https://github.com/abinit/abinit/issues/1
-
-!!! note
-    This extension is useful to generate nice changelogs and [release notes](/about/release-notes).
-
 ## Abinit extensions
+
+To create a button that opens a dialog containing the input file, use:
+
+```
+    {% dialog tests/v1/Input/t01.in %}
+```
+
+that produces:
+
+{% dialog tests/v1/Input/t01.in %}
+
+{% dialog tests/v1/Input/t02.in %}
+
 
 To create a button that opens a modal window containing the input file, use:
 
