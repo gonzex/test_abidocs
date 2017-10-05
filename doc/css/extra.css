@@ -226,6 +226,19 @@ pre.small-text {
     font-size: 10px;
 }
 
+/*
+.ui-dialog { position: fixed; padding: .1em; width: 50px; overflow: hidden; }
+*/
+
+.ui-dialog-titlebar .PinDialog, .ui-dialog-titlebar .DialogPinned {
+    float: left;
+    height: 20px;
+    margin: 0 5px 0 -10px;
+    padding: 1px;
+    top: 50%;
+    width: 20px;
+}
+
 /* Set z-index to 0 to elements that otherwise would appear above the menu bar upon scrolling. */
 .custom-search-form {
     z-index: 0;

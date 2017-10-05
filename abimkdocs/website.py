@@ -1271,8 +1271,17 @@ Enter any string to search in the database. Clicking without any request will gi
         with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
             text = escape(fh.read(), tag="pre", cls="small-text")
 
+#<div class="text-center">
+#<button class="btn btn-primary" id="{btn_id}">View {path}</button>
+#</div>
+
         return """
-<div class="text-center"><button class="btn btn-primary" id="{btn_id}">View {path}</button></div>
+<div class="text-center">
+<button id="{btn_id}" class="ui-state-default ui-corner-all">
+<span class="ui-icon ui-icon-newwin"></span>View {path}
+</button>
+</div>
+
 <div class="my-dialog" id="{dialog_id}" title="{title}"><div>{text}</div></div>
 
 <script>
@@ -1280,12 +1289,13 @@ $(function() {{
     var e = $("#{dialog_id}");
 
     e.dialog({{
-        //width: 500,
+        width: 400,
+        height: 300,
         //minWidth: 600,
         //minHeight: 200,
-        width: "auto",
+        //width: "auto",
         autoOpen: false,
-        show: {{effect: "blind", duration: 800}},
+        show: {{effect: "blind", duration: 400}},
         //hide: {{effect: "explode", duration: 1000}},
         position: {{my: 'center', at: 'center', of: window}},
         buttons: [
@@ -1294,7 +1304,10 @@ $(function() {{
              click: function(){{ $(this).dialog("close"); }}
              //showText: false
             }}
-        ]
+        ],
+       create: function () {{
+         e.parent().children('.ui-dialog-titlebar').prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="Pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+        }}
    }});
 
    e.dialogExtend({{

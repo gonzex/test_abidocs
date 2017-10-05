@@ -17,19 +17,21 @@ $(function() {
         }, 500);
     });
 
-    $('.modal-dialog').draggable().resizable();
-
-    //$(".my-dialog").dialog({
-    //    autoOpen: false,
-    //    buttons: [
-    //        {text: "Ok",
-    //         icon: "ui-icon-heart",
-    //         click: function() {
-    //            $(this).dialog("close");
-    //        }
-    //    }]
-    //});
+    //$('.modal-dialog').draggable().resizable();
     //$("#foobar").dialog();
+
+$('.PinDialog').click(function () {
+    var CurrentDialogPosition = $(this).closest('.ui-dialog').offset();
+    var DialogLeft = CurrentDialogPosition.left - $(window).scrollLeft();
+    var DialogTop = CurrentDialogPosition.top - $(window).scrollTop();
+    $(this).toggleClass('PinDialog DialogPinned').toggleClass('ui-state-highlight ui-state-default').children().toggleClass('ui-icon-pin-w ui-icon-pin-s').closest('.ui-dialog').css({ 'position': 'fixed', 'top': DialogTop, 'left': DialogLeft });
+});
+
+    // Based on http://appdevonsharepoint.com/how-to-pin-a-jquery-ui-dialog-in-place/
+
+$('.DialogPinned').click(function () {
+    $(this).toggleClass('PinDialog DialogPinned').toggleClass('ui-state-highlight ui-state-default').children().toggleClass('ui-icon-pin-s ui-icon-pin-w').closest('.ui-dialog').css({ 'position': 'absolute', 'top': $(this).closest('.ui-dialog').offset().top, 'left': $(this).closest('.ui-dialog').offset().left });
+});
 
     // That selector matches all spans that have an id attribute and it starts with foo (e.g. fooblah
     $(".editor").each(function(index, element) {
