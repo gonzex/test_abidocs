@@ -150,7 +150,6 @@ a.citation-wikilink {
     font-style: italic;
 }
 
-
 /*
 font-family: 'Ubuntu Mono', monospace;
 */
@@ -222,8 +221,45 @@ tr:hover {
     background-color: rgba(144, 144, 144, 0.10);
 }
 
+/* This for bootstrap buttons with labels. See https://bootsnipp.com/snippets/featured/buttons-with-labels */
+.btn-label {
+    position: relative;
+    left: -12px;
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 3px 0 0 3px;
+    z-index: 0;
+}
+
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* .btn { margin-bottom:10px; } */
+
+/* Decrease font-size e.g in <pre class="small-text"> elements */
+.small-text {
+    font-size: 10px !important;
+}
+
 pre.small-text {
-    font-size: 10px;
+    font-size: 10px !important;
+}
+
+/* This to solve the conflict between bootstrap and jquery-ui close button.
+ * https://stackoverflow.com/questions/17367736/jquery-ui-dialog-missing-close-icon
+.ui-dialog-titlebar-close {}
+ * */
+
+.ui-dialog-titlebar-close:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../images/ui-icons_555555_256x240.png);
+    background-position: -96px -128px;
+    background-repeat: no-repeat;
 }
 
 /*
@@ -243,7 +279,6 @@ pre.small-text {
 .custom-search-form {
     z-index: 0;
 }
-
 
 /* Setting height is also important, otherwise editor wont showup 
 http://tech.deepumohan.com/2013/09/javascript-ace-editor-positioning-bootstrap.html */

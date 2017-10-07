@@ -33,6 +33,38 @@
     <!-- Jquery from Google CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Load Jquery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Handle jQuery plugin naming conflict between jQuery UI and Bootstrap 
+    https://stackoverflow.com/questions/13731400/jqueryui-tooltips-are-competing-with-twitter-bootstrap
+    -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+      $.widget.bridge('uitooltip', $.ui.tooltip);
+    </script>
+
+    <!--
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+    -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
+    <!-- Default theme
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
+    -->
+    <!-- Semantic UI theme
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
+    -->
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
+    
+
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
@@ -46,14 +78,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
-
-    <!-- Jquery UI NOTE: Load first bootstrap and then jqueryUI to avoid conflicts -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!--
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css">
 
     
 
@@ -70,7 +94,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-big-counter.min.css" />
-
     <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/white/pace-theme-bounce.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" />
@@ -134,9 +157,10 @@
     
 
     <!-- Load fonts used for input variables -->
+    <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+    -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 
 
     
@@ -159,6 +183,8 @@
       <link rel="stylesheet" href="../../css/extra.css">
     
       <link rel="stylesheet" href="../../css/gallery.css">
+    
+      <link rel="stylesheet" href="../../css/my_codehilite.css">
     
     
   </head>
@@ -3957,289 +3983,547 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 
 <p>that produces:</p>
-<div class="text-center">
-<button id="uuid-c12fccea-bb49-4663-a95f-96d07ea2d94c" class="ui-state-default ui-corner-all">
-<span class="ui-icon ui-icon-newwin"></span>View tests/v1/Input/t01.in
-</button>
-</div>
+<div class="text-center"><button type="button" id="uuid-f30c46b1-e638-4cfd-ae66-496a97d6cf17" class="btn btn-default btn-labeled">
+  <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t01.in
+</button>.</div>
 
-<div class="my-dialog" id="uuid-59c78a53-015f-4a37-8ff0-72a5af2c9322" title="tests/v1/Input/t01.in"><div><pre class="small-text">
-#   FCC Al; 2 special points
+<div id="uuid-25cb9de2-c93a-4ec1-b570-f5d90186640c" class="my_dialog" title="tests/v1/Input/t01.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
 
-#nband 8
-#nspinor 2
+<span class="c1">#nband 8</span>
+<span class="c1">#nspinor 2</span>
 
- acell 3*7.60
- ecut 10
- enunit 2
- intxc 1
- kptopt 0
- kpt   1 1 1     1 2 2   kptnrm 4
- natom  1
- nband 4
- nkpt  2
- nline 3
- nstep 8
- nsym  24 ntypat  1
- occopt  4  prtvol 10
- rprim   0 .5 .5  .5 0 .5  .5 .5 0
+ acell <span class="m">3</span>*7.60
+ ecut <span class="m">10</span>
+ enunit <span class="m">2</span>
+ intxc <span class="m">1</span>
+ kptopt <span class="m">0</span>
+ kpt   <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>     <span class="m">1</span> <span class="m">2</span> <span class="m">2</span>   kptnrm <span class="m">4</span>
+ natom  <span class="m">1</span>
+ nband <span class="m">4</span>
+ nkpt  <span class="m">2</span>
+ nline <span class="m">3</span>
+ nstep <span class="m">8</span>
+ nsym  <span class="m">24</span> ntypat  <span class="m">1</span>
+ occopt  <span class="m">4</span>  prtvol <span class="m">10</span>
+ rprim   <span class="m">0</span> .5 .5  .5 <span class="m">0</span> .5  .5 .5 <span class="m">0</span>
  symrel
-       1  0  0    0  1  0    0  0  1
-       0  1 -1    1  0 -1    0  0 -1
-      -1  0  0   -1  0  1   -1  1  0
-       0 -1  1    0 -1  0    1 -1  0
-      -1  0  1   -1  0  0   -1  1  0
-       0 -1  0    0 -1  1    1 -1  0
-       0 -1  1    1 -1  0    0 -1  0
-       0  1 -1    0  0 -1    1  0 -1
-       0  0 -1    1  0 -1    0  1 -1
-      -1  1  0   -1  0  1   -1  0  0
-       1  0 -1    0  1 -1    0  0 -1
-       1 -1  0    0 -1  0    0 -1  1
-      -1  0  0   -1  1  0   -1  0  1
-       0  1  0    1  0  0    0  0  1
-       0  0  1    0  1  0    1  0  0
-       1  0  0    0  0  1    0  1  0
-       0  0  1    1  0  0    0  1  0
-       0  1  0    0  0  1    1  0  0
-      -1  0  1   -1  1  0   -1  0  0
-       0  0 -1    0  1 -1    1  0 -1
-       1  0 -1    0  0 -1    0  1 -1
-       1 -1  0    0 -1  1    0 -1  0
-       0 -1  0    1 -1  0    0 -1  1
-      -1  1  0   -1  0  0   -1  0  1
- tnons   72*0.0d0
- tolwfr 1.0d-16
- tsmear 0.05
- typat  1
- wtk   1 3
- xred  0.0 0.0 0.0
- znucl 13.0
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+ tnons   <span class="m">72</span>*0.0d0
+ tolwfr <span class="m">1</span>.0d-16
+ tsmear <span class="m">0</span>.05
+ typat  <span class="m">1</span>
+ wtk   <span class="m">1</span> <span class="m">3</span>
+ xred  <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0
+ znucl <span class="m">13</span>.0
 
 
-## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
-#%%&lt;BEGIN TEST_INFO&gt;
-#%% [setup]
-#%% executable = abinit
-#%% [files]
-#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0
-#%% psp_files=13al.pspgth
-#%% [paral_info]
-#%% max_nprocs = 2
-#%% [extra_info]
-#%% keywords = NC
-#%% description = 
-#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .
-#%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;
-#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   
-#%%&lt;END TEST_INFO&gt;
-
-</pre>
+<span class="c1">## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r</span>
+<span class="c1">#%%&lt;BEGIN TEST_INFO&gt;</span>
+<span class="c1">#%% [setup]</span>
+<span class="c1">#%% executable = abinit</span>
+<span class="c1">#%% [files]</span>
+<span class="c1">#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0</span>
+<span class="c1">#%% psp_files=13al.pspgth</span>
+<span class="c1">#%% [paral_info]</span>
+<span class="c1">#%% max_nprocs = 2</span>
+<span class="c1">#%% [extra_info]</span>
+<span class="c1">#%% keywords = NC</span>
+<span class="c1">#%% description = </span>
+<span class="c1">#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .</span>
+<span class="c1">#%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;</span>
+<span class="c1">#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   </span>
+<span class="c1">#%%&lt;END TEST_INFO&gt;</span>
+</pre></div>
 </div></div>
 
 <script>
 $(function() {
-    var e = $("#uuid-59c78a53-015f-4a37-8ff0-72a5af2c9322");
+    var e = $("#uuid-25cb9de2-c93a-4ec1-b570-f5d90186640c");
 
     e.dialog({
-        width: 400,
-        height: 300,
-        //minWidth: 600,
-        //minHeight: 200,
+        width: 500,
         //width: "auto",
+        height: 500,
         autoOpen: false,
-        show: {effect: "blind", duration: 400},
+        show: {effect: "blind", duration: 200},
         //hide: {effect: "explode", duration: 1000},
         position: {my: 'center', at: 'center', of: window},
         buttons: [
             {text: "Close",
-             icon: "ui-icon-heart",
-             click: function(){ $(this).dialog("close"); }
-             //showText: false
+              icon: "ui-icon-close",
+              classes: {"ui-button": "ui-corner-all"},
+              click: function(){ $(this).dialog("close"); }
+              //showText: false
             }
         ],
        create: function () {
-         e.parent().children('.ui-dialog-titlebar').prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="Pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-        }
+         var titlebar = e.parent().children('.ui-dialog-titlebar');
+         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+
+        // This to solve the conflict between bootstrap and jquery-ui close button.
+        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
+        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
+      }
    });
 
    e.dialogExtend({
-       "maximizable": true,
-       "minimizable": true,
-       "collapsable": true,
-       "minimizeLocation": "right",
+       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
        "dblclick": "collapse",
        "icons": {
-            "close" : "ui-icon-circle-closethick", // new in v1.0.1
-            "maximize" : "ui-icon-extlink",
-            "minimize" : "ui-icon-minus",
-            "restore" : "ui-icon-newwin",
+            "close": "ui-icon-close",
+            //"maximize": "ui-icon-extlink",
+            "minimize": "ui-icon-minus",
+            "restore": "ui-icon-newwin",
             "collapse": "ui-icon-triangle-1-s"
        }
-       //"icons": {
-       //  "close": "ui-icon-circle-close",
-       //  "maximize": "ui-icon-circle-plus",
-       //  "minimize": "ui-icon-circle-minus",
-       //  "collapse": "ui-icon-triangle-1-s",
-       //  "restore": "ui-icon-bullet"
-       //}
    });
 
-   $("#uuid-c12fccea-bb49-4663-a95f-96d07ea2d94c").click(function() { e.dialog('open'); });
+   $("#uuid-f30c46b1-e638-4cfd-ae66-496a97d6cf17").click(function() { e.removeAttr('hidden').dialog('open'); });
+
 });
 </script>
 
-<div class="text-center">
-<button id="uuid-cfc2ed54-4b4d-414b-b7e4-54fc91ac593e" class="ui-state-default ui-corner-all">
-<span class="ui-icon ui-icon-newwin"></span>View tests/v1/Input/t02.in
-</button>
-</div>
+<p>If multiple files are used such as in:</p>
+<div class="codehilite"><pre><span></span>{% dialog tests/v1/Input/t01.in tests/v1/Input/t02.in tests/v1/Input/t03.in %}
+</pre></div>
 
-<div class="my-dialog" id="uuid-df87153d-1926-45be-b805-23295188192c" title="tests/v1/Input/t02.in"><div><pre class="small-text">
-#   FCC Al; 2 special points
 
- acell 3*7.60
- ecut 10
- enunit 2
- intxc 1
- kptopt 0
- kpt   1 1 1     1 2 2   kptnrm 4
- natom  1 nband 4
- nkpt  2
- nline 3  nstep 8
- nsym  24 ntypat  1
- occopt  5  prtvol 10
- rprim   0 .5 .5  .5 0 .5  .5 .5 0
+<p>a modal window with tabs is produced:</p>
+<div class="text-center"><div class="btn-group-vertical">
+<button type="button" id="uuid-e080ae43-c003-40aa-bc5f-d87c7495ae69" class="btn btn-default btn-labeled">
+  <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t01.in
+</button>.
+<button type="button" id="uuid-69e706ef-a74e-44b2-b338-9cf178be431e" class="btn btn-default btn-labeled">
+  <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t02.in
+</button>.
+<button type="button" id="uuid-0ed447d5-cbbb-4ccd-b5c1-94537ac3dde7" class="btn btn-default btn-labeled">
+  <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t03.in
+</button>.
+</div></div>
+
+<div id="uuid-d1cc82c6-bb4a-4d3f-ac4f-9d449edc605f" class="my_dialog" title="tests/v1/Input/t01.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+
+<span class="c1">#nband 8</span>
+<span class="c1">#nspinor 2</span>
+
+ acell <span class="m">3</span>*7.60
+ ecut <span class="m">10</span>
+ enunit <span class="m">2</span>
+ intxc <span class="m">1</span>
+ kptopt <span class="m">0</span>
+ kpt   <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>     <span class="m">1</span> <span class="m">2</span> <span class="m">2</span>   kptnrm <span class="m">4</span>
+ natom  <span class="m">1</span>
+ nband <span class="m">4</span>
+ nkpt  <span class="m">2</span>
+ nline <span class="m">3</span>
+ nstep <span class="m">8</span>
+ nsym  <span class="m">24</span> ntypat  <span class="m">1</span>
+ occopt  <span class="m">4</span>  prtvol <span class="m">10</span>
+ rprim   <span class="m">0</span> .5 .5  .5 <span class="m">0</span> .5  .5 .5 <span class="m">0</span>
  symrel
-       1  0  0    0  1  0    0  0  1
-       0  1 -1    1  0 -1    0  0 -1
-      -1  0  0   -1  0  1   -1  1  0
-       0 -1  1    0 -1  0    1 -1  0
-      -1  0  1   -1  0  0   -1  1  0
-       0 -1  0    0 -1  1    1 -1  0
-       0 -1  1    1 -1  0    0 -1  0
-       0  1 -1    0  0 -1    1  0 -1
-       0  0 -1    1  0 -1    0  1 -1
-      -1  1  0   -1  0  1   -1  0  0
-       1  0 -1    0  1 -1    0  0 -1
-       1 -1  0    0 -1  0    0 -1  1
-      -1  0  0   -1  1  0   -1  0  1
-       0  1  0    1  0  0    0  0  1
-       0  0  1    0  1  0    1  0  0
-       1  0  0    0  0  1    0  1  0
-       0  0  1    1  0  0    0  1  0
-       0  1  0    0  0  1    1  0  0
-      -1  0  1   -1  1  0   -1  0  0
-       0  0 -1    0  1 -1    1  0 -1
-       1  0 -1    0  0 -1    0  1 -1
-       1 -1  0    0 -1  1    0 -1  0
-       0 -1  0    1 -1  0    0 -1  1
-      -1  1  0   -1  0  0   -1  0  1
- tnons   72*0.0d0
- tolwfr 1.0d-16
- tsmear 0.05
- typat  1
- wtk   1 3
- xred  0.0 0.0 0.0
- znucl 13.0
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+ tnons   <span class="m">72</span>*0.0d0
+ tolwfr <span class="m">1</span>.0d-16
+ tsmear <span class="m">0</span>.05
+ typat  <span class="m">1</span>
+ wtk   <span class="m">1</span> <span class="m">3</span>
+ xred  <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0
+ znucl <span class="m">13</span>.0
 
 
-## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r
-#%%&lt;BEGIN TEST_INFO&gt;
-#%% [setup]
-#%% executable = abinit
-#%% [files]
-#%% psp_files=13al.pspgth
-#%% files_to_test = t02.out, tolnlines=  1, tolabs=  1.001e-09, tolrel=  1.100e-04
-#%% [paral_info]
-#%% max_nprocs = 2
-#%% [extra_info]
-#%% keywords = NC
-#%% description = 
-#%%   Bulk Aluminium, FCC, with 2 special points, occopt=5 and tsmear=0.05.
-#%%   Designed to test the treatment of metals, using the &quot;cold smearing&quot;
-#%%   of N. Marzari , with a=-.8165 (monotonic function in the tail).
-#%% topics = BandOcc
-#%%&lt;END TEST_INFO&gt;
-
-</pre>
+<span class="c1">## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r</span>
+<span class="c1">#%%&lt;BEGIN TEST_INFO&gt;</span>
+<span class="c1">#%% [setup]</span>
+<span class="c1">#%% executable = abinit</span>
+<span class="c1">#%% [files]</span>
+<span class="c1">#%% files_to_test = t01.out, tolnlines=0, tolabs=0.0, tolrel=0.0</span>
+<span class="c1">#%% psp_files=13al.pspgth</span>
+<span class="c1">#%% [paral_info]</span>
+<span class="c1">#%% max_nprocs = 2</span>
+<span class="c1">#%% [extra_info]</span>
+<span class="c1">#%% keywords = NC</span>
+<span class="c1">#%% description = </span>
+<span class="c1">#%%  Bulk Aluminium, FCC, with 2 special points, occopt=4 and tsmear=0.05 .</span>
+<span class="c1">#%%  Designed to test the treatment of metals, using the &quot;cold smearing&quot;</span>
+<span class="c1">#%%  of N. Marzari , with a=-.5634 (minimization of the bump).   </span>
+<span class="c1">#%%&lt;END TEST_INFO&gt;</span>
+</pre></div>
 </div></div>
 
 <script>
 $(function() {
-    var e = $("#uuid-df87153d-1926-45be-b805-23295188192c");
+    var e = $("#uuid-d1cc82c6-bb4a-4d3f-ac4f-9d449edc605f");
 
     e.dialog({
-        width: 400,
-        height: 300,
-        //minWidth: 600,
-        //minHeight: 200,
+        width: 500,
         //width: "auto",
+        height: 500,
         autoOpen: false,
-        show: {effect: "blind", duration: 400},
+        show: {effect: "blind", duration: 200},
         //hide: {effect: "explode", duration: 1000},
         position: {my: 'center', at: 'center', of: window},
         buttons: [
             {text: "Close",
-             icon: "ui-icon-heart",
-             click: function(){ $(this).dialog("close"); }
-             //showText: false
+              icon: "ui-icon-close",
+              classes: {"ui-button": "ui-corner-all"},
+              click: function(){ $(this).dialog("close"); }
+              //showText: false
             }
         ],
        create: function () {
-         e.parent().children('.ui-dialog-titlebar').prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="Pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-        }
+         var titlebar = e.parent().children('.ui-dialog-titlebar');
+         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+
+        // This to solve the conflict between bootstrap and jquery-ui close button.
+        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
+        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
+      }
    });
 
    e.dialogExtend({
-       "maximizable": true,
-       "minimizable": true,
-       "collapsable": true,
-       "minimizeLocation": "right",
+       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
        "dblclick": "collapse",
        "icons": {
-            "close" : "ui-icon-circle-closethick", // new in v1.0.1
-            "maximize" : "ui-icon-extlink",
-            "minimize" : "ui-icon-minus",
-            "restore" : "ui-icon-newwin",
+            "close": "ui-icon-close",
+            //"maximize": "ui-icon-extlink",
+            "minimize": "ui-icon-minus",
+            "restore": "ui-icon-newwin",
             "collapse": "ui-icon-triangle-1-s"
        }
-       //"icons": {
-       //  "close": "ui-icon-circle-close",
-       //  "maximize": "ui-icon-circle-plus",
-       //  "minimize": "ui-icon-circle-minus",
-       //  "collapse": "ui-icon-triangle-1-s",
-       //  "restore": "ui-icon-bullet"
-       //}
    });
 
-   $("#uuid-cfc2ed54-4b4d-414b-b7e4-54fc91ac593e").click(function() { e.dialog('open'); });
+   $("#uuid-e080ae43-c003-40aa-bc5f-d87c7495ae69").click(function() { e.removeAttr('hidden').dialog('open'); });
+
 });
 </script>
 
+<div id="uuid-d8715114-c4c1-430b-9088-e813dd5e16c3" class="my_dialog" title="tests/v1/Input/t02.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+
+ acell <span class="m">3</span>*7.60
+ ecut <span class="m">10</span>
+ enunit <span class="m">2</span>
+ intxc <span class="m">1</span>
+ kptopt <span class="m">0</span>
+ kpt   <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>     <span class="m">1</span> <span class="m">2</span> <span class="m">2</span>   kptnrm <span class="m">4</span>
+ natom  <span class="m">1</span> nband <span class="m">4</span>
+ nkpt  <span class="m">2</span>
+ nline <span class="m">3</span>  nstep <span class="m">8</span>
+ nsym  <span class="m">24</span> ntypat  <span class="m">1</span>
+ occopt  <span class="m">5</span>  prtvol <span class="m">10</span>
+ rprim   <span class="m">0</span> .5 .5  .5 <span class="m">0</span> .5  .5 .5 <span class="m">0</span>
+ symrel
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+ tnons   <span class="m">72</span>*0.0d0
+ tolwfr <span class="m">1</span>.0d-16
+ tsmear <span class="m">0</span>.05
+ typat  <span class="m">1</span>
+ wtk   <span class="m">1</span> <span class="m">3</span>
+ xred  <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0
+ znucl <span class="m">13</span>.0
+
+
+<span class="c1">## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r</span>
+<span class="c1">#%%&lt;BEGIN TEST_INFO&gt;</span>
+<span class="c1">#%% [setup]</span>
+<span class="c1">#%% executable = abinit</span>
+<span class="c1">#%% [files]</span>
+<span class="c1">#%% psp_files=13al.pspgth</span>
+<span class="c1">#%% files_to_test = t02.out, tolnlines=  1, tolabs=  1.001e-09, tolrel=  1.100e-04</span>
+<span class="c1">#%% [paral_info]</span>
+<span class="c1">#%% max_nprocs = 2</span>
+<span class="c1">#%% [extra_info]</span>
+<span class="c1">#%% keywords = NC</span>
+<span class="c1">#%% description = </span>
+<span class="c1">#%%   Bulk Aluminium, FCC, with 2 special points, occopt=5 and tsmear=0.05.</span>
+<span class="c1">#%%   Designed to test the treatment of metals, using the &quot;cold smearing&quot;</span>
+<span class="c1">#%%   of N. Marzari , with a=-.8165 (monotonic function in the tail).</span>
+<span class="c1">#%% topics = BandOcc</span>
+<span class="c1">#%%&lt;END TEST_INFO&gt;</span>
+</pre></div>
+</div></div>
+
+<script>
+$(function() {
+    var e = $("#uuid-d8715114-c4c1-430b-9088-e813dd5e16c3");
+
+    e.dialog({
+        width: 500,
+        //width: "auto",
+        height: 500,
+        autoOpen: false,
+        show: {effect: "blind", duration: 200},
+        //hide: {effect: "explode", duration: 1000},
+        position: {my: 'center', at: 'center', of: window},
+        buttons: [
+            {text: "Close",
+              icon: "ui-icon-close",
+              classes: {"ui-button": "ui-corner-all"},
+              click: function(){ $(this).dialog("close"); }
+              //showText: false
+            }
+        ],
+       create: function () {
+         var titlebar = e.parent().children('.ui-dialog-titlebar');
+         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+
+        // This to solve the conflict between bootstrap and jquery-ui close button.
+        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
+        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
+      }
+   });
+
+   e.dialogExtend({
+       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
+       "dblclick": "collapse",
+       "icons": {
+            "close": "ui-icon-close",
+            //"maximize": "ui-icon-extlink",
+            "minimize": "ui-icon-minus",
+            "restore": "ui-icon-newwin",
+            "collapse": "ui-icon-triangle-1-s"
+       }
+   });
+
+   $("#uuid-69e706ef-a74e-44b2-b338-9cf178be431e").click(function() { e.removeAttr('hidden').dialog('open'); });
+
+});
+</script>
+
+<div id="uuid-b94bb973-d1ad-43c3-b332-c39d98266a57" class="my_dialog" title="tests/v1/Input/t03.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+
+ acell <span class="m">3</span>*7.60
+ ecut <span class="m">10</span>
+ enunit <span class="m">2</span>
+ intxc <span class="m">1</span>
+ fband <span class="m">2</span>.0d0
+<span class="c1">#nband 4</span>
+<span class="c1">#</span>
+ istatr <span class="m">2</span>
+ kptopt <span class="m">0</span>
+ kpt   <span class="m">1</span> <span class="m">1</span> <span class="m">1</span>     <span class="m">1</span> <span class="m">2</span> <span class="m">2</span>   kptnrm <span class="m">4</span>
+ natom  <span class="m">1</span>
+ nkpt  <span class="m">2</span>
+ nline <span class="m">3</span>  nstep <span class="m">8</span>
+ nsym  <span class="m">24</span> ntypat  <span class="m">1</span>
+ occopt  <span class="m">6</span>  prtvol <span class="m">10</span>
+ rprim   <span class="m">0</span> .5 .5  .5 <span class="m">0</span> .5  .5 .5 <span class="m">0</span>
+ symrel
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">0</span>  <span class="m">0</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">1</span>  <span class="m">0</span>    <span class="m">0</span>  <span class="m">0</span>  <span class="m">1</span>    <span class="m">1</span>  <span class="m">0</span>  <span class="m">0</span>
+      -1  <span class="m">0</span>  <span class="m">1</span>   -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>
+       <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1    <span class="m">1</span>  <span class="m">0</span> -1
+       <span class="m">1</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">0</span> -1    <span class="m">0</span>  <span class="m">1</span> -1
+       <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>    <span class="m">0</span> -1  <span class="m">0</span>
+       <span class="m">0</span> -1  <span class="m">0</span>    <span class="m">1</span> -1  <span class="m">0</span>    <span class="m">0</span> -1  <span class="m">1</span>
+      -1  <span class="m">1</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">0</span>   -1  <span class="m">0</span>  <span class="m">1</span>
+ tnons   <span class="m">72</span>*0.0d0
+ tolwfr <span class="m">1</span>.0d-16
+ tsmear <span class="m">0</span>.05
+ typat  <span class="m">1</span>
+ wtk   <span class="m">1</span> <span class="m">3</span>
+ xred  <span class="m">0</span>.0 <span class="m">0</span>.0 <span class="m">0</span>.0
+ znucl <span class="m">13</span>.0
+
+
+<span class="c1">## After modifying the following section, one might need to regenerate the pickle database with runtests.py -r</span>
+<span class="c1">#%%&lt;BEGIN TEST_INFO&gt;</span>
+<span class="c1">#%% [setup]</span>
+<span class="c1">#%% executable = abinit</span>
+<span class="c1">#%% [files]</span>
+<span class="c1">#%% files_to_test = t03.out ,tolnlines = 1, tolabs = 1.100e-09, tolrel = 1.100e-04</span>
+<span class="c1">#%% psp_files = 13al.pspgth</span>
+<span class="c1">#%% [paral_info]</span>
+<span class="c1">#%% max_nprocs = 2</span>
+<span class="c1">#%% [extra_info]</span>
+<span class="c1">#%% authors = Unknown</span>
+<span class="c1">#%% keywords = NC</span>
+<span class="c1">#%% description = </span>
+<span class="c1">#%%   Bulk Aluminium, FCC, with 2 special points, occopt=6 and tsmear=0.05.</span>
+<span class="c1">#%%   Designed to test the treatment of metals, </span>
+<span class="c1">#%%   with the Gaussian-Hermite smearing of Methfessel and Paxton.</span>
+<span class="c1">#%%   Also test the use of fband instead of nband.</span>
+<span class="c1">#%%&lt;END TEST_INFO&gt;</span>
+</pre></div>
+</div></div>
+
+<script>
+$(function() {
+    var e = $("#uuid-b94bb973-d1ad-43c3-b332-c39d98266a57");
+
+    e.dialog({
+        width: 500,
+        //width: "auto",
+        height: 500,
+        autoOpen: false,
+        show: {effect: "blind", duration: 200},
+        //hide: {effect: "explode", duration: 1000},
+        position: {my: 'center', at: 'center', of: window},
+        buttons: [
+            {text: "Close",
+              icon: "ui-icon-close",
+              classes: {"ui-button": "ui-corner-all"},
+              click: function(){ $(this).dialog("close"); }
+              //showText: false
+            }
+        ],
+       create: function () {
+         var titlebar = e.parent().children('.ui-dialog-titlebar');
+         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+
+        // This to solve the conflict between bootstrap and jquery-ui close button.
+        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
+        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
+      }
+   });
+
+   e.dialogExtend({
+       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
+       "dblclick": "collapse",
+       "icons": {
+            "close": "ui-icon-close",
+            //"maximize": "ui-icon-extlink",
+            "minimize": "ui-icon-minus",
+            "restore": "ui-icon-newwin",
+            "collapse": "ui-icon-triangle-1-s"
+       }
+   });
+
+   $("#uuid-0ed447d5-cbbb-4ccd-b5c1-94537ac3dde7").click(function() { e.removeAttr('hidden').dialog('open'); });
+
+});
+</script>
+
+<div id="la" hidden>
+The MIT License (MIT)
+
+Copyright (c) 2014 Mohammad Younes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</div>
+
+<p><a href='#' onclick="javascript:myDialog('#la');">Call alertifyjs</a></p>
 <p>To create a button that opens a modal window containing the input file, use:</p>
 <div class="codehilite"><pre><span></span>    {% modal tests/v1/Input/t01.in %}
 </pre></div>
 
 <p>that produces:</p>
-<!-- Button trigger modal -->
-
-<div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-1bc23231-c6d4-4b01-966b-5a06c56c84f8">
-    View tests/v1/Input/t01.in
+<div class="text-center"> <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#uuid-de2a8936-b8c4-4b20-8677-d836fc69f143">
+    <span class="btn-label"><i class="glyphicon glyphicon-modal-window" aria-hidden="true"></i></span>View tests/v1/Input/t01.in
   </button>
 </div>
 
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-1bc23231-c6d4-4b01-966b-5a06c56c84f8" tabindex="-1" role="dialog" aria-labelledby="uuid-8984f8fa-35d3-4d4f-9aaa-415646aae67f">
+<div class="modal fade" id="uuid-de2a8936-b8c4-4b20-8677-d836fc69f143" tabindex="-1" role="dialog" aria-labelledby="uuid-a8c1dc7e-576e-4a9c-a7c9-cc8da3493ba4">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-8984f8fa-35d3-4d4f-9aaa-415646aae67f">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-a8c1dc7e-576e-4a9c-a7c9-cc8da3493ba4">tests/v1/Input/t01.in</h4>
       </div>
-      <div class="modal-body"><pre class="">
+      <div class="modal-body"><pre class="small-text">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4322,31 +4606,31 @@ If multiple files are used such as in:</p>
 </pre></div>
 
 <p>a modal window with tabs is produced</p>
-<!-- Button trigger modal -->
-
-<div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uuid-295c1b4b-a8d6-49a3-ae61-73a89c5ab224">View tests/v1/Input/t01.in, tests/v1/Input/t02.in</button>
+<div class="text-center"> <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#uuid-6b93c4dc-bb2e-4194-a18b-badc1750f366">
+    <span class="btn-label"><i class="glyphicon glyphicon-modal-window" aria-hidden="true"></i></span>View tests/v1/Input/t01.in, tests/v1/Input/t02.in
+  </button>
 </div>
 
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-295c1b4b-a8d6-49a3-ae61-73a89c5ab224" tabindex="-1" role="dialog" aria-labelledby="uuid-2df4559c-f557-477b-aca9-f072046abbc0" aria-hidden="true">
+<div class="modal fade" id="uuid-6b93c4dc-bb2e-4194-a18b-badc1750f366" tabindex="-1" role="dialog" aria-labelledby="uuid-ae054a3d-2977-4c5b-86f8-efedea90d1f3" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-2df4559c-f557-477b-aca9-f072046abbc0"></h4>
+        <h4 class="modal-title" id="uuid-ae054a3d-2977-4c5b-86f8-efedea90d1f3"></h4>
       </div>
       <div class="modal-body">
         <div role="tabpanel">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">          <li role="presentation" class="active">
-          <a href="#uuid-b20a17c9-673b-49c1-b3e2-2960548a4b0e" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+          <a href="#uuid-d15cd780-1690-460f-b8e3-dc5a04615c93" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
           </li>           <li role="presentation" class=" ">
-          <a href="#uuid-54f23244-38f5-4a5f-a4ae-e04b07a8c17e" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+          <a href="#uuid-73c5afa4-8589-4129-8801-4f1a1c6c4319" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
           </li>           </ul>
           <!-- Tab panes -->
-          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-b20a17c9-673b-49c1-b3e2-2960548a4b0e"><pre class="">
+          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-d15cd780-1690-460f-b8e3-dc5a04615c93"><pre class="small-text">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4418,7 +4702,7 @@ If multiple files are used such as in:</p>
 #%%&lt;END TEST_INFO&gt;
 
 </pre>
-</div><div role="tabpanel" class="tab-pane  " id="uuid-54f23244-38f5-4a5f-a4ae-e04b07a8c17e"><pre class="">
+</div><div role="tabpanel" class="tab-pane  " id="uuid-73c5afa4-8589-4129-8801-4f1a1c6c4319"><pre class="small-text">
 #   FCC Al; 2 special points
 
  acell 3*7.60
@@ -4496,7 +4780,7 @@ If multiple files are used such as in:</p>
 <div class="md-container">
   <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-9a67f7b6-7723-480c-ade6-8a11e11d5182"><pre class="">
+    <div class="panel-body"><div class="editor" hidden id="uuid-b846eb31-21c7-472c-9601-0202bb4a368a"><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5062,10 +5346,10 @@ P           mkmem           2
   <div>EditorTabs</div>
     <div>
       <!-- Nav tabs -->
-      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-393a466d-be31-4fe8-ae2f-b56a170ea4cb" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-e0253b37-ecbc-470d-98a1-0062b2970acd" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
+      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-38798e12-9a6e-4f52-ab80-16182ccf0646" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-d81306ab-97f7-4f85-ad75-bb38499dce38" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
         <!-- Tab panes -->
-        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-393a466d-be31-4fe8-ae2f-b56a170ea4cb">
-<div id="uuid-4d1fd905-d9be-4a58-b41b-7c8b0e679ab3" class="editor" hidden><pre class="">
+        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-38798e12-9a6e-4f52-ab80-16182ccf0646">
+<div id="uuid-32179536-73ed-431f-b0f6-465ca5caa5ca" class="editor" hidden><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5620,8 +5904,8 @@ P           mkmem           2
 
 </pre>
 </div></div>
-<div class="tab-pane fade" id="uuid-e0253b37-ecbc-470d-98a1-0062b2970acd">
-<div id="uuid-78ea7d74-4723-4339-af6c-65de4a78dcab" class="editor" hidden><pre class="">
+<div class="tab-pane fade" id="uuid-d81306ab-97f7-4f85-ad75-bb38499dce38">
+<div id="uuid-c6c88492-a60a-4e8d-9a28-2071e7db270a" class="editor" hidden><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
