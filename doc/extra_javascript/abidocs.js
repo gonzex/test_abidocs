@@ -17,21 +17,20 @@ $(function() {
         }, 500);
     });
 
-    //$('.modal-dialog').draggable().resizable();
-    //$("#foobar").dialog();
-
-$('.PinDialog').click(function () {
-    var CurrentDialogPosition = $(this).closest('.ui-dialog').offset();
-    var DialogLeft = CurrentDialogPosition.left - $(window).scrollLeft();
-    var DialogTop = CurrentDialogPosition.top - $(window).scrollTop();
-    $(this).toggleClass('PinDialog DialogPinned').toggleClass('ui-state-highlight ui-state-default').children().toggleClass('ui-icon-pin-w ui-icon-pin-s').closest('.ui-dialog').css({ 'position': 'fixed', 'top': DialogTop, 'left': DialogLeft });
-});
+    // Make bootstrap modal draggable and resizable.
+    $('.modal-dialog').draggable().resizable();
 
     // Based on http://appdevonsharepoint.com/how-to-pin-a-jquery-ui-dialog-in-place/
+    $('button.PinDialog').click(function () {
+        var CurrentDialogPosition = $(this).closest('.ui-dialog').offset();
+        var DialogLeft = CurrentDialogPosition.left - $(window).scrollLeft();
+        var DialogTop = CurrentDialogPosition.top - $(window).scrollTop();
+        $(this).toggleClass('PinDialog DialogPinned').toggleClass('ui-state-highlight ui-state-default').children().toggleClass('ui-icon-pin-w ui-icon-pin-s').closest('.ui-dialog').css({ 'position': 'fixed', 'top': DialogTop, 'left': DialogLeft });
+    });
 
-$('.DialogPinned').click(function () {
-    $(this).toggleClass('PinDialog DialogPinned').toggleClass('ui-state-highlight ui-state-default').children().toggleClass('ui-icon-pin-s ui-icon-pin-w').closest('.ui-dialog').css({ 'position': 'absolute', 'top': $(this).closest('.ui-dialog').offset().top, 'left': $(this).closest('.ui-dialog').offset().left });
-});
+    $('button.DialogPinned').click(function () {
+        $(this).toggleClass('PinDialog DialogPinned').toggleClass('ui-state-highlight ui-state-default').children().toggleClass('ui-icon-pin-s ui-icon-pin-w').closest('.ui-dialog').css({ 'position': 'absolute', 'top': $(this).closest('.ui-dialog').offset().top, 'left': $(this).closest('.ui-dialog').offset().left });
+    });
 
     // That selector matches all spans that have an id attribute and it starts with foo (e.g. fooblah
     $(".editor").each(function(index, element) {
@@ -62,7 +61,6 @@ $(function() {
     a_git.attr('href', url).attr('target', '_blank');
 })
 */
-
 
 // Return to top arrow. https://codepen.io/rdallaire/pen/apoyx
 /*
@@ -151,4 +149,39 @@ function defaultClick(first) {
   else {
     document.getElementById("clickA").click();
   }
+}
+
+function myDialog(id) {
+    alertify.defaults.maintainFocus = true;
+    alertify.preventBodyShift = true;
+
+    //var pre = document.createElement('pre');
+    // custom style.
+    //pre.style.maxHeight = "400px";
+    //pre.style.margin = "0";
+    //pre.style.padding = "24px";
+    //pre.style.whiteSpace = "pre-wrap";
+    //pre.style.textAlign = "justify";
+    //pre.appendChild(document.createTextNode($(id).text()));
+    //show as confirm
+    //alertify.confirm(pre, function(){
+    //        alertify.success('Accepted');
+    //    },function(){
+    //        alertify.error('Declined');
+    //    }).set({labels:{ok:'Accept', cancel: 'Decline'}, padding: false});
+
+    alertify.alert($(id).text()).setting("modal", false);
+    //alertify.confirm('This is a modeless dialog, pinned to the screen.').set('modal', false).pin(); 
+
+    //var lastX, lastY;
+    //alertify.alert($(id).text()).set({
+    //      "modal": false,
+    //      'onshow':function(){
+    //        lastX = window.scrollX;
+    //        lastY = window.scrollY;
+    //      },
+    //      'onfocus':function(){
+    //        window.scrollTo(lastX, lastY);
+    //      }  
+    //  }); 
 }

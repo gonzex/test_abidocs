@@ -22,29 +22,27 @@ Abrikosov, A.A., Gorkov, L.P., Dzyaloshinskii, E.
 *Methods of quantum field theory in statistical physics*  
 Dover, New-York ****,  (1975)  
 DOI: <https://doi.org/>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Abrikosov1975">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Abrikosov1975" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Abrikosov1975">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Abrikosov1975">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Abrikosov1975" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Abrikosov1975">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Abrikosov1975">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Abrikosov1975,
-    author = &quot;Abrikosov, A.A. and Gorkov, L.P. and Dzyaloshinskii, E.&quot;,
-    title = &quot;Methods of quantum field theory in statistical physics&quot;,
-    journal = &quot;Dover, New-York&quot;,
-    year = &quot;1975&quot;,
-    volume = &quot;&quot;,
-    pages = &quot;&quot;,
-    doi = &quot;&quot;,
-    numpages = &quot;&quot;,
-    publisher = &quot;Dover, New-York&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Abrikosov1975</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Abrikosov, A.A. and Gorkov, L.P. and Dzyaloshinskii, E.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Methods of quantum field theory in statistical physics&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Dover, New-York&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1975&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Dover, New-York&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -59,29 +57,27 @@ Albrecht, S., Reining, L., Del Sole, R., Onida, G.
 *Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors*  
 Phys. Rev. Lett. **80**, 4510--4513 (1998)  
 DOI: <https://doi.org/10.1103/PhysRevLett.80.4510>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Albrecht1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Albrecht1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Albrecht1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Albrecht1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Albrecht1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Albrecht1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Albrecht1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Albrecht1998,
-    author = &quot;Albrecht, S. and Reining, L. and Del Sole, R. and Onida, G.&quot;,
-    title = &quot;Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    year = &quot;1998&quot;,
-    volume = &quot;80&quot;,
-    pages = &quot;4510--4513&quot;,
-    doi = &quot;10.1103/PhysRevLett.80.4510&quot;,
-    numpages = &quot;3&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Albrecht1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Albrecht, S. and Reining, L. and Del Sole, R. and Onida, G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;80&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;4510--4513&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.80.4510&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -95,26 +91,24 @@ Referred to in: [/topics/BSE](/topics/BSE)
 Allen, P. B., Heine, V.  
 *Theory of the temperature dependence of electronic band structures*  
 J. of Phys. C: Solid State Physics **9**, 2305 (1976)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Allen1976">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Allen1976" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1976">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen1976">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Allen1976" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1976">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Allen1976">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Allen1976,
-    author = &quot;Allen, P. B. and Heine, V.&quot;,
-    title = &quot;Theory of the temperature dependence of electronic band structures&quot;,
-    journal = &quot;J. of Phys. C: Solid State Physics&quot;,
-    year = &quot;1976&quot;,
-    volume = &quot;9&quot;,
-    pages = &quot;2305&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Allen1976</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Allen, P. B. and Heine, V.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Theory of the temperature dependence of electronic band structures&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. of Phys. C: Solid State Physics&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1976&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;9&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;2305&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -128,29 +122,27 @@ Referred to in: [/topics/TDepES](/topics/TDepES)
 Allen, P. B.  
 *New method for solving Boltzmann's equation for electrons in metals*  
 Phys. Rev. B **17**, 3725--3734 (1978)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Allen1978">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Allen1978" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1978">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen1978">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Allen1978" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1978">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Allen1978">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Allen1978,
-    author = &quot;Allen, P. B.&quot;,
-    title = &quot;New method for solving Boltzmann's equation for electrons in metals&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1978&quot;,
-    volume = &quot;17&quot;,
-    pages = &quot;3725--3734&quot;,
-    optdoi = &quot;10.1103/PhysRevB.17.3725&quot;,
-    issue = &quot;10&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Allen1978</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Allen, P. B.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;New method for solving Boltzmann&#39;s equation for electrons in metals&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1978&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;17&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;3725--3734&quot;</span><span class="p">,</span>
+    <span class="na">optdoi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.17.3725&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;10&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -163,26 +155,24 @@ Phys. Rev. B **17**, 3725--3734 (1978)
 Allen, P. B., Cardona, M.  
 *Theory of the temperature dependence of the direct gap of germanium*  
 Phys. Rev. B **23**, 1495--1505 (1981)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Allen1981">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Allen1981" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1981">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen1981">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Allen1981" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1981">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Allen1981">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Allen1981,
-    author = &quot;Allen, P. B. and Cardona, M.&quot;,
-    title = &quot;Theory of the temperature dependence of the direct gap of germanium&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1981&quot;,
-    volume = &quot;23&quot;,
-    pages = &quot;1495--1505&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Allen1981</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Allen, P. B. and Cardona, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Theory of the temperature dependence of the direct gap of germanium&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1981&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;23&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1495--1505&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -196,26 +186,24 @@ Referred to in: [/topics/TDepES](/topics/TDepES)
 Allen, P. B., Cardona, M.  
 *Temperature dependence of the direct gap of {S}i and {G}e*  
 Phys. Rev. B **27**, 4760--4769 (1983)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Allen1983">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Allen1983" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1983">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen1983">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Allen1983" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1983">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Allen1983">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Allen1983,
-    author = &quot;Allen, P. B. and Cardona, M.&quot;,
-    title = &quot;Temperature dependence of the direct gap of {S}i and {G}e&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1983&quot;,
-    volume = &quot;27&quot;,
-    pages = &quot;4760--4769&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Allen1983</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Allen, P. B. and Cardona, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Temperature dependence of the direct gap of {S}i and {G}e&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1983&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;27&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;4760--4769&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -229,28 +217,26 @@ Referred to in: [/topics/TDepES](/topics/TDepES)
 Allen, P. B.  
 *Boltzmann Theory and Resistivity of Metals*  
 Kl{\"u}wer (1996)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Allen1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Allen1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Allen1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Allen1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@incollection{Allen1996,
-    AUTHOR = &quot;Allen, P. B.&quot;,
-    EDITOR = &quot;Chelikowsky, J. R. and Louie, S. G.&quot;,
-    TITLE = &quot;Boltzmann Theory and Resistivity of Metals&quot;,
-    BOOKTITLE = &quot;Quantum Theory of Real Materials&quot;,
-    PUBLISHER = {Kl{\&quot;u}wer},
-    ADDRESS = &quot;Boston&quot;,
-    PAGES = &quot;219-250&quot;,
-    YEAR = &quot;1996&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@incollection</span><span class="p">{</span><span class="nl">Allen1996</span><span class="p">,</span>
+    <span class="na">AUTHOR</span> <span class="p">=</span> <span class="s">&quot;Allen, P. B.&quot;</span><span class="p">,</span>
+    <span class="na">EDITOR</span> <span class="p">=</span> <span class="s">&quot;Chelikowsky, J. R. and Louie, S. G.&quot;</span><span class="p">,</span>
+    <span class="na">TITLE</span> <span class="p">=</span> <span class="s">&quot;Boltzmann Theory and Resistivity of Metals&quot;</span><span class="p">,</span>
+    <span class="na">BOOKTITLE</span> <span class="p">=</span> <span class="s">&quot;Quantum Theory of Real Materials&quot;</span><span class="p">,</span>
+    <span class="na">PUBLISHER</span> <span class="p">=</span> <span class="s">{Kl{\&quot;u}wer}</span><span class="p">,</span>
+    <span class="na">ADDRESS</span> <span class="p">=</span> <span class="s">&quot;Boston&quot;</span><span class="p">,</span>
+    <span class="na">PAGES</span> <span class="p">=</span> <span class="s">&quot;219-250&quot;</span><span class="p">,</span>
+    <span class="na">YEAR</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -263,26 +249,24 @@ Kl{\"u}wer (1996)
 Allen, P. B., Berlijn, T., Casavant, D. A., Soler, J. M.  
 *Recovering hidden Bloch character: Unfolding electrons, phonons, and slabs*  
 Phys. Rev. B **87**, 085322 (2013)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Allen2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Allen2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Allen2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Allen2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Allen2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Allen2013,
-    Author = &quot;Allen, P. B. and Berlijn, T. and Casavant, D. A. and Soler, J. M.&quot;,
-    Title = &quot;Recovering hidden Bloch character: Unfolding electrons, phonons, and slabs&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2013&quot;,
-    Pages = &quot;085322&quot;,
-    Volume = &quot;87&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Allen2013</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Allen, P. B. and Berlijn, T. and Casavant, D. A. and Soler, J. M.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Recovering hidden Bloch character: Unfolding electrons, phonons, and slabs&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;085322&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;87&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -297,31 +281,29 @@ Amadon, B., Biermann, S., Georges, A., Aryasetiawan, F.
 *The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven*  
 Phys. Rev. Lett. **96**, 066402 (2006)  
 DOI: <https://doi.org/10.1103/PhysRevLett.96.066402>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Amadon2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Amadon2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Amadon2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Amadon2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Amadon2006,
-    author = &quot;Amadon, B. and Biermann, S. and Georges, A. and Aryasetiawan, F.&quot;,
-    title = &quot;The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    year = &quot;2006&quot;,
-    volume = &quot;96&quot;,
-    pages = &quot;066402&quot;,
-    doi = &quot;10.1103/PhysRevLett.96.066402&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/Cerium/DMFT/PhysRevLett.96.066402.pdf:PDF&quot;,
-    issue = &quot;6&quot;,
-    numpages = &quot;4&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B. and Biermann, S. and Georges, A. and Aryasetiawan, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;96&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;066402&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.96.066402&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/Cerium/DMFT/PhysRevLett.96.066402.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;6&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -336,33 +318,31 @@ Amadon, B., Lechermann, F., Georges, A., Jollet, F., Wehling, T. O., Liechtenste
 *Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals*  
 Phys. Rev. B **77**, 205112 (2008)  
 DOI: <https://doi.org/10.1103/PhysRevB.77.205112>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Amadon2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Amadon2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Amadon2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Amadon2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Amadon2008,
-    author = &quot;Amadon, B. and Lechermann, F. and Georges, A. and Jollet, F. and Wehling, T. O. and Liechtenstein, A. I.&quot;,
-    title = &quot;Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2008&quot;,
-    volume = &quot;77&quot;,
-    pages = &quot;205112&quot;,
-    number = &quot;20&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/DMFT/PhysRevB.77.205112.pdf:PDF&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/PhysRevB.77.205112&quot;,
-    timestamp = &quot;2012.08.08&quot;,
-    doi = &quot;10.1103/PhysRevB.77.205112&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B. and Lechermann, F. and Georges, A. and Jollet, F. and Wehling, T. O. and Liechtenstein, A. I.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Plane-wave based electronic structure calculations for correlated materials using dynamical mean-field theory and projected local orbitals&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;77&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;205112&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;20&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/DMFT/PhysRevB.77.205112.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.77.205112&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.08.08&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.77.205112&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -377,31 +357,29 @@ Amadon, B., Jollet, F., Torrent, M.
 *$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters*  
 Phys. Rev. B **77**, 155104 (2008)  
 DOI: <https://doi.org/10.1103/PhysRevB.77.155104>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Amadon2008a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Amadon2008a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2008a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2008a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Amadon2008a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2008a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Amadon2008a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Amadon2008a,
-    author = &quot;Amadon, B. and Jollet, F. and Torrent, M.&quot;,
-    title = &quot;$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2008&quot;,
-    volume = &quot;77&quot;,
-    pages = &quot;155104&quot;,
-    doi = &quot;10.1103/PhysRevB.77.155104&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/Cerium/PhysRevB.77.155104-1.pdf:PDF&quot;,
-    issue = &quot;15&quot;,
-    numpages = &quot;10&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2008a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B. and Jollet, F. and Torrent, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;77&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;155104&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.77.155104&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/Cerium/PhysRevB.77.155104-1.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;10&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -416,32 +394,30 @@ Amadon, B.
 *A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}*  
 J. Phys.: Cond. Matt. **24**, 075604 (2012)  
 URL: <http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Amadon2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Amadon2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Amadon2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Amadon2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Amadon2012,
-    author = &quot;Amadon, B.&quot;,
-    title = &quot;A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}&quot;,
-    journal = &quot;J. Phys.: Cond. Matt.&quot;,
-    year = &quot;2012&quot;,
-    volume = &quot;24&quot;,
-    pages = &quot;075604&quot;,
-    number = &quot;7&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/DMFT/0953-8984_24_7_075604.pdf:PDF&quot;,
-    issn = &quot;0953-8984&quot;,
-    owner = &quot;amadonb&quot;,
-    timestamp = &quot;2012.08.08&quot;,
-    url = &quot;http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys.: Cond. Matt.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;24&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;075604&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/DMFT/0953-8984_24_7_075604.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0953-8984&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.08.08&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -456,30 +432,28 @@ Amadon, B., Applencourt, T., Bruneval, F.
 *Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium*  
 Phys. Rev. B **89**, 125110 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.125110>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Amadon2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Amadon2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Amadon2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Amadon2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Amadon2014,
-    author = &quot;Amadon, B. and Applencourt, T. and Bruneval, F.&quot;,
-    title = &quot;Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2014&quot;,
-    volume = &quot;89&quot;,
-    pages = &quot;125110&quot;,
-    doi = &quot;10.1103/PhysRevB.89.125110&quot;,
-    issue = &quot;12&quot;,
-    numpages = &quot;10&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B. and Applencourt, T. and Bruneval, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125110&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.89.125110&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;12&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;10&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -494,30 +468,28 @@ Amadon, B., Gerossier, A.
 *Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals*  
 Phys. Rev. B **91**, 161103 (2015)  
 DOI: <https://doi.org/10.1103/PhysRevB.91.161103>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Amadon2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Amadon2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Amadon2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Amadon2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Amadon2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Amadon2015,
-    author = &quot;Amadon, B. and Gerossier, A.&quot;,
-    title = &quot;Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2015&quot;,
-    volume = &quot;91&quot;,
-    pages = &quot;161103&quot;,
-    doi = &quot;10.1103/PhysRevB.91.161103&quot;,
-    issue = &quot;16&quot;,
-    numpages = &quot;5&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B. and Gerossier, A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Comparative analysis of models for the $\alpha$-$\gamma$ phase transition in cerium: A DFT+DMFT study using Wannier orbitals&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;91&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;161103&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.91.161103&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -531,26 +503,24 @@ Referred to in: [/topics/Wannier](/topics/Wannier)
 Ambrosetti, A., Silvestrelli, P. L.  
 *van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach*  
 Phys. Rev. B **85**, 073101 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ambrosetti2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ambrosetti2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ambrosetti2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ambrosetti2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ambrosetti2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ambrosetti2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ambrosetti2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Ambrosetti2012,
-    author = &quot;Ambrosetti, A. and Silvestrelli, P. L.&quot;,
-    title = &quot;van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2012&quot;,
-    volume = &quot;85&quot;,
-    pages = &quot;073101&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Ambrosetti2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ambrosetti, A. and Silvestrelli, P. L.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;85&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;073101&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -565,32 +535,30 @@ Anisimov, V. I., Gunnarsson, O.
 *Density-functional calculation of effective Coulomb interactions in metals*  
 Phys. Rev. B **43**, 7570--7574 (1991)  
 DOI: <https://doi.org/10.1103/PhysRevB.43.7570>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Anisimov1991">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Anisimov1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Anisimov1991">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Anisimov1991">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Anisimov1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Anisimov1991">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Anisimov1991">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Anisimov1991,
-    author = &quot;Anisimov, V. I. and Gunnarsson, O.&quot;,
-    title = &quot;Density-functional calculation of effective Coulomb interactions in metals&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1991&quot;,
-    volume = &quot;43&quot;,
-    pages = &quot;7570--7574&quot;,
-    number = &quot;10&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/PhysRevB.43.7570&quot;,
-    timestamp = &quot;2013.07.03&quot;,
-    doi = &quot;10.1103/PhysRevB.43.7570&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Anisimov1991</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Anisimov, V. I. and Gunnarsson, O.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Density-functional calculation of effective Coulomb interactions in metals&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1991&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;43&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;7570--7574&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;10&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.43.7570&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2013.07.03&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.43.7570&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -604,26 +572,24 @@ Referred to in: [/topics/DFT+U](/topics/DFT+U), [/topics/DMFT](/topics/DMFT)
 Antonius, G., Ponc\'e, S., Boulanger, P., C\^ot\'e, M., Gonze, X.  
 *Many-Body Effects on the Zero-Point Renormalization of the Band Structure*  
 Phys. Rev. Lett. **112**, 215501 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Antonius2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Antonius2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Antonius2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Antonius2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Antonius2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Antonius2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Antonius2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Antonius2014,
-    author = &quot;Antonius, G. and Ponc\'e, S. and Boulanger, P. and C\^ot\'e, M. and Gonze, X.&quot;,
-    title = &quot;Many-Body Effects on the Zero-Point Renormalization of the Band Structure&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    year = &quot;2014&quot;,
-    volume = &quot;112&quot;,
-    pages = &quot;215501&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Antonius2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Antonius, G. and Ponc\&#39;e, S. and Boulanger, P. and C\^ot\&#39;e, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Many-Body Effects on the Zero-Point Renormalization of the Band Structure&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;112&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;215501&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -636,26 +602,24 @@ Phys. Rev. Lett. **112**, 215501 (2014)
 Antonius, G., Ponc\'e, S., Lantagne-Hurtubise, E., Auclair, G., Gonze, X., C\^ot\'e, M.  
 *Dynamical and anharmonic effects on the electron-phonon coupling and the zero-point renormalization of the electronic structure*  
 Phys. Rev. B **92**, 085137 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Antonius2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Antonius2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Antonius2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Antonius2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Antonius2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Antonius2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Antonius2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Antonius2015,
-    author = &quot;Antonius, G. and Ponc\'e, S. and Lantagne-Hurtubise, E. and Auclair, G. and Gonze, X. and C\^ot\'e, M.&quot;,
-    title = &quot;Dynamical and anharmonic effects on the electron-phonon coupling and the zero-point renormalization of the electronic structure&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2015&quot;,
-    volume = &quot;92&quot;,
-    pages = &quot;085137&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Antonius2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Antonius, G. and Ponc\&#39;e, S. and Lantagne-Hurtubise, E. and Auclair, G. and Gonze, X. and C\^ot\&#39;e, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Dynamical and anharmonic effects on the electron-phonon coupling and the zero-point renormalization of the electronic structure&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;92&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;085137&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -669,27 +633,25 @@ Arponen, J., Pajanne, E.
 *Angular correlation in positron annihilation*  
 J. Phys. F **9**, 2359 (1979)  
 DOI: <https://doi.org/10.1088/0305-4608/9/12/009>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Arponen1979">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Arponen1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Arponen1979">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Arponen1979">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Arponen1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Arponen1979">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Arponen1979">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Arponen1979,
-    author = &quot;Arponen, J. and Pajanne, E.&quot;,
-    title = &quot;Angular correlation in positron annihilation&quot;,
-    doi = &quot;10.1088/0305-4608/9/12/009&quot;,
-    journal = &quot;J. Phys. F&quot;,
-    volume = &quot;9&quot;,
-    pages = &quot;2359&quot;,
-    year = &quot;1979&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Arponen1979</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Arponen, J. and Pajanne, E.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Angular correlation in positron annihilation&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1088/0305-4608/9/12/009&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys. F&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;9&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;2359&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1979&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -703,33 +665,31 @@ Aryasetiawan, F., Imada, M., Georges, A., Kotliar, G., Biermann, S., Liechtenste
 *Frequency-dependent local interactions and low-energy effective models from electronic structure calculations*  
 Phys. Rev. B **70**, 195104-- (2004)  
 DOI: <https://doi.org/10.1103/PhysRevB.70.195104>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Aryasetiawan2004">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Aryasetiawan2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Aryasetiawan2004">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Aryasetiawan2004">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Aryasetiawan2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Aryasetiawan2004">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Aryasetiawan2004">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Aryasetiawan2004,
-    author = &quot;Aryasetiawan, F. and Imada, M. and Georges, A. and Kotliar, G. and Biermann, S. and Liechtenstein, A. I.&quot;,
-    title = &quot;Frequency-dependent local interactions and low-energy effective models from electronic structure calculations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2004&quot;,
-    volume = &quot;70&quot;,
-    pages = &quot;195104--&quot;,
-    number = &quot;19&quot;,
-    keywords = &quot;cRPA&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/PhysRevB.70.195104&quot;,
-    timestamp = &quot;2013.03.15&quot;,
-    doi = &quot;10.1103/PhysRevB.70.195104&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Aryasetiawan2004</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Aryasetiawan, F. and Imada, M. and Georges, A. and Kotliar, G. and Biermann, S. and Liechtenstein, A. I.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Frequency-dependent local interactions and low-energy effective models from electronic structure calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2004&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;70&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;195104--&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;19&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;cRPA&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.70.195104&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2013.03.15&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.70.195104&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -743,26 +703,24 @@ Referred to in: [/topics/CRPA](/topics/CRPA), [/tutorials/ucalc_crpa](/tutorials
 F. Aryasetiawan, K. Karlsson, O. Jepsen,, Sch\"onberger, U.  
 *Calculations of Hubbard U from first-principles*  
 Phys. Rev. B **74**, 125106 (2006)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Aryasetiawan2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Aryasetiawan2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Aryasetiawan2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Aryasetiawan2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Aryasetiawan2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Aryasetiawan2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Aryasetiawan2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Aryasetiawan2006,
-    author = {F. Aryasetiawan, K. Karlsson, O. Jepsen, and Sch\&quot;onberger, U.},
-    title = &quot;Calculations of Hubbard U from first-principles&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;74&quot;,
-    pages = &quot;125106&quot;,
-    year = &quot;2006&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Aryasetiawan2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{F. Aryasetiawan, K. Karlsson, O. Jepsen, and Sch\&quot;onberger, U.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Calculations of Hubbard U from first-principles&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;74&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125106&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -776,26 +734,24 @@ Referred to in: [/tutorials/ucalc_crpa](/tutorials/ucalc_crpa)
 Audouze, C., Jollet, F., Torrent, M., Gonze, X.  
 *Projector augmented-wave approach to density-functional perturbation theory*  
 Phys. Rev. B **73**, 235101 (2006)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Audouze2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Audouze2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Audouze2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Audouze2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Audouze2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Audouze2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Audouze2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Audouze2006,
-    author = &quot;Audouze, C. and Jollet, F. and Torrent, M. and Gonze, X.&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;73&quot;,
-    pages = &quot;235101&quot;,
-    year = &quot;2006&quot;,
-    title = &quot;Projector augmented-wave approach to density-functional perturbation theory&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Audouze2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Audouze, C. and Jollet, F. and Torrent, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;73&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;235101&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Projector augmented-wave approach to density-functional perturbation theory&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -808,26 +764,24 @@ Phys. Rev. B **73**, 235101 (2006)
 Audouze, C., Jollet, F., Torrent, M., Gonze, X.  
 *Comparison between projector augmented-wave and ultrasoft pseudopotential formalisms at the density-functional perturbation theory level*  
 Phys. Rev. B **78**, 035105 (2008)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Audouze2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Audouze2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Audouze2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Audouze2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Audouze2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Audouze2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Audouze2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Audouze2008,
-    author = &quot;Audouze, C. and Jollet, F. and Torrent, M. and Gonze, X.&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;78&quot;,
-    pages = &quot;035105&quot;,
-    year = &quot;2008&quot;,
-    title = &quot;Comparison between projector augmented-wave and ultrasoft pseudopotential formalisms at the density-functional perturbation theory level&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Audouze2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Audouze, C. and Jollet, F. and Torrent, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;78&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;035105&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Comparison between projector augmented-wave and ultrasoft pseudopotential formalisms at the density-functional perturbation theory level&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -841,29 +795,27 @@ Bachelet, G.B., Hamann, D.R., Schl\"uter, M.
 *Pseudopotentials that work: From {H} to {P}u*  
 Phys. Rev. B **26**, 4199--4228 (1982)  
 DOI: <https://doi.org/10.1103/PhysRevB.26.4199>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bachelet1982">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bachelet1982" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bachelet1982">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bachelet1982">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bachelet1982" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bachelet1982">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bachelet1982">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bachelet1982,
-    author = {Bachelet, G.B. and Hamann, D.R. and Schl\&quot;uter, M.},
-    title = &quot;Pseudopotentials that work: From {H} to {P}u&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1982&quot;,
-    volume = &quot;26&quot;,
-    pages = &quot;4199--4228&quot;,
-    doi = &quot;10.1103/PhysRevB.26.4199&quot;,
-    numpages = &quot;29&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bachelet1982</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Bachelet, G.B. and Hamann, D.R. and Schl\&quot;uter, M.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Pseudopotentials that work: From {H} to {P}u&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1982&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;26&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;4199--4228&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.26.4199&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;29&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -877,29 +829,27 @@ Bader, R. F. W.
 *Atoms in Molecules: A Quantum Theory*  
 Oxford University Press. **ISBN 978-0-19-855865-1**,  (1994)  
 URL: <>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bader1994">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bader1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bader1994">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bader1994">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bader1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bader1994">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bader1994">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bader1994,
-    author = &quot;Bader, R. F. W.&quot;,
-    title = &quot;Atoms in Molecules: A Quantum Theory&quot;,
-    journal = &quot;Oxford University Press.&quot;,
-    year = &quot;1994&quot;,
-    volume = &quot;ISBN 978-0-19-855865-1&quot;,
-    number = &quot;&quot;,
-    pages = &quot;&quot;,
-    url = &quot;&quot;,
-    doi = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bader1994</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bader, R. F. W.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Atoms in Molecules: A Quantum Theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Oxford University Press.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;ISBN 978-0-19-855865-1&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -913,29 +863,27 @@ Barbiellini, B., Puska, M. J., Korhonen, T., Harju, A., Torsti, T., Nieminen, R.
 *Calculation of positron states and annihilation in solids: A density-gradient-correction scheme*  
 Phys. Rev. B **53**, 16201 (1996)  
 DOI: <https://doi.org/10.1103/PhysRevB.53.16201>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Barbiellini1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Barbiellini1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Barbiellini1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Barbiellini1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Barbiellini1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Barbiellini1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Barbiellini1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Barbiellini1996,
-    author = &quot;Barbiellini, B. and Puska, M. J. and Korhonen, T. and Harju, A. and Torsti, T. and Nieminen, R. M.&quot;,
-    title = &quot;Calculation of positron states and annihilation in solids: A density-gradient-correction scheme&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;53&quot;,
-    issue = &quot;24&quot;,
-    pages = &quot;16201&quot;,
-    year = &quot;1996&quot;,
-    doi = &quot;10.1103/PhysRevB.53.16201&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Barbiellini1996</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Barbiellini, B. and Puska, M. J. and Korhonen, T. and Harju, A. and Torsti, T. and Nieminen, R. M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Calculation of positron states and annihilation in solids: A density-gradient-correction scheme&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;53&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;24&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;16201&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.53.16201&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -948,26 +896,24 @@ DOI: <https://doi.org/10.1103/PhysRevB.53.16201>
 Baroni, S., Giannozzi, P., Testa, A.  
 *Green's-function approach to linear response in solids*  
 Phys. Rev. Lett. **58**, 1861--1864 (1987)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Baroni1987">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Baroni1987" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Baroni1987">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Baroni1987">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Baroni1987" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Baroni1987">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Baroni1987">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Baroni1987,
-    author = &quot;Baroni, S. and Giannozzi, P. and Testa, A.&quot;,
-    title = &quot;Green's-function approach to linear response in solids&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    year = &quot;1987&quot;,
-    volume = &quot;58&quot;,
-    pages = &quot;1861--1864&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Baroni1987</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Baroni, S. and Giannozzi, P. and Testa, A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Green&#39;s-function approach to linear response in solids&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1987&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;58&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1861--1864&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -981,29 +927,27 @@ Becke, A. D., Edgecombe, K. E.
 *A simple measure of electron localization in atomic and molecular systems*  
 J. Chem. Phys. **92**, 5397-5403 (1990)  
 URL: <http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Becke1990">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Becke1990" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Becke1990">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Becke1990">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Becke1990" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Becke1990">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Becke1990">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Becke1990,
-    author = &quot;Becke, A. D. and Edgecombe, K. E.&quot;,
-    title = &quot;A simple measure of electron localization in atomic and molecular systems&quot;,
-    journal = &quot;J. Chem. Phys.&quot;,
-    year = &quot;1990&quot;,
-    volume = &quot;92&quot;,
-    number = &quot;9&quot;,
-    pages = &quot;5397-5403&quot;,
-    url = &quot;http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517&quot;,
-    doi = &quot;10.1063/1.458517&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Becke1990</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Becke, A. D. and Edgecombe, K. E.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;A simple measure of electron localization in atomic and molecular systems&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1990&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;92&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;9&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;5397-5403&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1063/1.458517&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1017,30 +961,28 @@ Benedict, L. X., Shirley, E. L., Bohn, R. B.
 *Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation*  
 Phys. Rev. Lett. **80**, 4514--4517 (1998)  
 DOI: <https://doi.org/10.1103/PhysRevLett.80.4514>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Benedict1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Benedict1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Benedict1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Benedict1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Benedict1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Benedict1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Benedict1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Benedict1998,
-    author = &quot;Benedict, L. X. and Shirley, E. L. and Bohn, R. B.&quot;,
-    title = &quot;Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;80&quot;,
-    issue = &quot;20&quot;,
-    pages = &quot;4514--4517&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1998&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevLett.80.4514&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Benedict1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Benedict, L. X. and Shirley, E. L. and Bohn, R. B.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;80&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;20&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;4514--4517&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.80.4514&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1054,26 +996,24 @@ Referred to in: [/topics/BSE](/topics/BSE)
 O. Bengone, M. Alouani, P. Bl\"ochl,, Hugel, J.  
 *Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}*  
 Phys. Rev. B **62**, 16392 (1994)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bengone2000">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bengone2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bengone2000">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bengone2000">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bengone2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bengone2000">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bengone2000">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bengone2000,
-    author = {O. Bengone, M. Alouani, P. Bl\&quot;ochl, and Hugel, J.},
-    title = &quot;Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;62&quot;,
-    pages = &quot;16392&quot;,
-    year = &quot;1994&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bengone2000</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{O. Bengone, M. Alouani, P. Bl\&quot;ochl, and Hugel, J.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;62&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;16392&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1087,29 +1027,27 @@ Referred to in: [/topics/DFT+U](/topics/DFT+U)
 Bergeron, D., Tremblay, A.-M. S.  
 *Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation*  
 arXiv e-prints **arXiv:cond-mat.str-el**, 1507.01012 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bergeron2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bergeron2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bergeron2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bergeron2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bergeron2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bergeron2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bergeron2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bergeron2015,
-    author = &quot;Bergeron, D. and Tremblay, A.-M. S.&quot;,
-    title = &quot;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&quot;,
-    journal = &quot;arXiv e-prints&quot;,
-    archivePrefix = &quot;arXiv:cond-mat.str-el&quot;,
-    eprint = &quot;1507.01012&quot;,
-    year = &quot;2015&quot;,
-    month = &quot;jul&quot;,
-    adsurl = &quot;http://adsabs.harvard.edu/abs/2015arXiv150701012B&quot;,
-    adsnote = &quot;Provided by the SAO/NASA Astrophysics Data System&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bergeron2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bergeron, D. and Tremblay, A.-M. S.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;arXiv e-prints&quot;</span><span class="p">,</span>
+    <span class="na">archivePrefix</span> <span class="p">=</span> <span class="s">&quot;arXiv:cond-mat.str-el&quot;</span><span class="p">,</span>
+    <span class="na">eprint</span> <span class="p">=</span> <span class="s">&quot;1507.01012&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;jul&quot;</span><span class="p">,</span>
+    <span class="na">adsurl</span> <span class="p">=</span> <span class="s">&quot;http://adsabs.harvard.edu/abs/2015arXiv150701012B&quot;</span><span class="p">,</span>
+    <span class="na">adsnote</span> <span class="p">=</span> <span class="s">&quot;Provided by the SAO/NASA Astrophysics Data System&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1122,26 +1060,24 @@ arXiv e-prints **arXiv:cond-mat.str-el**, 1507.01012 (2015)
 Bergeron, D., Tremblay, A.-M.S.  
 *Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation*  
 Phys. Rev. E **94**, 023303 (2016)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bergeron2016">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bergeron2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bergeron2016">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bergeron2016">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bergeron2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bergeron2016">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bergeron2016">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bergeron2016,
-    author = &quot;Bergeron, D. and Tremblay, A.-M.S.&quot;,
-    title = &quot;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&quot;,
-    journal = &quot;Phys. Rev. E&quot;,
-    volume = &quot;94&quot;,
-    pages = &quot;023303&quot;,
-    year = &quot;2016&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bergeron2016</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bergeron, D. and Tremblay, A.-M.S.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Algorithms for optimized maximum entropy and diagnostic tools for analytic continuation&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. E&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;94&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;023303&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2016&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1156,30 +1092,28 @@ Bieder, J., Amadon, B.
 *Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles*  
 Phys. Rev. B **89**, 195132 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.195132>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bieder2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bieder2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bieder2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bieder2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bieder2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bieder2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bieder2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bieder2014,
-    author = &quot;Bieder, J. and Amadon, B.&quot;,
-    title = &quot;Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2014&quot;,
-    volume = &quot;89&quot;,
-    pages = &quot;195132&quot;,
-    doi = &quot;10.1103/PhysRevB.89.195132&quot;,
-    issue = &quot;19&quot;,
-    numpages = &quot;7&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bieder2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bieder, J. and Amadon, B.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Thermodynamics of the $\alpha$-$\gamma$ transition in cerium from first principles&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;195132&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.89.195132&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;19&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1193,26 +1127,24 @@ Referred to in: [/topics/DMFT](/topics/DMFT)
 Blancoa, Miguel A., Floreza, M., Bermejo, M.  
 *Evaluation of the rotation matrices in the basis of real spherical harmonics"*  
 Journal of Molecular Structure (Theochem) **419**, 19 (1997)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Blancoa1997">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Blancoa1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Blancoa1997">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Blancoa1997">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Blancoa1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Blancoa1997">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Blancoa1997">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Blancoa1997,
-    author = &quot;Blancoa, Miguel A. and Floreza, M. and Bermejo, M.&quot;,
-    title = {Evaluation of the rotation matrices in the basis of real spherical harmonics&quot;},
-    journal = &quot;Journal of Molecular Structure (Theochem)&quot;,
-    volume = &quot;419&quot;,
-    pages = &quot;19&quot;,
-    year = &quot;1997&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Blancoa1997</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Blancoa, Miguel A. and Floreza, M. and Bermejo, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">{Evaluation of the rotation matrices in the basis of real spherical harmonics&quot;}</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Journal of Molecular Structure (Theochem)&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;419&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;19&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1997&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1227,27 +1159,25 @@ Bl\"{o}chl, P.E.
 *Projector augmented-wave method*  
 Phys. Rev. B **50**, 17953-17979 (1994)  
 DOI: <https://doi.org/10.1103/PhysRevB.50.17953>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bloechl1994">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bloechl1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bloechl1994">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bloechl1994">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bloechl1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bloechl1994">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bloechl1994">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bloechl1994,
-    author = {Bl\&quot;{o}chl, P.E.},
-    title = &quot;Projector augmented-wave method&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1994&quot;,
-    volume = &quot;50&quot;,
-    pages = &quot;17953-17979&quot;,
-    doi = &quot;10.1103/PhysRevB.50.17953&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bloechl1994</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Bl\&quot;{o}chl, P.E.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Projector augmented-wave method&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;50&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;17953-17979&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.50.17953&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1262,32 +1192,30 @@ Bl\"ochl, Peter E., Jepsen, O., Andersen, O. K.
 *Improved tetrahedron method for Brillouin-zone integrations*  
 Phys. Rev. B **49**, 16223--16233 (1994)  
 URL: <https://link.aps.org/doi/10.1103/PhysRevB.49.16223>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bloechl1994a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bloechl1994a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bloechl1994a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bloechl1994a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bloechl1994a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bloechl1994a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bloechl1994a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bloechl1994a,
-    author = {Bl\&quot;ochl, Peter E. and Jepsen, O. and Andersen, O. K.},
-    title = &quot;Improved tetrahedron method for Brillouin-zone integrations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;49&quot;,
-    issue = &quot;23&quot;,
-    pages = &quot;16223--16233&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1994&quot;,
-    month = &quot;Jun&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.49.16223&quot;,
-    url = &quot;https://link.aps.org/doi/10.1103/PhysRevB.49.16223&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bloechl1994a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Bl\&quot;ochl, Peter E. and Jepsen, O. and Andersen, O. K.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Improved tetrahedron method for Brillouin-zone integrations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;49&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;23&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;16223--16233&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;Jun&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.49.16223&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://link.aps.org/doi/10.1103/PhysRevB.49.16223&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1301,26 +1229,24 @@ Referred to in: [/topics/ElPhonTransport](/topics/ElPhonTransport)
 Bockstedte, M., Kley, A., Neugebauer, J., Scheffler, M.  
 *Density-functional theory calculations for poly-atomic systems: electronic structure, static and elastic properties and ab initio molecular dynamics*  
 Comp. Phys. Comm. **107**, 187 (1997)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bockstedte1997">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bockstedte1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bockstedte1997">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bockstedte1997">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bockstedte1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bockstedte1997">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bockstedte1997">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bockstedte1997,
-    Author = &quot;Bockstedte, M. and Kley, A. and Neugebauer, J. and Scheffler, M.&quot;,
-    title = &quot;Density-functional theory calculations for poly-atomic systems: electronic structure, static and elastic properties and ab initio molecular dynamics&quot;,
-    Journal = &quot;Comp. Phys. Comm.&quot;,
-    Volume = &quot;107&quot;,
-    Pages = &quot;187&quot;,
-    Year = &quot;1997&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bockstedte1997</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Bockstedte, M. and Kley, A. and Neugebauer, J. and Scheffler, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Density-functional theory calculations for poly-atomic systems: electronic structure, static and elastic properties and ab initio molecular dynamics&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;107&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;187&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;1997&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1334,29 +1260,27 @@ Boro\'nski, E., Nieminen, R. M.
 *Electron-positron density-functional theory*  
 Phys. Rev. B **34**, 3820 (1986)  
 DOI: <https://doi.org/10.1103/PhysRevB.34.3820>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Boronski1986">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Boronski1986" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Boronski1986">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Boronski1986">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Boronski1986" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Boronski1986">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Boronski1986">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Boronski1986,
-    author = &quot;Boro\'nski, E. and Nieminen, R. M.&quot;,
-    title = &quot;Electron-positron density-functional theory&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;34&quot;,
-    issue = &quot;6&quot;,
-    pages = &quot;3820&quot;,
-    year = &quot;1986&quot;,
-    doi = &quot;10.1103/PhysRevB.34.3820&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Boronski1986</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Boro\&#39;nski, E. and Nieminen, R. M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electron-positron density-functional theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;34&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;6&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;3820&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1986&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.34.3820&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1369,28 +1293,26 @@ DOI: <https://doi.org/10.1103/PhysRevB.34.3820>
 Bottin, F., Leroux, S., Knyazev, A., Z{\'e}rah, G.  
 *Large-scale ab initio calculations based on three levels of parallelization*  
 Comp. Mat. Sci. **42**, 329--336 (2008)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bottin2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bottin2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bottin2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bottin2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bottin2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bottin2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bottin2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bottin2008,
-    author = &quot;Bottin, F. and Leroux, S. and Knyazev, A. and Z{\'e}rah, G.&quot;,
-    title = &quot;Large-scale ab initio calculations based on three levels of parallelization&quot;,
-    journal = &quot;Comp. Mat. Sci.&quot;,
-    volume = &quot;42&quot;,
-    number = &quot;2&quot;,
-    pages = &quot;329--336&quot;,
-    year = &quot;2008&quot;,
-    publisher = &quot;Elsevier&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bottin2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bottin, F. and Leroux, S. and Knyazev, A. and Z{\&#39;e}rah, G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Large-scale ab initio calculations based on three levels of parallelization&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Mat. Sci.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;42&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;329--336&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Elsevier&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1405,27 +1327,25 @@ Bousquet, E., Spaldin, N. A., Delaney, K. T.
 *Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity*  
 Phys. Rev. Lett. **106**, 107202 (2011)  
 DOI: <https://doi.org/10.1103/PhysRevLett.106.107202>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bousquet2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bousquet2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bousquet2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bousquet2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bousquet2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bousquet2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bousquet2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bousquet2011,
-    author = &quot;Bousquet, E. and Spaldin, N. A. and Delaney, K. T.&quot;,
-    title = &quot;Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;106&quot;,
-    pages = &quot;107202&quot;,
-    year = &quot;2011&quot;,
-    doi = &quot;10.1103/PhysRevLett.106.107202&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bousquet2011</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bousquet, E. and Spaldin, N. A. and Delaney, K. T.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Unexpectedly Large Electronic Contribution to Linear Magnetoelectricity&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;106&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;107202&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.106.107202&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1439,26 +1359,24 @@ Referred to in: [/topics/MagField](/topics/MagField)
 Bruneval, F., Vast, N., Reining, L.  
 *Effect of self-consistency on quasiparticles in solids*  
 Phys. Rev. B **74**, 045102 (2006)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bruneval2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bruneval2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bruneval2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bruneval2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bruneval2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bruneval2006,
-    author = &quot;Bruneval, F. and Vast, N. and Reining, L.&quot;,
-    title = &quot;Effect of self-consistency on quasiparticles in solids&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;74&quot;,
-    pages = &quot;045102&quot;,
-    year = &quot;2006&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bruneval2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bruneval, F. and Vast, N. and Reining, L.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Effect of self-consistency on quasiparticles in solids&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;74&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;045102&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1473,30 +1391,28 @@ Bruneval, F., Gonze, X.
 *Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems*  
 Phys. Rev. B **78**, 085125 (2008)  
 DOI: <https://doi.org/10.1103/PhysRevB.78.085125>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bruneval2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bruneval2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bruneval2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bruneval2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bruneval2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bruneval2008,
-    author = &quot;Bruneval, F. and Gonze, X.&quot;,
-    title = &quot;Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;78&quot;,
-    issue = &quot;8&quot;,
-    pages = &quot;085125&quot;,
-    numpages = &quot;9&quot;,
-    year = &quot;2008&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.78.085125&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bruneval2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bruneval, F. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;78&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;8&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;085125&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;9&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.78.085125&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1511,30 +1427,28 @@ Bruneval, F.
 *Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects*  
 Phys. Rev. Lett. **108**, 256403 (2012)  
 DOI: <https://doi.org/10.1103/PhysRevLett.108.256403>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bruneval2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bruneval2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bruneval2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bruneval2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bruneval2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bruneval2012,
-    author = &quot;Bruneval, F.&quot;,
-    title = &quot;Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;108&quot;,
-    issue = &quot;25&quot;,
-    pages = &quot;256403&quot;,
-    numpages = &quot;5&quot;,
-    year = &quot;2012&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevLett.108.256403&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bruneval2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bruneval, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;108&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;25&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;256403&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.108.256403&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1549,30 +1463,28 @@ Bruneval, F., Crocombette, J.-P., Gonze, X., Dorado, B., Torrent, M., Jollet, F.
 *Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited*  
 Phys. Rev. B **89**, 045116 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.045116>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Bruneval2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Bruneval2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bruneval2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Bruneval2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Bruneval2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Bruneval2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Bruneval2014,
-    author = &quot;Bruneval, F. and Crocombette, J.-P. and Gonze, X. and Dorado, B. and Torrent, M. and Jollet, F.&quot;,
-    title = &quot;Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;89&quot;,
-    issue = &quot;4&quot;,
-    pages = &quot;045116&quot;,
-    numpages = &quot;13&quot;,
-    year = &quot;2014&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.89.045116&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Bruneval2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Bruneval, F. and Crocombette, J.-P. and Gonze, X. and Dorado, B. and Torrent, M. and Jollet, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Consistent treatment of charged systems within periodic boundary conditions: The projector augmented-wave and pseudopotential methods revisited&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;045116&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;13&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.89.045116&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1586,28 +1498,26 @@ Referred to in: [/topics/Coulomb](/topics/Coulomb), [/topics/Verification](/topi
 Calloni, A., Dupasquier, A., Ferragut, R., Folegati, P., Iglesias, M.M., Makkonen, I., Puska, M.J.  
 *Positron localization effects on the Doppler broadening of the annihilation line: Aluminum as a case study*  
 Phys. Rev. B **72**, 054112 (2005)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Calloni2005">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Calloni2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Calloni2005">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Calloni2005">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Calloni2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Calloni2005">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Calloni2005">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Calloni2005,
-    author = &quot;Calloni, A. and Dupasquier, A. and Ferragut, R. and Folegati, P. and Iglesias, M.M. and Makkonen, I. and Puska, M.J.&quot;,
-    title = &quot;Positron localization effects on the Doppler broadening of the annihilation line: Aluminum as a case study&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;72&quot;,
-    number = &quot;5&quot;,
-    pages = &quot;054112&quot;,
-    year = &quot;2005&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Calloni2005</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Calloni, A. and Dupasquier, A. and Ferragut, R. and Folegati, P. and Iglesias, M.M. and Makkonen, I. and Puska, M.J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Positron localization effects on the Doppler broadening of the annihilation line: Aluminum as a case study&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;72&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;054112&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1621,28 +1531,26 @@ Campillo, I., Pitarke, J. M., Eguiluz, A. G.
 *Electronic stopping power of aluminum crystal*  
 Phys. Rev. B **58**, 10307 - 10314 (1998)  
 DOI: <https://doi.org/10.1103/PhysRevB.58.10307>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Campillo1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Campillo1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Campillo1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Campillo1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Campillo1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Campillo1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Campillo1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Campillo1998,
-    author = &quot;Campillo, I. and Pitarke, J. M. and Eguiluz, A. G.&quot;,
-    title = &quot;Electronic stopping power of aluminum crystal&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;58&quot;,
-    issue = &quot;16&quot;,
-    pages = &quot;10307 - 10314&quot;,
-    year = &quot;1998&quot;,
-    doi = &quot;10.1103/PhysRevB.58.10307&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Campillo1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Campillo, I. and Pitarke, J. M. and Eguiluz, A. G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electronic stopping power of aluminum crystal&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;58&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;10307 - 10314&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.58.10307&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1657,31 +1565,29 @@ Cappellini, G., Del Sole, R., Reining, L., Bechstedt, F.
 *Model dielectric function for semiconductors*  
 Phys. Rev. B **47**, 9892--9895 (1993)  
 DOI: <https://doi.org/10.1103/PhysRevB.47.9892>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Cappellini1993">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Cappellini1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Cappellini1993">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Cappellini1993">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Cappellini1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Cappellini1993">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Cappellini1993">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Cappellini1993,
-    author = &quot;Cappellini, G. and Del Sole, R. and Reining, L. and Bechstedt, F.&quot;,
-    title = &quot;Model dielectric function for semiconductors&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;47&quot;,
-    issue = &quot;15&quot;,
-    pages = &quot;9892--9895&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1993&quot;,
-    month = &quot;Apr&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.47.9892&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Cappellini1993</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Cappellini, G. and Del Sole, R. and Reining, L. and Bechstedt, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Model dielectric function for semiconductors&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;47&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;9892--9895&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1993&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;Apr&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.47.9892&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1696,29 +1602,27 @@ Caracas, R., Cohen, R.E.
 *Prediction of polar ordered oxynitride perovskites*  
 J. Appl. Phys. Lett. **91**, 092902 (2007)  
 DOI: <https://doi.org/10.1063/1.2776370>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Caracas2007">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Caracas2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2007">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Caracas2007">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Caracas2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2007">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Caracas2007">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Caracas2007,
-    author = &quot;Caracas, R. and Cohen, R.E.&quot;,
-    title = &quot;Prediction of polar ordered oxynitride perovskites&quot;,
-    journal = &quot;J. Appl. Phys. Lett.&quot;,
-    volume = &quot;91&quot;,
-    number = &quot;&quot;,
-    pages = &quot;092902&quot;,
-    year = &quot;2007&quot;,
-    doi = &quot;10.1063/1.2776370&quot;,
-    publisher = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Caracas2007</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Caracas, R. and Cohen, R.E.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Prediction of polar ordered oxynitride perovskites&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Appl. Phys. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;91&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;092902&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2007&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1063/1.2776370&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1733,29 +1637,27 @@ Caracas, R., Cohen, R.E.
 *Post-perovskite phase in selected sesquioxides from density-functional calculations*  
 Phys. Rev. B **76**, 184101 (2007)  
 DOI: <https://doi.org/>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Caracas2007a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Caracas2007a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2007a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Caracas2007a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Caracas2007a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2007a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Caracas2007a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Caracas2007a,
-    author = &quot;Caracas, R. and Cohen, R.E.&quot;,
-    title = &quot;Post-perovskite phase in selected sesquioxides from density-functional calculations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;76&quot;,
-    number = &quot;&quot;,
-    pages = &quot;184101&quot;,
-    year = &quot;2007&quot;,
-    doi = &quot;&quot;,
-    publisher = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Caracas2007a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Caracas, R. and Cohen, R.E.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Post-perovskite phase in selected sesquioxides from density-functional calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;76&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;184101&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2007&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1770,29 +1672,27 @@ Caracas, R.
 *Dynamical Instabilities of Ice X*  
 Phys. Rev. Lett. **101**, 085502 (2008)  
 DOI: <https://doi.org/10.1103/PhysRevLett.101.085502>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Caracas2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Caracas2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Caracas2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Caracas2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Caracas2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Caracas2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Caracas2008,
-    author = &quot;Caracas, R.&quot;,
-    title = &quot;Dynamical Instabilities of Ice X&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;101&quot;,
-    number = &quot;&quot;,
-    pages = &quot;085502&quot;,
-    year = &quot;2008&quot;,
-    doi = &quot;10.1103/PhysRevLett.101.085502&quot;,
-    publisher = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Caracas2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Caracas, R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Dynamical Instabilities of Ice X&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;101&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;085502&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.101.085502&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1807,27 +1707,25 @@ Casida, Mark E., Jamorski, Christine, Casida, Kim C., Salahub, Dennis R.
 *Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold*  
 J. Chem. Phys. **108**, 4439 (1998)  
 DOI: <https://doi.org/10.1063/1.475855>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Casida1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Casida1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Casida1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Casida1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Casida1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Casida1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Casida1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Casida1998,
-    author = &quot;Casida, Mark E. and Jamorski, Christine and Casida, Kim C. and Salahub, Dennis R.&quot;,
-    title = &quot;Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold&quot;,
-    journal = &quot;J. Chem. Phys.&quot;,
-    volume = &quot;108&quot;,
-    pages = &quot;4439&quot;,
-    year = &quot;1998&quot;,
-    doi = &quot;10.1063/1.475855&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Casida1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Casida, Mark E. and Jamorski, Christine and Casida, Kim C. and Salahub, Dennis R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Molecular excitation energies to high-lying bound states from time-dependent density-functional response theory: Characterization and correction of the time-dependent local density approximation ionization threshold&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;108&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;4439&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1063/1.475855&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1841,26 +1739,24 @@ Referred to in: [/tutorials/tddft](/tutorials/tddft)
 Casida, Mark E., Casida, Kim C., Salahub, Dennis R.  
 *Excited-state potential energy curves from time-dependent density-functional theory: A cross section of formaldehyde's 1A1 manifold*  
 International Journal of Quantum Chemistry **70**, 933 (1998)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Casida1998a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Casida1998a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Casida1998a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Casida1998a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Casida1998a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Casida1998a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Casida1998a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Casida1998a,
-    author = &quot;Casida, Mark E. and Casida, Kim C. and Salahub, Dennis R.&quot;,
-    title = &quot;Excited-state potential energy curves from time-dependent density-functional theory: A cross section of formaldehyde's 1A1 manifold&quot;,
-    journal = &quot;International Journal of Quantum Chemistry&quot;,
-    volume = &quot;70&quot;,
-    pages = &quot;933&quot;,
-    year = &quot;1998&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Casida1998a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Casida, Mark E. and Casida, Kim C. and Salahub, Dennis R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Excited-state potential energy curves from time-dependent density-functional theory: A cross section of formaldehyde&#39;s 1A1 manifold&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;International Journal of Quantum Chemistry&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;70&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;933&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1875,34 +1771,32 @@ Cococcioni, M., de Gironcoli, S.
 *Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method*  
 Phys. Rev. B **71**, 035105 (2005)  
 DOI: <https://doi.org/10.1103/PhysRevB.71.035105>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Cococcioni2005">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Cococcioni2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Cococcioni2005">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Cococcioni2005">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Cococcioni2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Cococcioni2005">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Cococcioni2005">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Cococcioni2005,
-    author = &quot;Cococcioni, M. and de Gironcoli, S.&quot;,
-    title = &quot;Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2005&quot;,
-    volume = &quot;71&quot;,
-    pages = &quot;035105&quot;,
-    number = &quot;3&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.71.035105.pdf:PDF&quot;,
-    keywords = &quot;DFTU interaction, cRPA&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/PhysRevB.71.035105&quot;,
-    timestamp = &quot;2012.06.21&quot;,
-    doi = &quot;10.1103/PhysRevB.71.035105&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Cococcioni2005</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Cococcioni, M. and de Gironcoli, S.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;71&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;035105&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.71.035105.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;DFTU interaction, cRPA&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.71.035105&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.06.21&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.71.035105&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1916,24 +1810,22 @@ Referred to in: [/topics/CRPA](/topics/CRPA)
 Coleman, Piers  
 *Introduction to Many-Body Physics*  
 Cambridge University Press (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Coleman2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Coleman2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Coleman2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Coleman2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Coleman2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Coleman2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Coleman2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@book{Coleman2015,
-    author = &quot;Coleman, Piers&quot;,
-    title = &quot;Introduction to Many-Body Physics&quot;,
-    publisher = &quot;Cambridge University Press&quot;,
-    year = &quot;2015&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@book</span><span class="p">{</span><span class="nl">Coleman2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Coleman, Piers&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Introduction to Many-Body Physics&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Cambridge University Press&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1947,26 +1839,24 @@ Referred to in: [/tutorials/dmft](/tutorials/dmft)
 Czyzyk, M. T., Sawatzky, G. A.  
 *Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$*  
 Phys. Rev. B **49**, 14211 (1994)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Czyzyk1994">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Czyzyk1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Czyzyk1994">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Czyzyk1994">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Czyzyk1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Czyzyk1994">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Czyzyk1994">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Czyzyk1994,
-    author = &quot;Czyzyk, M. T. and Sawatzky, G. A.&quot;,
-    title = &quot;Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;49&quot;,
-    pages = &quot;14211&quot;,
-    year = &quot;1994&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Czyzyk1994</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Czyzyk, M. T. and Sawatzky, G. A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;49&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;14211&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -1980,27 +1870,25 @@ Referred to in: [/topics/DFT+U](/topics/DFT+U)
 Daubechies, I.  
 *10 Lectures on Wavelets*  
 Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, {F}loor 6, {P}hiladelphia, {PA} 19104) (1992)isbn: 9780898712742  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Daubechies1992">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Daubechies1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Daubechies1992">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Daubechies1992">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Daubechies1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Daubechies1992">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Daubechies1992">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@book{Daubechies1992,
-    author = &quot;Daubechies, I.&quot;,
-    title = &quot;10 Lectures on Wavelets&quot;,
-    publisher = &quot;Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, {F}loor 6, {P}hiladelphia, {PA} 19104)&quot;,
-    year = &quot;1992&quot;,
-    isbn = &quot;9780898712742&quot;,
-    keywords = &quot;Mathematics / General, Mathematics / Infinity, Mathematics / Mathematical Analysis, Science / Waves \&amp; Wave Mechanics, Technology \&amp; Engineering / General&quot;,
-    language = &quot;en&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@book</span><span class="p">{</span><span class="nl">Daubechies1992</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Daubechies, I.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;10 Lectures on Wavelets&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Society for Industrial and Applied Mathematics ({SIAM}, 3600 {M}arket {S}treet, {F}loor 6, {P}hiladelphia, {PA} 19104)&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1992&quot;</span><span class="p">,</span>
+    <span class="na">isbn</span> <span class="p">=</span> <span class="s">&quot;9780898712742&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;Mathematics / General, Mathematics / Infinity, Mathematics / Mathematical Analysis, Science / Waves \&amp; Wave Mechanics, Technology \&amp; Engineering / General&quot;</span><span class="p">,</span>
+    <span class="na">language</span> <span class="p">=</span> <span class="s">&quot;en&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2014,28 +1902,26 @@ Dion, M., Rydberg, H., Schr\"oder, E., Langreth, D. C., Lundqvist, B. I.
 *Van der Waals Density Functional for General Geometries*  
 Phys. Rev. Lett. **92**, 246401 (2004)  
 DOI: <https://doi.org/10.1103/PhysRevLett.92.246401>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Dion2004">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Dion2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Dion2004">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Dion2004">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Dion2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Dion2004">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Dion2004">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Dion2004,
-    author = {Dion, M. and Rydberg, H. and Schr\&quot;oder, E. and Langreth, D. C. and Lundqvist, B. I.},
-    title = &quot;Van der Waals Density Functional for General Geometries&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;92&quot;,
-    pages = &quot;246401&quot;,
-    year = &quot;2004&quot;,
-    doi = &quot;10.1103/PhysRevLett.92.246401&quot;,
-    note = &quot;Erratum: DOI:10.1103/PhysRevLett.95.109902&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Dion2004</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Dion, M. and Rydberg, H. and Schr\&quot;oder, E. and Langreth, D. C. and Lundqvist, B. I.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Van der Waals Density Functional for General Geometries&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;92&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;246401&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2004&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.92.246401&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;Erratum: DOI:10.1103/PhysRevLett.95.109902&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2049,26 +1935,24 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Espejo, C., Rangel, T., Pouillon, Y., Romero, A. H., Gonze, X.  
 *Wannier functions approach to van der Waals interactions in {ABINIT}*  
 Comp. Phys. Comm. **183**, 480 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Espejo2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Espejo2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Espejo2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Espejo2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Espejo2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Espejo2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Espejo2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Espejo2012,
-    author = &quot;Espejo, C. and Rangel, T. and Pouillon, Y. and Romero, A. H. and Gonze, X.&quot;,
-    title = &quot;Wannier functions approach to van der Waals interactions in {ABINIT}&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;183&quot;,
-    pages = &quot;480&quot;,
-    year = &quot;2012&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Espejo2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Espejo, C. and Rangel, T. and Pouillon, Y. and Romero, A. H. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Wannier functions approach to van der Waals interactions in {ABINIT}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;183&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;480&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2082,27 +1966,25 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Fetter, A.L., Walecka, J.D.  
 *Quantum Theory of Many-Particle Systems*  
 McGraw-Hill, New York ****,  (1971)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Fetter1971">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Fetter1971" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fetter1971">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Fetter1971">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Fetter1971" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fetter1971">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Fetter1971">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Fetter1971,
-    author = &quot;Fetter, A.L. and Walecka, J.D.&quot;,
-    title = &quot;Quantum Theory of Many-Particle Systems&quot;,
-    journal = &quot;McGraw-Hill, New York&quot;,
-    volume = &quot;&quot;,
-    pages = &quot;&quot;,
-    publisher = &quot;McGraw-Hill, New York&quot;,
-    year = &quot;1971&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Fetter1971</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Fetter, A.L. and Walecka, J.D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Quantum Theory of Many-Particle Systems&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;McGraw-Hill, New York&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;McGraw-Hill, New York&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1971&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2116,28 +1998,26 @@ Referred to in: [/topics/GW](/topics/GW)
 Folegati, P., Makkonen, I., Ferragut, R., Puska, M.J.  
 *Analysis of electron-positron momentum spectra of metallic alloys as supported by first-principles calculations*  
 Phys. Rev. B **75**, 054201 (2007)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Folegati2007">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Folegati2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Folegati2007">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Folegati2007">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Folegati2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Folegati2007">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Folegati2007">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Folegati2007,
-    author = &quot;Folegati, P. and Makkonen, I. and Ferragut, R. and Puska, M.J.&quot;,
-    title = &quot;Analysis of electron-positron momentum spectra of metallic alloys as supported by first-principles calculations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;75&quot;,
-    number = &quot;5&quot;,
-    pages = &quot;054201&quot;,
-    year = &quot;2007&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Folegati2007</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Folegati, P. and Makkonen, I. and Ferragut, R. and Puska, M.J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Analysis of electron-positron momentum spectra of metallic alloys as supported by first-principles calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;75&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;054201&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2007&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2150,26 +2030,24 @@ Phys. Rev. B **75**, 054201 (2007)
 Fr\'esard, Raymond, Kotliar, Gabriel  
 *Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model*  
 Phys. Rev. B **56**, 12909 (1997)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Fresard1997">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Fresard1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fresard1997">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Fresard1997">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Fresard1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fresard1997">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Fresard1997">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Fresard1997,
-    author = &quot;Fr\'esard, Raymond and Kotliar, Gabriel&quot;,
-    title = &quot;Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;56&quot;,
-    pages = &quot;12909&quot;,
-    year = &quot;1997&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Fresard1997</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Fr\&#39;esard, Raymond and Kotliar, Gabriel&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Interplay of Mott transition and ferromagnetism in the orbitally degenerate Hubbard model&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;56&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;12909&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1997&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2184,27 +2062,25 @@ Freund, R. W., Nachtigal, N. M.
 *Software for simplified {L}anczos and {QMR} algorithms*  
 Applied Numerical Mathematics **19**, 319 (1995)  
 DOI: <https://doi.org/10.1016/0168-9274(95)00089-5>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Freund1995">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Freund1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Freund1995">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Freund1995">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Freund1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Freund1995">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Freund1995">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Freund1995,
-    author = &quot;Freund, R. W. and Nachtigal, N. M.&quot;,
-    title = &quot;Software for simplified {L}anczos and {QMR} algorithms&quot;,
-    journal = &quot;Applied Numerical Mathematics&quot;,
-    year = &quot;1995&quot;,
-    volume = &quot;19&quot;,
-    pages = &quot;319&quot;,
-    doi = &quot;10.1016/0168-9274(95)00089-5&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Freund1995</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Freund, R. W. and Nachtigal, N. M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Software for simplified {L}anczos and {QMR} algorithms&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Applied Numerical Mathematics&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1995&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;19&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;319&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/0168-9274(95)00089-5&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2219,31 +2095,29 @@ Fuchs, M., Scheffler, M.
 *Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory*  
 Comp. Phys. Comm. **119**, 67 - 98 (1999)  
 URL: <http://www.sciencedirect.com/science/article/pii/S001046559800201X>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Fuchs1999">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Fuchs1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fuchs1999">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Fuchs1999">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Fuchs1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Fuchs1999">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Fuchs1999">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Fuchs1999,
-    author = &quot;Fuchs, M. and Scheffler, M.&quot;,
-    title = &quot;Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;119&quot;,
-    number = &quot;1&quot;,
-    pages = &quot;67 - 98&quot;,
-    year = &quot;1999&quot;,
-    note = &quot;&quot;,
-    issn = &quot;0010-4655&quot;,
-    doi = &quot;10.1016/S0010-4655(98)00201-X&quot;,
-    url = &quot;http://www.sciencedirect.com/science/article/pii/S001046559800201X&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Fuchs1999</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Fuchs, M. and Scheffler, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Ab initio pseudopotentials for electronic structure calculations of poly-atomic systems using density-functional theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;119&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;67 - 98&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1999&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0010-4655&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/S0010-4655(98)00201-X&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://www.sciencedirect.com/science/article/pii/S001046559800201X&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2257,32 +2131,30 @@ Garrity, K.F., Bennett, J.W., Rabe, K.M., Vanderbilt, D.
 *Pseudopotentials for high-throughput {DFT} calculations*  
 Comp. Mat. Sci. **81**, 446 - 452 (2014)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0927025613005077>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Garrity2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Garrity2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Garrity2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Garrity2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Garrity2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Garrity2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Garrity2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Garrity2014,
-    author = &quot;Garrity, K.F. and Bennett, J.W. and Rabe, K.M. and Vanderbilt, D.&quot;,
-    title = &quot;Pseudopotentials for high-throughput {DFT} calculations&quot;,
-    journal = &quot;Comp. Mat. Sci.&quot;,
-    volume = &quot;81&quot;,
-    number = &quot;&quot;,
-    pages = &quot;446 - 452&quot;,
-    year = &quot;2014&quot;,
-    note = &quot;&quot;,
-    issn = &quot;0927-0256&quot;,
-    doi = &quot;10.1016/j.commatsci.2013.08.053&quot;,
-    url = &quot;http://www.sciencedirect.com/science/article/pii/S0927025613005077&quot;,
-    keywords = &quot;Density functional theory&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Garrity2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Garrity, K.F. and Bennett, J.W. and Rabe, K.M. and Vanderbilt, D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Pseudopotentials for high-throughput {DFT} calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Mat. Sci.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;81&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;446 - 452&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0927-0256&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.commatsci.2013.08.053&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://www.sciencedirect.com/science/article/pii/S0927025613005077&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;Density functional theory&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2295,26 +2167,24 @@ URL: <http://www.sciencedirect.com/science/article/pii/S0927025613005077>
 Geneste, G., Torrent, M., Bottin, F., Loubeyre, P.  
 *Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium*  
 Phys. Rev. Lett. **109**, 155303 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Geneste2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Geneste2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Geneste2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Geneste2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Geneste2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Geneste2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Geneste2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Geneste2012,
-    author = &quot;Geneste, G. and Torrent, M. and Bottin, F. and Loubeyre, P.&quot;,
-    title = &quot;Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;109&quot;,
-    pages = &quot;155303&quot;,
-    year = &quot;2012&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Geneste2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Geneste, G. and Torrent, M. and Bottin, F. and Loubeyre, P.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;109&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;155303&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2328,26 +2198,24 @@ Referred to in: [/topics/PIMD](/topics/PIMD)
 Geneste, G., Ottochian, A., Hermet, J., Dezanneau, G.  
 *Proton transport in barium stannate: classical, semi-classical and quantum regimes*  
 Phys. Chem. Chem. Phys. **17**, 19104 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Geneste2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Geneste2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Geneste2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Geneste2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Geneste2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Geneste2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Geneste2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Geneste2015,
-    author = &quot;Geneste, G. and Ottochian, A. and Hermet, J. and Dezanneau, G.&quot;,
-    title = &quot;Proton transport in barium stannate: classical, semi-classical and quantum regimes&quot;,
-    journal = &quot;Phys. Chem. Chem. Phys.&quot;,
-    volume = &quot;17&quot;,
-    pages = &quot;19104&quot;,
-    year = &quot;2015&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Geneste2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Geneste, G. and Ottochian, A. and Hermet, J. and Dezanneau, G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Proton transport in barium stannate: classical, semi-classical and quantum regimes&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Chem. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;17&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;19104&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2361,26 +2229,24 @@ Referred to in: [/topics/PIMD](/topics/PIMD)
 Geneste, G., Amadon, B., Torrent, M., Dezanneau, G.  
 *Proton transport in barium stannate: classical, semi-classical and quantum regimes*  
 Phys. Chem. Chem. Phys. **17**, 19104 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Geneste2016">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Geneste2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Geneste2016">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Geneste2016">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Geneste2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Geneste2016">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Geneste2016">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Geneste2016,
-    author = &quot;Geneste, G. and Amadon, B. and Torrent, M. and Dezanneau, G.&quot;,
-    title = &quot;Proton transport in barium stannate: classical, semi-classical and quantum regimes&quot;,
-    journal = &quot;Phys. Chem. Chem. Phys.&quot;,
-    volume = &quot;17&quot;,
-    pages = &quot;19104&quot;,
-    year = &quot;2015&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Geneste2016</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Geneste, G. and Amadon, B. and Torrent, M. and Dezanneau, G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Proton transport in barium stannate: classical, semi-classical and quantum regimes&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Chem. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;17&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;19104&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2394,26 +2260,24 @@ Referred to in: [/tutorials/ucalc_crpa](/tutorials/ucalc_crpa)
 Genovese, L., Neelov, L., Goedecker, S., Deutsch, T., Alireza Ghasemi, S., Willand, A., Caliste, D., Zilberberg, O., Rayson, M., Bergman, A., Schneider, R.  
 *Daubechies wavelets as a basis set for density functional pseudopotential calculations*  
 J. Chem. Phys. **129**, 014109 (2008)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Genovese2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Genovese2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Genovese2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Genovese2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Genovese2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Genovese2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Genovese2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Genovese2008,
-    author = &quot;Genovese, L. and Neelov, L. and Goedecker, S. and Deutsch, T. and Alireza Ghasemi, S. and Willand, A. and Caliste, D. and Zilberberg, O. and Rayson, M. and Bergman, A. and Schneider, R.&quot;,
-    title = &quot;Daubechies wavelets as a basis set for density functional pseudopotential calculations&quot;,
-    journal = &quot;J. Chem. Phys.&quot;,
-    year = &quot;2008&quot;,
-    volume = &quot;129&quot;,
-    pages = &quot;014109&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Genovese2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Genovese, L. and Neelov, L. and Goedecker, S. and Deutsch, T. and Alireza Ghasemi, S. and Willand, A. and Caliste, D. and Zilberberg, O. and Rayson, M. and Bergman, A. and Schneider, R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Daubechies wavelets as a basis set for density functional pseudopotential calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;129&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;014109&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2427,27 +2291,25 @@ Referred to in: [/topics/Wavelets](/topics/Wavelets)
 Genovese, L., Ospici, M., Deutsch, T., M\'ehaut, J.-F., Neelov, A., Goedecker, S.  
 *Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture*  
 J. Chem. Phys. **131**, 034103 (2009)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Genovese2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Genovese2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Genovese2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Genovese2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Genovese2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Genovese2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Genovese2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Genovese2009,
-    author = &quot;Genovese, L. and Ospici, M. and Deutsch, T. and M\'ehaut, J.-F. and Neelov, A. and Goedecker, S.&quot;,
-    title = &quot;Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture&quot;,
-    journal = &quot;J. Chem. Phys.&quot;,
-    volume = &quot;131&quot;,
-    number = &quot;&quot;,
-    pages = &quot;034103&quot;,
-    year = &quot;2009&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Genovese2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Genovese, L. and Ospici, M. and Deutsch, T. and M\&#39;ehaut, J.-F. and Neelov, A. and Goedecker, S.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;131&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;034103&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2461,29 +2323,27 @@ Georges, A., Kotliar, G., Krauth, W., Rozenberg, M.J.
 *Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions*  
 Rev. Mod. Phys. **68**, 13--125 (1996)  
 DOI: <https://doi.org/10.1103/RevModPhys.68.13>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Georges1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Georges1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Georges1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Georges1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Georges1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Georges1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Georges1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Georges1996,
-    author = &quot;Georges, A. and Kotliar, G. and Krauth, W. and Rozenberg, M.J.&quot;,
-    title = &quot;Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    year = &quot;1996&quot;,
-    volume = &quot;68&quot;,
-    pages = &quot;13--125&quot;,
-    doi = &quot;10.1103/RevModPhys.68.13&quot;,
-    issue = &quot;1&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Georges1996</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Georges, A. and Kotliar, G. and Krauth, W. and Rozenberg, M.J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;68&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;13--125&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.68.13&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2498,33 +2358,31 @@ Georges, A.
 *Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure*  
 {AIP} {C}onf. {P}roc. **715**, 3--74 (2004)  
 DOI: <https://doi.org/10.1063/1.1800733>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Georges2004">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Georges2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Georges2004">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Georges2004">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Georges2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Georges2004">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Georges2004">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Georges2004,
-    author = &quot;Georges, A.&quot;,
-    title = &quot;Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure&quot;,
-    journal = &quot;{AIP} {C}onf. {P}roc.&quot;,
-    year = &quot;2004&quot;,
-    volume = &quot;715&quot;,
-    pages = &quot;3--74&quot;,
-    number = &quot;1&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/DMFT/APC000003.pdf:PDF&quot;,
-    keywords = &quot;strongly correlated electron systems, metal-insulator transition, density functional theory, electronic structure, band theory, Green's function methods, spin systems, transport processes, critical phenomena, transition metal compounds, rare earth compounds, actinide compounds, oxygen compounds&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;AIP&quot;,
-    timestamp = &quot;2012.10.18&quot;,
-    doi = &quot;10.1063/1.1800733&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Georges2004</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Georges, A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Strongly Correlated Electron Materials: Dynamical Mean-Field Theory and Electronic Structure&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;{AIP} {C}onf. {P}roc.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2004&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;715&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;3--74&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/DMFT/APC000003.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;strongly correlated electron systems, metal-insulator transition, density functional theory, electronic structure, band theory, Green&#39;s function methods, spin systems, transport processes, critical phenomena, transition metal compounds, rare earth compounds, actinide compounds, oxygen compounds&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;AIP&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.10.18&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1063/1.1800733&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2539,28 +2397,26 @@ Giannozzi, P., Baroni, S., Bonini, N., Calandra, M., Car, R., Cavazzoni, C., Cer
 *{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials*  
 J. Phys.: Cond. Matt. **21**, 395502 (2009)  
 URL: <http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Giannozzi2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Giannozzi2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Giannozzi2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Giannozzi2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Giannozzi2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Giannozzi2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Giannozzi2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Giannozzi2009,
-    author = &quot;Giannozzi, P. and Baroni, S. and Bonini, N. and Calandra, M. and Car, R. and Cavazzoni, C. and Ceresoli, D. and Chiarotti, G.L. and Cococcioni, M. and Dabo, I. and Dal Corso, A. and de Gironcoli, S. and Fabris, S. and Fratesi, G. and Gebauer, R. and Gerstmann, U. and Gougoussis, C. and Kokalj, A. and Lazzeri, M. and Martin-Samos, L. and Marzari, N. and Mauri, F. and Mazzarello, R. and Paolini, S. and Pasquarello, A. and Paulatto, L. and Sbraccia, C. and Scandolo, S. and Sclauzero, G. and Seitsonen, A.P. and Smogunov, A. and Umari, P. and Wentzcovitch, R.M.&quot;,
-    title = &quot;{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials&quot;,
-    journal = &quot;J. Phys.: Cond. Matt.&quot;,
-    volume = &quot;21&quot;,
-    number = &quot;39&quot;,
-    pages = &quot;395502&quot;,
-    url = &quot;http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502&quot;,
-    year = &quot;2009&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Giannozzi2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Giannozzi, P. and Baroni, S. and Bonini, N. and Calandra, M. and Car, R. and Cavazzoni, C. and Ceresoli, D. and Chiarotti, G.L. and Cococcioni, M. and Dabo, I. and Dal Corso, A. and de Gironcoli, S. and Fabris, S. and Fratesi, G. and Gebauer, R. and Gerstmann, U. and Gougoussis, C. and Kokalj, A. and Lazzeri, M. and Martin-Samos, L. and Marzari, N. and Mauri, F. and Mazzarello, R. and Paolini, S. and Pasquarello, A. and Paulatto, L. and Sbraccia, C. and Scandolo, S. and Sclauzero, G. and Seitsonen, A.P. and Smogunov, A. and Umari, P. and Wentzcovitch, R.M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys.: Cond. Matt.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;21&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;39&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;395502&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2575,28 +2431,26 @@ Giantomassi, M., Stankovski, M., Shaltaf, R., Gruning, M., Bruneval, F., Rinke, 
 *{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}*  
 Physica Status Solidi B **248**, 275--289 (2011)  
 DOI: <https://doi.org/10.1002/pssb.201046094>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Giantomassi2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Giantomassi2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Giantomassi2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Giantomassi2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Giantomassi2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Giantomassi2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Giantomassi2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Giantomassi2011,
-    author = &quot;Giantomassi, M. and Stankovski, M. and Shaltaf, R. and Gruning, M. and Bruneval, F. and Rinke, P. and Rignanese, G.M.&quot;,
-    title = &quot;{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}&quot;,
-    journal = &quot;Physica Status Solidi B&quot;,
-    year = &quot;2011&quot;,
-    volume = &quot;248&quot;,
-    number = &quot;2&quot;,
-    pages = &quot;275--289&quot;,
-    doi = &quot;10.1002/pssb.201046094&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Giantomassi2011</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Giantomassi, M. and Stankovski, M. and Shaltaf, R. and Gruning, M. and Bruneval, F. and Rinke, P. and Rignanese, G.M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Physica Status Solidi B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;248&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;275--289&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1002/pssb.201046094&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2611,32 +2465,30 @@ Gillet, Y., Giantomassi, M., Gonze, X.
 *First-principles study of excitonic effects in Raman intensities*  
 Phys. Rev. B **88**, 094305 (2013)  
 URL: <http://link.aps.org/doi/10.1103/PhysRevB.88.094305>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gillet2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gillet2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gillet2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gillet2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gillet2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gillet2013,
-    Author = &quot;Gillet, Y. and Giantomassi, M. and Gonze, X.&quot;,
-    Title = &quot;First-principles study of excitonic effects in Raman intensities&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2013&quot;,
-    Pages = &quot;094305&quot;,
-    Volume = &quot;88&quot;,
-    Doi = &quot;10.1103/PhysRevB.88.094305&quot;,
-    File = &quot;Gillet2013.pdf:Gillet2013.pdf:PDF;Gillet2013.pdf:Gillet2013.pdf:PDF&quot;,
-    Issue = &quot;9&quot;,
-    Numpages = &quot;9&quot;,
-    Publisher = &quot;American Physical Society&quot;,
-    Url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.88.094305&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gillet2013</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Gillet, Y. and Giantomassi, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;First-principles study of excitonic effects in Raman intensities&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;094305&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;88&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.88.094305&quot;</span><span class="p">,</span>
+    <span class="na">File</span> <span class="p">=</span> <span class="s">&quot;Gillet2013.pdf:Gillet2013.pdf:PDF;Gillet2013.pdf:Gillet2013.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">Issue</span> <span class="p">=</span> <span class="s">&quot;9&quot;</span><span class="p">,</span>
+    <span class="na">Numpages</span> <span class="p">=</span> <span class="s">&quot;9&quot;</span><span class="p">,</span>
+    <span class="na">Publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">Url</span> <span class="p">=</span> <span class="s">&quot;http://link.aps.org/doi/10.1103/PhysRevB.88.094305&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2651,29 +2503,27 @@ Gillet, Y., Giantomassi, M., Gonze, X.
 *Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra*  
 Comput. Phys. Comm. **203C**, 83-93 (2016)  
 DOI: <https://doi.org/10.1016/j.cpc.2016.02.008>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gillet2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gillet2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gillet2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gillet2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gillet2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gillet2015,
-    Author = &quot;Gillet, Y. and Giantomassi, M. and Gonze, X.&quot;,
-    Title = &quot;Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra&quot;,
-    Year = &quot;2016&quot;,
-    volume = &quot;203C&quot;,
-    pages = &quot;83-93&quot;,
-    Journal = &quot;Comput. Phys. Comm.&quot;,
-    Doi = &quot;10.1016/j.cpc.2016.02.008&quot;,
-    Owner = &quot;yannick&quot;,
-    Timestamp = &quot;2015.08.27&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gillet2015</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Gillet, Y. and Giantomassi, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2016&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;203C&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;83-93&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Comput. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.cpc.2016.02.008&quot;</span><span class="p">,</span>
+    <span class="na">Owner</span> <span class="p">=</span> <span class="s">&quot;yannick&quot;</span><span class="p">,</span>
+    <span class="na">Timestamp</span> <span class="p">=</span> <span class="s">&quot;2015.08.27&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2687,26 +2537,24 @@ Referred to in: [/topics/BSE](/topics/BSE)
 Gillet, Yannick, Kontur, Stefan, Giantomassi, Matteo, Draxl, Claudia, Gonze, Xavier  
 *Ab Initio Approach to Second-order Resonant Raman Scattering Including Exciton-Phonon Interaction*  
 Scientific Reports **7**, 7344 (2017)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gillet2017">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gillet2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2017">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gillet2017">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gillet2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gillet2017">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gillet2017">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gillet2017,
-    Author = &quot;Gillet, Yannick and Kontur, Stefan and Giantomassi, Matteo and Draxl, Claudia and Gonze, Xavier&quot;,
-    Journal = &quot;Scientific Reports&quot;,
-    Pages = &quot;7344&quot;,
-    Title = &quot;Ab Initio Approach to Second-order Resonant Raman Scattering Including Exciton-Phonon Interaction&quot;,
-    Volume = &quot;7&quot;,
-    Year = &quot;2017&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gillet2017</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Gillet, Yannick and Kontur, Stefan and Giantomassi, Matteo and Draxl, Claudia and Gonze, Xavier&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Scientific Reports&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;7344&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Ab Initio Approach to Second-order Resonant Raman Scattering Including Exciton-Phonon Interaction&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2017&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2721,30 +2569,28 @@ Godby, R. W., Needs, R. J.
 *Metal-insulator transition in Kohn-Sham theory and quasiparticle theory*  
 Phys. Rev. Lett. **62**, 1169 (1989)  
 DOI: <https://doi.org/10.1103/PhysRevLett.62.1169>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Godby1989">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Godby1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Godby1989">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Godby1989">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Godby1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Godby1989">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Godby1989">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Godby1989,
-    author = &quot;Godby, R. W. and Needs, R. J.&quot;,
-    title = &quot;Metal-insulator transition in Kohn-Sham theory and quasiparticle theory&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;62&quot;,
-    issue = &quot;&quot;,
-    pages = &quot;1169&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1989&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevLett.62.1169&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Godby1989</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Godby, R. W. and Needs, R. J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Metal-insulator transition in Kohn-Sham theory and quasiparticle theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;62&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1169&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1989&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.62.1169&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2758,27 +2604,25 @@ Referred to in: [/topics/SelfEnergy](/topics/SelfEnergy)
 Goedecker, S., Teter, M., H\"utter, J.  
 *Separable dual-space Gaussian pseudopotentials*  
 Phys. Rev. B **54**, 1703--1710 (1996)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Goedecker1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Goedecker1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Goedecker1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Goedecker1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Goedecker1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Goedecker1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Goedecker1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Goedecker1996,
-    author = {Goedecker, S. and Teter, M. and H\&quot;utter, J.},
-    title = &quot;Separable dual-space Gaussian pseudopotentials&quot;,
-    volume = &quot;54&quot;,
-    number = &quot;3&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1996&quot;,
-    pages = &quot;1703--1710&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Goedecker1996</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Goedecker, S. and Teter, M. and H\&quot;utter, J.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Separable dual-space Gaussian pseudopotentials&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;54&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1703--1710&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2793,30 +2637,28 @@ Gonze, X., Stumpf, R., Scheffler, M.
 *Analysis of separable potentials*  
 Phys. Rev. B **44**, 8503--8513 (1991)  
 DOI: <https://doi.org/10.1103/PhysRevB.44.8503>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze1991">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1991">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze1991">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1991">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze1991">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze1991,
-    author = &quot;Gonze, X. and Stumpf, R. and Scheffler, M.&quot;,
-    title = &quot;Analysis of separable potentials&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;44&quot;,
-    issue = &quot;16&quot;,
-    pages = &quot;8503--8513&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1991&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.44.8503&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze1991</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Stumpf, R. and Scheffler, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Analysis of separable potentials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;44&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;8503--8513&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1991&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.44.8503&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2830,28 +2672,26 @@ Gonze, X.
 *Adiabatic density-functional perturbation theory*  
 Phys. Rev. A **52**, 1096--1114 (1995)  
 DOI: <https://doi.org/10.1103/PhysRevA.52.1096>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze1995">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1995">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze1995">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1995">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze1995">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze1995,
-    author = &quot;Gonze, X.&quot;,
-    title = &quot;Adiabatic density-functional perturbation theory&quot;,
-    journal = &quot;Phys. Rev. A&quot;,
-    year = &quot;1995&quot;,
-    volume = &quot;52&quot;,
-    number = &quot;2&quot;,
-    pages = &quot;1096--1114&quot;,
-    doi = &quot;10.1103/PhysRevA.52.1096&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze1995</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Adiabatic density-functional perturbation theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. A&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1995&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;52&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1096--1114&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevA.52.1096&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2864,26 +2704,24 @@ DOI: <https://doi.org/10.1103/PhysRevA.52.1096>
 Gonze, X.  
 *First-principles responses of solids to atomic displacements and homogeneous electric fields: Implementation of a conjugate-gradient algorithm*  
 Phys. Rev. B **55**, 10337--10354 (1997)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze1997">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1997">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze1997">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze1997" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1997">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze1997">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze1997,
-    author = &quot;Gonze, X.&quot;,
-    title = &quot;First-principles responses of solids to atomic displacements and homogeneous electric fields: Implementation of a conjugate-gradient algorithm&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1997&quot;,
-    volume = &quot;55&quot;,
-    pages = &quot;10337--10354&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze1997</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles responses of solids to atomic displacements and homogeneous electric fields: Implementation of a conjugate-gradient algorithm&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1997&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;55&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;10337--10354&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2897,26 +2735,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 Gonze, X., Lee, C.  
 *Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory*  
 Phys. Rev. B **55**, 10355 (1997)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze1997a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze1997a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1997a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze1997a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze1997a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze1997a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze1997a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze1997a,
-    author = &quot;Gonze, X. and Lee, C.&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;55&quot;,
-    pages = &quot;10355&quot;,
-    year = &quot;1997&quot;,
-    title = &quot;Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze1997a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Lee, C.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;55&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;10355&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1997&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Dynamical matrices, Born effective charges, dielectric permittivity tensors, and interatomic force constants from density-functional perturbation theory&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2930,26 +2766,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/Pho
 Gonze, X., Beuken, J.-M., Caracas, R., Detraux, F., Fuchs, M., Rignanese, G.-M., Sindic, L., Verstraete, M., Zerah, G., Jollet, F., Torrent, M., Roy, A., Mikami, M., Ghosez, Ph., Raty, J.-Y., Allan, D.C.  
 *First-principles computation of material properties : the ABINIT software project*  
 Comp. Mat. Science **25**, 478--492 (2002)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze2002">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2002">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2002">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2002">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze2002">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze2002,
-    author = &quot;Gonze, X. and Beuken, J.-M. and Caracas, R. and Detraux, F. and Fuchs, M. and Rignanese, G.-M. and Sindic, L. and Verstraete, M. and Zerah, G. and Jollet, F. and Torrent, M. and Roy, A. and Mikami, M. and Ghosez, Ph. and Raty, J.-Y. and Allan, D.C.&quot;,
-    journal = &quot;Comp. Mat. Science&quot;,
-    volume = &quot;25&quot;,
-    pages = &quot;478--492&quot;,
-    year = &quot;2002&quot;,
-    title = &quot;First-principles computation of material properties : the ABINIT software project&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze2002</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Beuken, J.-M. and Caracas, R. and Detraux, F. and Fuchs, M. and Rignanese, G.-M. and Sindic, L. and Verstraete, M. and Zerah, G. and Jollet, F. and Torrent, M. and Roy, A. and Mikami, M. and Ghosez, Ph. and Raty, J.-Y. and Allan, D.C.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Mat. Science&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;25&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;478--492&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2002&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles computation of material properties : the ABINIT software project&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2963,26 +2797,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 Gonze, X., Rignanese, G.-M., Verstraete, M., Beuken, J.-M., Pouillon, Y., Caracas, R., Jollet, F., Torrent, M., Zerah, G., Mikami, M., Ghosez, Ph., Veithen, M., Raty, J.-Y., Olevano, V., Bruneval, F., Reining, L., Godby, R., Onida, G., an D.C. Allan, D.R. Hamann  
 *A brief introduction to the ABINIT software package*  
 Zeit. Kristallogr **220**, 558-562 (2005)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze2005">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2005">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2005">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2005">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze2005">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze2005,
-    author = &quot;Gonze, X. and Rignanese, G.-M. and Verstraete, M. and Beuken, J.-M. and Pouillon, Y. and Caracas, R. and Jollet, F. and Torrent, M. and Zerah, G. and Mikami, M. and Ghosez, Ph. and Veithen, M. and Raty, J.-Y. and Olevano, V. and Bruneval, F. and Reining, L. and Godby, R. and Onida, G. and an D.C. Allan, D.R. Hamann&quot;,
-    journal = &quot;Zeit. Kristallogr&quot;,
-    volume = &quot;220&quot;,
-    pages = &quot;558-562&quot;,
-    year = &quot;2005&quot;,
-    title = &quot;A brief introduction to the ABINIT software package&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze2005</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Rignanese, G.-M. and Verstraete, M. and Beuken, J.-M. and Pouillon, Y. and Caracas, R. and Jollet, F. and Torrent, M. and Zerah, G. and Mikami, M. and Ghosez, Ph. and Veithen, M. and Raty, J.-Y. and Olevano, V. and Bruneval, F. and Reining, L. and Godby, R. and Onida, G. and an D.C. Allan, D.R. Hamann&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Zeit. Kristallogr&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;220&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;558-562&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;A brief introduction to the ABINIT software package&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -2996,26 +2828,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 Gonze, X., Amadon, B., Anglade, P.-M., Beuken, J.-M., Bottin, F., Boulanger, P., Bruneval, F., Caliste, D., Caracas, R., C\^{o}t\'{e}, M., Deutsch, T., Genovese, L., Ghosez, Ph., Giantomassi, M., Goedecker, S., Hamann, D.R., Hermet, P., Jollet, F., Jomard, G., Leroux, S., Mancini, M., Mazevet, S., Oliveira, M.J.T., Onida, G., Pouillon, Y., Rangel, T., Rignanese, G.-M., Sangalli, D., Shaltaf, R., Torrent, M., Verstraete, M.J., Zerah, G., Zwanziger, J.W.  
 *{ABINIT}: First-Principle approach to material and nanosystem properties*  
 Comp. Phys. Comm. **180**, 2582-2615 (2009)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze2009,
-    author = &quot;Gonze, X. and Amadon, B. and Anglade, P.-M. and Beuken, J.-M. and Bottin, F. and Boulanger, P. and Bruneval, F. and Caliste, D. and Caracas, R. and C\^{o}t\'{e}, M. and Deutsch, T. and Genovese, L. and Ghosez, Ph. and Giantomassi, M. and Goedecker, S. and Hamann, D.R. and Hermet, P. and Jollet, F. and Jomard, G. and Leroux, S. and Mancini, M. and Mazevet, S. and Oliveira, M.J.T. and Onida, G. and Pouillon, Y. and Rangel, T. and Rignanese, G.-M. and Sangalli, D. and Shaltaf, R. and Torrent, M. and Verstraete, M.J. and Zerah, G. and Zwanziger, J.W.&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;180&quot;,
-    pages = &quot;2582-2615&quot;,
-    year = &quot;2009&quot;,
-    title = &quot;{ABINIT}: First-Principle approach to material and nanosystem properties&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Amadon, B. and Anglade, P.-M. and Beuken, J.-M. and Bottin, F. and Boulanger, P. and Bruneval, F. and Caliste, D. and Caracas, R. and C\^{o}t\&#39;{e}, M. and Deutsch, T. and Genovese, L. and Ghosez, Ph. and Giantomassi, M. and Goedecker, S. and Hamann, D.R. and Hermet, P. and Jollet, F. and Jomard, G. and Leroux, S. and Mancini, M. and Mazevet, S. and Oliveira, M.J.T. and Onida, G. and Pouillon, Y. and Rangel, T. and Rignanese, G.-M. and Sangalli, D. and Shaltaf, R. and Torrent, M. and Verstraete, M.J. and Zerah, G. and Zwanziger, J.W.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;180&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;2582-2615&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;{ABINIT}: First-Principle approach to material and nanosystem properties&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3029,26 +2859,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/ElP
 Gonze, X., Boulanger, P., C\^ot\'e, M.  
 *Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.*  
 Annalen der Physik **523**, 168 (2011)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze2011,
-    author = &quot;Gonze, X. and Boulanger, P. and C\^ot\'e, M.&quot;,
-    title = &quot;Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.&quot;,
-    journal = &quot;Annalen der Physik&quot;,
-    year = &quot;2011&quot;,
-    volume = &quot;523&quot;,
-    pages = &quot;168&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze2011</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Boulanger, P. and C\^ot\&#39;e, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Theoretical approaches to the temperature and zero-point motion effects on the electronic band structure.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Annalen der Physik&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;523&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;168&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3063,30 +2891,28 @@ Gonze, X., Jollet, F., Araujo, F. Abreu, Adams, D., Amadon, B., Applencourt, T.,
 *Recent developments in the {ABINIT} software package*  
 Computer Physics Communications **205**, 106 (2016)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0010465516300923>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gonze2016">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gonze2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2016">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2016">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gonze2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gonze2016">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gonze2016">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gonze2016,
-    author = &quot;Gonze, X. and Jollet, F. and Araujo, F. Abreu and Adams, D. and Amadon, B. and Applencourt, T. and Audouze, C. and Beuken, J.-M. and Bieder, J. and Bokhanchuk, A. and Bousquet, E. and Bruneval, F. and Caliste, D. and C\^ot\'e, M. and Dahm, F. and Pieve, F. Da and Delaveau, M. and Gennaro, M. Di and Dorado, B. and Espejo, C. and Geneste, G. and Genovese, L. and Gerossier, A. and Giantomassi, M. and Gillet, Y. and Hamann, D.R. and He, L. and Jomard, G. and Janssen, J. Laflamme and Roux, S. Le and Levitt, A. and Lherbier, A. and Liu, F. and Lukacevic, I. and Martin, A. and Martins, C. and Oliveira, M.J.T. and Ponc\'e, S. and Pouillon, Y. and Rangel, T. and Rignanese, G.-M. and Romero, A.H. and Rousseau, B. and Rubel, O. and Shukri, A.A. and Stankovski, M. and Torrent, M. and Setten, M.J. Van and troeye, B. Van and Verstraete, M.J. and Waroquier, D. and Wiktor, J. and Xue, B. and Zhou, A. and Zwanziger, J.W.&quot;,
-    title = &quot;Recent developments in the {ABINIT} software package&quot;,
-    journal = &quot;Computer Physics Communications&quot;,
-    volume = &quot;205&quot;,
-    pages = &quot;106&quot;,
-    year = &quot;2016&quot;,
-    issn = &quot;0010-4655&quot;,
-    doi = &quot;10.1016/j.cpc.2016.04.003&quot;,
-    url = &quot;http://www.sciencedirect.com/science/article/pii/S0010465516300923&quot;,
-    keywords = &quot;Many-Body Perturbation Theory&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gonze2016</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gonze, X. and Jollet, F. and Araujo, F. Abreu and Adams, D. and Amadon, B. and Applencourt, T. and Audouze, C. and Beuken, J.-M. and Bieder, J. and Bokhanchuk, A. and Bousquet, E. and Bruneval, F. and Caliste, D. and C\^ot\&#39;e, M. and Dahm, F. and Pieve, F. Da and Delaveau, M. and Gennaro, M. Di and Dorado, B. and Espejo, C. and Geneste, G. and Genovese, L. and Gerossier, A. and Giantomassi, M. and Gillet, Y. and Hamann, D.R. and He, L. and Jomard, G. and Janssen, J. Laflamme and Roux, S. Le and Levitt, A. and Lherbier, A. and Liu, F. and Lukacevic, I. and Martin, A. and Martins, C. and Oliveira, M.J.T. and Ponc\&#39;e, S. and Pouillon, Y. and Rangel, T. and Rignanese, G.-M. and Romero, A.H. and Rousseau, B. and Rubel, O. and Shukri, A.A. and Stankovski, M. and Torrent, M. and Setten, M.J. Van and troeye, B. Van and Verstraete, M.J. and Waroquier, D. and Wiktor, J. and Xue, B. and Zhou, A. and Zwanziger, J.W.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Recent developments in the {ABINIT} software package&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Computer Physics Communications&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;205&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;106&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2016&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0010-4655&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.cpc.2016.04.003&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://www.sciencedirect.com/science/article/pii/S0010465516300923&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;Many-Body Perturbation Theory&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3100,26 +2926,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/ElP
 Grimme, S.  
 *Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction*  
 J. Comput. Chem. **27**, 1787 (2006)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Grimme2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Grimme2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimme2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Grimme2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Grimme2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimme2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Grimme2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Grimme2006,
-    Author = &quot;Grimme, S.&quot;,
-    Title = &quot;Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction&quot;,
-    Journal = &quot;J. Comput. Chem.&quot;,
-    Volume = &quot;27&quot;,
-    Pages = &quot;1787&quot;,
-    year = &quot;2006&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Grimme2006</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Grimme, S.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;J. Comput. Chem.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;27&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;1787&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3133,26 +2957,24 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Grimme, S., Anthony, J., Ehrlich, S., Krieg, H.  
 *A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u*  
 J. Chem. Phys. **132**, 154104 (2010)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Grimme2010">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Grimme2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimme2010">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Grimme2010">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Grimme2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimme2010">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Grimme2010">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Grimme2010,
-    Author = &quot;Grimme, S. and Anthony, J. and Ehrlich, S. and Krieg, H.&quot;,
-    Title = &quot;A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u&quot;,
-    Journal = &quot;J. Chem. Phys.&quot;,
-    Volume = &quot;132&quot;,
-    Pages = &quot;154104&quot;,
-    year = &quot;2010&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Grimme2010</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Grimme, S. and Anthony, J. and Ehrlich, S. and Krieg, H.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;132&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;154104&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2010&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3166,26 +2988,24 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Grimme, S., Ehrlich, S., Goerigk, L.  
 *Effect of the Damping Function in Dispersion Corrected Density Functional Theory*  
 J. Comput. Chem. **32**, 1456-1465 (2011)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Grimme2010a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Grimme2010a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimme2010a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Grimme2010a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Grimme2010a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimme2010a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Grimme2010a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Grimme2010a,
-    Author = &quot;Grimme, S. and Ehrlich, S. and Goerigk, L.&quot;,
-    Title = &quot;Effect of the Damping Function in Dispersion Corrected Density Functional Theory&quot;,
-    Journal = &quot;J. Comput. Chem.&quot;,
-    Volume = &quot;32&quot;,
-    Pages = &quot;1456-1465&quot;,
-    year = &quot;2011&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Grimme2010a</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Grimme, S. and Ehrlich, S. and Goerigk, L.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Effect of the Damping Function in Dispersion Corrected Density Functional Theory&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;J. Comput. Chem.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;32&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;1456-1465&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3199,25 +3019,23 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Grimvall, G.  
 *The electron phonon interaction in metals*  
 North-Holland (1981)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Grimvall1981">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Grimvall1981" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimvall1981">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Grimvall1981">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Grimvall1981" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Grimvall1981">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Grimvall1981">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@book{Grimvall1981,
-    AUTHOR = &quot;Grimvall, G.&quot;,
-    YEAR = &quot;1981&quot;,
-    TITLE = &quot;The electron phonon interaction in metals&quot;,
-    ADDRESS = &quot;Amsterdam&quot;,
-    PUBLISHER = &quot;North-Holland&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@book</span><span class="p">{</span><span class="nl">Grimvall1981</span><span class="p">,</span>
+    <span class="na">AUTHOR</span> <span class="p">=</span> <span class="s">&quot;Grimvall, G.&quot;</span><span class="p">,</span>
+    <span class="na">YEAR</span> <span class="p">=</span> <span class="s">&quot;1981&quot;</span><span class="p">,</span>
+    <span class="na">TITLE</span> <span class="p">=</span> <span class="s">&quot;The electron phonon interaction in metals&quot;</span><span class="p">,</span>
+    <span class="na">ADDRESS</span> <span class="p">=</span> <span class="s">&quot;Amsterdam&quot;</span><span class="p">,</span>
+    <span class="na">PUBLISHER</span> <span class="p">=</span> <span class="s">&quot;North-Holland&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3231,34 +3049,32 @@ Gull, E., Millis, A.J., Liechtenstein, A. I., Rubtsov, A.N., Troyer, M., Werner,
 *Continuous-time Monte Carlo methods for quantum impurity models*  
 Rev. Mod. Phys. **83**, 349--404 (2011)  
 DOI: <https://doi.org/10.1103/RevModPhys.83.349>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Gull2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Gull2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gull2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gull2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Gull2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Gull2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Gull2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Gull2011,
-    author = &quot;Gull, E. and Millis, A.J. and Liechtenstein, A. I. and Rubtsov, A.N. and Troyer, M. and Werner, P.&quot;,
-    title = &quot;Continuous-time Monte Carlo methods for quantum impurity models&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    year = &quot;2011&quot;,
-    volume = &quot;83&quot;,
-    pages = &quot;349--404&quot;,
-    number = &quot;2&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/Interaction/RevModPhys.83.349-1.pdf:PDF&quot;,
-    keywords = &quot;interaction CTQMC&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/RevModPhys.83.349&quot;,
-    timestamp = &quot;2012.06.22&quot;,
-    doi = &quot;10.1103/RevModPhys.83.349&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Gull2011</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Gull, E. and Millis, A.J. and Liechtenstein, A. I. and Rubtsov, A.N. and Troyer, M. and Werner, P.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Continuous-time Monte Carlo methods for quantum impurity models&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;83&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;349--404&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/Interaction/RevModPhys.83.349-1.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;interaction CTQMC&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.83.349&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.06.22&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.83.349&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3273,29 +3089,27 @@ Hamann, D.R., Schl\"uter, M., Chiang, C.
 *Norm-Conserving Pseudopotentials*  
 Phys. Rev. Lett. **43**, 1494--1497 (1979)  
 DOI: <https://doi.org/10.1103/PhysRevLett.43.1494>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hamann1979">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hamann1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann1979">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hamann1979">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hamann1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann1979">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hamann1979">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hamann1979,
-    author = {Hamann, D.R. and Schl\&quot;uter, M. and Chiang, C.},
-    title = &quot;Norm-Conserving Pseudopotentials&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    year = &quot;1979&quot;,
-    volume = &quot;43&quot;,
-    pages = &quot;1494--1497&quot;,
-    doi = &quot;10.1103/PhysRevLett.43.1494&quot;,
-    numpages = &quot;3&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hamann1979</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Hamann, D.R. and Schl\&quot;uter, M. and Chiang, C.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Norm-Conserving Pseudopotentials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1979&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;43&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1494--1497&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.43.1494&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3309,30 +3123,28 @@ Hamann, D. R.
 *Generalized norm-conserving pseudopotentials*  
 Phys. Rev. B **40**, 2980--2987 (1989)  
 DOI: <https://doi.org/10.1103/PhysRevB.40.2980>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hamann1989">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hamann1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann1989">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hamann1989">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hamann1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann1989">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hamann1989">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hamann1989,
-    author = &quot;Hamann, D. R.&quot;,
-    title = &quot;Generalized norm-conserving pseudopotentials&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;40&quot;,
-    issue = &quot;5&quot;,
-    pages = &quot;2980--2987&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1989&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.40.2980&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hamann1989</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hamann, D. R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Generalized norm-conserving pseudopotentials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;40&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;2980--2987&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1989&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.40.2980&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3345,26 +3157,24 @@ DOI: <https://doi.org/10.1103/PhysRevB.40.2980>
 Hamann, D. R., Wu, X., Rabe, K. M., Vanderbilt, D.  
 *Metric tensor formulation of strain in density-functional perturbation theory*  
 Phys. Rev. B **71**, 035117 (2005)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hamann2005">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hamann2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann2005">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hamann2005">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hamann2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann2005">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hamann2005">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hamann2005,
-    author = &quot;Hamann, D. R. and Wu, X. and Rabe, K. M. and Vanderbilt, D.&quot;,
-    title = &quot;Metric tensor formulation of strain in density-functional perturbation theory&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;71&quot;,
-    pages = &quot;035117&quot;,
-    year = &quot;2005&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hamann2005</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hamann, D. R. and Wu, X. and Rabe, K. M. and Vanderbilt, D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Metric tensor formulation of strain in density-functional perturbation theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;71&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;035117&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3379,30 +3189,28 @@ Hamann, D. R.
 *Optimized norm-conserving Vanderbilt pseudopotentials*  
 Phys. Rev. B **88**, 085117 (2013)  
 DOI: <https://doi.org/10.1103/PhysRevB.88.085117>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hamann2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hamann2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hamann2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hamann2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hamann2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hamann2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hamann2013,
-    author = &quot;Hamann, D. R.&quot;,
-    title = &quot;Optimized norm-conserving Vanderbilt pseudopotentials&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;88&quot;,
-    issue = &quot;8&quot;,
-    pages = &quot;085117&quot;,
-    numpages = &quot;10&quot;,
-    year = &quot;2013&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.88.085117&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hamann2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hamann, D. R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Optimized norm-conserving Vanderbilt pseudopotentials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;88&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;8&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;085117&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;10&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.88.085117&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3416,27 +3224,25 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 Harju, A., Siro, T., Federici Canova, F., Hakala, S., Rantalaiho, T.  
 *Computational Physics on Graphics Processing Units*  
 Lecture Notes in Computer Science **7782**, 3--26 (2013)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Harju2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Harju2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Harju2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Harju2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Harju2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Harju2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Harju2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Harju2013,
-    author = &quot;Harju, A. and Siro, T. and Federici Canova, F. and Hakala, S. and Rantalaiho, T.&quot;,
-    title = &quot;Computational Physics on Graphics Processing Units&quot;,
-    journal = &quot;Lecture Notes in Computer Science&quot;,
-    volume = &quot;7782&quot;,
-    number = &quot;&quot;,
-    pages = &quot;3--26&quot;,
-    year = &quot;2013&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Harju2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Harju, A. and Siro, T. and Federici Canova, F. and Hakala, S. and Rantalaiho, T.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Computational Physics on Graphics Processing Units&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Lecture Notes in Computer Science&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;7782&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;3--26&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3450,30 +3256,28 @@ Harl, J., Schimka, L., Kresse, G.
 *Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids*  
 Phys. Rev. B **81**, 115126 (2010)  
 DOI: <https://doi.org/10.1103/PhysRevB.81.115126>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Harl2010">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Harl2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Harl2010">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Harl2010">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Harl2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Harl2010">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Harl2010">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Harl2010,
-    author = &quot;Harl, J. and Schimka, L. and Kresse, G.&quot;,
-    title = &quot;Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;81&quot;,
-    issue = &quot;11&quot;,
-    pages = &quot;115126&quot;,
-    numpages = &quot;18&quot;,
-    year = &quot;2010&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.81.115126&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Harl2010</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Harl, J. and Schimka, L. and Kresse, G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Assessing the quality of the random phase approximation for lattice constants and atomization energies of solids&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;81&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;11&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;115126&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;18&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2010&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.81.115126&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3487,27 +3291,25 @@ Referred to in: [/topics/RPACorrEn](/topics/RPACorrEn)
 Hartwigsen, C., Goedecker, S., H\"utter, J.  
 *Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n*  
 Phys. Rev. B **58**, 3641--3662 (1998)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hartwigsen1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hartwigsen1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hartwigsen1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hartwigsen1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hartwigsen1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hartwigsen1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hartwigsen1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hartwigsen1998,
-    author = {Hartwigsen, C. and Goedecker, S. and H\&quot;utter, J.},
-    title = &quot;Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n&quot;,
-    volume = &quot;58&quot;,
-    number = &quot;7&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1998&quot;,
-    pages = &quot;3641--3662&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hartwigsen1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Hartwigsen, C. and Goedecker, S. and H\&quot;utter, J.}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;58&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;3641--3662&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3521,31 +3323,29 @@ Haydock, R.
 *The recursive solution of the {S}chr\"{o}dinger equation*  
 Comp. Phys. Comm. **20**, 11 - 16 (1980)  
 URL: <http://www.sciencedirect.com/science/article/pii/0010465580901010>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Haydock1980">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Haydock1980" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Haydock1980">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Haydock1980">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Haydock1980" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Haydock1980">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Haydock1980">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Haydock1980,
-    author = &quot;Haydock, R.&quot;,
-    title = {The recursive solution of the {S}chr\&quot;{o}dinger equation},
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;20&quot;,
-    number = &quot;1&quot;,
-    pages = &quot;11 - 16&quot;,
-    year = &quot;1980&quot;,
-    note = &quot;&quot;,
-    issn = &quot;0010-4655&quot;,
-    doi = &quot;10.1016/0010-4655(80)90101-0&quot;,
-    url = &quot;http://www.sciencedirect.com/science/article/pii/0010465580901010&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Haydock1980</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Haydock, R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">{The recursive solution of the {S}chr\&quot;{o}dinger equation}</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;20&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;11 - 16&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1980&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0010-4655&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/0010-4655(80)90101-0&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://www.sciencedirect.com/science/article/pii/0010465580901010&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3560,27 +3360,25 @@ He, L., Liu, F., Hautier, G., Oliveira, M. J. T., Marques, M. A. L., Vila, F. D.
 *Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations*  
 Phys. Rev. B **89**, 064305 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.064305>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-He2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-He2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-He2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-He2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-He2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-He2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-He2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{He2014,
-    Author = &quot;He, L. and Liu, F. and Hautier, G. and Oliveira, M. J. T. and Marques, M. A. L. and Vila, F. D. and Rehr, J. J. and Rignanese, G.-M. and Zhou, A.&quot;,
-    Title = &quot;Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Pages = &quot;064305&quot;,
-    doi = &quot;10.1103/PhysRevB.89.064305&quot;,
-    Volume = &quot;89&quot;,
-    Year = &quot;2014&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">He2014</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;He, L. and Liu, F. and Hautier, G. and Oliveira, M. J. T. and Marques, M. A. L. and Vila, F. D. and Rehr, J. J. and Rignanese, G.-M. and Zhou, A.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Accuracy of generalized gradient approximation functionals for density-functional perturbation theory calculations&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;064305&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.89.064305&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3593,26 +3391,24 @@ DOI: <https://doi.org/10.1103/PhysRevB.89.064305>
 Hedin, L.  
 *New Method for Calculating the One-Particle Green's Function with Application to the Electron-Gas Problem*  
 Phys. Rev. A **139**, 796 (1965)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hedin1965">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hedin1965" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hedin1965">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hedin1965">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hedin1965" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hedin1965">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hedin1965">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hedin1965,
-    author = &quot;Hedin, L.&quot;,
-    title = &quot;New Method for Calculating the One-Particle Green's Function with Application to the Electron-Gas Problem&quot;,
-    journal = &quot;Phys. Rev. A&quot;,
-    volume = &quot;139&quot;,
-    pages = &quot;796&quot;,
-    year = &quot;1965&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hedin1965</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hedin, L.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;New Method for Calculating the One-Particle Green&#39;s Function with Application to the Electron-Gas Problem&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. A&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;139&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;796&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1965&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3626,28 +3422,26 @@ Referred to in: [/topics/BSE](/topics/BSE), [/topics/SelfEnergy](/topics/SelfEne
 Hellwege, K.-H., Olsen, J.L. (Eds.)  
 *Electrical Resistivity, Thermoelectrical Power and Optical Properties*  
 Springer (1985)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hellwege1985">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hellwege1985" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hellwege1985">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hellwege1985">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hellwege1985" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hellwege1985">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hellwege1985">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@book{Hellwege1985,
-    Author = &quot;Hellwege, K.-H. and Olsen, J.L. (Eds.)&quot;,
-    Date-Added = &quot;2014-02-21 11:07:18 +0000&quot;,
-    Date-Modified = &quot;2014-03-04 10:21:33 +0000&quot;,
-    Publisher = &quot;Springer&quot;,
-    Address = &quot;Berlin Heidelberg&quot;,
-    Title = &quot;Electrical Resistivity, Thermoelectrical Power and Optical Properties&quot;,
-    Volume = &quot;15b&quot;,
-    Year = &quot;1985&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@book</span><span class="p">{</span><span class="nl">Hellwege1985</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Hellwege, K.-H. and Olsen, J.L. (Eds.)&quot;</span><span class="p">,</span>
+    <span class="na">Date-Added</span> <span class="p">=</span> <span class="s">&quot;2014-02-21 11:07:18 +0000&quot;</span><span class="p">,</span>
+    <span class="na">Date-Modified</span> <span class="p">=</span> <span class="s">&quot;2014-03-04 10:21:33 +0000&quot;</span><span class="p">,</span>
+    <span class="na">Publisher</span> <span class="p">=</span> <span class="s">&quot;Springer&quot;</span><span class="p">,</span>
+    <span class="na">Address</span> <span class="p">=</span> <span class="s">&quot;Berlin Heidelberg&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Electrical Resistivity, Thermoelectrical Power and Optical Properties&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;15b&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;1985&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3660,28 +3454,26 @@ Springer (1985)
 Henkelman, G., J{\'o}nsson, H.  
 *Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points*  
 The Journal of chemical physics **113**, 9978--9985 (2000)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Henkelman2000">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Henkelman2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Henkelman2000">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Henkelman2000">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Henkelman2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Henkelman2000">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Henkelman2000">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Henkelman2000,
-    author = &quot;Henkelman, G. and J{\'o}nsson, H.&quot;,
-    title = &quot;Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points&quot;,
-    journal = &quot;The Journal of chemical physics&quot;,
-    volume = &quot;113&quot;,
-    number = &quot;22&quot;,
-    pages = &quot;9978--9985&quot;,
-    year = &quot;2000&quot;,
-    publisher = &quot;AIP Publishing&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Henkelman2000</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Henkelman, G. and J{\&#39;o}nsson, H.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;The Journal of chemical physics&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;113&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;22&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;9978--9985&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2000&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;AIP Publishing&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3696,29 +3488,27 @@ Hermet, P., Veithen, M., Ghosez, P.
 *Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.*  
 J. Phys. : Condens. Matter **21**, 215901 (2009)  
 DOI: <https://doi.org/10.1088/0953-8984/21/21/215901>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hermet2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hermet2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hermet2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hermet2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hermet2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hermet2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hermet2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hermet2009,
-    author = &quot;Hermet, P. and Veithen, M. and Ghosez, P.&quot;,
-    title = &quot;Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.&quot;,
-    journal = &quot;J. Phys. : Condens. Matter&quot;,
-    volume = &quot;21&quot;,
-    number = &quot;&quot;,
-    pages = &quot;215901&quot;,
-    year = &quot;2009&quot;,
-    doi = &quot;10.1088/0953-8984/21/21/215901&quot;,
-    publisher = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hermet2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hermet, P. and Veithen, M. and Ghosez, P.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Raman scattering intensities in BaTiO(3) and PbTiO(3) prototypical ferroelectrics from density functional theory.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys. : Condens. Matter&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;21&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;215901&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1088/0953-8984/21/21/215901&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3733,29 +3523,27 @@ Hohenberg, P., Kohn, W.
 *Inhomogeneous Electron Gas*  
 Phys. Rev. **136**, B864--B871 (1964)  
 DOI: <https://doi.org/10.1103/PhysRev.136.B864>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hohenberg1964">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hohenberg1964" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hohenberg1964">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hohenberg1964">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hohenberg1964" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hohenberg1964">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hohenberg1964">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hohenberg1964,
-    author = &quot;Hohenberg, P. and Kohn, W.&quot;,
-    title = &quot;Inhomogeneous Electron Gas&quot;,
-    journal = &quot;Phys. Rev.&quot;,
-    volume = &quot;136&quot;,
-    number = &quot;3B&quot;,
-    pages = &quot;B864--B871&quot;,
-    year = &quot;1964&quot;,
-    doi = &quot;10.1103/PhysRev.136.B864&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hohenberg1964</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hohenberg, P. and Kohn, W.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Inhomogeneous Electron Gas&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;136&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3B&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;B864--B871&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1964&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRev.136.B864&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3768,26 +3556,24 @@ DOI: <https://doi.org/10.1103/PhysRev.136.B864>
 Holzwarth, N.A.W., Tackett, A.R., Matthews, G.E.  
 *A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions*  
 Comp. Phys. Comm. **135**, 329 (2001)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Holzwarth2001">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Holzwarth2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Holzwarth2001">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Holzwarth2001">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Holzwarth2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Holzwarth2001">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Holzwarth2001">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Holzwarth2001,
-    Author = &quot;Holzwarth, N.A.W. and Tackett, A.R. and Matthews, G.E.&quot;,
-    Title = &quot;A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions&quot;,
-    Journal = &quot;Comp. Phys. Comm.&quot;,
-    Volume = &quot;135&quot;,
-    Pages = &quot;329&quot;,
-    year = &quot;2001&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Holzwarth2001</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Holzwarth, N.A.W. and Tackett, A.R. and Matthews, G.E.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;135&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;329&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2001&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3801,31 +3587,29 @@ Hughes, J. L. P., Sipe, J. E.
 *Calculation of second-order optical response in semiconductors*  
 Phys. Rev. B **53**, 10751--10763 (1996)  
 DOI: <https://doi.org/10.1103/PhysRevB.53.10751>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hughes1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hughes1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hughes1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hughes1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hughes1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hughes1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hughes1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hughes1996,
-    Author = &quot;Hughes, J. L. P. and Sipe, J. E.&quot;,
-    Title = &quot;Calculation of second-order optical response in semiconductors&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;1996&quot;,
-    Pages = &quot;10751--10763&quot;,
-    Volume = &quot;53&quot;,
-    Doi = &quot;10.1103/PhysRevB.53.10751&quot;,
-    Issue = &quot;16&quot;,
-    Owner = &quot;yannick&quot;,
-    Publisher = &quot;American Physical Society&quot;,
-    Timestamp = &quot;2015.11.12&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hughes1996</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Hughes, J. L. P. and Sipe, J. E.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Calculation of second-order optical response in semiconductors&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;10751--10763&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;53&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.53.10751&quot;</span><span class="p">,</span>
+    <span class="na">Issue</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">Owner</span> <span class="p">=</span> <span class="s">&quot;yannick&quot;</span><span class="p">,</span>
+    <span class="na">Publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">Timestamp</span> <span class="p">=</span> <span class="s">&quot;2015.11.12&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3839,28 +3623,26 @@ Hybertsen, M. S., Louie, S. G.
 *Electron correlation in semiconductors and insulators: Band gaps and quasiparticle energies*  
 Phys. Rev. B **34**, 5390 (1986)  
 DOI: <https://doi.org/10.1103/PhysRevB.34.5390>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Hybertsen1986">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Hybertsen1986" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hybertsen1986">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hybertsen1986">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Hybertsen1986" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Hybertsen1986">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Hybertsen1986">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Hybertsen1986,
-    author = &quot;Hybertsen, M. S. and Louie, S. G.&quot;,
-    title = &quot;Electron correlation in semiconductors and insulators: Band gaps and quasiparticle energies&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1986&quot;,
-    volume = &quot;34&quot;,
-    number = &quot;&quot;,
-    pages = &quot;5390&quot;,
-    doi = &quot;10.1103/PhysRevB.34.5390&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Hybertsen1986</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Hybertsen, M. S. and Louie, S. G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electron correlation in semiconductors and insulators: Band gaps and quasiparticle energies&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1986&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;34&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;5390&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.34.5390&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3875,28 +3657,26 @@ Laflamme Janssen, J., Rousseau, B., C{\^o}t{\'e}, M.
 *Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations*  
 Phys. Rev. B **91**, 125120 (2015)  
 DOI: <https://doi.org/10.1103/PhysRevB.91.125120>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Janssen2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Janssen2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Janssen2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Janssen2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Janssen2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Janssen2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Janssen2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Janssen2015,
-    author = &quot;Laflamme Janssen, J. and Rousseau, B. and C{\^o}t{\'e}, M.&quot;,
-    title = &quot;Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2015&quot;,
-    volume = &quot;91&quot;,
-    number = &quot;12&quot;,
-    pages = &quot;125120&quot;,
-    doi = &quot;10.1103/PhysRevB.91.125120&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Janssen2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Laflamme Janssen, J. and Rousseau, B. and C{\^o}t{\&#39;e}, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;91&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;12&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125120&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.91.125120&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3910,26 +3690,24 @@ Referred to in: [/topics/GWls](/topics/GWls)
 Jia, Yongchao, Ponc\'e, Samuel, Miglio, Anna, Mikami, Masayoshi, Gonze, Xavier  
 *Assessment of First-Principles and Semiempirical Methodologies for Absorption and Emission Energies of Ce$^{3+}$-Doped Luminescent Materials*  
 Adv. Optical Mater. **5**, 1600997 (2017)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Jia2017">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Jia2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Jia2017">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Jia2017">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Jia2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Jia2017">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Jia2017">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Jia2017,
-    author = &quot;Jia, Yongchao and Ponc\'e, Samuel and Miglio, Anna and Mikami, Masayoshi and Gonze, Xavier&quot;,
-    title = &quot;Assessment of First-Principles and Semiempirical Methodologies for Absorption and Emission Energies of Ce$^{3+}$-Doped Luminescent Materials&quot;,
-    journal = &quot;Adv. Optical Mater.&quot;,
-    volume = &quot;5&quot;,
-    pages = &quot;1600997&quot;,
-    year = &quot;2017&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Jia2017</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Jia, Yongchao and Ponc\&#39;e, Samuel and Miglio, Anna and Mikami, Masayoshi and Gonze, Xavier&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Assessment of First-Principles and Semiempirical Methodologies for Absorption and Emission Energies of Ce$^{3+}$-Doped Luminescent Materials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Adv. Optical Mater.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1600997&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2017&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3943,26 +3721,24 @@ Referred to in: [/topics/DeltaSCF](/topics/DeltaSCF)
 Jollet, F., Jomard, G., Amadon, B., Crocombette, J.P., Torumba, D.  
 *Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides*  
 Phys. Rev. B **80**, 235109 (2009)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Jollet2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Jollet2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Jollet2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Jollet2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Jollet2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Jollet2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Jollet2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Jollet2009,
-    author = &quot;Jollet, F. and Jomard, G. and Amadon, B. and Crocombette, J.P. and Torumba, D.&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;80&quot;,
-    pages = &quot;235109&quot;,
-    year = &quot;2009&quot;,
-    title = &quot;Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Jollet2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Jollet, F. and Jomard, G. and Amadon, B. and Crocombette, J.P. and Torumba, D.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;80&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;235109&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Hybrid functional for correlated electrons in the projector augmented-wave formalism: Study of multiple minima for actinide oxides&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -3976,26 +3752,24 @@ Referred to in: [/topics/xc](/topics/xc)
 Jollet, F., Torrent, M., Holzwarth, N.  
 *Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format*  
 Comp. Phys. Comm. **185**, 1246-1254 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Jollet2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Jollet2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Jollet2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Jollet2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Jollet2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Jollet2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Jollet2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Jollet2014,
-    author = &quot;Jollet, F. and Torrent, M. and Holzwarth, N.&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;185&quot;,
-    pages = &quot;1246-1254&quot;,
-    year = &quot;2014&quot;,
-    title = &quot;Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Jollet2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Jollet, F. and Torrent, M. and Holzwarth, N.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;185&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1246-1254&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4009,28 +3783,26 @@ Referred to in: [/topics/PAW](/topics/PAW)
 Kawasuso, A., Yoshikawa, M., Itoh, H., Chiba, T., Higuchi, T., Betsuyaku, K., Redmann, F., Krause-Rehberg, R.  
 *Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}*  
 Phys. Rev. B **72**, 045204 (2005)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Kawasuso2005">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Kawasuso2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kawasuso2005">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kawasuso2005">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Kawasuso2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kawasuso2005">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Kawasuso2005">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Kawasuso2005,
-    author = &quot;Kawasuso, A. and Yoshikawa, M. and Itoh, H. and Chiba, T. and Higuchi, T. and Betsuyaku, K. and Redmann, F. and Krause-Rehberg, R.&quot;,
-    title = &quot;Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;72&quot;,
-    number = &quot;4&quot;,
-    pages = &quot;045204&quot;,
-    year = &quot;2005&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kawasuso2005</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Kawasuso, A. and Yoshikawa, M. and Itoh, H. and Chiba, T. and Higuchi, T. and Betsuyaku, K. and Redmann, F. and Krause-Rehberg, R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;72&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;045204&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4043,27 +3815,25 @@ Phys. Rev. B **72**, 045204 (2005)
 King-Smith, R. D., Vanderbilt, D.  
 *Theory of polarization of crystalline solids*  
 Phys. rev. B **47**, 1651--1654 (1993)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Kingsmith1993">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Kingsmith1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kingsmith1993">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kingsmith1993">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Kingsmith1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kingsmith1993">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Kingsmith1993">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Kingsmith1993,
-    author = &quot;King-Smith, R. D. and Vanderbilt, D.&quot;,
-    title = &quot;Theory of polarization of crystalline solids&quot;,
-    journal = &quot;Phys. rev. B&quot;,
-    volume = &quot;47&quot;,
-    number = &quot;3&quot;,
-    pages = &quot;1651--1654&quot;,
-    year = &quot;1993&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kingsmith1993</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;King-Smith, R. D. and Vanderbilt, D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Theory of polarization of crystalline solids&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;47&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1651--1654&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1993&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4077,29 +3847,27 @@ Kohn, W., Sham, L. J.
 *Self-Consistent Equations Including Exchange and Correlation Effects*  
 Phys. Rev. **140**, A1133--A1138 (1965)  
 DOI: <https://doi.org/10.1103/PhysRev.140.A1133>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Kohn1965">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Kohn1965" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kohn1965">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kohn1965">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Kohn1965" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kohn1965">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Kohn1965">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Kohn1965,
-    author = &quot;Kohn, W. and Sham, L. J.&quot;,
-    title = &quot;Self-Consistent Equations Including Exchange and Correlation Effects&quot;,
-    journal = &quot;Phys. Rev.&quot;,
-    volume = &quot;140&quot;,
-    number = &quot;4A&quot;,
-    pages = &quot;A1133--A1138&quot;,
-    year = &quot;1965&quot;,
-    doi = &quot;10.1103/PhysRev.140.A1133&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kohn1965</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Kohn, W. and Sham, L. J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Self-Consistent Equations Including Exchange and Correlation Effects&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;140&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;4A&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;A1133--A1138&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1965&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRev.140.A1133&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4112,26 +3880,24 @@ DOI: <https://doi.org/10.1103/PhysRev.140.A1133>
 Kolos, W., Roothaan, C.C.J.  
 *Accurate Electronic Wave Functions for the H$_2$ Molecule*  
 Rev. Mod. Phys. **32**, 219 (1960)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Kolos1960">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Kolos1960" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kolos1960">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kolos1960">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Kolos1960" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kolos1960">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Kolos1960">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Kolos1960,
-    author = &quot;Kolos, W. and Roothaan, C.C.J.&quot;,
-    title = &quot;Accurate Electronic Wave Functions for the H$_2$ Molecule&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    volume = &quot;32&quot;,
-    pages = &quot;219&quot;,
-    year = &quot;1960&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kolos1960</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Kolos, W. and Roothaan, C.C.J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Accurate Electronic Wave Functions for the H$_2$ Molecule&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;32&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;219&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1960&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4145,33 +3911,31 @@ Kotliar, G., Savrasov, S. Y., Haule, K., Oudovenko, V. S., Parcollet, O., Marian
 *Electronic structure calculations with dynamical mean-field theory*  
 Rev. Mod. Phys. **78**, 865--951 (2006)  
 DOI: <https://doi.org/10.1103/RevModPhys.78.865>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Kotliar2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Kotliar2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kotliar2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kotliar2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Kotliar2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kotliar2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Kotliar2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Kotliar2006,
-    author = &quot;Kotliar, G. and Savrasov, S. Y. and Haule, K. and Oudovenko, V. S. and Parcollet, O. and Marianetti, C. A.&quot;,
-    title = &quot;Electronic structure calculations with dynamical mean-field theory&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    year = &quot;2006&quot;,
-    volume = &quot;78&quot;,
-    pages = &quot;865--951&quot;,
-    number = &quot;3&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/Review/RMP2006.pdf:PDF&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/RevModPhys.78.865&quot;,
-    timestamp = &quot;2012.07.13&quot;,
-    doi = &quot;10.1103/RevModPhys.78.865&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kotliar2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Kotliar, G. and Savrasov, S. Y. and Haule, K. and Oudovenko, V. S. and Parcollet, O. and Marianetti, C. A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electronic structure calculations with dynamical mean-field theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;78&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;865--951&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/Review/RMP2006.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.78.865&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.07.13&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.78.865&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4186,27 +3950,25 @@ Kresse, G., Joubert, D.
 *From ultrasoft pseudopotentials to the projector augmented-wave method*  
 Phys. Rev. B **59**, 1758--1775 (1999)  
 DOI: <https://doi.org/10.1103/PhysRevB.59.1758>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Kresse1999">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Kresse1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kresse1999">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kresse1999">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Kresse1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Kresse1999">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Kresse1999">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Kresse1999,
-    author = &quot;Kresse, G. and Joubert, D.&quot;,
-    title = &quot;From ultrasoft pseudopotentials to the projector augmented-wave method&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;59&quot;,
-    pages = &quot;1758--1775&quot;,
-    year = &quot;1999&quot;,
-    doi = &quot;10.1103/PhysRevB.59.1758&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kresse1999</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Kresse, G. and Joubert, D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;From ultrasoft pseudopotentials to the projector augmented-wave method&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;59&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1758--1775&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1999&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.59.1758&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4220,26 +3982,24 @@ Referred to in: [/tutorials/paw1](/tutorials/paw1)
 Laflamme Janssen, J., Gillet, Y., Ponc\'e, S., Martin, A., Torrent, M., Gonze, X.  
 *Precise Effective Masses from Density Functional Perturbation Theory*  
 Phys. Rev. B **93**, 205147 (2016)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Laflamme2016">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Laflamme2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Laflamme2016">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Laflamme2016">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Laflamme2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Laflamme2016">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Laflamme2016">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Laflamme2016,
-    author = &quot;Laflamme Janssen, J. and Gillet, Y. and Ponc\'e, S. and Martin, A. and Torrent, M. and Gonze, X.&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    Title = &quot;Precise Effective Masses from Density Functional Perturbation Theory&quot;,
-    year = &quot;2016&quot;,
-    pages = &quot;205147&quot;,
-    volume = &quot;93&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Laflamme2016</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Laflamme Janssen, J. and Gillet, Y. and Ponc\&#39;e, S. and Martin, A. and Torrent, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Precise Effective Masses from Density Functional Perturbation Theory&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2016&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;205147&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;93&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4253,26 +4013,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/Eff
 Leb\`egue, S., Harl, J., Gould, T., \'Angy\'an, J. G., Kresse, G., Dobson, J. F.  
 *Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation*  
 Phys. Rev. Lett. **105**, 196401 (2010)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Lebegue2010">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Lebegue2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lebegue2010">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Lebegue2010">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Lebegue2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lebegue2010">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Lebegue2010">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Lebegue2010,
-    author = &quot;Leb\`egue, S. and Harl, J. and Gould, T. and \'Angy\'an, J. G. and Kresse, G. and Dobson, J. F.&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    Title = &quot;Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation&quot;,
-    year = &quot;2010&quot;,
-    pages = &quot;196401&quot;,
-    volume = &quot;105&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Lebegue2010</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Leb\`egue, S. and Harl, J. and Gould, T. and \&#39;Angy\&#39;an, J. G. and Kresse, G. and Dobson, J. F.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Cohesive Properties and Asymptotics of the Dispersion Interaction in Graphite by the Random Phase Approximation&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2010&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;196401&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;105&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4286,26 +4044,24 @@ Referred to in: [/topics/RPACorrEn](/topics/RPACorrEn)
 Lechermann, F., Georges, A., Poteryaev, A., Biermann, S., Posternak, M., Yamasaki, A., K., Andersen O.  
 *Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials*  
 Phys. Rev. B **74**, 125120 (2006)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Lechermann2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Lechermann2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lechermann2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Lechermann2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Lechermann2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lechermann2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Lechermann2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Lechermann2006,
-    author = &quot;Lechermann, F. and Georges, A. and Poteryaev, A. and Biermann, S. and Posternak, M. and Yamasaki, A. and K., Andersen O.&quot;,
-    title = &quot;Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;74&quot;,
-    pages = &quot;125120&quot;,
-    year = &quot;2006&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Lechermann2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Lechermann, F. and Georges, A. and Poteryaev, A. and Biermann, S. and Posternak, M. and Yamasaki, A. and K., Andersen O.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Dynamical mean-field theory using Wannier functions: A flexible route to electronic structure calculations of strongly correlated materials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;74&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125120&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4319,26 +4075,24 @@ Referred to in: [/tutorials/dmft](/tutorials/dmft)
 Lee, C., Gonze, X.  
 *Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite*  
 Phys. Rev. B **51**, 8610 (1995)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Lee1995">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Lee1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lee1995">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Lee1995">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Lee1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lee1995">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Lee1995">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Lee1995,
-    author = &quot;Lee, C. and Gonze, X.&quot;,
-    title = &quot;Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;51&quot;,
-    pages = &quot;8610&quot;,
-    year = &quot;1995&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Lee1995</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Lee, C. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO$_2$ $\alpha$-quartz and stishovite&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;51&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;8610&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1995&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4352,26 +4106,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/Pho
 Lejaeghere, K., {V}an {S}peybroeck, V., {V}an {O}ost, G., Cottenier, S.  
 *Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals*  
 Crit. Rev. Solid State Mater. Sci. **39**, 1 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Lejaeghere2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Lejaeghere2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lejaeghere2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Lejaeghere2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Lejaeghere2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lejaeghere2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Lejaeghere2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Lejaeghere2014,
-    Author = &quot;Lejaeghere, K. and {V}an {S}peybroeck, V. and {V}an {O}ost, G. and Cottenier, S.&quot;,
-    Title = &quot;Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals&quot;,
-    Journal = &quot;Crit. Rev. Solid State Mater. Sci.&quot;,
-    Volume = &quot;39&quot;,
-    Pages = &quot;1&quot;,
-    year = &quot;2014&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Lejaeghere2014</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Lejaeghere, K. and {V}an {S}peybroeck, V. and {V}an {O}ost, G. and Cottenier, S.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Error estimates for solid-state density-functional theory predictions: an overview by means of the ground-state elemental crystals&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Crit. Rev. Solid State Mater. Sci.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;39&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4384,27 +4136,25 @@ Crit. Rev. Solid State Mater. Sci. **39**, 1 (2014)
 Levitt, A., Torrent, M.  
 *Parallel eigensolvers in plane-wave Density Functional Theory*  
 Comp. Phys. Comm. **187**, 98--105 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Levitt2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Levitt2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Levitt2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Levitt2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Levitt2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Levitt2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Levitt2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Levitt2015,
-    author = &quot;Levitt, A. and Torrent, M.&quot;,
-    title = &quot;Parallel eigensolvers in plane-wave Density Functional Theory&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;187&quot;,
-    number = &quot;&quot;,
-    pages = &quot;98--105&quot;,
-    year = &quot;2015&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Levitt2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Levitt, A. and Torrent, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Parallel eigensolvers in plane-wave Density Functional Theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;187&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;98--105&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4419,34 +4169,32 @@ Liechtenstein, A. I., Anisimov, V. I., Zaanen, J.
 *Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators*  
 Phys. Rev. B **52**, R5467--R5470 (1995)  
 DOI: <https://doi.org/10.1103/PhysRevB.52.R5467>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Liechtenstein1995">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Liechtenstein1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Liechtenstein1995">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Liechtenstein1995">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Liechtenstein1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Liechtenstein1995">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Liechtenstein1995">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Liechtenstein1995,
-    author = &quot;Liechtenstein, A. I. and Anisimov, V. I. and Zaanen, J.&quot;,
-    title = &quot;Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;1995&quot;,
-    volume = &quot;52&quot;,
-    pages = &quot;R5467--R5470&quot;,
-    number = &quot;8&quot;,
-    file = &quot;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.52.R5467.pdf:PDF&quot;,
-    keywords = &quot;interaction, LDA+U GGA+U DFT+U&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/PhysRevB.52.R5467&quot;,
-    timestamp = &quot;2012.06.14&quot;,
-    doi = &quot;10.1103/PhysRevB.52.R5467&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Liechtenstein1995</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Liechtenstein, A. I. and Anisimov, V. I. and Zaanen, J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Density-functional theory and strong interactions: Orbital ordering in Mott-Hubbard insulators&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1995&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;52&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;R5467--R5470&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;8&quot;</span><span class="p">,</span>
+    <span class="na">file</span> <span class="p">=</span> <span class="s">&quot;:/media/disk_iomega/BIBLIO/Interaction/PhysRevB.52.R5467.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;interaction, LDA+U GGA+U DFT+U&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.52.R5467&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2012.06.14&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.52.R5467&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4460,26 +4208,24 @@ Referred to in: [/topics/DFT+U](/topics/DFT+U), [/topics/DMFT](/topics/DMFT)
 Lindhard, J.  
 *On the properties of a gas of charged particles*  
 Mat. Fys. Medd. Dan. Vid. Selsk. **28**, 8 (1954)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Lindhard1954">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Lindhard1954" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lindhard1954">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Lindhard1954">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Lindhard1954" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Lindhard1954">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Lindhard1954">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Lindhard1954,
-    author = &quot;Lindhard, J.&quot;,
-    title = &quot;On the properties of a gas of charged particles&quot;,
-    journal = &quot;Mat. Fys. Medd. Dan. Vid. Selsk.&quot;,
-    year = &quot;1954&quot;,
-    volume = &quot;28&quot;,
-    pages = &quot;8&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Lindhard1954</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Lindhard, J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;On the properties of a gas of charged particles&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Mat. Fys. Medd. Dan. Vid. Selsk.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1954&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;28&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;8&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4494,28 +4240,26 @@ Luttinger, J.M., Kohn, W.
 *{Motion of Electrons and Holes in Perturbed Periodic Fields}*  
 Phys. Rev. **97**, 869--883 (1955)  
 DOI: <https://doi.org/10.1103/PhysRev.97.869>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Luttinger1955">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Luttinger1955" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Luttinger1955">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Luttinger1955">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Luttinger1955" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Luttinger1955">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Luttinger1955">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Luttinger1955,
-    author = &quot;Luttinger, J.M. and Kohn, W.&quot;,
-    title = &quot;{Motion of Electrons and Holes in Perturbed Periodic Fields}&quot;,
-    journal = &quot;Phys. Rev.&quot;,
-    year = &quot;1955&quot;,
-    volume = &quot;97&quot;,
-    number = &quot;4&quot;,
-    pages = &quot;869--883&quot;,
-    doi = &quot;10.1103/PhysRev.97.869&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Luttinger1955</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Luttinger, J.M. and Kohn, W.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;{Motion of Electrons and Holes in Perturbed Periodic Fields}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1955&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;97&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;869--883&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRev.97.869&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4529,28 +4273,26 @@ Referred to in: [/topics/EffMass](/topics/EffMass)
 Ma, Pui-Wai, Dudarev, S. L.  
 *Constrained density functional for noncollinear magnetism*  
 Phys. Rev. B **91**, 054420 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ma2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ma2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ma2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ma2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ma2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ma2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ma2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Ma2015,
-    author = &quot;Ma, Pui-Wai and Dudarev, S. L.&quot;,
-    title = &quot;Constrained density functional for noncollinear magnetism&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;91&quot;,
-    issue = &quot;5&quot;,
-    pages = &quot;054420&quot;,
-    numpages = &quot;11&quot;,
-    year = &quot;2015&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Ma2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ma, Pui-Wai and Dudarev, S. L.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Constrained density functional for noncollinear magnetism&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;91&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;054420&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;11&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4564,27 +4306,25 @@ Referred to in: [/topics/MagMom](/topics/MagMom)
 Maintz, S., Eck, B., Dronskowski, R.  
 *Speeding up plane-wave electronic-structure calculations using graphics-processing units*  
 Comp. Phys. Comm. **182**, 1421--1427 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Maintz2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Maintz2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Maintz2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Maintz2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Maintz2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Maintz2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Maintz2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Maintz2012,
-    author = &quot;Maintz, S. and Eck, B. and Dronskowski, R.&quot;,
-    title = &quot;Speeding up plane-wave electronic-structure calculations using graphics-processing units&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    volume = &quot;182&quot;,
-    number = &quot;7&quot;,
-    pages = &quot;1421--1427&quot;,
-    year = &quot;2012&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Maintz2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Maintz, S. and Eck, B. and Dronskowski, R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Speeding up plane-wave electronic-structure calculations using graphics-processing units&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;182&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1421--1427&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4597,27 +4337,25 @@ Comp. Phys. Comm. **182**, 1421--1427 (2012)
 Marek, A., Blum, V., Johanni, R., Havu, V., Lang, B., Auckenthaler, T., Heinecke, A., Bungartz, H.-J., Lederer, H.  
 *The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science*  
 J. Phys.: Cond. Matt. **26**, 1--15 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Marek2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Marek2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marek2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Marek2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Marek2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marek2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Marek2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Marek2014,
-    author = &quot;Marek, A. and Blum, V. and Johanni, R. and Havu, V. and Lang, B. and Auckenthaler, T. and Heinecke, A. and Bungartz, H.-J. and Lederer, H.&quot;,
-    title = &quot;The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science&quot;,
-    journal = &quot;J. Phys.: Cond. Matt.&quot;,
-    volume = &quot;26&quot;,
-    number = &quot;21&quot;,
-    pages = &quot;1--15&quot;,
-    year = &quot;2014&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Marek2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Marek, A. and Blum, V. and Johanni, R. and Havu, V. and Lang, B. and Auckenthaler, T. and Heinecke, A. and Bungartz, H.-J. and Lederer, H.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys.: Cond. Matt.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;26&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;21&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1--15&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4631,28 +4369,26 @@ Marques, M. A. L., Oliveira, M. J. T., Burnus, T.
 *{Libxc: A library of exchange and correlation functionals for density functional theory}*  
 Comput. Phys. Commun. **183**, 2272--2281 (2012)  
 DOI: <https://doi.org/10.1016/j.cpc.2012.05.007>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Marques2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Marques2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marques2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Marques2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Marques2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marques2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Marques2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Marques2012,
-    author = &quot;Marques, M. A. L. and Oliveira, M. J. T. and Burnus, T.&quot;,
-    doi = &quot;10.1016/j.cpc.2012.05.007&quot;,
-    issn = &quot;00104655&quot;,
-    journal = &quot;Comput. Phys. Commun.&quot;,
-    pages = &quot;2272--2281&quot;,
-    title = &quot;{Libxc: A library of exchange and correlation functionals for density functional theory}&quot;,
-    volume = &quot;183&quot;,
-    year = &quot;2012&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Marques2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Marques, M. A. L. and Oliveira, M. J. T. and Burnus, T.&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.cpc.2012.05.007&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;00104655&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comput. Phys. Commun.&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;2272--2281&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;{Libxc: A library of exchange and correlation functionals for density functional theory}&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;183&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4665,26 +4401,24 @@ DOI: <https://doi.org/10.1016/j.cpc.2012.05.007>
 Marx, D., Parrinello, M.  
 *Ab initio path integral molecular dynamics: Basic ideas*  
 J. Chem. Phys. **104**, 4077 (1996)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Marx1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Marx1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marx1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Marx1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Marx1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Marx1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Marx1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Marx1996,
-    Author = &quot;Marx, D. and Parrinello, M.&quot;,
-    Title = &quot;Ab initio path integral molecular dynamics: Basic ideas&quot;,
-    Journal = &quot;J. Chem. Phys.&quot;,
-    Volume = &quot;104&quot;,
-    Pages = &quot;4077&quot;,
-    year = &quot;1996&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Marx1996</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Marx, D. and Parrinello, M.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Ab initio path integral molecular dynamics: Basic ideas&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;104&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;4077&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4699,28 +4433,26 @@ Mecholsky, N.A., Resca, L., Pegg, I.L., Fornari, M.
 *{Theory of band warping and its effects on thermoelectronic transport properties}*  
 Phys. Rev. B **89**, 155131 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.155131>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Mecholsky2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Mecholsky2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Mecholsky2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Mecholsky2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Mecholsky2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Mecholsky2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Mecholsky2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Mecholsky2014,
-    author = &quot;Mecholsky, N.A. and Resca, L. and Pegg, I.L. and Fornari, M.&quot;,
-    title = &quot;{Theory of band warping and its effects on thermoelectronic transport properties}&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2014&quot;,
-    volume = &quot;89&quot;,
-    number = &quot;15&quot;,
-    pages = &quot;155131&quot;,
-    doi = &quot;10.1103/PhysRevB.89.155131&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Mecholsky2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Mecholsky, N.A. and Resca, L. and Pegg, I.L. and Fornari, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;{Theory of band warping and its effects on thermoelectronic transport properties}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;155131&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.89.155131&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4734,26 +4466,24 @@ Referred to in: [/topics/EffMass](/topics/EffMass)
 Medeiros, Paulo V. C., Stafstr\"om, Sven, Bj\"ork, Jonas  
 *Effects of extrinsic and intrinsic perturbations on the electronic structure of graphene: Retaining an effective primitive cell band structure by band unfolding*  
 Phys. Rev. B **89**, 041407 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Medeiros2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Medeiros2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Medeiros2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Medeiros2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Medeiros2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Medeiros2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Medeiros2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Medeiros2014,
-    Author = {Medeiros, Paulo V. C. and Stafstr\&quot;om, Sven and Bj\&quot;ork, Jonas},
-    Title = &quot;Effects of extrinsic and intrinsic perturbations on the electronic structure of graphene: Retaining an effective primitive cell band structure by band unfolding&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2014&quot;,
-    Pages = &quot;041407&quot;,
-    Volume = &quot;89&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Medeiros2014</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">{Medeiros, Paulo V. C. and Stafstr\&quot;om, Sven and Bj\&quot;ork, Jonas}</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Effects of extrinsic and intrinsic perturbations on the electronic structure of graphene: Retaining an effective primitive cell band structure by band unfolding&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;041407&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4767,26 +4497,24 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 Methfessel, M., Paxton, T.  
 *High-precision sampling for Brillouin-Zone integration in metals*  
 Phys. Rev. B **40**, 3616 (1989)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Methfessel1989">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Methfessel1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Methfessel1989">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Methfessel1989">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Methfessel1989" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Methfessel1989">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Methfessel1989">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Methfessel1989,
-    author = &quot;Methfessel, M. and Paxton, T.&quot;,
-    title = &quot;High-precision sampling for Brillouin-Zone integration in metals&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;40&quot;,
-    pages = &quot;3616&quot;,
-    year = &quot;1989&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Methfessel1989</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Methfessel, M. and Paxton, T.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;High-precision sampling for Brillouin-Zone integration in metals&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;40&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;3616&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1989&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4800,28 +4528,26 @@ Referred to in: [/variables/basic](/variables/basic)
 Mills, G., J{\'o}nsson, H.  
 *Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems*  
 Phys. Rev. Lett. **72**, 1124 (1994)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Mills1994">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Mills1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Mills1994">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Mills1994">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Mills1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Mills1994">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Mills1994">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Mills1994,
-    author = &quot;Mills, G. and J{\'o}nsson, H.&quot;,
-    title = &quot;Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;72&quot;,
-    number = &quot;7&quot;,
-    pages = &quot;1124&quot;,
-    year = &quot;1994&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Mills1994</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Mills, G. and J{\&#39;o}nsson, H.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Quantum and thermal effects in H$_2$ dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;72&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1124&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4835,27 +4561,25 @@ Referred to in: [/topics/TransPath](/topics/TransPath)
 Momma, K., Izumi, F.  
 *{VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data*  
 J. Appl. Crystallogr. **44**, 1272--1276 (2011)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Momma2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Momma2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Momma2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Momma2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Momma2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Momma2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Momma2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Momma2011,
-    Author = &quot;Momma, K. and Izumi, F.&quot;,
-    Title = &quot;{VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data&quot;,
-    Journal = &quot;J. Appl. Crystallogr.&quot;,
-    Year = &quot;2011&quot;,
-    Number = &quot;6&quot;,
-    Pages = &quot;1272--1276&quot;,
-    Volume = &quot;44&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Momma2011</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Momma, K. and Izumi, F.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;{VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;J. Appl. Crystallogr.&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span>
+    <span class="na">Number</span> <span class="p">=</span> <span class="s">&quot;6&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;1272--1276&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;44&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4868,26 +4592,24 @@ J. Appl. Crystallogr. **44**, 1272--1276 (2011)
 Mosca Conte, A.  
 *Quantum mechanical modeling of nano magnetism*  
 SISSA (2007)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Moscaconte2007">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Moscaconte2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Moscaconte2007">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Moscaconte2007">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Moscaconte2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Moscaconte2007">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Moscaconte2007">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@phdthesis{Moscaconte2007,
-    author = &quot;Mosca Conte, A.&quot;,
-    title = &quot;Quantum mechanical modeling of nano magnetism&quot;,
-    school = &quot;SISSA&quot;,
-    year = &quot;2007&quot;,
-    address = &quot;Trieste Italy&quot;,
-    optURI = &quot;http://hdl.handle.net/20.500.11767/3935&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">Moscaconte2007</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Mosca Conte, A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Quantum mechanical modeling of nano magnetism&quot;</span><span class="p">,</span>
+    <span class="na">school</span> <span class="p">=</span> <span class="s">&quot;SISSA&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2007&quot;</span><span class="p">,</span>
+    <span class="na">address</span> <span class="p">=</span> <span class="s">&quot;Trieste Italy&quot;</span><span class="p">,</span>
+    <span class="na">optURI</span> <span class="p">=</span> <span class="s">&quot;http://hdl.handle.net/20.500.11767/3935&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4902,29 +4624,27 @@ Nieminen, R. M., Boro\'nski, E., Lantto, L. J.
 *Two-component density-functional theory: Application to positron states*  
 Phys. Rev. B **32**, 1377 (1985)  
 DOI: <https://doi.org/10.1103/PhysRevB.32.1377>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Nieminen1985">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Nieminen1985" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Nieminen1985">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Nieminen1985">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Nieminen1985" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Nieminen1985">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Nieminen1985">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Nieminen1985,
-    author = &quot;Nieminen, R. M. and Boro\'nski, E. and Lantto, L. J.&quot;,
-    title = &quot;Two-component density-functional theory: Application to positron states&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;32&quot;,
-    issue = &quot;2&quot;,
-    pages = &quot;1377&quot;,
-    year = &quot;1985&quot;,
-    doi = &quot;10.1103/PhysRevB.32.1377&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Nieminen1985</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Nieminen, R. M. and Boro\&#39;nski, E. and Lantto, L. J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Two-component density-functional theory: Application to positron states&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;32&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1377&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1985&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.32.1377&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4937,27 +4657,25 @@ DOI: <https://doi.org/10.1103/PhysRevB.32.1377>
 Nunes, R. W., Gonze, X.  
 *Berry-phase treatment of the homogeneous electric field perturbation in insulators*  
 Phys. Rev. B **63**, 155107 (2001)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Nunes2001">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Nunes2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Nunes2001">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Nunes2001">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Nunes2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Nunes2001">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Nunes2001">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Nunes2001,
-    author = &quot;Nunes, R. W. and Gonze, X.&quot;,
-    title = &quot;Berry-phase treatment of the homogeneous electric field perturbation in insulators&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;63&quot;,
-    number = &quot;15&quot;,
-    pages = &quot;155107&quot;,
-    year = &quot;2001&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Nunes2001</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Nunes, R. W. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Berry-phase treatment of the homogeneous electric field perturbation in insulators&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;63&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;155107&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2001&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -4972,32 +4690,30 @@ Ong, S.P., Richards, W.D., Jain, A., Hautier, G., Kocher, M., Cholia, S., Gunter
 *Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis*  
 Comp. Mat. Sci. **68**, 314 - 319 (2013)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0927025612006295>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ong2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ong2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ong2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ong2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ong2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ong2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ong2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Ong2013,
-    author = &quot;Ong, S.P. and Richards, W.D. and Jain, A. and Hautier, G. and Kocher, M. and Cholia, S. and Gunter, D. and Chevrier, V.L. and Persson, K.A. and Ceder, G.&quot;,
-    title = &quot;Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis&quot;,
-    journal = &quot;Comp. Mat. Sci.&quot;,
-    volume = &quot;68&quot;,
-    number = &quot;0&quot;,
-    pages = &quot;314 - 319&quot;,
-    year = &quot;2013&quot;,
-    note = &quot;&quot;,
-    issn = &quot;0927-0256&quot;,
-    doi = &quot;10.1016/j.commatsci.2012.10.028&quot;,
-    url = &quot;http://www.sciencedirect.com/science/article/pii/S0927025612006295&quot;,
-    keywords = &quot;High-throughput&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Ong2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ong, S.P. and Richards, W.D. and Jain, A. and Hautier, G. and Kocher, M. and Cholia, S. and Gunter, D. and Chevrier, V.L. and Persson, K.A. and Ceder, G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Python Materials Genomics (pymatgen): A robust, open-source python library for materials analysis&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Mat. Sci.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;68&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;314 - 319&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0927-0256&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.commatsci.2012.10.028&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://www.sciencedirect.com/science/article/pii/S0927025612006295&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;High-throughput&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5011,29 +4727,27 @@ Onida, G., Reining, L., Rubio, A.
 *Electronic excitations: density-functional versus many-body Green's-function approaches*  
 Rev. Mod. Phys. **74**, 601--659 (2002)  
 DOI: <https://doi.org/10.1103/RevModPhys.74.601>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Onida2002">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Onida2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Onida2002">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Onida2002">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Onida2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Onida2002">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Onida2002">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Onida2002,
-    author = &quot;Onida, G. and Reining, L. and Rubio, A.&quot;,
-    title = &quot;Electronic excitations: density-functional versus many-body Green's-function approaches&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    year = &quot;2002&quot;,
-    volume = &quot;74&quot;,
-    pages = &quot;601--659&quot;,
-    doi = &quot;10.1103/RevModPhys.74.601&quot;,
-    numpages = &quot;58&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Onida2002</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Onida, G. and Reining, L. and Rubio, A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electronic excitations: density-functional versus many-body Green&#39;s-function approaches&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2002&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;74&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;601--659&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.74.601&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;58&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5048,30 +4762,28 @@ Payne, M. C., Teter, M. P., Allan, D. C., Arias, T. A., Joannopoulos, J. D.
 *Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients*  
 Rev. Mod. Phys. **64**, 1045--1097 (1992)  
 DOI: <https://doi.org/10.1103/RevModPhys.64.1045>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Payne1992">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Payne1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Payne1992">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Payne1992">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Payne1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Payne1992">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Payne1992">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Payne1992,
-    author = &quot;Payne, M. C. and Teter, M. P. and Allan, D. C. and Arias, T. A. and Joannopoulos, J. D.&quot;,
-    title = &quot;Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    volume = &quot;64&quot;,
-    issue = &quot;4&quot;,
-    pages = &quot;1045--1097&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1992&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/RevModPhys.64.1045&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Payne1992</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Payne, M. C. and Teter, M. P. and Allan, D. C. and Arias, T. A. and Joannopoulos, J. D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;64&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1045--1097&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1992&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.64.1045&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5085,26 +4797,24 @@ Referred to in: [/topics/BSE](/topics/BSE)
 Perdew, J.P., Zunger, A.  
 *Self-interaction correction to density-functional approximations for many-electron systems*  
 Phys. Rev. B **23**, 5048 (1981)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Perdew1981">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Perdew1981" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Perdew1981">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Perdew1981">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Perdew1981" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Perdew1981">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Perdew1981">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Perdew1981,
-    author = &quot;Perdew, J.P. and Zunger, A.&quot;,
-    title = &quot;Self-interaction correction to density-functional approximations for many-electron systems&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;23&quot;,
-    pages = &quot;5048&quot;,
-    year = &quot;1981&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Perdew1981</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Perdew, J.P. and Zunger, A.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Self-interaction correction to density-functional approximations for many-electron systems&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;23&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;5048&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1981&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5118,26 +4828,24 @@ Referred to in: [/variables/basic](/variables/basic)
 Perrot, F.  
 *Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations*  
 Phys. Rev. A **20**, 586-594 (1979)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Perrot1979">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Perrot1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Perrot1979">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Perrot1979">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Perrot1979" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Perrot1979">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Perrot1979">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Perrot1979,
-    author = &quot;Perrot, F.&quot;,
-    title = &quot;Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations&quot;,
-    journal = &quot;Phys. Rev. A&quot;,
-    volume = &quot;20&quot;,
-    pages = &quot;586-594&quot;,
-    year = &quot;1979&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Perrot1979</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Perrot, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Gradient correction to the statistical electronic free energy at non-zero temperatures: Application to equation-of-state calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. A&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;20&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;586-594&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1979&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5152,32 +4860,30 @@ Petrilli, Helena M., Bl\"ochl, Peter E., Blaha, Peter, Schwarz, Karlheinz
 *Electric-field-gradient calculations using the projector augmented wave method*  
 Phys. Rev. B **57**, 14690--14697 (1998)  
 URL: <https://link.aps.org/doi/10.1103/PhysRevB.57.14690>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Petrilli1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Petrilli1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Petrilli1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Petrilli1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Petrilli1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Petrilli1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Petrilli1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Petrilli1998,
-    author = {Petrilli, Helena M. and Bl\&quot;ochl, Peter E. and Blaha, Peter and Schwarz, Karlheinz},
-    title = &quot;Electric-field-gradient calculations using the projector augmented wave method&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;57&quot;,
-    issue = &quot;23&quot;,
-    pages = &quot;14690--14697&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1998&quot;,
-    month = &quot;Jun&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.57.14690&quot;,
-    url = &quot;https://link.aps.org/doi/10.1103/PhysRevB.57.14690&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Petrilli1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">{Petrilli, Helena M. and Bl\&quot;ochl, Peter E. and Blaha, Peter and Schwarz, Karlheinz}</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electric-field-gradient calculations using the projector augmented wave method&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;57&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;23&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;14690--14697&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;Jun&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.57.14690&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://link.aps.org/doi/10.1103/PhysRevB.57.14690&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5192,32 +4898,30 @@ Pickard, Chris J., Mauri, Francesco
 *All-electron magnetic response with pseudopotentials: NMR chemical shifts*  
 Phys. Rev. B **63**, 245101 (2001)  
 URL: <https://link.aps.org/doi/10.1103/PhysRevB.63.245101>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Pickard2001">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Pickard2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pickard2001">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Pickard2001">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Pickard2001" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pickard2001">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Pickard2001">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Pickard2001,
-    author = &quot;Pickard, Chris J. and Mauri, Francesco&quot;,
-    title = &quot;All-electron magnetic response with pseudopotentials: NMR chemical shifts&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;63&quot;,
-    issue = &quot;24&quot;,
-    pages = &quot;245101&quot;,
-    numpages = &quot;13&quot;,
-    year = &quot;2001&quot;,
-    month = &quot;May&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.63.245101&quot;,
-    url = &quot;https://link.aps.org/doi/10.1103/PhysRevB.63.245101&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Pickard2001</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Pickard, Chris J. and Mauri, Francesco&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;All-electron magnetic response with pseudopotentials: NMR chemical shifts&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;63&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;24&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;245101&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;13&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2001&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;May&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.63.245101&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://link.aps.org/doi/10.1103/PhysRevB.63.245101&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5231,26 +4935,24 @@ Referred to in: [/topics/EFG](/topics/EFG)
 Warren E. Pickett, Henry Krakauer,, Allen, Philip B.  
 *Smooth Fourier interpolation of periodic functions*  
 Phys. Rev. B **38**, 2721 (1988)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Pickett1988">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Pickett1988" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pickett1988">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Pickett1988">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Pickett1988" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pickett1988">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Pickett1988">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Pickett1988,
-    author = &quot;Warren E. Pickett, Henry Krakauer, and Allen, Philip B.&quot;,
-    title = &quot;Smooth Fourier interpolation of periodic functions&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;38&quot;,
-    pages = &quot;2721&quot;,
-    year = &quot;1988&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Pickett1988</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Warren E. Pickett, Henry Krakauer, and Allen, Philip B.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Smooth Fourier interpolation of periodic functions&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;38&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;2721&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1988&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5264,26 +4966,24 @@ Referred to in: [/variables/basic](/variables/basic)
 Ponc\'e, S., Antonius, G., Boulanger, P., Cannuccia, E., Marini, A., C\^ot\'e, M., Gonze, X.  
 *Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo*  
 Comp. Mat. Sci. **83**, 341 - 348 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ponce2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ponce2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ponce2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ponce2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ponce2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ponce2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ponce2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Ponce2014,
-    author = &quot;Ponc\'e, S. and Antonius, G. and Boulanger, P. and Cannuccia, E. and Marini, A. and C\^ot\'e, M. and Gonze, X.&quot;,
-    title = &quot;Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo&quot;,
-    journal = &quot;Comp. Mat. Sci.&quot;,
-    year = &quot;2014&quot;,
-    volume = &quot;83&quot;,
-    pages = &quot;341 - 348&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Ponce2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ponc\&#39;e, S. and Antonius, G. and Boulanger, P. and Cannuccia, E. and Marini, A. and C\^ot\&#39;e, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Mat. Sci.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;83&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;341 - 348&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5297,26 +4997,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/TDe
 Ponc\'e, S., Antonius, G., Gillet, Y., Boulanger, P., Laflamme Janssen, J., Marini, A., C\^ot\'e, M., Gonze, X.  
 *Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation*  
 Phys. Rev. B **90**, 214304 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ponce2014a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ponce2014a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ponce2014a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ponce2014a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ponce2014a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ponce2014a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ponce2014a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Ponce2014a,
-    author = &quot;Ponc\'e, S. and Antonius, G. and Gillet, Y. and Boulanger, P. and Laflamme Janssen, J. and Marini, A. and C\^ot\'e, M. and Gonze, X.&quot;,
-    title = &quot;Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2014&quot;,
-    volume = &quot;90&quot;,
-    pages = &quot;214304&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Ponce2014a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ponc\&#39;e, S. and Antonius, G. and Gillet, Y. and Boulanger, P. and Laflamme Janssen, J. and Marini, A. and C\^ot\&#39;e, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Temperature dependence of electronic eigenenergies in the adiabatic harmonic approximation&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;90&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;214304&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5330,26 +5028,24 @@ Referred to in: [/topics/TDepES](/topics/TDepES), [/tutorials/tdepes](/tutorials
 Ponc\'e, S., Gillet, Y., Laflamme Janssen, J., Marini, A., Verstraete, M., Gonze, X.  
 *Temperature dependence of the electronic structure of semiconductors and insulators*  
 J. Chem. Phys. **143**, 102813 (2015)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ponce2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ponce2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ponce2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ponce2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ponce2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ponce2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ponce2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Ponce2015,
-    author = &quot;Ponc\'e, S. and Gillet, Y. and Laflamme Janssen, J. and Marini, A. and Verstraete, M. and Gonze, X.&quot;,
-    title = &quot;Temperature dependence of the electronic structure of semiconductors and insulators&quot;,
-    journal = &quot;J. Chem. Phys.&quot;,
-    year = &quot;2015&quot;,
-    volume = &quot;143&quot;,
-    pages = &quot;102813&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Ponce2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ponc\&#39;e, S. and Gillet, Y. and Laflamme Janssen, J. and Marini, A. and Verstraete, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Temperature dependence of the electronic structure of semiconductors and insulators&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;143&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;102813&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5363,26 +5059,24 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/TDe
 Popescu, V., Zunger, A.  
 *Effective Band Structure of Random Alloys*  
 Phys. Rev. Lett. **104**, 236403 (2010)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Popescu2010">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Popescu2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Popescu2010">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Popescu2010">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Popescu2010" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Popescu2010">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Popescu2010">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Popescu2010,
-    Author = &quot;Popescu, V. and Zunger, A.&quot;,
-    Title = &quot;Effective Band Structure of Random Alloys&quot;,
-    Journal = &quot;Phys. Rev. Lett.&quot;,
-    Year = &quot;2010&quot;,
-    Pages = &quot;236403&quot;,
-    Volume = &quot;104&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Popescu2010</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Popescu, V. and Zunger, A.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Effective Band Structure of Random Alloys&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2010&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;236403&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;104&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5396,26 +5090,24 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 Popescu, V., Zunger, A.  
 *Extracting E versus k effective band structure from supercell calculations on alloys and impurities*  
 Phys. Rev. B **85**, 085201 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Popescu2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Popescu2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Popescu2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Popescu2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Popescu2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Popescu2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Popescu2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Popescu2012,
-    Author = &quot;Popescu, V. and Zunger, A.&quot;,
-    Title = &quot;Extracting E versus k effective band structure from supercell calculations on alloys and impurities&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2012&quot;,
-    Pages = &quot;085201&quot;,
-    Volume = &quot;85&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Popescu2012</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Popescu, V. and Zunger, A.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Extracting E versus k effective band structure from supercell calculations on alloys and impurities&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;085201&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;85&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5429,26 +5121,24 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 Pouillon, Y., Beuken, J. -M., Deutsch, T., Torrent, M., Gonze, X.  
 *Organizing software growth and distributed development: the case of {ABINIT}*  
 Comput. Sci. Eng. **13**, 62 (2011)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Pouillon2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Pouillon2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pouillon2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Pouillon2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Pouillon2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Pouillon2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Pouillon2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Pouillon2011,
-    Author = &quot;Pouillon, Y. and Beuken, J. -M. and Deutsch, T. and Torrent, M. and Gonze, X.&quot;,
-    Title = &quot;Organizing software growth and distributed development: the case of {ABINIT}&quot;,
-    Journal = &quot;Comput. Sci. Eng.&quot;,
-    Volume = &quot;13&quot;,
-    Pages = &quot;62&quot;,
-    year = &quot;2011&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Pouillon2011</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Pouillon, Y. and Beuken, J. -M. and Deutsch, T. and Torrent, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Organizing software growth and distributed development: the case of {ABINIT}&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Comput. Sci. Eng.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;13&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;62&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5462,29 +5152,27 @@ Profeta, M., Mauri, F., Pickard, C. J.
 *Accurate First Principles Prediction of 17 O NMR Parameters in SiO2:? Assignment of the Zeolite Ferrierite Spectrum*  
 J. Am. Chem. Soc. **125**, 541 (2003)  
 DOI: <https://doi.org/10.1021/ja027124r>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Profeta2003">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Profeta2003" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Profeta2003">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Profeta2003">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Profeta2003" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Profeta2003">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Profeta2003">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Profeta2003,
-    author = &quot;Profeta, M. and Mauri, F. and Pickard, C. J.&quot;,
-    title = &quot;Accurate First Principles Prediction of 17 O NMR Parameters in SiO2:? Assignment of the Zeolite Ferrierite Spectrum&quot;,
-    journal = &quot;J. Am. Chem. Soc.&quot;,
-    volume = &quot;125&quot;,
-    issue = &quot;&quot;,
-    pages = &quot;541&quot;,
-    year = &quot;2003&quot;,
-    doi = &quot;10.1021/ja027124r&quot;,
-    publisher = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Profeta2003</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Profeta, M. and Mauri, F. and Pickard, C. J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Accurate First Principles Prediction of 17 O NMR Parameters in SiO2:? Assignment of the Zeolite Ferrierite Spectrum&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Am. Chem. Soc.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;125&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;541&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2003&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1021/ja027124r&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5499,29 +5187,27 @@ Puska, M. J., Nieminen, R. M.
 *Theory of positrons in solids and on solid surfaces*  
 Rev. Mod. Phys. **66**, 841 (1994)  
 DOI: <https://doi.org/10.1103/RevModPhys.66.841>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Puska1994">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Puska1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Puska1994">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Puska1994">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Puska1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Puska1994">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Puska1994">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Puska1994,
-    author = &quot;Puska, M. J. and Nieminen, R. M.&quot;,
-    title = &quot;Theory of positrons in solids and on solid surfaces&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    volume = &quot;66&quot;,
-    issue = &quot;3&quot;,
-    pages = &quot;841&quot;,
-    year = &quot;1994&quot;,
-    doi = &quot;10.1103/RevModPhys.66.841&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Puska1994</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Puska, M. J. and Nieminen, R. M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Theory of positrons in solids and on solid surfaces&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;66&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;841&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.66.841&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5535,29 +5221,27 @@ Puska, M. J., Seitsonen, A. P., Nieminen, R. M.
 *Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations*  
 Phys. Rev. B **52**, 10947 (1995)  
 DOI: <https://doi.org/10.1103/PhysRevB.52.10947>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Puska1995">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Puska1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Puska1995">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Puska1995">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Puska1995" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Puska1995">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Puska1995">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Puska1995,
-    author = &quot;Puska, M. J. and Seitsonen, A. P. and Nieminen, R. M.&quot;,
-    title = &quot;Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;52&quot;,
-    issue = &quot;15&quot;,
-    pages = &quot;10947&quot;,
-    year = &quot;1995&quot;,
-    doi = &quot;10.1103/PhysRevB.52.10947&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Puska1995</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Puska, M. J. and Seitsonen, A. P. and Nieminen, R. M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;52&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;10947&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1995&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.52.10947&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5570,27 +5254,25 @@ DOI: <https://doi.org/10.1103/PhysRevB.52.10947>
 Rangel, T., Caliste, D., Genovese, L., Torrent, M.  
 *A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set*  
 Computer Physics Communication **208**, 1-8 (2016)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rangel2016">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rangel2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rangel2016">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rangel2016">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rangel2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rangel2016">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rangel2016">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rangel2016,
-    author = &quot;Rangel, T. and Caliste, D. and Genovese, L. and Torrent, M.&quot;,
-    title = &quot;A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set&quot;,
-    volume = &quot;208&quot;,
-    number = &quot;&quot;,
-    journal = &quot;Computer Physics Communication&quot;,
-    year = &quot;2016&quot;,
-    pages = &quot;1-8&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rangel2016</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Rangel, T. and Caliste, D. and Genovese, L. and Torrent, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;208&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Computer Physics Communication&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2016&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1-8&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5605,30 +5287,28 @@ Rappe, A.M., Rabe, K.M., Kaxiras, E.S., Joannopoulos, J.D.
 *Optimized pseudopotentials*  
 Phys. Rev. B **41**, 1227--1230 (1990)  
 DOI: <https://doi.org/10.1103/PhysRevB.41.1227>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rappe1990">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rappe1990" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rappe1990">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rappe1990">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rappe1990" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rappe1990">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rappe1990">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rappe1990,
-    author = &quot;Rappe, A.M. and Rabe, K.M. and Kaxiras, E.S. and Joannopoulos, J.D.&quot;,
-    title = &quot;Optimized pseudopotentials&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;41&quot;,
-    issue = &quot;2&quot;,
-    pages = &quot;1227--1230&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;1990&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.41.1227&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rappe1990</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Rappe, A.M. and Rabe, K.M. and Kaxiras, E.S. and Joannopoulos, J.D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Optimized pseudopotentials&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;41&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1227--1230&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1990&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.41.1227&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5641,28 +5321,26 @@ DOI: <https://doi.org/10.1103/PhysRevB.41.1227>
 Rauch, C., Makkonen, I., Tuomisto, F.  
 *Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}*  
 Phys. Rev. B **84**, 125201 (2011)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rauch2011">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rauch2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rauch2011">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rauch2011">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rauch2011" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rauch2011">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rauch2011">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rauch2011,
-    author = &quot;Rauch, C. and Makkonen, I. and Tuomisto, F.&quot;,
-    title = &quot;Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;84&quot;,
-    number = &quot;12&quot;,
-    pages = &quot;125201&quot;,
-    year = &quot;2011&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rauch2011</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Rauch, C. and Makkonen, I. and Tuomisto, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;84&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;12&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125201&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2011&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5675,26 +5353,24 @@ Phys. Rev. B **84**, 125201 (2011)
 Resta, R.  
 *Macroscopic polarization in crystalline dielectrics: the geometric phase approach*  
 Rev. Mod. Phys. **66**, 899--915 (1994)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Resta1994">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Resta1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Resta1994">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Resta1994">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Resta1994" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Resta1994">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Resta1994">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Resta1994,
-    author = &quot;Resta, R.&quot;,
-    title = &quot;Macroscopic polarization in crystalline dielectrics: the geometric phase approach&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    volume = &quot;66&quot;,
-    pages = &quot;899--915&quot;,
-    year = &quot;1994&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Resta1994</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Resta, R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Macroscopic polarization in crystalline dielectrics: the geometric phase approach&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;66&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;899--915&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1994&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5709,30 +5385,28 @@ Restrepo, O. D., Varga, K., Pantelides, S. T.
 *First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering*  
 App. Phys. Lett. **94**,  (2009)  
 URL: <http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Restrepo2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Restrepo2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Restrepo2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Restrepo2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Restrepo2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Restrepo2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Restrepo2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Restrepo2009,
-    author = &quot;Restrepo, O. D. and Varga, K. and Pantelides, S. T.&quot;,
-    title = &quot;First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering&quot;,
-    journal = &quot;App. Phys. Lett.&quot;,
-    year = &quot;2009&quot;,
-    volume = &quot;94&quot;,
-    number = &quot;21&quot;,
-    eid = &quot;212103&quot;,
-    pages = &quot;&quot;,
-    url = &quot;http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189&quot;,
-    doi = &quot;10.1063/1.3147189&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Restrepo2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Restrepo, O. D. and Varga, K. and Pantelides, S. T.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles calculations of electron mobilities in silicon: Phonon and Coulomb scattering&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;App. Phys. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;94&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;21&quot;</span><span class="p">,</span>
+    <span class="na">eid</span> <span class="p">=</span> <span class="s">&quot;212103&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1063/1.3147189&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5746,28 +5420,26 @@ Rieger, M., Steinbeck, L., White, I. D., Rojas, H. N., Godby, R. W.
 *The {GW} space-time method for the self-energy of large systems*  
 Comp. Phys. Comm. **117**, 211--228 (1999)  
 DOI: <https://doi.org/10.1016/S0010-4655(98)00174-X>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rieger1999">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rieger1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rieger1999">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rieger1999">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rieger1999" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rieger1999">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rieger1999">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rieger1999,
-    author = &quot;Rieger, M. and Steinbeck, L. and White, I. D. and Rojas, H. N. and Godby, R. W.&quot;,
-    title = &quot;The {GW} space-time method for the self-energy of large systems&quot;,
-    journal = &quot;Comp. Phys. Comm.&quot;,
-    year = &quot;1999&quot;,
-    volume = &quot;117&quot;,
-    number = &quot;3&quot;,
-    pages = &quot;211--228&quot;,
-    doi = &quot;10.1016/S0010-4655(98)00174-X&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rieger1999</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Rieger, M. and Steinbeck, L. and White, I. D. and Rojas, H. N. and Godby, R. W.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;The {GW} space-time method for the self-energy of large systems&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comp. Phys. Comm.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1999&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;117&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;211--228&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/S0010-4655(98)00174-X&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5782,30 +5454,28 @@ Rohlfing, M., Louie, S.G.
 *Electron-hole excitations and optical spectra from first principles*  
 Phys. Rev. B **62**, 4927--4944 (2000)  
 DOI: <https://doi.org/10.1103/PhysRevB.62.4927>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rohlfing2000">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rohlfing2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rohlfing2000">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rohlfing2000">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rohlfing2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rohlfing2000">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rohlfing2000">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rohlfing2000,
-    Author = &quot;Rohlfing, M. and Louie, S.G.&quot;,
-    Title = &quot;Electron-hole excitations and optical spectra from first principles&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2000&quot;,
-    Pages = &quot;4927--4944&quot;,
-    Volume = &quot;62&quot;,
-    Doi = &quot;10.1103/PhysRevB.62.4927&quot;,
-    File = &quot;Rohlfing2000.pdf:Rohlfing2000.pdf:PDF;Rohlfing2000.pdf:Rohlfing2000.pdf:PDF&quot;,
-    Issue = &quot;8&quot;,
-    Publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rohlfing2000</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Rohlfing, M. and Louie, S.G.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Electron-hole excitations and optical spectra from first principles&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2000&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;4927--4944&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;62&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.62.4927&quot;</span><span class="p">,</span>
+    <span class="na">File</span> <span class="p">=</span> <span class="s">&quot;Rohlfing2000.pdf:Rohlfing2000.pdf:PDF;Rohlfing2000.pdf:Rohlfing2000.pdf:PDF&quot;</span><span class="p">,</span>
+    <span class="na">Issue</span> <span class="p">=</span> <span class="s">&quot;8&quot;</span><span class="p">,</span>
+    <span class="na">Publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5819,27 +5489,25 @@ Rom\'an-P\'erez, G., Soler, J.M.
 *Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes*  
 Phys. Rev. Lett. **103**, 096102 (2009)  
 DOI: <https://doi.org/10.1103/PhysRevLett.103.096102>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Romanperez2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Romanperez2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Romanperez2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Romanperez2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Romanperez2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Romanperez2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Romanperez2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Romanperez2009,
-    author = &quot;Rom\'an-P\'erez, G. and Soler, J.M.&quot;,
-    title = &quot;Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;103&quot;,
-    pages = &quot;096102&quot;,
-    year = &quot;2009&quot;,
-    doi = &quot;10.1103/PhysRevLett.103.096102&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Romanperez2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Rom\&#39;an-P\&#39;erez, G. and Soler, J.M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;103&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;096102&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.103.096102&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5854,26 +5522,24 @@ Rostgaard, C.
 *Exact exchange in density functional calculations*  
 Technical University of Denmark (2006)  
 URL: <https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rostgaard2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rostgaard2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rostgaard2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rostgaard2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rostgaard2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rostgaard2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rostgaard2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@mastersthesis{Rostgaard2006,
-    Author = &quot;Rostgaard, C.&quot;,
-    Title = &quot;Exact exchange in density functional calculations&quot;,
-    School = &quot;Technical University of Denmark&quot;,
-    Address = &quot;Lyngby&quot;,
-    year = &quot;2006&quot;,
-    url = &quot;https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@mastersthesis</span><span class="p">{</span><span class="nl">Rostgaard2006</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Rostgaard, C.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Exact exchange in density functional calculations&quot;</span><span class="p">,</span>
+    <span class="na">School</span> <span class="p">=</span> <span class="s">&quot;Technical University of Denmark&quot;</span><span class="p">,</span>
+    <span class="na">Address</span> <span class="p">=</span> <span class="s">&quot;Lyngby&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5886,26 +5552,24 @@ URL: <https://wiki.fysik.dtu.dk/gpaw/_downloads/rostgaard_master.pdf>
 Rubel, O., Bokhanchuk, A., Ahmed, S. J., Assmann, E.  
 *Unfolding the band structure of disordered solids: from bound states to high-mobility Kane fermions*  
 Phys. Rev. B **90**, 115202 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rubel2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rubel2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rubel2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rubel2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rubel2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rubel2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rubel2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rubel2014,
-    Author = &quot;Rubel, O. and Bokhanchuk, A. and Ahmed, S. J. and Assmann, E.&quot;,
-    Title = &quot;Unfolding the band structure of disordered solids: from bound states to high-mobility Kane fermions&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2014&quot;,
-    Pages = &quot;115202&quot;,
-    Volume = &quot;90&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rubel2014</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Rubel, O. and Bokhanchuk, A. and Ahmed, S. J. and Assmann, E.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Unfolding the band structure of disordered solids: from bound states to high-mobility Kane fermions&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;115202&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;90&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5919,28 +5583,26 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 Rutishauser, H.  
 *Simultaneous iteration method for symmetric matrices*  
 Numerische Mathematik **16**, 205--223 (1970)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Rutishauser1970">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Rutishauser1970" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rutishauser1970">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rutishauser1970">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Rutishauser1970" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Rutishauser1970">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Rutishauser1970">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Rutishauser1970,
-    author = &quot;Rutishauser, H.&quot;,
-    title = &quot;Simultaneous iteration method for symmetric matrices&quot;,
-    journal = &quot;Numerische Mathematik&quot;,
-    volume = &quot;16&quot;,
-    number = &quot;3&quot;,
-    pages = &quot;205--223&quot;,
-    year = &quot;1970&quot;,
-    publisher = &quot;Springer&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Rutishauser1970</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Rutishauser, H.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Simultaneous iteration method for symmetric matrices&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Numerische Mathematik&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;205--223&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1970&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Springer&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5954,28 +5616,26 @@ Sakuma, R., Aryasetiawan, F.
 *First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)*  
 Phys. Rev. B **87**, 165118 (2013)  
 DOI: <https://doi.org/10.1103/PhysRevB.87.165118>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Sakuma2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Sakuma2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sakuma2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sakuma2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Sakuma2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sakuma2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Sakuma2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Sakuma2013,
-    author = &quot;Sakuma, R. and Aryasetiawan, F.&quot;,
-    title = &quot;First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2013&quot;,
-    volume = &quot;87&quot;,
-    pages = &quot;165118&quot;,
-    number = &quot;16&quot;,
-    doi = &quot;10.1103/PhysRevB.87.165118&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Sakuma2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Sakuma, R. and Aryasetiawan, F.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;87&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;165118&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.87.165118&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -5990,28 +5650,26 @@ Savin, A., Jepsen, O., Flad, J., Andersen, O. K., Preuss, H., von Schnering, H. 
 *Electron Localization in Solid-State Structures of the Elements: the Diamond Structure*  
 Angewandte Chemie International Edition in English **31**, 187--188 (1992)  
 DOI: <https://doi.org/10.1002/anie.199201871>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Savin1992">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Savin1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Savin1992">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Savin1992">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Savin1992" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Savin1992">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Savin1992">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Savin1992,
-    author = &quot;Savin, A. and Jepsen, O. and Flad, J. and Andersen, O. K. and Preuss, H. and von Schnering, H. G.&quot;,
-    title = &quot;Electron Localization in Solid-State Structures of the Elements: the Diamond Structure&quot;,
-    journal = &quot;Angewandte Chemie International Edition in English&quot;,
-    volume = &quot;31&quot;,
-    number = &quot;2&quot;,
-    doi = &quot;10.1002/anie.199201871&quot;,
-    pages = &quot;187--188&quot;,
-    year = &quot;1992&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Savin1992</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Savin, A. and Jepsen, O. and Flad, J. and Andersen, O. K. and Preuss, H. and von Schnering, H. G.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electron Localization in Solid-State Structures of the Elements: the Diamond Structure&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Angewandte Chemie International Edition in English&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;31&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1002/anie.199201871&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;187--188&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1992&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6024,26 +5682,24 @@ DOI: <https://doi.org/10.1002/anie.199201871>
 Savrasov, S.Y., Savrasov, D.Y.  
 *Electron-phonon interactions and related physical properties of metals from linear-response theory*  
 Phys. Rev. B **54**, 16487 (1996)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Savrasov1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Savrasov1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Savrasov1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Savrasov1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Savrasov1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Savrasov1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Savrasov1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Savrasov1996,
-    AUTHOR = &quot;Savrasov, S.Y. and Savrasov, D.Y.&quot;,
-    PAGES = &quot;16487&quot;,
-    YEAR = &quot;1996&quot;,
-    TITLE = &quot;Electron-phonon interactions and related physical properties of metals from linear-response theory&quot;,
-    VOLUME = &quot;54&quot;,
-    JOURNAL = &quot;Phys. Rev. B&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Savrasov1996</span><span class="p">,</span>
+    <span class="na">AUTHOR</span> <span class="p">=</span> <span class="s">&quot;Savrasov, S.Y. and Savrasov, D.Y.&quot;</span><span class="p">,</span>
+    <span class="na">PAGES</span> <span class="p">=</span> <span class="s">&quot;16487&quot;</span><span class="p">,</span>
+    <span class="na">YEAR</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span><span class="p">,</span>
+    <span class="na">TITLE</span> <span class="p">=</span> <span class="s">&quot;Electron-phonon interactions and related physical properties of metals from linear-response theory&quot;</span><span class="p">,</span>
+    <span class="na">VOLUME</span> <span class="p">=</span> <span class="s">&quot;54&quot;</span><span class="p">,</span>
+    <span class="na">JOURNAL</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6057,27 +5713,25 @@ Sharma, S., Dewhurst, J. K., Ambrosch-Draxl, C.
 *Linear and second-order optical response of {III}-{V} monolayer superlattices*  
 Phys. Rev. B **67**, 165332 (2003)  
 DOI: <https://doi.org/10.1103/PhysRevB.67.165332>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Sharma2003">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Sharma2003" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sharma2003">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sharma2003">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Sharma2003" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sharma2003">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Sharma2003">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Sharma2003,
-    Author = &quot;Sharma, S. and Dewhurst, J. K. and Ambrosch-Draxl, C.&quot;,
-    Title = &quot;Linear and second-order optical response of {III}-{V} monolayer superlattices&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;2003&quot;,
-    Pages = &quot;165332&quot;,
-    Volume = &quot;67&quot;,
-    Doi = &quot;10.1103/PhysRevB.67.165332&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Sharma2003</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Sharma, S. and Dewhurst, J. K. and Ambrosch-Draxl, C.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Linear and second-order optical response of {III}-{V} monolayer superlattices&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2003&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;165332&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;67&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.67.165332&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6091,27 +5745,25 @@ Sharma, S., {A}mbrosch-{D}raxl, C.
 *{S}econd-{H}armonic Optical Response from First Principles*  
 Phys. Scripta **2004**, 128 (2004)  
 URL: <http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Sharma2004">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Sharma2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sharma2004">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sharma2004">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Sharma2004" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sharma2004">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Sharma2004">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Sharma2004,
-    Author = &quot;Sharma, S. and {A}mbrosch-{D}raxl, C.&quot;,
-    Title = &quot;{S}econd-{H}armonic Optical Response from First Principles&quot;,
-    Journal = &quot;Phys. Scripta&quot;,
-    Year = &quot;2004&quot;,
-    Pages = &quot;128&quot;,
-    Volume = &quot;2004&quot;,
-    Url = &quot;http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Sharma2004</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Sharma, S. and {A}mbrosch-{D}raxl, C.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;{S}econd-{H}armonic Optical Response from First Principles&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Scripta&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2004&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;128&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;2004&quot;</span><span class="p">,</span>
+    <span class="na">Url</span> <span class="p">=</span> <span class="s">&quot;http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6125,27 +5777,25 @@ Shih, B.-C., Zhang, Y., Zhang, W., Zhang, P.
 *Screened Coulomb interaction of localized electrons in solids from first principles*  
 Phys. Rev. B **85**, 045132 (2012)  
 DOI: <https://doi.org/10.1103/PhysRevB.85.045132>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Shih2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Shih2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Shih2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Shih2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Shih2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Shih2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Shih2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Shih2012,
-    author = &quot;Shih, B.-C. and Zhang, Y. and Zhang, W. and Zhang, P.&quot;,
-    title = &quot;Screened Coulomb interaction of localized electrons in solids from first principles&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2012&quot;,
-    volume = &quot;85&quot;,
-    pages = &quot;045132&quot;,
-    doi = &quot;10.1103/PhysRevB.85.045132&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Shih2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Shih, B.-C. and Zhang, Y. and Zhang, W. and Zhang, P.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Screened Coulomb interaction of localized electrons in solids from first principles&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;85&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;045132&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.85.045132&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6159,27 +5809,25 @@ Referred to in: [/topics/CRPA](/topics/CRPA)
 Silvestrelli, P. L.  
 *van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions*  
 Phys. Rev. Lett. **100**, 053002 (2008)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Silvestrelli2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Silvestrelli2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Silvestrelli2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Silvestrelli2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Silvestrelli2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Silvestrelli2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Silvestrelli2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Silvestrelli2008,
-    author = &quot;Silvestrelli, P. L.&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    number = &quot;&quot;,
-    pages = &quot;053002&quot;,
-    title = &quot;van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions&quot;,
-    volume = &quot;100&quot;,
-    year = &quot;2008&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Silvestrelli2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Silvestrelli, P. L.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;053002&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;100&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6193,27 +5841,25 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Silvestrelli, P. L.  
 *van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions*  
 J. Phys. Chem. A **113**, 5224 (2009)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Silvestrelli2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Silvestrelli2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Silvestrelli2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Silvestrelli2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Silvestrelli2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Silvestrelli2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Silvestrelli2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Silvestrelli2009,
-    author = &quot;Silvestrelli, P. L.&quot;,
-    journal = &quot;J. Phys. Chem. A&quot;,
-    number = &quot;&quot;,
-    pages = &quot;5224&quot;,
-    title = &quot;van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions&quot;,
-    volume = &quot;113&quot;,
-    year = &quot;2009&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Silvestrelli2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Silvestrelli, P. L.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys. Chem. A&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;5224&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;113&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6227,27 +5873,25 @@ Referred to in: [/topics/vdw](/topics/vdw)
 Silvestrelli, P. L.  
 *van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions*  
 J. Chem. Phys. **139**, 054106 (2013)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Silvestrelli2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Silvestrelli2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Silvestrelli2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Silvestrelli2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Silvestrelli2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Silvestrelli2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Silvestrelli2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Silvestrelli2013,
-    author = &quot;Silvestrelli, P. L.&quot;,
-    journal = &quot;J. Chem. Phys.&quot;,
-    number = &quot;&quot;,
-    pages = &quot;054106&quot;,
-    title = &quot;van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions&quot;,
-    volume = &quot;139&quot;,
-    year = &quot;2013&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Silvestrelli2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Silvestrelli, P. L.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;054106&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;139&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6262,29 +5906,27 @@ Sipe, J. E., Ghahramani, E.
 *Nonlinear optical response of semiconductors in the independent-particle approximation*  
 Phys. Rev. B **48**, 11705--11722 (1993)  
 URL: <http://link.aps.org/doi/10.1103/PhysRevB.48.11705>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Sipe1993">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Sipe1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sipe1993">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sipe1993">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Sipe1993" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sipe1993">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Sipe1993">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Sipe1993,
-    Author = &quot;Sipe, J. E. and Ghahramani, E.&quot;,
-    Title = &quot;Nonlinear optical response of semiconductors in the independent-particle approximation&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Year = &quot;1993&quot;,
-    Pages = &quot;11705--11722&quot;,
-    Volume = &quot;48&quot;,
-    Doi = &quot;10.1103/PhysRevB.48.11705&quot;,
-    Issue = &quot;16&quot;,
-    Url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.48.11705&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Sipe1993</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Sipe, J. E. and Ghahramani, E.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Nonlinear optical response of semiconductors in the independent-particle approximation&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;1993&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;11705--11722&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;48&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.48.11705&quot;</span><span class="p">,</span>
+    <span class="na">Issue</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">Url</span> <span class="p">=</span> <span class="s">&quot;http://link.aps.org/doi/10.1103/PhysRevB.48.11705&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6297,27 +5939,25 @@ URL: <http://link.aps.org/doi/10.1103/PhysRevB.48.11705>
 Snyder, G. J., Toberer, E. S.  
 *Complex thermoelectric materials*  
 Nature Materials **7**, 105--114 (2008)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Snyder2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Snyder2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Snyder2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Snyder2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Snyder2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Snyder2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Snyder2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Snyder2008,
-    author = &quot;Snyder, G. J. and Toberer, E. S.&quot;,
-    journal = &quot;Nature Materials&quot;,
-    number = &quot;2&quot;,
-    pages = &quot;105--114&quot;,
-    title = &quot;Complex thermoelectric materials&quot;,
-    volume = &quot;7&quot;,
-    year = &quot;2008&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Snyder2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Snyder, G. J. and Toberer, E. S.&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Nature Materials&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;105--114&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Complex thermoelectric materials&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6330,26 +5970,24 @@ Nature Materials **7**, 105--114 (2008)
 Souza, I., \'I\ niguez, J., Vanderbilt, D.  
 *First-Principles Approach to Insulators in Finite Electric Fields*  
 Phys. Rev. Lett. **89**, 117602 (2002)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Souza2002">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Souza2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Souza2002">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Souza2002">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Souza2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Souza2002">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Souza2002">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Souza2002,
-    author = &quot;Souza, I. and \'I\ niguez, J. and Vanderbilt, D.&quot;,
-    title = &quot;First-Principles Approach to Insulators in Finite Electric Fields&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;89&quot;,
-    pages = &quot;117602&quot;,
-    year = &quot;2002&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Souza2002</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Souza, I. and \&#39;I\ niguez, J. and Vanderbilt, D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-Principles Approach to Insulators in Finite Electric Fields&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;117602&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2002&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6363,28 +6001,26 @@ Referred to in: [/topics/Berry](/topics/Berry)
 Sterne, P.A., Kaiser, J.H.  
 *First-principles calculation of positron lifetimes in solids*  
 Phys. Rev. B **43**, 13892 (1991)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Sterne1991">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Sterne1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sterne1991">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sterne1991">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Sterne1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Sterne1991">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Sterne1991">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Sterne1991,
-    author = &quot;Sterne, P.A. and Kaiser, J.H.&quot;,
-    title = &quot;First-principles calculation of positron lifetimes in solids&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;43&quot;,
-    number = &quot;17&quot;,
-    pages = &quot;13892&quot;,
-    year = &quot;1991&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Sterne1991</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Sterne, P.A. and Kaiser, J.H.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles calculation of positron lifetimes in solids&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;43&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;17&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;13892&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1991&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6398,32 +6034,30 @@ Torrent, Marc, Jollet, Fran\c{c}ois, Bottin, Fran\c{c}ois, Z\'erah, Gilles, Gonz
 *Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure*  
 Computational Materials Science **42**, 337 - 351 (2008)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0927025607002108>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Torrent2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Torrent2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Torrent2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Torrent2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Torrent2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Torrent2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Torrent2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Torrent2008,
-    author = &quot;Torrent, Marc and Jollet, Fran\c{c}ois and Bottin, Fran\c{c}ois and Z\'erah, Gilles and Gonze, Xavier&quot;,
-    title = &quot;Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure&quot;,
-    journal = &quot;Computational Materials Science&quot;,
-    volume = &quot;42&quot;,
-    number = &quot;2&quot;,
-    pages = &quot;337 - 351&quot;,
-    year = &quot;2008&quot;,
-    note = &quot;&quot;,
-    issn = &quot;0927-0256&quot;,
-    doi = &quot;10.1016/j.commatsci.2007.07.020&quot;,
-    url = &quot;http://www.sciencedirect.com/science/article/pii/S0927025607002108&quot;,
-    keywords = &quot;Iron under pressure&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Torrent2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Torrent, Marc and Jollet, Fran\c{c}ois and Bottin, Fran\c{c}ois and Z\&#39;erah, Gilles and Gonze, Xavier&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Computational Materials Science&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;42&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;2&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;337 - 351&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;0927-0256&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.commatsci.2007.07.020&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://www.sciencedirect.com/science/article/pii/S0927025607002108&quot;</span><span class="p">,</span>
+    <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;Iron under pressure&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6438,31 +6072,29 @@ Tran, F., Blaha, P.
 *Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential*  
 Phys. Rev. Lett. **102**, 226401 (2009)  
 URL: <http://link.aps.org/doi/10.1103/PhysRevLett.102.226401>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Tran2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Tran2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tran2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Tran2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Tran2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tran2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Tran2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Tran2009,
-    author = &quot;Tran, F. and Blaha, P.&quot;,
-    title = &quot;Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;102&quot;,
-    issue = &quot;22&quot;,
-    pages = &quot;226401&quot;,
-    numpages = &quot;4&quot;,
-    year = &quot;2009&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevLett.102.226401&quot;,
-    url = &quot;http://link.aps.org/doi/10.1103/PhysRevLett.102.226401&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Tran2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Tran, F. and Blaha, P.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Accurate Band Gaps of Semiconductors and Insulators with a Semilocal Exchange-Correlation Potential&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;102&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;22&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;226401&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.102.226401&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://link.aps.org/doi/10.1103/PhysRevLett.102.226401&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6475,26 +6107,24 @@ URL: <http://link.aps.org/doi/10.1103/PhysRevLett.102.226401>
 Tremblay, Andr\'e-Marie  
 *Probl\`eme \`a N-corps* (2017)  
 URL: <https://www.physique.usherbrooke.ca/pages/en/node/3436>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Tremblay2017">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Tremblay2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tremblay2017">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Tremblay2017">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Tremblay2017" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tremblay2017">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Tremblay2017">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@misc{Tremblay2017,
-    author = &quot;Tremblay, Andr\'e-Marie&quot;,
-    title = &quot;Probl\`eme \`a N-corps&quot;,
-    note = &quot;Notes de cours&quot;,
-    howpublished = {available &lt;a href=&quot;https://www.physique.usherbrooke.ca/pages/en/node/3436&quot;&gt;here&lt;/a&gt;},
-    url = &quot;https://www.physique.usherbrooke.ca/pages/en/node/3436&quot;,
-    year = &quot;2017&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@misc</span><span class="p">{</span><span class="nl">Tremblay2017</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Tremblay, Andr\&#39;e-Marie&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Probl\`eme \`a N-corps&quot;</span><span class="p">,</span>
+    <span class="na">note</span> <span class="p">=</span> <span class="s">&quot;Notes de cours&quot;</span><span class="p">,</span>
+    <span class="na">howpublished</span> <span class="p">=</span> <span class="s">{available &lt;a href=&quot;https://www.physique.usherbrooke.ca/pages/en/node/3436&quot;&gt;here&lt;/a&gt;}</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://www.physique.usherbrooke.ca/pages/en/node/3436&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2017&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6508,26 +6138,24 @@ Referred to in: [/tutorials/dmft](/tutorials/dmft)
 Troullier, N., Martins, J.L.  
 *Efficient pseudopotentials for plane-wave calculation*  
 Phys. Rev. B **43**, 1993 (1991)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Troullier1991">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Troullier1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Troullier1991">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Troullier1991">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Troullier1991" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Troullier1991">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Troullier1991">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Troullier1991,
-    Author = &quot;Troullier, N. and Martins, J.L.&quot;,
-    Journal = &quot;Phys. Rev. B&quot;,
-    Pages = &quot;1993&quot;,
-    Title = &quot;Efficient pseudopotentials for plane-wave calculation&quot;,
-    Volume = &quot;43&quot;,
-    Year = &quot;1991&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Troullier1991</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Troullier, N. and Martins, J.L.&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;1993&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Efficient pseudopotentials for plane-wave calculation&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;43&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;1991&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6540,26 +6168,24 @@ Phys. Rev. B **43**, 1993 (1991)
 Tuckerman, M. E., Marx, D., Klein, M. L., Parrinello, M.  
 *Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics*  
 J. Chem. Phys. **104**, 5579 (1996)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Tuckerman1996">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Tuckerman1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tuckerman1996">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Tuckerman1996">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Tuckerman1996" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tuckerman1996">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Tuckerman1996">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Tuckerman1996,
-    Author = &quot;Tuckerman, M. E. and Marx, D. and Klein, M. L. and Parrinello, M.&quot;,
-    Title = &quot;Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics&quot;,
-    Journal = &quot;J. Chem. Phys.&quot;,
-    Volume = &quot;104&quot;,
-    Pages = &quot;5579&quot;,
-    year = &quot;1996&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Tuckerman1996</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Tuckerman, M. E. and Marx, D. and Klein, M. L. and Parrinello, M.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;J. Chem. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;104&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;5579&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1996&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6574,30 +6200,28 @@ Tuomisto, F., Makkonen, I.
 *Defect identification in semiconductors with positron annihilation: Experiment and theory*  
 Rev. Mod. Phys. **85**, 1583 (2013)  
 DOI: <https://doi.org/10.1103/RevModPhys.85.1583>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Tuomisto2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Tuomisto2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tuomisto2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Tuomisto2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Tuomisto2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Tuomisto2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Tuomisto2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Tuomisto2013,
-    author = &quot;Tuomisto, F. and Makkonen, I.&quot;,
-    title = &quot;Defect identification in semiconductors with positron annihilation: Experiment and theory&quot;,
-    journal = &quot;Rev. Mod. Phys.&quot;,
-    volume = &quot;85&quot;,
-    issue = &quot;4&quot;,
-    pages = &quot;1583&quot;,
-    numpages = &quot;0&quot;,
-    year = &quot;2013&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/RevModPhys.85.1583&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Tuomisto2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Tuomisto, F. and Makkonen, I.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Defect identification in semiconductors with positron annihilation: Experiment and theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;85&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1583&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;0&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/RevModPhys.85.1583&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6610,26 +6234,24 @@ DOI: <https://doi.org/10.1103/RevModPhys.85.1583>
 Uehara, Kentaro, Tse, John S.  
 *Calculations of transport properties with the linearized augmented plane-wave method*  
 Phys. Rev. B **61**, 1639 (2000)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Uehara2000">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Uehara2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Uehara2000">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Uehara2000">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Uehara2000" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Uehara2000">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Uehara2000">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Uehara2000,
-    author = &quot;Uehara, Kentaro and Tse, John S.&quot;,
-    title = &quot;Calculations of transport properties with the linearized augmented plane-wave method&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;61&quot;,
-    pages = &quot;1639&quot;,
-    year = &quot;2000&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Uehara2000</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Uehara, Kentaro and Tse, John S.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Calculations of transport properties with the linearized augmented plane-wave method&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;61&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1639&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2000&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6644,26 +6266,24 @@ Vanderbilt, D., {K}ing-{S}mith, R. D.
 *Electronic polarization in the ultrasoft pseudopotential formalism*  
 arXiv/cond-mat ****, 9801177 (1998)  
 URL: <https://arxiv.org/abs/cond-mat/9801177>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Vanderbilt1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Vanderbilt1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vanderbilt1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Vanderbilt1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Vanderbilt1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vanderbilt1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Vanderbilt1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Vanderbilt1998,
-    author = &quot;Vanderbilt, D. and {K}ing-{S}mith, R. D.&quot;,
-    title = &quot;Electronic polarization in the ultrasoft pseudopotential formalism&quot;,
-    journal = &quot;arXiv/cond-mat&quot;,
-    eprint = &quot;9801177&quot;,
-    url = &quot;https://arxiv.org/abs/cond-mat/9801177&quot;,
-    year = &quot;1998&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Vanderbilt1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Vanderbilt, D. and {K}ing-{S}mith, R. D.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electronic polarization in the ultrasoft pseudopotential formalism&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;arXiv/cond-mat&quot;</span><span class="p">,</span>
+    <span class="na">eprint</span> <span class="p">=</span> <span class="s">&quot;9801177&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://arxiv.org/abs/cond-mat/9801177&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6676,26 +6296,24 @@ URL: <https://arxiv.org/abs/cond-mat/9801177>
 Troeye, B. Van, Torrent, M., Gonze, X.  
 *Interatomic force constants including the DFT-D dispersion contribution*  
 Phys. Rev. B **93**, 144304 (2016)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Vantroeye2016">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Vantroeye2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vantroeye2016">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Vantroeye2016">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Vantroeye2016" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vantroeye2016">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Vantroeye2016">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Vantroeye2016,
-    author = &quot;Troeye, B. Van and Torrent, M. and Gonze, X.&quot;,
-    title = &quot;Interatomic force constants including the DFT-D dispersion contribution&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;93&quot;,
-    pages = &quot;144304&quot;,
-    year = &quot;2016&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Vantroeye2016</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Troeye, B. Van and Torrent, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Interatomic force constants including the DFT-D dispersion contribution&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;93&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;144304&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2016&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6710,27 +6328,25 @@ Vasiliev, I., Ogut, S., Chelikowsky, J. R.
 *Ab initio Excitation Spectra and Collective Electronic Response in Atoms and Clusters*  
 Phys. Rev. Lett. **82**, 1919 (1999)  
 DOI: <https://doi.org/10.1103/PhysRevLett.82.1919>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Vasiliev1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Vasiliev1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vasiliev1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Vasiliev1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Vasiliev1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vasiliev1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Vasiliev1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Vasiliev1998,
-    author = &quot;Vasiliev, I. and Ogut, S. and Chelikowsky, J. R.&quot;,
-    title = &quot;Ab initio Excitation Spectra and Collective Electronic Response in Atoms and Clusters&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    volume = &quot;82&quot;,
-    pages = &quot;1919&quot;,
-    year = &quot;1999&quot;,
-    doi = &quot;10.1103/PhysRevLett.82.1919&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Vasiliev1998</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Vasiliev, I. and Ogut, S. and Chelikowsky, J. R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Ab initio Excitation Spectra and Collective Electronic Response in Atoms and Clusters&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;82&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;1919&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1999&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.82.1919&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6744,26 +6360,24 @@ Referred to in: [/tutorials/tddft](/tutorials/tddft)
 Vaugier, L., Jiang, H., Biermann, S.  
 *Hubbard {U} and Hund exchange {J} in transition metal oxides: Screening versus localization trends from constrained random phase approximation*  
 Phys. Rev. B **86**, 165105 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Vaugier2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Vaugier2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vaugier2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Vaugier2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Vaugier2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Vaugier2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Vaugier2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Vaugier2012,
-    author = &quot;Vaugier, L. and Jiang, H. and Biermann, S.&quot;,
-    title = &quot;Hubbard {U} and Hund exchange {J} in transition metal oxides: Screening versus localization trends from constrained random phase approximation&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;86&quot;,
-    pages = &quot;165105&quot;,
-    year = &quot;2012&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Vaugier2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Vaugier, L. and Jiang, H. and Biermann, S.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Hubbard {U} and Hund exchange {J} in transition metal oxides: Screening versus localization trends from constrained random phase approximation&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;86&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;165105&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6777,26 +6391,24 @@ Referred to in: [/tutorials/ucalc_crpa](/tutorials/ucalc_crpa)
 Veithen, M., Gonze, X., Ghosez, Ph.  
 *Electron localization: Band-by-band decomposition and application to oxides*  
 Physical Review B - Condensed Matter and Materials Physics **66**, 235113:1-10 (2002)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Veithen2002">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Veithen2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2002">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Veithen2002">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Veithen2002" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2002">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Veithen2002">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Veithen2002,
-    Author = &quot;Veithen, M. and Gonze, X. and Ghosez, Ph.&quot;,
-    Journal = &quot;Physical Review B - Condensed Matter and Materials Physics&quot;,
-    Pages = &quot;235113:1-10&quot;,
-    Title = &quot;Electron localization: Band-by-band decomposition and application to oxides&quot;,
-    Volume = &quot;66&quot;,
-    Year = &quot;2002&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Veithen2002</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Veithen, M. and Gonze, X. and Ghosez, Ph.&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Physical Review B - Condensed Matter and Materials Physics&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;235113:1-10&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Electron localization: Band-by-band decomposition and application to oxides&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;66&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2002&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6811,27 +6423,25 @@ Veithen, M., Gonze, X., Ghosez, Ph.
 *Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory*  
 Phys. Rev. B **71**, 125107 (2005)  
 DOI: <https://doi.org/10.1103/PhysRevB.71.125107>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Veithen2005">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Veithen2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2005">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Veithen2005">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Veithen2005" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2005">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Veithen2005">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Veithen2005,
-    author = &quot;Veithen, M. and Gonze, X. and Ghosez, Ph.&quot;,
-    title = &quot;Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;71&quot;,
-    pages = &quot;125107&quot;,
-    year = &quot;2005&quot;,
-    doi = &quot;10.1103/PhysRevB.71.125107&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Veithen2005</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Veithen, M. and Gonze, X. and Ghosez, Ph.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Nonlinear optical susceptibilities, Raman efficiencies, and electrooptic tensors from first--principles density functional theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;71&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125107&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.71.125107&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6846,27 +6456,25 @@ Veithen, M., Ghosez, Ph.
 *Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles*  
 Phys. Rev. B **71**, 132101 (2005)  
 DOI: <https://doi.org/10.1103/PhysRevB.71.132101>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Veithen2005a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Veithen2005a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2005a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Veithen2005a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Veithen2005a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Veithen2005a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Veithen2005a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Veithen2005a,
-    author = &quot;Veithen, M. and Ghosez, Ph.&quot;,
-    title = &quot;Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;71&quot;,
-    pages = &quot;132101&quot;,
-    year = &quot;2005&quot;,
-    doi = &quot;10.1103/PhysRevB.71.132101&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Veithen2005a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Veithen, M. and Ghosez, Ph.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Temperature dependence of the electro-optic tensor and refractive indices of Ba Ti O 3 from first principles&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;71&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;132101&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2005&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.71.132101&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6880,26 +6488,24 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 Wang, L.-W., Bellaiche, L., Wei, S.-H., Zunger, A.  
 *Majority Representation of Alloy Electronic States*  
 Phys. Rev. Lett. **80**, 4725 (1998)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wang1998">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wang1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wang1998">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wang1998">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wang1998" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wang1998">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wang1998">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wang1998,
-    Author = &quot;Wang, L.-W. and Bellaiche, L. and Wei, S.-H. and Zunger, A.&quot;,
-    Title = &quot;Majority Representation of Alloy Electronic States&quot;,
-    Journal = &quot;Phys. Rev. Lett.&quot;,
-    Year = &quot;1998&quot;,
-    Pages = &quot;4725&quot;,
-    Volume = &quot;80&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wang1998</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Wang, L.-W. and Bellaiche, L. and Wei, S.-H. and Zunger, A.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;Majority Representation of Alloy Electronic States&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;1998&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;4725&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;80&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6913,27 +6519,25 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 Wang, H., LaLonde, A. D., Pei, Y., Snyder, G. J.  
 *The Criteria for Beneficial Disorder in Thermoelectric Solid Solutions*  
 Adv. Funct. Mater. **23**, 1586--1596 (2013)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wang2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wang2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wang2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wang2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wang2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wang2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wang2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wang2013,
-    Author = &quot;Wang, H. and LaLonde, A. D. and Pei, Y. and Snyder, G. J.&quot;,
-    Title = &quot;The Criteria for Beneficial Disorder in Thermoelectric Solid Solutions&quot;,
-    Journal = &quot;Adv. Funct. Mater.&quot;,
-    Year = &quot;2013&quot;,
-    Number = &quot;12&quot;,
-    Pages = &quot;1586--1596&quot;,
-    Volume = &quot;23&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wang2013</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Wang, H. and LaLonde, A. D. and Pei, Y. and Snyder, G. J.&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;The Criteria for Beneficial Disorder in Thermoelectric Solid Solutions&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Adv. Funct. Mater.&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">Number</span> <span class="p">=</span> <span class="s">&quot;12&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;1586--1596&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;23&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6947,27 +6551,25 @@ Waroquiers, D., Lherbier, A., Miglio, A., Stankovski, M., Ponc\'e, S., Oliveira,
 *Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory*  
 Phys. Rev. B **87**, 075121 (2013)  
 DOI: <https://doi.org/>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Waroquiers2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Waroquiers2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Waroquiers2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Waroquiers2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Waroquiers2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Waroquiers2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Waroquiers2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Waroquiers2013,
-    author = &quot;Waroquiers, D. and Lherbier, A. and Miglio, A. and Stankovski, M. and Ponc\'e, S. and Oliveira, M.J.T. and Giantomassi, M. and Rignanese, G.-M. and Gonze, X.&quot;,
-    title = &quot;Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    year = &quot;2013&quot;,
-    volume = &quot;87&quot;,
-    pages = &quot;075121&quot;,
-    doi = &quot;&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Waroquiers2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Waroquiers, D. and Lherbier, A. and Miglio, A. and Stankovski, M. and Ponc\&#39;e, S. and Oliveira, M.J.T. and Giantomassi, M. and Rignanese, G.-M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;87&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;075121&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -6980,28 +6582,26 @@ DOI: <https://doi.org/>
 Weinan, E., Ren, W., Vanden-Eijnden, E.  
 *Simplified and improved string method for computing the minimum energy paths in barrier-crossing events*  
 The Journal of Chemical Physics **126**, 164103 (2007)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Weinan2007">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Weinan2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Weinan2007">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Weinan2007">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Weinan2007" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Weinan2007">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Weinan2007">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Weinan2007,
-    author = &quot;Weinan, E. and Ren, W. and Vanden-Eijnden, E.&quot;,
-    title = &quot;Simplified and improved string method for computing the minimum energy paths in barrier-crossing events&quot;,
-    journal = &quot;The Journal of Chemical Physics&quot;,
-    volume = &quot;126&quot;,
-    number = &quot;16&quot;,
-    pages = &quot;164103&quot;,
-    year = &quot;2007&quot;,
-    publisher = &quot;AIP Publishing&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Weinan2007</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Weinan, E. and Ren, W. and Vanden-Eijnden, E.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Simplified and improved string method for computing the minimum energy paths in barrier-crossing events&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;The Journal of Chemical Physics&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;126&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;16&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;164103&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2007&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;AIP Publishing&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7016,32 +6616,30 @@ Werner, P., Comanac, A., de Medici, L., Troyer, M., Millis, A.J.
 *Continuous-Time Solver for Quantum Impurity Models*  
 Phys. Rev. Lett. **97**, 076405 (2006)  
 DOI: <https://doi.org/10.1103/PhysRevLett.97.076405>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Werner2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Werner2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Werner2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Werner2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Werner2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Werner2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Werner2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Werner2006,
-    author = &quot;Werner, P. and Comanac, A. and de Medici, L. and Troyer, M. and Millis, A.J.&quot;,
-    title = &quot;Continuous-Time Solver for Quantum Impurity Models&quot;,
-    journal = &quot;Phys. Rev. Lett.&quot;,
-    year = &quot;2006&quot;,
-    volume = &quot;97&quot;,
-    pages = &quot;076405&quot;,
-    number = &quot;7&quot;,
-    owner = &quot;amadonb&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    refid = &quot;10.1103/PhysRevLett.97.076405&quot;,
-    timestamp = &quot;2013.05.22&quot;,
-    doi = &quot;10.1103/PhysRevLett.97.076405&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Werner2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Werner, P. and Comanac, A. and de Medici, L. and Troyer, M. and Millis, A.J.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Continuous-Time Solver for Quantum Impurity Models&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;97&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;076405&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
+    <span class="na">owner</span> <span class="p">=</span> <span class="s">&quot;amadonb&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">refid</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.97.076405&quot;</span><span class="p">,</span>
+    <span class="na">timestamp</span> <span class="p">=</span> <span class="s">&quot;2013.05.22&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.97.076405&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7056,29 +6654,27 @@ Wiktor, J., Jomard, G., Torrent, M., Bertolus, M.
 *Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}*  
 Phys. Rev. B **87**, 235207 (2013)  
 DOI: <https://doi.org/10.1103/PhysRevB.87.235207>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wiktor2013">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wiktor2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2013">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2013">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wiktor2013" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2013">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wiktor2013">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wiktor2013,
-    author = &quot;Wiktor, J. and Jomard, G. and Torrent, M. and Bertolus, M.&quot;,
-    title = &quot;Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;87&quot;,
-    pages = &quot;235207&quot;,
-    numpages = &quot;12&quot;,
-    year = &quot;2013&quot;,
-    doi = &quot;10.1103/PhysRevB.87.235207&quot;,
-    publisher = &quot;American Physical Society&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wiktor2013</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Wiktor, J. and Jomard, G. and Torrent, M. and Bertolus, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;87&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;235207&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;12&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2013&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.87.235207&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7092,28 +6688,26 @@ Referred to in: [/topics/positron](/topics/positron)
 Wiktor, J., Kerbiriou, X., Jomard, G., Esnouf, S., Barthe, M.-F., Bertolus, M.  
 *Positron annihilation spectroscopy investigation of vacancy clusters in silicon carbide: Combining experiments and electronic structure calculations*  
 Phys. Rev. B **89**, 155203 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wiktor2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wiktor2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wiktor2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wiktor2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wiktor2014,
-    author = &quot;Wiktor, J. and Kerbiriou, X. and Jomard, G. and Esnouf, S. and Barthe, M.-F. and Bertolus, M.&quot;,
-    title = &quot;Positron annihilation spectroscopy investigation of vacancy clusters in silicon carbide: Combining experiments and electronic structure calculations&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;89&quot;,
-    number = &quot;15&quot;,
-    pages = &quot;155203&quot;,
-    year = &quot;2014&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wiktor2014</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Wiktor, J. and Kerbiriou, X. and Jomard, G. and Esnouf, S. and Barthe, M.-F. and Bertolus, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Positron annihilation spectroscopy investigation of vacancy clusters in silicon carbide: Combining experiments and electronic structure calculations&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;89&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;155203&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7127,28 +6721,26 @@ Referred to in: [/topics/positron](/topics/positron)
 Wiktor, J., Barthe, M.-F., Jomard, G., Torrent, M., Freyss, M., Bertolus, M.  
 *Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}$_2$*  
 Phys. Rev. B **90**, 184101 (2014)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wiktor2014a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wiktor2014a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2014a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wiktor2014a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wiktor2014a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wiktor2014a,
-    author = &quot;Wiktor, J. and Barthe, M.-F. and Jomard, G. and Torrent, M. and Freyss, M. and Bertolus, M.&quot;,
-    title = &quot;Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}$_2$&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;90&quot;,
-    number = &quot;18&quot;,
-    pages = &quot;184101&quot;,
-    year = &quot;2014&quot;,
-    publisher = &quot;APS&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wiktor2014a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Wiktor, J. and Barthe, M.-F. and Jomard, G. and Torrent, M. and Freyss, M. and Bertolus, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}$_2$&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;90&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;18&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;184101&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;APS&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7163,28 +6755,26 @@ Wiktor, J., Jomard, G., Bertolus, M.
 *Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect*  
 Nucl. Instrum. Meth. **327**, 63 (2014)  
 DOI: <https://doi.org/10.1016/j.nimb.2013.09.050>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wiktor2014b">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wiktor2014b" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014b">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2014b">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wiktor2014b" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2014b">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wiktor2014b">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wiktor2014b,
-    author = &quot;Wiktor, J. and Jomard, G. and Bertolus, M.&quot;,
-    title = &quot;Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect&quot;,
-    journal = &quot;Nucl. Instrum. Meth.&quot;,
-    volume = &quot;327&quot;,
-    pages = &quot;63&quot;,
-    year = &quot;2014&quot;,
-    doi = &quot;10.1016/j.nimb.2013.09.050&quot;,
-    publisher = &quot;Elsevier&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wiktor2014b</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Wiktor, J. and Jomard, G. and Bertolus, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Nucl. Instrum. Meth.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;327&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;63&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1016/j.nimb.2013.09.050&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Elsevier&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7199,32 +6789,30 @@ Wiktor, J., Jomard, G., Torrent, M.
 *Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions*  
 Phys. Rev. B **92**, 125113 (2015)  
 URL: <http://link.aps.org/doi/10.1103/PhysRevB.92.125113>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Wiktor2015">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Wiktor2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2015">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2015">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Wiktor2015" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Wiktor2015">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Wiktor2015">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Wiktor2015,
-    author = &quot;Wiktor, J. and Jomard, G. and Torrent, M.&quot;,
-    title = &quot;Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;92&quot;,
-    issue = &quot;12&quot;,
-    pages = &quot;125113&quot;,
-    numpages = &quot;15&quot;,
-    year = &quot;2015&quot;,
-    month = &quot;Sep&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.92.125113&quot;,
-    url = &quot;http://link.aps.org/doi/10.1103/PhysRevB.92.125113&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wiktor2015</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Wiktor, J. and Jomard, G. and Torrent, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Two-component density functional theory within the projector augmented-wave approach: Accurate and self-consistent computations of positron lifetimes and momentum distributions&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;92&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;12&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;125113&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;15&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;Sep&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.92.125113&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://link.aps.org/doi/10.1103/PhysRevB.92.125113&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7239,30 +6827,28 @@ Xu, B., Verstraete, M. J.
 *First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium*  
 Phys. Rev. Lett. **112**, 196603 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevLett.112.196603>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Xu2014">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Xu2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Xu2014">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Xu2014">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Xu2014" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Xu2014">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Xu2014">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Xu2014,
-    Author = &quot;Xu, B. and Verstraete, M. J.&quot;,
-    Doi = &quot;10.1103/PhysRevLett.112.196603&quot;,
-    Issue = &quot;19&quot;,
-    Journal = &quot;Phys. Rev. Lett.&quot;,
-    Numpages = &quot;5&quot;,
-    Pages = &quot;196603&quot;,
-    Publisher = &quot;American Physical Society&quot;,
-    Title = &quot;First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium&quot;,
-    Volume = &quot;112&quot;,
-    Year = &quot;2014&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Xu2014</span><span class="p">,</span>
+    <span class="na">Author</span> <span class="p">=</span> <span class="s">&quot;Xu, B. and Verstraete, M. J.&quot;</span><span class="p">,</span>
+    <span class="na">Doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevLett.112.196603&quot;</span><span class="p">,</span>
+    <span class="na">Issue</span> <span class="p">=</span> <span class="s">&quot;19&quot;</span><span class="p">,</span>
+    <span class="na">Journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
+    <span class="na">Numpages</span> <span class="p">=</span> <span class="s">&quot;5&quot;</span><span class="p">,</span>
+    <span class="na">Pages</span> <span class="p">=</span> <span class="s">&quot;196603&quot;</span><span class="p">,</span>
+    <span class="na">Publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">Title</span> <span class="p">=</span> <span class="s">&quot;First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium&quot;</span><span class="p">,</span>
+    <span class="na">Volume</span> <span class="p">=</span> <span class="s">&quot;112&quot;</span><span class="p">,</span>
+    <span class="na">Year</span> <span class="p">=</span> <span class="s">&quot;2014&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7276,31 +6862,29 @@ Zhou, Y., Saad, Y., Tiago, M.L., Chelikowsky, J.R.
 *Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration*  
 Phys. Rev. E **74**, 066704 (2006)  
 URL: <http://link.aps.org/doi/10.1103/PhysRevE.74.066704>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Zhou2006">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Zhou2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zhou2006">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zhou2006">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Zhou2006" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zhou2006">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Zhou2006">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Zhou2006,
-    author = &quot;Zhou, Y. and Saad, Y. and Tiago, M.L. and Chelikowsky, J.R.&quot;,
-    title = &quot;Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration&quot;,
-    journal = &quot;Phys. Rev. E&quot;,
-    volume = &quot;74&quot;,
-    issue = &quot;6&quot;,
-    pages = &quot;066704&quot;,
-    numpages = &quot;8&quot;,
-    year = &quot;2006&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevE.74.066704&quot;,
-    url = &quot;http://link.aps.org/doi/10.1103/PhysRevE.74.066704&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zhou2006</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zhou, Y. and Saad, Y. and Tiago, M.L. and Chelikowsky, J.R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Parallel self-consistent-field calculations via Chebyshev-filtered subspace acceleration&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. E&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;74&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;6&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;066704&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;8&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevE.74.066704&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;http://link.aps.org/doi/10.1103/PhysRevE.74.066704&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7313,28 +6897,26 @@ URL: <http://link.aps.org/doi/10.1103/PhysRevE.74.066704>
 Zhou, Y., Saad, Y., Tiago, M.L, Chelikowsky, J. R.  
 *Self-consistent-field calculations using Chebyshev-filtered subspace iteration*  
 J. Comp. Phys. **219**, 172--184 (2006)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Zhou2006a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Zhou2006a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zhou2006a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zhou2006a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Zhou2006a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zhou2006a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Zhou2006a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Zhou2006a,
-    author = &quot;Zhou, Y. and Saad, Y. and Tiago, M.L and Chelikowsky, J. R.&quot;,
-    title = &quot;Self-consistent-field calculations using Chebyshev-filtered subspace iteration&quot;,
-    journal = &quot;J. Comp. Phys.&quot;,
-    volume = &quot;219&quot;,
-    number = &quot;1&quot;,
-    pages = &quot;172--184&quot;,
-    year = &quot;2006&quot;,
-    publisher = &quot;Elsevier&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zhou2006a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zhou, Y. and Saad, Y. and Tiago, M.L and Chelikowsky, J. R.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Self-consistent-field calculations using Chebyshev-filtered subspace iteration&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Comp. Phys.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;219&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;1&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;172--184&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2006&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Elsevier&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7347,24 +6929,22 @@ J. Comp. Phys. **219**, 172--184 (2006)
 Ziman, J. M.  
 *Electrons and phonons*  
 Oxford University Press (1960)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Ziman1960">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Ziman1960" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ziman1960">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ziman1960">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Ziman1960" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Ziman1960">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Ziman1960">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@book{Ziman1960,
-    author = &quot;Ziman, J. M.&quot;,
-    title = &quot;Electrons and phonons&quot;,
-    publisher = &quot;Oxford University Press&quot;,
-    year = &quot;1960&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@book</span><span class="p">{</span><span class="nl">Ziman1960</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Ziman, J. M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Electrons and phonons&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Oxford University Press&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;1960&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7378,30 +6958,28 @@ Zwanziger, J. W.and Torrent, M.
 *First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators*  
 Applied Magnetic Resonance **33**, 447--456 (2008)  
 URL: <10.1007/s00723-008-0080-1>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Zwanziger2008">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Zwanziger2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2008">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zwanziger2008">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Zwanziger2008" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2008">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Zwanziger2008">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Zwanziger2008,
-    author = &quot;Zwanziger, J. W.and Torrent, M.&quot;,
-    title = &quot;First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators&quot;,
-    journal = &quot;Applied Magnetic Resonance&quot;,
-    year = &quot;2008&quot;,
-    volume = &quot;33&quot;,
-    number = &quot;4&quot;,
-    pages = &quot;447--456&quot;,
-    issn = &quot;1613-7507&quot;,
-    doi = &quot;10.1007/s00723-008-0080-1&quot;,
-    url = &quot;10.1007/s00723-008-0080-1&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zwanziger2008</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zwanziger, J. W.and Torrent, M.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-Principles Calculation of Electric Field Gradients in Metals, Semiconductors, and Insulators&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Applied Magnetic Resonance&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2008&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;33&quot;</span><span class="p">,</span>
+    <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;447--456&quot;</span><span class="p">,</span>
+    <span class="na">issn</span> <span class="p">=</span> <span class="s">&quot;1613-7507&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1007/s00723-008-0080-1&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;10.1007/s00723-008-0080-1&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7416,27 +6994,25 @@ Zwanziger, J W
 *Computation of M\"ossbauer isomer shifts from first principles*  
 Journal of Physics: Condensed Matter **21**, 195501 (2009)  
 DOI: <https://doi.org/10.1088/0953-8984/21/19/195501>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Zwanziger2009">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Zwanziger2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2009">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zwanziger2009">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Zwanziger2009" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2009">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Zwanziger2009">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Zwanziger2009,
-    author = &quot;Zwanziger, J W&quot;,
-    title = {Computation of M\&quot;ossbauer isomer shifts from first principles},
-    journal = &quot;Journal of Physics: Condensed Matter&quot;,
-    volume = &quot;21&quot;,
-    pages = &quot;195501&quot;,
-    doi = &quot;10.1088/0953-8984/21/19/195501&quot;,
-    year = &quot;2009&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zwanziger2009</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zwanziger, J W&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">{Computation of M\&quot;ossbauer isomer shifts from first principles}</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Journal of Physics: Condensed Matter&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;21&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;195501&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1088/0953-8984/21/19/195501&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7451,32 +7027,30 @@ Zwanziger, J. W.
 *First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$*  
 Phys. Rev. B **79**, 033112 (2009)  
 URL: <https://link.aps.org/doi/10.1103/PhysRevB.79.033112>  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Zwanziger2009a">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Zwanziger2009a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2009a">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zwanziger2009a">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Zwanziger2009a" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2009a">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Zwanziger2009a">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Zwanziger2009a,
-    author = &quot;Zwanziger, J. W.&quot;,
-    title = &quot;First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$&quot;,
-    journal = &quot;Phys. Rev. B&quot;,
-    volume = &quot;79&quot;,
-    issue = &quot;3&quot;,
-    pages = &quot;033112&quot;,
-    numpages = &quot;4&quot;,
-    year = &quot;2009&quot;,
-    month = &quot;Jan&quot;,
-    publisher = &quot;American Physical Society&quot;,
-    doi = &quot;10.1103/PhysRevB.79.033112&quot;,
-    url = &quot;https://link.aps.org/doi/10.1103/PhysRevB.79.033112&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zwanziger2009a</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zwanziger, J. W.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;79&quot;</span><span class="p">,</span>
+    <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;033112&quot;</span><span class="p">,</span>
+    <span class="na">numpages</span> <span class="p">=</span> <span class="s">&quot;4&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2009&quot;</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="s">&quot;Jan&quot;</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;American Physical Society&quot;</span><span class="p">,</span>
+    <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1103/PhysRevB.79.033112&quot;</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">&quot;https://link.aps.org/doi/10.1103/PhysRevB.79.033112&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>
@@ -7490,26 +7064,24 @@ Referred to in: [/topics/EFG](/topics/EFG)
 Zwanziger, J.W., Galbraith, J., Kipouros, Y., Torrent, M., Giantomassi, M., Gonze, X.  
 *Finite homogeneous electric fields in the projector augmented wave formalism: Applications to linear and nonlinear response*  
 Comput. Mater. Sci. **58**, 113--118 (2012)  
-<!-- Links -->
-<a data-toggle="modal" href="#modal-id-Zwanziger2012">bibtex</a><!-- Modal -->
-<div class="modal fade" id="modal-id-Zwanziger2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2012">
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zwanziger2012">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button><div class="modal fade" id="modal-id-Zwanziger2012" tabindex="-1" role="dialog" aria-labelledby="modal-label-id-Zwanziger2012">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="modal-label-id-Zwanziger2012">bibtex</h4>
       </div>
-      <div class="modal-body"><pre class="">
-@article{Zwanziger2012,
-    author = &quot;Zwanziger, J.W. and Galbraith, J. and Kipouros, Y. and Torrent, M. and Giantomassi, M. and Gonze, X.&quot;,
-    title = &quot;Finite homogeneous electric fields in the projector augmented wave formalism: Applications to linear and nonlinear response&quot;,
-    journal = &quot;Comput. Mater. Sci.&quot;,
-    volume = &quot;58&quot;,
-    pages = &quot;113--118&quot;,
-    year = &quot;2012&quot;
-}
-
-</pre>
+      <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zwanziger2012</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zwanziger, J.W. and Galbraith, J. and Kipouros, Y. and Torrent, M. and Giantomassi, M. and Gonze, X.&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Finite homogeneous electric fields in the projector augmented wave formalism: Applications to linear and nonlinear response&quot;</span><span class="p">,</span>
+    <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Comput. Mater. Sci.&quot;</span><span class="p">,</span>
+    <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;58&quot;</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;113--118&quot;</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
     </div>
   </div>

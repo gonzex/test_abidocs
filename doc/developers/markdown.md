@@ -379,9 +379,6 @@ that produces: Fix https://github.com/abinit/abinit/issues/1
     This extension is useful to generate nice changelogs and [release notes](/about/release-notes).
 
 
-
-
-
 For compatibility reasons, `mksite.py` supports the following features provided by `generate_doc.py`
 although I would prefer to encourange the use of namespaces:
 
@@ -619,8 +616,40 @@ that produces:
 
 {% dialog tests/v1/Input/t01.in %}
 
-{% dialog tests/v1/Input/t02.in %}
+If multiple files are used such as in:
 
+    {% dialog tests/v1/Input/t01.in tests/v1/Input/t02.in tests/v1/Input/t03.in %}
+
+a modal window with tabs is produced:
+
+{% dialog tests/v1/Input/t01.in tests/v1/Input/t02.in tests/v1/Input/t03.in %}
+
+
+<div id="la" hidden>
+The MIT License (MIT)
+
+Copyright (c) 2014 Mohammad Younes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</div>
+
+<a href='#' onclick="javascript:myDialog('#la');">Call alertifyjs</a>
 
 To create a button that opens a modal window containing the input file, use:
 

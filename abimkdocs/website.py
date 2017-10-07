@@ -19,6 +19,9 @@ from itertools import groupby
 from html2text import html2text
 from pybtex.database import parse_file, Entry, BibliographyData
 from markdown.util import etree
+from pygments import highlight
+from pygments.lexers import BashLexer, BibTeXLexer
+from pygments.formatters import HtmlFormatter
 from doc.tests.pymods.termcolor import cprint
 from .variables import Variable
 
@@ -144,8 +147,15 @@ class MyEntry(Entry):
         """String with authors."""
         return ", ".join(my_unicode(p) for p in self.persons["author"])
 
-    def to_markdown(self):
-        """Return markdown string with bibliographic entry."""
+    def to_markdown(self, bibtex_ui="button"):
+        """
+        Return markdown string with bibliographic entry.
+
+        Args:
+            bibtex_ui:
+                If not None a modal window with the bibtex entry is added.
+                Possible values in [None, "link", "button"].
+        """
         fields = self.fields
         title = "*%s*" % fields["title"]
         authors = self.authors
@@ -159,7 +169,8 @@ class MyEntry(Entry):
                 s += "{} **{}**, {} ({})".format(fields["journal"], fields["volume"],
                         fields["pages"], fields["year"])
 
-        elif self.type in ("book", "incollection"): # FIXME Better treatment for incollection
+        elif self.type in ("book", "incollection"):
+            # FIXME Better treatment for incollection
             #editors = ", ".join(str(e) for e in self.persons["editor"]])
             s = '{}  \n{}  \n'.format(authors, title)
             s += "{} ({})".format(fields["publisher"], fields["year"])
@@ -186,10 +197,11 @@ class MyEntry(Entry):
             s += 'DOI: <{doi}>  \n'.format(doi=doi)
             #s += 'DOI: <a href="{doi}" target="_blank">{doi}</a><br>'.format(doi=doi)
 
-        # Add modal window with bibtex entry.
-        link, modal = self.get_bibtex_linkmodal()
-        s += link + modal
-
+        # Add modal window with bibtex button/link.
+        if bibtex_ui is not None:
+            assert bibtex_ui in ("link", "button")
+            btn, modal = self.get_bibtex_btn_modal(link=bibtex_ui=="link")
+            s += btn + modal
         return s
 
     def to_html(self):
@@ -200,23 +212,30 @@ class MyEntry(Entry):
         """Return the data as a unicode string in the given format."""
         return BibliographyData({self.key: self}).to_string("bibtex")
 
-    def get_bibtex_linkmodal(self):
+    def get_bibtex_btn_modal(self, link=False):
         """
         Build HTML string with bootstrap modal and link to open the modal.
+
+        Args:
+            link: True if a link instead of a button is wanted.
 
         Return: (link, modal)
         """
         # https://v4-alpha.getbootstrap.com/components/modal/#examples
-        text = escape(self.to_bibtex(), tag="pre")
+        #text = escape(self.to_bibtex(), tag="pre")
+        text = highlight(self.to_bibtex(), BibTeXLexer(), HtmlFormatter(cssclass="codehilite"))
         # Construct ids from self.key as they are unique.
         modal_id, modal_label_id = "modal-id-%s" % self.key, "modal-label-id-%s" % self.key
 
-        link = """\
-<!-- Links -->
-<a data-toggle="modal" href="#{modal_id}">bibtex</a>""".format(**locals())
+        if link:
+            btn = """<a data-toggle="modal" href="#{modal_id}">bibtex</a>""".format(**locals())
+        else:
+            btn = """\
+<button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#{modal_id}">
+  <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
+</button>""".format(**locals())
 
         modal = """\
-<!-- Modal -->
 <div class="modal fade" id="{modal_id}" tabindex="-1" role="dialog" aria-labelledby="{modal_label_id}">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -229,7 +248,7 @@ class MyEntry(Entry):
   </div>
 </div>""".format(**locals())
 
-        return link, modal
+        return btn, modal
 
 
 _WEBSITE = None
@@ -735,7 +754,7 @@ The bibtex file is available [here](../abiref.bib).
                 if citation2pages[name]:
                     lines.append("Referred to in: %s" % ", ".join('[{url}]({url})'.format(url=url)
                         for url in sorted([page.url for page in citation2pages[name]])))
-                #lines.append("* * *")
+
             mdf.write("\n".join(lines))
 
         # Write acknowledgments page.
@@ -869,8 +888,10 @@ The bibtex file is available [here](../abiref.bib).
 
                         new_lines.extend(self.modal_from_filename(args[0]).splitlines())
                 elif action == "dialog":
-                    assert len(args) == 1
-                    new_lines.extend(self.dialog_from_filename(args[0]).splitlines())
+                    if len(args) > 1:
+                        new_lines.extend(self.dialogs_from_filenames(args).splitlines())
+                    else:
+                        new_lines.extend(self.dialog_from_filename(args[0]).splitlines())
 
                 else:
                     raise ValueError("Don't know how to handle action: `%s` in token: `%s`" % (action, m.group(1)))
@@ -1266,76 +1287,88 @@ Enter any string to search in the database. Clicking without any request will gi
 {html_vars}
 </ul>""".format(**locals())
 
-    def dialog_from_filename(self, path, title=None):
+    def dialogs_from_filenames(self, paths):
+        buttons, dialogs = [], []
+        for path in paths:
+            btn, dialog = self.dialog_from_filename(path, ret_btn_dialog=True)
+            buttons.append(btn)
+            dialogs.append(dialog)
+
+        button_group = '<div class="text-center"><div class="btn-group-vertical">\n%s\n</div></div>' % "\n".join(buttons)
+        return button_group + "\n".join(dialogs)
+
+    def dialog_from_filename(self, path, title=None, ret_btn_dialog=False):
         title = path if title is None else title
         with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
-            text = escape(fh.read(), tag="pre", cls="small-text")
+            if path.endswith(".in"):
+                text = highlight(fh.read(), BashLexer(), HtmlFormatter(cssclass="codehilite small-text"))
+            else:
+                text = escape(fh.read(), tag="pre", cls="small-text")
 
-#<div class="text-center">
-#<button class="btn btn-primary" id="{btn_id}">View {path}</button>
-#</div>
+        # Build customide jquery dialog.
+        # See http://api.jqueryui.com/dialog/ and https://github.com/ROMB/jquery-dialogextend
+        # The code to pin the dialog is based on http://appdevonsharepoint.com/how-to-pin-a-jquery-ui-dialog-in-place/
+        btn_id, dialog_id = gen_id(n=2)
+        button = """\
+<button type="button" id="{btn_id}" class="btn btn-default btn-labeled">
+  <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View {path}
+</button>.""".format(**locals())
 
-        return """
-<div class="text-center">
-<button id="{btn_id}" class="ui-state-default ui-corner-all">
-<span class="ui-icon ui-icon-newwin"></span>View {path}
-</button>
-</div>
-
-<div class="my-dialog" id="{dialog_id}" title="{title}"><div>{text}</div></div>
-
+        dialog = """
+<div id="{dialog_id}" class="my_dialog" title="{title}" hidden><div>{text}</div></div>
 <script>
 $(function() {{
     var e = $("#{dialog_id}");
 
     e.dialog({{
-        width: 400,
-        height: 300,
-        //minWidth: 600,
-        //minHeight: 200,
+        width: 500,
         //width: "auto",
+        height: 500,
         autoOpen: false,
-        show: {{effect: "blind", duration: 400}},
+        show: {{effect: "blind", duration: 200}},
         //hide: {{effect: "explode", duration: 1000}},
         position: {{my: 'center', at: 'center', of: window}},
         buttons: [
             {{text: "Close",
-             icon: "ui-icon-heart",
-             click: function(){{ $(this).dialog("close"); }}
-             //showText: false
+              icon: "ui-icon-close",
+              classes: {{"ui-button": "ui-corner-all"}},
+              click: function(){{ $(this).dialog("close"); }}
+              //showText: false
             }}
         ],
        create: function () {{
-         e.parent().children('.ui-dialog-titlebar').prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="Pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-        }}
+         var titlebar = e.parent().children('.ui-dialog-titlebar');
+         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
+
+        // This to solve the conflict between bootstrap and jquery-ui close button.
+        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
+        //titlebar.find(".ui-dialog-titlebar-close").click(function(){{ e.dialog("close"); }});
+      }}
    }});
 
    e.dialogExtend({{
-       "maximizable": true,
-       "minimizable": true,
-       "collapsable": true,
-       "minimizeLocation": "right",
+       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
        "dblclick": "collapse",
        "icons": {{
-            "close" : "ui-icon-circle-closethick", // new in v1.0.1
-            "maximize" : "ui-icon-extlink",
-            "minimize" : "ui-icon-minus",
-            "restore" : "ui-icon-newwin",
+            "close": "ui-icon-close",
+            //"maximize": "ui-icon-extlink",
+            "minimize": "ui-icon-minus",
+            "restore": "ui-icon-newwin",
             "collapse": "ui-icon-triangle-1-s"
        }}
-       //"icons": {{
-       //  "close": "ui-icon-circle-close",
-       //  "maximize": "ui-icon-circle-plus",
-       //  "minimize": "ui-icon-circle-minus",
-       //  "collapse": "ui-icon-triangle-1-s",
-       //  "restore": "ui-icon-bullet"
-       //}}
    }});
 
-   $("#{btn_id}").click(function() {{ e.dialog('open'); }});
+   $("#{btn_id}").click(function() {{ e.removeAttr('hidden').dialog('open'); }});
+
 }});
 </script>
-""".format(path=path, title=title, text=text, btn_id=gen_id(), dialog_id=gen_id())
+""".format(**locals())
+
+        if not ret_btn_dialog:
+            button = '<div class="text-center">%s</div>' % button
+            return button + dialog
+        else:
+            return button, dialog
 
     def modal_from_filename(self, path, title=None):
         """Return HTML string with bootstrap modal and content taken from file `path`."""
@@ -1343,13 +1376,12 @@ $(function() {{
         # See also https://stackoverflow.com/questions/14971766/load-content-with-ajax-in-bootstrap-modal
         title = path if title is None else title
         with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
-            text = escape(fh.read(), tag="pre")
+            text = escape(fh.read(), tag="pre", cls="small-text")
 
         return """\
-<!-- Button trigger modal -->
-<div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">
-    View {path}
+<div class="text-center"> <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#{modal_id}">
+    <span class="btn-label"><i class="glyphicon glyphicon-modal-window" aria-hidden="true"></i></span>View {path}
   </button>
 </div>
 
@@ -1375,14 +1407,15 @@ $(function() {{
         text_list = []
         for p in apaths:
             with io.open(p, "rt", encoding="utf-8") as fh:
-                text_list.append(escape(fh.read(), tag="pre"))
+                text_list.append(escape(fh.read(), tag="pre", cls="small-text"))
         tab_ids = gen_id(n=len(apaths))
         #print("paths", paths, "\ntab_ids", tab_ids)
 
         s = """\
-<!-- Button trigger modal -->
-<div class="text-center">
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{modal_id}">{button_label}</button>
+<div class="text-center"> <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#{modal_id}">
+    <span class="btn-label"><i class="glyphicon glyphicon-modal-window" aria-hidden="true"></i></span>{button_label}
+  </button>
 </div>
 
 <!-- Modal -->
@@ -1421,7 +1454,7 @@ $(function() {{
         title = path if title is None else str(title)
         path = os.path.join(self.root, path)
         with io.open(path, "rt", encoding="utf-8") as fh:
-            text = escape(fh.read(), tag="pre")
+            text = escape(fh.read(), tag="pre", cls="small-text")
 
         return """\
 <div class="md-container">
@@ -1437,7 +1470,7 @@ $(function() {{
         text_list = []
         for path in apaths:
             with io.open(path, "rt", encoding="utf-8") as fh:
-                text_list.append(escape(fh.read(), tag="pre"))
+                text_list.append(escape(fh.read(), tag="pre", cls="small-text"))
         tab_ids = gen_id(n=len(text_list))
         editor_ids = gen_id(n=len(text_list))
 
