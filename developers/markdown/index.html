@@ -225,9 +225,12 @@
         </span>
       </div>
         
-      <!-- Guide Tour with introjs -->
+      <!-- Guided Tour with introjs. Add glow effect to button only if homepage -->
       <div class="md-flex__cell md-flex__cell--shrink">
-          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           
+          
+          <a href="#" class="btn btn-xs btn-default  " id="guided-tour-button" title="Guided Tour" 
+              onclick="abidocs_guidedtour()">
            <span class="fa fa-info-circle"></span></a>
       </div>
 
@@ -3980,11 +3983,11 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 
 <p>that produces:</p>
-<div class="text-center"><button type="button" id="uuid-d8358e28-f445-4ce0-8556-d412e1e1b6f2" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-b3268c25-cbc7-4114-94ed-e0a146677c12" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t01.in
 </button>.</div>
 
-<div id="uuid-48905ea2-fe1a-472c-b8e9-3f610fa1f8c5" class="my_dialog" title="tests/v1/Input/t01.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+<div id="uuid-c8f3b3ea-eed1-479d-8dce-dac3d9788e74" class="my_dialog" title="tests/v1/Input/t01.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
 
 <span class="c1">#nband 8</span>
 <span class="c1">#nspinor 2</span>
@@ -4056,7 +4059,7 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-48905ea2-fe1a-472c-b8e9-3f610fa1f8c5", "#uuid-d8358e28-f445-4ce0-8556-d412e1e1b6f2") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-c8f3b3ea-eed1-479d-8dce-dac3d9788e74", "#uuid-b3268c25-cbc7-4114-94ed-e0a146677c12") }); </script>
 
 <p>If multiple files are used such as in:</p>
 <div class="codehilite"><pre><span></span>{% dialog tests/v1/Input/t01.in tests/v1/Input/t02.in tests/v1/Input/t03.in %}
@@ -4065,18 +4068,18 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 
 <p>a modal window with tabs is produced:</p>
 <div class="text-center"><div class="btn-group-vertical">
-<button type="button" id="uuid-faf487b6-e416-4d7a-b14d-099cc1f1914c" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-d40dcc0a-d3a8-41c6-8793-7c2f725a5277" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t01.in
 </button>.
-<button type="button" id="uuid-8ccb419d-2973-4c2e-aea9-a3b5fd73f8b1" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-da4cd9a4-04be-4e62-8f60-4a7b8f582403" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t02.in
 </button>.
-<button type="button" id="uuid-dd931eed-6861-4884-a8a6-54c319752d6e" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-cfb147cb-6ac3-4cff-818d-78868af4e094" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/v1/Input/t03.in
 </button>.
 </div></div>
 
-<div id="uuid-978f79d9-29f1-4358-bff8-dd60d0dd8ea7" class="my_dialog" title="tests/v1/Input/t01.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+<div id="uuid-1011bf62-af6b-412d-8e2b-b95761d91bb2" class="my_dialog" title="tests/v1/Input/t01.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
 
 <span class="c1">#nband 8</span>
 <span class="c1">#nspinor 2</span>
@@ -4148,9 +4151,9 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-978f79d9-29f1-4358-bff8-dd60d0dd8ea7", "#uuid-faf487b6-e416-4d7a-b14d-099cc1f1914c") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-1011bf62-af6b-412d-8e2b-b95761d91bb2", "#uuid-d40dcc0a-d3a8-41c6-8793-7c2f725a5277") }); </script>
 
-<div id="uuid-bc94ab4a-c105-4b1f-accb-0488e463010a" class="my_dialog" title="tests/v1/Input/t02.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+<div id="uuid-5de296a0-7be5-4285-acfc-815172ba8c12" class="my_dialog" title="tests/v1/Input/t02.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
 
  acell <span class="m">3</span>*7.60
  ecut <span class="m">10</span>
@@ -4218,9 +4221,9 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-bc94ab4a-c105-4b1f-accb-0488e463010a", "#uuid-8ccb419d-2973-4c2e-aea9-a3b5fd73f8b1") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-5de296a0-7be5-4285-acfc-815172ba8c12", "#uuid-da4cd9a4-04be-4e62-8f60-4a7b8f582403") }); </script>
 
-<div id="uuid-c711a2ba-59d4-41e4-88e9-7c1d5ae52ac3" class="my_dialog" title="tests/v1/Input/t03.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
+<div id="uuid-9545aa98-5e42-42ad-ab0d-cc4e8313c815" class="my_dialog" title="tests/v1/Input/t03.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1">#   FCC Al; 2 special points</span>
 
  acell <span class="m">3</span>*7.60
  ecut <span class="m">10</span>
@@ -4293,7 +4296,7 @@ long FAQs of Q&amp;A sections in the lessons.</p>
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-c711a2ba-59d4-41e4-88e9-7c1d5ae52ac3", "#uuid-dd931eed-6861-4884-a8a6-54c319752d6e") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-9545aa98-5e42-42ad-ab0d-cc4e8313c815", "#uuid-cfb147cb-6ac3-4cff-818d-78868af4e094") }); </script>
 
 <div id="la" hidden>
 The MIT License (MIT)
@@ -4326,19 +4329,19 @@ SOFTWARE.
 
 <p>that produces:</p>
 <div class="text-center"> <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#uuid-fc197f1b-ca9c-44d8-a08b-e5ec0edb2924">
+  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#uuid-3e334fc9-ab8e-45f9-b1fb-e8d65eb7dff6">
     <span class="btn-label"><i class="glyphicon glyphicon-modal-window" aria-hidden="true"></i></span>View tests/v1/Input/t01.in
   </button>
 </div>
 
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-fc197f1b-ca9c-44d8-a08b-e5ec0edb2924" tabindex="-1" role="dialog" aria-labelledby="uuid-a3740417-a0c0-47a5-8865-6143efd32f6d">
+<div class="modal fade" id="uuid-3e334fc9-ab8e-45f9-b1fb-e8d65eb7dff6" tabindex="-1" role="dialog" aria-labelledby="uuid-27f67b63-0535-4d1c-8d2d-32d703ccbcce">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-a3740417-a0c0-47a5-8865-6143efd32f6d">tests/v1/Input/t01.in</h4>
+        <h4 class="modal-title" id="uuid-27f67b63-0535-4d1c-8d2d-32d703ccbcce">tests/v1/Input/t01.in</h4>
       </div>
       <div class="modal-body"><pre class="small-text">
 #   FCC Al; 2 special points
@@ -4424,30 +4427,30 @@ If multiple files are used such as in:</p>
 
 <p>a modal window with tabs is produced</p>
 <div class="text-center"> <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#uuid-0376a7bf-f61a-45dd-83c1-eb8442b3246c">
+  <button type="button" class="btn btn-primary btn-labeled" data-toggle="modal" data-target="#uuid-099eec14-e2c1-4a58-ad22-68fbe3e511e9">
     <span class="btn-label"><i class="glyphicon glyphicon-modal-window" aria-hidden="true"></i></span>View tests/v1/Input/t01.in, tests/v1/Input/t02.in
   </button>
 </div>
 
 <!-- Modal -->
 
-<div class="modal fade" id="uuid-0376a7bf-f61a-45dd-83c1-eb8442b3246c" tabindex="-1" role="dialog" aria-labelledby="uuid-00e2293c-ce4d-40c9-b58f-d087b87fa188" aria-hidden="true">
+<div class="modal fade" id="uuid-099eec14-e2c1-4a58-ad22-68fbe3e511e9" tabindex="-1" role="dialog" aria-labelledby="uuid-a7cb8bb0-09e8-4e10-b68a-18ea57130833" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uuid-00e2293c-ce4d-40c9-b58f-d087b87fa188"></h4>
+        <h4 class="modal-title" id="uuid-a7cb8bb0-09e8-4e10-b68a-18ea57130833"></h4>
       </div>
       <div class="modal-body">
         <div role="tabpanel">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">          <li role="presentation" class="active">
-          <a href="#uuid-a337ffb8-061a-420d-9683-ca1278bdf1b9" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
+          <a href="#uuid-738a09e3-649f-4080-8e85-10659b40a820" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t01.in</a>
           </li>           <li role="presentation" class=" ">
-          <a href="#uuid-e1039155-aa3a-4c94-9f67-379bef9cf54d" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
+          <a href="#uuid-3d29160d-bd50-4cd4-93b4-4f4f684fd94a" aria-controls="uploadTab" role="tab" data-toggle="tab">tests/v1/Input/t02.in</a>
           </li>           </ul>
           <!-- Tab panes -->
-          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-a337ffb8-061a-420d-9683-ca1278bdf1b9"><pre class="small-text">
+          <div class="tab-content"><div role="tabpanel" class="tab-pane active" id="uuid-738a09e3-649f-4080-8e85-10659b40a820"><pre class="small-text">
 #   FCC Al; 2 special points
 
 #nband 8
@@ -4519,7 +4522,7 @@ If multiple files are used such as in:</p>
 #%%&lt;END TEST_INFO&gt;
 
 </pre>
-</div><div role="tabpanel" class="tab-pane  " id="uuid-e1039155-aa3a-4c94-9f67-379bef9cf54d"><pre class="small-text">
+</div><div role="tabpanel" class="tab-pane  " id="uuid-3d29160d-bd50-4cd4-93b4-4f4f684fd94a"><pre class="small-text">
 #   FCC Al; 2 special points
 
  acell 3*7.60
@@ -4597,7 +4600,7 @@ If multiple files are used such as in:</p>
 <div class="md-container">
   <div class="panel panel-default">
     <div class="panel-heading">tests/v1/Refs/t01.out</div>
-    <div class="panel-body"><div class="editor" hidden id="uuid-0dfe6f8a-35ae-4900-af8c-386b4343fab0"><pre class="small-text">
+    <div class="panel-body"><div class="editor" hidden id="uuid-c987f54e-26de-4f5a-a3d1-336216b70101"><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5163,10 +5166,10 @@ P           mkmem           2
   <div>EditorTabs</div>
     <div>
       <!-- Nav tabs -->
-      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-a3db11d7-9e61-48c0-ba76-e4b4df47c532" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-83372664-17b7-4b92-b375-1fa0d011c950" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
+      <ul class="nav nav-pills nav-justified"><li class="active"><a href="#uuid-a3db3104-b28c-43b4-9fb6-95729dcd08c3" data-toggle="pill">tests/v1/Refs/t01.out</a></li><li class=" "><a href="#uuid-6498e592-9ce8-4ec7-8dae-7a4572144f76" data-toggle="pill">tests/v1/Refs/t02.out</a></li>        </ul>
         <!-- Tab panes -->
-        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-a3db11d7-9e61-48c0-ba76-e4b4df47c532">
-<div id="uuid-813f7ca0-035b-42df-9ac1-00792c3d8c84" class="editor" hidden><pre class="small-text">
+        <div class="tab-content clearfix"><div class="tab-pane fade in active" id="uuid-a3db3104-b28c-43b4-9fb6-95729dcd08c3">
+<div id="uuid-54f723cc-4530-4dbf-9ad1-e252bd7817ac" class="editor" hidden><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -5721,8 +5724,8 @@ P           mkmem           2
 
 </pre>
 </div></div>
-<div class="tab-pane fade" id="uuid-83372664-17b7-4b92-b375-1fa0d011c950">
-<div id="uuid-a47fc92c-80a9-4bf0-9ab0-70bd4fc288a4" class="editor" hidden><pre class="small-text">
+<div class="tab-pane fade" id="uuid-6498e592-9ce8-4ec7-8dae-7a4572144f76">
+<div id="uuid-10a3ba0f-100a-4216-83b1-ca2d983bd0d5" class="editor" hidden><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 

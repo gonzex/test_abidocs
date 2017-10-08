@@ -226,9 +226,12 @@
         </span>
       </div>
         
-      <!-- Guide Tour with introjs -->
+      <!-- Guided Tour with introjs. Add glow effect to button only if homepage -->
       <div class="md-flex__cell md-flex__cell--shrink">
-          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           
+          
+          <a href="#" class="btn btn-xs btn-default  " id="guided-tour-button" title="Guided Tour" 
+              onclick="abidocs_guidedtour()">
            <span class="fa fa-info-circle"></span></a>
       </div>
 
@@ -3068,11 +3071,11 @@ Copy <code class="codehilite">tbase1_x.files</code> in <code class="codehilite">
 
 <p>Edit the <code class="codehilite">tbase1_x.files</code>. It is not very long (only 6 lines). 
 It gives the information needed for the code to build other file names.</p>
-<div class="text-center"><button type="button" id="uuid-2771349e-2c23-4dc9-afa1-ac00b4df7af5" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-f037f01e-7d34-4bb7-9c6b-956547d34874" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_x.files
 </button>.</div>
 
-<div id="uuid-078a66e7-5420-4445-9553-7a9741194d35" class="my_dialog" title="tests/tutorial/Input/tbase1_x.files" hidden><div><pre class="small-text">
+<div id="uuid-221c51df-ef4a-48a4-8c7f-d0a9f982e3ff" class="my_dialog" title="tests/tutorial/Input/tbase1_x.files" hidden><div><pre class="small-text">
 ../tbase1_1.in
 tbase1_x.out
 tbase1_xi
@@ -3083,7 +3086,7 @@ tbase1_x
 </pre>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-078a66e7-5420-4445-9553-7a9741194d35", "#uuid-2771349e-2c23-4dc9-afa1-ac00b4df7af5") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-221c51df-ef4a-48a4-8c7f-d0a9f982e3ff", "#uuid-f037f01e-7d34-4bb7-9c6b-956547d34874") }); </script>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -3207,11 +3210,11 @@ later, what is in the <code class="codehilite">tbase1_1.out</code> and <code cla
 Please, read it now.</p>
 </div>
 <p>It is now time to edit the <code class="codehilite">tbase1_1.in</code> file. </p>
-<div class="text-center"><button type="button" id="uuid-94a1c6ca-ab57-4e1c-bb21-e4d16600fdaa" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-6c190a2a-f8ff-4560-9772-6ca50ff51025" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_1.in
 </button>.</div>
 
-<div id="uuid-d07385a7-1ab7-4cb0-bb59-77d64aa452aa" class="my_dialog" title="tests/tutorial/Input/tbase1_1.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
+<div id="uuid-2739954d-a3ad-4aa0-b39a-df56c6a81b42" class="my_dialog" title="tests/tutorial/Input/tbase1_1.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
 <span class="c1">#</span>
 <span class="c1"># In this input file, the location of the information on this or that line</span>
 <span class="c1"># is not important : a keyword is located by the parser, and the related</span>
@@ -3281,7 +3284,7 @@ diemac <span class="m">2</span>.0        <span class="c1"># Although this is not
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-d07385a7-1ab7-4cb0-bb59-77d64aa452aa", "#uuid-94a1c6ca-ab57-4e1c-bb21-e4d16600fdaa") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-2739954d-a3ad-4aa0-b39a-df56c6a81b42", "#uuid-6c190a2a-f8ff-4560-9772-6ca50ff51025") }); </script>
 
 <p>You can have a first glance at it. It is not very long: about 50 lines, mostly comments. 
 Do not try to understand everything immediately. 
@@ -3345,11 +3348,11 @@ You should also: </p>
 
 <p>If the code does not stop there, the input parameters are consistent. 
 At this stage, many default values have been provided, and the preprocessing is finished.</p>
-<div class="text-center"><button type="button" id="uuid-f993a372-ca91-466f-b852-c2e9bc9205f9" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-5396d869-2378-41d2-aa4f-25f8fe224cc7" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Refs/tbase1_1.out
 </button>.</div>
 
-<div id="uuid-8de56ded-c7e0-46bb-8f80-3f8e406ffadb" class="my_dialog" title="tests/tutorial/Refs/tbase1_1.out" hidden><div><pre class="small-text">
+<div id="uuid-af0e504a-3513-49b4-aec5-f8064227069e" class="my_dialog" title="tests/tutorial/Refs/tbase1_1.out" hidden><div><pre class="small-text">
 
 .Version 8.0.7 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -3691,7 +3694,7 @@ P           mkmem           1
 </pre>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-8de56ded-c7e0-46bb-8f80-3f8e406ffadb", "#uuid-f993a372-ca91-466f-b852-c2e9bc9205f9") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-af0e504a-3513-49b4-aec5-f8064227069e", "#uuid-5396d869-2378-41d2-aa4f-25f8fe224cc7") }); </script>
 
 <p>It is worth to come back to the echo of preprocessed input data. 
 You should first examine the <code class="codehilite">tbase1_1.in</code> file in more details, and read the meaning of
@@ -3825,15 +3828,15 @@ Try to define a series, and to use the <a class="wikilink codevar-wikilink" href
 <p>The input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_2.in" target="_blank">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
 job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_2.out" target="_blank">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.</p>
 <div class="text-center"><div class="btn-group-vertical">
-<button type="button" id="uuid-acc18d1a-24d0-45a1-8f83-fa3b7e73d555" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-6978a193-a058-451e-89b0-9557fe518585" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_2.in
 </button>.
-<button type="button" id="uuid-e0ba0f25-cd9b-48c5-8487-1790fedd9d51" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-2c9ad715-c1d5-46a8-96e3-bafbd80f99fe" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Refs/tbase1_2.out
 </button>.
 </div></div>
 
-<div id="uuid-21d80d20-e1cf-434f-816c-83803c25a305" class="my_dialog" title="tests/tutorial/Input/tbase1_2.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
+<div id="uuid-473b551d-62e1-4960-8069-ad7417866110" class="my_dialog" title="tests/tutorial/Input/tbase1_2.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
 <span class="c1">#</span>
 <span class="c1"># This file to compute the total energy and forces as a function</span>
 <span class="c1"># of the interatomic distance</span>
@@ -3914,9 +3917,9 @@ diemac <span class="m">2</span>.0        <span class="c1"># Although this is not
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-21d80d20-e1cf-434f-816c-83803c25a305", "#uuid-acc18d1a-24d0-45a1-8f83-fa3b7e73d555") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-473b551d-62e1-4960-8069-ad7417866110", "#uuid-6978a193-a058-451e-89b0-9557fe518585") }); </script>
 
-<div id="uuid-14bc211b-fd23-44de-8fb6-2e8583c7b9aa" class="my_dialog" title="tests/tutorial/Refs/tbase1_2.out" hidden><div><pre class="small-text">
+<div id="uuid-6063aa64-da6b-4286-a1ed-d42feadbef03" class="my_dialog" title="tests/tutorial/Refs/tbase1_2.out" hidden><div><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -7091,7 +7094,7 @@ P           mkmem           1
 </pre>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-14bc211b-fd23-44de-8fb6-2e8583c7b9aa", "#uuid-e0ba0f25-cd9b-48c5-8487-1790fedd9d51") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-6063aa64-da6b-4286-a1ed-d42feadbef03", "#uuid-2c9ad715-c1d5-46a8-96e3-bafbd80f99fe") }); </script>
 
 <p>If you decide to use the <code class="codehilite">~abinit/tests/tutorial/Input/tbase1_2.in file</code>, do not
 forget to change the file names in the &ldquo;tbase1_x.files&rdquo; file&hellip;</p>
@@ -7162,15 +7165,15 @@ input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a b
 will do the job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_3.out" target="_blank">tests/tutorial/Refs/tbase1_3.out</a> is an example of
 output file. </p>
 <div class="text-center"><div class="btn-group-vertical">
-<button type="button" id="uuid-94249221-2dd1-4ed6-aeac-ed1f9fec06eb" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-9700a179-528b-4378-bf6e-feb2b6d54c91" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_3.in
 </button>.
-<button type="button" id="uuid-5d280259-00e0-425a-b8d3-37f4df49547f" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-709f8310-a003-4bd1-8b6c-f4a20d501a9e" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Refs/tbase1_3.out
 </button>.
 </div></div>
 
-<div id="uuid-e862e9ac-6231-4c2b-8bbc-b0f68155af46" class="my_dialog" title="tests/tutorial/Input/tbase1_3.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
+<div id="uuid-0a5d0a47-48e1-475a-948d-0573ad9f9a2d" class="my_dialog" title="tests/tutorial/Input/tbase1_3.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
 <span class="c1">#</span>
 <span class="c1"># This file will optimize automatically the interatomic distance</span>
 
@@ -7253,9 +7256,9 @@ diemac <span class="m">2</span>.0        <span class="c1"># Although this is not
 </pre></div>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-e862e9ac-6231-4c2b-8bbc-b0f68155af46", "#uuid-94249221-2dd1-4ed6-aeac-ed1f9fec06eb") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-0a5d0a47-48e1-475a-948d-0573ad9f9a2d", "#uuid-9700a179-528b-4378-bf6e-feb2b6d54c91") }); </script>
 
-<div id="uuid-58e09668-f520-4ec4-8ac7-2e0e06c76c16" class="my_dialog" title="tests/tutorial/Refs/tbase1_3.out" hidden><div><pre class="small-text">
+<div id="uuid-34853c4e-8bb7-4ce0-abc0-0e221bff7603" class="my_dialog" title="tests/tutorial/Refs/tbase1_3.out" hidden><div><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -7765,7 +7768,7 @@ P           mkmem           1
 </pre>
 </div></div>
 
-<script> $(function() { abidocs_jqueryui_dialog("#uuid-58e09668-f520-4ec4-8ac7-2e0e06c76c16", "#uuid-5d280259-00e0-425a-b8d3-37f4df49547f") }); </script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-34853c4e-8bb7-4ce0-abc0-0e221bff7603", "#uuid-709f8310-a003-4bd1-8b6c-f4a20d501a9e") }); </script>
 
 <p>If you decide to use these files, do not forget to change the
 file names in the &ldquo;tbase1_x.files&rdquo; file&hellip; 
