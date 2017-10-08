@@ -185,7 +185,7 @@ Referred to in: [/topics/TDepES](/topics/TDepES)
 
 
 Allen, P. B., Cardona, M.  
-*Temperature dependence of the direct gap of {S}i and {G}e*  
+*Temperature dependence of the direct gap of Si and Ge*  
 Phys. Rev. B **27**, 4760--4769 (1983)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Allen1983">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -279,7 +279,7 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 
 
 Amadon, B., Biermann, S., Georges, A., Aryasetiawan, F.  
-*The $\alpha$-$\gamma$ {T}ransition of {C}erium {I}s {E}ntropy {D}riven*  
+*The $\alpha$-$\gamma$ Transition of Cerium Is Entropy Driven*  
 Phys. Rev. Lett. **96**, 066402 (2006)  
 DOI: <https://doi.org/10.1103/PhysRevLett.96.066402>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2006">
@@ -355,7 +355,7 @@ Referred to in: [/developers/markdown](/developers/markdown), [/theory/acknowled
 
 
 Amadon, B., Jollet, F., Torrent, M.  
-*$\gamma$ and $\beta$ cerium: {LDA}+{U} calculations of ground-state parameters*  
+*$\gamma$ and $\beta$ cerium: LDA+U calculations of ground-state parameters*  
 Phys. Rev. B **77**, 155104 (2008)  
 DOI: <https://doi.org/10.1103/PhysRevB.77.155104>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2008a">
@@ -392,7 +392,7 @@ Referred to in: [/topics/DFT+U](/topics/DFT+U), [/topics/DMFT](/topics/DMFT), [/
 
 
 Amadon, B.  
-*A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e$_2${O}$_3$ and {P}u$_2${O}$_3$ with the {H}ubbard {I} solver and comparison to {DFT}+{U}*  
+*A self-consistent DFT+DMFT scheme in the projector augmented wave method: applications to cerium, Ce$_2$O$_3$ and Pu$_2$O$_3$ with the Hubbard I solver and comparison to DFT+U*  
 J. Phys.: Cond. Matt. **24**, 075604 (2012)  
 URL: <http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2012">
@@ -430,7 +430,7 @@ Referred to in: [/topics/DMFT](/topics/DMFT), [/tutorials/dmft](/tutorials/dmft)
 
 
 Amadon, B., Applencourt, T., Bruneval, F.  
-*Screened Coulomb interaction calculations: c{RPA} implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium*  
+*Screened Coulomb interaction calculations: cRPA implementation and applications to dynamical screening and self-consistency in uranium dioxide and cerium*  
 Phys. Rev. B **89**, 125110 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.125110>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Amadon2014">
@@ -502,7 +502,7 @@ Referred to in: [/topics/Wannier](/topics/Wannier)
 
 
 Ambrosetti, A., Silvestrelli, P. L.  
-*van der {W}aals interactions in density functional theory using Wannier functions: Improved {C}6 and {C}3 coefficients by a different approach*  
+*van der Waals interactions in density functional theory using Wannier functions: Improved C6 and C3 coefficients by a different approach*  
 Phys. Rev. B **85**, 073101 (2012)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ambrosetti2012">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -793,7 +793,7 @@ Phys. Rev. B **78**, 035105 (2008)
 
 
 Bachelet, G.B., Hamann, D.R., Schl\"uter, M.  
-*Pseudopotentials that work: From {H} to {P}u*  
+*Pseudopotentials that work: From H to Pu*  
 Phys. Rev. B **26**, 4199--4228 (1982)  
 DOI: <https://doi.org/10.1103/PhysRevB.26.4199>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bachelet1982">
@@ -959,7 +959,7 @@ URL: <http://scitation.aip.org/content/aip/journal/jcp/92/9/10.1063/1.458517>
 
 
 Benedict, L. X., Shirley, E. L., Bohn, R. B.  
-*Optical Absorption of Insulators and the Electron-Hole Interaction: An \textit{Ab Initio} Calculation*  
+*Optical Absorption of Insulators and the Electron-Hole Interaction: An \textitAb Initio Calculation*  
 Phys. Rev. Lett. **80**, 4514--4517 (1998)  
 DOI: <https://doi.org/10.1103/PhysRevLett.80.4514>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Benedict1998">
@@ -995,7 +995,7 @@ Referred to in: [/topics/BSE](/topics/BSE)
 
 
 O. Bengone, M. Alouani, P. Bl\"ochl,, Hugel, J.  
-*Implementation of the projector augmented-wave {LDA}+{U} method: Application to the electronic structure of {N}i{O}*  
+*Implementation of the projector augmented-wave LDA+U method: Application to the electronic structure of NiO*  
 Phys. Rev. B **62**, 16392 (1994)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bengone2000">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -1389,7 +1389,7 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 
 
 Bruneval, F., Gonze, X.  
-*Accurate {GW} self-energies in a plane-wave basis using only a few empty states: Towards large systems*  
+*Accurate GW self-energies in a plane-wave basis using only a few empty states: Towards large systems*  
 Phys. Rev. B **78**, 085125 (2008)  
 DOI: <https://doi.org/10.1103/PhysRevB.78.085125>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bruneval2008">
@@ -1425,7 +1425,7 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/RPA
 
 
 Bruneval, F.  
-*Range-Separated Approach to the {RPA} Correlation Applied to the van der Waals Bond and to Diffusion of Defects*  
+*Range-Separated Approach to the RPA Correlation Applied to the van der Waals Bond and to Diffusion of Defects*  
 Phys. Rev. Lett. **108**, 256403 (2012)  
 DOI: <https://doi.org/10.1103/PhysRevLett.108.256403>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Bruneval2012">
@@ -1769,7 +1769,7 @@ Referred to in: [/tutorials/tddft](/tutorials/tddft)
 
 
 Cococcioni, M., de Gironcoli, S.  
-*Linear response approach to the calculation of the effective interaction parameters in the {LDA}+{U} method*  
+*Linear response approach to the calculation of the effective interaction parameters in the LDA+U method*  
 Phys. Rev. B **71**, 035105 (2005)  
 DOI: <https://doi.org/10.1103/PhysRevB.71.035105>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Cococcioni2005">
@@ -1838,7 +1838,7 @@ Referred to in: [/tutorials/dmft](/tutorials/dmft)
 
 
 Czyzyk, M. T., Sawatzky, G. A.  
-*Local-density functional and on-site correlations: {T}he electronic structure of {L}a$_2${C}u{O}$_4$ and {L}a{C}u{O}$_3$*  
+*Local-density functional and on-site correlations: The electronic structure of La$_2$CuO$_4$ and LaCuO$_3$*  
 Phys. Rev. B **49**, 14211 (1994)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Czyzyk1994">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -1934,7 +1934,7 @@ Referred to in: [/topics/vdw](/topics/vdw)
 
 
 Espejo, C., Rangel, T., Pouillon, Y., Romero, A. H., Gonze, X.  
-*Wannier functions approach to van der Waals interactions in {ABINIT}*  
+*Wannier functions approach to van der Waals interactions in ABINIT*  
 Comp. Phys. Comm. **183**, 480 (2012)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Espejo2012">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -2060,7 +2060,7 @@ Referred to in: [/tutorials/dmft](/tutorials/dmft)
 
 
 Freund, R. W., Nachtigal, N. M.  
-*Software for simplified {L}anczos and {QMR} algorithms*  
+*Software for simplified Lanczos and QMR algorithms*  
 Applied Numerical Mathematics **19**, 319 (1995)  
 DOI: <https://doi.org/10.1016/0168-9274(95)00089-5>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Freund1995">
@@ -2129,7 +2129,7 @@ URL: <http://www.sciencedirect.com/science/article/pii/S001046559800201X>
 
 
 Garrity, K.F., Bennett, J.W., Rabe, K.M., Vanderbilt, D.  
-*Pseudopotentials for high-throughput {DFT} calculations*  
+*Pseudopotentials for high-throughput DFT calculations*  
 Comp. Mat. Sci. **81**, 446 - 452 (2014)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0927025613005077>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Garrity2014">
@@ -2166,7 +2166,7 @@ URL: <http://www.sciencedirect.com/science/article/pii/S0927025613005077>
 
 
 Geneste, G., Torrent, M., Bottin, F., Loubeyre, P.  
-*Strong Isotope Effect in Phase {I}{I} of Dense Solid Hydrogen and Deuterium*  
+*Strong Isotope Effect in Phase II of Dense Solid Hydrogen and Deuterium*  
 Phys. Rev. Lett. **109**, 155303 (2012)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Geneste2012">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -2290,7 +2290,7 @@ Referred to in: [/topics/Wavelets](/topics/Wavelets)
 
 
 Genovese, L., Ospici, M., Deutsch, T., M\'ehaut, J.-F., Neelov, A., Goedecker, S.  
-*Density Functional Theory calculation on many-cores hybrid {CPU}-{GPU} architectures in hybrid architecture*  
+*Density Functional Theory calculation on many-cores hybrid CPU-GPU architectures in hybrid architecture*  
 J. Chem. Phys. **131**, 034103 (2009)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Genovese2009">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -2395,7 +2395,7 @@ Referred to in: [/topics/DMFT](/topics/DMFT)
 
 
 Giannozzi, P., Baroni, S., Bonini, N., Calandra, M., Car, R., Cavazzoni, C., Ceresoli, D., Chiarotti, G.L., Cococcioni, M., Dabo, I., Dal Corso, A., de Gironcoli, S., Fabris, S., Fratesi, G., Gebauer, R., Gerstmann, U., Gougoussis, C., Kokalj, A., Lazzeri, M., Martin-Samos, L., Marzari, N., Mauri, F., Mazzarello, R., Paolini, S., Pasquarello, A., Paulatto, L., Sbraccia, C., Scandolo, S., Sclauzero, G., Seitsonen, A.P., Smogunov, A., Umari, P., Wentzcovitch, R.M.  
-*{QUANTUM} {ESPRESSO}: a modular and open-source software project for quantum simulations of materials*  
+*QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials*  
 J. Phys.: Cond. Matt. **21**, 395502 (2009)  
 URL: <http://iopscience.iop.org/article/10.1088/0953-8984/21/39/395502>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Giannozzi2009">
@@ -2429,7 +2429,7 @@ Referred to in: [/topics/Coulomb](/topics/Coulomb)
 
 
 Giantomassi, M., Stankovski, M., Shaltaf, R., Gruning, M., Bruneval, F., Rinke, P., Rignanese, G.M.  
-*{Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications}*  
+*Electronic properties of interfaces and defects from many-body perturbation theory: Recent developments and applications*  
 Physica Status Solidi B **248**, 275--289 (2011)  
 DOI: <https://doi.org/10.1002/pssb.201046094>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Giantomassi2011">
@@ -2501,7 +2501,7 @@ Referred to in: [/topics/nonlinear](/topics/nonlinear)
 
 
 Gillet, Y., Giantomassi, M., Gonze, X.  
-*Efficient Interpolation Technique for {B}ethe-{S}alpeter Calculation of Optical Spectra*  
+*Efficient Interpolation Technique for Bethe-Salpeter Calculation of Optical Spectra*  
 Comput. Phys. Comm. **203C**, 83-93 (2016)  
 DOI: <https://doi.org/10.1016/j.cpc.2016.02.008>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gillet2015">
@@ -2827,7 +2827,7 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments)
 
 
 Gonze, X., Amadon, B., Anglade, P.-M., Beuken, J.-M., Bottin, F., Boulanger, P., Bruneval, F., Caliste, D., Caracas, R., C\^{o}t\'{e}, M., Deutsch, T., Genovese, L., Ghosez, Ph., Giantomassi, M., Goedecker, S., Hamann, D.R., Hermet, P., Jollet, F., Jomard, G., Leroux, S., Mancini, M., Mazevet, S., Oliveira, M.J.T., Onida, G., Pouillon, Y., Rangel, T., Rignanese, G.-M., Sangalli, D., Shaltaf, R., Torrent, M., Verstraete, M.J., Zerah, G., Zwanziger, J.W.  
-*{ABINIT}: First-Principle approach to material and nanosystem properties*  
+*ABINIT: First-Principle approach to material and nanosystem properties*  
 Comp. Phys. Comm. **180**, 2582-2615 (2009)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2009">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -2889,7 +2889,7 @@ Referred to in: [/topics/TDepES](/topics/TDepES)
 
 
 Gonze, X., Jollet, F., Araujo, F. Abreu, Adams, D., Amadon, B., Applencourt, T., Audouze, C., Beuken, J.-M., Bieder, J., Bokhanchuk, A., Bousquet, E., Bruneval, F., Caliste, D., C\^ot\'e, M., Dahm, F., Pieve, F. Da, Delaveau, M., Gennaro, M. Di, Dorado, B., Espejo, C., Geneste, G., Genovese, L., Gerossier, A., Giantomassi, M., Gillet, Y., Hamann, D.R., He, L., Jomard, G., Janssen, J. Laflamme, Roux, S. Le, Levitt, A., Lherbier, A., Liu, F., Lukacevic, I., Martin, A., Martins, C., Oliveira, M.J.T., Ponc\'e, S., Pouillon, Y., Rangel, T., Rignanese, G.-M., Romero, A.H., Rousseau, B., Rubel, O., Shukri, A.A., Stankovski, M., Torrent, M., Setten, M.J. Van, troeye, B. Van, Verstraete, M.J., Waroquier, D., Wiktor, J., Xue, B., Zhou, A., Zwanziger, J.W.  
-*Recent developments in the {ABINIT} software package*  
+*Recent developments in the ABINIT software package*  
 Computer Physics Communications **205**, 106 (2016)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0010465516300923>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Gonze2016">
@@ -2925,7 +2925,7 @@ Referred to in: [/theory/acknowledgments](/theory/acknowledgments), [/topics/ElP
 
 
 Grimme, S.  
-*Semiempirical {GGA}-Type Density Functional Constructed with a Long-Range Dispersion Correction*  
+*Semiempirical GGA-Type Density Functional Constructed with a Long-Range Dispersion Correction*  
 J. Comput. Chem. **27**, 1787 (2006)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Grimme2006">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -2956,7 +2956,7 @@ Referred to in: [/topics/vdw](/topics/vdw)
 
 
 Grimme, S., Anthony, J., Ehrlich, S., Krieg, H.  
-*A consistent and accurate ab initio parametrization of density functional dispersion correction ({DFT}-{D}) for the 94 elements {H}-{P}u*  
+*A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu*  
 J. Chem. Phys. **132**, 154104 (2010)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Grimme2010">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -3290,7 +3290,7 @@ Referred to in: [/topics/RPACorrEn](/topics/RPACorrEn)
 
 
 Hartwigsen, C., Goedecker, S., H\"utter, J.  
-*Relativistic separable dual-space {G}aussian pseudopotentials from {H} to {R}n*  
+*Relativistic separable dual-space Gaussian pseudopotentials from H to Rn*  
 Phys. Rev. B **58**, 3641--3662 (1998)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Hartwigsen1998">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -3321,7 +3321,7 @@ Phys. Rev. B **58**, 3641--3662 (1998)
 
 
 Haydock, R.  
-*The recursive solution of the {S}chr\"{o}dinger equation*  
+*The recursive solution of the Schr\"odinger equation*  
 Comp. Phys. Comm. **20**, 11 - 16 (1980)  
 URL: <http://www.sciencedirect.com/science/article/pii/0010465580901010>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Haydock1980">
@@ -3555,7 +3555,7 @@ DOI: <https://doi.org/10.1103/PhysRev.136.B864>
 
 
 Holzwarth, N.A.W., Tackett, A.R., Matthews, G.E.  
-*A Projector Augmented Wave ({PAW}) code for electronic structure calculations, Part {I}: {ATOMPAW} for generating atom-centered functions*  
+*A Projector Augmented Wave (PAW) code for electronic structure calculations, Part I: ATOMPAW for generating atom-centered functions*  
 Comp. Phys. Comm. **135**, 329 (2001)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Holzwarth2001">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -3655,7 +3655,7 @@ Referred to in: [/topics/SelfEnergy](/topics/SelfEnergy)
 
 
 Laflamme Janssen, J., Rousseau, B., C{\^o}t{\'e}, M.  
-*Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}$_0${W}$_0$ implementations*  
+*Efficient dielectric matrix calculations using the Lanczos algorithm for fast many-body G$_0$W$_0$ implementations*  
 Phys. Rev. B **91**, 125120 (2015)  
 DOI: <https://doi.org/10.1103/PhysRevB.91.125120>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Janssen2015">
@@ -3689,7 +3689,7 @@ Referred to in: [/topics/GWls](/topics/GWls)
 
 
 Jia, Yongchao, Ponc\'e, Samuel, Miglio, Anna, Mikami, Masayoshi, Gonze, Xavier  
-*Assessment of First-Principles and Semiempirical Methodologies for Absorption and Emission Energies of Ce$^{3+}$-Doped Luminescent Materials*  
+*Assessment of First-Principles and Semiempirical Methodologies for Absorption and Emission Energies of Ce$^3+$-Doped Luminescent Materials*  
 Adv. Optical Mater. **5**, 1600997 (2017)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Jia2017">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -3751,7 +3751,7 @@ Referred to in: [/topics/xc](/topics/xc)
 
 
 Jollet, F., Torrent, M., Holzwarth, N.  
-*Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the {XML} format*  
+*Generation of Projector Augmented-Wave atomic data: a 71 element validated table in the XML format*  
 Comp. Phys. Comm. **185**, 1246-1254 (2014)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Jollet2014">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -3782,7 +3782,7 @@ Referred to in: [/topics/PAW](/topics/PAW)
 
 
 Kawasuso, A., Yoshikawa, M., Itoh, H., Chiba, T., Higuchi, T., Betsuyaku, K., Redmann, F., Krause-Rehberg, R.  
-*Electron-positron momentum distributions associated with isolated silicon vacancies in 3 {C}-{S}i {C}*  
+*Electron-positron momentum distributions associated with isolated silicon vacancies in 3 C-Si C*  
 Phys. Rev. B **72**, 045204 (2005)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Kawasuso2005">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -4238,7 +4238,7 @@ Referred to in: [/topics/RandStopPow](/topics/RandStopPow)
 
 
 Luttinger, J.M., Kohn, W.  
-*{Motion of Electrons and Holes in Perturbed Periodic Fields}*  
+*Motion of Electrons and Holes in Perturbed Periodic Fields*  
 Phys. Rev. **97**, 869--883 (1955)  
 DOI: <https://doi.org/10.1103/PhysRev.97.869>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Luttinger1955">
@@ -4336,7 +4336,7 @@ Comp. Phys. Comm. **182**, 1421--1427 (2012)
 
 
 Marek, A., Blum, V., Johanni, R., Havu, V., Lang, B., Auckenthaler, T., Heinecke, A., Bungartz, H.-J., Lederer, H.  
-*The {ELPA} library: scalable parallel eigenvalue solutions for electronic structure theory and computational science*  
+*The ELPA library: scalable parallel eigenvalue solutions for electronic structure theory and computational science*  
 J. Phys.: Cond. Matt. **26**, 1--15 (2014)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Marek2014">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -4367,7 +4367,7 @@ J. Phys.: Cond. Matt. **26**, 1--15 (2014)
 
 
 Marques, M. A. L., Oliveira, M. J. T., Burnus, T.  
-*{Libxc: A library of exchange and correlation functionals for density functional theory}*  
+*Libxc: A library of exchange and correlation functionals for density functional theory*  
 Comput. Phys. Commun. **183**, 2272--2281 (2012)  
 DOI: <https://doi.org/10.1016/j.cpc.2012.05.007>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Marques2012">
@@ -4431,7 +4431,7 @@ Referred to in: [/topics/PIMD](/topics/PIMD)
 
 
 Mecholsky, N.A., Resca, L., Pegg, I.L., Fornari, M.  
-*{Theory of band warping and its effects on thermoelectronic transport properties}*  
+*Theory of band warping and its effects on thermoelectronic transport properties*  
 Phys. Rev. B **89**, 155131 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevB.89.155131>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Mecholsky2014">
@@ -4560,7 +4560,7 @@ Referred to in: [/topics/TransPath](/topics/TransPath)
 
 
 Momma, K., Izumi, F.  
-*{VESTA}3 for three-dimensional visualization of crystal, volumetric and morphology data*  
+*VESTA3 for three-dimensional visualization of crystal, volumetric and morphology data*  
 J. Appl. Crystallogr. **44**, 1272--1276 (2011)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Momma2011">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -4760,7 +4760,7 @@ Referred to in: [/topics/BSE](/topics/BSE), [/topics/GW](/topics/GW)
 
 
 Payne, M. C., Teter, M. P., Allan, D. C., Arias, T. A., Joannopoulos, J. D.  
-*Iterative minimization techniques for \textit{ab initio} total-energy calculations: molecular dynamics and conjugate gradients*  
+*Iterative minimization techniques for \textitab initio total-energy calculations: molecular dynamics and conjugate gradients*  
 Rev. Mod. Phys. **64**, 1045--1097 (1992)  
 DOI: <https://doi.org/10.1103/RevModPhys.64.1045>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Payne1992">
@@ -4965,7 +4965,7 @@ Referred to in: [/variables/basic](/variables/basic)
 
 
 Ponc\'e, S., Antonius, G., Boulanger, P., Cannuccia, E., Marini, A., C\^ot\'e, M., Gonze, X.  
-*Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between {ABINIT} and {QE}/{Y}ambo*  
+*Verification of first-principles codes: Comparison of total energies, phonon frequencies, electron--phonon coupling and zero-point motion correction to the gap between ABINIT and QE/Yambo*  
 Comp. Mat. Sci. **83**, 341 - 348 (2014)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Ponce2014">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -5120,7 +5120,7 @@ Referred to in: [/topics/Unfolding](/topics/Unfolding)
 
 
 Pouillon, Y., Beuken, J. -M., Deutsch, T., Torrent, M., Gonze, X.  
-*Organizing software growth and distributed development: the case of {ABINIT}*  
+*Organizing software growth and distributed development: the case of ABINIT*  
 Comput. Sci. Eng. **13**, 62 (2011)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Pouillon2011">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -5219,7 +5219,7 @@ DOI: <https://doi.org/10.1103/RevModPhys.66.841>
 
 
 Puska, M. J., Seitsonen, A. P., Nieminen, R. M.  
-*Electron-positron {C}ar-{P}arrinello methods: {S}elf-consistent treatment of charge densities and ionic relaxations*  
+*Electron-positron Car-Parrinello methods: Self-consistent treatment of charge densities and ionic relaxations*  
 Phys. Rev. B **52**, 10947 (1995)  
 DOI: <https://doi.org/10.1103/PhysRevB.52.10947>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Puska1995">
@@ -5253,7 +5253,7 @@ DOI: <https://doi.org/10.1103/PhysRevB.52.10947>
 
 
 Rangel, T., Caliste, D., Genovese, L., Torrent, M.  
-*A wavelet-based Projector Augmented-Wave ({PAW}) method: {R}eaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set*  
+*A wavelet-based Projector Augmented-Wave (PAW) method: Reaching frozen-core all-electron precision with a systematic, adaptive and localized wavelet basis set*  
 Computer Physics Communication **208**, 1-8 (2016)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rangel2016">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -5320,7 +5320,7 @@ DOI: <https://doi.org/10.1103/PhysRevB.41.1227>
 
 
 Rauch, C., Makkonen, I., Tuomisto, F.  
-*Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of {I}n{N}*  
+*Identifying vacancy complexes in compound semiconductors with positron annihilation spectroscopy: A case study of InN*  
 Phys. Rev. B **84**, 125201 (2011)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rauch2011">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -5418,7 +5418,7 @@ URL: <http://scitation.aip.org/content/aip/journal/apl/94/21/10.1063/1.3147189>
 
 
 Rieger, M., Steinbeck, L., White, I. D., Rojas, H. N., Godby, R. W.  
-*The {GW} space-time method for the self-energy of large systems*  
+*The GW space-time method for the self-energy of large systems*  
 Comp. Phys. Comm. **117**, 211--228 (1999)  
 DOI: <https://doi.org/10.1016/S0010-4655(98)00174-X>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Rieger1999">
@@ -5487,7 +5487,7 @@ DOI: <https://doi.org/10.1103/PhysRevB.62.4927>
 
 
 Rom\'an-P\'erez, G., Soler, J.M.  
-*Efficient Implementation of a {V}an der {W}aals Density Functional: Application to Double-Wall Carbon Nanotubes*  
+*Efficient Implementation of a Van der Waals Density Functional: Application to Double-Wall Carbon Nanotubes*  
 Phys. Rev. Lett. **103**, 096102 (2009)  
 DOI: <https://doi.org/10.1103/PhysRevLett.103.096102>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Romanperez2009">
@@ -5614,7 +5614,7 @@ Numerische Mathematik **16**, 205--223 (1970)
 
 
 Sakuma, R., Aryasetiawan, F.  
-*First-principles calculations of dynamical screened interactions for the transition metal oxides {MO} ({M}={M}n, {F}e, {C}o, {N}i)*  
+*First-principles calculations of dynamical screened interactions for the transition metal oxides MO (M=Mn, Fe, Co, Ni)*  
 Phys. Rev. B **87**, 165118 (2013)  
 DOI: <https://doi.org/10.1103/PhysRevB.87.165118>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sakuma2013">
@@ -5711,7 +5711,7 @@ Phys. Rev. B **54**, 16487 (1996)
 
 
 Sharma, S., Dewhurst, J. K., Ambrosch-Draxl, C.  
-*Linear and second-order optical response of {III}-{V} monolayer superlattices*  
+*Linear and second-order optical response of III-V monolayer superlattices*  
 Phys. Rev. B **67**, 165332 (2003)  
 DOI: <https://doi.org/10.1103/PhysRevB.67.165332>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sharma2003">
@@ -5743,7 +5743,7 @@ DOI: <https://doi.org/10.1103/PhysRevB.67.165332>
 
 
 Sharma, S., {A}mbrosch-{D}raxl, C.  
-*{S}econd-{H}armonic Optical Response from First Principles*  
+*Second-Harmonic Optical Response from First Principles*  
 Phys. Scripta **2004**, 128 (2004)  
 URL: <http://iopscience.iop.org/article/10.1238/Physica.Topical.109a00128>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Sharma2004">
@@ -5808,7 +5808,7 @@ Referred to in: [/topics/CRPA](/topics/CRPA)
 
 
 Silvestrelli, P. L.  
-*van der {W}aals Interactions in {DFT} Made Easy by {W}annier Functions*  
+*van der Waals Interactions in DFT Made Easy by Wannier Functions*  
 Phys. Rev. Lett. **100**, 053002 (2008)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Silvestrelli2008">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -5840,7 +5840,7 @@ Referred to in: [/topics/vdw](/topics/vdw)
 
 
 Silvestrelli, P. L.  
-*van der {W}aals Interactions in Density Functional Theory Using {W}annier Functions*  
+*van der Waals Interactions in Density Functional Theory Using Wannier Functions*  
 J. Phys. Chem. A **113**, 5224 (2009)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Silvestrelli2009">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -5872,7 +5872,7 @@ Referred to in: [/topics/vdw](/topics/vdw)
 
 
 Silvestrelli, P. L.  
-*van der {W}aals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized {W}annier functions*  
+*van der Waals interactions in density functional theory by combining the quantum harmonic oscillator-model with localized Wannier functions*  
 J. Chem. Phys. **139**, 054106 (2013)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Silvestrelli2013">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -6032,7 +6032,7 @@ Phys. Rev. B **43**, 13892 (1991)
 
 
 Torrent, Marc, Jollet, Fran\c{c}ois, Bottin, Fran\c{c}ois, Z\'erah, Gilles, Gonze, Xavier  
-*Implementation of the projector augmented-wave method in the {ABINIT} code: Application to the study of iron under pressure*  
+*Implementation of the projector augmented-wave method in the ABINIT code: Application to the study of iron under pressure*  
 Computational Materials Science **42**, 337 - 351 (2008)  
 URL: <http://www.sciencedirect.com/science/article/pii/S0927025607002108>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Torrent2008">
@@ -6167,7 +6167,7 @@ Phys. Rev. B **43**, 1993 (1991)
 
 
 Tuckerman, M. E., Marx, D., Klein, M. L., Parrinello, M.  
-*Efficient and general algorithms for path integral {C}ar--{P}arrinello molecular dynamics*  
+*Efficient and general algorithms for path integral Car--Parrinello molecular dynamics*  
 J. Chem. Phys. **104**, 5579 (1996)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Tuckerman1996">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -6359,7 +6359,7 @@ Referred to in: [/tutorials/tddft](/tutorials/tddft)
 
 
 Vaugier, L., Jiang, H., Biermann, S.  
-*Hubbard {U} and Hund exchange {J} in transition metal oxides: Screening versus localization trends from constrained random phase approximation*  
+*Hubbard U and Hund exchange J in transition metal oxides: Screening versus localization trends from constrained random phase approximation*  
 Phys. Rev. B **86**, 165105 (2012)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Vaugier2012">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -6549,7 +6549,7 @@ Adv. Funct. Mater. **23**, 1586--1596 (2013)
 
 
 Waroquiers, D., Lherbier, A., Miglio, A., Stankovski, M., Ponc\'e, S., Oliveira, M.J.T., Giantomassi, M., Rignanese, G.-M., Gonze, X.  
-*Band widths and gaps from the {T}ran-{B}laha functional: Comparison with many-body perturbation theory*  
+*Band widths and gaps from the Tran-Blaha functional: Comparison with many-body perturbation theory*  
 Phys. Rev. B **87**, 075121 (2013)  
 DOI: <https://doi.org/>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Waroquiers2013">
@@ -6652,7 +6652,7 @@ Referred to in: [/topics/DMFT](/topics/DMFT)
 
 
 Wiktor, J., Jomard, G., Torrent, M., Bertolus, M.  
-*Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3{C}-{S}i{C} and 6{H}-{S}i{C}*  
+*Electronic structure investigation of energetics and positron lifetimes of fully relaxed monovacancies with various charge states in 3C-SiC and 6H-SiC*  
 Phys. Rev. B **87**, 235207 (2013)  
 DOI: <https://doi.org/10.1103/PhysRevB.87.235207>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2013">
@@ -6720,7 +6720,7 @@ Referred to in: [/topics/positron](/topics/positron)
 
 
 Wiktor, J., Barthe, M.-F., Jomard, G., Torrent, M., Freyss, M., Bertolus, M.  
-*Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}$_2$*  
+*Coupled experimental and DFT+U investigation of positron lifetimes in UO$_2$*  
 Phys. Rev. B **90**, 184101 (2014)  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2014a">
   <span class="btn-label"><i class="fa fa-id-card" aria-hidden="true"></i></span>bibtex
@@ -6753,7 +6753,7 @@ Referred to in: [/topics/positron](/topics/positron)
 
 
 Wiktor, J., Jomard, G., Bertolus, M.  
-*Electronic structure calculations of positron lifetimes in {S}i{C}: Self-consistent schemes and relaxation effect*  
+*Electronic structure calculations of positron lifetimes in SiC: Self-consistent schemes and relaxation effect*  
 Nucl. Instrum. Meth. **327**, 63 (2014)  
 DOI: <https://doi.org/10.1016/j.nimb.2013.09.050>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Wiktor2014b">
@@ -6825,7 +6825,7 @@ Referred to in: [/topics/positron](/topics/positron)
 
 
 Xu, B., Verstraete, M. J.  
-*First Principles Explanation of the Positive Seebeck Coefficient of {L}ithium*  
+*First Principles Explanation of the Positive Seebeck Coefficient of Lithium*  
 Phys. Rev. Lett. **112**, 196603 (2014)  
 DOI: <https://doi.org/10.1103/PhysRevLett.112.196603>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Xu2014">
@@ -7025,7 +7025,7 @@ Referred to in: [/topics/EFG](/topics/EFG)
 
 
 Zwanziger, J. W.  
-*First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}$_3$*  
+*First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in LaTiO$_3$*  
 Phys. Rev. B **79**, 033112 (2009)  
 URL: <https://link.aps.org/doi/10.1103/PhysRevB.79.033112>  
 <button type="button" class="btn btn-primary btn-xsm btn-labeled small-text" data-toggle="modal" data-target="#modal-id-Zwanziger2009a">

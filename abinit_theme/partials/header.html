@@ -30,9 +30,14 @@
         </span>
       </div>
         
-      <!-- Guide Tour with introjs -->
+      <!-- Guided Tour with introjs. Add glow effect to button only if homepage -->
       <div class="md-flex__cell md-flex__cell--shrink">
-          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+          {% set glow = ' ' %} 
+          {% if page and page.is_homepage %}
+            {% set glow = 'glow' %}
+          {% endif %}
+          <a href="#" class="btn btn-xs btn-default {{glow}}" id="guided-tour-button" title="Guided Tour" 
+              onclick="abidocs_guidedtour()">
            <span class="fa fa-info-circle"></span></a>
       </div>
 

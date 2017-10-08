@@ -208,8 +208,8 @@ function abidocs_guidedtour() {
         },
         {
           element: 'nav.md-tabs',
-          intro: "These tabs group pages in categories. " +
-                 "The links are also available in the footer and can be accessed from the button in the bottom right corner."
+          intro:  "Pages are grouped in categories that can be browsed by clicking the links in this navigation bar. " +
+                  "These links are also available in the footer and can be accessed from the menu button in the bottom right corner."
         },
         {
           element: tab_links[0],
@@ -262,7 +262,7 @@ function abidocs_guidedtour() {
         {
           //element: 'div.md-sidebar--primary',
           element: 'nav.md-nav--primary',
-          intro: "The sidebar on the left lists the pages available in this section.",
+          intro: "This sidebar lists the pages available in this section.",
           position: 'right'
         },
         {
@@ -292,6 +292,13 @@ function abidocs_guidedtour() {
       showProgress: true,
       overlayOpacity: 0.3
     });
+
+    //var remove_glow = function() {
+    //    console.log('exiting');
+    //    $("#guided-tour-button").removeClass("glow");
+    //};
+    //intro.onexit(remove_glow);
+    //intro.oncomplete(remove_glow);
 
     intro.start();
 }

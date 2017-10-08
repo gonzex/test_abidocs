@@ -630,3 +630,17 @@ li.HeaderLetter {
   border-color: transparent transparent transparent rgba(000, 0, 0, 0.5);
 }
 */
+
+
+/* glow effect */
+.glow{
+  display: inline-block;
+  animation: glow  0.8s  5;
+}
+
+@keyframes glow{
+  50% {
+     color: red;
+     transform: scale(1.2);
+  }
+}

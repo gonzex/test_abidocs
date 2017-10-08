@@ -158,7 +158,8 @@ class MyEntry(Entry):
                 Possible values in [None, "link", "button"].
         """
         fields = self.fields
-        title = "*%s*" % fields["title"]
+        # Remove {} from (Latex) title.
+        title = "*%s*" % fields["title"].replace("{", "").replace("}", "")
         authors = self.authors
 
         if self.type == "article":
