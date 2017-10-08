@@ -16,6 +16,7 @@ import markdown
 
 from collections import OrderedDict, defaultdict
 from itertools import groupby
+from pprint import pprint
 from html2text import html2text
 from pybtex.database import parse_file, Entry, BibliographyData
 from markdown.util import etree
@@ -392,7 +393,7 @@ class Website(object):
                 if test.executable not in codes_without_vars:
                     codes_without_vars.add(test.executable)
                     if test.executable not in white_list:
-                        cprint("Cannot find variables associated to code: `%s`" % test.executable, "yellow")
+                        cprint("WARNING: Cannot find variables associated to code: `%s`" % test.executable, "yellow")
                 continue
             for vname in test_get_varnames(test, list(vd.keys())):
                 var = vd[vname]
@@ -537,7 +538,6 @@ You can change these parameters at compile or run time usually.
 """)
             for pname, info in self.variables_code.external_params.items():
                 mdf.write("## %s  \n%s  \n\n" % (pname, info))
-                #mdf.write("* * *\n")
 
         # Build markdown pages for the different sets of variables.
         for code, vd in self.variables_code.items():
@@ -591,7 +591,6 @@ in order of number of occurrence in the input files provided with the package.
                 lines = ['<ul class="list-group">']
                 for count, group in groupby(items, key=lambda t: t[0]):
                     vlist = [item[1] for item in sorted(group, key=lambda t: t[1].name)]
-                    #rpath = mdf.rpath
                     rpath = os.path.join(mdf.rpath.replace(".md", ""), "index.md")
                     s = ", ".join(v.internal_link(self, rpath) for v in vlist)
                     # Set color depending on coverage.
@@ -783,18 +782,17 @@ The bibtex file is available [here](../abiref.bib).
 
         #for dirname in ["theory"]:
         #    self.generate_mdindex(dirname)
-
         #topic2pages = defaultdict(list)
         #for page in self.md_pages:
         #    for topic in page.topics:
         #        topic2pages[topic].append(page)
 
-        cprint("Markdown files generation completed in %.2f [s]" % (time.time() - start), "green")
-
         with open(os.path.join(self.root, ".gitignore"), "wt") as fh:
             fh.write("# The following md files have been automatically generated and should be `git ignored`\n")
             for p in self.md_generated:
                 fh.write(os.path.relpath(p, self.root) + "\n")
+
+        cprint("Markdown files generation completed in %.2f [s]" % (time.time() - start), "green")
 
     def analyze_pages(self):
         """
@@ -885,14 +883,12 @@ The bibtex file is available [here](../abiref.bib).
                     if len(args) > 1:
                         new_lines.extend(self.modal_with_tabs(args).splitlines())
                     else:
-
                         new_lines.extend(self.modal_from_filename(args[0]).splitlines())
                 elif action == "dialog":
                     if len(args) > 1:
                         new_lines.extend(self.dialogs_from_filenames(args).splitlines())
                     else:
                         new_lines.extend(self.dialog_from_filename(args[0]).splitlines())
-
                 else:
                     raise ValueError("Don't know how to handle action: `%s` in token: `%s`" % (action, m.group(1)))
 
@@ -1298,6 +1294,7 @@ Enter any string to search in the database. Clicking without any request will gi
         return button_group + "\n".join(dialogs)
 
     def dialog_from_filename(self, path, title=None, ret_btn_dialog=False):
+        """Build customized jquery dialog to show the content of filepath `path`."""
         title = path if title is None else title
         with io.open(os.path.join(self.root, path), "rt", encoding="utf-8") as fh:
             if path.endswith(".in"):
@@ -1305,9 +1302,6 @@ Enter any string to search in the database. Clicking without any request will gi
             else:
                 text = escape(fh.read(), tag="pre", cls="small-text")
 
-        # Build customide jquery dialog.
-        # See http://api.jqueryui.com/dialog/ and https://github.com/ROMB/jquery-dialogextend
-        # The code to pin the dialog is based on http://appdevonsharepoint.com/how-to-pin-a-jquery-ui-dialog-in-place/
         btn_id, dialog_id = gen_id(n=2)
         button = """\
 <button type="button" id="{btn_id}" class="btn btn-default btn-labeled">
@@ -1316,52 +1310,8 @@ Enter any string to search in the database. Clicking without any request will gi
 
         dialog = """
 <div id="{dialog_id}" class="my_dialog" title="{title}" hidden><div>{text}</div></div>
-<script>
-$(function() {{
-    var e = $("#{dialog_id}");
 
-    e.dialog({{
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {{effect: "blind", duration: 200}},
-        //hide: {{effect: "explode", duration: 1000}},
-        position: {{my: 'center', at: 'center', of: window}},
-        buttons: [
-            {{text: "Close",
-              icon: "ui-icon-close",
-              classes: {{"ui-button": "ui-corner-all"}},
-              click: function(){{ $(this).dialog("close"); }}
-              //showText: false
-            }}
-        ],
-       create: function () {{
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){{ e.dialog("close"); }});
-      }}
-   }});
-
-   e.dialogExtend({{
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {{
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }}
-   }});
-
-   $("#{btn_id}").click(function() {{ e.removeAttr('hidden').dialog('open'); }});
-
-}});
-</script>
+<script> $(function() {{ abidocs_jqueryui_dialog("#{dialog_id}", "#{btn_id}") }}); </script>
 """.format(**locals())
 
         if not ret_btn_dialog:
@@ -1681,6 +1631,7 @@ class AbinitStats(object):
         src_dir = os.path.join(root, "src")
         if not os.path.isdir(src_dir):
             raise RuntimeError("Cannot find Abinit src directory. Someone moved statistics.txt file!")
+        # Use same shell-based approach to compute stats to be consistent with previous data.
         from subprocess import check_output
         num_f90files = int(check_output(["ls -l %s/*/*.F90 | wc" % src_dir], shell=True))
         num_f90lines = int(check_output(["cat %s/*/*.F90 | wc" % src_dir], shell=True))
@@ -1737,7 +1688,6 @@ class HTMLValidator(object):
     Arg:
         verbose: Verbosity level
     """
-
     def __init__(self, verbose):
         self.verbose = bool(verbose)
 
@@ -1755,10 +1705,9 @@ class HTMLValidator(object):
         """Validate html page. Return exit status."""
         # https://bitbucket.org/nmb10/py_w3c
         # import HTML validator and create validator instance
+        import urllib
         from py_w3c.validators.html.validator import HTMLValidator
         vld = HTMLValidator()
-        import urllib
-        from pprint import pprint
         num_err, num_ignored, num_warn = 0, 0, 0
 
         # Ignore error messages containing the following substrings.

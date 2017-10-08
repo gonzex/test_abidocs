@@ -22,21 +22,8 @@
     -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    -->
-    <!-- Semantic UI theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    -->
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
@@ -54,9 +41,7 @@
 
     {% if page.meta and page.meta.bootstrap_table %}
         <!-- Support for bootstrap table http://bootstrap-table.wenzhixin.net.cn/ -->
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
-        <!-- Latest compiled and minified JavaScript -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
     {% endif %}
 
@@ -145,12 +130,15 @@
             integrity="sha256-n9ZE2vNe6Iv4S6dUXnzuvvt2yLWOZPJqD787TC7S4W4=" crossorigin="anonymous"></script>
     {% endif %}
 
+    <!-- Introjs for Guided Tour -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.min.css" />
+
     <!-- Load fonts used for input variables -->
     <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 {% endblock %}
 
 {% block content %}

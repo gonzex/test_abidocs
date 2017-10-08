@@ -262,7 +262,6 @@ extra_css:
     - css/extra.css
     - css/gallery.css
     - css/my_codehilite.css
-    #- css/auto_numbering.css
 
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.8/ace.js
