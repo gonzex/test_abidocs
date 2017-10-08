@@ -49,21 +49,8 @@
     -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    -->
-    <!-- Semantic UI theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    -->
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
@@ -153,12 +140,15 @@
     
     
 
+    <!-- Introjs for Guided Tour -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.min.css" />
+
     <!-- Load fonts used for input variables -->
     <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
@@ -235,6 +225,13 @@
           
         </span>
       </div>
+        
+      <!-- Guide Tour with introjs -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           <span class="fa fa-info-circle"></span></a>
+      </div>
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
@@ -287,7 +284,7 @@
         </div>
       
 
-      <div class="md-flex__cell md-flex__cell--shrink">
+      <div class="md-flex__cell md-flex__cell--shrink" id="previous_published_versions">
         <div class="dropdown">
           <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
             8.5.4
@@ -3071,11 +3068,11 @@ Copy <code class="codehilite">tbase1_x.files</code> in <code class="codehilite">
 
 <p>Edit the <code class="codehilite">tbase1_x.files</code>. It is not very long (only 6 lines). 
 It gives the information needed for the code to build other file names.</p>
-<div class="text-center"><button type="button" id="uuid-4d57578a-3d53-4a14-a65c-001f860721b0" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-f985c8e2-a05c-4c52-aaed-d98194edcb16" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_x.files
 </button>.</div>
 
-<div id="uuid-fbe6032c-74af-4e0f-be7c-5d0fd7b0955f" class="my_dialog" title="tests/tutorial/Input/tbase1_x.files" hidden><div><pre class="small-text">
+<div id="uuid-0e59bdd1-0d0b-4e13-92d1-ec2a7b45917f" class="my_dialog" title="tests/tutorial/Input/tbase1_x.files" hidden><div><pre class="small-text">
 ../tbase1_1.in
 tbase1_x.out
 tbase1_xi
@@ -3086,52 +3083,7 @@ tbase1_x
 </pre>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-fbe6032c-74af-4e0f-be7c-5d0fd7b0955f");
-
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-4d57578a-3d53-4a14-a65c-001f860721b0").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-0e59bdd1-0d0b-4e13-92d1-ec2a7b45917f", "#uuid-f985c8e2-a05c-4c52-aaed-d98194edcb16") }); </script>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -3255,11 +3207,11 @@ later, what is in the <code class="codehilite">tbase1_1.out</code> and <code cla
 Please, read it now.</p>
 </div>
 <p>It is now time to edit the <code class="codehilite">tbase1_1.in</code> file. </p>
-<div class="text-center"><button type="button" id="uuid-31698a4e-3dab-4cce-b387-84399041a6a8" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-3eaca26d-1dae-45be-8950-6e03fd543d61" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_1.in
 </button>.</div>
 
-<div id="uuid-064d70ba-df2c-4597-9ca4-5bf9c7f0961f" class="my_dialog" title="tests/tutorial/Input/tbase1_1.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
+<div id="uuid-6102be11-b5e5-4a9a-91f5-712e122529e1" class="my_dialog" title="tests/tutorial/Input/tbase1_1.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
 <span class="c1">#</span>
 <span class="c1"># In this input file, the location of the information on this or that line</span>
 <span class="c1"># is not important : a keyword is located by the parser, and the related</span>
@@ -3329,52 +3281,7 @@ diemac <span class="m">2</span>.0        <span class="c1"># Although this is not
 </pre></div>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-064d70ba-df2c-4597-9ca4-5bf9c7f0961f");
-
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-31698a4e-3dab-4cce-b387-84399041a6a8").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-6102be11-b5e5-4a9a-91f5-712e122529e1", "#uuid-3eaca26d-1dae-45be-8950-6e03fd543d61") }); </script>
 
 <p>You can have a first glance at it. It is not very long: about 50 lines, mostly comments. 
 Do not try to understand everything immediately. 
@@ -3438,11 +3345,11 @@ You should also: </p>
 
 <p>If the code does not stop there, the input parameters are consistent. 
 At this stage, many default values have been provided, and the preprocessing is finished.</p>
-<div class="text-center"><button type="button" id="uuid-f7e58c9d-2255-4954-8927-34c452e8c342" class="btn btn-default btn-labeled">
+<div class="text-center"><button type="button" id="uuid-809ad532-12b4-463c-9845-6fec9fc78b8f" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Refs/tbase1_1.out
 </button>.</div>
 
-<div id="uuid-e52fa029-a679-465f-901a-a8218a2ae1fa" class="my_dialog" title="tests/tutorial/Refs/tbase1_1.out" hidden><div><pre class="small-text">
+<div id="uuid-98783c89-afbb-4842-abbd-aca5ffce2a21" class="my_dialog" title="tests/tutorial/Refs/tbase1_1.out" hidden><div><pre class="small-text">
 
 .Version 8.0.7 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -3784,52 +3691,7 @@ P           mkmem           1
 </pre>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-e52fa029-a679-465f-901a-a8218a2ae1fa");
-
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-f7e58c9d-2255-4954-8927-34c452e8c342").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-98783c89-afbb-4842-abbd-aca5ffce2a21", "#uuid-809ad532-12b4-463c-9845-6fec9fc78b8f") }); </script>
 
 <p>It is worth to come back to the echo of preprocessed input data. 
 You should first examine the <code class="codehilite">tbase1_1.in</code> file in more details, and read the meaning of
@@ -3963,15 +3825,15 @@ Try to define a series, and to use the <a class="wikilink codevar-wikilink" href
 <p>The input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a big box This file to compute the total energy and forces as a function of the interatomic distance" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/tutorial/Input/tbase1_2.in" target="_blank">tests/tutorial/Input/tbase1_2.in</a> is an example of file that will do the
 job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_2.out" target="_blank">tests/tutorial/Refs/tbase1_2.out</a> is an example of output file.</p>
 <div class="text-center"><div class="btn-group-vertical">
-<button type="button" id="uuid-30b9ee08-8b34-4aab-ab57-22be8cbc24a9" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-76825f74-d08a-44cf-b443-e7c19e7710ec" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_2.in
 </button>.
-<button type="button" id="uuid-ade891bc-eab5-4394-8ce2-ac2214912d18" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-4c54f8a7-cc13-4780-a6a3-16e972624880" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Refs/tbase1_2.out
 </button>.
 </div></div>
 
-<div id="uuid-6c7253b2-7eca-48bd-a008-e139a04ba02d" class="my_dialog" title="tests/tutorial/Input/tbase1_2.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
+<div id="uuid-afcbbae1-faa6-4014-aafd-f6f49c538df8" class="my_dialog" title="tests/tutorial/Input/tbase1_2.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
 <span class="c1">#</span>
 <span class="c1"># This file to compute the total energy and forces as a function</span>
 <span class="c1"># of the interatomic distance</span>
@@ -4052,54 +3914,9 @@ diemac <span class="m">2</span>.0        <span class="c1"># Although this is not
 </pre></div>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-6c7253b2-7eca-48bd-a008-e139a04ba02d");
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-afcbbae1-faa6-4014-aafd-f6f49c538df8", "#uuid-76825f74-d08a-44cf-b443-e7c19e7710ec") }); </script>
 
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-30b9ee08-8b34-4aab-ab57-22be8cbc24a9").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
-
-<div id="uuid-4932d35d-09e5-4ffc-80d9-698753fcc83f" class="my_dialog" title="tests/tutorial/Refs/tbase1_2.out" hidden><div><pre class="small-text">
+<div id="uuid-ed4ceff9-6890-4599-b764-0d5681b2bacd" class="my_dialog" title="tests/tutorial/Refs/tbase1_2.out" hidden><div><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -7274,52 +7091,7 @@ P           mkmem           1
 </pre>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-4932d35d-09e5-4ffc-80d9-698753fcc83f");
-
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-ade891bc-eab5-4394-8ce2-ac2214912d18").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-ed4ceff9-6890-4599-b764-0d5681b2bacd", "#uuid-4c54f8a7-cc13-4780-a6a3-16e972624880") }); </script>
 
 <p>If you decide to use the <code class="codehilite">~abinit/tests/tutorial/Input/tbase1_2.in file</code>, do not
 forget to change the file names in the &ldquo;tbase1_x.files&rdquo; file&hellip;</p>
@@ -7390,15 +7162,15 @@ input file <a class="wikilink abifile-wikilink" data-content="H2 molecule in a b
 will do the job, while <a class="wikilink abifile-wikilink" href="../../tests/tutorial/Refs/tbase1_3.out" target="_blank">tests/tutorial/Refs/tbase1_3.out</a> is an example of
 output file. </p>
 <div class="text-center"><div class="btn-group-vertical">
-<button type="button" id="uuid-a086e3c5-aa18-401c-8fc9-42ee2ab0e473" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-cd9f51b8-0b14-4312-9eb9-566fd75380f2" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Input/tbase1_3.in
 </button>.
-<button type="button" id="uuid-2ee041fd-9953-4dbc-b420-b00aaab082e0" class="btn btn-default btn-labeled">
+<button type="button" id="uuid-f64912c4-1d9c-4313-91c6-faf42d983e39" class="btn btn-default btn-labeled">
   <span class="btn-label"><i class="fa fa-window-restore" aria-hidden="true"></i></span>View tests/tutorial/Refs/tbase1_3.out
 </button>.
 </div></div>
 
-<div id="uuid-46956c13-dc08-44ed-bb17-a54fa24824ff" class="my_dialog" title="tests/tutorial/Input/tbase1_3.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
+<div id="uuid-d426656f-4869-4254-a0ca-a363ffef167a" class="my_dialog" title="tests/tutorial/Input/tbase1_3.in" hidden><div><div class="codehilite small-text"><pre><span></span><span class="c1"># H2 molecule in a big box</span>
 <span class="c1">#</span>
 <span class="c1"># This file will optimize automatically the interatomic distance</span>
 
@@ -7481,54 +7253,9 @@ diemac <span class="m">2</span>.0        <span class="c1"># Although this is not
 </pre></div>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-46956c13-dc08-44ed-bb17-a54fa24824ff");
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-d426656f-4869-4254-a0ca-a363ffef167a", "#uuid-cd9f51b8-0b14-4312-9eb9-566fd75380f2") }); </script>
 
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-a086e3c5-aa18-401c-8fc9-42ee2ab0e473").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
-
-<div id="uuid-480bd4ad-cad3-4a7b-8e9c-730f0c1d808d" class="my_dialog" title="tests/tutorial/Refs/tbase1_3.out" hidden><div><pre class="small-text">
+<div id="uuid-2b5fc034-df88-4a0a-b652-44944d1a1a1c" class="my_dialog" title="tests/tutorial/Refs/tbase1_3.out" hidden><div><pre class="small-text">
 
 .Version 8.0.3 of ABINIT 
 .(MPI version, prepared for a x86_64_linux_gnu5.3 computer) 
@@ -8038,52 +7765,7 @@ P           mkmem           1
 </pre>
 </div></div>
 
-<script>
-$(function() {
-    var e = $("#uuid-480bd4ad-cad3-4a7b-8e9c-730f0c1d808d");
-
-    e.dialog({
-        width: 500,
-        //width: "auto",
-        height: 500,
-        autoOpen: false,
-        show: {effect: "blind", duration: 200},
-        //hide: {effect: "explode", duration: 1000},
-        position: {my: 'center', at: 'center', of: window},
-        buttons: [
-            {text: "Close",
-              icon: "ui-icon-close",
-              classes: {"ui-button": "ui-corner-all"},
-              click: function(){ $(this).dialog("close"); }
-              //showText: false
-            }
-        ],
-       create: function () {
-         var titlebar = e.parent().children('.ui-dialog-titlebar');
-         titlebar.prepend('<button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only PinDialog" role="button" aria-disabled="false" title="pin down"><span class="ui-button-icon-primary ui-icon ui-icon-pin-w"></span></button>');
-
-        // This to solve the conflict between bootstrap and jquery-ui close button.
-        //titlebar.find(".ui-dialog-titlebar-close").replaceWith('<a class="ui-dialog-titlebar-close ui-corner-all ui-state-default" href="#" role="button"><span class="ui-icon ui-icon-close" title="close">close</span></a>');
-        //titlebar.find(".ui-dialog-titlebar-close").click(function(){ e.dialog("close"); });
-      }
-   });
-
-   e.dialogExtend({
-       "maximizable": false, "minimizable": true, "collapsable": true, "minimizeLocation": "left",
-       "dblclick": "collapse",
-       "icons": {
-            "close": "ui-icon-close",
-            //"maximize": "ui-icon-extlink",
-            "minimize": "ui-icon-minus",
-            "restore": "ui-icon-newwin",
-            "collapse": "ui-icon-triangle-1-s"
-       }
-   });
-
-   $("#uuid-2ee041fd-9953-4dbc-b420-b00aaab082e0").click(function() { e.removeAttr('hidden').dialog('open'); });
-
-});
-</script>
+<script> $(function() { abidocs_jqueryui_dialog("#uuid-2b5fc034-df88-4a0a-b652-44944d1a1a1c", "#uuid-f64912c4-1d9c-4313-91c6-faf42d983e39") }); </script>
 
 <p>If you decide to use these files, do not forget to change the
 file names in the &ldquo;tbase1_x.files&rdquo; file&hellip; 

@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="FrequencyMeshMBPT Abinit topic">
+        <meta name="description" content="'FrequencyMeshMBPT Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/FrequencyMeshMBPT/">
@@ -49,21 +49,8 @@
     -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    -->
-    <!-- Semantic UI theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    -->
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
@@ -153,12 +140,15 @@
     
     
 
+    <!-- Introjs for Guided Tour -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.min.css" />
+
     <!-- Load fonts used for input variables -->
     <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
@@ -231,6 +221,13 @@
           
         </span>
       </div>
+        
+      <!-- Guide Tour with introjs -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           <span class="fa fa-info-circle"></span></a>
+      </div>
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
@@ -283,7 +280,7 @@
         </div>
       
 
-      <div class="md-flex__cell md-flex__cell--shrink">
+      <div class="md-flex__cell md-flex__cell--shrink" id="previous_published_versions">
         <div class="dropdown">
           <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
             8.5.4

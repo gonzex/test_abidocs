@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="vdw input variables">
+        <meta name="description" content="'vdw input variables'">
       
       
         <link rel="canonical" href="http://www.abinit.org/variables/vdw/">
@@ -49,21 +49,8 @@
     -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    -->
-    <!-- Semantic UI theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    -->
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
@@ -153,12 +140,15 @@
     
     
 
+    <!-- Introjs for Guided Tour -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.min.css" />
+
     <!-- Load fonts used for input variables -->
     <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
@@ -235,6 +225,13 @@
           
         </span>
       </div>
+        
+      <!-- Guide Tour with introjs -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           <span class="fa fa-info-circle"></span></a>
+      </div>
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
@@ -287,7 +284,7 @@
         </div>
       
 
-      <div class="md-flex__cell md-flex__cell--shrink">
+      <div class="md-flex__cell md-flex__cell--shrink" id="previous_published_versions">
         <div class="dropdown">
           <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
             8.5.4
@@ -3633,7 +3630,7 @@ will indicate that the corresponding direction is normal to the layers.</p>
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 1e-10<br />
 <em>Only relevant if:</em> <a class="wikilink codevar-wikilink" href="../vdw#vdw_xc">vdw_xc</a>==5  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials</summary><ul><li>v7:  <a class="wikilink abifile-wikilink" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t97.in" target="_blank">t97.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t98.in" target="_blank">t98.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t99.in" target="_blank">t99.in</a></li><li>vdwxc:  <a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/vdwxc/Input/t10.in" target="_blank">t10.in</a></li></ul></details><p>The DFT-D methods (S. Grimme approach) dispersion potentials, <a class="wikilink codevar-wikilink" href="../vdw#vdw_xc">vdw_xc</a>==5 or
+<details class="note"><summary>Test list (click to open). Rarely used, [4/920] in all abinit tests, [0/116] in abinit tutorials</summary><ul><li>vdwxc:  <a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/vdwxc/Input/t10.in" target="_blank">t10.in</a></li><li>v7:  <a class="wikilink abifile-wikilink" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t97.in" target="_blank">t97.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t98.in" target="_blank">t98.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t99.in" target="_blank">t99.in</a></li></ul></details><p>The DFT-D methods (S. Grimme approach) dispersion potentials, <a class="wikilink codevar-wikilink" href="../vdw#vdw_xc">vdw_xc</a>==5 or
 6 or 7, include a pair potential. The number of pairs of atoms contributing to
 the potential is necessarily limited. To be included in the potential a pair
 of atom must have contribution to the energy larger than <a class="wikilink codevar-wikilink" href="../vdw#vdw_tol">vdw_tol</a>.</p>
@@ -3689,7 +3686,7 @@ visualization.</p>
 <em>Variable type:</em> integer<br />
 <em>Dimensions:</em> scalar<br />
 <em>Default value:</em> 0  </p>
-<details class="note"><summary>Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials</summary><ul><li>v7:  <a class="wikilink abifile-wikilink" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t97.in" target="_blank">t97.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t98.in" target="_blank">t98.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t99.in" target="_blank">t99.in</a></li><li>vdwxc:  <a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/vdwxc/Input/t10.in" target="_blank">t10.in</a></li><li>wannier90:  <a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t11.in" target="_blank">t11.in</a>, <a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t12.in" target="_blank">t12.in</a>, <a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t13.in" target="_blank">t13.in</a></li></ul></details><p>Selects a van-der-Waals density functional to apply the corresponding
+<details class="note"><summary>Test list (click to open). Rarely used, [7/920] in all abinit tests, [0/116] in abinit tutorials</summary><ul><li>wannier90:  <a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the approach of Silvestrelli to access van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t11.in" target="_blank">t11.in</a>, <a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Ambrosetti and Silvestrelli to assess van der Waals interactions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t12.in" target="_blank">t12.in</a>, <a class="wikilink abifile-wikilink" data-content="Argon FCC Test the approach of Silvestrelli to assess van der Waals interactions,  combining the QHO model with Wannier functions." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/wannier90/Input/t13.in" target="_blank">t13.in</a></li><li>vdwxc:  <a class="wikilink abifile-wikilink" data-content="Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential." data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/vdwxc/Input/t10.in" target="_blank">t10.in</a></li><li>v7:  <a class="wikilink abifile-wikilink" data-content="Relaxation of FCC Argon crystal with DFT-D3 dispersion correction Both the pair-wise term and the 3-body term are included In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3 including the 3-body term" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t97.in" target="_blank">t97.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the dynamical matrix at different q-vector including vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the dynamical matrix" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t98.in" target="_blank">t98.in</a>, <a class="wikilink abifile-wikilink" data-content="Computation of the elastic constants and internal strains for distorded h-BN (to get non-zero internal strains) vdW-DFT-D3 corrections with Becke-Jonhson damping (DFT-D3(BJ)) Only the pair-wise is computed (3-body term not implemented) In this test the following properties are thus tested: contribution to the energy and to the stress of DFT-D3(BJ) as well as the contribution to the elastic constants and internal strains" data-placement="auto right" data-toggle="popover" data-trigger="hover focus" href="../../tests/v7/Input/t99.in" target="_blank">t99.in</a></li></ul></details><p>Selects a van-der-Waals density functional to apply the corresponding
 correction to the exchange-correlation energy. If set to zero, no correction
 will be applied.<br />
 Possible values are:</p>

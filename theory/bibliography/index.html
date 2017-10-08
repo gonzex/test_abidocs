@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Bibliographical references mentioned in the ABINIT documentation">
+        <meta name="description" content="'Bibliographical references mentioned in the ABINIT">
       
       
         <link rel="canonical" href="http://www.abinit.org/theory/bibliography/">
@@ -49,21 +49,8 @@
     -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    -->
-    <!-- Semantic UI theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    -->
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
@@ -153,12 +140,15 @@
     
     
 
+    <!-- Introjs for Guided Tour -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.min.css" />
+
     <!-- Load fonts used for input variables -->
     <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
@@ -231,6 +221,13 @@
           
         </span>
       </div>
+        
+      <!-- Guide Tour with introjs -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           <span class="fa fa-info-circle"></span></a>
+      </div>
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
@@ -283,7 +280,7 @@
         </div>
       
 
-      <div class="md-flex__cell md-flex__cell--shrink">
+      <div class="md-flex__cell md-flex__cell--shrink" id="previous_published_versions">
         <div class="dropdown">
           <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
             8.5.4
@@ -6279,7 +6276,7 @@ URL: <a href="http://iopscience.iop.org/article/10.1088/0953-8984/24/7/075604">h
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Amadon2012</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Amadon, B.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e<script type="math/tex">_2</script>{O}<script type="math/tex">_3</script> and {P}u<script type="math/tex">_2</script>{O}<script type="math/tex">_3</script> with the {H}ubbard {I} solver and comparison to {DFT}+{U}&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;A self-consistent {DFT}+{DMFT} scheme in the projector augmented wave method: applications to cerium, {C}e<script type="math/tex">\_2</script>{O}<script type="math/tex">\_3</script> and {P}u<script type="math/tex">\_2</script>{O}<script type="math/tex">\_3</script> with the {H}ubbard {I} solver and comparison to {DFT}+{U}&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;J. Phys.: Cond. Matt.&quot;</span><span class="p">,</span>
     <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2012&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;24&quot;</span><span class="p">,</span>
@@ -7552,7 +7549,7 @@ Phys. Rev. B <strong>49</strong>, 14211 (1994)<br />
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Czyzyk1994</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Czyzyk, M. T. and Sawatzky, G. A.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Local-density functional and on-site correlations: {T}he electronic structure of {L}a<script type="math/tex">_2</script>{C}u{O}<script type="math/tex">_4</script> and {L}a{C}u{O}<script type="math/tex">_3</script>&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Local-density functional and on-site correlations: {T}he electronic structure of {L}a<script type="math/tex">\_2</script>{C}u{O}<script type="math/tex">\_4</script> and {L}a{C}u{O}<script type="math/tex">\_3</script>&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;49&quot;</span><span class="p">,</span>
     <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;14211&quot;</span><span class="p">,</span>
@@ -9150,7 +9147,7 @@ DOI: <a href="https://doi.org/10.1103/PhysRevB.91.125120">https://doi.org/10.110
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Janssen2015</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Laflamme Janssen, J. and Rousseau, B. and C{^o}t{\&#39;e}, M.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}<script type="math/tex">_0</script>{W}<script type="math/tex">_0</script> implementations&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Efficient dielectric matrix calculations using the {L}anczos algorithm for fast many-body {G}<script type="math/tex">\_0</script>{W}<script type="math/tex">\_0</script> implementations&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
     <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2015&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;91&quot;</span><span class="p">,</span>
@@ -9345,7 +9342,7 @@ Rev. Mod. Phys. <strong>32</strong>, 219 (1960)<br />
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Kolos1960</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Kolos, W. and Roothaan, C.C.J.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Accurate Electronic Wave Functions for the H<script type="math/tex">_2</script> Molecule&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Accurate Electronic Wave Functions for the H<script type="math/tex">\_2</script> Molecule&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Rev. Mod. Phys.&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;32&quot;</span><span class="p">,</span>
     <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;219&quot;</span><span class="p">,</span>
@@ -9516,7 +9513,7 @@ Phys. Rev. B <strong>51</strong>, 8610 (1995)<br />
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Lee1995</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Lee, C. and Gonze, X.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO<script type="math/tex">_2</script>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Ab-initio calculation of the thermodynamic properties and atomic temperature factors of SiO<script type="math/tex">\_2</script>
 <script type="math/tex">\alpha</script>-quartz and stishovite&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;51&quot;</span><span class="p">,</span>
@@ -9914,7 +9911,7 @@ Phys. Rev. Lett. <strong>72</strong>, 1124 (1994)<br />
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Mills1994</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Mills, G. and J{\&#39;o}nsson, H.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Quantum and thermal effects in H<script type="math/tex">_2</script> dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Quantum and thermal effects in H<script type="math/tex">\_2</script> dissociative adsorption: Evaluation of free energy barriers in multidimensional quantum systems&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. Lett.&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;72&quot;</span><span class="p">,</span>
     <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;7&quot;</span><span class="p">,</span>
@@ -11839,7 +11836,7 @@ Phys. Rev. B <strong>90</strong>, 184101 (2014)<br />
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Wiktor2014a</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Wiktor, J. and Barthe, M.-F. and Jomard, G. and Torrent, M. and Freyss, M. and Bertolus, M.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}<script type="math/tex">_2</script>&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Coupled experimental and {DFT}+{U} investigation of positron lifetimes in {U}{O}<script type="math/tex">\_2</script>&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;90&quot;</span><span class="p">,</span>
     <span class="na">number</span> <span class="p">=</span> <span class="s">&quot;18&quot;</span><span class="p">,</span>
@@ -12109,7 +12106,7 @@ URL: <a href="https://link.aps.org/doi/10.1103/PhysRevB.79.033112">https://link.
       </div>
       <div class="modal-body"><div class="codehilite"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">Zwanziger2009a</span><span class="p">,</span>
     <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Zwanziger, J. W.&quot;</span><span class="p">,</span>
-    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}<script type="math/tex">_3</script>&quot;</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;First-principles study of the nuclear quadrupole resonance parameters and orbital ordering in {LaTiO}<script type="math/tex">\_3</script>&quot;</span><span class="p">,</span>
     <span class="na">journal</span> <span class="p">=</span> <span class="s">&quot;Phys. Rev. B&quot;</span><span class="p">,</span>
     <span class="na">volume</span> <span class="p">=</span> <span class="s">&quot;79&quot;</span><span class="p">,</span>
     <span class="na">issue</span> <span class="p">=</span> <span class="s">&quot;3&quot;</span><span class="p">,</span>

@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="PseudosPAW Abinit topic">
+        <meta name="description" content="'PseudosPAW Abinit topic'">
       
       
         <link rel="canonical" href="http://www.abinit.org/topics/PseudosPAW/">
@@ -49,21 +49,8 @@
     -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-
-    <!-- JavaScript -->
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css"/>
-    <!-- Default theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/default.min.css"/>
-    -->
-    <!-- Semantic UI theme
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/semantic.min.css"/>
-    -->
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/themes/bootstrap.min.css"/>
-    
 
     <!-- Bootstrap http://getbootstrap.com/getting-started/ -->
     <!-- Latest compiled and minified CSS -->
@@ -153,12 +140,15 @@
     
     
 
+    <!-- Introjs for Guided Tour -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.min.css" />
+
     <!-- Load fonts used for input variables -->
     <!--
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-
 
     
       <link rel="stylesheet" href="../../assets/stylesheets/application-a20f419c8e.css">
@@ -231,6 +221,13 @@
           
         </span>
       </div>
+        
+      <!-- Guide Tour with introjs -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <a href="#" class="btn btn-xs btn-default" title="Guided Tour" onclick="abidocs_guidedtour()">
+           <span class="fa fa-info-circle"></span></a>
+      </div>
+
       <div class="md-flex__cell md-flex__cell--shrink">
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
@@ -283,7 +280,7 @@
         </div>
       
 
-      <div class="md-flex__cell md-flex__cell--shrink">
+      <div class="md-flex__cell md-flex__cell--shrink" id="previous_published_versions">
         <div class="dropdown">
           <button class="btn btn-basic btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
             8.5.4
@@ -3003,15 +3000,14 @@ elements of the periodic table, either in LDA or in GGA-PBE. The
 <a href="http://www.abinit.org/downloads/pseudodojo/pseudodojo" target="_blank">recommended one</a>
 (GGA-PBE, <a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=11) comes from the ONCVPSP generator (with spin-orbit
 coupling). The Goedecker HGH table (LDA, <a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=1, also including spin-orbit
-coupling) is also available, at <a href="http://www.abinit.org/downloads/psp-
-links/psp-links/hgh" target="_blank">http://www.abinit.org/downloads/psp-
-links/psp-links/hgh</a>. It is rather accurate, but requires often large
-<a class="wikilink codevar-wikilink" href="../../variables/basic#ecut">ecut</a>. The old Troullier-Martins type tables (
-<a href="http://www.abinit.org/downloads/psp-links/psp-links/lda_tm" target="_blank">LDA</a> <a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=1
-and <a href="http://www.abinit.org/downloads/psp-links/psp-links/gga_fhi" target="_blank">GGA</a>
-<a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=11) are deprecated, because not accurate enough, and also not
-including spin-orbit coupling. The different format for norm-conserving
-pseudopotentials are described in
+coupling) is also available, at <a href="http://www.abinit.org/downloads/psp-links
+/psp-links/hgh" target="_blank">http://www.abinit.org/downloads/psp-links
+/psp-links/hgh</a>. It is rather accurate, but requires often large <a class="wikilink codevar-wikilink" href="../../variables/basic#ecut">ecut</a>.
+The old Troullier-Martins type tables ( <a href="http://www.abinit.org/downloads/psp-
+links/psp-links/lda_tm" target="_blank">LDA</a> <a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=1 and <a href="http://www.abinit.org/downloads
+/psp-links/psp-links/gga_fhi" target="_blank">GGA</a> <a class="wikilink codevar-wikilink" href="../../variables/basic#ixc">ixc</a>=11) are deprecated, because not
+accurate enough, and also not including spin-orbit coupling. The different
+format for norm-conserving pseudopotentials are described in
 <a href="https://wiki.abinit.org/doku.php?id=developers:pseudos" target="_blank">https://wiki.abinit.org/doku.php?id=developers:pseudos</a>.</p>
 <p><strong>PAW atomic data tables</strong></p>
 <p>Five large sets of PAW atomic data can be read by ABINIT. The recommended one
