@@ -208,8 +208,8 @@ function abidocs_guidedtour() {
         },
         {
           element: 'nav.md-tabs',
-          intro: "This is the navigation bar with pages grouped in categories. " +
-                 "A similar navigation bar is also available in the footer and in the button in the bottom right corner."
+          intro: "These tabs group pages in categories. " +
+                 "The links are also available in the footer and can be accessed from the button in the bottom right corner."
         },
         {
           element: tab_links[0],
@@ -218,8 +218,8 @@ function abidocs_guidedtour() {
         },
         {
           element: tab_links[1],
-          intro: "This section contains pages providing an overview of the features implemented in the code, " + 
-                 "Each topic page provides links to related input variables, input files and scientific articles."
+          intro: "This section contains pages providing an overview of the features implemented in the code. " + 
+                 "Each page provides links to related input variables, input files and scientific articles."
         },
         {
           element: tab_links[2],
@@ -276,16 +276,16 @@ function abidocs_guidedtour() {
         //  position: 'left'
         //},
         {
-          element: "a.md-footer-social__link.fa-github-alt",
-          intro: "Help us improve the documentation: click the github icon to edit the markdown file " +
-                 " and then send us a pull request.",
-          position: 'left'
-        },
-        {
           //element: '#return-to-top',
           element: '.fa-map-signs',
           intro: "Click the button to go to the beginning of the page. Hover over the button " +
                  "to open a menu with links to the main sections.",
+          position: 'left'
+        },
+        {
+          element: "a.md-footer-social__link.fa-github-alt",
+          intro: "Help us improve the documentation: click the github icon to edit the markdown file " +
+                 " and then send us a pull request.",
           position: 'left'
         }
       ],
